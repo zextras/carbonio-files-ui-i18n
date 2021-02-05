@@ -1,0 +1,7 @@
+/node_modules/
+/pkg/
+/build/
+/.idea/workspace.xml
+/.idea/compiler.xml
+/junit.xml
+/coverage/cobertura-coverage.xml
