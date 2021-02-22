@@ -2,9 +2,9 @@ import React from 'react';
 import { fireEvent, screen } from '@testing-library/react';
 import { testUtils } from '@zextras/zapp-shell';
 import faker from 'faker';
-import NodeListItem from './NodeListItem';
+import NodeListItem from '../../../driveCommon/views/folder/components/NodeListItem';
 import { populateFile, populateFolder, populateNode } from '../../../mocks/mockUtils';
-import { formatDate, humanFileSize } from '../../../utils/utils';
+import { formatDate, humanFileSize } from '../../../driveCommon/utils/utils';
 
 // mock useUserInfo data
 const mockedUserLogged = {

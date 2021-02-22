@@ -15,7 +15,7 @@ import { Breadcrumbs, Divider, Icon, IconButton, Row } from '@zextras/zapp-ui';
 import styled, { keyframes } from 'styled-components';
 import getParents from '../../../graphql/queries/getParents.graphql';
 import { buildCrumbs } from '../../../utils/utils';
-import useNavigation from '../../../hooks/useNavigation';
+import useNavigation from '../../../../hooks/useNavigation';
 
 const rotate = keyframes`
   from {
