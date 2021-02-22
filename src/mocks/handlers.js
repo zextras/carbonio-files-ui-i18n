@@ -8,9 +8,15 @@
  * http://www.zextras.com/zextras-eula.html
  * *** END LICENSE BLOCK *****
  */
-import { rest } from 'msw';
+import { graphql } from 'msw';
+import handleGetChildrenRequest from './handleGetChildrenRequest';
+import handleGetParentsRequest from './handleGetParentsRequest';
+import handleIntrospectionRequest from './handleIntrospectionRequest';
 
 const handlers = [
+	// graphql.query('getChildren', handleGetChildrenRequest),
+	// graphql.query('getParents', handleGetParentsRequest),
+	// graphql.query('IntrospectionQuery', handleIntrospectionRequest),
 ];
 
 export default handlers;

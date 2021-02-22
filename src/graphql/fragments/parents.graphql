@@ -1,0 +1,14 @@
+#import "./baseParent.graphql"
+
+fragment Parents on Node {
+    ...BaseParent
+    parent {
+        ...BaseParent
+        parent {
+            ...BaseParent
+            parent {
+                ...BaseParent
+            }
+        }
+    }
+}

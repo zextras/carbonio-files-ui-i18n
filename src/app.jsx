@@ -9,24 +9,38 @@
  * *** END LICENSE BLOCK *****
  */
 
-import React, { useEffect } from 'react';
-import {
-	setCreateOptions, setRoutes, store
-} from '@zextras/zapp-shell';
-import { combineReducers } from '@reduxjs/toolkit';
+import React, { lazy, useEffect } from 'react';
+import { setCreateOptions, setRoutes } from '@zextras/zapp-shell';
+import { SetMainMenuItems } from './views/secondary-bar/SetMainMenuItem';
+
+const lazyFolderView = lazy(() => import(/* webpackChunkName: "folderView" */ './views/folder/FolderView'));
 
 export default function App() {
-	console.log('Hello from zapp-template');
-	/* Here an example on how to use this entry point.
-	 * Have fun :)
-	 * useEffect(() => {
-	 * 	store.setReducer(
-	 * 		combineReducers({}),
-	 * 	);
-	 * 	setRoutes([]);
-	 * 	setCreateOptions([{}]);
-	 * }, []);
-	 */
+	console.log('Hello from zapp-drive');
 
-	return null;
+	useEffect(() => {
+
+		setRoutes([
+			{
+				route: '/:folderId',
+				view: lazyFolderView,
+			}, {
+				route: '/',
+				view: lazyFolderView,
+			},
+		]);
+
+		setCreateOptions([{
+			id: 'create-folder',
+			label: 'New Folder',
+			app: {
+				path: window.top.location.pathname /* TODO manage node creation */
+			}
+		}]);
+
+	}, []);
+
+	return (
+		<SetMainMenuItems />
+	);
 }
