@@ -2,8 +2,8 @@ import React from 'react';
 import { Avatar, Container, Divider, Icon, Padding, Row, Text } from '@zextras/zapp-ui';
 import styled from 'styled-components';
 import { formatDate, getIconByFileType, humanFileSize } from '../../../utils/utils';
-import useNavigation from '../../../hooks/useNavigation';
-import useUserInfo from '../../../hooks/useUserInfo';
+import useNavigation from '../../../../hooks/useNavigation';
+import useUserInfo from '../../../../hooks/useUserInfo';
 import NodeHoverBar from './NodeHoverBar';
 
 const HoverBarContainer = styled(Row)`
