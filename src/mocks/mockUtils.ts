@@ -1,5 +1,5 @@
 import faker from 'faker';
-import { File, Folder, Node, NodeSort, Permissions, User } from '../driveCommon/types/graphqlSchema';
+import { File, Folder, Node, NodeSort, Permissions, User } from '../driveCommon/graphql/types';
 
 export function populateUser(): User {
 	return {
@@ -49,7 +49,6 @@ export function populateNode(type?: string, id?: string, name?: string): Node {
 		share: null,
 		shares: [],
 		link: null,
-		__typename: nodeType,
 	};
 }
 
