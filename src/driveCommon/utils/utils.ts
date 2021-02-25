@@ -1,5 +1,5 @@
 import moment, { Moment } from 'moment';
-import { Node } from '../types/graphqlSchema';
+import { Node } from '../graphql/types';
 
 /**
  * Format a size in byte as human readable

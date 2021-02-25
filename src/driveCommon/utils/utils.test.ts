@@ -1,35 +1,27 @@
 import { buildCrumbs } from './utils';
-import { Node } from '../types/graphqlSchema';
+import { populateNode } from '../../mocks/mockUtils';
 
 describe('Crumbs builder', () => {
 	it('should return a flat array with 3 objects ordered from root to leaf', () => {
-		const input: Node = {
-			id: '9f2d384a-5dcb-488c-91b8-bc313e3cf422',
-			name: 'personali',
-			parent: {
-				id: 'df6f62f4-dbd6-48fe-9808-9e7b687ee56a',
-				name: 'beatrice',
-				parent: {
-					id: 'LOCAL_ROOT',
-					name: 'ROOT',
-					parent: null,
-				},
-			},
-		}
+		const lvl0 = populateNode('Folder', 'LOCAL_ROOT', 'ROOT');
+		const lvl1 = populateNode('Folder');
+		const lvl2 = populateNode('Folder');
+		lvl2.parent = lvl1;
+		lvl1.parent = lvl0;
 
-		const result = buildCrumbs(input);
+		const result = buildCrumbs(lvl2);
 
 		const expected = [{
-			id: 'LOCAL_ROOT',
-			label: 'ROOT',
+			id: lvl0.id,
+			label: lvl0.name,
 		}, {
-			id: 'df6f62f4-dbd6-48fe-9808-9e7b687ee56a',
-			label: 'beatrice',
+			id: lvl1.id,
+			label: lvl1.name,
 		}, {
-			id: '9f2d384a-5dcb-488c-91b8-bc313e3cf422',
-			label: 'personali',
-		}]
+			id: lvl2.id,
+			label: lvl2.name,
+		}];
 
 		expect(result).toMatchObject(expected);
 	});
-})
+});
