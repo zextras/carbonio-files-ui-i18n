@@ -12,8 +12,8 @@
 import React from 'react';
 import { ApolloProvider } from '@apollo/client';
 import { useParams } from 'react-router-dom';
-import { Container } from '@zextras/zapp-ui';
-import client from '../../apollo';
+import { Container, Responsive } from '@zextras/zapp-ui';
+import buildClient from '../../apollo';
 import FolderList from './components/FolderList';
 import useQueryParam from '../../hooks/useQueryParam';
 
@@ -25,12 +25,17 @@ const FolderView = () => {
 	const folderId = useQueryParam('to');
 
 	return (
-		<ApolloProvider client={client}>
+		<ApolloProvider client={buildClient()}>
 			<Container orientation="horizontal">
-				<FolderList folderId={folderId || mainFolderId }/>
-				<Container>
-					Preview
-				</Container>
+				<Responsive mode="desktop" target={window.top}>
+					<FolderList folderId={folderId || mainFolderId} />
+					<Container>
+						Preview
+					</Container>
+				</Responsive>
+				<Responsive mode="mobile" target={window.top}>
+					<FolderList folderId={folderId || mainFolderId} />
+				</Responsive>
 			</Container>
 		</ApolloProvider>
 	);
