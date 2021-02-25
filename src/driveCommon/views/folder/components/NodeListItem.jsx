@@ -1,4 +1,15 @@
-import React from 'react';
+/*
+ * *** BEGIN LICENSE BLOCK *****
+ * Copyright (C) 2011-2021 ZeXtras
+ *
+ * The contents of this file are subject to the ZeXtras EULA;
+ * you may not use this file except in compliance with the EULA.
+ * You may obtain a copy of the EULA at
+ * http://www.zextras.com/zextras-eula.html
+ * *** END LICENSE BLOCK *****
+ */
+
+import React, { useEffect, useState } from 'react';
 import { Avatar, Container, Divider, Icon, Padding, Row, Text } from '@zextras/zapp-ui';
 import styled from 'styled-components';
 import { formatDate, getIconByFileType, humanFileSize } from '../../../utils/utils';
@@ -9,7 +20,6 @@ import NodeHoverBar from './NodeHoverBar';
 const HoverBarContainer = styled(Row)`
   display: none;
   position: absolute;
-  cursor: pointer;
 `;
 
 const HoverContainer = styled(Row)`
@@ -18,6 +28,7 @@ const HoverContainer = styled(Row)`
 
 const MainContainer = styled(Container)`
   position: relative;
+  cursor: pointer;
 
   &:hover {
     & ${HoverBarContainer} {
@@ -27,6 +38,7 @@ const MainContainer = styled(Container)`
     & ${HoverContainer} {
       opacity: 0.6;
       mask-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+      background-color: ${props => props.theme.palette.gray6.hover};
     }
   }
 `;
@@ -53,9 +65,27 @@ const NodeListItem = ({
 	id, name, type, mimeType, updatedAt, size, owner, lastEditor,
 	shareActive, linkActive, flagActive,
 	selectionMode,
+	permissions,
+	toggleFlag,
 }) => {
 	const { navigateTo } = useNavigation();
 	const userInfo = useUserInfo();
+	const [actions, setActions] = useState([]);
+
+	useEffect(() => {
+		const _actions = [];
+		// TODO: change in can_change_flag when BE change API
+		if (permissions) {
+			if (permissions.can_change_star) {
+				_actions.push({
+					id: 'flag-action',
+					icon: flagActive ? 'UnflagOutline' : 'FlagOutline',
+					onClick: () => toggleFlag(!flagActive, id),
+				});
+			}
+		}
+		setActions(_actions);
+	}, [toggleFlag, flagActive, id, permissions]);
 
 	const openNode = () => {
 		if (!selectionMode) {
@@ -101,40 +131,40 @@ const NodeListItem = ({
 				/>
 				<Container
 					orientation="vertical" crossAlignment="flex-start" mainAlignment="space-between"
-					padding={{ horizontal: 'large' }}
+					padding={{ horizontal: 'large' }} minWidth={0}
 				>
 					<Padding vertical="extrasmall">
 						<Text size="large">{name}</Text>
 					</Padding>
-					<Container orientation="horizontal" width="fit" height="fit" padding={{ vertical: 'extrasmall' }}>
+					<Row wrap="nowrap" height="fit" padding={{ vertical: 'extrasmall' }} mainAlignment="flex-start">
 						<CustomText size="large" color="gray1">{mimeType || type}</CustomText>
 						{size &&
 						<Padding horizontal="small">
 							<CustomText size="large" color="gray1">{humanFileSize(size)}</CustomText>
 						</Padding>
 						}
-					</Container>
+					</Row>
 				</Container>
 				<Container
 					orientation="vertical" mainAlignment="space-between" width="fit"
 				>
 					<Container orientation="horizontal" padding={{ vertical: 'extrasmall' }} mainAlignment="flex-end">
-						<Padding left="extrasmall">
-							{
-								flagActive &&
-								<Icon icon="Flag" color="error" data-testid="flag-icon" />
-							}
-						</Padding>
+						{
+							flagActive &&
+							<Padding left="extrasmall">
+								<Icon icon="Flag" color="error" />
+							</Padding>
+						}
 						{
 							linkActive &&
 							<Padding left="extrasmall">
-								<Icon icon="Link2" data-testid="link-icon" />
+								<Icon icon="Link2" />
 							</Padding>
 						}
 						{
 							shareActive &&
 							<Padding left="extrasmall">
-								<Icon icon="Share" data-testid="share-icon" />
+								<Icon icon="Share" />
 							</Padding>
 						}
 						<Padding left="extrasmall">
@@ -147,8 +177,8 @@ const NodeListItem = ({
 					</Container>
 				</Container>
 			</HoverContainer>
-			<HoverBarContainer wrap="nowrap" mainAlignment="flex-end" width="fill">
-				<NodeHoverBar id={id} />
+			<HoverBarContainer wrap="nowrap" mainAlignment="flex-end" width="fill" data-testid={`hoverbar-${id}`}>
+				<NodeHoverBar actions={actions} />
 			</HoverBarContainer>
 			<Divider color="gray3" />
 		</MainContainer>
