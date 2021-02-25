@@ -12,11 +12,13 @@ import { graphql } from 'msw';
 import handleGetChildrenRequest from './handleGetChildrenRequest';
 import handleGetParentsRequest from './handleGetParentsRequest';
 import handleIntrospectionRequest from './handleIntrospectionRequest';
+import handleFlagNodesRequest from './handleFlagNodesRequest';
 
 const handlers = [
-	// graphql.query('getChildren', handleGetChildrenRequest),
-	// graphql.query('getParents', handleGetParentsRequest),
-	// graphql.query('IntrospectionQuery', handleIntrospectionRequest),
+	graphql.query('getChildren', handleGetChildrenRequest),
+	graphql.query('getParents', handleGetParentsRequest),
+	graphql.query('IntrospectionQuery', handleIntrospectionRequest),
+	graphql.mutation('flagNodes', handleFlagNodesRequest),
 ];
 
 export default handlers;

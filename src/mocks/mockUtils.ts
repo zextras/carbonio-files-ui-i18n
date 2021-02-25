@@ -54,21 +54,21 @@ export function populateNode(type?: string, id?: string, name?: string): Node {
 
 export function populateParents(node: Node, limit = 1): Node {
 	let currentNode = node;
-	for (let i=0; i<limit; i+=1) {
+	for (let i = 0; i < limit; i += 1) {
 		currentNode.parent = populateNode('Folder');
-		currentNode = currentNode.parent
+		currentNode = currentNode.parent;
 	}
 	return node;
 }
 
-export function populateFolder(childrenLimit = 0): Folder {
+export function populateFolder(childrenLimit = 0, id?: string, name?: string): Folder {
 	const children: Node[] = [];
 	const folder: Folder = {
-		...populateNode('Folder'),
+		...populateNode('Folder', id, name),
 		children,
 		__typename: 'Folder',
 	};
-	for (let i=0; i<childrenLimit; i+=1) {
+	for (let i = 0; i < childrenLimit; i += 1) {
 		const child = populateNode();
 		child.parent = folder;
 		children.push(child);
@@ -76,9 +76,9 @@ export function populateFolder(childrenLimit = 0): Folder {
 	return folder;
 }
 
-export function populateFile(): File {
+export function populateFile(id?: string, name?: string): File {
 	return {
-		...populateNode('File'),
+		...populateNode('File', id, name),
 		mime_type: faker.system.mimeType(),
 		size: faker.random.number(),
 		version: 1,

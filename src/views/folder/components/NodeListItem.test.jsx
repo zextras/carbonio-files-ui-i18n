@@ -1,20 +1,31 @@
 import React from 'react';
-import { fireEvent, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import { testUtils } from '@zextras/zapp-shell';
 import faker from 'faker';
+import userEvent from '@testing-library/user-event';
 import NodeListItem from '../../../driveCommon/views/folder/components/NodeListItem';
 import { populateFile, populateFolder, populateNode } from '../../../mocks/mockUtils';
 import { formatDate, humanFileSize } from '../../../driveCommon/utils/utils';
 
-// mock useUserInfo data
-const mockedUserLogged = {
-	id: faker.random.uuid(),
-	name: faker.name.findName(),
-};
+let mockedUserLogged;
+let mockedHistory;
+let mockedNavigation;
 
-const mockedHistory = [];
-const mockedNavigation = jest.fn((path) => {
-	mockedHistory.push(path);
+beforeEach(() => {
+	// mock useUserInfo data
+	mockedUserLogged = {
+		id: faker.random.uuid(),
+		name: faker.name.findName(),
+	};
+
+	mockedHistory = [];
+	mockedNavigation = jest.fn((path) => {
+		mockedHistory.push(path);
+	});
+});
+
+afterEach(() => {
+	jest.restoreAllMocks();
 });
 
 jest.mock('../../../hooks/useUserInfo', () => {
@@ -25,14 +36,15 @@ jest.mock('../../../hooks/useUserInfo', () => {
 
 jest.mock('../../../hooks/useNavigation', () => {
 	return jest.fn(() => ({
-		navigateTo: mockedNavigation
+		navigateTo: mockedNavigation,
 	}));
-})
+});
 
 describe('Node List Item', () => {
-// TODO: test events like hover, click/selection, double click
 
-	test('render a node in the list', () => {
+	// TODO: test events like hover, click/selection, double click
+
+	test('render a basic node in the list, logged user is owner and last editor', () => {
 		const node = populateNode();
 		testUtils.render(
 			<NodeListItem
@@ -51,8 +63,6 @@ describe('Node List Item', () => {
 		expect(screen.getByText(node.name)).toBeVisible();
 		expect(screen.getByText(formatDate(node.updated_at))).toBeVisible();
 		expect(screen.queryByText(mockedUserLogged.name)).not.toBeInTheDocument();
-		// TODO fix test, broken after zapp-ui update
-		// expect(screen.queryAllByTestId(/icon/)).toHaveLength(0);
 	});
 
 	test('render a folder item in the list', () => {
@@ -81,12 +91,21 @@ describe('Node List Item', () => {
 				shareActive
 			/>,
 		);
+		expect(screen.getByTestId('icon: Share')).toBeInTheDocument();
+		expect(screen.getByTestId('icon: Share')).toBeVisible();
+	});
 
-		// TODO: toggle share
-		// screen.debug();
-		expect(screen.getByTestId('share-icon')).toBeInTheDocument();
-		expect(screen.getByTestId('share-icon')).toBeVisible();
-
+	test('share icon is not visible if node is not shared', () => {
+		const node = populateNode();
+		testUtils.render(
+			<NodeListItem
+				id={node.id}
+				name={node.name}
+				type={node.type}
+				shareActive={false}
+			/>,
+		);
+		expect(screen.queryByTestId('icon: Share')).not.toBeInTheDocument();
 	});
 
 	test('link icon is visible if node is linked', () => {
@@ -99,12 +118,21 @@ describe('Node List Item', () => {
 				linkActive
 			/>,
 		);
+		expect(screen.getByTestId('icon: Link2')).toBeInTheDocument();
+		expect(screen.getByTestId('icon: Link2')).toBeVisible();
+	});
 
-		// TODO: toggle link
-		// screen.debug();
-		expect(screen.getByTestId('link-icon')).toBeInTheDocument();
-		expect(screen.getByTestId('link-icon')).toBeVisible();
-
+	test('link icon is not visible if node is not linked', () => {
+		const node = populateNode();
+		testUtils.render(
+			<NodeListItem
+				id={node.id}
+				name={node.name}
+				type={node.type}
+				linkActive={false}
+			/>,
+		);
+		expect(screen.queryByTestId('icon: Link2')).not.toBeInTheDocument();
 	});
 
 	test('flag icon is visible if node is flagged', () => {
@@ -117,12 +145,80 @@ describe('Node List Item', () => {
 				flagActive
 			/>,
 		);
+		expect(screen.getByTestId('icon: Flag')).toBeInTheDocument();
+		expect(screen.getByTestId('icon: Flag')).toBeVisible();
+	});
 
-		// TODO: toggle flag
-		// screen.debug();
-		expect(screen.getByTestId('flag-icon')).toBeInTheDocument();
-		expect(screen.getByTestId('flag-icon')).toBeVisible();
+	test('flag icon is not visible if node is not flagged', () => {
+		const node = populateNode();
+		testUtils.render(
+			<NodeListItem
+				id={node.id}
+				name={node.name}
+				type={node.type}
+				flagActive={false}
+			/>,
+		);
+		expect(screen.queryByTestId('icon: Flag')).not.toBeInTheDocument();
+	});
 
+	// TODO: change into can_change_flag when BE change API
+	test('flag action is not visible if node has not permission can_change_star', () => {
+		const node = populateNode();
+		node.permissions.can_change_star = false;
+		testUtils.render(
+			<NodeListItem
+				id={node.id}
+				name={node.name}
+				type={node.type}
+				permissions={node.permissions}
+			/>,
+		);
+		expect(screen.queryByTestId('icon: FlagOutline')).not.toBeInTheDocument();
+	});
+
+	// TODO: change into can_change_flag when BE change API
+	test('flag action is visible if node has permission can_change_star', async () => {
+		const node = populateNode();
+		node.permissions.can_change_star = true;
+		testUtils.render(
+			<NodeListItem
+				id={node.id}
+				name={node.name}
+				type={node.type}
+				permissions={node.permissions}
+			/>,
+		);
+		expect(screen.getByTestId('icon: FlagOutline')).toBeInTheDocument();
+		// TODO: toBeVisible fails but I don't know why
+		// userEvent.hover(screen.getByTestId(node.id));
+		// expect(screen.queryByTestId('icon: FlagOutline')).toBeVisible();
+	});
+
+	test('click on hover flag action changes flag icon visibility', () => {
+		const node = populateNode();
+		// TODO: change into can_change_flag once BE change API
+		node.permissions.can_change_star = true;
+		let flagActive = false;
+		const toggleFlagFunction = jest.fn((flagValue, ...ids) => {
+			if (ids.includes(node.id)) {
+				flagActive = flagValue;
+			}
+		});
+		testUtils.render(
+			<NodeListItem
+				id={node.id}
+				name={node.name}
+				type={node.type}
+				flagActive={flagActive}
+				permissions={node.permissions}
+				toggleFlag={toggleFlagFunction}
+			/>,
+		);
+		expect(screen.queryByTestId('icon: Flag')).not.toBeInTheDocument();
+		userEvent.click(screen.getByTestId('icon: FlagOutline'));
+		expect(toggleFlagFunction).toHaveBeenCalledTimes(1);
+		expect(flagActive).toBeTruthy();
 	});
 
 	test('render a file item in the list', () => {
@@ -136,8 +232,6 @@ describe('Node List Item', () => {
 				mimeType={node.mime_type}
 			/>,
 		);
-
-		// screen.debug();
 		// TODO: check that extension is visible
 		// expect(screen.getByText(node.extension)).toBeVisible();
 		expect(screen.getByText(humanFileSize(node.size))).toBeVisible();
@@ -171,18 +265,35 @@ describe('Node List Item', () => {
 		expect(screen.getByText(node.last_editor.full_name)).toBeVisible();
 	});
 
-	test('double click on a folder activates navigation', async () => {
+	test('double click on a folder activates navigation', () => {
 		const node = populateFolder(0);
 		testUtils.render(
 			<NodeListItem
 				id={node.id}
 				name={node.name}
 				type={node.type}
-			/>
+			/>,
 		);
-		fireEvent.doubleClick(screen.getByTestId(node.id));
+		userEvent.dblClick(screen.getByTestId(node.id));
 		expect(mockedNavigation).toHaveBeenCalledTimes(1);
 		expect(mockedHistory).toContain(node.id);
-		expect(mockedHistory[mockedHistory.length-1]).toBe(node.id);
+		expect(mockedHistory[mockedHistory.length - 1]).toBe(node.id);
 	});
-})
+
+	test('double click on a folder with selection mode active does nothing', () => {
+		const node = populateFolder(0);
+		testUtils.render(
+			<NodeListItem
+				id={node.id}
+				name={node.name}
+				type={node.type}
+				selectionMode
+			/>,
+		);
+		userEvent.dblClick(screen.getByTestId(node.id));
+		expect(mockedNavigation).not.toHaveBeenCalled();
+	});
+
+	// TODO: double click on file open file?
+	// TODO: double click on folder if selection mode is active does not open the folder. Does nothing?
+});

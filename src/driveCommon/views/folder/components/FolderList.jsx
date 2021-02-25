@@ -81,11 +81,9 @@ const FolderList = ({ folderId }) => {
 		<Container mainAlignment="flex-start" crossAlignment="flex-start" data-testid={folderId}>
 			<ListHeader folderId={folderId} loadingData={loading} />
 			{error && <p>Error: {error.message}</p>}
-			{data &&
 			<Container crossAlignment="flex-start" mainAlignment="flex-start">
 				{data?.getNode?.children?.length > 0 ? itemFactory() : <EmptyFolder />}
 			</Container>
-			}
 		</Container>
 	);
 };
