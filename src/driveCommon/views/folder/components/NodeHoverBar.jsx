@@ -15,8 +15,8 @@ import { map } from 'lodash';
 
 const NodeHoverBar = ({ actions }) => {
 	return actions && actions.length > 0 ?
-		map(actions, (action, index) => (
-			<IconButton icon={action.icon} onClick={action.onClick} key={index} />
+		map(actions, (action) => (
+			<IconButton icon={action.icon} onClick={action.onClick} key={action.id} />
 		)) : null;
 }
 
