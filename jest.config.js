@@ -1,6 +1,7 @@
 module.exports = {
 	transform: {
-		"^.+\\.[t|j]sx?$": ['babel-jest', { configFile: './babel.config.jest.js' }]
+		"^.+\\.[t|j]sx?$": ['babel-jest', { configFile: './babel.config.jest.js' }],
+		'\\.(gql|graphql)$': "jest-transform-graphql",
 	},
 	moduleDirectories: [
 		'node_modules',

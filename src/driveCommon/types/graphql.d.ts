@@ -1,6 +1,6 @@
 /*
  * *** BEGIN LICENSE BLOCK *****
- * Copyright (C) 2011-2020 ZeXtras
+ * Copyright (C) 2011-2021 Zextras
  *
  * The contents of this file are subject to the ZeXtras EULA;
  * you may not use this file except in compliance with the EULA.
@@ -9,13 +9,11 @@
  * *** END LICENSE BLOCK *****
  */
 
-import React from 'react';
-import { Container } from '@zextras/zapp-ui';
+import { DocumentNode } from 'graphql';
 
-const EmptyFolder = () => (
-	<Container>
-		EMPTY FOLDER PLACEHOLDER
-	</Container>
-);
+declare module '*.graphql' {
 
-export default EmptyFolder;
+	const Schema: DocumentNode;
+
+	export = Schema
+}

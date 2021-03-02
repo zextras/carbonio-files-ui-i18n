@@ -37,33 +37,7 @@ const ListHeader = ({ folderId, loadingData, selecting }) => {
 		},
 	});
 	const [crumbs, setCrumbs] = useState([]);
-	const [actions, setActions] = useState([]);
 	const { navigateTo } = useNavigation();
-
-	useEffect(() => {
-		// TODO think which component should set these actions, since they change base on permissions, area (trash or home), number and type of node selected
-		const activeActions = [
-			{
-				id: 'share',
-				icon: 'Share',
-				label: 'Share',
-				onActivate: console.log,
-			},
-			{
-				id: 'edit',
-				icon: 'Edit2Outline',
-				label: 'Edit',
-				onActivate: console.log,
-			},
-			{
-				id: 'delete',
-				icon: 'Trash2Outline',
-				label: 'Delete',
-				onActivate: console.log,
-			},
-		];
-		setActions(activeActions);
-	}, []);
 
 	useEffect(() => {
 		let breadcrumbs = [];
@@ -77,15 +51,17 @@ const ListHeader = ({ folderId, loadingData, selecting }) => {
 		<>
 			<Row
 				height={48} background="gray5" mainAlignment="space-between"
-				padding={{ vertical: 'medium', horizontal: 'large' }}
+				padding={{ vertical: 'medium' }}
 				wrap="nowrap" width="fill"
 			>
 				{
 					!loading && !error && data &&
 					<Breadcrumbs crumbs={crumbs} />
 				}
-				{loadingData && <LoadingIcon icon="Refresh" color="primary" size="large" />}
-				<IconButton icon="FunnelOutline" size="large" />
+				<Row mainAlignment="flex-end" wrap="nowrap" flexGrow="1">
+					{loadingData && <LoadingIcon icon="Refresh" color="primary" size="large" />}
+					<IconButton icon="FunnelOutline" size="large" />
+				</Row>
 			</Row>
 			<Divider color="gray3" />
 		</>

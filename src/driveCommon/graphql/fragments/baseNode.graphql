@@ -1,24 +1,14 @@
+#import "./permissions.graphql"
+
 fragment BaseNode on Node {
     id
     name
     type
-    permissions {
-        can_rename
-        can_move
-        can_copy
-        can_upload
-        can_delete
-        can_mark_for_deletion
-        can_change_star
-        can_add_version
-        can_read_link
-        can_change_link
-        can_share
-        can_read_share
-        can_change_share
-    }
+    ...Permissions
     ... on File {
         size
         mime_type
     }
+    # TODO: change into flagged when BE modify the API
+    starred
 }
