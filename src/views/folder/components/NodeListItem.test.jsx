@@ -3,9 +3,9 @@ import { screen } from '@testing-library/react';
 import { testUtils } from '@zextras/zapp-shell';
 import faker from 'faker';
 import userEvent from '@testing-library/user-event';
-import NodeListItem from '../../../driveCommon/views/folder/components/NodeListItem';
+import NodeListItem from '../../../commonDrive/views/folder/components/NodeListItem';
 import { populateFile, populateFolder, populateNode } from '../../../mocks/mockUtils';
-import { formatDate, humanFileSize } from '../../../driveCommon/utils/utils';
+import { formatDate, humanFileSize } from '../../../commonDrive/utils/utils';
 
 let mockedUserLogged;
 let mockedHistory;

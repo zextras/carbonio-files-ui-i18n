@@ -1,3 +1,0 @@
-mutation flagNodes($nodes_ids: [ID!], $flag: Boolean!) {
-    starNodes(nodes_ids: $nodes_ids, star: $flag)
-}

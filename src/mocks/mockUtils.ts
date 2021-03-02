@@ -1,5 +1,5 @@
 import faker from 'faker';
-import { File, Folder, Node, NodeSort, Permissions, User } from '../driveCommon/graphql/types';
+import { File, Folder, Node, NodeSort, Permissions, User } from '../commonDrive/graphql/types';
 
 export function populateUser(): User {
 	return {
