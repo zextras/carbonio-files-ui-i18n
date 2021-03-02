@@ -1,0 +1,14 @@
+#import "./permissions.graphql"
+
+fragment BaseNode on Node {
+    id
+    name
+    type
+    ...Permissions
+    ... on File {
+        size
+        mime_type
+    }
+    # TODO: change into flagged when BE modify the API
+    starred
+}
