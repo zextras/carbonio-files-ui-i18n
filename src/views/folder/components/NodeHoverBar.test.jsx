@@ -11,7 +11,7 @@
 import React from 'react';
 import { testUtils } from '@zextras/zapp-shell';
 import { fireEvent, screen } from '@testing-library/react';
-import NodeHoverBar from '../../../driveCommon/views/folder/components/NodeHoverBar';
+import NodeHoverBar from '../../../commonDrive/views/folder/components/NodeHoverBar';
 
 describe('Node Hover Bar', () => {
 	test('render nothing if no actions are provided', () => {

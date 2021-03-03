@@ -1,4 +1,0 @@
-fragment BaseParent on Node {
-    id
-    name
-}

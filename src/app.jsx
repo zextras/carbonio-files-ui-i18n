@@ -13,7 +13,7 @@ import React, { lazy, useEffect } from 'react';
 import { setCreateOptions, setRoutes } from '@zextras/zapp-shell';
 import { SetMainMenuItems } from './views/secondary-bar/SetMainMenuItem';
 
-const lazyFolderView = lazy(() => import(/* webpackChunkName: "folderView" */ './driveCommon/views/folder/FolderView'));
+const lazyFolderView = lazy(() => import(/* webpackChunkName: "folderView" */ './commonDrive/views/folder/FolderView'));
 
 export default function App() {
 	console.log('Hello from zapp-drive');

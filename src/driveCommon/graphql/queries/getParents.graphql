@@ -1,7 +1,0 @@
-#import "../fragments/parents.graphql"
-
-query getParents($id: ID!) {
-    getNode(id: $id) {
-        ...Parents
-    }
-}
