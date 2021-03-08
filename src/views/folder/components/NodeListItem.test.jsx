@@ -162,10 +162,9 @@ describe('Node List Item', () => {
 		expect(screen.queryByTestId('icon: Flag')).not.toBeInTheDocument();
 	});
 
-	// TODO: change into can_change_flag when BE change API
-	test('flag action is not visible if node has not permission can_change_star', () => {
+	test('flag action is not visible if node has not permission can_change_flag', () => {
 		const node = populateNode();
-		node.permissions.can_change_star = false;
+		node.permissions.can_change_flag = false;
 		testUtils.render(
 			<NodeListItem
 				id={node.id}
@@ -177,10 +176,9 @@ describe('Node List Item', () => {
 		expect(screen.queryByTestId('icon: FlagOutline')).not.toBeInTheDocument();
 	});
 
-	// TODO: change into can_change_flag when BE change API
-	test('flag action is visible if node has permission can_change_star', async () => {
+	test('flag action is visible if node has permission can_change_flag', async () => {
 		const node = populateNode();
-		node.permissions.can_change_star = true;
+		node.permissions.can_change_flag = true;
 		testUtils.render(
 			<NodeListItem
 				id={node.id}
@@ -197,8 +195,7 @@ describe('Node List Item', () => {
 
 	test('click on hover flag action changes flag icon visibility', () => {
 		const node = populateNode();
-		// TODO: change into can_change_flag once BE change API
-		node.permissions.can_change_star = true;
+		node.permissions.can_change_flag = true;
 		let flagActive = false;
 		const toggleFlagFunction = jest.fn((flagValue, ...ids) => {
 			if (ids.includes(node.id)) {
