@@ -14,8 +14,7 @@ export default function handleFlagNodesRequest(req, res, ctx) {
 	if (ids) {
 	// TODO: handle case where one request fails
 		return ctx.data({
-			// TODO: change into flagNodes when BE change API
-			starNodes: ids,
+			flagNodes: ids,
 		});
 	}
 	return ctx.errors({
