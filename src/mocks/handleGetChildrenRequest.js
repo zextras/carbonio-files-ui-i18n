@@ -9,32 +9,17 @@ export default function handleGetChildrenRequest(req, res, ctx) {
 		parentNodeName = 'ROOT';
 	}
 
-	const children = [];
 	const childrenNum = faker.random.number({ min: 0, max: childrenLimit });
-	for (let i = 0; i < childrenNum; i += 1) {
-		const type = faker.random.arrayElement(['Folder', 'File']);
-		let node;
-		if (type === 'File') {
-			node = populateFile();
-		}
-		else if (type === 'Folder') {
-			node = populateFolder();
-		}
 
-		children.push(node);
-	}
+	const folder = populateFolder(childrenNum, parentNode, parentNodeName);
+
 	if (sorts) {
-		sortNodes(children, sorts);
+		sortNodes(folder.children, sorts);
 	}
 
 	return res(
 		ctx.data({
-			getNode: {
-				id: parentNode,
-				name: parentNodeName,
-				children,
-				__typename: 'Folder',
-			},
+			getNode: folder,
 		}),
 	)
 }

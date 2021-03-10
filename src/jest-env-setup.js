@@ -19,6 +19,8 @@ beforeEach(() => {
 });
 beforeAll(() => {
 	server.listen();
+
+	// define browser objects non available in jest
 	// https://jestjs.io/docs/en/manual-mocks#mocking-methods-which-are-not-implemented-in-jsdom
 	Object.defineProperty(window, 'matchMedia', {
 		writable: true,
@@ -31,9 +33,10 @@ beforeAll(() => {
 			addEventListener: jest.fn(),
 			removeEventListener: jest.fn(),
 			dispatchEvent: jest.fn(),
-		}))
+		})),
 	});
 });
+
 afterAll(() => server.close());
 afterEach(() => {
 	// server.resetHandlers();

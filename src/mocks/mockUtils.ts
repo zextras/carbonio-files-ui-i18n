@@ -1,4 +1,5 @@
 import faker from 'faker';
+import { Maybe } from 'graphql/jsutils/Maybe';
 import { File, Folder, Node, NodeSort, Permissions, User } from '../commonDrive/graphql/types';
 
 export function populateUser(): User {
@@ -30,7 +31,7 @@ export function populatePermissions(): Permissions {
 	};
 }
 
-export function populateNode(type?: string, id?: string, name?: string): Node {
+function populateNodeFields(type?: string, id?: string, name?: string): Node {
 	const nodeType = type || faker.random.arrayElement(['Folder', 'File']);
 	return {
 		id: id || faker.random.uuid(),
@@ -52,33 +53,55 @@ export function populateNode(type?: string, id?: string, name?: string): Node {
 	};
 }
 
-export function populateParents(node: Node, limit = 1): Node {
-	let currentNode = node;
-	for (let i = 0; i < limit; i += 1) {
-		currentNode.parent = populateNode('Folder');
-		currentNode = currentNode.parent;
+export function getRandomNodeType() {
+	const types = ['File', 'Folder'];
+	return types[Math.floor(Math.random() * types.length)];
+}
+
+export function populateNode(type?: string, id?: string, name?: string): File | Folder {
+	let __typename = type;
+	if (!__typename) {
+		__typename = getRandomNodeType();
 	}
-	return node;
+
+	switch (__typename) {
+		case 'File':
+			// eslint-disable-next-line @typescript-eslint/no-use-before-define
+			return populateFile(id, name);
+		case 'Folder':
+			// eslint-disable-next-line @typescript-eslint/no-use-before-define
+			return populateFolder(0, id, name);
+		default:
+			throw new TypeError(`${__typename} is not a valid type`);
+	}
 }
 
 export function populateFolder(childrenLimit = 0, id?: string, name?: string): Folder {
 	const children: Node[] = [];
 	const folder: Folder = {
-		...populateNode('Folder', id, name),
+		...populateNodeFields('Folder', id, name),
 		children,
 		__typename: 'Folder',
 	};
 	for (let i = 0; i < childrenLimit; i += 1) {
 		const child = populateNode();
-		child.parent = folder;
 		children.push(child);
 	}
 	return folder;
 }
 
+export function populateParents(node: Node, limit = 1): Node {
+	let currentNode = node;
+	for (let i = 0; i < limit; i += 1) {
+		currentNode.parent = populateFolder();
+		currentNode = currentNode.parent;
+	}
+	return node;
+}
+
 export function populateFile(id?: string, name?: string): File {
 	return {
-		...populateNode('File', id, name),
+		...populateNodeFields('File', id, name),
 		mime_type: faker.system.mimeType(),
 		size: faker.random.number(),
 		version: 1,
@@ -100,7 +123,7 @@ function propertyComparator(a: any, b: any, property: string): number {
 	return a[property] < b[property] ? -1 : 1;
 }
 
-export function sortNodes(nodes: Node[], sorts: NodeSort): void {
+export function sortNodes(nodes: Array<Maybe<Node>>, sorts: NodeSort): void {
 	nodes.sort((a, b) => {
 		let result = 0;
 		let i = 0;
@@ -125,11 +148,11 @@ export function sortNodes(nodes: Node[], sorts: NodeSort): void {
 					result = propertyComparator(b, a, 'name');
 					break;
 				case NodeSort.OwnerAsc:
-					if (a.owner != null || b.owner != null) {
-						if (a.owner == null) {
+					if ((a != null && a.owner != null) || (b!= null && b.owner != null)) {
+						if (a == null || a.owner == null) {
 							result = -1;
 						}
-						else if (b.owner == null) {
+						else if (b == null || b.owner == null) {
 							result = 1;
 						}
 						else {
@@ -138,11 +161,11 @@ export function sortNodes(nodes: Node[], sorts: NodeSort): void {
 					}
 					break;
 				case NodeSort.OwnerDesc:
-					if (a.owner != null || b.owner != null) {
-						if (a.owner == null) {
+					if ((a != null && a.owner != null) || (b != null && b.owner != null)) {
+						if (a == null || a.owner == null) {
 							result = 1;
 						}
-						else if (b.owner == null) {
+						else if (b == null || b.owner == null) {
 							result = -1;
 						}
 						else {
