@@ -19,7 +19,7 @@ const useNavigation: () => {
 	const replaceHistory = hooks.useReplaceHistoryCallback();
 
 	const navigateTo: (id: string) => void = useCallback((id) => {
-		replaceHistory(`/?to=${id}`);
+		replaceHistory(`/?folder=${id}`);
 	}, [replaceHistory]);
 
 	return {

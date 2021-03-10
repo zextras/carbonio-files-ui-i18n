@@ -22,12 +22,13 @@ export default function App() {
 
 		setRoutes([
 			{
-				route: '/:folderId',
-				view: lazyFolderView,
-			}, {
-				route: '/',
+				route: '/root/:rootId',
 				view: lazyFolderView,
 			},
+			{
+				route: '/',
+				view: lazyFolderView,
+			}
 		]);
 
 		setCreateOptions([{

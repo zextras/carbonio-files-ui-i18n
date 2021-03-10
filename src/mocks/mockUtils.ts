@@ -53,7 +53,7 @@ function populateNodeFields(type?: string, id?: string, name?: string): Node {
 	};
 }
 
-export function getRandomNodeType() {
+export function getRandomNodeType(): string {
 	const types = ['File', 'Folder'];
 	return types[Math.floor(Math.random() * types.length)];
 }

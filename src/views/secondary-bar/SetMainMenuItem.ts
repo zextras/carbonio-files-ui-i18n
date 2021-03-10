@@ -25,7 +25,7 @@ function useSetMainMenuItems(): void {
 			},
 			{
 				id: 'TEAM_ROOT',
-				to: '/team',
+				to: '/root/team',
 				label: 'Team',
 			}],
 		}]);
