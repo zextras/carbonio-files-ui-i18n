@@ -7,7 +7,7 @@ export function populateUser(): User {
 		id: faker.random.uuid(),
 		email: faker.internet.exampleEmail(),
 		full_name: faker.name.findName(),
-		__typename: 'User',
+		__typename: 'User'
 	};
 }
 
@@ -27,7 +27,9 @@ export function populatePermissions(): Permissions {
 		can_share: faker.random.boolean(),
 		can_read_share: faker.random.boolean(),
 		can_change_share: faker.random.boolean(),
-		__typename: 'Permissions',
+		can_write_folder: faker.random.boolean(),
+		can_write_file: faker.random.boolean(),
+		__typename: 'Permissions'
 	};
 }
 
@@ -49,7 +51,7 @@ function populateNodeFields(type?: string, id?: string, name?: string): Node {
 		parent: null,
 		share: null,
 		shares: [],
-		link: null,
+		link: null
 	};
 }
 
@@ -81,7 +83,7 @@ export function populateFolder(childrenLimit = 0, id?: string, name?: string): F
 	const folder: Folder = {
 		...populateNodeFields('Folder', id, name),
 		children,
-		__typename: 'Folder',
+		__typename: 'Folder'
 	};
 	for (let i = 0; i < childrenLimit; i += 1) {
 		const child = populateNode();
@@ -106,7 +108,7 @@ export function populateFile(id?: string, name?: string): File {
 		size: faker.random.number(),
 		version: 1,
 		parent: populateFolder(),
-		__typename: 'File',
+		__typename: 'File'
 	};
 }
 
@@ -148,14 +150,12 @@ export function sortNodes(nodes: Array<Maybe<Node>>, sorts: NodeSort): void {
 					result = propertyComparator(b, a, 'name');
 					break;
 				case NodeSort.OwnerAsc:
-					if ((a != null && a.owner != null) || (b!= null && b.owner != null)) {
+					if ((a != null && a.owner != null) || (b != null && b.owner != null)) {
 						if (a == null || a.owner == null) {
 							result = -1;
-						}
-						else if (b == null || b.owner == null) {
+						} else if (b == null || b.owner == null) {
 							result = 1;
-						}
-						else {
+						} else {
 							result = propertyComparator(a.owner, b.owner, 'full_name');
 						}
 					}
@@ -164,11 +164,9 @@ export function sortNodes(nodes: Array<Maybe<Node>>, sorts: NodeSort): void {
 					if ((a != null && a.owner != null) || (b != null && b.owner != null)) {
 						if (a == null || a.owner == null) {
 							result = 1;
-						}
-						else if (b == null || b.owner == null) {
+						} else if (b == null || b.owner == null) {
 							result = -1;
-						}
-						else {
+						} else {
 							result = propertyComparator(b.owner, a.owner, 'full_name');
 						}
 					}
@@ -194,5 +192,3 @@ export function sortNodes(nodes: Array<Maybe<Node>>, sorts: NodeSort): void {
 		return result;
 	});
 }
-
-
