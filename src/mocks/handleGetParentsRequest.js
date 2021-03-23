@@ -7,8 +7,8 @@ export default function handleGetParentsRequest(req, res, ctx) {
 		id: 'LOCAL_ROOT',
 		name: 'ROOT',
 		parent: null,
-		__typename: 'Folder',
-	}
+		__typename: 'Folder'
+	};
 
 	if (id !== 'LOCAL_ROOT') {
 		for (let i = 0; i < faker.random.number({ min: 0, max: 20 }); i += 1) {
@@ -16,7 +16,7 @@ export default function handleGetParentsRequest(req, res, ctx) {
 				id: faker.random.uuid(),
 				name: faker.random.words(),
 				parent: lastNode,
-				__typename: 'Folder',
+				__typename: 'Folder'
 			};
 		}
 	}
@@ -25,7 +25,7 @@ export default function handleGetParentsRequest(req, res, ctx) {
 
 	return res(
 		ctx.data({
-			getNode: lastNode,
-		}));
-
+			getNode: lastNode
+		})
+	);
 }

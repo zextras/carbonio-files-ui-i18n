@@ -23,19 +23,20 @@ describe('Node Hover Bar', () => {
 		const action1Fn = jest.fn();
 		const action2Fn = jest.fn();
 
-		const actions = [{
-			id: 'action1',
-			icon: 'action1Icon',
-			onClick: action1Fn,
-		}, {
-			id: 'action2',
-			icon: 'action2Icon',
-			onClick: action2Fn,
-		}];
+		const actions = [
+			{
+				id: 'action1',
+				icon: 'action1Icon',
+				onClick: action1Fn
+			},
+			{
+				id: 'action2',
+				icon: 'action2Icon',
+				onClick: action2Fn
+			}
+		];
 
-		testUtils.render(
-			<NodeHoverBar actions={actions} />,
-		);
+		testUtils.render(<NodeHoverBar actions={actions} />);
 		expect(screen.getByTestId('icon: action1Icon')).toBeInTheDocument();
 		expect(screen.getByTestId('icon: action1Icon')).toBeVisible();
 		expect(screen.getByTestId('icon: action2Icon')).toBeInTheDocument();
@@ -47,4 +48,4 @@ describe('Node Hover Bar', () => {
 		expect(action1Fn).toHaveBeenCalledTimes(1);
 		expect(action2Fn).toHaveBeenCalledTimes(1);
 	});
-})
+});

@@ -13,35 +13,36 @@ import React, { lazy, useEffect } from 'react';
 import { setCreateOptions, setRoutes } from '@zextras/zapp-shell';
 import { SetMainMenuItems } from './views/secondary-bar/SetMainMenuItem';
 
-const lazyFolderView = lazy(() => import(/* webpackChunkName: "folderView" */ './commonDrive/views/folder/FolderView'));
+const lazyFolderView = lazy(() =>
+	import(/* webpackChunkName: "folderView" */ './commonDrive/views/folder/FolderView')
+);
 
 export default function App() {
+	// eslint-disable-next-line no-console
 	console.log('Hello from zapp-drive');
 
 	useEffect(() => {
-
 		setRoutes([
 			{
 				route: '/root/:rootId',
-				view: lazyFolderView,
+				view: lazyFolderView
 			},
 			{
 				route: '/',
-				view: lazyFolderView,
+				view: lazyFolderView
 			}
 		]);
 
-		setCreateOptions([{
-			id: 'create-folder',
-			label: 'New Folder',
-			app: {
-				path: window.top.location.pathname /* TODO manage node creation */
+		setCreateOptions([
+			{
+				id: 'create-folder',
+				label: 'New Folder',
+				app: {
+					path: window.top.location.pathname /* TODO manage node creation */
+				}
 			}
-		}]);
-
+		]);
 	}, []);
 
-	return (
-		<SetMainMenuItems />
-	);
+	return <SetMainMenuItems />;
 }

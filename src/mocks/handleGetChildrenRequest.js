@@ -19,7 +19,7 @@ export default function handleGetChildrenRequest(req, res, ctx) {
 
 	return res(
 		ctx.data({
-			getNode: folder,
-		}),
-	)
+			getNode: folder
+		})
+	);
 }

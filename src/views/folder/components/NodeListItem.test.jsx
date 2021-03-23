@@ -15,7 +15,7 @@ beforeEach(() => {
 	// mock useUserInfo data
 	mockedUserLogged = {
 		id: faker.random.uuid(),
-		name: faker.name.findName(),
+		name: faker.name.findName()
 	};
 
 	mockedHistory = [];
@@ -28,20 +28,19 @@ afterEach(() => {
 	jest.restoreAllMocks();
 });
 
-jest.mock('../../../hooks/useUserInfo', () => {
-	return jest.fn(() => ({
-		me: mockedUserLogged.id,
-	}));
-});
+jest.mock('../../../hooks/useUserInfo', () =>
+	jest.fn(() => ({
+		me: mockedUserLogged.id
+	}))
+);
 
-jest.mock('../../../hooks/useNavigation', () => {
-	return jest.fn(() => ({
-		navigateTo: mockedNavigation,
-	}));
-});
+jest.mock('../../../hooks/useNavigation', () =>
+	jest.fn(() => ({
+		navigateTo: mockedNavigation
+	}))
+);
 
 describe('Node List Item', () => {
-
 	// TODO: test events like hover, click/selection, double click
 
 	test('render a basic node in the list, logged user is owner and last editor', () => {
@@ -54,7 +53,7 @@ describe('Node List Item', () => {
 				updatedAt={node.updated_at}
 				owner={mockedUserLogged}
 				lastEditor={mockedUserLogged}
-			/>,
+			/>
 		);
 
 		expect(screen.getByTestId(node.id)).toBeInTheDocument();
@@ -74,23 +73,15 @@ describe('Node List Item', () => {
 				type={node.type}
 				updatedAt={node.updated_at}
 				owner={node.owner}
-			/>,
+			/>
 		);
 		// screen.debug();
 		expect(screen.getByTestId(node.id)).toHaveTextContent('Folder');
-
 	});
 
 	test('share icon is visible if node is shared', () => {
 		const node = populateNode();
-		testUtils.render(
-			<NodeListItem
-				id={node.id}
-				name={node.name}
-				type={node.type}
-				shareActive
-			/>,
-		);
+		testUtils.render(<NodeListItem id={node.id} name={node.name} type={node.type} shareActive />);
 		expect(screen.getByTestId('icon: Share')).toBeInTheDocument();
 		expect(screen.getByTestId('icon: Share')).toBeVisible();
 	});
@@ -98,26 +89,14 @@ describe('Node List Item', () => {
 	test('share icon is not visible if node is not shared', () => {
 		const node = populateNode();
 		testUtils.render(
-			<NodeListItem
-				id={node.id}
-				name={node.name}
-				type={node.type}
-				shareActive={false}
-			/>,
+			<NodeListItem id={node.id} name={node.name} type={node.type} shareActive={false} />
 		);
 		expect(screen.queryByTestId('icon: Share')).not.toBeInTheDocument();
 	});
 
 	test('link icon is visible if node is linked', () => {
 		const node = populateNode();
-		testUtils.render(
-			<NodeListItem
-				id={node.id}
-				name={node.name}
-				type={node.type}
-				linkActive
-			/>,
-		);
+		testUtils.render(<NodeListItem id={node.id} name={node.name} type={node.type} linkActive />);
 		expect(screen.getByTestId('icon: Link2')).toBeInTheDocument();
 		expect(screen.getByTestId('icon: Link2')).toBeVisible();
 	});
@@ -125,26 +104,14 @@ describe('Node List Item', () => {
 	test('link icon is not visible if node is not linked', () => {
 		const node = populateNode();
 		testUtils.render(
-			<NodeListItem
-				id={node.id}
-				name={node.name}
-				type={node.type}
-				linkActive={false}
-			/>,
+			<NodeListItem id={node.id} name={node.name} type={node.type} linkActive={false} />
 		);
 		expect(screen.queryByTestId('icon: Link2')).not.toBeInTheDocument();
 	});
 
 	test('flag icon is visible if node is flagged', () => {
 		const node = populateNode();
-		testUtils.render(
-			<NodeListItem
-				id={node.id}
-				name={node.name}
-				type={node.type}
-				flagActive
-			/>,
-		);
+		testUtils.render(<NodeListItem id={node.id} name={node.name} type={node.type} flagActive />);
 		expect(screen.getByTestId('icon: Flag')).toBeInTheDocument();
 		expect(screen.getByTestId('icon: Flag')).toBeVisible();
 	});
@@ -152,12 +119,7 @@ describe('Node List Item', () => {
 	test('flag icon is not visible if node is not flagged', () => {
 		const node = populateNode();
 		testUtils.render(
-			<NodeListItem
-				id={node.id}
-				name={node.name}
-				type={node.type}
-				flagActive={false}
-			/>,
+			<NodeListItem id={node.id} name={node.name} type={node.type} flagActive={false} />
 		);
 		expect(screen.queryByTestId('icon: Flag')).not.toBeInTheDocument();
 	});
@@ -166,12 +128,7 @@ describe('Node List Item', () => {
 		const node = populateNode();
 		node.permissions.can_change_flag = false;
 		testUtils.render(
-			<NodeListItem
-				id={node.id}
-				name={node.name}
-				type={node.type}
-				permissions={node.permissions}
-			/>,
+			<NodeListItem id={node.id} name={node.name} type={node.type} permissions={node.permissions} />
 		);
 		expect(screen.queryByTestId('icon: FlagOutline')).not.toBeInTheDocument();
 	});
@@ -180,12 +137,7 @@ describe('Node List Item', () => {
 		const node = populateNode();
 		node.permissions.can_change_flag = true;
 		testUtils.render(
-			<NodeListItem
-				id={node.id}
-				name={node.name}
-				type={node.type}
-				permissions={node.permissions}
-			/>,
+			<NodeListItem id={node.id} name={node.name} type={node.type} permissions={node.permissions} />
 		);
 		expect(screen.getByTestId('icon: FlagOutline')).toBeInTheDocument();
 		// TODO: toBeVisible fails but I don't know why
@@ -210,7 +162,7 @@ describe('Node List Item', () => {
 				flagActive={flagActive}
 				permissions={node.permissions}
 				toggleFlag={toggleFlagFunction}
-			/>,
+			/>
 		);
 		expect(screen.queryByTestId('icon: Flag')).not.toBeInTheDocument();
 		userEvent.click(screen.getByTestId('icon: FlagOutline'));
@@ -227,7 +179,7 @@ describe('Node List Item', () => {
 				type={node.type}
 				size={node.size}
 				mimeType={node.mime_type}
-			/>,
+			/>
 		);
 		// TODO: check that extension is visible
 		// expect(screen.getByText(node.extension)).toBeVisible();
@@ -237,12 +189,7 @@ describe('Node List Item', () => {
 	test('owner is visible if different from logged user', () => {
 		const node = populateNode();
 		testUtils.render(
-			<NodeListItem
-				id={node.id}
-				name={node.name}
-				type={node.type}
-				owner={node.owner}
-			/>,
+			<NodeListItem id={node.id} name={node.name} type={node.type} owner={node.owner} />
 		);
 		expect(screen.getByText(node.owner.full_name)).toBeVisible();
 	});
@@ -257,20 +204,14 @@ describe('Node List Item', () => {
 				owner={mockedUserLogged}
 				lastEditor={node.last_editor}
 				shareActive
-			/>,
+			/>
 		);
 		expect(screen.getByText(node.last_editor.full_name)).toBeVisible();
 	});
 
 	test('double click on a folder activates navigation', () => {
 		const node = populateFolder(0);
-		testUtils.render(
-			<NodeListItem
-				id={node.id}
-				name={node.name}
-				type={node.type}
-			/>,
-		);
+		testUtils.render(<NodeListItem id={node.id} name={node.name} type={node.type} />);
 		userEvent.dblClick(screen.getByTestId(node.id));
 		expect(mockedNavigation).toHaveBeenCalledTimes(1);
 		expect(mockedHistory).toContain(node.id);
@@ -279,14 +220,7 @@ describe('Node List Item', () => {
 
 	test('double click on a folder with selection mode active does nothing', () => {
 		const node = populateFolder(0);
-		testUtils.render(
-			<NodeListItem
-				id={node.id}
-				name={node.name}
-				type={node.type}
-				selectionMode
-			/>,
-		);
+		testUtils.render(<NodeListItem id={node.id} name={node.name} type={node.type} selectionMode />);
 		userEvent.dblClick(screen.getByTestId(node.id));
 		expect(mockedNavigation).not.toHaveBeenCalled();
 	});

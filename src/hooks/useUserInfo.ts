@@ -5,8 +5,8 @@ const useUserInfo: () => { me: string } = () => {
 	const userAccounts = hooks.useUserAccounts();
 
 	return {
-		me: userAccounts[0].id,
-	}
-}
+		me: userAccounts[0].id
+	};
+};
 
 export default useUserInfo;

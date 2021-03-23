@@ -44,8 +44,8 @@ beforeAll(() => {
 			}),
 			disconnect: jest.fn(() => {
 				intersectionObserverEntries.splice(0, intersectionObserverEntries.length);
-			}),
-		})),
+			})
+		}))
 	});
 });
 
@@ -53,7 +53,7 @@ beforeEach(() => {
 	// mock useUserInfo data
 	mockedUserLogged = {
 		id: faker.random.uuid(),
-		name: faker.name.findName(),
+		name: faker.name.findName()
 	};
 	// reset the cache of apollo
 	apolloClient.cache.reset();
@@ -63,33 +63,33 @@ afterEach(() => {
 	jest.restoreAllMocks();
 });
 
-jest.mock('../../../hooks/useUserInfo', () => {
-	return jest.fn(() => ({
-		me: mockedUserLogged.id,
-	}));
-});
-
+jest.mock('../../../hooks/useUserInfo', () =>
+	jest.fn(() => ({
+		me: mockedUserLogged.id
+	}))
+);
 
 describe('Folder List', () => {
-
 	// TODO: define better this behavior with error handling
 	test('access to a folder with network error response show an error page', async () => {
 		const currentFolder = populateFolder();
-		const mocks = [{
-			request: {
-				query: getChildren,
-				variables: {
-					parentNode: currentFolder.id,
-					childrenLimit: NODES_LOAD_LIMIT,
-					sorts: ['TYPE_ASC', 'NODE_ASC'],
+		const mocks = [
+			{
+				request: {
+					query: getChildren,
+					variables: {
+						parentNode: currentFolder.id,
+						childrenLimit: NODES_LOAD_LIMIT,
+						sorts: ['TYPE_ASC', 'NODE_ASC']
+					}
 				},
-			},
-			error: new Error('An error occurred'),
-		}];
+				error: new Error('An error occurred')
+			}
+		];
 		testUtils.render(
 			<MockedProvider mocks={mocks} cache={apolloClient.cache}>
 				<FolderList folderId={currentFolder.id} />
-			</MockedProvider>,
+			</MockedProvider>
 		);
 
 		await waitForElementToBeRemoved(() => screen.queryByTestId('icon: Refresh'));
@@ -108,7 +108,7 @@ describe('Folder List', () => {
 		testUtils.render(
 			<ApolloProvider client={apolloClient}>
 				<FolderList folderId={currentFolder.id} />
-			</ApolloProvider>,
+			</ApolloProvider>
 		);
 		expect(screen.getByTestId('icon: Refresh')).toBeVisible();
 		await waitForElementToBeRemoved(() => screen.queryByTestId('icon: Refresh'));
@@ -119,10 +119,10 @@ describe('Folder List', () => {
 			variables: {
 				parentNode: currentFolder.id,
 				childrenLimit: NODES_LOAD_LIMIT,
-				sorts: ['TYPE_ASC', 'NAME_ASC'],
-			},
+				sorts: ['TYPE_ASC', 'NAME_ASC']
+			}
 		});
-		forEach(getNode.children, child => {
+		forEach(getNode.children, (child) => {
 			expect(screen.getByTestId(child.id)).toBeInTheDocument();
 			expect(screen.getByTestId(child.id)).toHaveTextContent(child.name);
 		});
@@ -140,36 +140,37 @@ describe('Folder List', () => {
 					variables: {
 						parentNode: currentFolder.id,
 						childrenLimit: NODES_LOAD_LIMIT,
-						sorts: ['TYPE_ASC', 'NAME_ASC'],
-					},
+						sorts: ['TYPE_ASC', 'NAME_ASC']
+					}
 				},
 				result: {
 					data: {
 						getNode: {
 							...currentFolder,
-							children: currentFolder.children.slice(0, NODES_LOAD_LIMIT),
-						},
-					},
-				},
-			}, {
+							children: currentFolder.children.slice(0, NODES_LOAD_LIMIT)
+						}
+					}
+				}
+			},
+			{
 				request: {
 					query: getChildren,
 					variables: {
 						parentNode: currentFolder.id,
 						childrenLimit: NODES_LOAD_LIMIT,
 						sorts: ['TYPE_ASC', 'NAME_ASC'],
-						cursor: currentFolder.children[NODES_LOAD_LIMIT - 1].id,
-					},
+						cursor: currentFolder.children[NODES_LOAD_LIMIT - 1].id
+					}
 				},
 				result: {
 					data: {
 						getNode: {
 							...currentFolder,
-							children: currentFolder.children.slice(NODES_LOAD_LIMIT),
-						},
-					},
-				},
-			},
+							children: currentFolder.children.slice(NODES_LOAD_LIMIT)
+						}
+					}
+				}
+			}
 		];
 
 		testUtils.render(
@@ -177,11 +178,13 @@ describe('Folder List', () => {
 				<div id="boards-router-container" className="boards-router-container">
 					<FolderList folderId={currentFolder.id} />
 				</div>
-			</MockedProvider>,
+			</MockedProvider>
 		);
 
 		// this is the loading refresh icon
-		expect(screen.getByTestId(currentFolder.id)).toContainElement(screen.getByTestId('icon: Refresh'));
+		expect(screen.getByTestId(currentFolder.id)).toContainElement(
+			screen.getByTestId('icon: Refresh')
+		);
 		expect(screen.getByTestId('icon: Refresh')).toBeVisible();
 		// wait the rendering of the first item
 		await screen.findByTestId(currentFolder.children[0].id);
@@ -190,23 +193,29 @@ describe('Folder List', () => {
 		expect(screen.getByTestId('icon: Refresh')).toBeVisible();
 
 		// elements after the limit should not be rendered
-		expect(screen.queryByTestId(currentFolder.children[NODES_LOAD_LIMIT].id)).not.toBeInTheDocument();
+		expect(
+			screen.queryByTestId(currentFolder.children[NODES_LOAD_LIMIT].id)
+		).not.toBeInTheDocument();
 		const { calls } = window.IntersectionObserver.mock;
 		const [onChange] = calls[calls.length - 1];
 		// trigger the intersection on the observed element
-		await waitFor(() => onChange([{
-			target: screen.getByTestId('icon: Refresh'),
-			intersectionRatio: 0,
-			isIntersecting: true,
-		}]));
+		await waitFor(() =>
+			onChange([
+				{
+					target: screen.getByTestId('icon: Refresh'),
+					intersectionRatio: 0,
+					isIntersecting: true
+				}
+			])
+		);
 
 		// wait for the response
 		await screen.findByTestId(currentFolder.children[NODES_LOAD_LIMIT].id);
 
 		// now all elements are loaded so last children should be visible and no loading icon should be rendered
-		expect(screen.getByTestId(currentFolder.children[currentFolder.children.length - 1].id)).toBeVisible();
+		expect(
+			screen.getByTestId(currentFolder.children[currentFolder.children.length - 1].id)
+		).toBeVisible();
 		expect(screen.queryByTestId('Icon: Refresh')).not.toBeInTheDocument();
-
 	});
-})
-;
+});

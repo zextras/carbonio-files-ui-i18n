@@ -13,22 +13,26 @@ import { useEffect } from 'react';
 
 function useSetMainMenuItems(): void {
 	useEffect(() => {
-		setMainMenuItems([{
-			id: 'drive-root',
-			icon: 'DriveOutline',
-			to: '/',
-			label: 'Drive Home',
-			items: [{
-				id: 'LOCAL_ROOT',
+		setMainMenuItems([
+			{
+				id: 'drive-root',
+				icon: 'DriveOutline',
 				to: '/',
 				label: 'Drive Home',
-			},
-			{
-				id: 'TEAM_ROOT',
-				to: '/root/team',
-				label: 'Team',
-			}],
-		}]);
+				items: [
+					{
+						id: 'LOCAL_ROOT',
+						to: '/',
+						label: 'Drive Home'
+					},
+					{
+						id: 'TEAM_ROOT',
+						to: '/root/team',
+						label: 'Team'
+					}
+				]
+			}
+		]);
 	}, []);
 }
 

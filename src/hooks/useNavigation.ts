@@ -12,19 +12,21 @@
 import { useCallback } from 'react';
 import { hooks } from '@zextras/zapp-shell';
 
-
 const useNavigation: () => {
-	navigateTo: (location: string) => void
+	navigateTo: (location: string) => void;
 } = () => {
 	const replaceHistory = hooks.useReplaceHistoryCallback();
 
-	const navigateTo: (id: string) => void = useCallback((id) => {
-		replaceHistory(`/?folder=${id}`);
-	}, [replaceHistory]);
+	const navigateTo: (id: string) => void = useCallback(
+		(id) => {
+			replaceHistory(`/?folder=${id}`);
+		},
+		[replaceHistory]
+	);
 
 	return {
-		navigateTo,
-	}
+		navigateTo
+	};
 };
 
 export default useNavigation;

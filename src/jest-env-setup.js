@@ -32,8 +32,8 @@ beforeAll(() => {
 			removeListener: jest.fn(), // Deprecated
 			addEventListener: jest.fn(),
 			removeEventListener: jest.fn(),
-			dispatchEvent: jest.fn(),
-		})),
+			dispatchEvent: jest.fn()
+		}))
 	});
 });
 

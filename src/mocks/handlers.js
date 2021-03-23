@@ -18,7 +18,7 @@ const handlers = [
 	graphql.query('getChildren', handleGetChildrenRequest),
 	graphql.query('getParents', handleGetParentsRequest),
 	graphql.query('IntrospectionQuery', handleIntrospectionRequest),
-	graphql.mutation('flagNodes', handleFlagNodesRequest),
+	graphql.mutation('flagNodes', handleFlagNodesRequest)
 ];
 
 export default handlers;

@@ -12,9 +12,9 @@
 export default function handleFlagNodesRequest(req, res, ctx) {
 	const { ids } = req.variables;
 	if (ids) {
-	// TODO: handle case where one request fails
+		// TODO: handle case where one request fails
 		return ctx.data({
-			flagNodes: ids,
+			flagNodes: ids
 		});
 	}
 	return ctx.errors({
