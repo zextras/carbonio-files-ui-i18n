@@ -4,7 +4,7 @@ import { testUtils } from '@zextras/zapp-shell';
 import faker from 'faker';
 import userEvent from '@testing-library/user-event';
 import NodeListItem from '../../../commonDrive/views/folder/components/NodeListItem';
-import { populateFile, populateFolder, populateNode } from '../../../mocks/mockUtils';
+import { populateFile, populateFolder, populateNode } from '../../../commonDrive/mocks/mockUtils';
 import { formatDate, humanFileSize } from '../../../commonDrive/utils/utils';
 
 let mockedUserLogged;

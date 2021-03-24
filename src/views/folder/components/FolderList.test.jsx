@@ -16,7 +16,7 @@ import { ApolloProvider } from '@apollo/client';
 import faker from 'faker';
 import { forEach } from 'lodash';
 import { MockedProvider } from '@apollo/client/testing';
-import { populateFolder } from '../../../mocks/mockUtils';
+import { populateFolder } from '../../../commonDrive/mocks/mockUtils';
 import FolderList from '../../../commonDrive/views/folder/components/FolderList';
 import buildClient from '../../../commonDrive/apollo';
 import getChildren from '../../../commonDrive/graphql/queries/getChildren.graphql';
