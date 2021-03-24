@@ -1,11 +1,12 @@
-import React from 'react';
 import { screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import { testUtils } from '@zextras/zapp-shell';
 import faker from 'faker';
-import userEvent from '@testing-library/user-event';
+import React from 'react';
+import { getPermittedHoverBarActions } from '../../../commonDrive/utils/ActionsFactory';
+import { formatDate, humanFileSize } from '../../../commonDrive/utils/utils';
 import NodeListItem from '../../../commonDrive/views/folder/components/NodeListItem';
 import { populateFile, populateFolder, populateNode } from '../../../commonDrive/mocks/mockUtils';
-import { formatDate, humanFileSize } from '../../../commonDrive/utils/utils';
 
 let mockedUserLogged;
 let mockedHistory;
@@ -124,50 +125,97 @@ describe('Node List Item', () => {
 		expect(screen.queryByTestId('icon: Flag')).not.toBeInTheDocument();
 	});
 
-	test('flag action is not visible if node has not permission can_change_flag', () => {
+	test('unflag action on hover is visible if node is flagged', () => {
 		const node = populateNode();
-		node.permissions.can_change_flag = false;
-		testUtils.render(
-			<NodeListItem id={node.id} name={node.name} type={node.type} permissions={node.permissions} />
-		);
-		expect(screen.queryByTestId('icon: FlagOutline')).not.toBeInTheDocument();
-	});
+		node.flagged = true;
 
-	test('flag action is visible if node has permission can_change_flag', async () => {
-		const node = populateNode();
-		node.permissions.can_change_flag = true;
-		testUtils.render(
-			<NodeListItem id={node.id} name={node.name} type={node.type} permissions={node.permissions} />
-		);
-		expect(screen.getByTestId('icon: FlagOutline')).toBeInTheDocument();
-		// TODO: toBeVisible fails but I don't know why
-		// userEvent.hover(screen.getByTestId(node.id));
-		// expect(screen.queryByTestId('icon: FlagOutline')).toBeVisible();
-	});
-
-	test('click on hover flag action changes flag icon visibility', () => {
-		const node = populateNode();
-		node.permissions.can_change_flag = true;
-		let flagActive = false;
-		const toggleFlagFunction = jest.fn((flagValue, ...ids) => {
-			if (ids.includes(node.id)) {
-				flagActive = flagValue;
-			}
-		});
 		testUtils.render(
 			<NodeListItem
 				id={node.id}
 				name={node.name}
 				type={node.type}
-				flagActive={flagActive}
 				permissions={node.permissions}
-				toggleFlag={toggleFlagFunction}
+				flagActive={node.flagged}
+				permittedHoverBarActions={getPermittedHoverBarActions(node)}
+			/>
+		);
+		expect(screen.getByTestId('icon: UnflagOutline')).toBeInTheDocument();
+		expect(screen.queryByTestId('icon: FlagOutline')).not.toBeInTheDocument();
+	});
+
+	test('flag action on hover is visible if node is not flagged ', async () => {
+		const node = populateNode();
+		node.flagged = false;
+		testUtils.render(
+			<NodeListItem
+				id={node.id}
+				name={node.name}
+				type={node.type}
+				permissions={node.permissions}
+				flagActive={node.flagged}
+				permittedHoverBarActions={getPermittedHoverBarActions(node)}
+			/>
+		);
+		expect(screen.getByTestId('icon: FlagOutline')).toBeInTheDocument();
+		expect(screen.queryByTestId('icon: UnflagOutline')).not.toBeInTheDocument();
+		// TODO: toBeVisible fails but I don't know why
+		// userEvent.hover(screen.getByTestId(node.id));
+		// expect(screen.queryByTestId('icon: FlagOutline')).toBeVisible();
+	});
+
+	test('click on hover flag action changes flag icon visibility', async () => {
+		const node = populateNode();
+		node.flagged = false;
+
+		const toggleFlagTrueFunction = jest.fn((id) => {
+			if (id === node.id) {
+				node.flagged = true;
+			}
+		});
+
+		testUtils.render(
+			<NodeListItem
+				id={node.id}
+				name={node.name}
+				type={node.type}
+				flagActive={node.flagged}
+				permissions={node.permissions}
+				toggleFlagTrue={toggleFlagTrueFunction}
+				permittedHoverBarActions={getPermittedHoverBarActions(node)}
 			/>
 		);
 		expect(screen.queryByTestId('icon: Flag')).not.toBeInTheDocument();
 		userEvent.click(screen.getByTestId('icon: FlagOutline'));
-		expect(toggleFlagFunction).toHaveBeenCalledTimes(1);
-		expect(flagActive).toBeTruthy();
+		expect(toggleFlagTrueFunction).toHaveBeenCalledTimes(1);
+		expect(node.flagged).toBeTruthy();
+	});
+
+	test('click on hover unflag action changes flag icon visibility', async () => {
+		const node = populateNode();
+		node.flagged = true;
+
+		const toggleFlagFalseFunction = jest.fn((id) => {
+			if (id === node.id) {
+				node.flagged = false;
+			}
+		});
+
+		testUtils.render(
+			<NodeListItem
+				id={node.id}
+				name={node.name}
+				type={node.type}
+				flagActive={node.flagged}
+				permissions={node.permissions}
+				toggleFlagFalse={toggleFlagFalseFunction}
+				permittedHoverBarActions={getPermittedHoverBarActions(node)}
+			/>
+		);
+		expect(screen.getByTestId('icon: Flag')).toBeInTheDocument();
+		expect(screen.getByTestId('icon: Flag')).toBeVisible();
+		userEvent.click(screen.getByTestId('icon: UnflagOutline'));
+		expect(toggleFlagFalseFunction).toHaveBeenCalledTimes(1);
+		expect(node.flagged).toBeFalsy();
 	});
 
 	test('render a file item in the list', () => {

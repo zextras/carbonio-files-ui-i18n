@@ -9,18 +9,21 @@
  * *** END LICENSE BLOCK *****
  */
 
-import React from 'react';
-import { testUtils } from '@zextras/zapp-shell';
-import { screen, waitFor, waitForElementToBeRemoved } from '@testing-library/react';
 import { ApolloProvider } from '@apollo/client';
-import faker from 'faker';
-import { forEach } from 'lodash';
 import { MockedProvider } from '@apollo/client/testing';
-import { populateFolder } from '../../../commonDrive/mocks/mockUtils';
-import FolderList from '../../../commonDrive/views/folder/components/FolderList';
+import { screen, waitFor, waitForElementToBeRemoved, within } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { testUtils } from '@zextras/zapp-shell';
+import faker from 'faker';
+import forEach from 'lodash/forEach';
+import map from 'lodash/map';
+import React from 'react';
 import buildClient from '../../../commonDrive/apollo';
-import getChildren from '../../../commonDrive/graphql/queries/getChildren.graphql';
 import { NODES_LOAD_LIMIT } from '../../../commonDrive/constants';
+import FLAG_NODES from '../../../commonDrive/graphql/mutations/flagNodes.graphql';
+import GET_CHILDREN from '../../../commonDrive/graphql/queries/getChildren.graphql';
+import FolderList from '../../../commonDrive/views/folder/components/FolderList';
+import { populateFolder } from '../../../commonDrive/mocks/mockUtils';
 
 let apolloClient;
 let mockedUserLogged;
@@ -76,7 +79,7 @@ describe('Folder List', () => {
 		const mocks = [
 			{
 				request: {
-					query: getChildren,
+					query: GET_CHILDREN,
 					variables: {
 						parentNode: currentFolder.id,
 						childrenLimit: NODES_LOAD_LIMIT,
@@ -113,9 +116,8 @@ describe('Folder List', () => {
 		expect(screen.getByTestId('icon: Refresh')).toBeVisible();
 		await waitForElementToBeRemoved(() => screen.queryByTestId('icon: Refresh'));
 		expect(screen.getByTestId(currentFolder.id)).not.toBeEmptyDOMElement();
-		screen.debug();
 		const { getNode } = apolloClient.readQuery({
-			query: getChildren,
+			query: GET_CHILDREN,
 			variables: {
 				parentNode: currentFolder.id,
 				childrenLimit: NODES_LOAD_LIMIT,
@@ -128,15 +130,13 @@ describe('Folder List', () => {
 		});
 	});
 
-	// TODO test if hover and actions work
-
 	test('intersectionObserver trigger the fetchMore function to load more elements when observed element is intersected', async () => {
 		const currentFolder = populateFolder(NODES_LOAD_LIMIT + Math.floor(NODES_LOAD_LIMIT / 2));
 
 		const mocks = [
 			{
 				request: {
-					query: getChildren,
+					query: GET_CHILDREN,
 					variables: {
 						parentNode: currentFolder.id,
 						childrenLimit: NODES_LOAD_LIMIT,
@@ -154,7 +154,7 @@ describe('Folder List', () => {
 			},
 			{
 				request: {
-					query: getChildren,
+					query: GET_CHILDREN,
 					variables: {
 						parentNode: currentFolder.id,
 						childrenLimit: NODES_LOAD_LIMIT,
@@ -174,7 +174,7 @@ describe('Folder List', () => {
 		];
 
 		testUtils.render(
-			<MockedProvider mocks={mocks} client={apolloClient} cache={apolloClient.cache}>
+			<MockedProvider mocks={mocks} cache={apolloClient.cache}>
 				<div id="boards-router-container" className="boards-router-container">
 					<FolderList folderId={currentFolder.id} />
 				</div>
@@ -217,5 +217,124 @@ describe('Folder List', () => {
 			screen.getByTestId(currentFolder.children[currentFolder.children.length - 1].id)
 		).toBeVisible();
 		expect(screen.queryByTestId('Icon: Refresh')).not.toBeInTheDocument();
+	});
+
+	// TODO test if hover and actions work
+	describe('Selection mode', () => {
+		function selectNodes(nodesToSelect) {
+			forEach(nodesToSelect, (id, index) => {
+				const node = within(screen.getByTestId(id));
+				if (index === 0) {
+					// click on first item icon to activate selection mode
+					userEvent.click(node.getByTestId('file-icon-preview'));
+				} else {
+					// then to select other items click on the unchecked avatar square
+					userEvent.click(node.getByTestId('unCheckedAvatar'));
+				}
+			});
+		}
+
+		test('Flag/Unflag action marks all and only selected items as flagged/unflagged', async () => {
+			const currentFolder = populateFolder(Math.floor(NODES_LOAD_LIMIT / 2));
+			forEach(currentFolder.children, (child) => {
+				// eslint-disable-next-line no-param-reassign
+				child.flagged = false;
+			});
+
+			const nodesIdsToFlag = map(
+				currentFolder.children.slice(0, currentFolder.children.length / 2),
+				(child) => child.id
+			);
+
+			const nodesIdsToUnflag = nodesIdsToFlag.slice(0, nodesIdsToFlag.length / 2);
+
+			const mocks = [
+				{
+					request: {
+						query: GET_CHILDREN,
+						variables: {
+							parentNode: currentFolder.id,
+							childrenLimit: NODES_LOAD_LIMIT,
+							sorts: ['TYPE_ASC', 'NAME_ASC']
+						}
+					},
+					result: {
+						data: {
+							getNode: {
+								...currentFolder,
+								children: currentFolder.children
+							}
+						}
+					}
+				},
+				{
+					request: {
+						query: FLAG_NODES,
+						variables: {
+							nodes_ids: nodesIdsToFlag,
+							flag: true
+						}
+					},
+					result: {
+						data: {
+							flagNodes: nodesIdsToFlag
+						}
+					}
+				},
+				{
+					request: {
+						query: FLAG_NODES,
+						variables: {
+							nodes_ids: nodesIdsToUnflag,
+							flag: false
+						}
+					},
+					result: {
+						data: {
+							flagNodes: nodesIdsToUnflag
+						}
+					}
+				}
+			];
+
+			testUtils.render(
+				<MockedProvider mocks={mocks} cache={apolloClient.cache}>
+					<FolderList folderId={currentFolder.id} />
+				</MockedProvider>
+			);
+
+			// wait for the load to be completed
+			await waitForElementToBeRemoved(screen.queryByTestId('icon: Refresh'));
+			expect(screen.queryAllByTestId('icon: Flag')).toHaveLength(0);
+
+			// activate selection mode by selecting items
+			selectNodes(nodesIdsToFlag);
+
+			// check that all wanted items are selected
+			expect(screen.getAllByTestId('checkedAvatar')).toHaveLength(nodesIdsToFlag.length);
+			expect(screen.getByTestId('icon: MoreVertical')).toBeVisible();
+			userEvent.click(screen.getByTestId('icon: MoreVertical'));
+			await screen.findByText(/\bflag\b/i);
+			// click on flag action on header bar
+			userEvent.click(screen.getByText(/\bflag\b/i));
+			await waitForElementToBeRemoved(screen.queryAllByTestId('checkedAvatar'));
+			await screen.findAllByTestId('icon: Flag');
+			expect(screen.getAllByTestId('icon: Flag')).toHaveLength(nodesIdsToFlag.length);
+
+			// activate selection mode by selecting items
+			selectNodes(nodesIdsToUnflag);
+			// check that all wanted items are selected
+			expect(screen.getAllByTestId('checkedAvatar')).toHaveLength(nodesIdsToUnflag.length);
+			expect(screen.getByTestId('icon: MoreVertical')).toBeVisible();
+			userEvent.click(screen.getByTestId('icon: MoreVertical'));
+			await screen.findByText(/\bunflag\b/i);
+			// click on unflag action on header bar
+			userEvent.click(screen.getByText(/\bunflag\b/i));
+			await waitForElementToBeRemoved(screen.queryAllByTestId('checkedAvatar'));
+			await screen.findAllByTestId('icon: Flag');
+			expect(screen.getAllByTestId('icon: Flag')).toHaveLength(
+				nodesIdsToFlag.length - nodesIdsToUnflag.length
+			);
+		});
 	});
 });

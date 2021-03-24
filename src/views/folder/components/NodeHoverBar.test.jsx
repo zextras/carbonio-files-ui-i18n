@@ -8,9 +8,10 @@
  * http://www.zextras.com/zextras-eula.html
  * *** END LICENSE BLOCK *****
  */
-import React from 'react';
-import { testUtils } from '@zextras/zapp-shell';
 import { fireEvent, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { testUtils } from '@zextras/zapp-shell';
+import React from 'react';
 import NodeHoverBar from '../../../commonDrive/views/folder/components/NodeHoverBar';
 
 describe('Node Hover Bar', () => {
@@ -27,12 +28,12 @@ describe('Node Hover Bar', () => {
 			{
 				id: 'action1',
 				icon: 'action1Icon',
-				onClick: action1Fn
+				click: action1Fn
 			},
 			{
 				id: 'action2',
 				icon: 'action2Icon',
-				onClick: action2Fn
+				click: action2Fn
 			}
 		];
 
@@ -41,10 +42,10 @@ describe('Node Hover Bar', () => {
 		expect(screen.getByTestId('icon: action1Icon')).toBeVisible();
 		expect(screen.getByTestId('icon: action2Icon')).toBeInTheDocument();
 		expect(screen.getByTestId('icon: action2Icon')).toBeVisible();
-		fireEvent.click(screen.getByTestId('icon: action1Icon'));
+		userEvent.click(screen.getByTestId('icon: action1Icon'));
 		expect(action1Fn).toHaveBeenCalledTimes(1);
 		expect(action2Fn).not.toHaveBeenCalled();
-		fireEvent.click(screen.getByTestId('icon: action2Icon'));
+		userEvent.click(screen.getByTestId('icon: action2Icon'));
 		expect(action1Fn).toHaveBeenCalledTimes(1);
 		expect(action2Fn).toHaveBeenCalledTimes(1);
 	});
