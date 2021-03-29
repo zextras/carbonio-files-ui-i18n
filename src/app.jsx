@@ -9,8 +9,8 @@
  * *** END LICENSE BLOCK *****
  */
 
+import { setRoutes } from '@zextras/zapp-shell';
 import React, { lazy, useEffect } from 'react';
-import { setCreateOptions, setRoutes } from '@zextras/zapp-shell';
 import { SetMainMenuItems } from './views/secondary-bar/SetMainMenuItem';
 
 const lazyFolderView = lazy(() =>
@@ -30,16 +30,6 @@ export default function App() {
 			{
 				route: '/',
 				view: lazyFolderView
-			}
-		]);
-
-		setCreateOptions([
-			{
-				id: 'create-folder',
-				label: 'New Folder',
-				app: {
-					path: window.top.location.pathname /* TODO manage node creation */
-				}
 			}
 		]);
 	}, []);
