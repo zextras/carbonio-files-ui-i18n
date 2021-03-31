@@ -268,7 +268,9 @@ describe('Node List Item', () => {
 
 	test('double click on a folder with selection mode active does nothing', () => {
 		const node = populateFolder(0);
-		testUtils.render(<NodeListItem id={node.id} name={node.name} type={node.type} selectionMode />);
+		testUtils.render(
+			<NodeListItem id={node.id} name={node.name} type={node.type} isSelectionModeActive />
+		);
 		userEvent.dblClick(screen.getByTestId(node.id));
 		expect(mockedNavigation).not.toHaveBeenCalled();
 	});
