@@ -10,15 +10,22 @@
  */
 
 import '@testing-library/jest-dom/extend-expect';
+import buildClient from './commonDrive/apollo';
 import server from './mocks/server';
 
-beforeEach(() => {
+beforeEach(async () => {
 	// Do not useFakeTimers with `whatwg-fetch` if using mocked server
 	// https://github.com/mswjs/msw/issues/448
 	jest.useFakeTimers();
+
+	// reset apollo client cache
+	await global.apolloClient.cache.reset();
 });
 beforeAll(() => {
 	server.listen();
+
+	// initialize an apollo client instance for test and makes it available globally
+	global.apolloClient = buildClient(true);
 
 	// define browser objects non available in jest
 	// https://jestjs.io/docs/en/manual-mocks#mocking-methods-which-are-not-implemented-in-jsdom

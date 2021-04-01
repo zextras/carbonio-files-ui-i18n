@@ -1,31 +1,13 @@
-import faker from 'faker';
+import { populateFolder, populateParents } from '../commonDrive/mocks/mockUtils';
 
 export default function handleGetParentsRequest(req, res, ctx) {
 	const { id } = req.variables;
 
-	let lastNode = {
-		id: 'LOCAL_ROOT',
-		name: 'ROOT',
-		parent: null,
-		__typename: 'Folder'
-	};
-
-	if (id !== 'LOCAL_ROOT') {
-		for (let i = 0; i < faker.random.number({ min: 0, max: 20 }); i += 1) {
-			lastNode = {
-				id: faker.random.uuid(),
-				name: faker.random.words(),
-				parent: lastNode,
-				__typename: 'Folder'
-			};
-		}
-	}
-
-	lastNode.id = id;
+	const { node: currentFolder } = populateParents(populateFolder(0, id), 2);
 
 	return res(
 		ctx.data({
-			getNode: lastNode
+			getNode: currentFolder
 		})
 	);
 }

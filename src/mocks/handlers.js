@@ -9,16 +9,18 @@
  * *** END LICENSE BLOCK *****
  */
 import { graphql } from 'msw';
-import handleGetChildrenRequest from './handleGetChildrenRequest';
-import handleGetParentsRequest from './handleGetParentsRequest';
-import handleIntrospectionRequest from './handleIntrospectionRequest';
 import handleFlagNodesRequest from './handleFlagNodesRequest';
+import handleGetChildrenRequest from './handleGetChildrenRequest';
+import handleGetParentRequest from './handleGetParentsRequest';
+import handleGetPathRequest from './handleGetPathRequest';
+import handleIntrospectionRequest from './handleIntrospectionRequest';
 
 const handlers = [
 	graphql.query('getChildren', handleGetChildrenRequest),
-	graphql.query('getParents', handleGetParentsRequest),
+	graphql.query('getParent', handleGetParentRequest),
 	graphql.query('IntrospectionQuery', handleIntrospectionRequest),
-	graphql.mutation('flagNodes', handleFlagNodesRequest)
+	graphql.mutation('flagNodes', handleFlagNodesRequest),
+	graphql.query('getPath', handleGetPathRequest)
 ];
 
 export default handlers;

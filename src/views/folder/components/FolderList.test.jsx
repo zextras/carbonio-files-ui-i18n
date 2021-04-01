@@ -18,20 +18,16 @@ import faker from 'faker';
 import forEach from 'lodash/forEach';
 import map from 'lodash/map';
 import React from 'react';
-import buildClient from '../../../commonDrive/apollo';
-import { NODES_LOAD_LIMIT } from '../../../commonDrive/constants';
+import { NODES_LOAD_LIMIT, NODES_SORTS_DEFAULT } from '../../../commonDrive/constants';
 import FLAG_NODES from '../../../commonDrive/graphql/mutations/flagNodes.graphql';
 import GET_CHILDREN from '../../../commonDrive/graphql/queries/getChildren.graphql';
 import FolderList from '../../../commonDrive/views/folder/components/FolderList';
 import { populateFolder } from '../../../commonDrive/mocks/mockUtils';
 
-let apolloClient;
 let mockedUserLogged;
 const intersectionObserverEntries = [];
 
 beforeAll(() => {
-	apolloClient = buildClient(true);
-
 	// mock a simplified Intersection Observer
 	Object.defineProperty(window, 'IntersectionObserver', {
 		writable: true,
@@ -58,8 +54,6 @@ beforeEach(() => {
 		id: faker.random.uuid(),
 		name: faker.name.findName()
 	};
-	// reset the cache of apollo
-	apolloClient.cache.reset();
 });
 
 afterEach(() => {
@@ -83,14 +77,14 @@ describe('Folder List', () => {
 					variables: {
 						parentNode: currentFolder.id,
 						childrenLimit: NODES_LOAD_LIMIT,
-						sorts: ['TYPE_ASC', 'NODE_ASC']
+						sorts: NODES_SORTS_DEFAULT
 					}
 				},
 				error: new Error('An error occurred')
 			}
 		];
 		testUtils.render(
-			<MockedProvider mocks={mocks} cache={apolloClient.cache}>
+			<MockedProvider mocks={mocks} cache={global.apolloClient.cache} addTypename={false}>
 				<FolderList folderId={currentFolder.id} />
 			</MockedProvider>
 		);
@@ -99,7 +93,7 @@ describe('Folder List', () => {
 		// screen.debug();
 		/*
 		 * TODO: at the moment it always return this error:
-		 * No more mocked responses for the query: query getChildren($parentNode: ID!, $childrenLimit: Int!, $sorts: [NodeSort!]) {
+		 * No more mocked responses for the query: query GET_CHILDREN($parentNode: ID!, $childrenLimit: Int!, $sorts: [NodeSort!]) {
 		 *     getNode(id: $parentNode) {
 		 */
 		// expect(screen.getByText(/An error occurred/g)).toBeVisible();
@@ -109,19 +103,21 @@ describe('Folder List', () => {
 		const currentFolder = populateFolder();
 
 		testUtils.render(
-			<ApolloProvider client={apolloClient}>
+			<ApolloProvider client={global.apolloClient}>
 				<FolderList folderId={currentFolder.id} />
 			</ApolloProvider>
 		);
 		expect(screen.getByTestId('icon: Refresh')).toBeVisible();
-		await waitForElementToBeRemoved(() => screen.queryByTestId('icon: Refresh'));
+		await waitForElementToBeRemoved(() =>
+			within(screen.getByTestId('list-header')).queryByTestId('icon: Refresh')
+		);
 		expect(screen.getByTestId(currentFolder.id)).not.toBeEmptyDOMElement();
-		const { getNode } = apolloClient.readQuery({
+		const { getNode } = global.apolloClient.readQuery({
 			query: GET_CHILDREN,
 			variables: {
 				parentNode: currentFolder.id,
 				childrenLimit: NODES_LOAD_LIMIT,
-				sorts: ['TYPE_ASC', 'NAME_ASC']
+				sorts: NODES_SORTS_DEFAULT
 			}
 		});
 		forEach(getNode.children, (child) => {
@@ -140,7 +136,7 @@ describe('Folder List', () => {
 					variables: {
 						parentNode: currentFolder.id,
 						childrenLimit: NODES_LOAD_LIMIT,
-						sorts: ['TYPE_ASC', 'NAME_ASC']
+						sorts: NODES_SORTS_DEFAULT
 					}
 				},
 				result: {
@@ -158,7 +154,7 @@ describe('Folder List', () => {
 					variables: {
 						parentNode: currentFolder.id,
 						childrenLimit: NODES_LOAD_LIMIT,
-						sorts: ['TYPE_ASC', 'NAME_ASC'],
+						sorts: NODES_SORTS_DEFAULT,
 						cursor: currentFolder.children[NODES_LOAD_LIMIT - 1].id
 					}
 				},
@@ -174,7 +170,7 @@ describe('Folder List', () => {
 		];
 
 		testUtils.render(
-			<MockedProvider mocks={mocks} cache={apolloClient.cache}>
+			<MockedProvider mocks={mocks} client={global.apolloClient} cache={global.apolloClient.cache}>
 				<div id="boards-router-container" className="boards-router-container">
 					<FolderList folderId={currentFolder.id} />
 				</div>
@@ -255,7 +251,7 @@ describe('Folder List', () => {
 						variables: {
 							parentNode: currentFolder.id,
 							childrenLimit: NODES_LOAD_LIMIT,
-							sorts: ['TYPE_ASC', 'NAME_ASC']
+							sorts: NODES_SORTS_DEFAULT
 						}
 					},
 					result: {
@@ -298,7 +294,7 @@ describe('Folder List', () => {
 			];
 
 			testUtils.render(
-				<MockedProvider mocks={mocks} cache={apolloClient.cache}>
+				<MockedProvider mocks={mocks} cache={global.apolloClient.cache}>
 					<FolderList folderId={currentFolder.id} />
 				</MockedProvider>
 			);

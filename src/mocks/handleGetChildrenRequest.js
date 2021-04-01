@@ -1,5 +1,5 @@
 import faker from 'faker';
-import { populateFile, populateFolder, sortNodes } from '../commonDrive/mocks/mockUtils';
+import { populateFolder, sortNodes } from '../commonDrive/mocks/mockUtils';
 
 export default function handleGetChildrenRequest(req, res, ctx) {
 	const { parentNode, childrenLimit, sorts } = req.variables;
