@@ -5,7 +5,7 @@ import faker from 'faker';
 import React from 'react';
 import { getPermittedHoverBarActions } from '../../../commonDrive/utils/ActionsFactory';
 import { formatDate, humanFileSize } from '../../../commonDrive/utils/utils';
-import NodeListItem from '../../../commonDrive/views/folder/components/NodeListItem';
+import { NodeListItem } from '../../../commonDrive/views/folder/components/NodeListItem';
 import { populateFile, populateFolder, populateNode } from '../../../commonDrive/mocks/mockUtils';
 
 let mockedUserLogged;
