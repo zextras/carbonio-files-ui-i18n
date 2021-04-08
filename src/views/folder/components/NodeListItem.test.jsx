@@ -57,9 +57,9 @@ describe('Node List Item', () => {
 			/>
 		);
 
-		expect(screen.getByTestId(node.id)).toBeInTheDocument();
-		expect(screen.getByTestId(node.id)).toBeVisible();
-		expect(screen.getByTestId(node.id)).not.toBeEmptyDOMElement();
+		expect(screen.getByTestId(`node-item-${node.id}`)).toBeInTheDocument();
+		expect(screen.getByTestId(`node-item-${node.id}`)).toBeVisible();
+		expect(screen.getByTestId(`node-item-${node.id}`)).not.toBeEmptyDOMElement();
 		expect(screen.getByText(node.name)).toBeVisible();
 		expect(screen.getByText(formatDate(node.updated_at))).toBeVisible();
 		expect(screen.queryByText(mockedUserLogged.name)).not.toBeInTheDocument();
@@ -77,7 +77,7 @@ describe('Node List Item', () => {
 			/>
 		);
 		// screen.debug();
-		expect(screen.getByTestId(node.id)).toHaveTextContent('Folder');
+		expect(screen.getByTestId(`node-item-${node.id}`)).toHaveTextContent('Folder');
 	});
 
 	test('share icon is visible if node is shared', () => {
@@ -159,7 +159,7 @@ describe('Node List Item', () => {
 		expect(screen.getByTestId('icon: FlagOutline')).toBeInTheDocument();
 		expect(screen.queryByTestId('icon: UnflagOutline')).not.toBeInTheDocument();
 		// TODO: toBeVisible fails but I don't know why
-		// userEvent.hover(screen.getByTestId(node.id));
+		// userEvent.hover(screen.getByTestId(`node-item-${node.id}`));
 		// expect(screen.queryByTestId('icon: FlagOutline')).toBeVisible();
 	});
 
@@ -167,11 +167,7 @@ describe('Node List Item', () => {
 		const node = populateNode();
 		node.flagged = false;
 
-		const toggleFlagTrueFunction = jest.fn((id) => {
-			if (id === node.id) {
-				node.flagged = true;
-			}
-		});
+		const toggleFlagTrueFunction = jest.fn();
 
 		testUtils.render(
 			<NodeListItem
@@ -187,18 +183,13 @@ describe('Node List Item', () => {
 		expect(screen.queryByTestId('icon: Flag')).not.toBeInTheDocument();
 		userEvent.click(screen.getByTestId('icon: FlagOutline'));
 		expect(toggleFlagTrueFunction).toHaveBeenCalledTimes(1);
-		expect(node.flagged).toBeTruthy();
 	});
 
 	test('click on hover unflag action changes flag icon visibility', async () => {
 		const node = populateNode();
 		node.flagged = true;
 
-		const toggleFlagFalseFunction = jest.fn((id) => {
-			if (id === node.id) {
-				node.flagged = false;
-			}
-		});
+		const toggleFlagFalseFunction = jest.fn();
 
 		testUtils.render(
 			<NodeListItem
@@ -215,7 +206,6 @@ describe('Node List Item', () => {
 		expect(screen.getByTestId('icon: Flag')).toBeVisible();
 		userEvent.click(screen.getByTestId('icon: UnflagOutline'));
 		expect(toggleFlagFalseFunction).toHaveBeenCalledTimes(1);
-		expect(node.flagged).toBeFalsy();
 	});
 
 	test('render a file item in the list', () => {
@@ -227,10 +217,10 @@ describe('Node List Item', () => {
 				type={node.type}
 				size={node.size}
 				mimeType={node.mime_type}
+				extension={node.extension}
 			/>
 		);
-		// TODO: check that extension is visible
-		// expect(screen.getByText(node.extension)).toBeVisible();
+		expect(screen.getByText(node.extension)).toBeVisible();
 		expect(screen.getByText(humanFileSize(node.size))).toBeVisible();
 	});
 
@@ -260,7 +250,7 @@ describe('Node List Item', () => {
 	test('double click on a folder activates navigation', () => {
 		const node = populateFolder(0);
 		testUtils.render(<NodeListItem id={node.id} name={node.name} type={node.type} />);
-		userEvent.dblClick(screen.getByTestId(node.id));
+		userEvent.dblClick(screen.getByTestId(`node-item-${node.id}`));
 		expect(mockedNavigation).toHaveBeenCalledTimes(1);
 		expect(mockedHistory).toContain(node.id);
 		expect(mockedHistory[mockedHistory.length - 1]).toBe(node.id);
@@ -271,10 +261,9 @@ describe('Node List Item', () => {
 		testUtils.render(
 			<NodeListItem id={node.id} name={node.name} type={node.type} isSelectionModeActive />
 		);
-		userEvent.dblClick(screen.getByTestId(node.id));
+		userEvent.dblClick(screen.getByTestId(`node-item-${node.id}`));
 		expect(mockedNavigation).not.toHaveBeenCalled();
 	});
 
 	// TODO: double click on file open file?
-	// TODO: double click on folder if selection mode is active does not open the folder. Does nothing?
 });

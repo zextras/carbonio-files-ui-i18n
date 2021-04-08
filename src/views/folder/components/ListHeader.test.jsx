@@ -104,6 +104,7 @@ describe('ListHeader', () => {
 			expect(getByTextWithMarkup(breadcrumbRegExp)).toBeVisible();
 		});
 
+		// TODO: this test sometimes fails
 		test('consecutive clicks on the cta expand and collapse the path with a single API request to retrieve the full path', async () => {
 			const { node: currentFolder, path } = populateParents(populateFolder(), 5);
 			const mocks = [
@@ -164,21 +165,33 @@ describe('ListHeader', () => {
 
 			// wait for the breadcrumb to be loaded
 			await screen.findByText((content) => content.includes(currentFolder.name));
+			// TODO: log to understand why it goes in error. Remove once fixed
+			// eslint-disable-next-line no-console
+			console.log('[ListHeader.Breadcrumb] 1. Short breadcrumb regexp:', shortBreadcrumbRegExp);
 			// by default only 2 levels are shown
 			expect(getByTextWithMarkup(shortBreadcrumbRegExp)).toBeVisible();
 			// user clicks on the cta
 			userEvent.click(screen.getByTestId('icon: FolderOutline'));
 			// wait for the full path to be loaded
 			await screen.findByTestId('icon: ChevronLeft');
+			// TODO: log to understand why it goes in error. Remove once fixed
+			// eslint-disable-next-line no-console
+			console.log('[ListHeader.Breadcrumb] 2. Long breadcrumb regexp:', fullBreadcrumbRegExp);
 			// all levels are now shown
 			expect(getByTextWithMarkup(fullBreadcrumbRegExp)).toBeVisible();
 			// user clicks again on the cta
 			userEvent.click(screen.getByTestId('icon: FolderOutline'));
+			// TODO: log to understand why it goes in error. Remove once fixed
+			// eslint-disable-next-line no-console
+			console.log('[ListHeader.Breadcrumb] 3. Short breadcrumb regexp:', shortBreadcrumbRegExp);
 			// root element is not shown now, only the short breadcrumb, without a request to the API
 			expect(getByTextWithMarkup(shortBreadcrumbRegExp)).toBeVisible();
 			expect(screen.queryByText(crumbs[0].label)).not.toBeInTheDocument();
 			// user clicks on the cta
 			userEvent.click(screen.getByTestId('icon: FolderOutline'));
+			// TODO: log to understand why it goes in error. Remove once fixed
+			// eslint-disable-next-line no-console
+			console.log('[ListHeader.Breadcrumb] 4. Long breadcrumb regexp:', fullBreadcrumbRegExp);
 			// all levels are now shown immediately without a request to the API
 			expect(getByTextWithMarkup(fullBreadcrumbRegExp)).toBeVisible();
 		});

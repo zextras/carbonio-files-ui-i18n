@@ -1,7 +1,12 @@
 import faker from 'faker';
+import { GraphQLResponseResolver } from 'msw';
 import { populateFolder, sortNodes } from '../commonDrive/mocks/mockUtils';
+import { GetChildrenQuery, GetChildrenQueryVariables } from '../commonDrive/types/graphql/types';
 
-export default function handleGetChildrenRequest(req, res, ctx) {
+const handleGetChildrenRequest: GraphQLResponseResolver<
+	GetChildrenQuery,
+	GetChildrenQueryVariables
+> = (req, res, ctx) => {
 	const { parentNode, childrenLimit, sorts } = req.variables;
 
 	let parentNodeName = faker.random.words();
@@ -22,4 +27,6 @@ export default function handleGetChildrenRequest(req, res, ctx) {
 			getNode: folder
 		})
 	);
-}
+};
+
+export default handleGetChildrenRequest;

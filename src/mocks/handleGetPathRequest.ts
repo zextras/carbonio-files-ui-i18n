@@ -10,9 +10,15 @@
  */
 
 import faker from 'faker';
+import { GraphQLResponseResolver } from 'msw';
 import { populateFolder, populateLocalRoot, populateParents } from '../commonDrive/mocks/mockUtils';
+import { GetPathQuery, GetPathQueryVariables } from '../commonDrive/types/graphql/types';
 
-export default function handleGetPathRequest(req, res, ctx) {
+const handleGetPathRequest: GraphQLResponseResolver<GetPathQuery, GetPathQueryVariables> = (
+	req,
+	res,
+	ctx
+) => {
 	const { id } = req.variables;
 
 	const { path } = populateParents(populateFolder(0, id), faker.random.number(15));
@@ -25,4 +31,6 @@ export default function handleGetPathRequest(req, res, ctx) {
 			getPath: path
 		})
 	);
-}
+};
+
+export default handleGetPathRequest;

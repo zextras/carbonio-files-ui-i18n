@@ -33,6 +33,7 @@
 		"@graphql-codegen/fragment-matcher": "^2.0.1",
 		"@graphql-codegen/schema-ast": "^1.18.1",
 		"@graphql-codegen/typescript": "^1.21.1",
+		"@graphql-codegen/typescript-operations": "^1.17.15",
 		"@testing-library/jest-dom": "5.11.5",
 		"@testing-library/react": "11.1.2",
 		"@testing-library/react-hooks": "3.4.2",

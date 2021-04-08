@@ -11,7 +11,13 @@
 
 import { ApolloProvider } from '@apollo/client';
 import { MockedProvider } from '@apollo/client/testing';
-import { screen, waitFor, waitForElementToBeRemoved, within } from '@testing-library/react';
+import {
+	fireEvent,
+	screen,
+	waitFor,
+	waitForElementToBeRemoved,
+	within
+} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { testUtils } from '@zextras/zapp-shell';
 import faker from 'faker';
@@ -20,9 +26,13 @@ import map from 'lodash/map';
 import React from 'react';
 import { NODES_LOAD_LIMIT, NODES_SORTS_DEFAULT } from '../../../commonDrive/constants';
 import FLAG_NODES from '../../../commonDrive/graphql/mutations/flagNodes.graphql';
+import UPDATE_NODE from '../../../commonDrive/graphql/mutations/updateNode.graphql';
+import GET_CHILD_NEIGHBOR from '../../../commonDrive/graphql/queries/getChildNeighbor.graphql';
 import GET_CHILDREN from '../../../commonDrive/graphql/queries/getChildren.graphql';
+import { populateFolder, populateNode, sortNodes } from '../../../commonDrive/mocks/mockUtils';
+import { NodeSort } from '../../../commonDrive/types/graphql/types';
 import FolderList from '../../../commonDrive/views/folder/components/FolderList';
-import { populateFolder } from '../../../commonDrive/mocks/mockUtils';
+import { generateError } from '../../../commonDrive/utils/testUtils';
 
 let mockedUserLogged;
 const intersectionObserverEntries = [];
@@ -80,23 +90,18 @@ describe('Folder List', () => {
 						sorts: NODES_SORTS_DEFAULT
 					}
 				},
-				error: new Error('An error occurred')
+				error: generateError('An error occurred')
 			}
 		];
 		testUtils.render(
-			<MockedProvider mocks={mocks} cache={global.apolloClient.cache} addTypename={false}>
+			<MockedProvider mocks={mocks} cache={global.apolloClient.cache}>
 				<FolderList folderId={currentFolder.id} />
 			</MockedProvider>
 		);
 
-		await waitForElementToBeRemoved(() => screen.queryByTestId('icon: Refresh'));
-		// screen.debug();
-		/*
-		 * TODO: at the moment it always return this error:
-		 * No more mocked responses for the query: query GET_CHILDREN($parentNode: ID!, $childrenLimit: Int!, $sorts: [NodeSort!]) {
-		 *     getNode(id: $parentNode) {
-		 */
-		// expect(screen.getByText(/An error occurred/g)).toBeVisible();
+		await waitForElementToBeRemoved(screen.queryByTestId('icon: Refresh'));
+		await screen.findByText(/Error/g);
+		expect(screen.getByText(/An error occurred/g)).toBeVisible();
 	});
 
 	test('first access to a folder show loading state and than show children', async () => {
@@ -121,8 +126,8 @@ describe('Folder List', () => {
 			}
 		});
 		forEach(getNode.children, (child) => {
-			expect(screen.getByTestId(child.id)).toBeInTheDocument();
-			expect(screen.getByTestId(child.id)).toHaveTextContent(child.name);
+			expect(screen.getByTestId(`node-item-${child.id}`)).toBeInTheDocument();
+			expect(screen.getByTestId(`node-item-${child.id}`)).toHaveTextContent(child.name);
 		});
 	});
 
@@ -183,14 +188,16 @@ describe('Folder List', () => {
 		);
 		expect(screen.getByTestId('icon: Refresh')).toBeVisible();
 		// wait the rendering of the first item
-		await screen.findByTestId(currentFolder.children[0].id);
-		expect(screen.getByTestId(currentFolder.children[NODES_LOAD_LIMIT - 1].id)).toBeVisible();
+		await screen.findByTestId(`node-item-${currentFolder.children[0].id}`);
+		expect(
+			screen.getByTestId(`node-item-${currentFolder.children[NODES_LOAD_LIMIT - 1].id}`)
+		).toBeVisible();
 		// the loading icon should be still visible at the bottom of the list because we have load the max limit of items per page
 		expect(screen.getByTestId('icon: Refresh')).toBeVisible();
 
 		// elements after the limit should not be rendered
 		expect(
-			screen.queryByTestId(currentFolder.children[NODES_LOAD_LIMIT].id)
+			screen.queryByTestId(`node-item-${currentFolder.children[NODES_LOAD_LIMIT].id}`)
 		).not.toBeInTheDocument();
 		const { calls } = window.IntersectionObserver.mock;
 		const [onChange] = calls[calls.length - 1];
@@ -206,20 +213,21 @@ describe('Folder List', () => {
 		);
 
 		// wait for the response
-		await screen.findByTestId(currentFolder.children[NODES_LOAD_LIMIT].id);
+		await screen.findByTestId(`node-item-${currentFolder.children[NODES_LOAD_LIMIT].id}`);
 
 		// now all elements are loaded so last children should be visible and no loading icon should be rendered
 		expect(
-			screen.getByTestId(currentFolder.children[currentFolder.children.length - 1].id)
+			screen.getByTestId(
+				`node-item-${currentFolder.children[currentFolder.children.length - 1].id}`
+			)
 		).toBeVisible();
 		expect(screen.queryByTestId('Icon: Refresh')).not.toBeInTheDocument();
 	});
 
-	// TODO test if hover and actions work
 	describe('Selection mode', () => {
 		function selectNodes(nodesToSelect) {
 			forEach(nodesToSelect, (id, index) => {
-				const node = within(screen.getByTestId(id));
+				const node = within(screen.getByTestId(`node-item-${id}`));
 				if (index === 0) {
 					// click on first item icon to activate selection mode
 					userEvent.click(node.getByTestId('file-icon-preview'));
@@ -331,6 +339,599 @@ describe('Folder List', () => {
 			expect(screen.getAllByTestId('icon: Flag')).toHaveLength(
 				nodesIdsToFlag.length - nodesIdsToUnflag.length
 			);
+		});
+
+		test('Rename is visible when only one file is selected', async () => {
+			const currentFolder = populateFolder(0);
+			// enable permission to rename
+			for (let i = 0; i < 2; i += 1) {
+				const node = populateNode();
+				node.permissions.can_write_file = true;
+				node.permissions.can_write_folder = true;
+				node.flagged = false;
+				currentFolder.children.push(node);
+			}
+
+			const mocks = [
+				{
+					request: {
+						query: GET_CHILDREN,
+						variables: {
+							parentNode: currentFolder.id,
+							childrenLimit: NODES_LOAD_LIMIT,
+							sorts: NODES_SORTS_DEFAULT
+						}
+					},
+					result: {
+						data: {
+							getNode: currentFolder
+						}
+					}
+				}
+			];
+
+			testUtils.render(
+				<MockedProvider mocks={mocks} cache={global.apolloClient.cache}>
+					<FolderList folderId={currentFolder.id} />
+				</MockedProvider>
+			);
+
+			// wait for the load to be completed
+			await waitForElementToBeRemoved(screen.queryByTestId('icon: Refresh'));
+
+			// activate selection mode by selecting items
+			selectNodes(map(currentFolder.children, (node) => node.id));
+			// check that all wanted items are selected
+			expect(screen.getAllByTestId('checkedAvatar')).toHaveLength(currentFolder.children.length);
+			expect(screen.getByTestId('icon: MoreVertical')).toBeVisible();
+			userEvent.click(screen.getByTestId('icon: MoreVertical'));
+			// check that the flag action becomes visible
+			await screen.findByText(/\bflag\b/i);
+			expect(screen.queryByText(/\brename\b/i)).not.toBeInTheDocument();
+		});
+
+		test('Rename is not visible if node does not have permissions', async () => {
+			const currentFolder = populateFolder();
+			// disable permission to rename
+			const node = populateNode();
+			node.permissions.can_write_file = false;
+			node.permissions.can_write_folder = false;
+			node.flagged = false;
+			currentFolder.children.push(node);
+
+			const mocks = [
+				{
+					request: {
+						query: GET_CHILDREN,
+						variables: {
+							parentNode: currentFolder.id,
+							childrenLimit: NODES_LOAD_LIMIT,
+							sorts: NODES_SORTS_DEFAULT
+						}
+					},
+					result: {
+						data: {
+							getNode: currentFolder
+						}
+					}
+				}
+			];
+
+			testUtils.render(
+				<MockedProvider mocks={mocks} cache={global.apolloClient.cache}>
+					<FolderList folderId={currentFolder.id} />
+				</MockedProvider>
+			);
+
+			// wait for the load to be completed
+			await waitForElementToBeRemoved(screen.queryByTestId('icon: Refresh'));
+
+			// activate selection mode by selecting items
+			selectNodes([node.id]);
+			// check that all wanted items are selected
+			expect(screen.getAllByTestId('checkedAvatar')).toHaveLength(currentFolder.children.length);
+			expect(screen.getByTestId('icon: MoreVertical')).toBeVisible();
+			userEvent.click(screen.getByTestId('icon: MoreVertical'));
+			// check that the flag action becomes visible
+			await screen.findByText(/\bflag\b/i);
+			expect(screen.queryByText(/\brename\b/i)).not.toBeInTheDocument();
+		});
+
+		test('Rename operation fail shows an error in the modal and does not close it', async () => {
+			const currentFolder = populateFolder(2);
+			// enable permission to rename
+			forEach(currentFolder.children, (node) => {
+				// eslint-disable-next-line no-param-reassign
+				node.permissions.can_write_file = true;
+				// eslint-disable-next-line no-param-reassign
+				node.permissions.can_write_folder = true;
+			});
+			const sorts = [NodeSort.NameAsc]; // sort only by name
+			sortNodes(currentFolder.children, sorts);
+
+			// rename first element with name of the second one
+			const element = currentFolder.children[0];
+			const newName = currentFolder.children[1].name;
+
+			const mocks = [
+				{
+					request: {
+						query: GET_CHILDREN,
+						variables: {
+							parentNode: currentFolder.id,
+							childrenLimit: NODES_LOAD_LIMIT,
+							// request ask for default sort, but the response will return elements sorted by name for simplicity
+							sorts: NODES_SORTS_DEFAULT
+						}
+					},
+					result: {
+						data: {
+							getNode: currentFolder
+						}
+					}
+				},
+				{
+					request: {
+						query: UPDATE_NODE,
+						variables: {
+							id: element.id,
+							name: newName
+						}
+					},
+					error: generateError('Error! Name already assigned')
+				}
+			];
+
+			testUtils.render(
+				<MockedProvider mocks={mocks} cache={global.apolloClient.cache}>
+					<FolderList folderId={currentFolder.id} />
+				</MockedProvider>
+			);
+
+			// wait for the load to be completed
+			await waitForElementToBeRemoved(screen.queryByTestId('icon: Refresh'));
+
+			// activate selection mode by selecting items
+			selectNodes([element.id]);
+			// check that all wanted items are selected
+			expect(screen.getAllByTestId('checkedAvatar')).toHaveLength(1);
+			expect(screen.getByTestId('icon: MoreVertical')).toBeVisible();
+			userEvent.click(screen.getByTestId('icon: MoreVertical'));
+			// check that the rename action becomes visible
+			await screen.findByText(/\brename\b/i);
+			userEvent.click(screen.getByText(/\brename\b/i));
+			const inputFieldDiv = await screen.findByTestId('input-name');
+			const inputField = within(inputFieldDiv).getByRole('textbox');
+			userEvent.clear(inputField);
+			userEvent.type(inputField, newName);
+			expect(inputField).toHaveValue(newName);
+			const button = screen.getByRole('button', { name: /rename/i });
+			userEvent.click(within(button).getByText(/rename/i));
+			const error = await screen.findByText('Error! Name already assigned');
+			expect(error).toBeVisible();
+			expect(inputField).toBeVisible();
+			expect(inputField).toHaveValue(newName);
+		});
+
+		test('Rename change node name and update the content of the folder, showing the element at its new position', async () => {
+			const currentFolder = populateFolder(5);
+			// enable permission to rename
+			forEach(currentFolder.children, (node) => {
+				// eslint-disable-next-line no-param-reassign
+				node.permissions.can_write_file = true;
+				// eslint-disable-next-line no-param-reassign
+				node.permissions.can_write_folder = true;
+			});
+			const sorts = [NodeSort.NameAsc]; // sort only by name
+			sortNodes(currentFolder.children, sorts);
+
+			// the element to rename is the first of the list. To assure that it changes position,
+			// the new name of the node is going to be the name of the last ordered element with the timestamp at the end
+			const timestamp = Date.now();
+			const element = currentFolder.children[0];
+			const newName = `${
+				currentFolder.children[currentFolder.children.length - 1].name
+			}-${timestamp}`;
+
+			const mocks = [
+				{
+					request: {
+						query: GET_CHILDREN,
+						variables: {
+							parentNode: currentFolder.id,
+							childrenLimit: NODES_LOAD_LIMIT,
+							// request ask for default sort, but the response will return elements sorted by name for simplicity
+							sorts: NODES_SORTS_DEFAULT
+						}
+					},
+					result: {
+						data: {
+							getNode: currentFolder
+						}
+					}
+				},
+				{
+					request: {
+						query: UPDATE_NODE,
+						variables: {
+							id: element.id,
+							name: newName
+						}
+					},
+					result: {
+						data: {
+							updateNode: {
+								...element,
+								name: newName
+							}
+						}
+					}
+				},
+				{
+					// getNeighbor request returns an empty array of children to say that the element is now at the end of the list
+					request: {
+						query: GET_CHILD_NEIGHBOR,
+						variables: {
+							parentNode: currentFolder.id,
+							childrenLimit: 1,
+							sorts: NODES_SORTS_DEFAULT,
+							cursor: element.id
+						}
+					},
+					result: {
+						data: {
+							getNode: {
+								id: currentFolder.id,
+								name: currentFolder.name,
+								children: []
+							}
+						}
+					}
+				}
+			];
+
+			testUtils.render(
+				<MockedProvider mocks={mocks} cache={global.apolloClient.cache}>
+					<FolderList folderId={currentFolder.id} />
+				</MockedProvider>
+			);
+
+			// wait for the load to be completed
+			await waitForElementToBeRemoved(screen.queryByTestId('icon: Refresh'));
+
+			// activate selection mode by selecting items
+			selectNodes([element.id]);
+			// check that all wanted items are selected
+			expect(screen.getAllByTestId('checkedAvatar')).toHaveLength(1);
+			expect(screen.getByTestId('icon: MoreVertical')).toBeVisible();
+			userEvent.click(screen.getByTestId('icon: MoreVertical'));
+			// check that the rename action becomes visible
+			await screen.findByText(/\brename\b/i);
+			userEvent.click(screen.getByText(/\brename\b/i));
+			// wait for the modal to open and fill the input field with the new name
+			const inputFieldDiv = await screen.findByTestId('input-name');
+			const inputField = within(inputFieldDiv).getByRole('textbox');
+			userEvent.clear(inputField);
+			userEvent.type(inputField, newName);
+			expect(inputField).toHaveValue(newName);
+			// click on confirm button (rename)
+			const button = screen.getByRole('button', { name: /rename/i });
+			userEvent.click(within(button).getByText(/rename/i));
+			// wait for the modal to be closed
+			await waitForElementToBeRemoved(inputField);
+			// check the node. It should have the new name and be at the end of the updated list
+			const nodeItem = screen.getByTestId(`node-item-${element.id}`);
+			expect(nodeItem).toBeVisible();
+			expect(within(nodeItem).getByText(newName)).toBeVisible();
+			const nodes = screen.getAllByTestId('node-item', { exact: false });
+			expect(nodes).toHaveLength(currentFolder.children.length);
+			expect(nodes[nodes.length - 1]).toBe(nodeItem);
+			// selection mode is de-activate
+			expect(screen.queryAllByTestId('checkedAvatar')).toHaveLength(0);
+			expect(screen.queryByTestId('icon: MoreVertical')).not.toBeInTheDocument();
+		});
+	});
+
+	describe('contextual menu actions', () => {
+		test('right click on node open the contextual menu for the node, closing a previously opened one. Left click close it', async () => {
+			const currentFolder = populateFolder();
+			const node1 = populateNode();
+			// set the node not flagged so that we can search by flag action in the contextual menu of first node
+			node1.flagged = false;
+			currentFolder.children.push(node1);
+			const node2 = populateNode();
+			// set the second node flagged so that we can search by unflag action in the contextual menu of second node
+			node2.flagged = true;
+			currentFolder.children.push(node2);
+
+			const mocks = [
+				{
+					request: {
+						query: GET_CHILDREN,
+						variables: {
+							parentNode: currentFolder.id,
+							childrenLimit: NODES_LOAD_LIMIT,
+							sorts: NODES_SORTS_DEFAULT
+						}
+					},
+					result: {
+						data: {
+							getNode: currentFolder
+						}
+					}
+				}
+			];
+
+			testUtils.render(
+				<MockedProvider mocks={mocks} cache={global.apolloClient.cache}>
+					<FolderList folderId={currentFolder.id} />
+				</MockedProvider>
+			);
+
+			// wait for the load to be completed
+			await waitForElementToBeRemoved(screen.queryByTestId('icon: Refresh'));
+
+			// right click to open contextual menu
+			const node1Item = screen.getByTestId(`node-item-${node1.id}`);
+			const node2Item = screen.getByTestId(`node-item-${node2.id}`);
+			fireEvent.contextMenu(node1Item);
+			// check that the flag action becomes visible (contextual menu of first node)
+			const flagAction = await screen.findByText(/\bflag\b/i);
+			expect(flagAction).toBeVisible();
+			// right click on second node
+			fireEvent.contextMenu(node2Item);
+			// check that the unflag action becomes visible (contextual menu of second node)
+			const unflagAction = await screen.findByText(/\bunflag\b/i);
+			expect(unflagAction).toBeVisible();
+			// check that the flag action becomes invisible (contextual menu of first node is closed)
+			expect(flagAction).not.toBeInTheDocument();
+			// left click close all the contextual menu
+			userEvent.click(node2Item);
+
+			expect(unflagAction).not.toBeInTheDocument();
+			expect(flagAction).not.toBeInTheDocument();
+		});
+
+		test('click on flag action changes flag icon visibility', async () => {
+			const currentFolder = populateFolder();
+			const node = populateNode();
+			// set the node not flagged so that we can search by flag action in the contextual menu of first node
+			node.flagged = false;
+			currentFolder.children.push(node);
+
+			const mocks = [
+				{
+					request: {
+						query: GET_CHILDREN,
+						variables: {
+							parentNode: currentFolder.id,
+							childrenLimit: NODES_LOAD_LIMIT,
+							sorts: NODES_SORTS_DEFAULT
+						}
+					},
+					result: {
+						data: {
+							getNode: currentFolder
+						}
+					}
+				},
+				{
+					request: {
+						query: FLAG_NODES,
+						variables: {
+							nodes_ids: [node.id],
+							flag: true
+						}
+					},
+					result: {
+						data: {
+							flagNodes: [node.id]
+						}
+					}
+				},
+				{
+					request: {
+						query: FLAG_NODES,
+						variables: {
+							nodes_ids: [node.id],
+							flag: false
+						}
+					},
+					result: {
+						data: {
+							flagNodes: [node.id]
+						}
+					}
+				}
+			];
+
+			testUtils.render(
+				<MockedProvider mocks={mocks} cache={global.apolloClient.cache}>
+					<FolderList folderId={currentFolder.id} />
+				</MockedProvider>
+			);
+
+			// wait for the load to be completed
+			await waitForElementToBeRemoved(screen.queryByTestId('icon: Refresh'));
+
+			// right click to open contextual menu
+			const nodeItem = screen.getByTestId(`node-item-${node.id}`);
+			// open context menu and click on flag action
+			fireEvent.contextMenu(nodeItem);
+			const flagAction = await screen.findByText(/\bflag\b/i);
+			expect(flagAction).toBeVisible();
+			userEvent.click(flagAction);
+			expect(flagAction).not.toBeInTheDocument();
+			await within(nodeItem).findByTestId('icon: Flag');
+			expect(within(nodeItem).getByTestId('icon: Flag')).toBeVisible();
+			// open context menu and click on unflag action
+			fireEvent.contextMenu(nodeItem);
+			const unflagAction = await screen.findByText(/\bunflag\b/i);
+			expect(unflagAction).toBeVisible();
+			userEvent.click(unflagAction);
+			expect(unflagAction).not.toBeInTheDocument();
+			await waitForElementToBeRemoved(within(nodeItem).queryByTestId('icon: Flag'));
+			expect(within(nodeItem).queryByTestId('icon: Flag')).not.toBeInTheDocument();
+		});
+
+		test('Rename is not visible if node does not have permissions', async () => {
+			const currentFolder = populateFolder();
+			const node = populateNode();
+			node.permissions.can_write_file = false;
+			node.permissions.can_write_folder = false;
+			node.flagged = false;
+			currentFolder.children.push(node);
+
+			const mocks = [
+				{
+					request: {
+						query: GET_CHILDREN,
+						variables: {
+							parentNode: currentFolder.id,
+							childrenLimit: NODES_LOAD_LIMIT,
+							sorts: NODES_SORTS_DEFAULT
+						}
+					},
+					result: {
+						data: {
+							getNode: currentFolder
+						}
+					}
+				}
+			];
+
+			testUtils.render(
+				<MockedProvider mocks={mocks} cache={global.apolloClient.cache}>
+					<FolderList folderId={currentFolder.id} />
+				</MockedProvider>
+			);
+
+			// wait for the load to be completed
+			await waitForElementToBeRemoved(screen.queryByTestId('icon: Refresh'));
+
+			// right click to open contextual menu
+			const nodeItem = screen.getByTestId(`node-item-${node.id}`);
+			// open context menu and click on flag action
+			fireEvent.contextMenu(nodeItem);
+			// check that the flag action is visible
+			await screen.findByText(/\bflag\b/i);
+			// rename is not visible
+			expect(screen.queryByText(/\brename\b/i)).not.toBeInTheDocument();
+		});
+
+		test('Rename change node name and update the content of the folder, showing the element at its new position', async () => {
+			const currentFolder = populateFolder(5);
+			// enable permission to rename
+			forEach(currentFolder.children, (node) => {
+				// eslint-disable-next-line no-param-reassign
+				node.permissions.can_write_file = true;
+				// eslint-disable-next-line no-param-reassign
+				node.permissions.can_write_folder = true;
+			});
+			const sorts = [NodeSort.NameAsc]; // sort only by name
+			sortNodes(currentFolder.children, sorts);
+
+			// the element to rename is the first of the list. To assure that it changes position,
+			// the new name of the node is going to be the name of the last ordered element with the timestamp at the end
+			const timestamp = Date.now();
+			const element = currentFolder.children[0];
+			const newName = `${
+				currentFolder.children[currentFolder.children.length - 1].name
+			}-${timestamp}`;
+
+			const mocks = [
+				{
+					request: {
+						query: GET_CHILDREN,
+						variables: {
+							parentNode: currentFolder.id,
+							childrenLimit: NODES_LOAD_LIMIT,
+							// request ask for default sort, but the response will return elements sorted by name for simplicity
+							sorts: NODES_SORTS_DEFAULT
+						}
+					},
+					result: {
+						data: {
+							getNode: currentFolder
+						}
+					}
+				},
+				{
+					request: {
+						query: UPDATE_NODE,
+						variables: {
+							id: element.id,
+							name: newName
+						}
+					},
+					result: {
+						data: {
+							updateNode: {
+								...element,
+								name: newName
+							}
+						}
+					}
+				},
+				{
+					// getNeighbor request returns an empty array of children to say that the element is now at the end of the list
+					request: {
+						query: GET_CHILD_NEIGHBOR,
+						variables: {
+							parentNode: currentFolder.id,
+							childrenLimit: 1,
+							sorts: NODES_SORTS_DEFAULT,
+							cursor: element.id
+						}
+					},
+					result: {
+						data: {
+							getNode: {
+								id: currentFolder.id,
+								name: currentFolder.name,
+								children: []
+							}
+						}
+					}
+				}
+			];
+
+			testUtils.render(
+				<MockedProvider mocks={mocks} cache={global.apolloClient.cache}>
+					<FolderList folderId={currentFolder.id} />
+				</MockedProvider>
+			);
+
+			// wait for the load to be completed
+			await waitForElementToBeRemoved(screen.queryByTestId('icon: Refresh'));
+
+			// right click to open contextual menu
+			const nodeItem = screen.getByTestId(`node-item-${element.id}`);
+			// open context menu
+			fireEvent.contextMenu(nodeItem);
+			// check that the rename action becomes visible and click on it
+			await screen.findByText(/\brename\b/i);
+			userEvent.click(screen.getByText(/\brename\b/i));
+			// fill new name in modal input field
+			const inputFieldDiv = await screen.findByTestId('input-name');
+			const inputField = within(inputFieldDiv).getByRole('textbox');
+			userEvent.clear(inputField);
+			userEvent.type(inputField, newName);
+			expect(inputField).toHaveValue(newName);
+			// click on confirm button (rename)
+			const button = screen.getByRole('button', { name: /rename/i });
+			userEvent.click(within(button).getByText(/rename/i));
+			// wait that the modal close
+			await waitForElementToBeRemoved(inputField);
+			// check the new item. It has the new name and its located as last element of the updated list
+			const updatedNodeItem = screen.getByTestId(`node-item-${element.id}`);
+			expect(updatedNodeItem).toBeVisible();
+			expect(within(updatedNodeItem).getByText(newName)).toBeVisible();
+			const nodes = screen.getAllByTestId('node-item', { exact: false });
+			expect(nodes).toHaveLength(currentFolder.children.length);
+			expect(nodes[nodes.length - 1]).toBe(updatedNodeItem);
+			// contextual menu is closed
+			expect(screen.queryByText(/\brename\b/i)).not.toBeInTheDocument();
 		});
 	});
 });
