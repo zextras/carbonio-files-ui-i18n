@@ -8,8 +8,9 @@
  * http://www.zextras.com/zextras-eula.html
  * *** END LICENSE BLOCK *****
  */
-import { setMainMenuItems } from '@zextras/zapp-shell';
 import { useEffect } from 'react';
+
+import { setMainMenuItems } from '@zextras/zapp-shell';
 
 function useSetMainMenuItems(): void {
 	useEffect(() => {

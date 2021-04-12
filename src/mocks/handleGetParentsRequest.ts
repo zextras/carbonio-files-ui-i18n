@@ -1,4 +1,5 @@
 import { GraphQLResponseResolver } from 'msw';
+
 import { populateFolder, populateParents } from '../commonDrive/mocks/mockUtils';
 import { GetParentQuery, GetParentQueryVariables } from '../commonDrive/types/graphql/types';
 

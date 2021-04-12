@@ -9,8 +9,10 @@
  * *** END LICENSE BLOCK *****
  */
 
-import { setRoutes } from '@zextras/zapp-shell';
 import React, { lazy, useEffect } from 'react';
+
+import { setRoutes } from '@zextras/zapp-shell';
+
 import { SetMainMenuItems } from './views/secondary-bar/SetMainMenuItem';
 
 const lazyFolderView = lazy(() =>

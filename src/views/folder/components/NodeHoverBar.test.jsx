@@ -8,10 +8,12 @@
  * http://www.zextras.com/zextras-eula.html
  * *** END LICENSE BLOCK *****
  */
+import React from 'react';
+
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { testUtils } from '@zextras/zapp-shell';
-import React from 'react';
+
 import NodeHoverBar from '../../../commonDrive/views/folder/components/NodeHoverBar';
 
 describe('Node Hover Bar', () => {

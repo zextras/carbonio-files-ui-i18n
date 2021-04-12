@@ -1,12 +1,14 @@
+import React from 'react';
+
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { testUtils } from '@zextras/zapp-shell';
 import faker from 'faker';
-import React from 'react';
+
+import { populateFile, populateFolder, populateNode } from '../../../commonDrive/mocks/mockUtils';
 import { getPermittedHoverBarActions } from '../../../commonDrive/utils/ActionsFactory';
 import { formatDate, humanFileSize } from '../../../commonDrive/utils/utils';
 import { NodeListItem } from '../../../commonDrive/views/folder/components/NodeListItem';
-import { populateFile, populateFolder, populateNode } from '../../../commonDrive/mocks/mockUtils';
 
 let mockedUserLogged;
 let mockedHistory;

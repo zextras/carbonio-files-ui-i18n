@@ -10,6 +10,7 @@
  */
 
 import { GraphQLResponseResolver } from 'msw';
+
 import { FlagNodesMutation, FlagNodesMutationVariables } from '../commonDrive/types/graphql/types';
 
 const handleFlagNodesRequest: GraphQLResponseResolver<

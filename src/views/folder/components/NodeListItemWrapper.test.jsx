@@ -8,10 +8,12 @@
  * http://www.zextras.com/zextras-eula.html
  * *** END LICENSE BLOCK *****
  */
+import React from 'react';
+
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { testUtils } from '@zextras/zapp-shell';
-import React from 'react';
+
 import { populateNode } from '../../../commonDrive/mocks/mockUtils';
 import NodeListItemWrapper from '../../../commonDrive/views/folder/components/NodeListItemWrapper';
 

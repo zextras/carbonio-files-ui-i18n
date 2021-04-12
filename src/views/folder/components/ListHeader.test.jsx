@@ -9,18 +9,20 @@
  * *** END LICENSE BLOCK *****
  */
 
+import React from 'react';
+
 import { MockedProvider } from '@apollo/client/testing';
 import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { testUtils } from '@zextras/zapp-shell';
 import { map } from 'lodash';
-import React from 'react';
+
 import GET_PARENT from '../../../commonDrive/graphql/queries/getParent.graphql';
 import GET_PATH from '../../../commonDrive/graphql/queries/getPath.graphql';
+import { populateFolder, populateParents } from '../../../commonDrive/mocks/mockUtils';
 import { buildBreadCrumbRegExp, textWithMarkup } from '../../../commonDrive/utils/testUtils';
 import { buildCrumbs } from '../../../commonDrive/utils/utils';
 import ListHeader from '../../../commonDrive/views/folder/components/ListHeader';
-import { populateFolder, populateParents } from '../../../commonDrive/mocks/mockUtils';
 
 describe('ListHeader', () => {
 	describe('Breadcrumb', () => {

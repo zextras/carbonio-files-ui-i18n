@@ -9,6 +9,7 @@
  * *** END LICENSE BLOCK *****
  */
 import { graphql } from 'msw';
+
 import handleFlagNodesRequest from './handleFlagNodesRequest';
 import handleGetChildrenRequest from './handleGetChildrenRequest';
 import handleGetParentRequest from './handleGetParentsRequest';

@@ -1,5 +1,6 @@
 import faker from 'faker';
 import { GraphQLResponseResolver } from 'msw';
+
 import { populateFolder, sortNodes } from '../commonDrive/mocks/mockUtils';
 import { GetChildrenQuery, GetChildrenQueryVariables } from '../commonDrive/types/graphql/types';
 

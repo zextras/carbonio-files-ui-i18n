@@ -11,6 +11,7 @@
 
 import faker from 'faker';
 import { GraphQLResponseResolver } from 'msw';
+
 import { populateFolder, populateLocalRoot, populateParents } from '../commonDrive/mocks/mockUtils';
 import { GetPathQuery, GetPathQueryVariables } from '../commonDrive/types/graphql/types';
 

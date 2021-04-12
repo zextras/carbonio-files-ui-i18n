@@ -9,6 +9,8 @@
  * *** END LICENSE BLOCK *****
  */
 
+import React from 'react';
+
 import { ApolloProvider } from '@apollo/client';
 import { MockedProvider } from '@apollo/client/testing';
 import {
@@ -23,7 +25,7 @@ import { testUtils } from '@zextras/zapp-shell';
 import faker from 'faker';
 import forEach from 'lodash/forEach';
 import map from 'lodash/map';
-import React from 'react';
+
 import { NODES_LOAD_LIMIT, NODES_SORTS_DEFAULT } from '../../../commonDrive/constants';
 import FLAG_NODES from '../../../commonDrive/graphql/mutations/flagNodes.graphql';
 import UPDATE_NODE from '../../../commonDrive/graphql/mutations/updateNode.graphql';
@@ -31,8 +33,8 @@ import GET_CHILD_NEIGHBOR from '../../../commonDrive/graphql/queries/getChildNei
 import GET_CHILDREN from '../../../commonDrive/graphql/queries/getChildren.graphql';
 import { populateFolder, populateNode, sortNodes } from '../../../commonDrive/mocks/mockUtils';
 import { NodeSort } from '../../../commonDrive/types/graphql/types';
-import FolderList from '../../../commonDrive/views/folder/components/FolderList';
 import { generateError } from '../../../commonDrive/utils/testUtils';
+import FolderList from '../../../commonDrive/views/folder/components/FolderList';
 
 let mockedUserLogged;
 const intersectionObserverEntries = [];
