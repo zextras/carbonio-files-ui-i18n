@@ -27,6 +27,7 @@ import forEach from 'lodash/forEach';
 import map from 'lodash/map';
 
 import { NODES_LOAD_LIMIT, NODES_SORTS_DEFAULT } from '../../../commonDrive/constants';
+import CREATE_FOLDER from '../../../commonDrive/graphql/mutations/createFolder.graphql';
 import FLAG_NODES from '../../../commonDrive/graphql/mutations/flagNodes.graphql';
 import UPDATE_NODE from '../../../commonDrive/graphql/mutations/updateNode.graphql';
 import GET_CHILD_NEIGHBOR from '../../../commonDrive/graphql/queries/getChildNeighbor.graphql';
@@ -202,6 +203,165 @@ describe('Folder List', () => {
 			)
 		).toBeVisible();
 		expect(screen.queryByTestId('Icon: Refresh')).not.toBeInTheDocument();
+	});
+
+	test('Create folder operation fail shows an error in the modal and does not close it', async () => {
+		const currentFolder = populateFolder();
+		currentFolder.permissions.can_write_folder = true;
+		const node1 = populateFolder(0, 'n1', 'first');
+		const node2 = populateFolder(0, 'n2', 'second');
+		const node3 = populateFolder(0, 'n3', 'third');
+		currentFolder.children.push(node1, node2, node3);
+
+		const newName = node2.name;
+
+		const mocks = [
+			{
+				request: {
+					query: GET_CHILDREN,
+					variables: {
+						parentNode: currentFolder.id,
+						childrenLimit: NODES_LOAD_LIMIT,
+						sorts: NODES_SORTS_DEFAULT
+					}
+				},
+				result: {
+					data: {
+						getNode: currentFolder
+					}
+				}
+			},
+			{
+				request: {
+					query: CREATE_FOLDER,
+					variables: {
+						parentId: currentFolder.id,
+						name: newName
+					}
+				},
+				error: generateError('Error! Name already assigned')
+			}
+		];
+
+		// simulate the creation of a new folder
+		testUtils.render(
+			<MockedProvider mocks={mocks} cache={global.apolloClient.cache}>
+				<FolderList folderId={currentFolder.id} newFolder />
+			</MockedProvider>
+		);
+
+		// wait for the load to be completed
+		await waitForElementToBeRemoved(screen.queryByTestId('icon: Refresh'));
+		expect(screen.getAllByTestId('node-item', { exact: false })).toHaveLength(
+			currentFolder.children.length
+		);
+		// wait for the creation modal to be opened
+		const inputFieldDiv = await screen.findByTestId('input-name');
+		const inputField = within(inputFieldDiv).getByRole('textbox');
+		expect(inputField).toHaveValue('');
+		userEvent.type(inputField, newName);
+		expect(inputField).toHaveValue(newName);
+		const button = screen.getByRole('button', { name: /create/i });
+		userEvent.click(button);
+		const error = await screen.findByText('Error! Name already assigned');
+		expect(error).toBeVisible();
+		expect(inputField).toBeVisible();
+		expect(inputField).toHaveValue(newName);
+		expect(screen.getAllByTestId('node-item', { exact: false })).toHaveLength(
+			currentFolder.children.length
+		);
+	});
+
+	test('Create folder add folder node at folder content, showing the element at its right position', async () => {
+		const currentFolder = populateFolder();
+		currentFolder.permissions.can_write_folder = true;
+		const node1 = populateFolder(0, 'n1', 'first');
+		const node2 = populateFolder(0, 'n2', 'second');
+		const node3 = populateFolder(0, 'n3', 'third');
+		// add node 1 and 3 as children, node 2 is the new folder
+		currentFolder.children.push(node1, node3);
+
+		const mocks = [
+			{
+				request: {
+					query: GET_CHILDREN,
+					variables: {
+						parentNode: currentFolder.id,
+						childrenLimit: NODES_LOAD_LIMIT,
+						sorts: NODES_SORTS_DEFAULT
+					}
+				},
+				result: {
+					data: {
+						getNode: currentFolder
+					}
+				}
+			},
+			{
+				request: {
+					query: CREATE_FOLDER,
+					variables: {
+						parentId: currentFolder.id,
+						name: node2.name
+					}
+				},
+				result: {
+					data: {
+						createFolder: node2
+					}
+				}
+			},
+			{
+				// getNeighbor request returns node3 to say that the new folder is positioned before this node
+				request: {
+					query: GET_CHILD_NEIGHBOR,
+					variables: {
+						parentNode: currentFolder.id,
+						childrenLimit: 1,
+						sorts: NODES_SORTS_DEFAULT,
+						cursor: node2.id
+					}
+				},
+				result: {
+					data: {
+						getNode: {
+							id: currentFolder.id,
+							name: currentFolder.name,
+							children: [node3]
+						}
+					}
+				}
+			}
+		];
+
+		// simulate the creation of a new folder
+		testUtils.render(
+			<MockedProvider mocks={mocks} cache={global.apolloClient.cache}>
+				<FolderList folderId={currentFolder.id} newFolder />
+			</MockedProvider>
+		);
+
+		// wait for the load to be completed
+		await waitForElementToBeRemoved(screen.queryByTestId('icon: Refresh'));
+		expect(screen.getAllByTestId('node-item', { exact: false })).toHaveLength(
+			currentFolder.children.length
+		);
+		// wait for the creation modal to be opened
+		const inputFieldDiv = await screen.findByTestId('input-name');
+		const inputField = within(inputFieldDiv).getByRole('textbox');
+		expect(inputField).toHaveValue('');
+		userEvent.type(inputField, node2.name);
+		expect(inputField).toHaveValue(node2.name);
+		const button = screen.getByRole('button', { name: /create/i });
+		userEvent.click(button);
+		const nodeItem = await screen.findByTestId(`node-item-${node2.id}`);
+		// the modal is closed
+		expect(inputFieldDiv).not.toBeInTheDocument();
+		expect(nodeItem).toBeVisible();
+		expect(within(nodeItem).getByText(node2.name)).toBeVisible();
+		const nodes = screen.getAllByTestId('node-item', { exact: false });
+		expect(nodes).toHaveLength(currentFolder.children.length + 1);
+		expect(nodes[1]).toBe(nodeItem);
 	});
 
 	describe('Selection mode', () => {
