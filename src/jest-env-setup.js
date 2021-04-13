@@ -21,6 +21,7 @@ beforeEach(async () => {
 	// reset apollo client cache
 	await global.apolloClient.cache.reset();
 });
+
 beforeAll(() => {
 	server.listen();
 
@@ -40,6 +41,30 @@ beforeAll(() => {
 			addEventListener: jest.fn(),
 			removeEventListener: jest.fn(),
 			dispatchEvent: jest.fn()
+		}))
+	});
+
+	global.intersectionObserverEntries = [];
+
+	// mock a simplified Intersection Observer
+	Object.defineProperty(window, 'IntersectionObserver', {
+		writable: true,
+		value: jest.fn().mockImplementation((callback, options) => ({
+			thresholds: options.threshold,
+			root: options.root,
+			rootMargin: options.rootMargin,
+			observe: jest.fn((element) => {
+				global.intersectionObserverEntries.push(element);
+			}),
+			unobserve: jest.fn((element) => {
+				global.intersectionObserverEntries.splice(
+					global.intersectionObserverEntries.indexOf(element),
+					1
+				);
+			}),
+			disconnect: jest.fn(() => {
+				global.intersectionObserverEntries.splice(0, global.intersectionObserverEntries.length);
+			})
 		}))
 	});
 });

@@ -11,30 +11,45 @@
 import { useEffect } from 'react';
 
 import { setMainMenuItems } from '@zextras/zapp-shell';
+import { useTranslation } from 'react-i18next';
 
 function useSetMainMenuItems(): void {
+	const [translate] = useTranslation();
 	useEffect(() => {
 		setMainMenuItems([
 			{
 				id: 'drive-root',
 				icon: 'DriveOutline',
 				to: '/',
-				label: 'Drive Home',
+				label: translate('primarybar.drivehome', 'Drive Home'),
 				items: [
 					{
 						id: 'LOCAL_ROOT',
 						to: '/',
-						label: 'Drive Home'
+						label: translate('secondarybar.drivehome', 'Drive Home')
 					},
 					{
 						id: 'TEAM_ROOT',
 						to: '/root/team',
-						label: 'Team'
+						label: translate('secondarybar.team', 'Team')
+					},
+					{
+						id: 'FILTERS',
+						to: '/filter',
+						label: translate('secondarybar.filters', 'Filters'),
+						items: [
+							{
+								id: 'Flagged',
+								icon: 'Flag',
+								to: '/filter/flagged',
+								label: translate('secondarybar.filters.flagged', 'Flagged')
+							}
+						]
 					}
 				]
 			}
 		]);
-	}, []);
+	}, [translate]);
 }
 
 export function SetMainMenuItems(): null {

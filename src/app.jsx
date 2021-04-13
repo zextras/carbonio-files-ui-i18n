@@ -19,6 +19,10 @@ const lazyFolderView = lazy(() =>
 	import(/* webpackChunkName: "folderView" */ './commonDrive/views/folder/FolderView')
 );
 
+const lazyFilterView = lazy(() =>
+	import(/* webpackChunkName: "filterView" */ './commonDrive/views/folder/FilterView')
+);
+
 export default function App() {
 	// eslint-disable-next-line no-console
 	console.log('Hello from zapp-drive');
@@ -28,6 +32,10 @@ export default function App() {
 			{
 				route: '/root/:rootId',
 				view: lazyFolderView
+			},
+			{
+				route: '/filter/:filter?',
+				view: lazyFilterView
 			},
 			{
 				route: '/',

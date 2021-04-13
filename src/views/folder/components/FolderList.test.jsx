@@ -37,28 +37,6 @@ import { generateError } from '../../../commonDrive/utils/testUtils';
 import FolderList from '../../../commonDrive/views/folder/components/FolderList';
 
 let mockedUserLogged;
-const intersectionObserverEntries = [];
-
-beforeAll(() => {
-	// mock a simplified Intersection Observer
-	Object.defineProperty(window, 'IntersectionObserver', {
-		writable: true,
-		value: jest.fn().mockImplementation((callback, options) => ({
-			thresholds: options.threshold,
-			root: options.root,
-			rootMargin: options.rootMargin,
-			observe: jest.fn((element) => {
-				intersectionObserverEntries.push(element);
-			}),
-			unobserve: jest.fn((element) => {
-				intersectionObserverEntries.splice(intersectionObserverEntries.indexOf(element), 1);
-			}),
-			disconnect: jest.fn(() => {
-				intersectionObserverEntries.splice(0, intersectionObserverEntries.length);
-			})
-		}))
-	});
-});
 
 beforeEach(() => {
 	// mock useUserInfo data
@@ -118,7 +96,7 @@ describe('Folder List', () => {
 		await waitForElementToBeRemoved(() =>
 			within(screen.getByTestId('list-header')).queryByTestId('icon: Refresh')
 		);
-		expect(screen.getByTestId(currentFolder.id)).not.toBeEmptyDOMElement();
+		expect(screen.getByTestId(`list-${currentFolder.id}`)).not.toBeEmptyDOMElement();
 		const { getNode } = global.apolloClient.readQuery({
 			query: GET_CHILDREN,
 			variables: {
@@ -177,7 +155,7 @@ describe('Folder List', () => {
 		];
 
 		testUtils.render(
-			<MockedProvider mocks={mocks} client={global.apolloClient} cache={global.apolloClient.cache}>
+			<MockedProvider mocks={mocks} cache={global.apolloClient.cache}>
 				<div id="boards-router-container" className="boards-router-container">
 					<FolderList folderId={currentFolder.id} />
 				</div>
@@ -185,7 +163,7 @@ describe('Folder List', () => {
 		);
 
 		// this is the loading refresh icon
-		expect(screen.getByTestId(currentFolder.id)).toContainElement(
+		expect(screen.getByTestId(`list-${currentFolder.id}`)).toContainElement(
 			screen.getByTestId('icon: Refresh')
 		);
 		expect(screen.getByTestId('icon: Refresh')).toBeVisible();
@@ -634,7 +612,7 @@ describe('Folder List', () => {
 		});
 	});
 
-	describe('contextual menu actions', () => {
+	describe('Contextual menu actions', () => {
 		test('right click on node open the contextual menu for the node, closing a previously opened one. Left click close it', async () => {
 			const currentFolder = populateFolder();
 			const node1 = populateNode();
