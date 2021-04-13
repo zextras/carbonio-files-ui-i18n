@@ -1,6 +1,9 @@
 module.exports = {
 	transform: {
-		"^.+\\.[t|j]sx?$": ['babel-jest', { configFile: './babel.config.jest.js' }]
+		'^.+\\.[t|j]sx?$': ['babel-jest', { configFile: './babel.config.jest.js' }],
+		'\\.(gql|graphql)$': 'jest-transform-graphql',
+		'\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
+			'<rootDir>/src/mocks/fileTransformer.js'
 	},
 	moduleDirectories: [
 		'node_modules',
@@ -13,10 +16,6 @@ module.exports = {
 	coverageReporters: ['text', 'cobertura'],
 	reporters: ['default', 'jest-junit'],
 	// testMatch: ['/test/**/*.js?(x)'],
-	setupFilesAfterEnv: [
-		"<rootDir>/src/jest-env-setup.js"
-	],
-	setupFiles: [
-		"<rootDir>/src/jest-polyfills.js"
-	]
+	setupFilesAfterEnv: ['<rootDir>/src/jest-env-setup.js'],
+	setupFiles: ['<rootDir>/src/jest-polyfills.js']
 };

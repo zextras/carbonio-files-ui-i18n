@@ -9,24 +9,40 @@
  * *** END LICENSE BLOCK *****
  */
 
-import React, { useEffect } from 'react';
-import {
-	setCreateOptions, setRoutes, store
-} from '@zextras/zapp-shell';
-import { combineReducers } from '@reduxjs/toolkit';
+import React, { lazy, useEffect } from 'react';
+
+import { setRoutes } from '@zextras/zapp-shell';
+
+import { SetMainMenuItems } from './views/secondary-bar/SetMainMenuItem';
+
+const lazyFolderView = lazy(() =>
+	import(/* webpackChunkName: "folderView" */ './commonDrive/views/folder/FolderView')
+);
+
+const lazyFilterView = lazy(() =>
+	import(/* webpackChunkName: "filterView" */ './commonDrive/views/folder/FilterView')
+);
 
 export default function App() {
-	console.log('Hello from zapp-template');
-	/* Here an example on how to use this entry point.
-	 * Have fun :)
-	 * useEffect(() => {
-	 * 	store.setReducer(
-	 * 		combineReducers({}),
-	 * 	);
-	 * 	setRoutes([]);
-	 * 	setCreateOptions([{}]);
-	 * }, []);
-	 */
+	// eslint-disable-next-line no-console
+	console.log('Hello from zapp-drive');
 
-	return null;
+	useEffect(() => {
+		setRoutes([
+			{
+				route: '/root/:rootId',
+				view: lazyFolderView
+			},
+			{
+				route: '/filter/:filter?',
+				view: lazyFilterView
+			},
+			{
+				route: '/',
+				view: lazyFolderView
+			}
+		]);
+	}, []);
+
+	return <SetMainMenuItems />;
 }

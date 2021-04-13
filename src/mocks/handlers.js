@@ -8,9 +8,30 @@
  * http://www.zextras.com/zextras-eula.html
  * *** END LICENSE BLOCK *****
  */
-import { rest } from 'msw';
+import { graphql } from 'msw';
+
+import handleCreateFolderRequest from './handleCreateFolderRequest';
+import handleFindNodesRequest from './handleFindNodesRequest';
+import handleFlagNodesRequest from './handleFlagNodesRequest';
+import handleGetChildrenRequest from './handleGetChildrenRequest';
+import handleGetParentRequest from './handleGetParentsRequest';
+import handleGetPathRequest from './handleGetPathRequest';
+import handleGetPermissionsRequest from './handleGetPermissionsRequest';
+import handleIntrospectionRequest from './handleIntrospectionRequest';
+import handleUpdateNodeRequest from './handleUpdateNodeRequest';
 
 const handlers = [
+	graphql.query('getChildren', handleGetChildrenRequest),
+	graphql.query('getParent', handleGetParentRequest),
+	graphql.query('IntrospectionQuery', handleIntrospectionRequest),
+	graphql.mutation('flagNodes', handleFlagNodesRequest),
+	graphql.query('getPath', handleGetPathRequest),
+	graphql.mutation('createFolder', handleCreateFolderRequest),
+	graphql.mutation('updateNode', handleUpdateNodeRequest),
+	graphql.query('getPermissions', handleGetPermissionsRequest),
+	graphql.query('getChildNeighbor', handleGetChildrenRequest),
+	graphql.query('findNodes', handleFindNodesRequest),
+	graphql.query('findNodeNeighbor', handleFindNodesRequest)
 ];
 
 export default handlers;
