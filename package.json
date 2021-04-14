@@ -1,13 +1,13 @@
 {
 	"name": "zapp-drive",
-	"version": "0.0.1",
+	"version": "0.0.2-beta.0",
 	"description": "Zapp Drive",
 	"main": "src/app.jsx",
 	"scripts": {
 		"build": "zapp package",
 		"start": "zapp watch",
 		"test": "jest",
-		"_postinstall": "is-ci || husky install",
+		"postinstall": "is-ci || husky install",
 		"prepublish": "pinst --disable",
 		"postpublish": "pinst --enable",
 		"test:watch": "jest --watch",
