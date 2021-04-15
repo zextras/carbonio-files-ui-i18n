@@ -1,3 +1,9 @@
 {
-    "folder":"folder"
+    "filter": {
+        "snackbar": {
+            "toggleflag": {
+                "success": "Success"
+            }
+        }
+    }
 }
