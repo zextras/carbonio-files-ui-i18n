@@ -92,6 +92,6 @@
 	"zapp": {
 		"packagename": "zextras-zapp-drive",
 		"zipname": "com_zextras_zapp_drive",
-		"translations_repository": ""
+		"translations_repository": "git@bitbucket.org:zextras/com_zextras_zapp_drive.git"
 	}
 }
