@@ -1,9 +1,70 @@
 {
-    "filter": {
-        "snackbar": {
-            "toggleflag": {
-                "success": "Success"
+    "create": {
+        "options": {
+            "new": {
+                "folder": "New Folder"
             }
         }
+    },
+    "empty": {
+        "folder": {
+            "hint":"It looks like there's nothing here.",
+            "state": "Drag a file or create a new one clicking \"NEW\""
+        }
+    },
+    "filter": {
+        "snackbar": {
+            "unflag": {
+                "success": "Success",
+                "error": "Error"
+            }
+        }
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "title": "Create a New folder",
+                "input": {
+                    "label": {
+                        "name": "Type here a name of new folder"
+                    }
+                },
+                "button": {
+                    "confirm": "Create"
+                }
+            }
+        }
+    },
+    "modal": {
+        "button": {
+            "cancel": "Cancel",
+            "confirm": "Confirm"
+        }
+    },
+    "node": {
+        "rename": {
+            "modal": {
+                "title": "Rename a file or folder",
+                "input": {
+                    "label": {
+                        "name": "Type here a new name"
+                    }
+                },
+                "button": {
+                    "confirm": "Rename"
+                }
+            }
+        }
+    },
+    "primaryBar": {
+        "driveHome": "Drive Home"
+    },
+    "secondaryBar": {
+        "driveHome": "Drive Home",
+        "filters": "Filters",
+        "filtersList": {
+            "flagged": "Flagged"
+        },
+        "team": "Team"
     }
 }
