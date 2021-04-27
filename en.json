@@ -8,30 +8,30 @@
     },
     "empty": {
         "folder": {
-            "hint":"It looks like there's nothing here.",
+            "hint": "It looks like there's nothing here.",
             "state": "Drag a file or create a new one clicking \"NEW\""
         }
     },
     "filter": {
         "snackbar": {
             "unflag": {
-                "success": "Success",
-                "error": "Error"
+                "error": "Error",
+                "success": "Success"
             }
         }
     },
     "folder": {
         "create": {
             "modal": {
-                "title": "Create a New folder",
+                "button": {
+                    "confirm": "Create"
+                },
                 "input": {
                     "label": {
                         "name": "Type here a name of new folder"
                     }
                 },
-                "button": {
-                    "confirm": "Create"
-                }
+                "title": "Create a New folder"
             }
         }
     },
@@ -44,15 +44,15 @@
     "node": {
         "rename": {
             "modal": {
-                "title": "Rename a file or folder",
+                "button": {
+                    "confirm": "Rename"
+                },
                 "input": {
                     "label": {
                         "name": "Type here a new name"
                     }
                 },
-                "button": {
-                    "confirm": "Rename"
-                }
+                "title": "Rename a file or folder"
             }
         }
     },
@@ -66,5 +66,11 @@
             "flagged": "Flagged"
         },
         "team": "Team"
+    },
+    "snackbar": {
+        "markForDeletion": {
+            "error": "Error",
+            "success": "Success"
+        }
     }
 }
