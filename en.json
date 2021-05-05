@@ -63,7 +63,10 @@
         "driveHome": "Drive Home",
         "filters": "Filters",
         "filtersList": {
-            "flagged": "Flagged"
+            "flagged": "Flagged",
+            "myElements": "My elements",
+            "sharedElements": "Shared Elements",
+            "trash": "Trash"
         },
         "team": "Team"
     },
