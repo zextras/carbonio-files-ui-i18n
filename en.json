@@ -71,6 +71,10 @@
         "markForDeletion": {
             "error": "Error",
             "success": "Success"
+        },
+        "moveNodes": {
+            "error": "Error",
+            "success": "Success"
         }
     }
 }
