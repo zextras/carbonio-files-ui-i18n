@@ -42,6 +42,19 @@
         }
     },
     "node": {
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "Move"
+                },
+                "input": {
+                    "filter": "Filter folders"
+                },
+                "subtitle": "Select a folder to move this considered one to:",
+                "title": "Move {{node.name}} to",
+                "title_plurals": "Move to"
+            }
+        },
         "rename": {
             "modal": {
                 "button": {
