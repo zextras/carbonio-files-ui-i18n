@@ -78,7 +78,9 @@
         "filtersList": {
             "flagged": "Flagged",
             "myElements": "My elements",
+            "sharedByMe": "Shared by me",
             "sharedElements": "Shared Elements",
+            "sharedWithMe": "Shared with me",
             "trash": "Trash"
         },
         "team": "Team"
