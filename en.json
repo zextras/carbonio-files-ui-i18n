@@ -88,11 +88,16 @@
     "snackbar": {
         "markForDeletion": {
             "error": "Error",
+            "showTrash": "Show Trash",
             "success": "Success"
         },
         "moveNodes": {
             "error": "Error",
             "success": "Success"
+        },
+        "restore": {
+            "error": "Error",
+            "showInFolder": "Show in folder"
         }
     }
 }
