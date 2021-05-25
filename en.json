@@ -15,8 +15,8 @@
     "filter": {
         "snackbar": {
             "unflag": {
-                "error": "Error",
-                "success": "Success"
+                "error": "Something went wrong, try again",
+                "success": "Item unflagged succesfully"
             }
         }
     },
@@ -28,10 +28,10 @@
                 },
                 "input": {
                     "label": {
-                        "name": "Type here a name of new folder"
+                        "name": "Folder Name"
                     }
                 },
-                "title": "Create a New folder"
+                "title": "Create New folder"
             }
         }
     },
@@ -39,6 +39,13 @@
         "button": {
             "cancel": "Cancel",
             "confirm": "Confirm"
+        },
+        "deletePermanently": {
+            "body": "You will delete permanently this item/these items. You will not be able to recover this file/these files anymore. This action is irreversible.",
+            "button": {
+                "confirm": "Delete permanently"
+            },
+            "header": "This action is irreversible"
         }
     },
     "node": {
@@ -50,9 +57,9 @@
                 "input": {
                     "filter": "Filter folders"
                 },
-                "subtitle": "Select a folder to move this considered one to:",
-                "title": "Move {{node.name}} to",
-                "title_plurals": "Move to"
+                "subtitle": "Select a destination folder:",
+                "title": "Move {{node.name}}",
+                "title_plurals": "Move items"
             }
         },
         "rename": {
@@ -62,10 +69,10 @@
                 },
                 "input": {
                     "label": {
-                        "name": "Type here a new name"
+                        "name": "Item Name"
                     }
                 },
-                "title": "Rename a file or folder"
+                "title": "Rename item"
             }
         }
     },
@@ -86,18 +93,23 @@
         "team": "Team"
     },
     "snackbar": {
-        "markForDeletion": {
+        "deletePermanently": {
             "error": "Error",
-            "showTrash": "Show Trash",
             "success": "Success"
+        },
+        "markForDeletion": {
+            "error": "Something went wrong, try again",
+            "showTrash": "Open Trash folder",
+            "success": "Item moved to trash"
         },
         "moveNodes": {
-            "error": "Error",
-            "success": "Success"
+            "error": "Something went wrong, try again",
+            "success": "Item moved to destination folder"
         },
         "restore": {
-            "error": "Error",
-            "showInFolder": "Show in folder"
+            "error": "Something went wrong, try again",
+            "showInFolder": "Show in folder",
+            "success": "Success"
         }
     }
 }
