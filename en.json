@@ -1,4 +1,14 @@
 {
+    "actions": {
+        "deletePermanently": "Delete Permanently",
+        "flag": "Flag",
+        "markForDeletion": "Mark for deletion",
+        "move": "Move",
+        "moveToTrash": "Move to Trash",
+        "rename": "Rename",
+        "restore": "Restore",
+        "unflag": "Unflag"
+    },
     "create": {
         "options": {
             "new": {
