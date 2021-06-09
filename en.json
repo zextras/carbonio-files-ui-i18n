@@ -16,6 +16,31 @@
             }
         }
     },
+    "displayer": {
+        "details": {
+            "collaborators": "Collaborators",
+            "content": "Content",
+            "createdBy": "Created by",
+            "description": "Description",
+            "downloads": "Downloads by public link",
+            "lastEdit": "Last edit",
+            "position": "Position",
+            "showPath": "Show path",
+            "size": "Size"
+        },
+        "folder": {
+            "preview": "You are in a folder"
+        },
+        "list": {
+            "you": "You"
+        },
+        "tabs": {
+            "activities": "Activities",
+            "details": "Details",
+            "sharing": "Sharing",
+            "versioning": "Versioning"
+        }
+    },
     "empty": {
         "folder": {
             "hint": "It looks like there's nothing here.",
@@ -26,7 +51,7 @@
         "snackbar": {
             "unflag": {
                 "error": "Something went wrong, try again",
-                "success": "Item unflagged succesfully"
+                "success": "Item unflagged successfully"
             }
         }
     },
@@ -103,6 +128,9 @@
         "team": "Team"
     },
     "snackbar": {
+        "clipboard": {
+            "email": "Email address copied"
+        },
         "deletePermanently": {
             "error": "Error",
             "success": "Success"
