@@ -2,6 +2,7 @@
     "actions": {
         "copy": "Copy",
         "deletePermanently": "Delete Permanently",
+        "download": "Download",
         "flag": "Flag",
         "markForDeletion": "Mark for deletion",
         "move": "Move",
@@ -35,6 +36,31 @@
         },
         "list": {
             "you": "You"
+        },
+        "share": {
+            "addShare": {
+                "checkbox": {
+                    "label": "Add a custom message to mail notification"
+                },
+                "input": {
+                    "label": "Add a custom message to this notification",
+                    "placeholder": "Add new people or groups"
+                }
+            },
+            "chip": {
+                "popover": {
+                    "role": {
+                        "editor": "Editor",
+                        "editorDescription": "It will be able to view and edit the file or folder",
+                        "viewer": "Viewer",
+                        "viewerDescription": "It will only be able to view or download the file or folder"
+                    },
+                    "save": "Save",
+                    "sharingAllowed": "Sharing allowed",
+                    "sharingAllowedDescription": "Description of what will happen if this is checked"
+                }
+            },
+            "noSharePermissionHeader": "You are not allowed to share this item."
         },
         "tabs": {
             "activities": "Activities",
@@ -83,6 +109,13 @@
                 "confirm": "Delete permanently"
             },
             "header": "This action is irreversible"
+        },
+        "deleteShare": {
+            "body": "Are you sure to remove all the access permission previously given to {{shareTarget}} ?",
+            "button": {
+                "confirm": "Remove"
+            },
+            "header": "Remove share"
         }
     },
     "node": {
@@ -147,6 +180,10 @@
             "success": "Item copied to destination folder"
         },
         "deletePermanently": {
+            "error": "Error",
+            "success": "Success"
+        },
+        "deleteShare": {
             "error": "Error",
             "success": "Success"
         },
