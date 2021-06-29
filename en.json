@@ -129,6 +129,11 @@
             }
         },
         "move": {
+            "error": {
+                "not": {
+                    "allowed": "Action not allowed for selected file"
+                }
+            },
             "modal": {
                 "button": {
                     "confirm": "Move"
