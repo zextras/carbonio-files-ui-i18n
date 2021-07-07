@@ -1,21 +1,26 @@
 {
     "actions": {
+        "cancelUpload": "Cancel upload",
         "copy": "Copy",
         "deletePermanently": "Delete Permanently",
         "download": "Download",
         "flag": "Flag",
+        "goToFolder": "Go to destination folder",
         "markForDeletion": "Mark for deletion",
         "move": "Move",
         "moveToTrash": "Move to Trash",
+        "removeUpload": "Remove upload",
         "rename": "Rename",
         "restore": "Restore",
+        "retryUpload": "Retry upload",
         "unflag": "Unflag",
         "upsert": "Upsert"
     },
     "create": {
         "options": {
             "new": {
-                "folder": "New Folder"
+                "folder": "New Folder",
+                "upload": "Upload"
             }
         }
     },
@@ -67,6 +72,10 @@
             "details": "Details",
             "sharing": "Sharing",
             "versioning": "Versioning"
+        },
+        "uploads": {
+            "message": "Here you can find all the stuff that are currently in upload, you can manage them from here",
+            "title": "Upload hints"
         }
     },
     "empty": {
@@ -174,7 +183,8 @@
             "sharedWithMe": "Shared with me",
             "trash": "Trash"
         },
-        "team": "Team"
+        "team": "Team",
+        "uploads": "Uploads"
     },
     "snackbar": {
         "clipboard": {
@@ -192,6 +202,9 @@
             "error": "Error",
             "success": "Success"
         },
+        "download": {
+            "start": "Your download will start soon"
+        },
         "markForDeletion": {
             "error": "Something went wrong, try again",
             "showTrash": "Open Trash folder",
@@ -205,6 +218,18 @@
             "error": "Something went wrong, try again",
             "showInFolder": "Show in folder",
             "success": "Success"
+        },
+        "upload": {
+            "goToFolder": "Go to folder"
         }
+    },
+    "uploads": {
+        "clean": {
+            "completed": "Clean completed uploads"
+        },
+        "destination": {
+            "home": "Upload occurred in Drive Home"
+        },
+        "destinationFolder": "Destination folder"
     }
 }
