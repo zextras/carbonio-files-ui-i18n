@@ -19,7 +19,10 @@
     "create": {
         "options": {
             "new": {
+                "document": "New Document",
                 "folder": "New Folder",
+                "presentation": "New Presentation",
+                "spreadsheet": "New Spreadsheet",
                 "upload": "Upload"
             }
         }
@@ -76,6 +79,26 @@
         "uploads": {
             "message": "Here you can find all the stuff that are currently in upload, you can manage them from here",
             "title": "Upload hints"
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "Document name",
+                            "presentation": "Presentation name",
+                            "spreadsheet": "Spreadsheet name"
+                        }
+                    }
+                },
+                "title": {
+                    "document": "Create New Document",
+                    "presentation": "Create New Presentation",
+                    "spreadsheet": "Create New Spreadsheet"
+                }
+            }
         }
     },
     "empty": {
