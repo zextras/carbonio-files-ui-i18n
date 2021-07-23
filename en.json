@@ -45,6 +45,10 @@
         "list": {
             "you": "You"
         },
+        "search": {
+            "message": "Here you can find all the stuff that are currently in upload, you can manage them from here",
+            "title": "Search hints"
+        },
         "share": {
             "addShare": {
                 "checkbox": {
@@ -195,6 +199,40 @@
     "primaryBar": {
         "driveHome": "Drive Home"
     },
+    "search": {
+        "button": {
+            "clear": {
+                "tooltip": "Type some keywords to start a search"
+            },
+            "search": {
+                "hint": "",
+                "tooltip": "Type some keywords to start a search"
+            }
+        },
+        "clear": {
+            "tooltip": {
+                "clear": "Clear search input",
+                "empty": "Search input is already clear"
+            }
+        },
+        "header": {
+            "result": "Results that contain all the keywords:",
+            "search": "Search"
+        },
+        "search": {
+            "tooltip": {
+                "edit": "Edit your search to start a new one",
+                "empty": "Type some keywords to start a search",
+                "search": "Search"
+            }
+        },
+        "searchBar": {
+            "label": {
+                "active": "Separate your keywords by a comma, semicolon or pressing TAB",
+                "default": "Type your search"
+            }
+        }
+    },
     "secondaryBar": {
         "driveHome": "Drive Home",
         "filters": "Filters",
@@ -206,6 +244,7 @@
             "sharedWithMe": "Shared with me",
             "trash": "Trash"
         },
+        "search": "Search",
         "team": "Team",
         "uploads": "Uploads"
     },
