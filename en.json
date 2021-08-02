@@ -155,6 +155,10 @@
         }
     },
     "node": {
+        "alias": {
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_ROOT": "Drive Home"
+        },
         "copy": {
             "modal": {
                 "button": {
