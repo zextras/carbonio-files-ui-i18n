@@ -70,7 +70,8 @@
                     "save": "Save",
                     "sharingAllowed": "Sharing allowed",
                     "sharingAllowedDescription": "Description of what will happen if this is checked"
-                }
+                },
+                "you": "You"
             },
             "noSharePermissionHeader": "You are not allowed to share this item."
         },
@@ -147,11 +148,17 @@
             "header": "This action is irreversible"
         },
         "deleteShare": {
-            "body": "Are you sure to remove all the access permission previously given to {{shareTarget}} ?",
+            "body": "Are you sure to remove all the access permission previously given to <1>{{shareTarget}}</1>?",
             "button": {
                 "confirm": "Remove"
             },
-            "header": "Remove share"
+            "header": "Remove share",
+            "yourShare": {
+                "body": {
+                    "answer": "Are you sure to remove yourself from this collaboration?",
+                    "permissionLost": "All the access permission previously given to you will be lost."
+                }
+            }
         }
     },
     "node": {
