@@ -159,6 +159,16 @@
                     "permissionLost": "All the access permission previously given to you will be lost."
                 }
             }
+        },
+        "roots": {
+            "driveHome": "Home",
+            "rootsList": "Drive",
+            "sharedWitMe": "Shared with me",
+            "trash": {
+                "myElements": "My elements",
+                "sharedWitMe": "Shared elements",
+                "trash": "Trash"
+            }
         }
     },
     "node": {
@@ -207,19 +217,7 @@
             }
         }
     },
-    "primaryBar": {
-        "driveHome": "Drive Home"
-    },
     "search": {
-        "button": {
-            "clear": {
-                "tooltip": "Type some keywords to start a search"
-            },
-            "search": {
-                "hint": "",
-                "tooltip": "Type some keywords to start a search"
-            }
-        },
         "clear": {
             "tooltip": {
                 "clear": "Clear search input",
@@ -255,8 +253,6 @@
             "sharedWithMe": "Shared with me",
             "trash": "Trash"
         },
-        "rootsList": "Root folder",
-        "search": "Search",
         "team": "Team",
         "uploads": "Uploads"
     },
@@ -304,7 +300,6 @@
         "destination": {
             "home": "Upload occurred in Drive Home"
         },
-        "destinationFolder": "Destination folder",
         "dropzone": {
             "message": {
                 "disabled": "You cannot drop an attachment in this area",
