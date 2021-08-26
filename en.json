@@ -46,7 +46,7 @@
             "you": "You"
         },
         "search": {
-            "message": "Here you can find all the stuff that are currently in upload, you can manage them from here",
+            "message": "Here you can find all the result of your search",
             "title": "Search hints"
         },
         "share": {
@@ -82,7 +82,7 @@
             "versioning": "Versioning"
         },
         "uploads": {
-            "message": "Here you can find all the stuff that are currently in upload, you can manage them from here",
+            "message": "Here you can find all the items that are currently uploading, you can manage them from here",
             "title": "Upload hints"
         }
     },
@@ -148,7 +148,7 @@
             "header": "This action is irreversible"
         },
         "deleteShare": {
-            "body": "Are you sure to remove all the access permission previously given to <1>{{shareTarget}}</1>?",
+            "body": "Are you sure to remove all the access permission previously given to {{shareTarget}} ?",
             "button": {
                 "confirm": "Remove"
             },
@@ -304,6 +304,22 @@
         "destination": {
             "home": "Upload occurred in Drive Home"
         },
-        "destinationFolder": "Destination folder"
+        "destinationFolder": "Destination folder",
+        "dropzone": {
+            "message": {
+                "disabled": "You cannot drop an attachment in this area",
+                "folderView": {
+                    "disabled": "You cannot drop an attachment in this area",
+                    "enabled": "Drop here your attachments \n to quick-add them to this folder"
+                },
+                "otherView": {
+                    "enabled": "Drop here your attachments \n to quick-add them to your Drive Home"
+                }
+            },
+            "title": {
+                "disabled": "Drag&Drop Mode",
+                "enabled": "Drag&Drop Mode"
+            }
+        }
     }
 }
