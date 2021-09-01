@@ -13,8 +13,7 @@
         "rename": "Rename",
         "restore": "Restore",
         "retryUpload": "Retry upload",
-        "unflag": "Unflag",
-        "upsert": "Upsert"
+        "unflag": "Unflag"
     },
     "create": {
         "options": {
@@ -33,7 +32,7 @@
             "content": "Content",
             "createdBy": "Created by",
             "description": "Description",
-            "downloads": "Downloads by public link",
+            "downloads": "Download via public link",
             "lastEdit": "Last edit",
             "position": "Position",
             "showPath": "Show path",
@@ -46,8 +45,8 @@
             "you": "You"
         },
         "search": {
-            "message": "Here you can find all the result of your search",
-            "title": "Search hints"
+            "message": "Here you can find all the results of your search",
+            "title": "Search suggestions"
         },
         "share": {
             "addShare": {
@@ -83,7 +82,7 @@
         },
         "uploads": {
             "message": "Here you can find all the items that are currently uploading, you can manage them from here",
-            "title": "Upload hints"
+            "title": "Upload suggestions"
         }
     },
     "docs": {
@@ -156,7 +155,7 @@
             "yourShare": {
                 "body": {
                     "answer": "Are you sure to remove yourself from this collaboration?",
-                    "permissionLost": "All the access permission previously given to you will be lost."
+                    "permissionLost": "All the access permissions previously given to you will be lost."
                 }
             }
         },
@@ -165,8 +164,8 @@
             "rootsList": "Drive",
             "sharedWitMe": "Shared with me",
             "trash": {
-                "myElements": "My elements",
-                "sharedWitMe": "Shared elements",
+                "myElements": "My items",
+                "sharedWitMe": "Shared items",
                 "trash": "Trash"
             }
         }
