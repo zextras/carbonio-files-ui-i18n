@@ -1,8 +1,107 @@
 {
+    "actions": {
+        "cancelUpload": "Cancel upload",
+        "copy": "Copy",
+        "deletePermanently": "Delete Permanently",
+        "download": "Download",
+        "flag": "Flag",
+        "goToFolder": "Go to destination folder",
+        "markForDeletion": "Mark for deletion",
+        "move": "Move",
+        "moveToTrash": "Move to Trash",
+        "removeUpload": "Remove upload",
+        "rename": "Rename",
+        "restore": "Restore",
+        "retryUpload": "Retry upload",
+        "unflag": "Unflag"
+    },
     "create": {
         "options": {
             "new": {
-                "folder": "New Folder"
+                "document": "New Document",
+                "folder": "New Folder",
+                "presentation": "New Presentation",
+                "spreadsheet": "New Spreadsheet",
+                "upload": "Upload"
+            }
+        }
+    },
+    "displayer": {
+        "details": {
+            "collaborators": "Collaborators",
+            "content": "Content",
+            "createdBy": "Created by",
+            "description": "Description",
+            "downloads": "Download via public link",
+            "lastEdit": "Last edit",
+            "position": "Position",
+            "showPath": "Show path",
+            "size": "Size"
+        },
+        "folder": {
+            "preview": "You are in a folder"
+        },
+        "list": {
+            "you": "You"
+        },
+        "search": {
+            "message": "Here you can find all the results of your search",
+            "title": "Search suggestions"
+        },
+        "share": {
+            "addShare": {
+                "checkbox": {
+                    "label": "Add a custom message to mail notification"
+                },
+                "input": {
+                    "label": "Add a custom message to this notification",
+                    "placeholder": "Add new people or groups"
+                }
+            },
+            "chip": {
+                "popover": {
+                    "role": {
+                        "editor": "Editor",
+                        "editorDescription": "It will be able to view and edit the file or folder",
+                        "viewer": "Viewer",
+                        "viewerDescription": "It will only be able to view or download the file or folder"
+                    },
+                    "save": "Save",
+                    "sharingAllowed": "Sharing allowed",
+                    "sharingAllowedDescription": "Description of what will happen if this is checked"
+                },
+                "you": "You"
+            },
+            "noSharePermissionHeader": "You are not allowed to share this item."
+        },
+        "tabs": {
+            "activities": "Activities",
+            "details": "Details",
+            "sharing": "Sharing",
+            "versioning": "Versioning"
+        },
+        "uploads": {
+            "message": "Here you can find all the items that are currently uploading, you can manage them from here",
+            "title": "Upload suggestions"
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "Document name",
+                            "presentation": "Presentation name",
+                            "spreadsheet": "Spreadsheet name"
+                        }
+                    }
+                },
+                "title": {
+                    "document": "Create New Document",
+                    "presentation": "Create New Presentation",
+                    "spreadsheet": "Create New Spreadsheet"
+                }
             }
         }
     },
@@ -15,8 +114,8 @@
     "filter": {
         "snackbar": {
             "unflag": {
-                "error": "Error",
-                "success": "Success"
+                "error": "Something went wrong, try again",
+                "success": "Item unflagged successfully"
             }
         }
     },
@@ -28,10 +127,10 @@
                 },
                 "input": {
                     "label": {
-                        "name": "Type here a name of new folder"
+                        "name": "Folder Name"
                     }
                 },
-                "title": "Create a New folder"
+                "title": "Create New folder"
             }
         }
     },
@@ -39,9 +138,70 @@
         "button": {
             "cancel": "Cancel",
             "confirm": "Confirm"
+        },
+        "deletePermanently": {
+            "body": "You will delete permanently this item/these items. You will not be able to recover this file/these files anymore. This action is irreversible.",
+            "button": {
+                "confirm": "Delete permanently"
+            },
+            "header": "This action is irreversible"
+        },
+        "deleteShare": {
+            "body": "Are you sure to remove all the access permission previously given to {{shareTarget}} ?",
+            "button": {
+                "confirm": "Remove"
+            },
+            "header": "Remove share",
+            "yourShare": {
+                "body": {
+                    "answer": "Are you sure to remove yourself from this collaboration?",
+                    "permissionLost": "All the access permissions previously given to you will be lost."
+                }
+            }
+        },
+        "roots": {
+            "driveHome": "Home",
+            "rootsList": "Drive",
+            "sharedWitMe": "Shared with me",
+            "trash": {
+                "myElements": "My items",
+                "sharedWitMe": "Shared items",
+                "trash": "Trash"
+            }
         }
     },
     "node": {
+        "alias": {
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_ROOT": "Drive Home"
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "Copy"
+                },
+                "title": "Copy {{node.name}}",
+                "title_plurals": "Copy items"
+            }
+        },
+        "move": {
+            "error": {
+                "not": {
+                    "allowed": "You cannot move multiple nodes from a filter or a search"
+                }
+            },
+            "modal": {
+                "button": {
+                    "confirm": "Move"
+                },
+                "input": {
+                    "filter": "Filter folders"
+                },
+                "subtitle": "Select a destination folder:",
+                "title": "Move {{node.name}}",
+                "title_plurals": "Move items"
+            }
+        },
         "rename": {
             "modal": {
                 "button": {
@@ -49,28 +209,111 @@
                 },
                 "input": {
                     "label": {
-                        "name": "Type here a new name"
+                        "name": "Item Name"
                     }
                 },
-                "title": "Rename a file or folder"
+                "title": "Rename item"
             }
         }
     },
-    "primaryBar": {
-        "driveHome": "Drive Home"
+    "search": {
+        "clear": {
+            "tooltip": {
+                "clear": "Clear search input",
+                "empty": "Search input is already clear"
+            }
+        },
+        "header": {
+            "result": "Results that contain all the keywords:",
+            "search": "Search"
+        },
+        "search": {
+            "tooltip": {
+                "edit": "Edit your search to start a new one",
+                "empty": "Type some keywords to start a search",
+                "search": "Search"
+            }
+        },
+        "searchBar": {
+            "label": {
+                "active": "Separate your keywords by a comma, semicolon or pressing TAB",
+                "default": "Type your search"
+            }
+        }
     },
     "secondaryBar": {
         "driveHome": "Drive Home",
         "filters": "Filters",
         "filtersList": {
-            "flagged": "Flagged"
+            "flagged": "Flagged",
+            "myElements": "My elements",
+            "sharedByMe": "Shared by me",
+            "sharedElements": "Shared Elements",
+            "sharedWithMe": "Shared with me",
+            "trash": "Trash"
         },
-        "team": "Team"
+        "team": "Team",
+        "uploads": "Uploads"
     },
     "snackbar": {
-        "markForDeletion": {
+        "clipboard": {
+            "email": "Email address copied"
+        },
+        "copyNodes": {
+            "error": "Something went wrong, try again",
+            "success": "Item copied to destination folder"
+        },
+        "deletePermanently": {
             "error": "Error",
             "success": "Success"
+        },
+        "deleteShare": {
+            "error": "Error",
+            "success": "Success"
+        },
+        "download": {
+            "start": "Your download will start soon"
+        },
+        "markForDeletion": {
+            "error": "Something went wrong, try again",
+            "showTrash": "Open Trash folder",
+            "success": "Item moved to trash"
+        },
+        "moveNodes": {
+            "error": "Something went wrong, try again",
+            "success": "Item moved to destination folder"
+        },
+        "restore": {
+            "error": "Something went wrong, try again",
+            "showInFolder": "Show in folder",
+            "success": "Success"
+        },
+        "upload": {
+            "goToFolder": "Go to folder"
+        }
+    },
+    "uploads": {
+        "clean": {
+            "completed": "Clean completed uploads"
+        },
+        "destination": {
+            "home": "Upload occurred in Drive Home"
+        },
+        "dropzone": {
+            "message": {
+                "disabled": "You cannot drop an attachment in this area",
+                "folderView": {
+                    "disabled": "You cannot drop an attachment in this area",
+                    "enabled": "Drop here your attachments \n to quick-add them to this folder"
+                },
+                "otherView": {
+                    "enabled": "Drop here your attachments \n to quick-add them to your Drive Home"
+                }
+            },
+            "title": {
+                "disabled": "Drag&Drop Mode",
+                "enabled": "Drag&Drop Mode"
+            }
         }
     }
 }
