@@ -1,1 +1,76 @@
-{}
+{
+    "empty": {
+        "folder": {
+            "state": "Перетащите файл или создайте новый, нажав «НОВЫЙ»",
+            "hint": "Похоже, здесь ничего нет."
+        }
+    },
+    "filter": {
+        "snackbar": {
+            "unflag": {
+                "error": "Ошибка",
+                "success": "Выполнено"
+            }
+        }
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "button": {
+                    "confirm": "Создать"
+                },
+                "title": "Создайте Новую Папку",
+                "input": {
+                    "label": {
+                        "name": "Введите здесь название новой папки"
+                    }
+                }
+            }
+        }
+    },
+    "modal": {
+        "button": {
+            "cancel": "Отменить",
+            "confirm": "Подтвердить"
+        }
+    },
+    "node": {
+        "rename": {
+            "modal": {
+                "button": {
+                    "confirm": "Переименовать"
+                },
+                "input": {
+                    "label": {
+                        "name": "Введите здесь новое название"
+                    }
+                },
+                "title": "Переименовать файл или папку"
+            }
+        }
+    },
+    "primaryBar": {
+        "driveHome": "Главная страница"
+    },
+    "secondaryBar": {
+        "filters": "Фильтры",
+        "filtersList": {
+            "flagged": "Помечено"
+        },
+        "team": "Team",
+        "driveHome": "Главная страница"
+    },
+    "snackbar": {
+        "markForDeletion": {
+            "error": "Ошибка",
+            "success": "Выполнено"
+        }
+    },
+    "create": {
+        "options": {
+            "new": {
+                "folder": "Новая Папка"
+            }
+        }
+    }
+}
