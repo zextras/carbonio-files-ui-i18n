@@ -1,1 +1,76 @@
-{}
+{
+    "create": {
+        "options": {
+            "new": {
+                "folder": "Nouveau Dossier"
+            }
+        }
+    },
+    "empty": {
+        "folder": {
+            "hint": "Il semble qu'il n'y ait rien ici.",
+            "state": "Déposez un fichier ou créez en un nouveau en cliquant sur \"NOUVEAU\""
+        }
+    },
+    "filter": {
+        "snackbar": {
+            "unflag": {
+                "error": "Erreur",
+                "success": "Réussi"
+            }
+        }
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "button": {
+                    "confirm": "Créer"
+                },
+                "title": "Créer un Nouveau dossier",
+                "input": {
+                    "label": {
+                        "name": "Saisissez ici le nom du nouveau dossier"
+                    }
+                }
+            }
+        }
+    },
+    "modal": {
+        "button": {
+            "cancel": "Annuler",
+            "confirm": "Confirmer"
+        }
+    },
+    "node": {
+        "rename": {
+            "modal": {
+                "button": {
+                    "confirm": "Renommer"
+                },
+                "input": {
+                    "label": {
+                        "name": "Saisissez ici un nouveau nom"
+                    }
+                },
+                "title": "Renommer un fichier ou un dossier"
+            }
+        }
+    },
+    "primaryBar": {
+        "driveHome": "Accueil"
+    },
+    "secondaryBar": {
+        "driveHome": "Accueil",
+        "filters": "Filtres",
+        "filtersList": {
+            "flagged": "Marqué"
+        },
+        "team": "Team"
+    },
+    "snackbar": {
+        "markForDeletion": {
+            "error": "Erreur",
+            "success": "Réussi"
+        }
+    }
+}
