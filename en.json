@@ -294,6 +294,13 @@
             "goToFolder": "Go to folder"
         }
     },
+    "sortingDropdown": {
+        "ascendingOrder": "Ascending Order",
+        "descendingOrder": "Descending Order",
+        "editDate": "Edit Date",
+        "name": "Name",
+        "size": "Size"
+    },
     "uploads": {
         "clean": {
             "completed": "Clean completed uploads"
