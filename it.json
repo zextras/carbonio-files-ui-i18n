@@ -1,3 +1,76 @@
 {
-    "folder": "cartella"
+    "folder": {
+        "create": {
+            "modal": {
+                "title": "Crea una Nuova Cartella",
+                "input": {
+                    "label": {
+                        "name": "Digita un nome per la nuova cartella"
+                    }
+                },
+                "button": {
+                    "confirm": "Crea"
+                }
+            }
+        }
+    },
+    "snackbar": {
+        "markForDeletion": {
+            "success": "Riuscito",
+            "error": "Errore"
+        }
+    },
+    "secondaryBar": {
+        "team": "Team",
+        "filtersList": {
+            "flagged": "Marcato"
+        },
+        "filters": "Filtri",
+        "driveHome": "Home Drive"
+    },
+    "primaryBar": {
+        "driveHome": "Home Drive"
+    },
+    "node": {
+        "rename": {
+            "modal": {
+                "title": "Rinomina un file o cartella",
+                "input": {
+                    "label": {
+                        "name": "Digita un nuovo nome"
+                    }
+                },
+                "button": {
+                    "confirm": "Rinomina"
+                }
+            }
+        }
+    },
+    "modal": {
+        "button": {
+            "confirm": "Conferma",
+            "cancel": "Annulla"
+        }
+    },
+    "filter": {
+        "snackbar": {
+            "unflag": {
+                "success": "Riuscito",
+                "error": "Errore"
+            }
+        }
+    },
+    "empty": {
+        "folder": {
+            "state": "Trascina un file o creane uno nuovo cliccando su \"NUOVO\"",
+            "hint": "Sembra che non ci sia niente qui."
+        }
+    },
+    "create": {
+        "options": {
+            "new": {
+                "folder": "Nuova Cartella"
+            }
+        }
+    }
 }
