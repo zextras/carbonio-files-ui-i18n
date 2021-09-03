@@ -28,7 +28,7 @@
                 },
                 "input": {
                     "label": {
-                        "name": "Type here a name of new folder"
+                        "name": "Type here the name of the new folder"
                     }
                 },
                 "title": "Create a New folder"
