@@ -1,1 +1,45 @@
-{}
+{
+    "filter": {
+        "snackbar": {
+            "unflag": {
+                "error": "Fout",
+                "success": "Succes"
+            }
+        }
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "button": {
+                    "confirm": "Creëren"
+                }
+            }
+        }
+    },
+    "modal": {
+        "button": {
+            "cancel": "Annuleren",
+            "confirm": "Bevestigen"
+        }
+    },
+    "primaryBar": {
+        "driveHome": "Srive Startpagina"
+    },
+    "secondaryBar": {
+        "driveHome": "Srive Startpagina",
+        "team": "Team"
+    },
+    "snackbar": {
+        "markForDeletion": {
+            "error": "Fout",
+            "success": "Succes"
+        }
+    },
+    "create": {
+        "options": {
+            "new": {
+                "folder": "Nieuwe Map"
+            }
+        }
+    }
+}
