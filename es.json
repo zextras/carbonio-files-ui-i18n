@@ -9,22 +9,35 @@
                     }
                 },
                 "button": {
-                    "confirm": ""
+                    "confirm": "Crear"
                 }
             }
         }
     },
     "modal": {
         "button": {
-            "cancel": "",
-            "confirm": ""
+            "cancel": "Cancelar",
+            "confirm": "Confirmar"
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "Eliminar permanentemente"
+            }
+        },
+        "roots": {
+            "driveHome": "Carpeta Home",
+            "rootsList": "Drive",
+            "sharedWitMe": "Compartido conmigo",
+            "trash": {
+                "trash": "Papelera"
+            }
         }
     },
     "node": {
         "rename": {
             "modal": {
                 "button": {
-                    "confirm": ""
+                    "confirm": "Renombrar"
                 },
                 "input": {
                     "label": {
@@ -33,29 +46,54 @@
                 },
                 "title": ""
             }
+        },
+        "alias": {
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_ROOT": "Home de Drive"
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "Copiar"
+                }
+            }
+        },
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "Mover"
+                }
+            }
         }
     },
     "primaryBar": {
         "driveHome": ""
     },
     "secondaryBar": {
-        "driveHome": "",
+        "driveHome": "Home de Drive",
         "filters": "",
         "filtersList": {
-            "flagged": ""
+            "flagged": "",
+            "trash": "Papelera",
+            "sharedByMe": "Compartido por mi",
+            "sharedWithMe": "Compartido conmigo"
         },
-        "team": ""
+        "team": "Team"
     },
     "snackbar": {
         "markForDeletion": {
             "error": "",
             "success": ""
+        },
+        "deleteShare": {
+            "error": "Error"
         }
     },
     "create": {
         "options": {
             "new": {
-                "folder": ""
+                "folder": "Nueva carpeta",
+                "upload": "Cargar"
             }
         }
     },
@@ -70,6 +108,44 @@
             "unflag": {
                 "error": "",
                 "success": ""
+            }
+        }
+    },
+    "actions": {
+        "cancelUpload": "Cancelar carga",
+        "copy": "Copiar",
+        "download": "Download",
+        "markForDeletion": "Eliminar",
+        "move": "Mover",
+        "openWithDocs": "Abrir con Docs",
+        "rename": "Renombrar",
+        "restore": "Restaurar"
+    },
+    "displayer": {
+        "list": {
+            "you": "tu"
+        },
+        "share": {
+            "chip": {
+                "you": "tu",
+                "popover": {
+                    "save": "Guardar"
+                }
+            }
+        },
+        "details": {
+            "createdBy": "Creado por",
+            "description": "Descripción",
+            "size": "Tamaño"
+        }
+    },
+    "search": {
+        "header": {
+            "search": "Buscar"
+        },
+        "search": {
+            "tooltip": {
+                "search": "Buscar"
             }
         }
     }
