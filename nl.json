@@ -26,6 +26,19 @@
         "button": {
             "cancel": "Annuleren",
             "confirm": "Bevestigen"
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "Permanent verwijderen"
+            }
+        },
+        "roots": {
+            "driveHome": "Startpagina",
+            "rootsList": "Drive",
+            "sharedWitMe": "Met mij gedeeld",
+            "trash": {
+                "trash": "Prullenbak"
+            }
         }
     },
     "primaryBar": {
@@ -36,19 +49,26 @@
         "team": "Team",
         "filters": "",
         "filtersList": {
-            "flagged": ""
+            "flagged": "",
+            "sharedByMe": "Door mij gedeeld",
+            "sharedWithMe": "Met mij gedeeld",
+            "trash": "Prullenbak"
         }
     },
     "snackbar": {
         "markForDeletion": {
             "error": "Fout",
             "success": "Succes"
+        },
+        "deleteShare": {
+            "error": "Fout"
         }
     },
     "create": {
         "options": {
             "new": {
-                "folder": "Nieuwe Map"
+                "folder": "Nieuwe Map",
+                "upload": "Uploaden"
             }
         }
     },
@@ -62,7 +82,7 @@
         "rename": {
             "modal": {
                 "button": {
-                    "confirm": ""
+                    "confirm": "Naam veranderen"
                 },
                 "input": {
                     "label": {
@@ -70,6 +90,62 @@
                     }
                 },
                 "title": ""
+            }
+        },
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "Verplaatsen"
+                }
+            }
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "Kopieren"
+                }
+            }
+        },
+        "alias": {
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_ROOT": "Srive Startpagina"
+        }
+    },
+    "actions": {
+        "cancelUpload": "Upload annuleren",
+        "download": "Downloaden",
+        "markForDeletion": "Voor verwijdering markeren",
+        "move": "Verplaatsen",
+        "openWithDocs": "Openen met Docs",
+        "rename": "Naam veranderen",
+        "copy": "Kopieren",
+        "restore": "Herstellen"
+    },
+    "displayer": {
+        "details": {
+            "size": "Grootte",
+            "createdBy": "Gecreëerd door",
+            "description": "Omschrijving"
+        },
+        "list": {
+            "you": "U"
+        },
+        "share": {
+            "chip": {
+                "popover": {
+                    "save": "Opslaan"
+                },
+                "you": "U"
+            }
+        }
+    },
+    "search": {
+        "header": {
+            "search": "Zoeken"
+        },
+        "search": {
+            "tooltip": {
+                "search": "Zoeken"
             }
         }
     }
