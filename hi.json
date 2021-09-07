@@ -1,1 +1,76 @@
-{}
+{
+    "create": {
+        "options": {
+            "new": {
+                "folder": ""
+            }
+        }
+    },
+    "empty": {
+        "folder": {
+            "hint": "",
+            "state": ""
+        }
+    },
+    "filter": {
+        "snackbar": {
+            "unflag": {
+                "error": "",
+                "success": ""
+            }
+        }
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "button": {
+                    "confirm": ""
+                },
+                "title": "",
+                "input": {
+                    "label": {
+                        "name": ""
+                    }
+                }
+            }
+        }
+    },
+    "node": {
+        "rename": {
+            "modal": {
+                "button": {
+                    "confirm": ""
+                },
+                "input": {
+                    "label": {
+                        "name": ""
+                    }
+                },
+                "title": ""
+            }
+        }
+    },
+    "primaryBar": {
+        "driveHome": ""
+    },
+    "secondaryBar": {
+        "driveHome": "",
+        "filters": "",
+        "filtersList": {
+            "flagged": ""
+        },
+        "team": ""
+    },
+    "modal": {
+        "button": {
+            "cancel": "",
+            "confirm": ""
+        }
+    },
+    "snackbar": {
+        "markForDeletion": {
+            "error": "",
+            "success": ""
+        }
+    }
+}
