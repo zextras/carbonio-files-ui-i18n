@@ -120,7 +120,8 @@
         "move": "Sposta",
         "openWithDocs": "Apri con Docs",
         "rename": "Rinomina",
-        "restore": "Ripristina"
+        "restore": "Ripristina",
+        "flag": "Etichetta"
     },
     "displayer": {
         "list": {
