@@ -257,14 +257,7 @@
         "uploads": "Uploads"
     },
     "snackbar": {
-        "clipboard": {
-            "email": "Email address copied"
-        },
-        "copyNodes": {
-            "error": "Something went wrong, try again",
-            "success": "Item copied to destination folder"
-        },
-        "deletePermanently": {
+        "markForDeletion": {
             "error": "Error",
             "success": "Success"
         },

@@ -1,1 +1,43 @@
-{}
+{
+    "create": {
+        "options": {
+            "new": {
+                "folder": "新規フォルダ"
+            }
+        }
+    },
+    "filter": {
+        "snackbar": {
+            "unflag": {
+                "error": "エラー"
+            }
+        }
+    },
+    "modal": {
+        "button": {
+            "cancel": "キャンセル",
+            "confirm": "確認"
+        }
+    },
+    "node": {
+        "rename": {
+            "modal": {
+                "button": {
+                    "confirm": "名前を変更"
+                }
+            }
+        }
+    },
+    "primaryBar": {
+        "driveHome": "Driveホーム"
+    },
+    "secondaryBar": {
+        "driveHome": "Driveホーム",
+        "team": "Team"
+    },
+    "snackbar": {
+        "markForDeletion": {
+            "error": "エラー"
+        }
+    }
+}
