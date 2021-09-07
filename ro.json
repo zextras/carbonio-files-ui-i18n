@@ -2,7 +2,8 @@
     "create": {
         "options": {
             "new": {
-                "folder": ""
+                "folder": "Folder nou",
+                "upload": "Incarcare"
             }
         }
     },
@@ -37,15 +38,28 @@
     },
     "modal": {
         "button": {
-            "cancel": "",
-            "confirm": ""
+            "cancel": "Anulare",
+            "confirm": "Confirmare"
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "Stergere permanenta"
+            }
+        },
+        "roots": {
+            "driveHome": "Acasa",
+            "rootsList": "Drive",
+            "sharedWitMe": "Partajate cu mine",
+            "trash": {
+                "trash": "Cos gunoi"
+            }
         }
     },
     "node": {
         "rename": {
             "modal": {
                 "button": {
-                    "confirm": ""
+                    "confirm": "Redenumire"
                 },
                 "input": {
                     "label": {
@@ -54,23 +68,80 @@
                 },
                 "title": ""
             }
+        },
+        "alias": {
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_ROOT": "Drive Home"
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "Copiaza"
+                }
+            }
+        },
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "Muta"
+                }
+            }
         }
     },
     "primaryBar": {
         "driveHome": ""
     },
     "secondaryBar": {
-        "driveHome": "",
+        "driveHome": "Drive Home",
         "filters": "",
         "filtersList": {
-            "flagged": ""
+            "flagged": "",
+            "sharedByMe": "Partajate de catre mine",
+            "sharedWithMe": "Partajate cu mine",
+            "trash": "Cos gunoi"
         },
-        "team": ""
+        "team": "Team"
     },
     "snackbar": {
         "markForDeletion": {
             "error": "",
             "success": ""
+        },
+        "deleteShare": {
+            "error": "Eroare"
+        }
+    },
+    "actions": {
+        "copy": "Copiaza",
+        "download": "Descarcare",
+        "markForDeletion": "Marcat pentru stergere",
+        "move": "Muta",
+        "openWithDocs": "Deschide cu Docs",
+        "rename": "Redenumire",
+        "restore": "Restaurare"
+    },
+    "displayer": {
+        "details": {
+            "createdBy": "Creat de catre",
+            "description": "Descriere",
+            "size": "Marime"
+        },
+        "share": {
+            "chip": {
+                "popover": {
+                    "save": "Salveaza"
+                }
+            }
+        }
+    },
+    "search": {
+        "header": {
+            "search": "Cauta"
+        },
+        "search": {
+            "tooltip": {
+                "search": "Cauta"
+            }
         }
     }
 }
