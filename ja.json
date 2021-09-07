@@ -9,7 +9,8 @@
     "filter": {
         "snackbar": {
             "unflag": {
-                "error": "エラー"
+                "error": "エラー",
+                "success": ""
             }
         }
     },
@@ -24,7 +25,13 @@
             "modal": {
                 "button": {
                     "confirm": "名前を変更"
-                }
+                },
+                "input": {
+                    "label": {
+                        "name": ""
+                    }
+                },
+                "title": ""
             }
         }
     },
@@ -33,11 +40,37 @@
     },
     "secondaryBar": {
         "driveHome": "Driveホーム",
-        "team": "Team"
+        "team": "Team",
+        "filters": "",
+        "filtersList": {
+            "flagged": ""
+        }
     },
     "snackbar": {
         "markForDeletion": {
-            "error": "エラー"
+            "error": "エラー",
+            "success": ""
+        }
+    },
+    "empty": {
+        "folder": {
+            "hint": "",
+            "state": ""
+        }
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "button": {
+                    "confirm": ""
+                },
+                "title": "",
+                "input": {
+                    "label": {
+                        "name": ""
+                    }
+                }
+            }
         }
     }
 }
