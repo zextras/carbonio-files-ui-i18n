@@ -2,7 +2,8 @@
     "create": {
         "options": {
             "new": {
-                "folder": ""
+                "folder": "โฟลเดอร์ใหม่",
+                "upload": "อัปโหลด"
             }
         }
     },
@@ -24,7 +25,7 @@
         "create": {
             "modal": {
                 "button": {
-                    "confirm": ""
+                    "confirm": "สร้าง"
                 },
                 "title": "",
                 "input": {
@@ -37,15 +38,28 @@
     },
     "modal": {
         "button": {
-            "cancel": "",
-            "confirm": ""
+            "cancel": "ยกเลิก",
+            "confirm": "ยืนยัน"
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "ลบอย่างถาวร"
+            }
+        },
+        "roots": {
+            "driveHome": "หน้าแรก",
+            "rootsList": "Drive",
+            "sharedWitMe": "แชร์กับฉัน",
+            "trash": {
+                "trash": "ถังขยะ"
+            }
         }
     },
     "node": {
         "rename": {
             "modal": {
                 "button": {
-                    "confirm": ""
+                    "confirm": "เปลี่ยนชื่อ"
                 },
                 "input": {
                     "label": {
@@ -54,23 +68,85 @@
                 },
                 "title": ""
             }
+        },
+        "alias": {
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_ROOT": "หน้าหลัก Drive"
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "คัดลอก"
+                }
+            }
+        },
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "ย้าย"
+                }
+            }
         }
     },
     "primaryBar": {
         "driveHome": ""
     },
     "secondaryBar": {
-        "driveHome": "",
+        "driveHome": "หน้าหลัก Drive",
         "filters": "",
         "filtersList": {
-            "flagged": ""
+            "flagged": "",
+            "sharedByMe": "แชร์โดยฉัน",
+            "sharedWithMe": "แชร์กับฉัน",
+            "trash": "ถังขยะ"
         },
-        "team": ""
+        "team": "Team"
     },
     "snackbar": {
         "markForDeletion": {
             "error": "",
             "success": ""
+        },
+        "deleteShare": {
+            "error": "ผิดพลาด"
+        }
+    },
+    "actions": {
+        "copy": "คัดลอก",
+        "download": "ดาวน์โหลด",
+        "markForDeletion": "ทำเครื่องหมายเพื่อลบ",
+        "move": "ย้าย",
+        "cancelUpload": "ยกเลิกการอัปโหลด",
+        "openWithDocs": "เปิดด้วย Docs",
+        "rename": "เปลี่ยนชื่อ",
+        "restore": "กู้คืน"
+    },
+    "displayer": {
+        "list": {
+            "you": "คุณ"
+        },
+        "share": {
+            "chip": {
+                "you": "คุณ",
+                "popover": {
+                    "save": "บันทึก"
+                }
+            }
+        },
+        "details": {
+            "createdBy": "สร้างโดย",
+            "description": "คำอธิบาย",
+            "size": "ขนาด"
+        }
+    },
+    "search": {
+        "header": {
+            "search": "ค้นหา"
+        },
+        "search": {
+            "tooltip": {
+                "search": "ค้นหา"
+            }
         }
     }
 }
