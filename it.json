@@ -18,12 +18,18 @@
         "markForDeletion": {
             "success": "Riuscito",
             "error": "Errore"
+        },
+        "deleteShare": {
+            "error": "Errore"
         }
     },
     "secondaryBar": {
         "team": "Team",
         "filtersList": {
-            "flagged": "Marcato"
+            "flagged": "Marcato",
+            "sharedByMe": "Condivisi da me",
+            "sharedWithMe": "Condivisi con me",
+            "trash": "Cestino"
         },
         "filters": "Filtri",
         "driveHome": "Home Drive"
@@ -44,12 +50,43 @@
                     "confirm": "Rinomina"
                 }
             }
+        },
+        "alias": {
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_ROOT": "Home Drive"
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "Copia"
+                }
+            }
+        },
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "Sposta"
+                }
+            }
         }
     },
     "modal": {
         "button": {
             "confirm": "Conferma",
             "cancel": "Annulla"
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "Elimina definitivamente"
+            }
+        },
+        "roots": {
+            "driveHome": "Home",
+            "rootsList": "Drive",
+            "sharedWitMe": "Condivisi con me",
+            "trash": {
+                "trash": "Cestino"
+            }
         }
     },
     "filter": {
@@ -69,7 +106,47 @@
     "create": {
         "options": {
             "new": {
-                "folder": "Nuova Cartella"
+                "folder": "Nuova Cartella",
+                "upload": "Carica"
+            }
+        }
+    },
+    "actions": {
+        "cancelUpload": "Annulla caricamento",
+        "deletePermanently": "Elimina definitivamente",
+        "copy": "Copia",
+        "download": "Scarica",
+        "markForDeletion": "Seleziona per la rimozione",
+        "move": "Sposta",
+        "openWithDocs": "Apri con Docs",
+        "rename": "Rinomina",
+        "restore": "Ripristina"
+    },
+    "displayer": {
+        "list": {
+            "you": "Tu"
+        },
+        "share": {
+            "chip": {
+                "you": "Tu",
+                "popover": {
+                    "save": "Salva"
+                }
+            }
+        },
+        "details": {
+            "createdBy": "Creato da",
+            "description": "Descrizione",
+            "size": "Dimensione"
+        }
+    },
+    "search": {
+        "header": {
+            "search": "Cerca"
+        },
+        "search": {
+            "tooltip": {
+                "search": "Cerca"
             }
         }
     }
