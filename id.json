@@ -2,7 +2,8 @@
     "create": {
         "options": {
             "new": {
-                "folder": ""
+                "folder": "Folder Baru",
+                "upload": "Unggah"
             }
         }
     },
@@ -16,22 +17,35 @@
                     }
                 },
                 "button": {
-                    "confirm": ""
+                    "confirm": "Buat"
                 }
             }
         }
     },
     "modal": {
         "button": {
-            "cancel": "",
-            "confirm": ""
+            "cancel": "Batal",
+            "confirm": "Konfirmasi"
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "Hapus secara permanen"
+            }
+        },
+        "roots": {
+            "driveHome": "Beranda",
+            "rootsList": "Drive",
+            "sharedWitMe": "Dibagikan dengan saya",
+            "trash": {
+                "trash": "Sampah"
+            }
         }
     },
     "node": {
         "rename": {
             "modal": {
                 "button": {
-                    "confirm": ""
+                    "confirm": "Ganti nama"
                 },
                 "input": {
                     "label": {
@@ -40,23 +54,47 @@
                 },
                 "title": ""
             }
+        },
+        "alias": {
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_ROOT": "Drive Home"
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "Salin"
+                }
+            }
+        },
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "Pindahkan"
+                }
+            }
         }
     },
     "primaryBar": {
         "driveHome": ""
     },
     "secondaryBar": {
-        "driveHome": "",
+        "driveHome": "Drive Home",
         "filters": "",
         "filtersList": {
-            "flagged": ""
+            "flagged": "",
+            "sharedByMe": "Dibagikan oleh saya",
+            "sharedWithMe": "Dibagikan dengan saya",
+            "trash": "Sampah"
         },
-        "team": ""
+        "team": "Team"
     },
     "snackbar": {
         "markForDeletion": {
             "error": "",
             "success": ""
+        },
+        "deleteShare": {
+            "error": "Kesalahan"
         }
     },
     "empty": {
@@ -70,6 +108,44 @@
             "unflag": {
                 "error": "",
                 "success": ""
+            }
+        }
+    },
+    "actions": {
+        "copy": "Salin",
+        "cancelUpload": "Batalkan pengunggahan",
+        "download": "Unduh",
+        "markForDeletion": "Tandai untuk dihapus",
+        "move": "Pindahkan",
+        "openWithDocs": "Buka dengan Docs",
+        "rename": "Ganti nama",
+        "restore": "Pulihkan"
+    },
+    "displayer": {
+        "list": {
+            "you": "Anda"
+        },
+        "share": {
+            "chip": {
+                "you": "Anda",
+                "popover": {
+                    "save": "Simpan"
+                }
+            }
+        },
+        "details": {
+            "createdBy": "Dibuat oleh",
+            "description": "Deskripsi",
+            "size": "Ukuran"
+        }
+    },
+    "search": {
+        "header": {
+            "search": "Cari"
+        },
+        "search": {
+            "tooltip": {
+                "search": "Cari"
             }
         }
     }
