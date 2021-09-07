@@ -12,6 +12,12 @@
             "modal": {
                 "button": {
                     "confirm": "Creëren"
+                },
+                "title": "",
+                "input": {
+                    "label": {
+                        "name": ""
+                    }
                 }
             }
         }
@@ -27,7 +33,11 @@
     },
     "secondaryBar": {
         "driveHome": "Srive Startpagina",
-        "team": "Team"
+        "team": "Team",
+        "filters": "",
+        "filtersList": {
+            "flagged": ""
+        }
     },
     "snackbar": {
         "markForDeletion": {
@@ -39,6 +49,27 @@
         "options": {
             "new": {
                 "folder": "Nieuwe Map"
+            }
+        }
+    },
+    "empty": {
+        "folder": {
+            "hint": "",
+            "state": ""
+        }
+    },
+    "node": {
+        "rename": {
+            "modal": {
+                "button": {
+                    "confirm": ""
+                },
+                "input": {
+                    "label": {
+                        "name": ""
+                    }
+                },
+                "title": ""
             }
         }
     }
