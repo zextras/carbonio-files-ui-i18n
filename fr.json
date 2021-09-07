@@ -2,7 +2,8 @@
     "create": {
         "options": {
             "new": {
-                "folder": "Nouveau Dossier"
+                "folder": "Nouveau Dossier",
+                "upload": "Upload"
             }
         }
     },
@@ -39,6 +40,19 @@
         "button": {
             "cancel": "Annuler",
             "confirm": "Confirmer"
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "Effacer définitivement"
+            }
+        },
+        "roots": {
+            "driveHome": "Accueil",
+            "rootsList": "Drive",
+            "sharedWitMe": "Éléments partagés avec moi",
+            "trash": {
+                "trash": "Corbeille"
+            }
         }
     },
     "node": {
@@ -54,6 +68,24 @@
                 },
                 "title": "Renommer un fichier ou un dossier"
             }
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "Copier"
+                }
+            }
+        },
+        "alias": {
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_ROOT": "Accueil"
+        },
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "Déplacer"
+                }
+            }
         }
     },
     "primaryBar": {
@@ -63,7 +95,10 @@
         "driveHome": "Accueil",
         "filters": "Filtres",
         "filtersList": {
-            "flagged": "Marqué"
+            "flagged": "Marqué",
+            "sharedByMe": "Partagé par moi",
+            "sharedWithMe": "Éléments partagés avec moi",
+            "trash": "Corbeille"
         },
         "team": "Team"
     },
@@ -71,6 +106,47 @@
         "markForDeletion": {
             "error": "Erreur",
             "success": "Réussi"
+        },
+        "deleteShare": {
+            "error": "Erreur"
+        }
+    },
+    "actions": {
+        "download": "Téléchargement",
+        "markForDeletion": "Mettre à la corbeille",
+        "move": "Déplacer",
+        "openWithDocs": "Ouvrir avec Docs",
+        "cancelUpload": "Annuler le téléversement",
+        "copy": "Copier",
+        "rename": "Renommer",
+        "restore": "Restaurer"
+    },
+    "search": {
+        "header": {
+            "search": "Rechercher"
+        },
+        "search": {
+            "tooltip": {
+                "search": "Rechercher"
+            }
+        }
+    },
+    "displayer": {
+        "details": {
+            "size": "Taille",
+            "createdBy": "Créé par",
+            "description": "Description"
+        },
+        "list": {
+            "you": "Vous"
+        },
+        "share": {
+            "chip": {
+                "popover": {
+                    "save": "Sauvegarder"
+                },
+                "you": "Vous"
+            }
         }
     }
 }
