@@ -32,6 +32,19 @@
         "button": {
             "cancel": "Отменить",
             "confirm": "Подтвердить"
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "Удалить окончательно"
+            }
+        },
+        "roots": {
+            "driveHome": "Основная папка",
+            "rootsList": "Drive",
+            "sharedWitMe": "Поделились со мной",
+            "trash": {
+                "trash": "Корзина"
+            }
         }
     },
     "node": {
@@ -47,6 +60,24 @@
                 },
                 "title": "Переименовать файл или папку"
             }
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "Копия"
+                }
+            }
+        },
+        "alias": {
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_ROOT": "Главная страница"
+        },
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "Переместить"
+                }
+            }
         }
     },
     "primaryBar": {
@@ -55,7 +86,10 @@
     "secondaryBar": {
         "filters": "Фильтры",
         "filtersList": {
-            "flagged": "Помечено"
+            "flagged": "Помечено",
+            "sharedByMe": "Делюсь я",
+            "sharedWithMe": "Поделились со мной",
+            "trash": "Корзина"
         },
         "team": "Team",
         "driveHome": "Главная страница"
@@ -64,12 +98,54 @@
         "markForDeletion": {
             "error": "Ошибка",
             "success": "Выполнено"
+        },
+        "deleteShare": {
+            "error": "Ошибка"
         }
     },
     "create": {
         "options": {
             "new": {
-                "folder": "Новая Папка"
+                "folder": "Новая Папка",
+                "upload": "Загрузить"
+            }
+        }
+    },
+    "actions": {
+        "copy": "Копия",
+        "download": "Загрузить",
+        "markForDeletion": "Отметить для удаления",
+        "move": "Переместить",
+        "openWithDocs": "Открыть с Docs",
+        "cancelUpload": "Отменить загрузку",
+        "rename": "Переименовать",
+        "restore": "Восстановить"
+    },
+    "search": {
+        "header": {
+            "search": "Поиск"
+        },
+        "search": {
+            "tooltip": {
+                "search": "Поиск"
+            }
+        }
+    },
+    "displayer": {
+        "details": {
+            "size": "Размер",
+            "createdBy": "Создано",
+            "description": "Описание"
+        },
+        "list": {
+            "you": "Вы"
+        },
+        "share": {
+            "chip": {
+                "popover": {
+                    "save": "Сохранить"
+                },
+                "you": "Вы"
             }
         }
     }
