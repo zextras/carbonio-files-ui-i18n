@@ -112,14 +112,6 @@
             "state": "Drag a file or create a new one clicking \"NEW\""
         }
     },
-    "filter": {
-        "snackbar": {
-            "unflag": {
-                "error": "Something went wrong, try again",
-                "success": "Item unflagged successfully"
-            }
-        }
-    },
     "folder": {
         "create": {
             "modal": {
@@ -174,7 +166,8 @@
     "node": {
         "alias": {
             "name_LOCAL_CHAT_ROOT": "Team",
-            "name_LOCAL_ROOT": "Drive Home"
+            "name_LOCAL_ROOT": "Drive Home",
+            "name_TRASH_ROOT": "Trash"
         },
         "copy": {
             "modal": {
@@ -288,6 +281,9 @@
             "error": "Something went wrong, try again",
             "showInFolder": "Show in folder",
             "success": "Success"
+        },
+        "unflag": {
+            "success": "Item unflagged successfully"
         },
         "upload": {
             "goToFolder": "Go to folder"
