@@ -210,6 +210,9 @@
                 },
                 "title": "Rename item"
             }
+        },
+        "type": {
+            "folder": "Folder"
         }
     },
     "search": {
