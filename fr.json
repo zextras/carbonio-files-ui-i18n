@@ -2,21 +2,24 @@
     "create": {
         "options": {
             "new": {
-                "folder": "Nouveau Dossier",
-                "upload": "Upload"
+                "folder": "Nouveau dossier",
+                "upload": "Upload",
+                "document": "Nouveau document",
+                "presentation": "Nouvelle présentation",
+                "spreadsheet": "Nouveau tableau"
             }
         }
     },
     "empty": {
         "folder": {
             "hint": "Il semble qu'il n'y ait rien ici.",
-            "state": "Déposez un fichier ou créez en un nouveau en cliquant sur \"NOUVEAU\""
+            "state": "Déposez un fichier ou créez-en un nouveau en cliquant sur \"NOUVEAU\""
         }
     },
     "filter": {
         "snackbar": {
             "unflag": {
-                "error": "Erreur",
+                "error": "Erreur, veuillez réessayer",
                 "success": "Réussi"
             }
         }
@@ -27,7 +30,7 @@
                 "button": {
                     "confirm": "Créer"
                 },
-                "title": "Créer un Nouveau dossier",
+                "title": "Créer un nouveau dossier",
                 "input": {
                     "label": {
                         "name": "Saisissez ici le nom du nouveau dossier"
@@ -44,14 +47,31 @@
         "deletePermanently": {
             "button": {
                 "confirm": "Effacer définitivement"
-            }
+            },
+            "body": "Vous supprimez définitivement cet élément/ces éléments. Vous ne pourrez plus récupérer ce(s) fichier(s). Cette action est irréversible.",
+            "header": "Cette action est irréversible"
         },
         "roots": {
             "driveHome": "Accueil",
             "rootsList": "Drive",
             "sharedWitMe": "Éléments partagés avec moi",
             "trash": {
-                "trash": "Corbeille"
+                "trash": "Corbeille",
+                "myElements": "Mes éléments",
+                "sharedWitMe": "Eléments partagés"
+            }
+        },
+        "deleteShare": {
+            "body": "Êtes-vous certain de vouloir supprimer toutes les autorisations d'accès précédemment accordées à {{shareTarget}} ?",
+            "button": {
+                "confirm": "Retirer"
+            },
+            "header": "Retirer le partage",
+            "yourShare": {
+                "body": {
+                    "answer": "Etes-vous certain de vouloir vous retirer de cette collaboration ?",
+                    "permissionLost": "Toutes les autorisations d'accès qui vous ont été accordées précédemment seront perdues."
+                }
             }
         }
     },
@@ -73,7 +93,9 @@
             "modal": {
                 "button": {
                     "confirm": "Copier"
-                }
+                },
+                "title": "Copier {{node.name}}",
+                "title_plurals": "Copier les éléments"
             }
         },
         "alias": {
@@ -84,6 +106,11 @@
             "modal": {
                 "button": {
                     "confirm": "Déplacer"
+                }
+            },
+            "error": {
+                "not": {
+                    "allowed": "Vous ne pouvez pas déplacer plusieurs nœuds d'un filtre ou d'une recherche."
                 }
             }
         }
@@ -119,7 +146,13 @@
         "cancelUpload": "Annuler le téléversement",
         "copy": "Copier",
         "rename": "Renommer",
-        "restore": "Restaurer"
+        "restore": "Restaurer",
+        "deletePermanently": "Supprimer définitivement",
+        "flag": "Etiquette",
+        "goToFolder": "Aller au dossier de destination",
+        "moveToTrash": "Déplacer vers la corbeille",
+        "removeUpload": "Supprimer le téléchargement",
+        "retryUpload": "Réessayer le téléchargement"
     },
     "search": {
         "header": {
@@ -135,7 +168,13 @@
         "details": {
             "size": "Taille",
             "createdBy": "Créé par",
-            "description": "Description"
+            "description": "Description",
+            "collaborators": "Collaborateurs",
+            "content": "Contenu",
+            "downloads": "Télécharger via le lien public",
+            "lastEdit": "Dernière modification",
+            "position": "Position",
+            "showPath": "Montrer le chemin"
         },
         "list": {
             "you": "Vous"
@@ -143,9 +182,64 @@
         "share": {
             "chip": {
                 "popover": {
-                    "save": "Sauvegarder"
+                    "save": "Sauvegarder",
+                    "role": {
+                        "editor": "Editeur",
+                        "editorDescription": "Il pourra visualiser et modifier le fichier ou le dossier",
+                        "viewer": "Visionneuse",
+                        "viewerDescription": "Il ne pourra que visualiser ou télécharger le fichier ou le dossier"
+                    },
+                    "sharingAllowed": "Partage autorisé",
+                    "sharingAllowedDescription": "Description de ce qui se passera si cette case est cochée"
                 },
                 "you": "Vous"
+            },
+            "addShare": {
+                "checkbox": {
+                    "label": "Ajouter un message personnalisé à la notification de courrier"
+                },
+                "input": {
+                    "label": "Ajouter un message personnalisé à cette notification",
+                    "placeholder": "Ajouter de nouvelles personnes ou de nouveaux groupes"
+                }
+            },
+            "noSharePermissionHeader": "Vous n'êtes pas autorisé à partager cet élément."
+        },
+        "folder": {
+            "preview": "Vous êtes dans un dossier"
+        },
+        "search": {
+            "message": "Vous trouverez ici tous les résultats de votre recherche",
+            "title": "Suggestions de recherche"
+        },
+        "tabs": {
+            "activities": "Activités",
+            "details": "Détails",
+            "sharing": "Partage",
+            "versioning": "Versionnage"
+        },
+        "uploads": {
+            "message": "Vous trouverez ici tous les éléments en cours de téléchargement, vous pouvez les gérer à partir d'ici",
+            "title": "Suggestions de téléchargement"
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "Nom du document",
+                            "presentation": "Nom de la présentation",
+                            "spreadsheet": "Nom du tableau"
+                        }
+                    }
+                },
+                "title": {
+                    "document": "Créer un nouveau document",
+                    "presentation": "Créer une nouvelle présentation",
+                    "spreadsheet": "Créer un nouveau tableur"
+                }
             }
         }
     }
