@@ -211,6 +211,23 @@
         }
     },
     "search": {
+        "advancedSearch": {
+            "button": {
+                "filters": "{{count}} advanced filter",
+                "filters_plurals": "{{count}} advanced filters",
+                "noFilter": "Advanced filters"
+            },
+            "modal": {
+                "button": {
+                    "confirm": "Search",
+                    "reset": "Reset filters"
+                },
+                "keywords": {
+                    "label": "Keywords"
+                },
+                "title": "Advanced Filters"
+            }
+        },
         "clear": {
             "tooltip": {
                 "clear": "Clear search input",
@@ -218,9 +235,11 @@
             }
         },
         "header": {
+            "close": "Quit the search",
             "result": "Results that contain all the keywords:",
             "search": "Search"
         },
+        "resultsFor": "Results for:",
         "search": {
             "tooltip": {
                 "edit": "Edit your search to start a new one",
