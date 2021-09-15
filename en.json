@@ -1,6 +1,5 @@
 {
     "actions": {
-        "cancelUpload": "Cancel upload",
         "copy": "Copy",
         "deletePermanently": "Delete Permanently",
         "download": "Download",
@@ -177,7 +176,7 @@
                     "confirm": "Copy"
                 },
                 "title": "Copy {{node.name}}",
-                "title_plurals": "Copy items"
+                "title_plural": "Copy items"
             }
         },
         "move": {
@@ -195,7 +194,7 @@
                 },
                 "subtitle": "Select a destination folder:",
                 "title": "Move {{node.name}}",
-                "title_plurals": "Move items"
+                "title_plural": "Move items"
             }
         },
         "rename": {
@@ -219,7 +218,7 @@
         "advancedSearch": {
             "button": {
                 "filters": "{{count}} advanced filter",
-                "filters_plurals": "{{count}} advanced filters",
+                "filters_plural": "{{count}} advanced filters",
                 "noFilter": "Advanced filters"
             },
             "modal": {
@@ -227,8 +226,16 @@
                     "confirm": "Search",
                     "reset": "Reset filters"
                 },
+                "flagged": {
+                    "description": "Filter the results by items that have been flagged by you",
+                    "label": "Flagged"
+                },
                 "keywords": {
                     "label": "Keywords"
+                },
+                "shared": {
+                    "description": "Filter the results by items that contain at least one collaborator besides you",
+                    "label": "Shared"
                 },
                 "title": "Advanced Filters"
             }
@@ -242,7 +249,8 @@
         "header": {
             "close": "Quit the search",
             "result": "Results that contain all the keywords:",
-            "search": "Search"
+            "search": "Search",
+            "start": "Start a search"
         },
         "resultsFor": "Results for:",
         "search": {
