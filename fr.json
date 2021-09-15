@@ -1,1 +1,152 @@
-{}
+{
+    "create": {
+        "options": {
+            "new": {
+                "folder": "Nouveau Dossier",
+                "upload": "Upload"
+            }
+        }
+    },
+    "empty": {
+        "folder": {
+            "hint": "Il semble qu'il n'y ait rien ici.",
+            "state": "Déposez un fichier ou créez en un nouveau en cliquant sur \"NOUVEAU\""
+        }
+    },
+    "filter": {
+        "snackbar": {
+            "unflag": {
+                "error": "Erreur",
+                "success": "Réussi"
+            }
+        }
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "button": {
+                    "confirm": "Créer"
+                },
+                "title": "Créer un Nouveau dossier",
+                "input": {
+                    "label": {
+                        "name": "Saisissez ici le nom du nouveau dossier"
+                    }
+                }
+            }
+        }
+    },
+    "modal": {
+        "button": {
+            "cancel": "Annuler",
+            "confirm": "Confirmer"
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "Effacer définitivement"
+            }
+        },
+        "roots": {
+            "driveHome": "Accueil",
+            "rootsList": "Drive",
+            "sharedWitMe": "Éléments partagés avec moi",
+            "trash": {
+                "trash": "Corbeille"
+            }
+        }
+    },
+    "node": {
+        "rename": {
+            "modal": {
+                "button": {
+                    "confirm": "Renommer"
+                },
+                "input": {
+                    "label": {
+                        "name": "Saisissez ici un nouveau nom"
+                    }
+                },
+                "title": "Renommer un fichier ou un dossier"
+            }
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "Copier"
+                }
+            }
+        },
+        "alias": {
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_ROOT": "Accueil"
+        },
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "Déplacer"
+                }
+            }
+        }
+    },
+    "primaryBar": {
+        "driveHome": "Accueil"
+    },
+    "secondaryBar": {
+        "driveHome": "Accueil",
+        "filters": "Filtres",
+        "filtersList": {
+            "flagged": "Marqué",
+            "sharedByMe": "Partagé par moi",
+            "sharedWithMe": "Éléments partagés avec moi",
+            "trash": "Corbeille"
+        },
+        "team": "Team"
+    },
+    "snackbar": {
+        "markForDeletion": {
+            "error": "Erreur",
+            "success": "Réussi"
+        },
+        "deleteShare": {
+            "error": "Erreur"
+        }
+    },
+    "actions": {
+        "download": "Téléchargement",
+        "markForDeletion": "Mettre à la corbeille",
+        "move": "Déplacer",
+        "openWithDocs": "Ouvrir avec Docs",
+        "cancelUpload": "Annuler le téléversement",
+        "copy": "Copier",
+        "rename": "Renommer",
+        "restore": "Restaurer"
+    },
+    "search": {
+        "header": {
+            "search": "Rechercher"
+        },
+        "search": {
+            "tooltip": {
+                "search": "Rechercher"
+            }
+        }
+    },
+    "displayer": {
+        "details": {
+            "size": "Taille",
+            "createdBy": "Créé par",
+            "description": "Description"
+        },
+        "list": {
+            "you": "Vous"
+        },
+        "share": {
+            "chip": {
+                "popover": {
+                    "save": "Sauvegarder"
+                },
+                "you": "Vous"
+            }
+        }
+    }
+}

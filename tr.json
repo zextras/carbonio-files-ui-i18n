@@ -1,1 +1,152 @@
-{}
+{
+    "filter": {
+        "snackbar": {
+            "unflag": {
+                "success": "",
+                "error": ""
+            }
+        }
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "button": {
+                    "confirm": "Oluştur"
+                },
+                "title": "",
+                "input": {
+                    "label": {
+                        "name": ""
+                    }
+                }
+            }
+        }
+    },
+    "modal": {
+        "button": {
+            "cancel": "İptal",
+            "confirm": "Onayla"
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "Kalıcı olarak sil"
+            }
+        },
+        "roots": {
+            "driveHome": "Giriş",
+            "rootsList": "Drive",
+            "sharedWitMe": "Benimle paylaşıldı",
+            "trash": {
+                "trash": "Çöp Kutusu"
+            }
+        }
+    },
+    "create": {
+        "options": {
+            "new": {
+                "folder": "Yeni Klasör",
+                "upload": "Yükle"
+            }
+        }
+    },
+    "empty": {
+        "folder": {
+            "hint": "",
+            "state": ""
+        }
+    },
+    "node": {
+        "rename": {
+            "modal": {
+                "button": {
+                    "confirm": "Yeniden adlandır"
+                },
+                "input": {
+                    "label": {
+                        "name": ""
+                    }
+                },
+                "title": ""
+            }
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "Kopyala"
+                }
+            }
+        },
+        "alias": {
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_ROOT": "Drive Giriş"
+        },
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "Taşı"
+                }
+            }
+        }
+    },
+    "primaryBar": {
+        "driveHome": ""
+    },
+    "secondaryBar": {
+        "driveHome": "Drive Giriş",
+        "filters": "",
+        "filtersList": {
+            "flagged": "",
+            "sharedByMe": "Benim Paylaştıklarım",
+            "sharedWithMe": "Benimle paylaşıldı",
+            "trash": "Çöp Kutusu"
+        },
+        "team": "Team"
+    },
+    "snackbar": {
+        "markForDeletion": {
+            "error": "",
+            "success": ""
+        },
+        "deleteShare": {
+            "error": "Hata"
+        }
+    },
+    "actions": {
+        "download": "İndir",
+        "markForDeletion": "Silmek için işaretle",
+        "move": "Taşı",
+        "openWithDocs": "Docs ile Aç",
+        "rename": "Yeniden adlandır",
+        "restore": "Geri al",
+        "cancelUpload": "Yüklemeyi iptal et",
+        "copy": "Kopyala"
+    },
+    "displayer": {
+        "details": {
+            "size": "Boyut",
+            "createdBy": "Oluşturan",
+            "description": "Tanım"
+        },
+        "list": {
+            "you": "Siz"
+        },
+        "share": {
+            "chip": {
+                "popover": {
+                    "save": "Kaydet"
+                },
+                "you": "Siz"
+            }
+        }
+    },
+    "search": {
+        "header": {
+            "search": "Ara"
+        },
+        "search": {
+            "tooltip": {
+                "search": "Ara"
+            }
+        }
+    }
+}

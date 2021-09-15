@@ -1,1 +1,152 @@
-{}
+{
+    "create": {
+        "options": {
+            "new": {
+                "folder": "新規フォルダ",
+                "upload": "アップロード"
+            }
+        }
+    },
+    "filter": {
+        "snackbar": {
+            "unflag": {
+                "error": "エラー",
+                "success": ""
+            }
+        }
+    },
+    "modal": {
+        "button": {
+            "cancel": "キャンセル",
+            "confirm": "確認"
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "完全に削除する"
+            }
+        },
+        "roots": {
+            "driveHome": "ホーム",
+            "rootsList": "Drive",
+            "sharedWitMe": "共有されたファイル",
+            "trash": {
+                "trash": "ゴミ箱"
+            }
+        }
+    },
+    "node": {
+        "rename": {
+            "modal": {
+                "button": {
+                    "confirm": "名前を変更"
+                },
+                "input": {
+                    "label": {
+                        "name": ""
+                    }
+                },
+                "title": ""
+            }
+        },
+        "alias": {
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_ROOT": "Driveホーム"
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "コピー"
+                }
+            }
+        },
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "移動"
+                }
+            }
+        }
+    },
+    "primaryBar": {
+        "driveHome": "Driveホーム"
+    },
+    "secondaryBar": {
+        "driveHome": "Driveホーム",
+        "team": "Team",
+        "filters": "",
+        "filtersList": {
+            "flagged": "",
+            "sharedByMe": "共有したファイル",
+            "sharedWithMe": "共有されたファイル",
+            "trash": "ゴミ箱"
+        }
+    },
+    "snackbar": {
+        "markForDeletion": {
+            "error": "エラー",
+            "success": ""
+        },
+        "deleteShare": {
+            "error": "エラー"
+        }
+    },
+    "empty": {
+        "folder": {
+            "hint": "",
+            "state": ""
+        }
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "button": {
+                    "confirm": "作成する"
+                },
+                "title": "",
+                "input": {
+                    "label": {
+                        "name": ""
+                    }
+                }
+            }
+        }
+    },
+    "actions": {
+        "cancelUpload": "アップロードをキャンセルする",
+        "copy": "コピー",
+        "download": "ダウンロード",
+        "markForDeletion": "削除マークを付ける",
+        "move": "移動",
+        "openWithDocs": "Docsで開く",
+        "rename": "名前を変更",
+        "restore": "戻す"
+    },
+    "displayer": {
+        "list": {
+            "you": "あなた"
+        },
+        "share": {
+            "chip": {
+                "you": "あなた",
+                "popover": {
+                    "save": "保存"
+                }
+            }
+        },
+        "details": {
+            "createdBy": "作成者",
+            "description": "説明",
+            "size": "サイズ"
+        }
+    },
+    "search": {
+        "header": {
+            "search": "検索"
+        },
+        "search": {
+            "tooltip": {
+                "search": "検索"
+            }
+        }
+    }
+}

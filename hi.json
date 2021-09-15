@@ -1,1 +1,151 @@
-{}
+{
+    "create": {
+        "options": {
+            "new": {
+                "folder": "नया फोल्डर",
+                "upload": "अपलोड करें"
+            }
+        }
+    },
+    "empty": {
+        "folder": {
+            "hint": "",
+            "state": ""
+        }
+    },
+    "filter": {
+        "snackbar": {
+            "unflag": {
+                "error": "",
+                "success": ""
+            }
+        }
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "button": {
+                    "confirm": "बनाएँ"
+                },
+                "title": "",
+                "input": {
+                    "label": {
+                        "name": ""
+                    }
+                }
+            }
+        }
+    },
+    "node": {
+        "rename": {
+            "modal": {
+                "button": {
+                    "confirm": "नाम बदलें"
+                },
+                "input": {
+                    "label": {
+                        "name": ""
+                    }
+                },
+                "title": ""
+            }
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "कॉपी करें"
+                }
+            }
+        },
+        "alias": {
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_ROOT": "Drive होम"
+        },
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "ले जाएँ"
+                }
+            }
+        }
+    },
+    "primaryBar": {
+        "driveHome": ""
+    },
+    "secondaryBar": {
+        "driveHome": "Drive होम",
+        "filters": "",
+        "filtersList": {
+            "flagged": "",
+            "sharedByMe": "मेरे द्वारा शेयर",
+            "sharedWithMe": "मेरे साथ शेयर",
+            "trash": "रद्दी"
+        },
+        "team": "Team"
+    },
+    "modal": {
+        "button": {
+            "cancel": "कैंसल करें",
+            "confirm": "कन्फ़र्म करें"
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "हमेशा के लिए डिलीट करें"
+            }
+        },
+        "roots": {
+            "driveHome": "होम",
+            "rootsList": "Drive",
+            "sharedWitMe": "मेरे साथ शेयर",
+            "trash": {
+                "trash": "रद्दी"
+            }
+        }
+    },
+    "snackbar": {
+        "markForDeletion": {
+            "error": "",
+            "success": ""
+        },
+        "deleteShare": {
+            "error": "त्रुटि"
+        }
+    },
+    "actions": {
+        "cancelUpload": "अपलोड कैंसल करें",
+        "copy": "कॉपी करें",
+        "download": "डाऊनलोड करें",
+        "markForDeletion": "डिलीट करने के लिए मार्क करें",
+        "move": "ले जाएँ",
+        "rename": "नाम बदलें",
+        "restore": "रिस्टोर करें"
+    },
+    "displayer": {
+        "details": {
+            "createdBy": "इनके द्वारा बनाया गया",
+            "description": "विवरण",
+            "size": "साइज़"
+        },
+        "list": {
+            "you": "आप"
+        },
+        "share": {
+            "chip": {
+                "popover": {
+                    "save": "सेव करें"
+                },
+                "you": "आप"
+            }
+        }
+    },
+    "search": {
+        "header": {
+            "search": "सर्च करें"
+        },
+        "search": {
+            "tooltip": {
+                "search": "सर्च करें"
+            }
+        }
+    }
+}
