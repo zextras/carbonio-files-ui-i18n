@@ -32,6 +32,11 @@
             "trash": {
                 "trash": "ゴミ箱"
             }
+        },
+        "deleteShare": {
+            "button": {
+                "confirm": "削除する"
+            }
         }
     },
     "node": {
@@ -87,7 +92,11 @@
             "success": ""
         },
         "deleteShare": {
-            "error": "エラー"
+            "error": "エラー",
+            "success": "成功"
+        },
+        "restore": {
+            "success": "成功"
         }
     },
     "empty": {
@@ -136,7 +145,11 @@
         "details": {
             "createdBy": "作成者",
             "description": "説明",
-            "size": "サイズ"
+            "size": "サイズ",
+            "position": "場所"
+        },
+        "tabs": {
+            "details": "詳細"
         }
     },
     "search": {
@@ -146,6 +159,19 @@
         "search": {
             "tooltip": {
                 "search": "検索"
+            }
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "ドキュメント名"
+                        }
+                    }
+                }
             }
         }
     }
