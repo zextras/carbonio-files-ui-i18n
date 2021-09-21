@@ -31,6 +31,11 @@
             "trash": {
                 "trash": "Papelera"
             }
+        },
+        "deleteShare": {
+            "button": {
+                "confirm": "Remover"
+            }
         }
     },
     "node": {
@@ -86,7 +91,11 @@
             "success": ""
         },
         "deleteShare": {
-            "error": "Error"
+            "error": "Error",
+            "success": "Éxito"
+        },
+        "restore": {
+            "success": "Éxito"
         }
     },
     "create": {
@@ -136,7 +145,11 @@
         "details": {
             "createdBy": "Creado por",
             "description": "Descripción",
-            "size": "Tamaño"
+            "size": "Tamaño",
+            "position": "Posición"
+        },
+        "tabs": {
+            "details": "Detalles"
         }
     },
     "search": {
@@ -146,6 +159,19 @@
         "search": {
             "tooltip": {
                 "search": "Buscar"
+            }
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "Nombre del documento"
+                        }
+                    }
+                }
             }
         }
     }
