@@ -61,6 +61,7 @@
                 "noteDescription": "The standard message displays your name, the name of the shared item, permissions granted to the recipients and sign in information, if necessary."
             },
             "chip": {
+                "owner": "Owner:",
                 "popover": {
                     "role": {
                         "editor": "Editor",
