@@ -1,1 +1,143 @@
-{}
+{
+    "displayer": {
+        "details": {
+            "size": "大小",
+            "createdBy": "创建者",
+            "description": "描述",
+            "position": "位置"
+        },
+        "list": {
+            "you": "您"
+        },
+        "share": {
+            "chip": {
+                "popover": {
+                    "save": "保存"
+                },
+                "you": "您"
+            }
+        },
+        "tabs": {
+            "details": "详情"
+        }
+    },
+    "snackbar": {
+        "restore": {
+            "success": "成功"
+        },
+        "deleteShare": {
+            "error": "错误",
+            "success": "成功"
+        }
+    },
+    "actions": {
+        "cancelUpload": "取消上传",
+        "copy": "复制",
+        "download": "下载",
+        "markForDeletion": "标记以删除",
+        "move": "移动",
+        "openWithDocs": "使用文档打开",
+        "rename": "重命名",
+        "restore": "恢复"
+    },
+    "create": {
+        "options": {
+            "new": {
+                "folder": "新文件夹",
+                "upload": "上传"
+            }
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "文档名称"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "button": {
+                    "confirm": "创建"
+                }
+            }
+        }
+    },
+    "modal": {
+        "button": {
+            "cancel": "取消",
+            "confirm": "确认"
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "永久删除"
+            }
+        },
+        "deleteShare": {
+            "button": {
+                "confirm": "移除"
+            }
+        },
+        "roots": {
+            "driveHome": "主页",
+            "rootsList": "Drive",
+            "sharedWitMe": "同我分享的",
+            "trash": {
+                "trash": "回收站"
+            }
+        }
+    },
+    "node": {
+        "alias": {
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_ROOT": "云盘主页"
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "复制"
+                }
+            }
+        },
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "移动"
+                }
+            }
+        },
+        "rename": {
+            "modal": {
+                "button": {
+                    "confirm": "重命名"
+                }
+            }
+        }
+    },
+    "search": {
+        "header": {
+            "search": "搜索"
+        },
+        "search": {
+            "tooltip": {
+                "search": "搜索"
+            }
+        }
+    },
+    "secondaryBar": {
+        "driveHome": "云盘主页",
+        "filtersList": {
+            "sharedByMe": "由我分享的",
+            "sharedWithMe": "同我分享的",
+            "trash": "回收站"
+        },
+        "team": "Team"
+    }
+}
