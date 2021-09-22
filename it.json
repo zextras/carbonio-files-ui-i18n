@@ -60,10 +60,10 @@
     "node": {
         "rename": {
             "modal": {
-                "title": "Rinomina un file o cartella",
+                "title": "Rinomina elemento",
                 "input": {
                     "label": {
-                        "name": "Digita un nuovo nome"
+                        "name": "Nome Elemento"
                     }
                 },
                 "button": {
@@ -79,14 +79,22 @@
             "modal": {
                 "button": {
                     "confirm": "Copia"
-                }
+                },
+                "title": "Copia {{node.name}}",
+                "title_plurals": "Copia elementi"
             }
         },
         "move": {
             "modal": {
                 "button": {
                     "confirm": "Sposta"
-                }
+                },
+                "input": {
+                    "filter": "Filtra cartelle"
+                },
+                "subtitle": "Seleziona una cartella di destinazione:",
+                "title": "Sposta {{node.name}}",
+                "title_plurals": "Sposta elementi"
             }
         }
     },
@@ -107,7 +115,21 @@
             "rootsList": "Drive",
             "sharedWitMe": "Condivisi con me",
             "trash": {
-                "trash": "Cestino"
+                "trash": "Cestino",
+                "sharedWitMe": "Elementi condivisi"
+            }
+        },
+        "deleteShare": {
+            "body": "Vuoi rimuovere i permessi di accesso dati a {{shareTarget}} ?",
+            "button": {
+                "confirm": "Rimuovi"
+            },
+            "header": "Rimuovi condivisione",
+            "yourShare": {
+                "body": {
+                    "answer": "Vuoi uscire da questa collaborazione?",
+                    "permissionLost": "Tutti i permessi di accesso a te assegnati andranno persi."
+                }
             }
         }
     },
@@ -194,7 +216,8 @@
             "showPath": "Mostra percorso"
         },
         "uploads": {
-            "message": "Qui sono elencati tutti gli elementi in caricamento, puoi gestirli direttamente da qui"
+            "message": "Qui sono elencati tutti gli elementi in caricamento, puoi gestirli direttamente da qui",
+            "title": "Carica suggerimenti"
         },
         "folder": {
             "preview": "Sei in una cartella"
@@ -205,21 +228,32 @@
         },
         "tabs": {
             "activities": "Attività",
-            "details": "Dettagli"
+            "details": "Dettagli",
+            "sharing": "Condivisione",
+            "versioning": "Versione"
         }
     },
     "search": {
         "header": {
-            "search": "Cerca"
+            "search": "Cerca",
+            "result": "Risultati che contengono tutte le parole chiave:"
         },
         "search": {
             "tooltip": {
-                "search": "Cerca"
+                "search": "Cerca",
+                "edit": "Modifica la ricerca per iniziarne una nuova",
+                "empty": "Digita una parola chiave per iniziare la ricerca"
             }
         },
         "searchBar": {
             "label": {
-                "default": "Digita la tua ricerca"
+                "default": "Digita la tua ricerca",
+                "active": "Separa le parole chiave usando una virgola, punto e virgola oppure il tasto TAB"
+            }
+        },
+        "clear": {
+            "tooltip": {
+                "clear": "Cancella ricerca"
             }
         }
     },
@@ -248,8 +282,16 @@
             "message": {
                 "disabled": "Impossibile trascinare un allegato in quest'area",
                 "folderView": {
-                    "disabled": "Impossibile trascinare un allegato in quest'area"
+                    "disabled": "Impossibile trascinare un allegato in quest'area",
+                    "enabled": "Trascina qui gli allegati\nper aggiungerli velocemente a questa cartella"
+                },
+                "otherView": {
+                    "enabled": "Trascina qui gli allegati\nper aggiungerli velocemente alla Home di Drive"
                 }
+            },
+            "title": {
+                "disabled": "Modalità Drag&Drop",
+                "enabled": "Modalità Drag&Drop"
             }
         }
     }
