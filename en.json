@@ -258,8 +258,9 @@
     },
     "snackbar": {
         "markForDeletion": {
-            "error": "Error",
-            "success": "Success"
+            "error": "Something went wrong, try again",
+            "showTrash": "Open Trash folder",
+            "success": "Item moved to trash"
         },
         "deleteShare": {
             "error": "Error",
@@ -267,11 +268,6 @@
         },
         "download": {
             "start": "Your download will start soon"
-        },
-        "markForDeletion": {
-            "error": "Something went wrong, try again",
-            "showTrash": "Open Trash folder",
-            "success": "Item moved to trash"
         },
         "moveNodes": {
             "error": "Something went wrong, try again",
@@ -301,7 +297,7 @@
                     "enabled": "Drop here your attachments \n to quick-add them to this folder"
                 },
                 "otherView": {
-                    "enabled": "Drop here your attachments \n to quick-add them to your Drive Home"
+                    "enabled": "Drop here your attachments\nto quick-add them to your Drive Home"
                 }
             },
             "title": {
