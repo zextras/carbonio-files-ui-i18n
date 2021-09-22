@@ -33,7 +33,13 @@
             "createdBy": "Created by",
             "description": "Description",
             "downloads": "Download via public link",
+            "editDescription": {
+                "closeIconTooltip": "Close without saving",
+                "editIconTooltip": "Edit description",
+                "saveIconTooltip": "Save edits"
+            },
             "lastEdit": "Last edit",
+            "missingDescription": "Click the edit button to add a description",
             "position": "Position",
             "showPath": "Show path",
             "size": "Size"
