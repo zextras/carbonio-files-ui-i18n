@@ -100,6 +100,11 @@
             "trash": {
                 "trash": "रद्दी"
             }
+        },
+        "deleteShare": {
+            "button": {
+                "confirm": "हटाएँ"
+            }
         }
     },
     "snackbar": {
@@ -108,7 +113,11 @@
             "success": ""
         },
         "deleteShare": {
-            "error": "त्रुटि"
+            "error": "त्रुटि",
+            "success": "सफलता"
+        },
+        "restore": {
+            "success": "सफलता"
         }
     },
     "actions": {
@@ -118,13 +127,15 @@
         "markForDeletion": "डिलीट करने के लिए मार्क करें",
         "move": "ले जाएँ",
         "rename": "नाम बदलें",
-        "restore": "रिस्टोर करें"
+        "restore": "रिस्टोर करें",
+        "openWithDocs": "Docs से खोलें"
     },
     "displayer": {
         "details": {
             "createdBy": "इनके द्वारा बनाया गया",
             "description": "विवरण",
-            "size": "साइज़"
+            "size": "साइज़",
+            "position": "पोजीशन"
         },
         "list": {
             "you": "आप"
@@ -136,6 +147,9 @@
                 },
                 "you": "आप"
             }
+        },
+        "tabs": {
+            "details": "विवरण"
         }
     },
     "search": {
@@ -145,6 +159,19 @@
         "search": {
             "tooltip": {
                 "search": "सर्च करें"
+            }
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "डॉक्युमेंट नाम"
+                        }
+                    }
+                }
             }
         }
     }

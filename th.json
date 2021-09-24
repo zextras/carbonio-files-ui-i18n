@@ -53,6 +53,11 @@
             "trash": {
                 "trash": "ถังขยะ"
             }
+        },
+        "deleteShare": {
+            "button": {
+                "confirm": "ลบออก"
+            }
         }
     },
     "node": {
@@ -108,7 +113,11 @@
             "success": ""
         },
         "deleteShare": {
-            "error": "ผิดพลาด"
+            "error": "ผิดพลาด",
+            "success": "สำเร็จ"
+        },
+        "restore": {
+            "success": "สำเร็จ"
         }
     },
     "actions": {
@@ -136,7 +145,11 @@
         "details": {
             "createdBy": "สร้างโดย",
             "description": "คำอธิบาย",
-            "size": "ขนาด"
+            "size": "ขนาด",
+            "position": "ตำแหน่ง"
+        },
+        "tabs": {
+            "details": "รายละเอียด"
         }
     },
     "search": {
@@ -146,6 +159,19 @@
         "search": {
             "tooltip": {
                 "search": "ค้นหา"
+            }
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "ชื่อเอกสาร"
+                        }
+                    }
+                }
             }
         }
     }

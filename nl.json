@@ -39,6 +39,11 @@
             "trash": {
                 "trash": "Prullenbak"
             }
+        },
+        "deleteShare": {
+            "button": {
+                "confirm": "Verwijderen"
+            }
         }
     },
     "primaryBar": {
@@ -61,7 +66,11 @@
             "success": "Succes"
         },
         "deleteShare": {
-            "error": "Fout"
+            "error": "Fout",
+            "success": "Succes"
+        },
+        "restore": {
+            "success": "Succes"
         }
     },
     "create": {
@@ -119,13 +128,15 @@
         "openWithDocs": "Openen met Docs",
         "rename": "Naam veranderen",
         "copy": "Kopieren",
-        "restore": "Herstellen"
+        "restore": "Herstellen",
+        "deletePermanently": "Permanent Verwijderen"
     },
     "displayer": {
         "details": {
             "size": "Grootte",
             "createdBy": "Gecreëerd door",
-            "description": "Omschrijving"
+            "description": "Omschrijving",
+            "position": "Positie"
         },
         "list": {
             "you": "U"
@@ -137,6 +148,9 @@
                 },
                 "you": "U"
             }
+        },
+        "tabs": {
+            "details": "Gegevens"
         }
     },
     "search": {
@@ -146,6 +160,19 @@
         "search": {
             "tooltip": {
                 "search": "Zoeken"
+            }
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "Documentnaam"
+                        }
+                    }
+                }
             }
         }
     }

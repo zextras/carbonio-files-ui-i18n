@@ -39,6 +39,11 @@
             "trash": {
                 "trash": "Sampah"
             }
+        },
+        "deleteShare": {
+            "button": {
+                "confirm": "hapus"
+            }
         }
     },
     "node": {
@@ -94,7 +99,11 @@
             "success": ""
         },
         "deleteShare": {
-            "error": "Kesalahan"
+            "error": "Kesalahan",
+            "success": "Berhasil"
+        },
+        "restore": {
+            "success": "Berhasil"
         }
     },
     "empty": {
@@ -136,7 +145,11 @@
         "details": {
             "createdBy": "Dibuat oleh",
             "description": "Deskripsi",
-            "size": "Ukuran"
+            "size": "Ukuran",
+            "position": "Posisi"
+        },
+        "tabs": {
+            "details": "Detail"
         }
     },
     "search": {
@@ -146,6 +159,19 @@
         "search": {
             "tooltip": {
                 "search": "Cari"
+            }
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "Nama dokumen"
+                        }
+                    }
+                }
             }
         }
     }

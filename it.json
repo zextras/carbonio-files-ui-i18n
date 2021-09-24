@@ -2,10 +2,10 @@
     "folder": {
         "create": {
             "modal": {
-                "title": "Crea una Nuova Cartella",
+                "title": "Crea Nuova Cartella",
                 "input": {
                     "label": {
-                        "name": "Digita un nome per la nuova cartella"
+                        "name": "Nome cartella"
                     }
                 },
                 "button": {
@@ -16,11 +16,28 @@
     },
     "snackbar": {
         "markForDeletion": {
-            "success": "Riuscito",
-            "error": "Errore"
+            "success": "Elemento spostato nel cestino",
+            "error": "Qualcosa è andato storto, riprova",
+            "showTrash": "Apri Cestino"
         },
         "deleteShare": {
-            "error": "Errore"
+            "error": "Errore",
+            "success": "Successo"
+        },
+        "download": {
+            "start": "Il download comincerà a breve"
+        },
+        "moveNodes": {
+            "error": "Qualcosa è andato storto, riprova",
+            "success": "Elemento spostato nella cartella di destinazione"
+        },
+        "restore": {
+            "error": "Qualcosa è andato storto, riprova",
+            "showInFolder": "Mostra nella cartella",
+            "success": "Successo"
+        },
+        "upload": {
+            "goToFolder": "Vai alla cartella"
         }
     },
     "secondaryBar": {
@@ -29,10 +46,13 @@
             "flagged": "Marcato",
             "sharedByMe": "Condivisi da me",
             "sharedWithMe": "Condivisi con me",
-            "trash": "Cestino"
+            "trash": "Cestino",
+            "myElements": "I miei elementi",
+            "sharedElements": "Elementi Condivisi"
         },
         "filters": "Filtri",
-        "driveHome": "Home Drive"
+        "driveHome": "Home Drive",
+        "uploads": "Caricamenti"
     },
     "primaryBar": {
         "driveHome": "Home Drive"
@@ -78,7 +98,9 @@
         "deletePermanently": {
             "button": {
                 "confirm": "Elimina definitivamente"
-            }
+            },
+            "body": "Questo elementi verranno eliminati definitivamente. Non sarà più possibile recuperare i file. L'azione è irreversibile.",
+            "header": "L'azione è irreversibile"
         },
         "roots": {
             "driveHome": "Home",
@@ -92,8 +114,8 @@
     "filter": {
         "snackbar": {
             "unflag": {
-                "success": "Riuscito",
-                "error": "Errore"
+                "success": "Elemento deselezionato con successo",
+                "error": "Qualcosa è andato storto. riprova"
             }
         }
     },
@@ -107,7 +129,10 @@
         "options": {
             "new": {
                 "folder": "Nuova Cartella",
-                "upload": "Carica"
+                "upload": "Carica",
+                "document": "Nuovo Documento",
+                "presentation": "Nuova Presentazione",
+                "spreadsheet": "Nuovo Foglio di calcolo"
             }
         }
     },
@@ -121,7 +146,12 @@
         "openWithDocs": "Apri con Docs",
         "rename": "Rinomina",
         "restore": "Ripristina",
-        "flag": "Etichetta"
+        "flag": "Etichetta",
+        "goToFolder": "Vai alla cartella di destinazione",
+        "moveToTrash": "Sposta nel Cestino",
+        "removeUpload": "rimuovi caricamento",
+        "retryUpload": "Riprova caricamento",
+        "unflag": "Deseleziona"
     },
     "displayer": {
         "list": {
@@ -131,14 +161,51 @@
             "chip": {
                 "you": "Tu",
                 "popover": {
-                    "save": "Salva"
+                    "save": "Salva",
+                    "role": {
+                        "editorDescription": "Può visualizzare e modificare il file o la cartella",
+                        "viewerDescription": "Può visualizzare e scaricare il file o la cartella",
+                        "editor": "Editor"
+                    },
+                    "sharingAllowed": "Condivisione concessa",
+                    "sharingAllowedDescription": "Descrizione di cosa accade se questo è spuntato"
                 }
-            }
+            },
+            "addShare": {
+                "checkbox": {
+                    "label": "Aggiungi un messaggio personalizzato alla mail di notifica"
+                },
+                "input": {
+                    "label": "Aggiungi un messaggio personalizzato a questa notifica",
+                    "placeholder": "Aggiungi nuove persone o gruppi"
+                }
+            },
+            "noSharePermissionHeader": "Non sei autorizzato a condividere questo elemento."
         },
         "details": {
             "createdBy": "Creato da",
             "description": "Descrizione",
-            "size": "Dimensione"
+            "size": "Dimensione",
+            "collaborators": "Collaboratori",
+            "content": "Contenuto",
+            "downloads": "Scarica tramite link pubblico",
+            "lastEdit": "Ultima modifica",
+            "position": "Posizione",
+            "showPath": "Mostra percorso"
+        },
+        "uploads": {
+            "message": "Qui sono elencati tutti gli elementi in caricamento, puoi gestirli direttamente da qui"
+        },
+        "folder": {
+            "preview": "Sei in una cartella"
+        },
+        "search": {
+            "message": "Qui trovi tutti i risultati della ricerca",
+            "title": "Cerca suggerimenti"
+        },
+        "tabs": {
+            "activities": "Attività",
+            "details": "Dettagli"
         }
     },
     "search": {
@@ -148,6 +215,41 @@
         "search": {
             "tooltip": {
                 "search": "Cerca"
+            }
+        },
+        "searchBar": {
+            "label": {
+                "default": "Digita la tua ricerca"
+            }
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "Nome documento",
+                            "presentation": "Nome presentazione",
+                            "spreadsheet": "Nome Foglio di calcolo"
+                        }
+                    }
+                },
+                "title": {
+                    "document": "Crea Nuovo Documento",
+                    "presentation": "Crea Nuova Presentazione",
+                    "spreadsheet": "Crea Nuovo Foglio di calcolo"
+                }
+            }
+        }
+    },
+    "uploads": {
+        "dropzone": {
+            "message": {
+                "disabled": "Impossibile trascinare un allegato in quest'area",
+                "folderView": {
+                    "disabled": "Impossibile trascinare un allegato in quest'area"
+                }
             }
         }
     }
