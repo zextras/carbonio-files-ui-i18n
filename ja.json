@@ -284,5 +284,29 @@
                 }
             }
         }
+    },
+    "uploads": {
+        "clean": {
+            "completed": "完了したアップロードをクリーンアップする"
+        },
+        "destination": {
+            "home": "Drive Homeでアップロードが発生しました"
+        },
+        "dropzone": {
+            "message": {
+                "disabled": "この領域に添付ファイルをドロップすることはできません",
+                "folderView": {
+                    "disabled": "この領域に添付ファイルをドロップすることはできません",
+                    "enabled": "ここに添付ファイルをドロップして\n このフォルダに素早く追加できます"
+                },
+                "otherView": {
+                    "enabled": "ここに添付ファイルをドロップして\nDrive Homeに素早く追加できます"
+                }
+            },
+            "title": {
+                "disabled": "ドラッグ＆ドロップモード",
+                "enabled": "ドラッグ＆ドロップモード"
+            }
+        }
     }
 }
