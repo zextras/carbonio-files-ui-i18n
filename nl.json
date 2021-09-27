@@ -39,12 +39,22 @@
             "rootsList": "Drive",
             "sharedWitMe": "Met mij gedeeld",
             "trash": {
-                "trash": "Prullenbak"
+                "trash": "Prullenbak",
+                "myElements": "Mijn items",
+                "sharedWitMe": "Gedeelde items"
             }
         },
         "deleteShare": {
             "button": {
                 "confirm": "Verwijderen"
+            },
+            "body": "Weet u zeker dat u alle toegangsrechten verwijdert die eerder zijn gegeven aan {{shareTarget}} ?",
+            "header": "Delen verwijderen",
+            "yourShare": {
+                "body": {
+                    "answer": "Weet u zeker dat u zich uit deze samenwerking wilt terugtrekken?",
+                    "permissionLost": "Alle eerder aan u verleende toegangsrechten gaan verloren."
+                }
             }
         }
     },
@@ -54,18 +64,22 @@
     "secondaryBar": {
         "driveHome": "Srive Startpagina",
         "team": "Team",
-        "filters": "",
+        "filters": "Filters",
         "filtersList": {
-            "flagged": "",
+            "flagged": "Gevlagd",
             "sharedByMe": "Door mij gedeeld",
             "sharedWithMe": "Met mij gedeeld",
-            "trash": "Prullenbak"
-        }
+            "trash": "Prullenbak",
+            "myElements": "Mijn elementen",
+            "sharedElements": "Gedeelde elementen"
+        },
+        "uploads": "Uploads"
     },
     "snackbar": {
         "markForDeletion": {
-            "error": "Fout",
-            "success": "Succes"
+            "error": "Er is iets misgegaan, probeer het opnieuw",
+            "success": "Item verplaatst naar prullenmand",
+            "showTrash": "Open de Prullenmand-map"
         },
         "deleteShare": {
             "error": "Fout",
@@ -100,16 +114,27 @@
                 },
                 "input": {
                     "label": {
-                        "name": ""
+                        "name": "Naam item"
                     }
                 },
-                "title": ""
+                "title": "Item hernoemen"
             }
         },
         "move": {
             "modal": {
                 "button": {
                     "confirm": "Verplaatsen"
+                },
+                "input": {
+                    "filter": "Mappen filteren"
+                },
+                "subtitle": "Een doelmap selecteren:",
+                "title": "{{node.name}} verwijderen",
+                "title_plurals": "Items verwijderen"
+            },
+            "error": {
+                "not": {
+                    "allowed": "U kunt niet meerdere nodes van een filter of een zoekactie verplaatsen"
                 }
             }
         },
@@ -117,7 +142,9 @@
             "modal": {
                 "button": {
                     "confirm": "Kopieren"
-                }
+                },
+                "title": "{{node.name}} kopiëren",
+                "title_plurals": "Items kopiëren"
             }
         },
         "alias": {
@@ -203,11 +230,26 @@
     },
     "search": {
         "header": {
-            "search": "Zoeken"
+            "search": "Zoeken",
+            "result": "Resultaten die alle trefwoorden bevatten:"
         },
         "search": {
             "tooltip": {
-                "search": "Zoeken"
+                "search": "Zoeken",
+                "empty": "Typ enkele trefwoorden om een zoekopdracht te starten",
+                "edit": "Bewerk uw zoekopdracht om een nieuwe zoekopdracht te starten"
+            }
+        },
+        "clear": {
+            "tooltip": {
+                "clear": "Zoekinput wissen",
+                "empty": "Zoekinput is al gewist"
+            }
+        },
+        "searchBar": {
+            "label": {
+                "active": "Scheid uw trefwoorden met een komma, puntkomma of door op TAB te drukken",
+                "default": "Typ uw zoekopdracht"
             }
         }
     },
