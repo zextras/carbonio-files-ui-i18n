@@ -30,6 +30,7 @@
         "details": {
             "collaborators": "Collaborators",
             "content": "Content",
+            "copyShortcut": "copy item's shortcut",
             "createdBy": "Created by",
             "description": "Description",
             "downloads": "Download via public link",
@@ -290,7 +291,8 @@
     },
     "snackbar": {
         "clipboard": {
-            "email": "Email address copied"
+            "email": "Email address copied",
+            "itemShortcutCopied": "Item shortcut copied"
         },
         "copyNodes": {
             "error": "Something went wrong, try again",
