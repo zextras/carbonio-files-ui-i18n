@@ -86,7 +86,19 @@
             "success": "Succes"
         },
         "restore": {
-            "success": "Succes"
+            "success": "Succes",
+            "error": "Er is iets misgegaan, probeer het opnieuw",
+            "showInFolder": "In map tonen"
+        },
+        "download": {
+            "start": "Uw download zal spoedig beginnen"
+        },
+        "moveNodes": {
+            "error": "Er is iets misgegaan, probeer het opnieuw",
+            "success": "Item verplaatst naar doelmap"
+        },
+        "upload": {
+            "goToFolder": "Ga naar map"
         }
     },
     "create": {
@@ -270,6 +282,30 @@
                     "presentation": "Nieuwe presentatie creëren",
                     "spreadsheet": "Nieuwe spreadsheet creëren"
                 }
+            }
+        }
+    },
+    "uploads": {
+        "clean": {
+            "completed": "Voltooide uploads wissen"
+        },
+        "destination": {
+            "home": "Upload gebeurd in Drive Home"
+        },
+        "dropzone": {
+            "message": {
+                "disabled": "U kunt geen bijlage in dit gebied neerzetten",
+                "folderView": {
+                    "disabled": "U kunt geen bijlage in dit gebied neerzetten.",
+                    "enabled": "Plaats hier uw bijlagen \n om ze snel aan deze map toe te voegen"
+                },
+                "otherView": {
+                    "enabled": "Plaats hier uw bijlagen \n om ze snel aan uw Drive Home toe te voegen"
+                }
+            },
+            "title": {
+                "disabled": "Drag&Drop-modus",
+                "enabled": "Drag&Drop-modus"
             }
         }
     }
