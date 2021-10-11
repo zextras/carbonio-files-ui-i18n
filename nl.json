@@ -204,7 +204,7 @@
                         "editor": "Bewerker",
                         "editorDescription": "Het zal in staat zijn om het bestand of de map te bekijken en te bewerken",
                         "viewerDescription": "Het zal alleen in staat zijn om het bestand of de map te bekijken of te downloaden",
-                        "viewer": "Bekijker"
+                        "viewer": "Viewer"
                     },
                     "sharingAllowed": "Delen toegestaan",
                     "sharingAllowedDescription": "Beschrijving van wat er gebeurt als dit is aangevinkt"
