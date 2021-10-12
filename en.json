@@ -300,6 +300,13 @@
         "team": "Team",
         "uploads": "Uploads"
     },
+    "selectionMode": {
+        "header": {
+            "exit": "Exit selection mode",
+            "selectAll": "Select all",
+            "unselectAll": "Deselect all"
+        }
+    },
     "snackbar": {
         "clipboard": {
             "email": "Email address copied",
