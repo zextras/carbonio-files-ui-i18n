@@ -314,7 +314,7 @@
         },
         "copyNodes": {
             "error": "Something went wrong, try again",
-            "success": "Item copied to destination folder"
+            "success": "Item copied"
         },
         "deletePermanently": {
             "error": "Error",
@@ -334,7 +334,7 @@
         },
         "moveNodes": {
             "error": "Something went wrong, try again",
-            "success": "Item moved to destination folder"
+            "success": "Item moved"
         },
         "restore": {
             "error": "Something went wrong, try again",
