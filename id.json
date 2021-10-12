@@ -34,22 +34,22 @@
             "button": {
                 "confirm": "Hapus secara permanen"
             },
-            "header": "Tindakan ini tidak dapat diubah",
-            "body": "Anda akan menghapus item ini secara permanen. File tidak dapat dipulihkan lagi. Tindakan ini tidak dapat diubah."
+            "header": "Tindakan ini tidak dapat dibatalkan",
+            "body": "Anda akan menghapus item ini secara permanen. File tidak dapat dipulihkan lagi. Tindakan ini tidak dapat dibatalkan."
         },
         "roots": {
             "driveHome": "Beranda",
             "rootsList": "Drive",
             "sharedWitMe": "Dibagikan dengan saya",
             "trash": {
-                "trash": "Sampah",
+                "trash": "Tempat Sampah",
                 "myElements": "Item saya",
-                "sharedWitMe": "Item yang dibagikan"
+                "sharedWitMe": "Item bersama"
             }
         },
         "deleteShare": {
             "button": {
-                "confirm": "hapus"
+                "confirm": "Hapus"
             },
             "body": "Anda yakin ingin menghapus semua izin akses yang sebelumnya diberikan kepada {{shareTarget}} ?",
             "yourShare": {
@@ -76,7 +76,7 @@
             }
         },
         "alias": {
-            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_CHAT_ROOT": "Tim",
             "name_LOCAL_ROOT": "Drive Home"
         },
         "copy": {
@@ -114,14 +114,14 @@
         "driveHome": "Drive Home",
         "filters": "Filter",
         "filtersList": {
-            "flagged": "Diberi bendera",
+            "flagged": "Diberi tanda bendera",
             "sharedByMe": "Dibagikan oleh saya",
             "sharedWithMe": "Dibagikan dengan saya",
-            "trash": "Sampah",
+            "trash": "Tempat Sampah",
             "myElements": "Elemen saya",
-            "sharedElements": "Elemen yang Dibagikan"
+            "sharedElements": "Elemen Bersama"
         },
-        "team": "Team",
+        "team": "Tim",
         "uploads": "Unggahan"
     },
     "snackbar": {
@@ -160,13 +160,13 @@
         "snackbar": {
             "unflag": {
                 "error": "Terjadi kesalahan, coba lagi",
-                "success": "Bendera item berhasil dihapus"
+                "success": "Tanda bendera pada item berhasil dihapus"
             }
         }
     },
     "actions": {
         "copy": "Salin",
-        "cancelUpload": "Batalkan pengunggahan",
+        "cancelUpload": "Batalkan unggahan",
         "download": "Unduh",
         "markForDeletion": "Tandai untuk dihapus",
         "move": "Pindahkan",
@@ -176,10 +176,10 @@
         "deletePermanently": "Hapus Secara Permanen",
         "flag": "Bendera",
         "goToFolder": "Buka folder tujuan",
-        "moveToTrash": "Pindahkan ke Sampah",
+        "moveToTrash": "Pindahkan ke Tempat Sampah",
         "removeUpload": "Hapus unggahan",
         "retryUpload": "Coba unggah lagi",
-        "unflag": "Hapus bendera"
+        "unflag": "Hapus tanda bendera"
     },
     "displayer": {
         "list": {
@@ -194,7 +194,7 @@
                         "editorDescription": "Bisa melihat dan mengedit file atau folder",
                         "viewerDescription": "Hanya bisa melihat atau mengunduh file atau folder",
                         "editor": "Editor",
-                        "viewer": "Penonton"
+                        "viewer": "Pemirsa"
                     },
                     "sharingAllowed": "Berbagi diperbolehkan",
                     "sharingAllowedDescription": "Gambaran tentang hal yang akan terjadi jika bagian ini dicentang"
@@ -220,16 +220,16 @@
             "content": "Konten",
             "downloads": "Unduh melalui tautan publik",
             "lastEdit": "Editan terakhir",
-            "showPath": "Tampilkan path"
+            "showPath": "Tampilkan jalur"
         },
         "tabs": {
             "details": "Detail",
             "activities": "Aktivitas",
             "sharing": "Berbagi",
-            "versioning": "Versi"
+            "versioning": "Membuat versi"
         },
         "search": {
-            "message": "Temukan semua hasil pencarian Anda di sini",
+            "message": "Semua hasil pencarian Anda di sini",
             "title": "Saran pencarian"
         },
         "folder": {
@@ -237,7 +237,7 @@
         },
         "uploads": {
             "title": "Unggah saran",
-            "message": "Anda bisa menemukan semua item yang sedang diunggah dan mengelolanya dari sini"
+            "message": "Semua item yang sedang diunggah ada di sini, dan Anda bisa mengelolanya dari sini"
         }
     },
     "search": {
@@ -294,10 +294,13 @@
         },
         "dropzone": {
             "message": {
-                "disabled": "Anda tidak dapat menyisipkan lampiran di area ini",
+                "disabled": "Anda tidak dapat meletakkan lampiran di area ini",
                 "folderView": {
-                    "disabled": "Anda tidak dapat menyisipkan lampiran di area ini",
-                    "enabled": "Letakkan lampiran Anda di sini \n untuk menambahkan dengan cepat ke folder ini"
+                    "disabled": "Anda tidak dapat meletakkan lampiran di area ini",
+                    "enabled": "Letakkan lampiran Anda di sini \n untuk menambahkannya dengan cepat ke folder ini"
+                },
+                "otherView": {
+                    "enabled": "Letakkan lampiran Anda di sini\nuntuk menambahkannya dengan cepat ke Drive Home Anda"
                 }
             },
             "title": {
