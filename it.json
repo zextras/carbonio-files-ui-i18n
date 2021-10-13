@@ -95,6 +95,11 @@
                 "subtitle": "Seleziona una cartella di destinazione:",
                 "title": "Sposta {{node.name}}",
                 "title_plurals": "Sposta elementi"
+            },
+            "error": {
+                "not": {
+                    "allowed": "Impossibile rimuovere i nodi da un filtro o una ricerca"
+                }
             }
         }
     },
@@ -116,7 +121,8 @@
             "sharedWitMe": "Condivisi con me",
             "trash": {
                 "trash": "Cestino",
-                "sharedWitMe": "Elementi condivisi"
+                "sharedWitMe": "Elementi condivisi",
+                "myElements": "I miei file"
             }
         },
         "deleteShare": {
@@ -293,6 +299,12 @@
                 "disabled": "Modalità Drag&Drop",
                 "enabled": "Modalità Drag&Drop"
             }
+        },
+        "clean": {
+            "completed": "Rimuovi i caricamenti completati"
+        },
+        "destination": {
+            "home": "Caricamenti in Home di Drive"
         }
     }
 }
