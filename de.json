@@ -128,7 +128,13 @@
         "move": "Verschieben",
         "openWithDocs": "Mit Docs öffnen",
         "rename": "Umbenennen",
-        "restore": "Wiederherstellen"
+        "restore": "Wiederherstellen",
+        "deletePermanently": "Endgültig löschen",
+        "flag": "Markieren",
+        "goToFolder": "Zum Zielordner gehen",
+        "moveToTrash": "Zum Papierkorb verschieben",
+        "removeUpload": "Upload entfernen",
+        "retryUpload": "Upload erneut versuchen"
     },
     "displayer": {
         "details": {
