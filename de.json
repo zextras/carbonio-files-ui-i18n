@@ -3,7 +3,10 @@
         "options": {
             "new": {
                 "folder": "Neuer Ordner",
-                "upload": "Upload"
+                "upload": "Upload",
+                "document": "Neues Dokument",
+                "presentation": "Neue Präsentation",
+                "spreadsheet": "Neues Tabellenblatt"
             }
         }
     },
@@ -134,14 +137,20 @@
         "goToFolder": "Zum Zielordner gehen",
         "moveToTrash": "Zum Papierkorb verschieben",
         "removeUpload": "Upload entfernen",
-        "retryUpload": "Upload erneut versuchen"
+        "retryUpload": "Upload erneut versuchen",
+        "unflag": "Markierung entfernen"
     },
     "displayer": {
         "details": {
             "size": "Größe",
             "createdBy": "Erstellt von",
             "description": "Beschreibung",
-            "position": "Position"
+            "position": "Position",
+            "collaborators": "Mitarbeiter",
+            "content": "Inhalt",
+            "downloads": "Über öffentlichen Link herunterladen",
+            "lastEdit": "Letzte Bearbeitung",
+            "showPath": "Pfad anzeigen"
         },
         "list": {
             "you": "Sie"
@@ -156,6 +165,12 @@
         },
         "tabs": {
             "details": "Details"
+        },
+        "folder": {
+            "preview": "Sie befinden sich in einem Ordner"
+        },
+        "search": {
+            "message": "Hier können Sie alle Ergebnisse für Ihre Suche finden"
         }
     },
     "search": {
