@@ -352,6 +352,16 @@
         "ascendingOrder": "Ascending Order",
         "descendingOrder": "Descending Order",
         "editDate": "Edit Date",
+        "icon": {
+            "tooltip": {
+                "OrderLastUpdateAscending": "Ascending order by last update",
+                "OrderLastUpdateDescending": "Descending order by last update",
+                "OrderNameAscending": "Ascending order by name",
+                "OrderNameDescending": "Descending order by name",
+                "OrderSizeAscending": "Ascending order by size",
+                "OrderSizeDescending": "Descending order by size"
+            }
+        },
         "name": "Name",
         "size": "Size"
     },
