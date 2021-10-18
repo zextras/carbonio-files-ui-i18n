@@ -117,9 +117,12 @@
         "move": "Taşı",
         "openWithDocs": "Docs ile Aç",
         "rename": "Yeniden adlandır",
-        "restore": "Geri al",
+        "restore": "Geri yükle",
         "cancelUpload": "Yüklemeyi iptal et",
-        "copy": "Kopyala"
+        "copy": "Kopyala",
+        "deletePermanently": "Kalıcı olarak sil",
+        "flag": "Bayrak",
+        "goToFolder": "Hedef klasöre git"
     },
     "displayer": {
         "details": {
