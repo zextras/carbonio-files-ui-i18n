@@ -19,7 +19,7 @@
     "filter": {
         "snackbar": {
             "unflag": {
-                "error": "",
+                "error": "Etwas ist schiefgegangen, bitte versuchen Sie es erneut",
                 "success": "Markierung erfolgreich entfernt"
             }
         }
@@ -30,10 +30,10 @@
                 "button": {
                     "confirm": "Erstellen"
                 },
-                "title": "",
+                "title": "Neuen Ordner erstellen",
                 "input": {
                     "label": {
-                        "name": ""
+                        "name": "Ordnernname"
                     }
                 }
             }
@@ -159,6 +159,9 @@
         "moveNodes": {
             "error": "Etwas ist schiefgegangen, bitte versuchen Sie es erneut",
             "success": "Element in den Zielordner verschoben"
+        },
+        "upload": {
+            "goToFolder": "Zum Ordner gehen"
         }
     },
     "actions": {
@@ -245,12 +248,14 @@
         "search": {
             "tooltip": {
                 "search": "Suchen",
-                "empty": "Geben Sie Schlüsselwörter ein, um die Suche zu starten"
+                "empty": "Geben Sie Schlüsselwörter ein, um die Suche zu starten",
+                "edit": "Bearbeiten Sie Ihre Suche, um eine neue zu starten"
             }
         },
         "clear": {
             "tooltip": {
-                "empty": "Sucheingabe ist bereits leer"
+                "empty": "Sucheingabe ist bereits leer",
+                "clear": "Sucheingabe löschen"
             }
         },
         "searchBar": {
@@ -291,6 +296,10 @@
                 "otherView": {
                     "enabled": "Legen Sie hier Ihre Anhänge ab\n um diese Ihrem Drive Home schnell hinzuzufügen"
                 }
+            },
+            "title": {
+                "disabled": "Drag&Drop Modus",
+                "enabled": "Drag&Drop Modus"
             }
         },
         "clean": {
