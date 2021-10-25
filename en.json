@@ -15,6 +15,12 @@
         "retryUpload": "Retry upload",
         "unflag": "Unflag"
     },
+    "breadcrumb": {
+        "expander": {
+            "hide": "Hide previous folders",
+            "show": "Show previous folders"
+        }
+    },
     "create": {
         "options": {
             "new": {
