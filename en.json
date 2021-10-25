@@ -45,15 +45,16 @@
             "showPath": "Show path",
             "size": "Size"
         },
-        "folder": {
-            "preview": "You are in a folder"
+        "generic": {
+            "message": "Click an item to select it",
+            "title": "View files and folders, share them with your contacts"
         },
         "list": {
             "you": "You"
         },
         "search": {
-            "message": "Here you can find all the results of your search",
-            "title": "Search suggestions"
+            "message": "Or click the \"Advanced filter\" button to refine your current search",
+            "title": "View your search's results"
         },
         "share": {
             "addShare": {
@@ -78,7 +79,7 @@
                     },
                     "save": "Save",
                     "sharingAllowed": "Sharing allowed",
-                    "sharingAllowedDescription": "Description of what will happen if this is checked"
+                    "sharingAllowedDescription": "It will be able to manage shares for the file or folder"
                 },
                 "you": "You"
             },
@@ -116,9 +117,16 @@
         }
     },
     "empty": {
+        "filter": {
+            "hint": "It looks like there's nothing here."
+        },
         "folder": {
-            "hint": "It looks like there's nothing here.",
+            "displayerContent": "This folder has no content",
+            "hint": "It seems that this folder is empty",
             "state": "Drag a file or create a new one clicking \"NEW\""
+        },
+        "search": {
+            "hint": "Your search didn't match any files or folders"
         }
     },
     "folder": {
@@ -174,7 +182,7 @@
     },
     "node": {
         "alias": {
-            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_CHAT_ROOT": "Team sent files",
             "name_LOCAL_ROOT": "Drive Home",
             "name_SHARED_WITH_ME_ROOT": "Shared with me",
             "name_TRASH_ROOT": "Trash"
@@ -297,7 +305,7 @@
             "sharedWithMe": "Shared with me",
             "trash": "Trash"
         },
-        "team": "Team",
+        "team": "Team sent files",
         "uploads": "Uploads"
     },
     "selectionMode": {
@@ -313,6 +321,7 @@
             "itemShortcutCopied": "Item shortcut copied"
         },
         "copyNodes": {
+            "action": "Go to folder",
             "error": "Something went wrong, try again",
             "success": "Item copied"
         },
@@ -333,6 +342,7 @@
             "success": "Item moved to trash"
         },
         "moveNodes": {
+            "action": "Go to folder",
             "error": "Something went wrong, try again",
             "success": "Item moved"
         },
