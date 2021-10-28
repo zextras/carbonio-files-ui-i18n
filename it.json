@@ -259,7 +259,8 @@
         },
         "clear": {
             "tooltip": {
-                "clear": "Cancella ricerca"
+                "clear": "Cancella ricerca",
+                "empty": "La barra di ricerca è vuota"
             }
         }
     },
