@@ -128,7 +128,9 @@
         "move": "ले जाएँ",
         "rename": "नाम बदलें",
         "restore": "रिस्टोर करें",
-        "openWithDocs": "Docs से खोलें"
+        "openWithDocs": "Docs से खोलें",
+        "deletePermanently": "सदा के लिए मिटाएँ",
+        "flag": "चिन्हित करें"
     },
     "displayer": {
         "details": {
@@ -143,7 +145,10 @@
         "share": {
             "chip": {
                 "popover": {
-                    "save": "सेव करें"
+                    "save": "सेव करें",
+                    "role": {
+                        "viewer": "दर्शक"
+                    }
                 },
                 "you": "आप"
             }
@@ -172,6 +177,14 @@
                         }
                     }
                 }
+            }
+        }
+    },
+    "uploads": {
+        "dropzone": {
+            "title": {
+                "disabled": "उठा के गिराएं",
+                "enabled": "उठा के गिराएं"
             }
         }
     }
