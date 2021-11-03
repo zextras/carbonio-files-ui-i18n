@@ -2,8 +2,8 @@
     "filter": {
         "snackbar": {
             "unflag": {
-                "success": "",
-                "error": ""
+                "success": "Öğe bayrağı başarıyla kaldırıldı",
+                "error": "Bir sorun oluştu, lütfen tekrar deneyin"
             }
         }
     },
@@ -13,10 +13,10 @@
                 "button": {
                     "confirm": "Oluştur"
                 },
-                "title": "",
+                "title": "Yeni klasör oluştur",
                 "input": {
                     "label": {
-                        "name": ""
+                        "name": "Klasör Adı"
                     }
                 }
             }
@@ -30,14 +30,31 @@
         "deletePermanently": {
             "button": {
                 "confirm": "Kalıcı olarak sil"
-            }
+            },
+            "body": "Bu öğeyi / öğeleri kalıcı olarak sileceksiniz. Bu dosya / dosyaları sonra geri getiremeyeceksiniz. Bu işlemin geri dönüşü yoktur.",
+            "header": "Bu işlemin geri dönüşü yoktur"
         },
         "roots": {
             "driveHome": "Giriş",
             "rootsList": "Drive",
             "sharedWitMe": "Benimle paylaşıldı",
             "trash": {
-                "trash": "Çöp Kutusu"
+                "trash": "Çöp Kutusu",
+                "myElements": "Öğelerim",
+                "sharedWitMe": "Paylaşılan öğeler"
+            }
+        },
+        "deleteShare": {
+            "body": "{{shareTarget}} için önceden verilen tüm erişim izinlerini kaldırmak istediğinizden emin misiniz?",
+            "button": {
+                "confirm": "Kaldır"
+            },
+            "header": "Paylaşımı kaldır",
+            "yourShare": {
+                "body": {
+                    "answer": "Kendinizi bu birlikte çalışmadan kaldırmak istediğinize emin misiniz?",
+                    "permissionLost": "Size daha önceden verilmiş tüm erişim izinleri kaybolacak."
+                }
             }
         }
     },
@@ -45,14 +62,17 @@
         "options": {
             "new": {
                 "folder": "Yeni Klasör",
-                "upload": "Yükle"
+                "upload": "Yükle",
+                "document": "Yeni Doküman",
+                "presentation": "Yeni Sunum",
+                "spreadsheet": "Yeni Tablo"
             }
         }
     },
     "empty": {
         "folder": {
-            "hint": "",
-            "state": ""
+            "hint": "Burada hiçbir şey yok.",
+            "state": "Bir dosya sürükleyin veya \"YENİ\" tuşuna tıklayıp yeni bir tane oluşturun"
         }
     },
     "node": {
@@ -63,17 +83,19 @@
                 },
                 "input": {
                     "label": {
-                        "name": ""
+                        "name": "Öğe Adı"
                     }
                 },
-                "title": ""
+                "title": "Öğeyi yeniden adlandır"
             }
         },
         "copy": {
             "modal": {
                 "button": {
                     "confirm": "Kopyala"
-                }
+                },
+                "title": "Kopyala {{node.name}}",
+                "title_plurals": "Öğeleri kopyala"
             }
         },
         "alias": {
@@ -84,6 +106,17 @@
             "modal": {
                 "button": {
                     "confirm": "Taşı"
+                },
+                "input": {
+                    "filter": "Klasörleri filtrele"
+                },
+                "subtitle": "Hedef klasör seçin:",
+                "title": "Taşı {{node.name}}",
+                "title_plurals": "Öğeleri taşı"
+            },
+            "error": {
+                "not": {
+                    "allowed": "Bir filtre veya aramadan birden fazla nod taşıyamazsınız"
                 }
             }
         }
@@ -93,22 +126,42 @@
     },
     "secondaryBar": {
         "driveHome": "Drive Giriş",
-        "filters": "",
+        "filters": "Filtreler",
         "filtersList": {
-            "flagged": "",
+            "flagged": "Bayraklı",
             "sharedByMe": "Benim Paylaştıklarım",
             "sharedWithMe": "Benimle paylaşıldı",
-            "trash": "Çöp Kutusu"
+            "trash": "Çöp Kutusu",
+            "myElements": "Öğelerim",
+            "sharedElements": "Paylaşılan Öğeler"
         },
-        "team": "Team"
+        "team": "Team",
+        "uploads": "Yüklemeler"
     },
     "snackbar": {
         "markForDeletion": {
-            "error": "",
-            "success": ""
+            "error": "Bir sorun oluştu, lütfen tekrar deneyin",
+            "success": "Öğe çöp kutusuna taşındı",
+            "showTrash": "Çöp Kutusu klasörünü açın"
         },
         "deleteShare": {
-            "error": "Hata"
+            "error": "Hata",
+            "success": "Başarılı"
+        },
+        "download": {
+            "start": "İndirme işlemi kısa sürede başlayacak"
+        },
+        "moveNodes": {
+            "error": "Bir sorun oluştu, lütfen tekrar deneyin",
+            "success": "Öğe hedef klasöre taşındı"
+        },
+        "restore": {
+            "error": "Bir sorun oluştu, lütfen tekrar deneyin",
+            "showInFolder": "Klasörde göster",
+            "success": "Başarılı"
+        },
+        "upload": {
+            "goToFolder": "Klasöre git"
         }
     },
     "actions": {
@@ -122,13 +175,23 @@
         "copy": "Kopyala",
         "deletePermanently": "Kalıcı olarak sil",
         "flag": "Bayrak",
-        "goToFolder": "Hedef klasöre git"
+        "goToFolder": "Hedef klasöre git",
+        "moveToTrash": "Çöp Kutusuna Taşı",
+        "removeUpload": "Yüklemeyi kaldır",
+        "retryUpload": "Yüklemeyi tekrar dene",
+        "unflag": "Bayrağı kaldır"
     },
     "displayer": {
         "details": {
             "size": "Boyut",
             "createdBy": "Oluşturan",
-            "description": "Tanım"
+            "description": "Tanım",
+            "collaborators": "Birlikte Çalışanlar",
+            "content": "İçerik",
+            "downloads": "Genel bağlantıyı kullanarak indir",
+            "lastEdit": "En son düzenleme",
+            "position": "Yer",
+            "showPath": "Yolu göster"
         },
         "list": {
             "you": "Siz"
@@ -136,19 +199,113 @@
         "share": {
             "chip": {
                 "popover": {
-                    "save": "Kaydet"
+                    "save": "Kaydet",
+                    "role": {
+                        "editor": "Düzenleyici",
+                        "editorDescription": "Dosya veya klasörü görüntüleyip düzenleyebilecek",
+                        "viewer": "Görüntüleyici",
+                        "viewerDescription": "Dosya veya klasörü sadece görüntüleyecek veya indirebilecek"
+                    },
+                    "sharingAllowed": "Paylaşıma izin verildi",
+                    "sharingAllowedDescription": "Bu işaretlendiğinde ne olacağını belirten tanım"
                 },
                 "you": "Siz"
-            }
+            },
+            "addShare": {
+                "checkbox": {
+                    "label": "Posta bildirimine özel mesaj ekle"
+                },
+                "input": {
+                    "label": "Bu bildirime özel bir mesaj ekleyin",
+                    "placeholder": "Yeni kişi veya gruplar ekle"
+                }
+            },
+            "noSharePermissionHeader": "Bu öğeyi paylaşmak için izniniz yok."
+        },
+        "folder": {
+            "preview": "Bir klasör içindesiniz"
+        },
+        "search": {
+            "message": "Aramanızın tüm sonuçlarını burada görebilirsiniz",
+            "title": "Arama önerileri"
+        },
+        "tabs": {
+            "activities": "Aktiviteler",
+            "details": "Detaylar",
+            "sharing": "Paylaşım",
+            "versioning": "Versiyonlama"
+        },
+        "uploads": {
+            "message": "Yüklenmesi devam eden her öğeyi burada görebilirsiniz, buradan yönetebilirsiniz",
+            "title": "Yükleme önerileri"
         }
     },
     "search": {
         "header": {
-            "search": "Ara"
+            "search": "Ara",
+            "result": "Bütün anahtar kelimeleri içeren sonuçlar:"
         },
         "search": {
             "tooltip": {
-                "search": "Ara"
+                "search": "Ara",
+                "edit": "Yeni bir arama başlatmak için düzenleyin",
+                "empty": "Aramayı başlatmak için bazı anahtar kelimeleri yazın"
+            }
+        },
+        "searchBar": {
+            "label": {
+                "active": "Anahtar kelimeleri virgül, noktalı virgül veya TAB tuşu kullanarak ayırın",
+                "default": "Aramanızı yazın"
+            }
+        },
+        "clear": {
+            "tooltip": {
+                "clear": "Arama girişini sil",
+                "empty": "Arama girişi zaten silinmiş"
+            }
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "Doküman adı",
+                            "presentation": "Sunum adı",
+                            "spreadsheet": "Tablo adı"
+                        }
+                    }
+                },
+                "title": {
+                    "document": "Yeni Doküman oluştur",
+                    "presentation": "Yeni Sunum oluştur",
+                    "spreadsheet": "Yeni Tablo oluştur"
+                }
+            }
+        }
+    },
+    "uploads": {
+        "clean": {
+            "completed": "Tamamlanmış yüklemeleri temizle"
+        },
+        "destination": {
+            "home": "Drive Giriş'e yükleme yapıldı"
+        },
+        "dropzone": {
+            "message": {
+                "disabled": "Bu alana ek bırakamazsınız",
+                "folderView": {
+                    "disabled": "Bu alana ek bırakamazsınız",
+                    "enabled": "Klasöre hızlı eklemek için \neklerinizi buraya bırakın"
+                },
+                "otherView": {
+                    "enabled": "Drive Giriş'e hızlı eklemek için \neklerinizi buraya bırakın"
+                }
+            },
+            "title": {
+                "disabled": "Sürükle ve Bırak Modu",
+                "enabled": "Sürükle ve Bırak Modu"
             }
         }
     }
