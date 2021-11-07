@@ -3,7 +3,10 @@
         "options": {
             "new": {
                 "folder": "नया फोल्डर",
-                "upload": "अपलोड करें"
+                "upload": "अपलोड करें",
+                "document": "नया डॉक्युमेंट",
+                "presentation": "नया प्रेज़ेटेशन",
+                "spreadsheet": "नई स्प्रेडशीट"
             }
         }
     },
@@ -130,14 +133,24 @@
         "restore": "रिस्टोर करें",
         "openWithDocs": "Docs से खोलें",
         "deletePermanently": "सदा के लिए मिटाएँ",
-        "flag": "चिन्हित करें"
+        "flag": "चिन्हित करें",
+        "goToFolder": "गंतव्य फोल्डर पर जाएँ",
+        "moveToTrash": "रद्दी में डालें",
+        "removeUpload": "अपलोड हटाएँ",
+        "retryUpload": "अपलोड की दोबारा कोशिश करें",
+        "unflag": "फ्लैग हटाएँ"
     },
     "displayer": {
         "details": {
             "createdBy": "इनके द्वारा बनाया गया",
             "description": "विवरण",
             "size": "साइज़",
-            "position": "पोजीशन"
+            "position": "पोजीशन",
+            "collaborators": "साथ में काम करने वाले",
+            "showPath": "पाथ दिखाएँ",
+            "content": "कंटेन्ट",
+            "downloads": "पब्लिक लिंक से डाऊनलोड करें",
+            "lastEdit": "पिछला बदलाव"
         },
         "list": {
             "you": "आप"
@@ -147,14 +160,33 @@
                 "popover": {
                     "save": "सेव करें",
                     "role": {
-                        "viewer": "दर्शक"
+                        "viewer": "दर्शक",
+                        "viewerDescription": "यह सिर्फ फाइल या फोल्डर को देख या डाऊनलोड कर सकेगा",
+                        "editor": "एडिटर",
+                        "editorDescription": "यह फाइल या फोल्डर को देख और उसमें बदलाव कर सकेगा"
                     }
                 },
                 "you": "आप"
+            },
+            "addShare": {
+                "input": {
+                    "placeholder": "नए लोग या ग्रुप जोड़ें",
+                    "label": "इस नोटिफिकेशन में कोई कस्टम मैसेज जोड़ें"
+                },
+                "checkbox": {
+                    "label": "मेल नोटिफिकेशन में कोई कस्टम मैसेज जोड़ें"
+                }
             }
         },
         "tabs": {
             "details": "विवरण"
+        },
+        "search": {
+            "message": "यहाँ आप अपनी सर्च के सभी रिज़ल्ट देख सकते हैं",
+            "title": "सर्च के सुझाव"
+        },
+        "folder": {
+            "preview": "आप एक फोल्डर में हैं"
         }
     },
     "search": {
