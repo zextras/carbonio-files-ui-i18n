@@ -20,7 +20,7 @@
         "snackbar": {
             "unflag": {
                 "error": "Erreur, veuillez réessayer",
-                "success": "Réussi"
+                "success": "Item décoché avec succès"
             }
         }
     },
@@ -33,7 +33,7 @@
                 "title": "Créer un nouveau dossier",
                 "input": {
                     "label": {
-                        "name": "Saisissez ici le nom du nouveau dossier"
+                        "name": "Nom du dossier"
                     }
                 }
             }
@@ -83,10 +83,10 @@
                 },
                 "input": {
                     "label": {
-                        "name": "Saisissez ici un nouveau nom"
+                        "name": "Nom d'élément"
                     }
                 },
-                "title": "Renommer un fichier ou un dossier"
+                "title": "Renommer un élément"
             }
         },
         "copy": {
@@ -106,11 +106,17 @@
             "modal": {
                 "button": {
                     "confirm": "Déplacer"
-                }
+                },
+                "input": {
+                    "filter": "Filtrer les dossiers"
+                },
+                "subtitle": "Sélectionnez un dossier de destination :",
+                "title": "Déplacer {{node.name}}",
+                "title_plurals": "Déplacer les éléments"
             },
             "error": {
                 "not": {
-                    "allowed": "Vous ne pouvez pas déplacer plusieurs nœuds d'un filtre ou d'une recherche."
+                    "allowed": "Vous ne pouvez pas déplacer plusieurs nœuds d'un filtre ou d'une recherche"
                 }
             }
         }
@@ -125,17 +131,37 @@
             "flagged": "Marqué",
             "sharedByMe": "Partagé par moi",
             "sharedWithMe": "Éléments partagés avec moi",
-            "trash": "Corbeille"
+            "trash": "Corbeille",
+            "myElements": "Mes éléments",
+            "sharedElements": "Eléments partagés"
         },
-        "team": "Team"
+        "team": "Team",
+        "uploads": "Chargements"
     },
     "snackbar": {
         "markForDeletion": {
-            "error": "Erreur",
-            "success": "Réussi"
+            "error": "Quelque chose s'est mal passé, réessayez",
+            "success": "Elément déplacé dans la poubelle",
+            "showTrash": "Ouvrir le dossier Poubelle"
         },
         "deleteShare": {
-            "error": "Erreur"
+            "error": "Erreur",
+            "success": "Succès"
+        },
+        "download": {
+            "start": "Votre téléchargement va bientôt démarrer"
+        },
+        "moveNodes": {
+            "error": "Quelque chose s'est mal passé, réessayez",
+            "success": "Elément déplacé vers le dossier de destination"
+        },
+        "restore": {
+            "showInFolder": "Afficher dans le dossier",
+            "success": "Succès",
+            "error": "Quelque chose s'est mal passé, réessayez"
+        },
+        "upload": {
+            "goToFolder": "Aller dans le dossier"
         }
     },
     "actions": {
@@ -152,15 +178,31 @@
         "goToFolder": "Aller au dossier de destination",
         "moveToTrash": "Déplacer vers la corbeille",
         "removeUpload": "Supprimer le téléchargement",
-        "retryUpload": "Réessayer le téléchargement"
+        "retryUpload": "Réessayer le téléchargement",
+        "unflag": "Décocher"
     },
     "search": {
         "header": {
-            "search": "Rechercher"
+            "search": "Rechercher",
+            "result": "Les résultats qui contiennent tous les mots-clés :"
         },
         "search": {
             "tooltip": {
-                "search": "Rechercher"
+                "search": "Rechercher",
+                "edit": "Modifier votre recherche pour en lancer une nouvelle",
+                "empty": "Tapez quelques mots-clés pour lancer une recherche"
+            }
+        },
+        "clear": {
+            "tooltip": {
+                "clear": "Effacer la saisie de recherche",
+                "empty": "L'entrée de recherche est déjà effacée"
+            }
+        },
+        "searchBar": {
+            "label": {
+                "default": "Entrez votre recherche",
+                "active": "Séparez vos mots-clés par une virgule, un point-virgule ou en appuyant sur la touche TAB"
             }
         }
     },
@@ -216,7 +258,7 @@
             "activities": "Activités",
             "details": "Détails",
             "sharing": "Partage",
-            "versioning": "Versionnage"
+            "versioning": "Versioning"
         },
         "uploads": {
             "message": "Vous trouverez ici tous les éléments en cours de téléchargement, vous pouvez les gérer à partir d'ici",
@@ -240,6 +282,30 @@
                     "presentation": "Créer une nouvelle présentation",
                     "spreadsheet": "Créer un nouveau tableur"
                 }
+            }
+        }
+    },
+    "uploads": {
+        "clean": {
+            "completed": "Nettoyer les téléchargements terminés"
+        },
+        "destination": {
+            "home": "Le téléchargement a été fait dans Drive Home"
+        },
+        "dropzone": {
+            "message": {
+                "folderView": {
+                    "disabled": "Vous ne pouvez pas déposer une pièce jointe dans cette zone",
+                    "enabled": "Déposez ici vos pièces jointes \n pour les ajouter rapidement à ce dossier"
+                },
+                "disabled": "Vous ne pouvez pas déposer une pièce jointe dans cette zone",
+                "otherView": {
+                    "enabled": "Déposez ici vos pièces jointes \n pour les ajouter rapidement Drive Home"
+                }
+            },
+            "title": {
+                "disabled": "Mode glisser-déposer",
+                "enabled": "Mode glisser-déposer"
             }
         }
     }

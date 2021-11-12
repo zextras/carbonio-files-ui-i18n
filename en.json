@@ -343,7 +343,7 @@
                     "enabled": "Drop here your attachments \n to quick-add them to this folder"
                 },
                 "otherView": {
-                    "enabled": "Drop here your attachments \n to quick-add them to your Drive Home"
+                    "enabled": "Drop here your attachments\nto quick-add them to your Drive Home"
                 }
             },
             "title": {
