@@ -1,1 +1,312 @@
-{}
+{
+    "create": {
+        "options": {
+            "new": {
+                "folder": "Nouveau dossier",
+                "upload": "Upload",
+                "document": "Nouveau document",
+                "presentation": "Nouvelle présentation",
+                "spreadsheet": "Nouveau tableau"
+            }
+        }
+    },
+    "empty": {
+        "folder": {
+            "hint": "Il semble qu'il n'y ait rien ici.",
+            "state": "Déposez un fichier ou créez-en un nouveau en cliquant sur \"NOUVEAU\""
+        }
+    },
+    "filter": {
+        "snackbar": {
+            "unflag": {
+                "error": "Erreur, veuillez réessayer",
+                "success": "Item décoché avec succès"
+            }
+        }
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "button": {
+                    "confirm": "Créer"
+                },
+                "title": "Créer un nouveau dossier",
+                "input": {
+                    "label": {
+                        "name": "Nom du dossier"
+                    }
+                }
+            }
+        }
+    },
+    "modal": {
+        "button": {
+            "cancel": "Annuler",
+            "confirm": "Confirmer"
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "Effacer définitivement"
+            },
+            "body": "Vous supprimez définitivement cet élément/ces éléments. Vous ne pourrez plus récupérer ce(s) fichier(s). Cette action est irréversible.",
+            "header": "Cette action est irréversible"
+        },
+        "roots": {
+            "driveHome": "Accueil",
+            "rootsList": "Drive",
+            "sharedWitMe": "Éléments partagés avec moi",
+            "trash": {
+                "trash": "Corbeille",
+                "myElements": "Mes éléments",
+                "sharedWitMe": "Eléments partagés"
+            }
+        },
+        "deleteShare": {
+            "body": "Êtes-vous certain de vouloir supprimer toutes les autorisations d'accès précédemment accordées à {{shareTarget}} ?",
+            "button": {
+                "confirm": "Retirer"
+            },
+            "header": "Retirer le partage",
+            "yourShare": {
+                "body": {
+                    "answer": "Etes-vous certain de vouloir vous retirer de cette collaboration ?",
+                    "permissionLost": "Toutes les autorisations d'accès qui vous ont été accordées précédemment seront perdues."
+                }
+            }
+        }
+    },
+    "node": {
+        "rename": {
+            "modal": {
+                "button": {
+                    "confirm": "Renommer"
+                },
+                "input": {
+                    "label": {
+                        "name": "Nom d'élément"
+                    }
+                },
+                "title": "Renommer un élément"
+            }
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "Copier"
+                },
+                "title": "Copier {{node.name}}",
+                "title_plurals": "Copier les éléments"
+            }
+        },
+        "alias": {
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_ROOT": "Accueil"
+        },
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "Déplacer"
+                },
+                "input": {
+                    "filter": "Filtrer les dossiers"
+                },
+                "subtitle": "Sélectionnez un dossier de destination :",
+                "title": "Déplacer {{node.name}}",
+                "title_plurals": "Déplacer les éléments"
+            },
+            "error": {
+                "not": {
+                    "allowed": "Vous ne pouvez pas déplacer plusieurs nœuds d'un filtre ou d'une recherche"
+                }
+            }
+        }
+    },
+    "primaryBar": {
+        "driveHome": "Accueil"
+    },
+    "secondaryBar": {
+        "driveHome": "Accueil",
+        "filters": "Filtres",
+        "filtersList": {
+            "flagged": "Marqué",
+            "sharedByMe": "Partagé par moi",
+            "sharedWithMe": "Éléments partagés avec moi",
+            "trash": "Corbeille",
+            "myElements": "Mes éléments",
+            "sharedElements": "Eléments partagés"
+        },
+        "team": "Team",
+        "uploads": "Chargements"
+    },
+    "snackbar": {
+        "markForDeletion": {
+            "error": "Quelque chose s'est mal passé, réessayez",
+            "success": "Elément déplacé dans la poubelle",
+            "showTrash": "Ouvrir le dossier Poubelle"
+        },
+        "deleteShare": {
+            "error": "Erreur",
+            "success": "Succès"
+        },
+        "download": {
+            "start": "Votre téléchargement va bientôt démarrer"
+        },
+        "moveNodes": {
+            "error": "Quelque chose s'est mal passé, réessayez",
+            "success": "Elément déplacé vers le dossier de destination"
+        },
+        "restore": {
+            "showInFolder": "Afficher dans le dossier",
+            "success": "Succès",
+            "error": "Quelque chose s'est mal passé, réessayez"
+        },
+        "upload": {
+            "goToFolder": "Aller dans le dossier"
+        }
+    },
+    "actions": {
+        "download": "Téléchargement",
+        "markForDeletion": "Mettre à la corbeille",
+        "move": "Déplacer",
+        "openWithDocs": "Ouvrir avec Docs",
+        "cancelUpload": "Annuler le téléversement",
+        "copy": "Copier",
+        "rename": "Renommer",
+        "restore": "Restaurer",
+        "deletePermanently": "Supprimer définitivement",
+        "flag": "Etiquette",
+        "goToFolder": "Aller au dossier de destination",
+        "moveToTrash": "Déplacer vers la corbeille",
+        "removeUpload": "Supprimer le téléchargement",
+        "retryUpload": "Réessayer le téléchargement",
+        "unflag": "Décocher"
+    },
+    "search": {
+        "header": {
+            "search": "Rechercher",
+            "result": "Les résultats qui contiennent tous les mots-clés :"
+        },
+        "search": {
+            "tooltip": {
+                "search": "Rechercher",
+                "edit": "Modifier votre recherche pour en lancer une nouvelle",
+                "empty": "Tapez quelques mots-clés pour lancer une recherche"
+            }
+        },
+        "clear": {
+            "tooltip": {
+                "clear": "Effacer la saisie de recherche",
+                "empty": "L'entrée de recherche est déjà effacée"
+            }
+        },
+        "searchBar": {
+            "label": {
+                "default": "Entrez votre recherche",
+                "active": "Séparez vos mots-clés par une virgule, un point-virgule ou en appuyant sur la touche TAB"
+            }
+        }
+    },
+    "displayer": {
+        "details": {
+            "size": "Taille",
+            "createdBy": "Créé par",
+            "description": "Description",
+            "collaborators": "Collaborateurs",
+            "content": "Contenu",
+            "downloads": "Télécharger via le lien public",
+            "lastEdit": "Dernière modification",
+            "position": "Position",
+            "showPath": "Montrer le chemin"
+        },
+        "list": {
+            "you": "Vous"
+        },
+        "share": {
+            "chip": {
+                "popover": {
+                    "save": "Sauvegarder",
+                    "role": {
+                        "editor": "Editeur",
+                        "editorDescription": "Il pourra visualiser et modifier le fichier ou le dossier",
+                        "viewer": "Visionneuse",
+                        "viewerDescription": "Il ne pourra que visualiser ou télécharger le fichier ou le dossier"
+                    },
+                    "sharingAllowed": "Partage autorisé",
+                    "sharingAllowedDescription": "Description de ce qui se passera si cette case est cochée"
+                },
+                "you": "Vous"
+            },
+            "addShare": {
+                "checkbox": {
+                    "label": "Ajouter un message personnalisé à la notification de courrier"
+                },
+                "input": {
+                    "label": "Ajouter un message personnalisé à cette notification",
+                    "placeholder": "Ajouter de nouvelles personnes ou de nouveaux groupes"
+                }
+            },
+            "noSharePermissionHeader": "Vous n'êtes pas autorisé à partager cet élément."
+        },
+        "folder": {
+            "preview": "Vous êtes dans un dossier"
+        },
+        "search": {
+            "message": "Vous trouverez ici tous les résultats de votre recherche",
+            "title": "Suggestions de recherche"
+        },
+        "tabs": {
+            "activities": "Activités",
+            "details": "Détails",
+            "sharing": "Partage",
+            "versioning": "Versioning"
+        },
+        "uploads": {
+            "message": "Vous trouverez ici tous les éléments en cours de téléchargement, vous pouvez les gérer à partir d'ici",
+            "title": "Suggestions de téléchargement"
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "Nom du document",
+                            "presentation": "Nom de la présentation",
+                            "spreadsheet": "Nom du tableau"
+                        }
+                    }
+                },
+                "title": {
+                    "document": "Créer un nouveau document",
+                    "presentation": "Créer une nouvelle présentation",
+                    "spreadsheet": "Créer un nouveau tableur"
+                }
+            }
+        }
+    },
+    "uploads": {
+        "clean": {
+            "completed": "Nettoyer les téléchargements terminés"
+        },
+        "destination": {
+            "home": "Le téléchargement a été fait dans Drive Home"
+        },
+        "dropzone": {
+            "message": {
+                "folderView": {
+                    "disabled": "Vous ne pouvez pas déposer une pièce jointe dans cette zone",
+                    "enabled": "Déposez ici vos pièces jointes \n pour les ajouter rapidement à ce dossier"
+                },
+                "disabled": "Vous ne pouvez pas déposer une pièce jointe dans cette zone",
+                "otherView": {
+                    "enabled": "Déposez ici vos pièces jointes \n pour les ajouter rapidement Drive Home"
+                }
+            },
+            "title": {
+                "disabled": "Mode glisser-déposer",
+                "enabled": "Mode glisser-déposer"
+            }
+        }
+    }
+}

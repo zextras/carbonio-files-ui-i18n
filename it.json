@@ -2,10 +2,10 @@
     "folder": {
         "create": {
             "modal": {
-                "title": "Crea una Nuova Cartella",
+                "title": "Crea Nuova Cartella",
                 "input": {
                     "label": {
-                        "name": "Digita un nome per la nuova cartella"
+                        "name": "Nome cartella"
                     }
                 },
                 "button": {
@@ -16,17 +16,43 @@
     },
     "snackbar": {
         "markForDeletion": {
-            "success": "Riuscito",
-            "error": "Errore"
+            "success": "Elemento spostato nel cestino",
+            "error": "Qualcosa è andato storto, riprova",
+            "showTrash": "Apri Cestino"
+        },
+        "deleteShare": {
+            "error": "Errore",
+            "success": "Successo"
+        },
+        "download": {
+            "start": "Il download comincerà a breve"
+        },
+        "moveNodes": {
+            "error": "Qualcosa è andato storto, riprova",
+            "success": "Elemento spostato nella cartella di destinazione"
+        },
+        "restore": {
+            "error": "Qualcosa è andato storto, riprova",
+            "showInFolder": "Mostra nella cartella",
+            "success": "Successo"
+        },
+        "upload": {
+            "goToFolder": "Vai alla cartella"
         }
     },
     "secondaryBar": {
         "team": "Team",
         "filtersList": {
-            "flagged": "Marcato"
+            "flagged": "Marcato",
+            "sharedByMe": "Condivisi da me",
+            "sharedWithMe": "Condivisi con me",
+            "trash": "Cestino",
+            "myElements": "I miei elementi",
+            "sharedElements": "Elementi Condivisi"
         },
         "filters": "Filtri",
-        "driveHome": "Home Drive"
+        "driveHome": "Home Drive",
+        "uploads": "Caricamenti"
     },
     "primaryBar": {
         "driveHome": "Home Drive"
@@ -34,14 +60,45 @@
     "node": {
         "rename": {
             "modal": {
-                "title": "Rinomina un file o cartella",
+                "title": "Rinomina elemento",
                 "input": {
                     "label": {
-                        "name": "Digita un nuovo nome"
+                        "name": "Nome Elemento"
                     }
                 },
                 "button": {
                     "confirm": "Rinomina"
+                }
+            }
+        },
+        "alias": {
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_ROOT": "Home Drive"
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "Copia"
+                },
+                "title": "Copia {{node.name}}",
+                "title_plurals": "Copia elementi"
+            }
+        },
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "Sposta"
+                },
+                "input": {
+                    "filter": "Filtra cartelle"
+                },
+                "subtitle": "Seleziona una cartella di destinazione:",
+                "title": "Sposta {{node.name}}",
+                "title_plurals": "Sposta elementi"
+            },
+            "error": {
+                "not": {
+                    "allowed": "Impossibile rimuovere i nodi da un filtro o una ricerca"
                 }
             }
         }
@@ -50,13 +107,43 @@
         "button": {
             "confirm": "Conferma",
             "cancel": "Annulla"
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "Elimina definitivamente"
+            },
+            "body": "Questo elementi verranno eliminati definitivamente. Non sarà più possibile recuperare i file. L'azione è irreversibile.",
+            "header": "L'azione è irreversibile"
+        },
+        "roots": {
+            "driveHome": "Home",
+            "rootsList": "Drive",
+            "sharedWitMe": "Condivisi con me",
+            "trash": {
+                "trash": "Cestino",
+                "sharedWitMe": "Elementi condivisi",
+                "myElements": "I miei file"
+            }
+        },
+        "deleteShare": {
+            "body": "Vuoi rimuovere i permessi di accesso dati a {{shareTarget}} ?",
+            "button": {
+                "confirm": "Rimuovi"
+            },
+            "header": "Rimuovi condivisione",
+            "yourShare": {
+                "body": {
+                    "answer": "Vuoi uscire da questa collaborazione?",
+                    "permissionLost": "Tutti i permessi di accesso a te assegnati andranno persi."
+                }
+            }
         }
     },
     "filter": {
         "snackbar": {
             "unflag": {
-                "success": "Riuscito",
-                "error": "Errore"
+                "success": "Elemento deselezionato con successo",
+                "error": "Qualcosa è andato storto. riprova"
             }
         }
     },
@@ -69,8 +156,156 @@
     "create": {
         "options": {
             "new": {
-                "folder": "Nuova Cartella"
+                "folder": "Nuova Cartella",
+                "upload": "Carica",
+                "document": "Nuovo Documento",
+                "presentation": "Nuova Presentazione",
+                "spreadsheet": "Nuovo Foglio di calcolo"
             }
+        }
+    },
+    "actions": {
+        "cancelUpload": "Annulla caricamento",
+        "deletePermanently": "Elimina definitivamente",
+        "copy": "Copia",
+        "download": "Scarica",
+        "markForDeletion": "Seleziona per la rimozione",
+        "move": "Sposta",
+        "openWithDocs": "Apri con Docs",
+        "rename": "Rinomina",
+        "restore": "Ripristina",
+        "flag": "Etichetta",
+        "goToFolder": "Vai alla cartella di destinazione",
+        "moveToTrash": "Sposta nel Cestino",
+        "removeUpload": "rimuovi caricamento",
+        "retryUpload": "Riprova caricamento",
+        "unflag": "Deseleziona"
+    },
+    "displayer": {
+        "list": {
+            "you": "Tu"
+        },
+        "share": {
+            "chip": {
+                "you": "Tu",
+                "popover": {
+                    "save": "Salva",
+                    "role": {
+                        "editorDescription": "Può visualizzare e modificare il file o la cartella",
+                        "viewerDescription": "Può visualizzare e scaricare il file o la cartella",
+                        "editor": "Editor"
+                    },
+                    "sharingAllowed": "Condivisione concessa",
+                    "sharingAllowedDescription": "Descrizione di cosa accade se questo è spuntato"
+                }
+            },
+            "addShare": {
+                "checkbox": {
+                    "label": "Aggiungi un messaggio personalizzato alla mail di notifica"
+                },
+                "input": {
+                    "label": "Aggiungi un messaggio personalizzato a questa notifica",
+                    "placeholder": "Aggiungi nuove persone o gruppi"
+                }
+            },
+            "noSharePermissionHeader": "Non sei autorizzato a condividere questo elemento."
+        },
+        "details": {
+            "createdBy": "Creato da",
+            "description": "Descrizione",
+            "size": "Dimensione",
+            "collaborators": "Collaboratori",
+            "content": "Contenuto",
+            "downloads": "Scarica tramite link pubblico",
+            "lastEdit": "Ultima modifica",
+            "position": "Posizione",
+            "showPath": "Mostra percorso"
+        },
+        "uploads": {
+            "message": "Qui sono elencati tutti gli elementi in caricamento, puoi gestirli direttamente da qui",
+            "title": "Carica suggerimenti"
+        },
+        "folder": {
+            "preview": "Sei in una cartella"
+        },
+        "search": {
+            "message": "Qui trovi tutti i risultati della ricerca",
+            "title": "Cerca suggerimenti"
+        },
+        "tabs": {
+            "activities": "Attività",
+            "details": "Dettagli",
+            "sharing": "Condivisione",
+            "versioning": "Versione"
+        }
+    },
+    "search": {
+        "header": {
+            "search": "Cerca",
+            "result": "Risultati che contengono tutte le parole chiave:"
+        },
+        "search": {
+            "tooltip": {
+                "search": "Cerca",
+                "edit": "Modifica la ricerca per iniziarne una nuova",
+                "empty": "Digita una parola chiave per iniziare la ricerca"
+            }
+        },
+        "searchBar": {
+            "label": {
+                "default": "Digita la tua ricerca",
+                "active": "Separa le parole chiave usando una virgola, punto e virgola oppure il tasto TAB"
+            }
+        },
+        "clear": {
+            "tooltip": {
+                "clear": "Cancella ricerca",
+                "empty": "La barra di ricerca è vuota"
+            }
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "Nome documento",
+                            "presentation": "Nome presentazione",
+                            "spreadsheet": "Nome Foglio di calcolo"
+                        }
+                    }
+                },
+                "title": {
+                    "document": "Crea Nuovo Documento",
+                    "presentation": "Crea Nuova Presentazione",
+                    "spreadsheet": "Crea Nuovo Foglio di calcolo"
+                }
+            }
+        }
+    },
+    "uploads": {
+        "dropzone": {
+            "message": {
+                "disabled": "Impossibile trascinare un allegato in quest'area",
+                "folderView": {
+                    "disabled": "Impossibile trascinare un allegato in quest'area",
+                    "enabled": "Trascina qui gli allegati\nper aggiungerli velocemente a questa cartella"
+                },
+                "otherView": {
+                    "enabled": "Trascina qui gli allegati\nper aggiungerli velocemente alla Home di Drive"
+                }
+            },
+            "title": {
+                "disabled": "Modalità Drag&Drop",
+                "enabled": "Modalità Drag&Drop"
+            }
+        },
+        "clean": {
+            "completed": "Rimuovi i caricamenti completati"
+        },
+        "destination": {
+            "home": "Caricamenti in Home di Drive"
         }
     }
 }
