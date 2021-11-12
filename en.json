@@ -17,8 +17,8 @@
     },
     "breadcrumb": {
         "expander": {
-            "hide": "Hide previous folders",
-            "show": "Show previous folders"
+            "hide": "Hide folder's path",
+            "show": "Show folder's path"
         }
     },
     "create": {
@@ -85,7 +85,7 @@
                     },
                     "save": "Save",
                     "sharingAllowed": "Sharing allowed",
-                    "sharingAllowedDescription": "It will be able to manage shares for the file or folder"
+                    "sharingAllowedDescription": "It will be able to manage shares of the file or folder"
                 },
                 "you": "You"
             },
@@ -188,7 +188,7 @@
     },
     "node": {
         "alias": {
-            "name_LOCAL_CHAT_ROOT": "Team sent files",
+            "name_LOCAL_CHAT_ROOT": "Files sent via Team",
             "name_LOCAL_ROOT": "Drive Home",
             "name_SHARED_WITH_ME_ROOT": "Shared with me",
             "name_TRASH_ROOT": "Trash"
@@ -250,7 +250,7 @@
                     "reset": "Reset filters"
                 },
                 "flagged": {
-                    "description": "Filter the results by items that have been flagged by you",
+                    "description": "Filter the results by items that you’ve flagged",
                     "label": "Flagged"
                 },
                 "folder": {
@@ -259,7 +259,7 @@
                         "cancel": "Go back",
                         "cascade": "search also in contained folders",
                         "confirm": "Choose folder",
-                        "subtitle": "Select a folder in which start you advanced search",
+                        "subtitle": "Select the folder where to start the advanced search",
                         "title": "Drive folder"
                     }
                 },
@@ -311,7 +311,7 @@
             "sharedWithMe": "Shared with me",
             "trash": "Trash"
         },
-        "team": "Team sent files",
+        "team": "Files sent via Team",
         "uploads": "Uploads"
     },
     "selectionMode": {
