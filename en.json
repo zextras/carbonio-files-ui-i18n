@@ -1,6 +1,5 @@
 {
     "actions": {
-        "cancelUpload": "Cancel upload",
         "copy": "Copy",
         "deletePermanently": "Delete Permanently",
         "download": "Download",
@@ -57,7 +56,9 @@
                 "input": {
                     "label": "Add a custom message to this notification",
                     "placeholder": "Add new people or groups"
-                }
+                },
+                "note": "Note:",
+                "noteDescription": "The standard message displays your name, the name of the shared item, permissions granted to the recipients and sign in information."
             },
             "chip": {
                 "popover": {
@@ -110,14 +111,6 @@
         "folder": {
             "hint": "It looks like there's nothing here.",
             "state": "Drag a file or create a new one clicking \"NEW\""
-        }
-    },
-    "filter": {
-        "snackbar": {
-            "unflag": {
-                "error": "Something went wrong, try again",
-                "success": "Item unflagged successfully"
-            }
         }
     },
     "folder": {
@@ -174,7 +167,8 @@
     "node": {
         "alias": {
             "name_LOCAL_CHAT_ROOT": "Team",
-            "name_LOCAL_ROOT": "Drive Home"
+            "name_LOCAL_ROOT": "Drive Home",
+            "name_TRASH_ROOT": "Trash"
         },
         "copy": {
             "modal": {
@@ -182,7 +176,7 @@
                     "confirm": "Copy"
                 },
                 "title": "Copy {{node.name}}",
-                "title_plurals": "Copy items"
+                "title_plural": "Copy items"
             }
         },
         "move": {
@@ -200,7 +194,7 @@
                 },
                 "subtitle": "Select a destination folder:",
                 "title": "Move {{node.name}}",
-                "title_plurals": "Move items"
+                "title_plural": "Move items"
             }
         },
         "rename": {
@@ -215,9 +209,37 @@
                 },
                 "title": "Rename item"
             }
+        },
+        "type": {
+            "folder": "Folder"
         }
     },
     "search": {
+        "advancedSearch": {
+            "button": {
+                "filters": "{{count}} advanced filter",
+                "filters_plural": "{{count}} advanced filters",
+                "noFilter": "Advanced filters"
+            },
+            "modal": {
+                "button": {
+                    "confirm": "Search",
+                    "reset": "Reset filters"
+                },
+                "flagged": {
+                    "description": "Filter the results by items that have been flagged by you",
+                    "label": "Flagged"
+                },
+                "keywords": {
+                    "label": "Keywords"
+                },
+                "shared": {
+                    "description": "Filter the results by items that contain at least one collaborator besides you",
+                    "label": "Shared"
+                },
+                "title": "Advanced Filters"
+            }
+        },
         "clear": {
             "tooltip": {
                 "clear": "Clear search input",
@@ -225,9 +247,12 @@
             }
         },
         "header": {
+            "close": "Quit the search",
             "result": "Results that contain all the keywords:",
-            "search": "Search"
+            "search": "Search",
+            "start": "Start a search"
         },
+        "resultsFor": "Results for:",
         "search": {
             "tooltip": {
                 "edit": "Edit your search to start a new one",
@@ -257,10 +282,16 @@
         "uploads": "Uploads"
     },
     "snackbar": {
-        "markForDeletion": {
+        "clipboard": {
+            "email": "Email address copied"
+        },
+        "copyNodes": {
             "error": "Something went wrong, try again",
-            "showTrash": "Open Trash folder",
-            "success": "Item moved to trash"
+            "success": "Item copied to destination folder"
+        },
+        "deletePermanently": {
+            "error": "Error",
+            "success": "Success"
         },
         "deleteShare": {
             "error": "Error",
@@ -268,6 +299,11 @@
         },
         "download": {
             "start": "Your download will start soon"
+        },
+        "markForDeletion": {
+            "error": "Something went wrong, try again",
+            "showTrash": "Open Trash folder",
+            "success": "Item moved to trash"
         },
         "moveNodes": {
             "error": "Something went wrong, try again",
@@ -278,9 +314,19 @@
             "showInFolder": "Show in folder",
             "success": "Success"
         },
+        "unflag": {
+            "success": "Item unflagged successfully"
+        },
         "upload": {
             "goToFolder": "Go to folder"
         }
+    },
+    "sortingDropdown": {
+        "ascendingOrder": "Ascending Order",
+        "descendingOrder": "Descending Order",
+        "editDate": "Edit Date",
+        "name": "Name",
+        "size": "Size"
     },
     "uploads": {
         "clean": {
