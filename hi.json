@@ -103,12 +103,22 @@
             "rootsList": "Drive",
             "sharedWitMe": "मेरे साथ शेयर",
             "trash": {
-                "trash": "रद्दी"
+                "trash": "रद्दी",
+                "myElements": "मेरे आइटम",
+                "sharedWitMe": "शेयर किए आइटम"
             }
         },
         "deleteShare": {
             "button": {
                 "confirm": "हटाएँ"
+            },
+            "body": "क्या आप वाकई में {{shareTarget}} को पहले दी गई एक्सेस अनुमति हटाना चाहते हैं?",
+            "header": "शेयरिंग हटाएँ",
+            "yourShare": {
+                "body": {
+                    "answer": "क्या आप वाकई में खुद को इस टीम काम से हटाना चाहते हैं?",
+                    "permissionLost": "आपको पहले दी गई सभी एक्सेस अनुमतियाँ खत्म हो जाएंगी।"
+                }
             }
         }
     },
