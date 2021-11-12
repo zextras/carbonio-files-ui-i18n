@@ -1,1 +1,242 @@
-{}
+{
+    "create": {
+        "options": {
+            "new": {
+                "folder": "नया फोल्डर",
+                "upload": "अपलोड करें",
+                "document": "नया डॉक्युमेंट",
+                "presentation": "नया प्रेज़ेटेशन",
+                "spreadsheet": "नई स्प्रेडशीट"
+            }
+        }
+    },
+    "empty": {
+        "folder": {
+            "hint": "ऐसा लग रहा है यहाँ कुछ नहीं है।",
+            "state": "कोई फाइल खींचें या \"नई\" पर क्लिक करके कोई नई बनाएँ"
+        }
+    },
+    "filter": {
+        "snackbar": {
+            "unflag": {
+                "error": "कुछ गड़बड़ हुई, दोबारा कोशिश करें",
+                "success": "आइटम का फ्लैग हटाया गया"
+            }
+        }
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "button": {
+                    "confirm": "बनाएँ"
+                },
+                "title": "नया फोल्डर बनाएँ",
+                "input": {
+                    "label": {
+                        "name": "फोल्डर नाम"
+                    }
+                }
+            }
+        }
+    },
+    "node": {
+        "rename": {
+            "modal": {
+                "button": {
+                    "confirm": "नाम बदलें"
+                },
+                "input": {
+                    "label": {
+                        "name": ""
+                    }
+                },
+                "title": ""
+            }
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "कॉपी करें"
+                }
+            }
+        },
+        "alias": {
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_ROOT": "Drive होम"
+        },
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "ले जाएँ"
+                }
+            }
+        }
+    },
+    "primaryBar": {
+        "driveHome": ""
+    },
+    "secondaryBar": {
+        "driveHome": "Drive होम",
+        "filters": "",
+        "filtersList": {
+            "flagged": "",
+            "sharedByMe": "मेरे द्वारा शेयर",
+            "sharedWithMe": "मेरे साथ शेयर",
+            "trash": "रद्दी"
+        },
+        "team": "Team"
+    },
+    "modal": {
+        "button": {
+            "cancel": "कैंसल करें",
+            "confirm": "कन्फ़र्म करें"
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "हमेशा के लिए डिलीट करें"
+            },
+            "body": "आप इस आइटम/आइटमों को परमानेंट डिलीट कर देंगे। आप इस फाइल/फाइलों को इसके बाद वापस नहीं ला पाएंगे। यह काम वापस नहीं किया जा सकेगा।",
+            "header": "यह काम वापस नहीं किया जा सकेगा"
+        },
+        "roots": {
+            "driveHome": "होम",
+            "rootsList": "Drive",
+            "sharedWitMe": "मेरे साथ शेयर",
+            "trash": {
+                "trash": "रद्दी"
+            }
+        },
+        "deleteShare": {
+            "button": {
+                "confirm": "हटाएँ"
+            }
+        }
+    },
+    "snackbar": {
+        "markForDeletion": {
+            "error": "",
+            "success": ""
+        },
+        "deleteShare": {
+            "error": "त्रुटि",
+            "success": "सफलता"
+        },
+        "restore": {
+            "success": "सफलता"
+        }
+    },
+    "actions": {
+        "cancelUpload": "अपलोड कैंसल करें",
+        "copy": "कॉपी करें",
+        "download": "डाऊनलोड करें",
+        "markForDeletion": "डिलीट करने के लिए मार्क करें",
+        "move": "ले जाएँ",
+        "rename": "नाम बदलें",
+        "restore": "रिस्टोर करें",
+        "openWithDocs": "Docs से खोलें",
+        "deletePermanently": "सदा के लिए मिटाएँ",
+        "flag": "चिन्हित करें",
+        "goToFolder": "गंतव्य फोल्डर पर जाएँ",
+        "moveToTrash": "रद्दी में डालें",
+        "removeUpload": "अपलोड हटाएँ",
+        "retryUpload": "अपलोड की दोबारा कोशिश करें",
+        "unflag": "फ्लैग हटाएँ"
+    },
+    "displayer": {
+        "details": {
+            "createdBy": "इनके द्वारा बनाया गया",
+            "description": "विवरण",
+            "size": "साइज़",
+            "position": "पोजीशन",
+            "collaborators": "साथ में काम करने वाले",
+            "showPath": "पाथ दिखाएँ",
+            "content": "कंटेन्ट",
+            "downloads": "पब्लिक लिंक से डाऊनलोड करें",
+            "lastEdit": "पिछला बदलाव"
+        },
+        "list": {
+            "you": "आप"
+        },
+        "share": {
+            "chip": {
+                "popover": {
+                    "save": "सेव करें",
+                    "role": {
+                        "viewer": "दर्शक",
+                        "viewerDescription": "यह सिर्फ फाइल या फोल्डर को देख या डाऊनलोड कर सकेगा",
+                        "editor": "एडिटर",
+                        "editorDescription": "यह फाइल या फोल्डर को देख और उसमें बदलाव कर सकेगा"
+                    },
+                    "sharingAllowed": "शेयर करने की अनुमति है",
+                    "sharingAllowedDescription": "यदि इस पर टिक किया जाए तो क्या होगा इसका विवरण"
+                },
+                "you": "आप"
+            },
+            "addShare": {
+                "input": {
+                    "placeholder": "नए लोग या ग्रुप जोड़ें",
+                    "label": "इस नोटिफिकेशन में कोई कस्टम मैसेज जोड़ें"
+                },
+                "checkbox": {
+                    "label": "मेल नोटिफिकेशन में कोई कस्टम मैसेज जोड़ें"
+                }
+            },
+            "noSharePermissionHeader": "आपको यह आइटम शेयर करने की अनुमति नहीं है।"
+        },
+        "tabs": {
+            "details": "विवरण",
+            "activities": "एक्टिविटी",
+            "sharing": "शेयर करना",
+            "versioning": "वर्शनिंग"
+        },
+        "search": {
+            "message": "यहाँ आप अपनी सर्च के सभी रिज़ल्ट देख सकते हैं",
+            "title": "सर्च के सुझाव"
+        },
+        "folder": {
+            "preview": "आप एक फोल्डर में हैं"
+        },
+        "uploads": {
+            "message": "यहाँ आपको वे सभी आइटम मिलेंगे जो अभी अपलोड हो रहे हैं, आप इन्हें यहाँ से मैनेज कर सकते हैं",
+            "title": "सुझाव अपलोड करें"
+        }
+    },
+    "search": {
+        "header": {
+            "search": "सर्च करें"
+        },
+        "search": {
+            "tooltip": {
+                "search": "सर्च करें"
+            }
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "डॉक्युमेंट नाम",
+                            "presentation": "प्रेजेंटेशन नाम",
+                            "spreadsheet": "स्प्रेडशीट का नाम"
+                        }
+                    }
+                },
+                "title": {
+                    "document": "नया डॉक्युमेंट बनाएँ",
+                    "presentation": "नया प्रेजेंटेशन बनाएँ",
+                    "spreadsheet": "नई स्प्रेडशीट बनाएँ"
+                }
+            }
+        }
+    },
+    "uploads": {
+        "dropzone": {
+            "title": {
+                "disabled": "उठा के गिराएं",
+                "enabled": "उठा के गिराएं"
+            }
+        }
+    }
+}

@@ -72,7 +72,7 @@
                     "placeholder": "Add new people or groups"
                 },
                 "note": "Note:",
-                "noteDescription": "The standard message displays your name, the name of the shared item, permissions granted to the recipients and sign in information, if necessary."
+                "noteDescription": "The standard message displays your name, the name of the shared item, permissions granted to the recipients and sign in information."
             },
             "chip": {
                 "owner": "Owner:",
@@ -396,7 +396,7 @@
                     "enabled": "Drop here your attachments \n to quick-add them to this folder"
                 },
                 "otherView": {
-                    "enabled": "Drop here your attachments \n to quick-add them to your Drive Home"
+                    "enabled": "Drop here your attachments\nto quick-add them to your Drive Home"
                 }
             },
             "title": {
