@@ -15,6 +15,12 @@
         "retryUpload": "Retry upload",
         "unflag": "Unflag"
     },
+    "breadcrumb": {
+        "expander": {
+            "hide": "Hide folder's path",
+            "show": "Show folder's path"
+        }
+    },
     "create": {
         "options": {
             "new": {
@@ -30,23 +36,31 @@
         "details": {
             "collaborators": "Collaborators",
             "content": "Content",
+            "copyShortcut": "copy item's shortcut",
             "createdBy": "Created by",
             "description": "Description",
             "downloads": "Download via public link",
+            "editDescription": {
+                "closeIconTooltip": "Close without saving",
+                "editIconTooltip": "Edit description",
+                "saveIconTooltip": "Save edits"
+            },
             "lastEdit": "Last edit",
+            "missingDescription": "Click the edit button to add a description",
             "position": "Position",
             "showPath": "Show path",
             "size": "Size"
         },
-        "folder": {
-            "preview": "You are in a folder"
+        "generic": {
+            "message": "Click an item to select it",
+            "title": "View files and folders, share them with your contacts"
         },
         "list": {
             "you": "You"
         },
         "search": {
-            "message": "Here you can find all the results of your search",
-            "title": "Search suggestions"
+            "message": "Or click the \"Advanced filter\" button to refine your current search",
+            "title": "View your search's results"
         },
         "share": {
             "addShare": {
@@ -61,6 +75,7 @@
                 "noteDescription": "The standard message displays your name, the name of the shared item, permissions granted to the recipients and sign in information."
             },
             "chip": {
+                "owner": "Owner:",
                 "popover": {
                     "role": {
                         "editor": "Editor",
@@ -70,7 +85,7 @@
                     },
                     "save": "Save",
                     "sharingAllowed": "Sharing allowed",
-                    "sharingAllowedDescription": "Description of what will happen if this is checked"
+                    "sharingAllowedDescription": "It will be able to manage shares of the file or folder"
                 },
                 "you": "You"
             },
@@ -108,9 +123,16 @@
         }
     },
     "empty": {
+        "filter": {
+            "hint": "It looks like there's nothing here."
+        },
         "folder": {
-            "hint": "It looks like there's nothing here.",
+            "displayerContent": "This folder has no content",
+            "hint": "It seems that this folder is empty",
             "state": "Drag a file or create a new one clicking \"NEW\""
+        },
+        "search": {
+            "hint": "Your search didn't match any files or folders"
         }
     },
     "folder": {
@@ -166,8 +188,9 @@
     },
     "node": {
         "alias": {
-            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_LOCAL_CHAT_ROOT": "Files sent via Team",
             "name_LOCAL_ROOT": "Drive Home",
+            "name_SHARED_WITH_ME_ROOT": "Shared with me",
             "name_TRASH_ROOT": "Trash"
         },
         "copy": {
@@ -227,8 +250,18 @@
                     "reset": "Reset filters"
                 },
                 "flagged": {
-                    "description": "Filter the results by items that have been flagged by you",
+                    "description": "Filter the results by items that you’ve flagged",
                     "label": "Flagged"
+                },
+                "folder": {
+                    "label": "Drive folder",
+                    "modal": {
+                        "cancel": "Go back",
+                        "cascade": "search also in contained folders",
+                        "confirm": "Choose folder",
+                        "subtitle": "Select the folder where to start the advanced search",
+                        "title": "Drive folder"
+                    }
                 },
                 "keywords": {
                     "label": "Keywords"
@@ -278,16 +311,25 @@
             "sharedWithMe": "Shared with me",
             "trash": "Trash"
         },
-        "team": "Team",
+        "team": "Files sent via Team",
         "uploads": "Uploads"
+    },
+    "selectionMode": {
+        "header": {
+            "exit": "Exit selection mode",
+            "selectAll": "Select all",
+            "unselectAll": "Deselect all"
+        }
     },
     "snackbar": {
         "clipboard": {
-            "email": "Email address copied"
+            "email": "Email address copied",
+            "itemShortcutCopied": "Item shortcut copied"
         },
         "copyNodes": {
+            "action": "Go to folder",
             "error": "Something went wrong, try again",
-            "success": "Item copied to destination folder"
+            "success": "Item copied"
         },
         "deletePermanently": {
             "error": "Error",
@@ -306,8 +348,9 @@
             "success": "Item moved to trash"
         },
         "moveNodes": {
+            "action": "Go to folder",
             "error": "Something went wrong, try again",
-            "success": "Item moved to destination folder"
+            "success": "Item moved"
         },
         "restore": {
             "error": "Something went wrong, try again",
@@ -324,7 +367,17 @@
     "sortingDropdown": {
         "ascendingOrder": "Ascending Order",
         "descendingOrder": "Descending Order",
-        "editDate": "Edit Date",
+        "icon": {
+            "tooltip": {
+                "OrderLastUpdateAscending": "Ascending order by last update",
+                "OrderLastUpdateDescending": "Descending order by last update",
+                "OrderNameAscending": "Ascending order by name",
+                "OrderNameDescending": "Descending order by name",
+                "OrderSizeAscending": "Ascending order by size",
+                "OrderSizeDescending": "Descending order by size"
+            }
+        },
+        "lastUpdate": "Last Update",
         "name": "Name",
         "size": "Size"
     },
