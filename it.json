@@ -259,7 +259,8 @@
                 "editIconTooltip": "Modifica descrizione",
                 "saveIconTooltip": "Salva modifiche"
             },
-            "missingDescription": "Clicca sul pulsante modifica per aggiungere una descrizione"
+            "missingDescription": "Clicca sul pulsante modifica per aggiungere una descrizione",
+            "copyShortcut": "Copia scorciatoia dell'elemento"
         },
         "uploads": {
             "message": "Qui sono elencati tutti gli elementi in caricamento, puoi gestirli direttamente da qui",
@@ -326,7 +327,8 @@
                         "cancel": "Indietro",
                         "confirm": "Scegli cartella",
                         "title": "Cartella Drive",
-                        "subtitle": "Seleziona la cartella in cui iniziare la ricerca avanzata"
+                        "subtitle": "Seleziona la cartella in cui iniziare la ricerca avanzata",
+                        "cascade": "cerca anche nelle cartelle contenute"
                     }
                 },
                 "keywords": {
@@ -336,7 +338,11 @@
                     "description": "Filtra i risultati per gli elementi che contengono almeno un altro collaboratore oltre a te",
                     "label": "Condiviso"
                 },
-                "title": "Filtri Avanzati"
+                "title": "Filtri Avanzati",
+                "flagged": {
+                    "description": "Filtri i risultati per gli elementi che hai contrassegnato",
+                    "label": "Contrassegnato"
+                }
             }
         },
         "resultsFor": "Risultati per:"
@@ -404,6 +410,15 @@
                 "OrderLastUpdateAscending": "Ordine crescente basato sull'ultimo aggiornamento",
                 "OrderSizeDescending": "Ordine decrescente basato sulla grandezza"
             }
+        },
+        "lastUpdate": "Ultimo Aggiornamento",
+        "name": "Nome",
+        "size": "Dimensione"
+    },
+    "breadcrumb": {
+        "expander": {
+            "hide": "Nascondi il percorso della cartella",
+            "show": "Mostra il percorso della cartella"
         }
     }
 }
