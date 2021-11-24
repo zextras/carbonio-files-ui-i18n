@@ -138,6 +138,17 @@
             "hint": "Your search didn't match any files or folders"
         }
     },
+    "errorCode": {
+        "code": "Something went wrong",
+        "code_AccountNotFound": "It seems that this user is not part of the Carbonio system",
+        "code_FileVersionNotFound": "We're sorry, but this version of the file cannot be found",
+        "code_Generic": "Something went wrong",
+        "code_MissingField": "An internal error occurred, not all information of this object has been recovered",
+        "code_NodeNotFound": "It seems that this object doesn't exist, or you do not have permission to access it",
+        "code_NodeWriteError": "It seems that this object cannot be edited or that you do not have permission to edit it",
+        "code_ShareCreationError": "We are sorry, but it is not possible to share the item with this user",
+        "code_ShareNotFound": "We're sorry, but this share cannot be found"
+    },
     "folder": {
         "create": {
             "modal": {
