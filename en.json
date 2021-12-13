@@ -140,14 +140,15 @@
     },
     "errorCode": {
         "code": "Something went wrong",
-        "code_AccountNotFound": "It seems that this user is not part of the Carbonio system",
-        "code_FileVersionNotFound": "We're sorry, but this version of the file cannot be found",
+        "code_ACCOUNT_NOT_FOUND": "It seems that this user is not part of the Carbonio system",
+        "code_FILE_VERSION_NOT_FOUND": "We're sorry, but this version of the file cannot be found",
         "code_Generic": "Something went wrong",
-        "code_MissingField": "An internal error occurred, not all information of this object has been recovered",
-        "code_NodeNotFound": "It seems that this object doesn't exist, or you do not have permission to access it",
-        "code_NodeWriteError": "It seems that this object cannot be edited or that you do not have permission to edit it",
-        "code_ShareCreationError": "We are sorry, but it is not possible to share the item with this user",
-        "code_ShareNotFound": "We're sorry, but this share cannot be found"
+        "code_LINK_NOT_FOUND": "Action failed. This link no longer exists",
+        "code_MISSING_FIELD": "An internal error occurred, not all information of this object has been recovered",
+        "code_NODE_NOT_FOUND": "It seems that this object doesn't exist, or you do not have permission to access it",
+        "code_NODE_WRITE_ERROR": "It seems that this object cannot be edited or that you do not have permission to edit it",
+        "code_SHARE_CREATION_ERROR": "We are sorry, but it is not possible to share the item with this user",
+        "code_SHARE_NOT_FOUND": "We're sorry, but this share cannot be found"
     },
     "folder": {
         "create": {
@@ -188,6 +189,20 @@
                     "permissionLost": "All the access permissions previously given to you will be lost."
                 }
             }
+        },
+        "removeLink": {
+            "body": "This link has expired, therefore it can't be used anymore to access the element. You can remove the link from the list or you can update its expiration date and other information in order to keep using it",
+            "button": {
+                "confirm": "Remove"
+            },
+            "header": "Remove {{nodeName}} public link"
+        },
+        "revokeLink": {
+            "body": "By revoking this link, you are blocking access to {{nodeName}} for anyone who tries to use the link to access the file",
+            "button": {
+                "confirm": "Revoke"
+            },
+            "header": "Revoke {{nodeName}} public link"
         },
         "roots": {
             "driveHome": "Home",
@@ -249,6 +264,45 @@
         },
         "type": {
             "folder": "Folder"
+        }
+    },
+    "publicLink": {
+        "addLink": {
+            "addLink": "Add Link",
+            "generateLink": "Generate Link",
+            "limitReached": "The maximum amount of public links has been reached",
+            "title": "Public Link",
+            "undo": "Undo"
+        },
+        "datePickerInput": {
+            "description": "This date refers to UTC time, the link expires at the beginning of the chosen day"
+        },
+        "dateTimePicker": {
+            "label": "Expiration Date"
+        },
+        "input": {
+            "description": {
+                "error": {
+                    "maxLengthAllowed": "Maximum length allowed is 300 characters"
+                }
+            },
+            "label": "Link's description"
+        },
+        "link": {
+            "edit": "Edit",
+            "editLink": "Edit Link",
+            "expireOn": "Expires on:",
+            "expiredOn": "This link has expired on:",
+            "noExpirationDate": "Has no expiration date",
+            "remove": "Remove",
+            "revoke": "Revoke",
+            "undo": "Undo",
+            "urlChip": {
+                "tooltip": {
+                    "copy": "Copy public link",
+                    "expired": "This link has expired"
+                }
+            }
         }
     },
     "search": {
@@ -365,6 +419,18 @@
             "action": "Go to folder",
             "error": "Something went wrong, try again",
             "success": "Item moved"
+        },
+        "publicLink": {
+            "actionLabel": {
+                "copyLink": "Copy Link"
+            },
+            "copyLink": "Public link copied",
+            "linkUpdated": {
+                "label": "Public Link updated"
+            },
+            "newPublicLinkGenerated": {
+                "label": "New public Link generated"
+            }
         },
         "restore": {
             "error": "Something went wrong, try again",
