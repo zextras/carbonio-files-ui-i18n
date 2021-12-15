@@ -221,7 +221,7 @@
         },
         "advancedSearch": {
             "button": {
-                "filters": "{{compte}} filtre avancé",
+                "filters": "{{count}} filtre avancé",
                 "filters_plural": "{{compte}} filtres avancés"
             }
         }
