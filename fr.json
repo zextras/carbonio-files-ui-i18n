@@ -179,6 +179,10 @@
         },
         "clipboard": {
             "email": "Adresse e-mail copiée"
+        },
+        "copyNodes": {
+            "action": "Aller dans le dossier",
+            "error": "Quelque chose s'est mal passé, réessayez"
         }
     },
     "actions": {
@@ -387,7 +391,8 @@
     "selectionMode": {
         "header": {
             "exit": "Sortir du mode de sélection",
-            "unselectAll": "Tout déselectionner"
+            "unselectAll": "Tout déselectionner",
+            "selectAll": "Sélectionner tous"
         }
     }
 }
