@@ -402,13 +402,13 @@
         "header": {
             "exit": "Sortir du mode de sélection",
             "unselectAll": "Tout désélectionner",
-            "selectAll": "Sélectionner tous"
+            "selectAll": "Tout sélectionner"
         }
     },
     "sortingDropdown": {
         "name": "Nom",
         "size": "Taille",
-        "ascendingOrder": "Tri ascendant",
+        "ascendingOrder": "Ordre ascendant",
         "descendingOrder": "Tri descendant",
         "icon": {
             "tooltip": {
@@ -419,6 +419,7 @@
                 "OrderSizeAscending": "Tri ascendant par taille",
                 "OrderSizeDescending": "Tri descendant par la taille"
             }
-        }
+        },
+        "lastUpdate": "Dernière mise à jour"
     }
 }
