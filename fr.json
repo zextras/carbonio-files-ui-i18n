@@ -167,7 +167,8 @@
         },
         "moveNodes": {
             "error": "Quelque chose s'est mal passé, réessayez",
-            "success": "Elément déplacé vers le dossier de destination"
+            "success": "Elément déplacé vers le dossier de destination",
+            "action": "Aller dans le dossier"
         },
         "restore": {
             "showInFolder": "Afficher dans le dossier",
@@ -184,6 +185,13 @@
         "copyNodes": {
             "action": "Aller au dossier",
             "error": "Quelque chose s'est mal passé, essayez de nouveau"
+        },
+        "deletePermanently": {
+            "error": "Erreur",
+            "success": "Succès"
+        },
+        "unflag": {
+            "success": "Item décoché avec succès"
         }
     },
     "actions": {
@@ -395,5 +403,9 @@
             "unselectAll": "Tout déselectionner",
             "selectAll": "Sélectionner tous"
         }
+    },
+    "sortingDropdown": {
+        "name": "Nom",
+        "size": "Taille"
     }
 }
