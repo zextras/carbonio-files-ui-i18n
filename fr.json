@@ -168,7 +168,7 @@
         "moveNodes": {
             "error": "Quelque chose s'est mal passé, réessayez",
             "success": "Élément déplacé",
-            "action": "Aller dans le dossier"
+            "action": "Aller au dossier"
         },
         "restore": {
             "showInFolder": "Afficher dans le dossier",
@@ -407,6 +407,13 @@
     },
     "sortingDropdown": {
         "name": "Nom",
-        "size": "Taille"
+        "size": "Taille",
+        "ascendingOrder": "Tri ascendant",
+        "descendingOrder": "Tri descendant",
+        "icon": {
+            "tooltip": {
+                "OrderLastUpdateAscending": "Tri ascendant par la dernière mise à jour"
+            }
+        }
     }
 }
