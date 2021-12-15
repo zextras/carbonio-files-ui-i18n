@@ -149,7 +149,7 @@
             "myElements": "Mes éléments",
             "sharedElements": "Eléments partagés"
         },
-        "team": "Team",
+        "team": "Fichiers envoyés via Team",
         "uploads": "Chargements"
     },
     "snackbar": {
@@ -250,7 +250,7 @@
                     }
                 },
                 "keywords": {
-                    "label": "Mots clés"
+                    "label": "Mots-clés"
                 },
                 "shared": {
                     "description": "Filtrer les résultats par les éléments qui contiennent au moins un collaborateur en plus de vous",
