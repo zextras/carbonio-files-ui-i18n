@@ -13,7 +13,11 @@
     "empty": {
         "folder": {
             "hint": "Il semble qu'il n'y ait rien ici.",
-            "state": "Déposez un fichier ou créez-en un nouveau en cliquant sur \"NOUVEAU\""
+            "state": "Déposez un fichier ou créez-en un nouveau en cliquant sur \"NOUVEAU\"",
+            "displayerContent": "Ce dossier n'a aucun contenu"
+        },
+        "filter": {
+            "hint": "Il semble qu'il n'y ait rien ici."
         }
     },
     "filter": {
@@ -239,9 +243,10 @@
                         "viewerDescription": "Il ne pourra que visualiser ou télécharger le fichier ou le dossier"
                     },
                     "sharingAllowed": "Partage autorisé",
-                    "sharingAllowedDescription": "Description de ce qui se passera si cette case est cochée"
+                    "sharingAllowedDescription": "Il sera en mesure de gérer les partages du fichier ou du dossier."
                 },
-                "you": "Vous"
+                "you": "Vous",
+                "owner": "Propriétaire :"
             },
             "addShare": {
                 "checkbox": {
@@ -250,7 +255,9 @@
                 "input": {
                     "label": "Ajouter un message personnalisé à cette notification",
                     "placeholder": "Ajouter de nouvelles personnes ou de nouveaux groupes"
-                }
+                },
+                "note": "Note :",
+                "noteDescription": "Le message standard affiche votre nom, le nom de l'élément partagé, les autorisations accordées aux destinataires et les informations de connexion."
             },
             "noSharePermissionHeader": "Vous n'êtes pas autorisé à partager cet élément."
         },
@@ -258,7 +265,7 @@
             "preview": "Vous êtes dans un dossier"
         },
         "search": {
-            "message": "Vous trouverez ici tous les résultats de votre recherche",
+            "message": "Ou cliquer sur le bouton \"Filtres avancés\" pour affiner votre recherche actuelle",
             "title": "Suggestions de recherche"
         },
         "tabs": {
