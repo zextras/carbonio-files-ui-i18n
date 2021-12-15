@@ -400,7 +400,7 @@
     "selectionMode": {
         "header": {
             "exit": "Sortir du mode de sélection",
-            "unselectAll": "Tout déselectionner",
+            "unselectAll": "Tout désélectionner",
             "selectAll": "Sélectionner tous"
         }
     },
