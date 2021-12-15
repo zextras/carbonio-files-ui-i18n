@@ -42,7 +42,8 @@
                     "label": "向此通知添加自定义消息",
                     "placeholder": "新增人脉或群组"
                 },
-                "noteDescription": "标准消息中会展示您的名称、共享项目名称、授予接收者的权限以及登录信息。"
+                "noteDescription": "标准消息中会展示您的名称、共享项目名称、授予接收者的权限以及登录信息。",
+                "note": "备注:"
             }
         },
         "tabs": {
@@ -251,7 +252,8 @@
     "search": {
         "header": {
             "search": "搜索",
-            "result": "包含所有关键词的结果："
+            "result": "包含所有关键词的结果：",
+            "start": "开始搜索"
         },
         "search": {
             "tooltip": {
@@ -279,7 +281,8 @@
             },
             "modal": {
                 "button": {
-                    "confirm": "搜索"
+                    "confirm": "搜索",
+                    "reset": "重置过滤条件"
                 },
                 "flagged": {
                     "label": "已标记"
@@ -354,5 +357,11 @@
     "sortingDropdown": {
         "name": "名称",
         "size": "大小"
+    },
+    "selectionMode": {
+        "header": {
+            "selectAll": "全选",
+            "unselectAll": "取消全选"
+        }
     }
 }
