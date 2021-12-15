@@ -414,7 +414,8 @@
             "tooltip": {
                 "OrderLastUpdateAscending": "Tri ascendant par date de modification",
                 "OrderLastUpdateDescending": "Tri descendant par date de modification",
-                "OrderNameAscending": "Tri ascendant par le nom"
+                "OrderNameAscending": "Tri ascendant par le nom",
+                "OrderNameDescending": "Tri descendant par le nom"
             }
         }
     }
