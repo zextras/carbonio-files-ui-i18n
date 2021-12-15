@@ -238,7 +238,7 @@
                     "label": "Dossier du Drive",
                     "modal": {
                         "cancel": "Retour",
-                        "cascade": "rechercher également dans les dossiers contenus",
+                        "cascade": "rechercher également dans les sous-dossiers",
                         "confirm": "Choisir un dossier",
                         "subtitle": "Sélectionnez le dossier dans lequel vous souhaitez lancer la recherche avancée"
                     }
