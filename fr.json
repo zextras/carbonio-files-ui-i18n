@@ -222,7 +222,25 @@
         "advancedSearch": {
             "button": {
                 "filters": "{{count}} filtre avancé",
-                "filters_plural": "{{compte}} filtres avancés"
+                "filters_plural": "{{compte}} filtres avancés",
+                "noFilter": "Filtres avancés"
+            },
+            "modal": {
+                "button": {
+                    "confirm": "Recherche",
+                    "reset": "Réinitialiser les filtres"
+                },
+                "flagged": {
+                    "description": "Filtrer les résultats par les éléments que vous avez marqué",
+                    "label": "Marqué"
+                },
+                "folder": {
+                    "label": "Dossier du Drive",
+                    "modal": {
+                        "cancel": "Retour",
+                        "cascade": "rechercher également dans les dossiers contenus"
+                    }
+                }
             }
         }
     },
