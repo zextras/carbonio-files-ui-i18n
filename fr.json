@@ -415,7 +415,7 @@
                 "OrderLastUpdateAscending": "Tri ascendant par date de modification",
                 "OrderLastUpdateDescending": "Tri descendant par date de modification",
                 "OrderNameAscending": "Tri ascendant par nom",
-                "OrderNameDescending": "Tri descendant par le nom",
+                "OrderNameDescending": "Tri descendant par nom",
                 "OrderSizeAscending": "Tri ascendant par la taille"
             }
         }
