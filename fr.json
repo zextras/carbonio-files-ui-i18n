@@ -408,7 +408,7 @@
     "sortingDropdown": {
         "name": "Nom",
         "size": "Taille",
-        "ascendingOrder": "Ordre ascendant",
+        "ascendingOrder": "Tri ascendant",
         "descendingOrder": "Ordre descendant",
         "icon": {
             "tooltip": {
