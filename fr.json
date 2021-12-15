@@ -184,7 +184,7 @@
         },
         "copyNodes": {
             "action": "Aller au dossier",
-            "error": "Quelque chose s'est mal passé, essayez de nouveau",
+            "error": "Quelque chose s'est mal passé, réessayez",
             "success": "Élément copié"
         },
         "deletePermanently": {
