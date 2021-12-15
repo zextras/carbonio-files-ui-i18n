@@ -66,7 +66,9 @@
         },
         "alias": {
             "name_LOCAL_CHAT_ROOT": "Team",
-            "name_LOCAL_ROOT": "Home de Drive"
+            "name_LOCAL_ROOT": "Home de Drive",
+            "name_SHARED_WITH_ME_ROOT": "Compartido conmigo",
+            "name_TRASH_ROOT": "Papelera"
         },
         "copy": {
             "modal": {
@@ -74,7 +76,8 @@
                     "confirm": "Copiar"
                 },
                 "title": "Copiar {{node.name}}",
-                "title_plurals": "Copiar elementos"
+                "title_plurals": "Copiar elementos",
+                "title_plural": "Copiar elementos"
             }
         },
         "move": {
@@ -87,13 +90,17 @@
                 },
                 "subtitle": "Elige una carpeta de destino:",
                 "title": "Mover {{node.name}}",
-                "title_plurals": "Mover elementos"
+                "title_plurals": "Mover elementos",
+                "title_plural": "Mover elementos"
             },
             "error": {
                 "not": {
                     "allowed": "No puedes mover varios nodos de un filtro o una búsqueda"
                 }
             }
+        },
+        "type": {
+            "folder": "Carpeta"
         }
     },
     "primaryBar": {
@@ -133,10 +140,22 @@
         },
         "moveNodes": {
             "error": "Algo fue mal, prueba de nuevo",
-            "success": "Elemento movido a la carpeta de destino"
+            "success": "Elemento movido a la carpeta de destino",
+            "action": "Ir a carpeta"
         },
         "upload": {
             "goToFolder": "Ir a carpeta"
+        },
+        "copyNodes": {
+            "error": "Algo fue mal, inténtalo de nuevo",
+            "action": "Ir a carpeta"
+        },
+        "deletePermanently": {
+            "error": "Error",
+            "success": "Éxito"
+        },
+        "unflag": {
+            "success": "Elemento desmarcado con éxito"
         }
     },
     "create": {
@@ -154,6 +173,9 @@
         "folder": {
             "hint": "Parece que no hay nada aquí.",
             "state": "Arrastra un archivo o crea uno nuevo haciendo clic en \"NUEVO\""
+        },
+        "filter": {
+            "hint": "Parece que no hay nada aquí."
         }
     },
     "filter": {
@@ -198,7 +220,8 @@
                     },
                     "sharingAllowed": "Compartir permitido",
                     "sharingAllowedDescription": "Descripción de qué ocurrirá si esto está seleccionado"
-                }
+                },
+                "owner": "Propietario:"
             },
             "addShare": {
                 "checkbox": {
@@ -207,7 +230,9 @@
                 "input": {
                     "label": "Añadir un mensaje personalizado a esta notificación",
                     "placeholder": "Añadir personas o grupos nuevos"
-                }
+                },
+                "note": "Nota:",
+                "noteDescription": "El mensaje estándar muestra tu nombre, el nombre del elemento compartido, los permisos otorgados a los destinatarios y la información de inicio de sesión."
             },
             "noSharePermissionHeader": "No te está permitido compartir este elemento."
         },
@@ -220,7 +245,10 @@
             "content": "Contenido",
             "downloads": "Descargar a través de enlace público",
             "lastEdit": "Última edición",
-            "showPath": "Mostrar ruta"
+            "showPath": "Mostrar ruta",
+            "editDescription": {
+                "editIconTooltip": "Editar descripción"
+            }
         },
         "tabs": {
             "details": "Detalles",
@@ -243,7 +271,8 @@
     "search": {
         "header": {
             "search": "Buscar",
-            "result": "Resultados que contienen todas las palabras clave:"
+            "result": "Resultados que contienen todas las palabras clave:",
+            "start": "Iniciar búsqueda"
         },
         "search": {
             "tooltip": {
@@ -263,7 +292,34 @@
                 "active": "Separa las palabras clave con una coma, un punto y coma o presionado TAB",
                 "default": "Introduce tu búsqueda"
             }
-        }
+        },
+        "advancedSearch": {
+            "button": {
+                "noFilter": "Filtros avanzado"
+            },
+            "modal": {
+                "button": {
+                    "confirm": "Buscar",
+                    "reset": "Reiniciar filtros"
+                },
+                "flagged": {
+                    "label": "Marcado"
+                },
+                "folder": {
+                    "modal": {
+                        "cancel": "Regresar"
+                    }
+                },
+                "keywords": {
+                    "label": "Palabras clave"
+                },
+                "shared": {
+                    "label": "Compartido"
+                },
+                "title": "Filtros Avanzados"
+            }
+        },
+        "resultsFor": "Resultados para:"
     },
     "docs": {
         "create": {
@@ -308,5 +364,15 @@
                 "enabled": "Modo Arrastrar y Soltar"
             }
         }
+    },
+    "selectionMode": {
+        "header": {
+            "selectAll": "Seleccionar todos",
+            "unselectAll": "Deseleccionar todos"
+        }
+    },
+    "sortingDropdown": {
+        "name": "Nombre",
+        "size": "Tamaño"
     }
 }
