@@ -14,7 +14,7 @@
         "folder": {
             "hint": "Il semble que ce dossier soit vide",
             "state": "Déposez un fichier ou créez-en un nouveau en cliquant sur \"NOUVEAU\"",
-            "displayerContent": "Ce dossier n'a aucun contenu"
+            "displayerContent": "Ce dossier est vide"
         },
         "filter": {
             "hint": "Il semble qu'il n'y ait rien ici."
@@ -107,8 +107,10 @@
             }
         },
         "alias": {
-            "name_LOCAL_CHAT_ROOT": "Team",
-            "name_LOCAL_ROOT": "Accueil"
+            "name_LOCAL_CHAT_ROOT": "Fichiers envoyés via Team",
+            "name_LOCAL_ROOT": "Accueil",
+            "name_SHARED_WITH_ME_ROOT": "Partagé avec moi",
+            "name_TRASH_ROOT": "Corbeille"
         },
         "move": {
             "modal": {
