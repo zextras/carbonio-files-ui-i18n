@@ -178,11 +178,12 @@
             "goToFolder": "Aller dans le dossier"
         },
         "clipboard": {
-            "email": "Adresse e-mail copiée"
+            "email": "Adresse e-mail copiée",
+            "itemShortcutCopied": "Raccourci de l'élément copié"
         },
         "copyNodes": {
-            "action": "Aller dans le dossier",
-            "error": "Quelque chose s'est mal passé, réessayez"
+            "action": "Aller au dossier",
+            "error": "Quelque chose s'est mal passé, essayez de nouveau"
         }
     },
     "actions": {
