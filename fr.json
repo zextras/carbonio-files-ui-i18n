@@ -413,7 +413,8 @@
         "icon": {
             "tooltip": {
                 "OrderLastUpdateAscending": "Tri ascendant par date de modification",
-                "OrderLastUpdateDescending": "Tri descendant par la dernière mise à jour"
+                "OrderLastUpdateDescending": "Tri descendant par la dernière mise à jour",
+                "OrderNameAscending": "Tri ascendant par le nom"
             }
         }
     }
