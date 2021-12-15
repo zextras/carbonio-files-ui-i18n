@@ -167,7 +167,7 @@
         },
         "moveNodes": {
             "error": "Quelque chose s'est mal passé, réessayez",
-            "success": "Elément déplacé vers le dossier de destination",
+            "success": "Élément déplacé",
             "action": "Aller dans le dossier"
         },
         "restore": {
@@ -189,10 +189,10 @@
         },
         "deletePermanently": {
             "error": "Erreur",
-            "success": "Succès"
+            "success": "Réussi"
         },
         "unflag": {
-            "success": "Item décoché avec succès"
+            "success": "Élément décoché avec succès"
         }
     },
     "actions": {
