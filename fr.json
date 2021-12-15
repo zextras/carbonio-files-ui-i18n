@@ -308,7 +308,7 @@
                         "viewerDescription": "Il ne pourra que visualiser ou télécharger le fichier ou le dossier"
                     },
                     "sharingAllowed": "Partage autorisé",
-                    "sharingAllowedDescription": "Il sera en mesure de gérer les partages du fichier ou du dossier."
+                    "sharingAllowedDescription": "Il sera en mesure de gérer les partages du fichier ou du dossier"
                 },
                 "you": "Vous",
                 "owner": "Propriétaire :"
@@ -337,7 +337,7 @@
             "activities": "Activités",
             "details": "Détails",
             "sharing": "Partage",
-            "versioning": "Versioning"
+            "versioning": "Version"
         },
         "uploads": {
             "message": "Vous trouverez ici tous les éléments en cours de téléchargement, vous pouvez les gérer à partir d'ici",
@@ -409,7 +409,7 @@
         "name": "Nom",
         "size": "Taille",
         "ascendingOrder": "Tri ascendant",
-        "descendingOrder": "Ordre descendant",
+        "descendingOrder": "Tri descendant",
         "icon": {
             "tooltip": {
                 "OrderLastUpdateAscending": "Tri ascendant par date de modification",
