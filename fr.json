@@ -12,12 +12,15 @@
     },
     "empty": {
         "folder": {
-            "hint": "Il semble qu'il n'y ait rien ici.",
+            "hint": "Il semble que ce dossier soit vide",
             "state": "Déposez un fichier ou créez-en un nouveau en cliquant sur \"NOUVEAU\"",
             "displayerContent": "Ce dossier n'a aucun contenu"
         },
         "filter": {
             "hint": "Il semble qu'il n'y ait rien ici."
+        },
+        "search": {
+            "hint": "Votre recherche ne correspond à aucun fichier ou dossier"
         }
     },
     "filter": {
@@ -99,7 +102,8 @@
                     "confirm": "Copier"
                 },
                 "title": "Copier {{node.name}}",
-                "title_plurals": "Copier les éléments"
+                "title_plurals": "Copier les éléments",
+                "title_plural": "Copier les éléments"
             }
         },
         "alias": {
@@ -116,13 +120,17 @@
                 },
                 "subtitle": "Sélectionnez un dossier de destination :",
                 "title": "Déplacer {{node.name}}",
-                "title_plurals": "Déplacer les éléments"
+                "title_plurals": "Déplacer les éléments",
+                "title_plural": "Déplacer les éléments"
             },
             "error": {
                 "not": {
                     "allowed": "Vous ne pouvez pas déplacer plusieurs nœuds d'un filtre ou d'une recherche"
                 }
             }
+        },
+        "type": {
+            "folder": "Dossier"
         }
     },
     "primaryBar": {
@@ -207,6 +215,11 @@
             "label": {
                 "default": "Entrez votre recherche",
                 "active": "Séparez vos mots-clés par une virgule, un point-virgule ou en appuyant sur la touche TAB"
+            }
+        },
+        "advancedSearch": {
+            "button": {
+                "filters": "{{compte}} filtre avancé"
             }
         }
     },
