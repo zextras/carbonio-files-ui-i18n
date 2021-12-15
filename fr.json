@@ -176,6 +176,9 @@
         },
         "upload": {
             "goToFolder": "Aller dans le dossier"
+        },
+        "clipboard": {
+            "email": "Adresse e-mail copiée"
         }
     },
     "actions": {
@@ -198,7 +201,9 @@
     "search": {
         "header": {
             "search": "Rechercher",
-            "result": "Les résultats qui contiennent tous les mots-clés :"
+            "result": "Les résultats qui contiennent tous les mots-clés :",
+            "close": "Quitter la recherche",
+            "start": "Lancer une recherche"
         },
         "search": {
             "tooltip": {
@@ -246,9 +251,15 @@
                 },
                 "keywords": {
                     "label": "Mots clés"
-                }
+                },
+                "shared": {
+                    "description": "Filtrer les résultats par les éléments qui contiennent au moins un collaborateur en plus de vous",
+                    "label": "Partagé"
+                },
+                "title": "Filtres avancés"
             }
-        }
+        },
+        "resultsFor": "Résultats pour :"
     },
     "displayer": {
         "details": {
@@ -371,6 +382,12 @@
         "expander": {
             "hide": "Masquer le chemin du dossier",
             "show": "Afficher le chemin du dossier"
+        }
+    },
+    "selectionMode": {
+        "header": {
+            "exit": "Sortir du mode de sélection",
+            "unselectAll": "Tout déselectionner"
         }
     }
 }
