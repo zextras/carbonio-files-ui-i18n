@@ -409,7 +409,7 @@
         "name": "Nom",
         "size": "Taille",
         "ascendingOrder": "Ordre ascendant",
-        "descendingOrder": "Tri descendant",
+        "descendingOrder": "Ordre descendant",
         "icon": {
             "tooltip": {
                 "OrderLastUpdateAscending": "Tri ascendant par date de modification",
