@@ -266,7 +266,7 @@
         },
         "search": {
             "message": "Ou cliquer sur le bouton \"Filtres avancés\" pour affiner votre recherche actuelle",
-            "title": "Suggestions de recherche"
+            "title": "Voir vos résultats de recherche"
         },
         "tabs": {
             "activities": "Activités",
@@ -280,7 +280,7 @@
         },
         "generic": {
             "message": "Cliquer sur un élément pour le sélectionner",
-            "title": "Visualiser fichiers et dossiers, les partager avec vos contacts"
+            "title": "Visualiser les fichiers et les dossiers et les partager avec vos contacts"
         }
     },
     "docs": {
