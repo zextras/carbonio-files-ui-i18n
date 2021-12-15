@@ -222,7 +222,7 @@
         "advancedSearch": {
             "button": {
                 "filters": "{{count}} filtre avancé",
-                "filters_plural": "{{compte}} filtres avancés",
+                "filters_plural": "{{count}} filtres avancés",
                 "noFilter": "Filtres avancés"
             },
             "modal": {
