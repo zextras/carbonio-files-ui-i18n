@@ -216,7 +216,14 @@
             "downloads": "Télécharger via le lien public",
             "lastEdit": "Dernière modification",
             "position": "Position",
-            "showPath": "Montrer le chemin"
+            "showPath": "Montrer le chemin",
+            "copyShortcut": "copier le raccourci de l'élément",
+            "editDescription": {
+                "closeIconTooltip": "Fermer sans sauvegarder",
+                "saveIconTooltip": "Sauvegarder les modifications",
+                "editIconTooltip": "Modifier la description"
+            },
+            "missingDescription": "Cliquer sur le bouton Modification pour ajouter une description"
         },
         "list": {
             "you": "Vous"
@@ -263,6 +270,10 @@
         "uploads": {
             "message": "Vous trouverez ici tous les éléments en cours de téléchargement, vous pouvez les gérer à partir d'ici",
             "title": "Suggestions de téléchargement"
+        },
+        "generic": {
+            "message": "Cliquer sur un élément pour le sélectionner",
+            "title": "Visualiser fichiers et dossiers, les partager avec vos contacts"
         }
     },
     "docs": {
@@ -307,6 +318,12 @@
                 "disabled": "Mode glisser-déposer",
                 "enabled": "Mode glisser-déposer"
             }
+        }
+    },
+    "breadcrumb": {
+        "expander": {
+            "hide": "Masquer le chemin du dossier",
+            "show": "Afficher le chemin du dossier"
         }
     }
 }
