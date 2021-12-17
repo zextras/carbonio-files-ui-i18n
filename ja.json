@@ -70,7 +70,9 @@
         },
         "alias": {
             "name_LOCAL_CHAT_ROOT": "Team",
-            "name_LOCAL_ROOT": "Driveホーム"
+            "name_LOCAL_ROOT": "Driveホーム",
+            "name_SHARED_WITH_ME_ROOT": "共有されたファイル",
+            "name_TRASH_ROOT": "ゴミ箱"
         },
         "copy": {
             "modal": {
@@ -78,7 +80,8 @@
                     "confirm": "コピー"
                 },
                 "title": "{{node.name}}をコピーする",
-                "title_plurals": "アイテムをコピーする"
+                "title_plurals": "アイテムをコピーする",
+                "title_plural": "アイテムをコピーする"
             }
         },
         "move": {
@@ -91,13 +94,17 @@
                 },
                 "subtitle": "宛先フォルダーを選択します:",
                 "title": "{{node.name}}を移動する",
-                "title_plurals": "アイテムを移動する"
+                "title_plurals": "アイテムを移動する",
+                "title_plural": "アイテムを移動する"
             },
             "error": {
                 "not": {
                     "allowed": "フィルタまたは検索から複数のノードを移動することはできません"
                 }
             }
+        },
+        "type": {
+            "folder": "フォルダー"
         }
     },
     "primaryBar": {
@@ -137,16 +144,31 @@
         },
         "moveNodes": {
             "error": "エラーが発生しました。後ほど再度お試しください",
-            "success": "アイテムが宛先フォルダに移動されました"
+            "success": "アイテムが宛先フォルダに移動されました",
+            "action": "フォルダに移動する"
         },
         "upload": {
             "goToFolder": "フォルダに移動する"
+        },
+        "copyNodes": {
+            "action": "フォルダに移動する",
+            "error": "エラーが発生しました。後ほど再度お試しください"
+        },
+        "deletePermanently": {
+            "error": "エラー",
+            "success": "成功"
+        },
+        "unflag": {
+            "success": "アイテムのフラグが解除されました"
         }
     },
     "empty": {
         "folder": {
             "hint": "ここには何もないようです。",
             "state": "「新規」をクリックしてファイルをドラッグするか、新しいファイルを作成します"
+        },
+        "filter": {
+            "hint": "ここには何もないようです。"
         }
     },
     "folder": {
@@ -198,7 +220,8 @@
                     },
                     "sharingAllowed": "共有が許可されました",
                     "sharingAllowedDescription": "これが確認された際に起こること"
-                }
+                },
+                "owner": "所有者:"
             },
             "addShare": {
                 "checkbox": {
@@ -207,7 +230,8 @@
                 "input": {
                     "label": "この通知にカスタムメッセージを追加する",
                     "placeholder": "新しい人またはグループを追加する"
-                }
+                },
+                "note": "メモ:"
             },
             "noSharePermissionHeader": "このアイテムの共有を許可されていません。"
         },
@@ -220,7 +244,10 @@
             "content": "コンテンツ",
             "downloads": "パブリックリンクからダウンロードする",
             "lastEdit": "最終編集",
-            "showPath": "パスを表示する"
+            "showPath": "パスを表示する",
+            "editDescription": {
+                "editIconTooltip": "概要を編集する"
+            }
         },
         "tabs": {
             "details": "詳細",
@@ -243,7 +270,8 @@
     "search": {
         "header": {
             "search": "検索",
-            "result": "すべてのキーワードを含む結果:"
+            "result": "すべてのキーワードを含む結果:",
+            "start": "検索を開始する"
         },
         "search": {
             "tooltip": {
@@ -263,7 +291,34 @@
                 "active": "キーワードをコンマ、セミコロンで区切るか、Tabキーを押します",
                 "default": "検索ワードを入力してください"
             }
-        }
+        },
+        "advancedSearch": {
+            "modal": {
+                "button": {
+                    "reset": "フィルターをリセットする",
+                    "confirm": "検索"
+                },
+                "flagged": {
+                    "label": "フラグを付けました"
+                },
+                "folder": {
+                    "modal": {
+                        "cancel": "戻る"
+                    }
+                },
+                "keywords": {
+                    "label": "キーワード"
+                },
+                "shared": {
+                    "label": "共有"
+                },
+                "title": "高度なフィルター"
+            },
+            "button": {
+                "noFilter": "高度なフィルタ"
+            }
+        },
+        "resultsFor": "検索結果:"
     },
     "docs": {
         "create": {
@@ -308,5 +363,15 @@
                 "enabled": "ドラッグ＆ドロップモード"
             }
         }
+    },
+    "selectionMode": {
+        "header": {
+            "selectAll": "すべて選択",
+            "unselectAll": "すべての選択を解除する"
+        }
+    },
+    "sortingDropdown": {
+        "name": "名前",
+        "size": "サイズ"
     }
 }
