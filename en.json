@@ -285,7 +285,7 @@
             "undo": "Undo"
         },
         "datePickerInput": {
-            "description": "This date refers to UTC time, the link expires at the beginning of the chosen day"
+            "description": "The link expires at the end of the chosen day"
         },
         "dateTimePicker": {
             "label": "Expiration Date"
