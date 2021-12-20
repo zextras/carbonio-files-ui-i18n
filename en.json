@@ -78,7 +78,7 @@
                 "noteDescription": "The standard message displays your name, the name of the shared item, permissions granted to the recipients and sign in information."
             },
             "chip": {
-                "owner": "Owner:",
+                "owner": "Owner",
                 "popover": {
                     "role": {
                         "editor": "Editor",
@@ -89,6 +89,16 @@
                     "save": "Save",
                     "sharingAllowed": "Sharing allowed",
                     "sharingAllowedDescription": "It will be able to manage shares of the file or folder"
+                },
+                "tooltip": {
+                    "edit": {
+                        "collaborator": "Edit {{username}}'s collaboration",
+                        "you": "Edit your collaboration"
+                    },
+                    "remove": {
+                        "collaborator": "Remove {{username}}",
+                        "yourself": "Remove your collaboration"
+                    }
                 },
                 "you": "You"
             },
