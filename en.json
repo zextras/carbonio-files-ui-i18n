@@ -451,7 +451,8 @@
             "success": "Item unflagged successfully"
         },
         "upload": {
-            "goToFolder": "Go to folder"
+            "goToFolder": "Go to folder",
+            "success": "Upload occurred in {{destination}}"
         }
     },
     "sortingDropdown": {
