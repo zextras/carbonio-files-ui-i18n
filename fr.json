@@ -12,8 +12,15 @@
     },
     "empty": {
         "folder": {
-            "hint": "Il semble qu'il n'y ait rien ici.",
-            "state": "Déposez un fichier ou créez-en un nouveau en cliquant sur \"NOUVEAU\""
+            "hint": "Il semble que ce dossier soit vide",
+            "state": "Déposez un fichier ou créez-en un nouveau en cliquant sur \"NOUVEAU\"",
+            "displayerContent": "Ce dossier est vide"
+        },
+        "filter": {
+            "hint": "Il semble qu'il n'y ait rien ici."
+        },
+        "search": {
+            "hint": "Votre recherche ne correspond à aucun fichier ou dossier"
         }
     },
     "filter": {
@@ -95,12 +102,15 @@
                     "confirm": "Copier"
                 },
                 "title": "Copier {{node.name}}",
-                "title_plurals": "Copier les éléments"
+                "title_plurals": "Copier les éléments",
+                "title_plural": "Copier les éléments"
             }
         },
         "alias": {
-            "name_LOCAL_CHAT_ROOT": "Team",
-            "name_LOCAL_ROOT": "Accueil"
+            "name_LOCAL_CHAT_ROOT": "Fichiers envoyés via Team",
+            "name_LOCAL_ROOT": "Accueil",
+            "name_SHARED_WITH_ME_ROOT": "Partagé avec moi",
+            "name_TRASH_ROOT": "Corbeille"
         },
         "move": {
             "modal": {
@@ -112,13 +122,17 @@
                 },
                 "subtitle": "Sélectionnez un dossier de destination :",
                 "title": "Déplacer {{node.name}}",
-                "title_plurals": "Déplacer les éléments"
+                "title_plurals": "Déplacer les éléments",
+                "title_plural": "Déplacer les éléments"
             },
             "error": {
                 "not": {
                     "allowed": "Vous ne pouvez pas déplacer plusieurs nœuds d'un filtre ou d'une recherche"
                 }
             }
+        },
+        "type": {
+            "folder": "Dossier"
         }
     },
     "primaryBar": {
@@ -135,7 +149,7 @@
             "myElements": "Mes éléments",
             "sharedElements": "Eléments partagés"
         },
-        "team": "Team",
+        "team": "Fichiers envoyés via Team",
         "uploads": "Chargements"
     },
     "snackbar": {
@@ -153,7 +167,8 @@
         },
         "moveNodes": {
             "error": "Quelque chose s'est mal passé, réessayez",
-            "success": "Elément déplacé vers le dossier de destination"
+            "success": "Élément déplacé",
+            "action": "Aller au dossier"
         },
         "restore": {
             "showInFolder": "Afficher dans le dossier",
@@ -162,6 +177,22 @@
         },
         "upload": {
             "goToFolder": "Aller dans le dossier"
+        },
+        "clipboard": {
+            "email": "Adresse e-mail copiée",
+            "itemShortcutCopied": "Raccourci de l'élément copié"
+        },
+        "copyNodes": {
+            "action": "Aller au dossier",
+            "error": "Quelque chose s'est mal passé, réessayez",
+            "success": "Élément copié"
+        },
+        "deletePermanently": {
+            "error": "Erreur",
+            "success": "Réussi"
+        },
+        "unflag": {
+            "success": "Élément décoché avec succès"
         }
     },
     "actions": {
@@ -184,7 +215,9 @@
     "search": {
         "header": {
             "search": "Rechercher",
-            "result": "Les résultats qui contiennent tous les mots-clés :"
+            "result": "Les résultats qui contiennent tous les mots-clés :",
+            "close": "Quitter la recherche",
+            "start": "Lancer une recherche"
         },
         "search": {
             "tooltip": {
@@ -204,7 +237,43 @@
                 "default": "Entrez votre recherche",
                 "active": "Séparez vos mots-clés par une virgule, un point-virgule ou en appuyant sur la touche TAB"
             }
-        }
+        },
+        "advancedSearch": {
+            "button": {
+                "filters": "{{count}} filtre avancé",
+                "filters_plural": "{{count}} filtres avancés",
+                "noFilter": "Filtres avancés"
+            },
+            "modal": {
+                "button": {
+                    "confirm": "Recherche",
+                    "reset": "Réinitialiser les filtres"
+                },
+                "flagged": {
+                    "description": "Filtrer les résultats par les éléments que vous avez marqué",
+                    "label": "Marqué"
+                },
+                "folder": {
+                    "label": "Dossier du Drive",
+                    "modal": {
+                        "cancel": "Retour",
+                        "cascade": "rechercher également dans les sous-dossiers",
+                        "confirm": "Choisir un dossier",
+                        "subtitle": "Sélectionner le dossier dans lequel vous souhaitez lancer la recherche avancée",
+                        "title": "Dossier du Drive"
+                    }
+                },
+                "keywords": {
+                    "label": "Mots-clés"
+                },
+                "shared": {
+                    "description": "Filtrer les résultats par les éléments qui contiennent au moins un collaborateur en plus de vous",
+                    "label": "Partagé"
+                },
+                "title": "Filtres avancés"
+            }
+        },
+        "resultsFor": "Résultats pour :"
     },
     "displayer": {
         "details": {
@@ -216,7 +285,14 @@
             "downloads": "Télécharger via le lien public",
             "lastEdit": "Dernière modification",
             "position": "Position",
-            "showPath": "Montrer le chemin"
+            "showPath": "Montrer le chemin",
+            "copyShortcut": "copier le raccourci de l'élément",
+            "editDescription": {
+                "closeIconTooltip": "Fermer sans sauvegarder",
+                "saveIconTooltip": "Sauvegarder les modifications",
+                "editIconTooltip": "Modifier la description"
+            },
+            "missingDescription": "Cliquer sur le bouton Modification pour ajouter une description"
         },
         "list": {
             "you": "Vous"
@@ -232,9 +308,10 @@
                         "viewerDescription": "Il ne pourra que visualiser ou télécharger le fichier ou le dossier"
                     },
                     "sharingAllowed": "Partage autorisé",
-                    "sharingAllowedDescription": "Description de ce qui se passera si cette case est cochée"
+                    "sharingAllowedDescription": "Il sera en mesure de gérer les partages du fichier ou du dossier"
                 },
-                "you": "Vous"
+                "you": "Vous",
+                "owner": "Propriétaire :"
             },
             "addShare": {
                 "checkbox": {
@@ -243,7 +320,9 @@
                 "input": {
                     "label": "Ajouter un message personnalisé à cette notification",
                     "placeholder": "Ajouter de nouvelles personnes ou de nouveaux groupes"
-                }
+                },
+                "note": "Note :",
+                "noteDescription": "Le message standard affiche votre nom, le nom de l'élément partagé, les autorisations accordées aux destinataires et les informations de connexion."
             },
             "noSharePermissionHeader": "Vous n'êtes pas autorisé à partager cet élément."
         },
@@ -251,18 +330,22 @@
             "preview": "Vous êtes dans un dossier"
         },
         "search": {
-            "message": "Vous trouverez ici tous les résultats de votre recherche",
-            "title": "Suggestions de recherche"
+            "message": "Ou cliquer sur le bouton \"Filtres avancés\" pour affiner votre recherche actuelle",
+            "title": "Voir vos résultats de recherche"
         },
         "tabs": {
             "activities": "Activités",
             "details": "Détails",
             "sharing": "Partage",
-            "versioning": "Versioning"
+            "versioning": "Version"
         },
         "uploads": {
             "message": "Vous trouverez ici tous les éléments en cours de téléchargement, vous pouvez les gérer à partir d'ici",
             "title": "Suggestions de téléchargement"
+        },
+        "generic": {
+            "message": "Cliquer sur un élément pour le sélectionner",
+            "title": "Visualiser les fichiers et les dossiers et les partager avec vos contacts"
         }
     },
     "docs": {
@@ -308,5 +391,35 @@
                 "enabled": "Mode glisser-déposer"
             }
         }
+    },
+    "breadcrumb": {
+        "expander": {
+            "hide": "Masquer le chemin du dossier",
+            "show": "Afficher le chemin du dossier"
+        }
+    },
+    "selectionMode": {
+        "header": {
+            "exit": "Sortir du mode de sélection",
+            "unselectAll": "Tout désélectionner",
+            "selectAll": "Tout sélectionner"
+        }
+    },
+    "sortingDropdown": {
+        "name": "Nom",
+        "size": "Taille",
+        "ascendingOrder": "Tri ascendant",
+        "descendingOrder": "Tri descendant",
+        "icon": {
+            "tooltip": {
+                "OrderLastUpdateAscending": "Tri ascendant par date de modification",
+                "OrderLastUpdateDescending": "Tri descendant par date de modification",
+                "OrderNameAscending": "Tri ascendant par nom",
+                "OrderNameDescending": "Tri descendant par nom",
+                "OrderSizeAscending": "Tri ascendant par taille",
+                "OrderSizeDescending": "Tri descendant par taille"
+            }
+        },
+        "lastUpdate": "Dernière mise à jour"
     }
 }

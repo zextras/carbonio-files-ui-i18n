@@ -14,6 +14,9 @@
         "folder": {
             "hint": "Hier gibt es scheinbar nichts.",
             "state": "Eine Datei ziehen oder eine neue erstellen, indem Sie auf \"NEU\" klicken"
+        },
+        "filter": {
+            "hint": "Hier gibt es scheinbar nichts."
         }
     },
     "filter": {
@@ -95,12 +98,15 @@
                     "confirm": "Kopieren"
                 },
                 "title": "Kopieren {{node.name}}",
-                "title_plurals": "Elemente kopieren"
+                "title_plurals": "Elemente kopieren",
+                "title_plural": "Elemente kopieren"
             }
         },
         "alias": {
             "name_LOCAL_ROOT": "Drive Home",
-            "name_LOCAL_CHAT_ROOT": "Team"
+            "name_LOCAL_CHAT_ROOT": "Team",
+            "name_TRASH_ROOT": "Papierkorb",
+            "name_SHARED_WITH_ME_ROOT": "Mit mir geteilt"
         },
         "move": {
             "modal": {
@@ -112,13 +118,17 @@
                 },
                 "subtitle": "Wählen Sie einen Zielordner aus:",
                 "title": "Verschieben {{node.name}}",
-                "title_plurals": "Elemente verschieben"
+                "title_plurals": "Elemente verschieben",
+                "title_plural": "Elemente verschieben"
             },
             "error": {
                 "not": {
                     "allowed": "Sie können nicht mehrere Knotenpunkte von einem Filter oder einer Suche verschieben"
                 }
             }
+        },
+        "type": {
+            "folder": "Ordner"
         }
     },
     "primaryBar": {
@@ -158,10 +168,22 @@
         },
         "moveNodes": {
             "error": "Etwas ist schiefgegangen, bitte versuchen Sie es erneut",
-            "success": "Element in den Zielordner verschoben"
+            "success": "Element in den Zielordner verschoben",
+            "action": "Zum Ordner gehen"
         },
         "upload": {
             "goToFolder": "Zum Ordner gehen"
+        },
+        "copyNodes": {
+            "action": "Zum Ordner gehen",
+            "error": "Etwas ist schiefgegangen, bitte versuchen Sie es erneut"
+        },
+        "deletePermanently": {
+            "error": "Fehler",
+            "success": "Erfolg"
+        },
+        "unflag": {
+            "success": "Markierung erfolgreich entfernt"
         }
     },
     "actions": {
@@ -191,7 +213,10 @@
             "content": "Inhalt",
             "downloads": "Über öffentlichen Link herunterladen",
             "lastEdit": "Letzte Bearbeitung",
-            "showPath": "Pfad anzeigen"
+            "showPath": "Pfad anzeigen",
+            "editDescription": {
+                "editIconTooltip": "Beschreibung bearbeiten"
+            }
         },
         "list": {
             "you": "Sie"
@@ -209,7 +234,8 @@
                     "sharingAllowed": "Teilen erlaubt",
                     "sharingAllowedDescription": "Beschreibung, was passiert, wenn dies ausgewählt wurde"
                 },
-                "you": "Sie"
+                "you": "Sie",
+                "owner": "Besitzer:"
             },
             "addShare": {
                 "checkbox": {
@@ -218,7 +244,9 @@
                 "input": {
                     "label": "Eine benutzerdefinierte Nachricht zur dieser Benachrichtigung hinzufügen",
                     "placeholder": "Neue Leute oder Gruppen hinzufügen"
-                }
+                },
+                "note": "Notizen:",
+                "noteDescription": "Die Standardnachricht zeigt Ihren Namen, den Namen des geteilten Elements, die verteilten Rechte für die Empfänger und Anmeldeinformationen."
             },
             "noSharePermissionHeader": "Sind dürfen dieses Element nicht teilen."
         },
@@ -243,7 +271,8 @@
     "search": {
         "header": {
             "search": "Suchen",
-            "result": "Ergebnisse, die alle Schlüsselwörter enthalten:"
+            "result": "Ergebnisse, die alle Schlüsselwörter enthalten:",
+            "start": "Suche starten"
         },
         "search": {
             "tooltip": {
@@ -263,7 +292,34 @@
                 "active": "Separieren Sie Ihre Schlüsselwörter mit einem Komma, Semikolon oder durch das Drücken der TAB Taste",
                 "default": "Tippen Sie Ihre Suche ein"
             }
-        }
+        },
+        "advancedSearch": {
+            "button": {
+                "noFilter": "Fortgeschrittene filter"
+            },
+            "modal": {
+                "button": {
+                    "confirm": "Suchen",
+                    "reset": "Filter zurücksetzen"
+                },
+                "folder": {
+                    "modal": {
+                        "cancel": "Zurück"
+                    }
+                },
+                "shared": {
+                    "label": "Geteilt"
+                },
+                "title": "Fortgeschrittene Filter",
+                "flagged": {
+                    "label": "Markiert"
+                },
+                "keywords": {
+                    "label": "Schlüsselwörter"
+                }
+            }
+        },
+        "resultsFor": "Ergebnisse für:"
     },
     "docs": {
         "create": {
@@ -308,5 +364,15 @@
         "destination": {
             "home": "Upload ausgeführt in Drive Home"
         }
+    },
+    "selectionMode": {
+        "header": {
+            "selectAll": "Alle auswählen",
+            "unselectAll": "Alle abwählen"
+        }
+    },
+    "sortingDropdown": {
+        "name": "Name",
+        "size": "Größe"
     }
 }
