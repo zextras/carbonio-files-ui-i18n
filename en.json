@@ -215,8 +215,8 @@
             "header": "Revoke {{nodeName}} public link"
         },
         "roots": {
-            "driveHome": "Home",
-            "rootsList": "Drive",
+            "filesHome": "Home",
+            "rootsList": "Files",
             "sharedWitMe": "Shared with me",
             "trash": {
                 "myElements": "My items",
@@ -228,7 +228,7 @@
     "node": {
         "alias": {
             "name_LOCAL_CHAT_ROOT": "Files sent via Team",
-            "name_LOCAL_ROOT": "Drive Home",
+            "name_LOCAL_ROOT": "Home",
             "name_SHARED_WITH_ME_ROOT": "Shared with me",
             "name_TRASH_ROOT": "Trash"
         },
@@ -332,13 +332,13 @@
                     "label": "Flagged"
                 },
                 "folder": {
-                    "label": "Drive folder",
+                    "label": "Select a folder",
                     "modal": {
                         "cancel": "Go back",
                         "cascade": "search also in contained folders",
                         "confirm": "Choose folder",
                         "subtitle": "Select the folder where to start the advanced search",
-                        "title": "Drive folder"
+                        "title": "Select a folder"
                     }
                 },
                 "keywords": {
@@ -379,7 +379,7 @@
         }
     },
     "secondaryBar": {
-        "driveHome": "Drive Home",
+        "filesHome": "Home",
         "filters": "Filters",
         "filtersList": {
             "flagged": "Flagged",
@@ -477,7 +477,7 @@
             "completed": "Clean completed uploads"
         },
         "destination": {
-            "home": "Upload occurred in Drive Home"
+            "home": "Upload occurred in Files' Home"
         },
         "dropzone": {
             "message": {
@@ -487,7 +487,7 @@
                     "enabled": "Drop here your attachments \n to quick-add them to this folder"
                 },
                 "otherView": {
-                    "enabled": "Drop here your attachments\nto quick-add them to your Drive Home"
+                    "enabled": "Drop here your attachments\nto quick-add them to your Home"
                 }
             },
             "title": {
