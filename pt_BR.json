@@ -28,6 +28,9 @@
         "folder": {
             "hint": "Parece que não há nada aqui.",
             "state": "Arraste um arquivo ou crie um novo clicando em \"NOVO\""
+        },
+        "filter": {
+            "hint": "Parece que não há nada aqui."
         }
     },
     "filter": {
@@ -109,12 +112,15 @@
                     "confirm": "Copiar"
                 },
                 "title": "Copiar {{node.name}}",
-                "title_plurals": "Copiar itens"
+                "title_plurals": "Copiar itens",
+                "title_plural": "Copiar itens"
             }
         },
         "alias": {
             "name_LOCAL_CHAT_ROOT": "Team",
-            "name_LOCAL_ROOT": "Drive Home"
+            "name_LOCAL_ROOT": "Drive Home",
+            "name_TRASH_ROOT": "Lixeira",
+            "name_SHARED_WITH_ME_ROOT": "Compartilhados comigo"
         },
         "move": {
             "modal": {
@@ -126,13 +132,17 @@
                 },
                 "subtitle": "Selecionar pasta de destino:",
                 "title": "Mover {{node.name}}",
-                "title_plurals": "Mover itens"
+                "title_plurals": "Mover itens",
+                "title_plural": "Mover itens"
             },
             "error": {
                 "not": {
                     "allowed": "Você não pode mover vários nós de um filtro ou pesquisa"
                 }
             }
+        },
+        "type": {
+            "folder": "Pasta"
         }
     },
     "primaryBar": {
@@ -153,7 +163,8 @@
         },
         "moveNodes": {
             "error": "Algo deu errado, tente novamente",
-            "success": "Item movido para a pasta de destino"
+            "success": "Item movido",
+            "action": "Ir para a pasta"
         },
         "restore": {
             "error": "Algo deu errado, tente novamente",
@@ -162,6 +173,17 @@
         },
         "upload": {
             "goToFolder": "Ir para a pasta"
+        },
+        "copyNodes": {
+            "action": "Ir para a pasta",
+            "error": "Algo deu errado, tente novamente"
+        },
+        "deletePermanently": {
+            "error": "Erro",
+            "success": "Sucesso"
+        },
+        "unflag": {
+            "success": "Retirada a sinalização com sucesso"
         }
     },
     "actions": {
@@ -184,7 +206,8 @@
     "search": {
         "header": {
             "search": "Buscar",
-            "result": "Resultados que contêm todas as palavras-chave:"
+            "result": "Resultados que contêm todas as palavras-chave:",
+            "start": "Iniciar busca"
         },
         "search": {
             "tooltip": {
@@ -204,7 +227,33 @@
                 "active": "Separe suas palavras-chave com uma vírgula, ponto e vírgula ou TAB",
                 "default": "Digite sua busca"
             }
-        }
+        },
+        "advancedSearch": {
+            "modal": {
+                "button": {
+                    "reset": "Redefinir filtros"
+                },
+                "flagged": {
+                    "label": "Sinalizado"
+                },
+                "folder": {
+                    "modal": {
+                        "cancel": "Voltar"
+                    }
+                },
+                "keywords": {
+                    "label": "Palavras-chave"
+                },
+                "shared": {
+                    "label": "Compartilhado"
+                },
+                "title": "Filtros Avançados"
+            },
+            "button": {
+                "noFilter": "Filtros avançados"
+            }
+        },
+        "resultsFor": "Resultados para:"
     },
     "displayer": {
         "details": {
@@ -216,7 +265,10 @@
             "downloads": "Download via link público",
             "lastEdit": "Última edição",
             "position": "Posição",
-            "showPath": "Exibir caminho"
+            "showPath": "Exibir caminho",
+            "editDescription": {
+                "editIconTooltip": "Editar descrição"
+            }
         },
         "list": {
             "you": "Você"
@@ -234,7 +286,8 @@
                     "sharingAllowed": "Compartilhamento permitido",
                     "sharingAllowedDescription": "Descrição do que vai acontecer caso isso esteja marcado"
                 },
-                "you": "Você"
+                "you": "Você",
+                "owner": "Proprietário:"
             },
             "addShare": {
                 "checkbox": {
@@ -243,7 +296,8 @@
                 "input": {
                     "label": "Adicionar mensagem personalizada a esta notificação",
                     "placeholder": "Adicionar novas pessoas ou grupos"
-                }
+                },
+                "noteDescription": "A mensagem padrão exibe seu nome, o nome do item compartilhado, as permissões concedidas aos destinatários e as informações de acesso."
             },
             "noSharePermissionHeader": "Você não pode compartilhar este item."
         },
@@ -308,5 +362,15 @@
         "destination": {
             "home": "Upload feito no Drive Home"
         }
+    },
+    "selectionMode": {
+        "header": {
+            "selectAll": "Marcar todos",
+            "unselectAll": "Desmarcar todos"
+        }
+    },
+    "sortingDropdown": {
+        "name": "Nome",
+        "size": "Tamanho"
     }
 }

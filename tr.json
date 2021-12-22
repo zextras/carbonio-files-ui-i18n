@@ -71,8 +71,15 @@
     },
     "empty": {
         "folder": {
-            "hint": "Burada hiçbir şey yok.",
-            "state": "Bir dosya sürükleyin veya \"YENİ\" tuşuna tıklayıp yeni bir tane oluşturun"
+            "hint": "Bu klasör boş",
+            "state": "Bir dosya sürükleyin veya \"YENİ\" tuşuna tıklayıp yeni bir tane oluşturun",
+            "displayerContent": "Bu klasör boş"
+        },
+        "filter": {
+            "hint": "Burada hiçbir şey yok."
+        },
+        "search": {
+            "hint": "Aramanız ile eşleşen hiçbir dosya veya klasör bulunamadı"
         }
     },
     "node": {
@@ -95,12 +102,15 @@
                     "confirm": "Kopyala"
                 },
                 "title": "Kopyala {{node.name}}",
-                "title_plurals": "Öğeleri kopyala"
+                "title_plurals": "Öğeleri kopyala",
+                "title_plural": "Öğeleri kopyala"
             }
         },
         "alias": {
-            "name_LOCAL_CHAT_ROOT": "Team",
-            "name_LOCAL_ROOT": "Drive Giriş"
+            "name_LOCAL_CHAT_ROOT": "Team ile gönderilmiş dosyalar",
+            "name_LOCAL_ROOT": "Drive Giriş",
+            "name_SHARED_WITH_ME_ROOT": "Benimle paylaşıldı",
+            "name_TRASH_ROOT": "Çöp Kutusu"
         },
         "move": {
             "modal": {
@@ -112,13 +122,17 @@
                 },
                 "subtitle": "Hedef klasör seçin:",
                 "title": "Taşı {{node.name}}",
-                "title_plurals": "Öğeleri taşı"
+                "title_plurals": "Öğeleri taşı",
+                "title_plural": "Öğeleri taşı"
             },
             "error": {
                 "not": {
                     "allowed": "Bir filtre veya aramadan birden fazla nod taşıyamazsınız"
                 }
             }
+        },
+        "type": {
+            "folder": "Klasör"
         }
     },
     "primaryBar": {
@@ -135,7 +149,7 @@
             "myElements": "Öğelerim",
             "sharedElements": "Paylaşılan Öğeler"
         },
-        "team": "Team",
+        "team": "Team ile gönderilmiş dosyalar",
         "uploads": "Yüklemeler"
     },
     "snackbar": {
@@ -153,7 +167,8 @@
         },
         "moveNodes": {
             "error": "Bir sorun oluştu, lütfen tekrar deneyin",
-            "success": "Öğe hedef klasöre taşındı"
+            "success": "Öğe taşındı",
+            "action": "Klasöre git"
         },
         "restore": {
             "error": "Bir sorun oluştu, lütfen tekrar deneyin",
@@ -162,6 +177,22 @@
         },
         "upload": {
             "goToFolder": "Klasöre git"
+        },
+        "clipboard": {
+            "itemShortcutCopied": "Öğe kısayolu kopyalandı",
+            "email": "E-posta adresi kopyalandı"
+        },
+        "copyNodes": {
+            "action": "Klasöre git",
+            "success": "Öğe kopyalandı",
+            "error": "Bir sorun oluştu, tekrar deneyin"
+        },
+        "deletePermanently": {
+            "error": "Hata",
+            "success": "Başarılı"
+        },
+        "unflag": {
+            "success": "Öğe bayrağı başarıyla kaldırıldı"
         }
     },
     "actions": {
@@ -191,7 +222,14 @@
             "downloads": "Genel bağlantıyı kullanarak indir",
             "lastEdit": "En son düzenleme",
             "position": "Yer",
-            "showPath": "Yolu göster"
+            "showPath": "Yolu göster",
+            "copyShortcut": "öğe kısayolunu kopyala",
+            "editDescription": {
+                "editIconTooltip": "Tanımı düzenle",
+                "saveIconTooltip": "Değişiklikleri kaydet",
+                "closeIconTooltip": "Kaydetmeden kapat"
+            },
+            "missingDescription": "Tanım eklemek için düzenle tuşuna tıklayın"
         },
         "list": {
             "you": "Siz"
@@ -207,9 +245,10 @@
                         "viewerDescription": "Dosya veya klasörü sadece görüntüleyecek veya indirebilecek"
                     },
                     "sharingAllowed": "Paylaşıma izin verildi",
-                    "sharingAllowedDescription": "Bu işaretlendiğinde ne olacağını belirten tanım"
+                    "sharingAllowedDescription": "Dosya veya klasör paylaşımlarını yönetin"
                 },
-                "you": "Siz"
+                "you": "Siz",
+                "owner": "Sahibi:"
             },
             "addShare": {
                 "checkbox": {
@@ -218,7 +257,9 @@
                 "input": {
                     "label": "Bu bildirime özel bir mesaj ekleyin",
                     "placeholder": "Yeni kişi veya gruplar ekle"
-                }
+                },
+                "note": "Not:",
+                "noteDescription": "Standart mesajda adınız, paylaşılan öğenin adı, alıcıya verilen izinler ve giriş bilgisi gösterilir."
             },
             "noSharePermissionHeader": "Bu öğeyi paylaşmak için izniniz yok."
         },
@@ -226,8 +267,8 @@
             "preview": "Bir klasör içindesiniz"
         },
         "search": {
-            "message": "Aramanızın tüm sonuçlarını burada görebilirsiniz",
-            "title": "Arama önerileri"
+            "message": "Veya \"Gelişmiş filtreleme\" tuşuna tıklayıp yaptığınız aramayı daha detaylandırabilirsiniz",
+            "title": "Arama sonuçlarınızı görüntüleyin"
         },
         "tabs": {
             "activities": "Aktiviteler",
@@ -238,12 +279,18 @@
         "uploads": {
             "message": "Yüklenmesi devam eden her öğeyi burada görebilirsiniz, buradan yönetebilirsiniz",
             "title": "Yükleme önerileri"
+        },
+        "generic": {
+            "message": "Seçmek için öğeye tıklayın",
+            "title": "Dosya ve klasörleri görün ve kişiler ile paylaşın"
         }
     },
     "search": {
         "header": {
             "search": "Ara",
-            "result": "Bütün anahtar kelimeleri içeren sonuçlar:"
+            "result": "Bütün anahtar kelimeleri içeren sonuçlar:",
+            "start": "Aramayı başlat",
+            "close": "Aramadan çık"
         },
         "search": {
             "tooltip": {
@@ -263,7 +310,43 @@
                 "clear": "Arama girişini sil",
                 "empty": "Arama girişi zaten silinmiş"
             }
-        }
+        },
+        "advancedSearch": {
+            "button": {
+                "filters": "{{count}} gelişmiş filtre",
+                "filters_plural": "{{count}} gelişmiş filtre",
+                "noFilter": "Gelişmiş filtreler"
+            },
+            "modal": {
+                "button": {
+                    "confirm": "Ara",
+                    "reset": "Filtreleri sıfırla"
+                },
+                "flagged": {
+                    "description": "Sonuçları bayrak işareti eklediğiniz öğlere göre filtrele",
+                    "label": "Bayraklı"
+                },
+                "folder": {
+                    "label": "Drive klasörü",
+                    "modal": {
+                        "cancel": "Geriye git",
+                        "cascade": "alt klasörleri de ara",
+                        "confirm": "Klasör seç",
+                        "title": "Drive klasörü",
+                        "subtitle": "Gelişmiş arama yapılacak klasörü seçin"
+                    }
+                },
+                "keywords": {
+                    "label": "Anahtar kelimeler"
+                },
+                "shared": {
+                    "label": "Paylaşıldı",
+                    "description": "Sonuçları sizden başka en az bir katılımcı daha olan öğlere göre filtrele"
+                },
+                "title": "Gelişmiş Filtreler"
+            }
+        },
+        "resultsFor": "Sonuçlar:"
     },
     "docs": {
         "create": {
@@ -308,5 +391,35 @@
                 "enabled": "Sürükle ve Bırak Modu"
             }
         }
+    },
+    "breadcrumb": {
+        "expander": {
+            "show": "Klasör yolunu göster",
+            "hide": "Klasör yolunu gizle"
+        }
+    },
+    "selectionMode": {
+        "header": {
+            "exit": "Seçme modundan çık",
+            "selectAll": "Tümünü seç",
+            "unselectAll": "tümünden seçimi kaldır"
+        }
+    },
+    "sortingDropdown": {
+        "ascendingOrder": "Artan Sıralı",
+        "descendingOrder": "Azalan Sıralı",
+        "icon": {
+            "tooltip": {
+                "OrderLastUpdateAscending": "Son güncellemeye göre artan sıralı",
+                "OrderLastUpdateDescending": "Son güncellemeye göre azalan sıralı",
+                "OrderNameAscending": "Ada göre artan sıralı",
+                "OrderNameDescending": "Ada göre azalan sıralı",
+                "OrderSizeAscending": "Boyuta göre artan sıralı",
+                "OrderSizeDescending": "Boyuta göre azalan sıralı"
+            }
+        },
+        "lastUpdate": "Son Güncelleme",
+        "name": "Ad",
+        "size": "Boyut"
     }
 }
