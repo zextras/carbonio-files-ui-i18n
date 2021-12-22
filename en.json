@@ -337,7 +337,7 @@
                         "cancel": "Go back",
                         "cascade": "search also in contained folders",
                         "confirm": "Choose folder",
-                        "subtitle": "Select the folder where to start the advanced search",
+                        "subtitle": "Result will be searched only inside the selected folder",
                         "title": "Select a folder"
                     }
                 },
