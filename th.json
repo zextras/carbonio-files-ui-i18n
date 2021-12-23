@@ -14,6 +14,9 @@
         "folder": {
             "hint": "ดูเหมือนว่าที่นี่ไม่มีอะไร",
             "state": "ลากไฟล์หรือสร้างไฟล์ใหม่โดยคลิกที่ \"ใหม่\""
+        },
+        "filter": {
+            "hint": "ดูเหมือนว่าที่นี่ไม่มีอะไร"
         }
     },
     "filter": {
@@ -91,7 +94,9 @@
         },
         "alias": {
             "name_LOCAL_CHAT_ROOT": "Team",
-            "name_LOCAL_ROOT": "หน้าหลัก Drive"
+            "name_LOCAL_ROOT": "หน้าหลัก Drive",
+            "name_SHARED_WITH_ME_ROOT": "แชร์กับฉัน",
+            "name_TRASH_ROOT": "ถังขยะ"
         },
         "copy": {
             "modal": {
@@ -99,7 +104,8 @@
                     "confirm": "คัดลอก"
                 },
                 "title": "คัดลอก {{node.name}}",
-                "title_plurals": "คัดลอกรายการ"
+                "title_plurals": "คัดลอกรายการ",
+                "title_plural": "คัดลอกรายการ"
             }
         },
         "move": {
@@ -112,13 +118,17 @@
                 },
                 "subtitle": "เลือกโฟลเดอร์ปลายทาง:",
                 "title": "ย้าย {{node.name}}",
-                "title_plurals": "ย้ายรายการ"
+                "title_plurals": "ย้ายรายการ",
+                "title_plural": "ย้ายรายการ"
             },
             "error": {
                 "not": {
                     "allowed": "คุณไม่สามารถย้ายหลายโหนดจากตัวกรองหรือการค้นหาได้"
                 }
             }
+        },
+        "type": {
+            "folder": "โฟลเดอร์"
         }
     },
     "primaryBar": {
@@ -158,10 +168,22 @@
         },
         "moveNodes": {
             "success": "ย้ายรายการไปยังโฟลเดอร์ปลายทางแล้ว",
-            "error": "เกิดข้อผิดพลาดบางอย่าง โปรดลองใหม่อีกครั้ง"
+            "error": "เกิดข้อผิดพลาดบางอย่าง โปรดลองใหม่อีกครั้ง",
+            "action": "ไปที่โฟลเดอร์"
         },
         "upload": {
             "goToFolder": "ไปที่โฟลเดอร์"
+        },
+        "copyNodes": {
+            "action": "ไปที่โฟลเดอร์",
+            "error": "เกิดข้อผิดพลาดบางอย่าง โปรดลองใหม่อีกครั้ง"
+        },
+        "deletePermanently": {
+            "error": "ผิดพลาด",
+            "success": "สำเร็จ"
+        },
+        "unflag": {
+            "success": "ยกเลิกการติดธงรายการเรียบร้อยแล้ว"
         }
     },
     "actions": {
@@ -198,7 +220,8 @@
                     },
                     "sharingAllowed": "อนุญาตให้แชร์",
                     "sharingAllowedDescription": "คำอธิบายว่าจะเกิดอะไรขึ้น หากเลือกไว้"
-                }
+                },
+                "owner": "เจ้าของ:"
             },
             "addShare": {
                 "checkbox": {
@@ -220,7 +243,10 @@
             "content": "เนื้อหา",
             "downloads": "ดาวน์โหลดผ่านลิงค์สาธารณะ",
             "lastEdit": "แก้ไขล่าสุด",
-            "showPath": "แสดงเส้นทาง"
+            "showPath": "แสดงเส้นทาง",
+            "editDescription": {
+                "editIconTooltip": "แก้ไขคำอธิบาย"
+            }
         },
         "tabs": {
             "details": "รายละเอียด",
@@ -263,7 +289,33 @@
                 "active": "แยกคำหลักของคุณด้วยเครื่องหมายจุลภาค, อัฒภาค, หรือกด TAB",
                 "default": "พิมพ์การค้นหาของคุณ"
             }
-        }
+        },
+        "advancedSearch": {
+            "modal": {
+                "keywords": {
+                    "label": "คำหลัก"
+                },
+                "button": {
+                    "confirm": "ค้นหา"
+                },
+                "flagged": {
+                    "label": "ติดธง"
+                },
+                "folder": {
+                    "modal": {
+                        "cancel": "ย้อนกลับ"
+                    }
+                },
+                "shared": {
+                    "label": "แชร์"
+                },
+                "title": "ตัวกรองขั้นสูง"
+            },
+            "button": {
+                "noFilter": "ตัวกรองขั้นสูง"
+            }
+        },
+        "resultsFor": "ผลลัพธ์สำหรับ:"
     },
     "docs": {
         "create": {
@@ -308,5 +360,9 @@
         "destination": {
             "home": "การอัปโหลดที่เกิดขึ้นใน Drive Home"
         }
+    },
+    "sortingDropdown": {
+        "name": "ชื่อ",
+        "size": "ขนาด"
     }
 }
