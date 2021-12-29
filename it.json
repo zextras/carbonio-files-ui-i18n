@@ -229,7 +229,12 @@
                     "sharingAllowed": "Condivisione concessa",
                     "sharingAllowedDescription": "Potrà gestire le condivisioni di file e cartelle"
                 },
-                "owner": "Proprietario:"
+                "owner": "Proprietario",
+                "tooltip": {
+                    "remove": {
+                        "collaborator": "Rimuovi {{username}}"
+                    }
+                }
             },
             "addShare": {
                 "checkbox": {
