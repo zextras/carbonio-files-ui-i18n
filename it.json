@@ -174,7 +174,7 @@
     "empty": {
         "folder": {
             "state": "Trascina un file o creane uno nuovo cliccando su \"NUOVO\"",
-            "hint": "Sembra che questa cartella sia vuota.",
+            "hint": "Sembra che questa cartella sia vuota",
             "displayerContent": "Questa cartella non ha contenuto"
         },
         "search": {
