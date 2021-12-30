@@ -37,10 +37,10 @@
                 "button": {
                     "confirm": "Créer"
                 },
-                "title": "Créer un nouveau dossier",
+                "title": "Créer un Nouveau Dossier",
                 "input": {
                     "label": {
-                        "name": "Nom du dossier"
+                        "name": "Nom du Dossier"
                     }
                 }
             }
@@ -55,7 +55,7 @@
             "button": {
                 "confirm": "Effacer définitivement"
             },
-            "body": "Vous supprimez définitivement cet élément/ces éléments. Vous ne pourrez plus récupérer ce(s) fichier(s). Cette action est irréversible.",
+            "body": "Vous allez supprimer définitivement cet élément/ces éléments. Vous ne pourrez plus récupérer ce(s) fichier(s). Cette action est irréversible.",
             "header": "Cette action est irréversible"
         },
         "roots": {
@@ -290,7 +290,10 @@
             "editDescription": {
                 "closeIconTooltip": "Fermer sans sauvegarder",
                 "saveIconTooltip": "Sauvegarder les modifications",
-                "editIconTooltip": "Modifier la description"
+                "editIconTooltip": "Modifier la description",
+                "input": {
+                    "label": "La longueur maximale autorisée est de 4096 caractères"
+                }
             },
             "missingDescription": "Cliquer sur le bouton Modification pour ajouter une description"
         },
@@ -311,7 +314,17 @@
                     "sharingAllowedDescription": "Il sera en mesure de gérer les partages du fichier ou du dossier"
                 },
                 "you": "Vous",
-                "owner": "Propriétaire :"
+                "owner": "Propriétaire",
+                "tooltip": {
+                    "edit": {
+                        "collaborator": "Modifier la collaboration de {{username}}",
+                        "you": "Modifier votre collaboration"
+                    },
+                    "remove": {
+                        "collaborator": "Supprimer {{username}}",
+                        "yourself": "Retirer votre collaboration"
+                    }
+                }
             },
             "addShare": {
                 "checkbox": {
@@ -421,5 +434,17 @@
             }
         },
         "lastUpdate": "Dernière mise à jour"
+    },
+    "errorCode": {
+        "code": "Quelque chose s'est mal passé",
+        "code_ACCOUNT_NOT_FOUND": "Il semble que cet utilisateur ne fasse pas partie du système Carbonio",
+        "code_Generic": "Quelque chose s'est mal passé",
+        "code_LINK_NOT_FOUND": "L'action a échoué. Ce lien n'existe plus",
+        "code_MISSING_FIELD": "Une erreur interne s'est produite, toutes les informations de cet objet n'ont pas été récupérées",
+        "code_NODE_WRITE_ERROR": "Il semble que cet objet ne puisse pas être modifié ou que vous n'ayez pas la permission de le modifier",
+        "code_SHARE_CREATION_ERROR": "Nous sommes désolés, mais il n'est pas possible de partager l'élément avec cet utilisateur",
+        "code_SHARE_NOT_FOUND": "Nous sommes désolés, mais ce partage est introuvable",
+        "code_FILE_VERSION_NOT_FOUND": "Nous sommes désolés, mais cette version du fichier est introuvable",
+        "code_NODE_NOT_FOUND": "Il semble que cet objet n'existe pas ou que vous n'avez pas la permission d'y accéder"
     }
 }
