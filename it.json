@@ -232,7 +232,11 @@
                 "owner": "Proprietario",
                 "tooltip": {
                     "remove": {
-                        "collaborator": "Rimuovi {{username}}"
+                        "collaborator": "Rimuovi {{username}}",
+                        "yourself": "Rimuovi la tua collaborazione"
+                    },
+                    "edit": {
+                        "you": "Modifica la tua collaborazione"
                     }
                 }
             },
@@ -262,7 +266,10 @@
             "editDescription": {
                 "closeIconTooltip": "Chiudi senza salvare",
                 "editIconTooltip": "Modifica descrizione",
-                "saveIconTooltip": "Salva modifiche"
+                "saveIconTooltip": "Salva modifiche",
+                "input": {
+                    "label": "Il numero massimo di caratteri consentiti è 4096"
+                }
             },
             "missingDescription": "Clicca sul pulsante modifica per aggiungere una descrizione",
             "copyShortcut": "Copia scorciatoia dell'elemento"
