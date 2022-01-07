@@ -42,7 +42,8 @@
                 "trash": "Çöp Kutusu",
                 "myElements": "Öğelerim",
                 "sharedWitMe": "Paylaşılan öğeler"
-            }
+            },
+            "filesHome": "Giriş"
         },
         "deleteShare": {
             "body": "{{shareTarget}} için önceden verilen tüm erişim izinlerini kaldırmak istediğinizden emin misiniz?",
@@ -56,6 +57,20 @@
                     "permissionLost": "Size daha önceden verilmiş tüm erişim izinleri kaybolacak."
                 }
             }
+        },
+        "removeLink": {
+            "body": "Bu bağlantı iptal olduğundan artık öğeye erişim için kullanılamaz. Bağlantıyı listeden kaldırabilir veya kullanmaya devam etmek için son kullanma tarihini ve diğer bilgileri güncelleyebilirsiniz",
+            "button": {
+                "confirm": "Kaldır"
+            },
+            "header": "{{nodeName}} genel erişim bağlantısını kaldır"
+        },
+        "revokeLink": {
+            "body": "Bu bağlantıyı iptal ederek, dosyaya erişim için bağlantıyı kullanan herkesin {{nodeName}} öğesine erişimini bloke edeceksiniz",
+            "button": {
+                "confirm": "İptal et"
+            },
+            "header": "{{nodeName}} genel erişim bağlantısını iptal et"
         }
     },
     "create": {
@@ -108,7 +123,7 @@
         },
         "alias": {
             "name_LOCAL_CHAT_ROOT": "Team ile gönderilmiş dosyalar",
-            "name_LOCAL_ROOT": "Drive Giriş",
+            "name_LOCAL_ROOT": "Giriş",
             "name_SHARED_WITH_ME_ROOT": "Benimle paylaşıldı",
             "name_TRASH_ROOT": "Çöp Kutusu"
         },
@@ -150,7 +165,8 @@
             "sharedElements": "Paylaşılan Öğeler"
         },
         "team": "Team ile gönderilmiş dosyalar",
-        "uploads": "Yüklemeler"
+        "uploads": "Yüklemeler",
+        "filesHome": "Giriş"
     },
     "snackbar": {
         "markForDeletion": {
@@ -176,7 +192,8 @@
             "success": "Başarılı"
         },
         "upload": {
-            "goToFolder": "Klasöre git"
+            "goToFolder": "Klasöre git",
+            "success": "{{destination}} hedefine yükleme yapıldı"
         },
         "clipboard": {
             "itemShortcutCopied": "Öğe kısayolu kopyalandı",
@@ -193,6 +210,18 @@
         },
         "unflag": {
             "success": "Öğe bayrağı başarıyla kaldırıldı"
+        },
+        "publicLink": {
+            "copyLink": "Genel bağlantı kopyalandı",
+            "linkUpdated": {
+                "label": "Genel bağlantı güncellendi"
+            },
+            "newPublicLinkGenerated": {
+                "label": "Yeni genel bağlantı oluşturuldu"
+            },
+            "actionLabel": {
+                "copyLink": "Bağlantıyı kopyala"
+            }
         }
     },
     "actions": {
@@ -227,7 +256,10 @@
             "editDescription": {
                 "editIconTooltip": "Tanımı düzenle",
                 "saveIconTooltip": "Değişiklikleri kaydet",
-                "closeIconTooltip": "Kaydetmeden kapat"
+                "closeIconTooltip": "Kaydetmeden kapat",
+                "input": {
+                    "label": "İzin verilen maksimum uzunluk 4096 karakterdir"
+                }
             },
             "missingDescription": "Tanım eklemek için düzenle tuşuna tıklayın"
         },
@@ -248,7 +280,17 @@
                     "sharingAllowedDescription": "Dosya veya klasör paylaşımlarını yönetin"
                 },
                 "you": "Siz",
-                "owner": "Sahibi:"
+                "owner": "Sahibi",
+                "tooltip": {
+                    "edit": {
+                        "collaborator": "{{username}}'in birlikte çalışma özelliklerini düzenleyin",
+                        "you": "Birlikte çalışma özelliklerinizi düzenleyin"
+                    },
+                    "remove": {
+                        "collaborator": "{{username}} kullanıcısını kaldır",
+                        "yourself": "Birlikte çalışma özelliklerinizi kaldırın"
+                    }
+                }
             },
             "addShare": {
                 "checkbox": {
@@ -327,13 +369,13 @@
                     "label": "Bayraklı"
                 },
                 "folder": {
-                    "label": "Drive klasörü",
+                    "label": "Klasör seçin",
                     "modal": {
                         "cancel": "Geriye git",
                         "cascade": "alt klasörleri de ara",
                         "confirm": "Klasör seç",
-                        "title": "Drive klasörü",
-                        "subtitle": "Gelişmiş arama yapılacak klasörü seçin"
+                        "title": "Klasör seçin",
+                        "subtitle": "Sadece seçilen klasörde arama yapılacak"
                     }
                 },
                 "keywords": {
@@ -373,7 +415,7 @@
             "completed": "Tamamlanmış yüklemeleri temizle"
         },
         "destination": {
-            "home": "Drive Giriş'e yükleme yapıldı"
+            "home": "Dosyalar Giriş'e yükleme yapıldı"
         },
         "dropzone": {
             "message": {
@@ -383,7 +425,7 @@
                     "enabled": "Klasöre hızlı eklemek için \neklerinizi buraya bırakın"
                 },
                 "otherView": {
-                    "enabled": "Drive Giriş'e hızlı eklemek için \neklerinizi buraya bırakın"
+                    "enabled": "Giriş'e hızlı eklemek için \neklerinizi buraya bırakın"
                 }
             },
             "title": {
@@ -421,5 +463,56 @@
         "lastUpdate": "Son Güncelleme",
         "name": "Ad",
         "size": "Boyut"
+    },
+    "errorCode": {
+        "code": "Bir hata oluştu",
+        "code_Generic": "Bir hata oluştu",
+        "code_LINK_NOT_FOUND": "İşlem yapılamadı. Bu bağlantı artık geçersiz",
+        "code_MISSING_FIELD": "Hata oluştu, bu öğeye ait tüm bilgi geri alınamadı",
+        "code_NODE_NOT_FOUND": "Bu öğe yok veya ona erişim izniniz bulunmuyor",
+        "code_NODE_WRITE_ERROR": "Bu öğe düzenlenemez veya onu düzenlemek için izniniz bulunmuyor",
+        "code_SHARE_CREATION_ERROR": "Üzgünüz, bu öğeyi bu kullanıcı ile paylaşamazsınız",
+        "code_SHARE_NOT_FOUND": "Üzgünüz, bu paylaşım bulunamadı",
+        "code_ACCOUNT_NOT_FOUND": "Bu kullanıcı Carbonio sisteminde bulunmuyor",
+        "code_FILE_VERSION_NOT_FOUND": "Üzgünüz, dosyanın bu versiyonu bulunamadı"
+    },
+    "publicLink": {
+        "addLink": {
+            "addLink": "Bağlantı ekle",
+            "limitReached": "Genel kullanım bağlantısı için maksimum değere ulaşıldı",
+            "title": "Genel bağlantı",
+            "undo": "Geri al",
+            "generateLink": "Bağlantı oluştur"
+        },
+        "dateTimePicker": {
+            "label": "İptal Tarihi"
+        },
+        "input": {
+            "description": {
+                "error": {
+                    "maxLengthAllowed": "İzin verilen maksimum uzunluk 300 karakterdir"
+                }
+            },
+            "label": "Bağlantı tanımı"
+        },
+        "link": {
+            "edit": "Düzenle",
+            "editLink": "Bağlantıyı düzenle",
+            "expireOn": "İptal tarihi:",
+            "expiredOn": "Bağlantının iptal olduğu tarih:",
+            "noExpirationDate": "Son kullanım tarihi yok",
+            "remove": "Kaldır",
+            "revoke": "İptal et",
+            "undo": "Geri al",
+            "urlChip": {
+                "tooltip": {
+                    "copy": "Genel bağlantıyı kopyala",
+                    "expired": "Bağlantı iptal oldu"
+                }
+            }
+        },
+        "datePickerInput": {
+            "description": "Seçilen gün sonunda bağlantı iptal olur"
+        }
     }
 }

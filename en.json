@@ -477,7 +477,7 @@
             "completed": "Clean completed uploads"
         },
         "destination": {
-            "home": "Upload occurred in Files' Home"
+            "home": "Upload occurred in Files Home"
         },
         "dropzone": {
             "message": {

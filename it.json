@@ -90,7 +90,7 @@
         },
         "alias": {
             "name_LOCAL_CHAT_ROOT": "File inviati via Team",
-            "name_LOCAL_ROOT": "Home Drive",
+            "name_LOCAL_ROOT": "Home",
             "name_SHARED_WITH_ME_ROOT": "Condivisi con me",
             "name_TRASH_ROOT": "Cestino"
         },
@@ -174,7 +174,7 @@
     "empty": {
         "folder": {
             "state": "Trascina un file o creane uno nuovo cliccando su \"NUOVO\"",
-            "hint": "Sembra che questa cartella sia vuota.",
+            "hint": "Sembra che questa cartella sia vuota",
             "displayerContent": "Questa cartella non ha contenuto"
         },
         "search": {
@@ -229,7 +229,16 @@
                     "sharingAllowed": "Condivisione concessa",
                     "sharingAllowedDescription": "Potrà gestire le condivisioni di file e cartelle"
                 },
-                "owner": "Proprietario:"
+                "owner": "Proprietario",
+                "tooltip": {
+                    "remove": {
+                        "collaborator": "Rimuovi {{username}}",
+                        "yourself": "Rimuovi la tua collaborazione"
+                    },
+                    "edit": {
+                        "you": "Modifica la tua collaborazione"
+                    }
+                }
             },
             "addShare": {
                 "checkbox": {
@@ -257,7 +266,10 @@
             "editDescription": {
                 "closeIconTooltip": "Chiudi senza salvare",
                 "editIconTooltip": "Modifica descrizione",
-                "saveIconTooltip": "Salva modifiche"
+                "saveIconTooltip": "Salva modifiche",
+                "input": {
+                    "label": "Il numero massimo di caratteri consentiti è 4096"
+                }
             },
             "missingDescription": "Clicca sul pulsante modifica per aggiungere una descrizione",
             "copyShortcut": "Copia scorciatoia dell'elemento"
