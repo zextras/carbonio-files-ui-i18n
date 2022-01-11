@@ -51,6 +51,7 @@
             "lastEdit": "Last edit",
             "missingDescription": "Click the edit button to add a description",
             "position": "Position",
+            "sendMailTo": "Send e-mail to: {{email}}",
             "showPath": "Show path",
             "size": "Size"
         },
