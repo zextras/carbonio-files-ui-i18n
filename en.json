@@ -400,6 +400,9 @@
             "exit": "Exit selection mode",
             "selectAll": "Select all",
             "unselectAll": "Deselect all"
+        },
+        "node": {
+            "tooltip": "Activate selection mode"
         }
     },
     "snackbar": {
