@@ -180,6 +180,9 @@
             "cancel": "Cancel",
             "confirm": "Confirm"
         },
+        "close": {
+            "tooltip": "Close"
+        },
         "deletePermanently": {
             "body": "You will delete permanently this item/these items. You will not be able to recover this file/these files anymore. This action is irreversible.",
             "button": {
