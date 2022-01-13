@@ -35,6 +35,7 @@
     "displayer": {
         "details": {
             "collaborators": "Collaborators",
+            "collaboratorsTooltip": "See the list of collaborators",
             "content": "Content",
             "copyShortcut": "copy item's shortcut",
             "createdBy": "Created by",
@@ -50,6 +51,7 @@
             },
             "lastEdit": "Last edit",
             "missingDescription": "Click the edit button to add a description",
+            "owner": "Owner",
             "position": "Position",
             "sendMailTo": "Send e-mail to: {{email}}",
             "showPath": "Show path",
