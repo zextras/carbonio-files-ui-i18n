@@ -140,7 +140,11 @@
     },
     "empty": {
         "filter": {
-            "hint": "It looks like there's nothing here."
+            "flagged": "There are no flagged items.",
+            "hint": "It looks like there's nothing here.",
+            "sharedByMe": "You haven't shared any item with your collaborators yet. ",
+            "sharedWithMe": "There are no items shared with you yet.",
+            "trash": "The trash is empty."
         },
         "folder": {
             "displayerContent": "This folder has no content",
@@ -241,7 +245,10 @@
         "copy": {
             "modal": {
                 "button": {
-                    "confirm": "Copy"
+                    "confirm": "Copy",
+                    "tooltip": {
+                        "confirm": "You can't perform this action here"
+                    }
                 },
                 "title": "Copy {{node.name}}",
                 "title_plural": "Copy items"
@@ -255,7 +262,10 @@
             },
             "modal": {
                 "button": {
-                    "confirm": "Move"
+                    "confirm": "Move",
+                    "tooltip": {
+                        "confirm": "You can't perform this action here"
+                    }
                 },
                 "input": {
                     "filter": "Filter folders"
