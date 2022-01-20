@@ -66,7 +66,8 @@
                 "trash": "Corbeille",
                 "myElements": "Mes éléments",
                 "sharedWitMe": "Eléments partagés"
-            }
+            },
+            "filesHome": "Accueil"
         },
         "deleteShare": {
             "body": "Êtes-vous certain de vouloir supprimer toutes les autorisations d'accès précédemment accordées à {{shareTarget}} ?",
@@ -80,6 +81,20 @@
                     "permissionLost": "Toutes les autorisations d'accès qui vous ont été accordées précédemment seront perdues."
                 }
             }
+        },
+        "removeLink": {
+            "button": {
+                "confirm": "Supprimer"
+            },
+            "header": "Supprimer le lien publique {{nodeName}}",
+            "body": "Ce lien a expiré, il ne peut donc plus être utilisé pour accéder à l'élément. Vous pouvez supprimer le lien de la liste ou mettre à jour sa date d'expiration et d'autres informations afin de continuer à l'utiliser"
+        },
+        "revokeLink": {
+            "body": "En révoquant ce lien, vous bloquez l'accès à {{nodeName}} pour toute personne qui tente d'utiliser le lien pour accéder au fichier",
+            "button": {
+                "confirm": "Révoquer"
+            },
+            "header": "Révoquer le lien publique {{nodeName}}"
         }
     },
     "node": {
@@ -150,7 +165,8 @@
             "sharedElements": "Eléments partagés"
         },
         "team": "Fichiers envoyés via Team",
-        "uploads": "Chargements"
+        "uploads": "Chargements",
+        "filesHome": "Accueil"
     },
     "snackbar": {
         "markForDeletion": {
@@ -176,7 +192,8 @@
             "error": "Quelque chose s'est mal passé, réessayez"
         },
         "upload": {
-            "goToFolder": "Aller dans le dossier"
+            "goToFolder": "Aller dans le dossier",
+            "success": "Le téléchargement a eu lieu dans {{destination}}"
         },
         "clipboard": {
             "email": "Adresse e-mail copiée",
@@ -193,6 +210,18 @@
         },
         "unflag": {
             "success": "Élément décoché avec succès"
+        },
+        "publicLink": {
+            "actionLabel": {
+                "copyLink": "Copier le lien"
+            },
+            "copyLink": "Lien publique copié",
+            "linkUpdated": {
+                "label": "Lien publique mis à jour"
+            },
+            "newPublicLinkGenerated": {
+                "label": "Nouveau lien publique généré"
+            }
         }
     },
     "actions": {
@@ -254,13 +283,13 @@
                     "label": "Marqué"
                 },
                 "folder": {
-                    "label": "Dossier du Drive",
+                    "label": "Sélectionner un dossier",
                     "modal": {
                         "cancel": "Retour",
                         "cascade": "rechercher également dans les sous-dossiers",
                         "confirm": "Choisir un dossier",
-                        "subtitle": "Sélectionner le dossier dans lequel vous souhaitez lancer la recherche avancée",
-                        "title": "Dossier du Drive"
+                        "subtitle": "Les résultats seront recherchés seulement dans le dossier sélectionné",
+                        "title": "Sélectionner un dossier"
                     }
                 },
                 "keywords": {
@@ -386,7 +415,7 @@
             "completed": "Nettoyer les téléchargements terminés"
         },
         "destination": {
-            "home": "Le téléchargement a été fait dans Drive Home"
+            "home": "Le téléchargement a été fait dans l'Accueil des fichiers"
         },
         "dropzone": {
             "message": {
@@ -396,7 +425,7 @@
                 },
                 "disabled": "Vous ne pouvez pas déposer une pièce jointe dans cette zone",
                 "otherView": {
-                    "enabled": "Déposez ici vos pièces jointes \n pour les ajouter rapidement Drive Home"
+                    "enabled": "Déposez ici vos pièces jointes\npour les ajouter rapidement à l'Accueil"
                 }
             },
             "title": {
@@ -446,5 +475,44 @@
         "code_SHARE_NOT_FOUND": "Nous sommes désolés, mais ce partage est introuvable",
         "code_FILE_VERSION_NOT_FOUND": "Nous sommes désolés, mais cette version du fichier est introuvable",
         "code_NODE_NOT_FOUND": "Il semble que cet objet n'existe pas ou que vous n'avez pas la permission d'y accéder"
+    },
+    "publicLink": {
+        "addLink": {
+            "addLink": "Ajouter un lien",
+            "generateLink": "Générer un lien",
+            "limitReached": "Le nombre maximum de lien publique a été atteint",
+            "title": "Lien publique",
+            "undo": "Retour arrière"
+        },
+        "datePickerInput": {
+            "description": "Le lien expire a la fin du jour sélectionné"
+        },
+        "dateTimePicker": {
+            "label": "Date d'expiration"
+        },
+        "input": {
+            "description": {
+                "error": {
+                    "maxLengthAllowed": "Le nombre de caractères maximum est de 300"
+                }
+            },
+            "label": "Description du lien"
+        },
+        "link": {
+            "edit": "Modifier",
+            "editLink": "Modifier le lien",
+            "expireOn": "Expire le :",
+            "expiredOn": "Le lien a expiré le :",
+            "noExpirationDate": "N'a pas de date d'expiration",
+            "remove": "Supprimer",
+            "revoke": "Révoquer",
+            "undo": "Revenir en arrière",
+            "urlChip": {
+                "tooltip": {
+                    "copy": "Copier le lien pulique",
+                    "expired": "Ce lien a expiré"
+                }
+            }
+        }
     }
 }
