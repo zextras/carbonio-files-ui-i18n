@@ -34,7 +34,8 @@
                 "trash": "Papelera",
                 "myElements": "Mis elementos",
                 "sharedWitMe": "Elementos compartidos"
-            }
+            },
+            "filesHome": "Home"
         },
         "deleteShare": {
             "button": {
@@ -47,6 +48,16 @@
                     "answer": "¿Seguro que quieres quitarte tú mismo de esta colaboración?",
                     "permissionLost": "Se perderán todos los permisos de acceso que te hayan otorgado."
                 }
+            }
+        },
+        "removeLink": {
+            "button": {
+                "confirm": "Remover"
+            }
+        },
+        "revokeLink": {
+            "button": {
+                "confirm": "Revocar"
             }
         }
     },
@@ -66,7 +77,7 @@
         },
         "alias": {
             "name_LOCAL_CHAT_ROOT": "Team",
-            "name_LOCAL_ROOT": "Home de Drive",
+            "name_LOCAL_ROOT": "Home",
             "name_SHARED_WITH_ME_ROOT": "Compartido conmigo",
             "name_TRASH_ROOT": "Papelera"
         },
@@ -118,7 +129,8 @@
             "sharedElements": "Elementos compartidos"
         },
         "team": "Team",
-        "uploads": "Subidas"
+        "uploads": "Subidas",
+        "filesHome": "Home"
     },
     "snackbar": {
         "markForDeletion": {
@@ -140,7 +152,7 @@
         },
         "moveNodes": {
             "error": "Algo fue mal, prueba de nuevo",
-            "success": "Elemento movido a la carpeta de destino",
+            "success": "Elemento movido",
             "action": "Ir a carpeta"
         },
         "upload": {
@@ -156,6 +168,11 @@
         },
         "unflag": {
             "success": "Elemento desmarcado con éxito"
+        },
+        "publicLink": {
+            "actionLabel": {
+                "copyLink": "Copiar Enlace"
+            }
         }
     },
     "create": {
@@ -221,7 +238,7 @@
                     "sharingAllowed": "Compartir permitido",
                     "sharingAllowedDescription": "Descripción de qué ocurrirá si esto está seleccionado"
                 },
-                "owner": "Propietario:"
+                "owner": "Propietario"
             },
             "addShare": {
                 "checkbox": {
@@ -307,8 +324,10 @@
                 },
                 "folder": {
                     "modal": {
-                        "cancel": "Regresar"
-                    }
+                        "cancel": "Regresar",
+                        "title": "Seleccionar carpeta"
+                    },
+                    "label": "Seleccionar carpeta"
                 },
                 "keywords": {
                     "label": "Palabras clave"
@@ -346,7 +365,7 @@
             "completed": "Limpiar subidas completadas"
         },
         "destination": {
-            "home": "Subida realizada en Drive Home"
+            "home": "Subida realizada en Files Home"
         },
         "dropzone": {
             "message": {
@@ -356,7 +375,7 @@
                     "disabled": "No puedes soltar un archivo adjunto en este área"
                 },
                 "otherView": {
-                    "enabled": "Suelta aquí tus archivos adjuntos\npara añadirlos rápidamente a tu Drive Home"
+                    "enabled": "Suelta aquí tus archivos adjuntos\npara añadirlos rápidamente a tu Home"
                 }
             },
             "title": {
@@ -374,5 +393,22 @@
     "sortingDropdown": {
         "name": "Nombre",
         "size": "Tamaño"
+    },
+    "errorCode": {
+        "code": "Algo ha salido mal",
+        "code_Generic": "Algo ha salido mal"
+    },
+    "publicLink": {
+        "addLink": {
+            "generateLink": "Generar enlace",
+            "undo": "Deshacer",
+            "title": "Enlace Público"
+        },
+        "link": {
+            "edit": "Editar",
+            "remove": "Remover",
+            "revoke": "Revocar",
+            "undo": "Deshacer"
+        }
     }
 }
