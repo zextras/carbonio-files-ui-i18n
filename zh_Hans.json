@@ -31,7 +31,7 @@
                     "sharingAllowedDescription": "勾选后会发生什么的描述"
                 },
                 "you": "您",
-                "owner": "所有者："
+                "owner": "所有者"
             },
             "noSharePermissionHeader": "您无法共享此项目。",
             "addShare": {
