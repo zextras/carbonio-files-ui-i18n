@@ -232,9 +232,6 @@
             "message": "Semua hasil pencarian Anda di sini",
             "title": "Saran pencarian"
         },
-        "folder": {
-            "preview": "Anda di dalam folder"
-        },
         "uploads": {
             "title": "Unggah saran",
             "message": "Semua item yang sedang diunggah ada di sini, dan Anda bisa mengelolanya dari sini"

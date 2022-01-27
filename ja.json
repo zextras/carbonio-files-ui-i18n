@@ -255,9 +255,6 @@
             "sharing": "共有",
             "versioning": "バージョニング"
         },
-        "folder": {
-            "preview": "フォルダにいます"
-        },
         "search": {
             "message": "ここで、検索結果をすべて見つけられます",
             "title": "検索候補"

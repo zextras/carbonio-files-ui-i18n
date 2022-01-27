@@ -57,6 +57,134 @@
             "showPath": "Show path",
             "size": "Size"
         },
+        "filter": {
+            "flagged_empty": [
+                {
+                    "message": " You'll find it here whenever you'll need it.",
+                    "title": "Click the flag to mark an item."
+                },
+                {
+                    "message": "They'll be listed here.",
+                    "title": "Flag your most important items by clicking the flag."
+                }
+            ],
+            "flagged_full": [
+                {
+                    "message": "You'll find it here whenever you'll need it.",
+                    "title": "Click the flag to mark an item."
+                },
+                {
+                    "message": "They'll be listed here.",
+                    "title": "Flag your most important items by clicking the flag."
+                }
+            ],
+            "sharedByMe_empty": [
+                {
+                    "message": "Select an item to proceed.",
+                    "title": "Review and edit the items you've shared with your contacts."
+                },
+                {
+                    "message": "Click an item to select it.",
+                    "title": "View details of folders you've shared."
+                },
+                {
+                    "message": "Click an item to select it.",
+                    "title": "Find here all the items shared with your contacts."
+                }
+            ],
+            "sharedByMe_full": [
+                {
+                    "message": "Select an item to proceed.",
+                    "title": "Review and edit the items you've shared with your contacts. "
+                },
+                {
+                    "message": "Click an item to select it.",
+                    "title": "View details of folders you've shared."
+                }
+            ],
+            "sharedWithMe_empty": [
+                {
+                    "message": "Click the \"NEW\" button to create a new document and share it with your contacts.",
+                    "title": "There are no items shared with you yet."
+                },
+                {
+                    "message": "Let other users know that you're ready to collaborate with them.",
+                    "title": "Click the \"NEW\" button and create a new e-mail."
+                }
+            ],
+            "sharedWithMe_full": [
+                {
+                    "message": "Click an item to select it.",
+                    "title": "Start editing and sharing your files."
+                },
+                {
+                    "message": "Click an item to select it.",
+                    "title": "View your folders' details and share them with your contacts."
+                },
+                {
+                    "title": "Select an item and start working on it with other users."
+                }
+            ],
+            "trash_empty": [
+                {
+                    "message": "Click on the trash icon to delete an item.",
+                    "title": "Move to trash everything you don't need."
+                },
+                {
+                    "message": "Click the trash icon to delete an item.",
+                    "title": "The trash is empty."
+                },
+                {
+                    "title": "Keep your workspace clean: delete all items you don't need anymore."
+                }
+            ],
+            "trash_full": [
+                {
+                    "title": "Select and restore your documents that are now in the trash."
+                },
+                {
+                    "message": "Select an item to restore it or delete it permanently.",
+                    "title": "Nothing is lost!"
+                },
+                {
+                    "message": "Or, when possible, select it and restore it in its original folder.",
+                    "title": "Select an item to delete it permanently."
+                }
+            ]
+        },
+        "folder_empty": [
+            {
+                "title": "Click the \"NEW\" button to create a new item and share it with your contacts."
+            },
+            {
+                "message": "Create a file by clicking the \"NEW\" button",
+                "title": "Start editing and sharing your works."
+            },
+            {
+                "message": "You'll be able to edit, flagged and share it.",
+                "title": "Click the \"NEW\" button to create a new item."
+            }
+        ],
+        "folder_full": [
+            {
+                "message": "Click an item to select it.",
+                "title": "Start editing and sharing your files."
+            },
+            {
+                "message": "Click an item to select it.",
+                "title": "View your folders' details and share them with your contacts."
+            },
+            {
+                "title": "Select a folder to edit or rename its content."
+            },
+            {
+                "message": "Select the item and then go to the \"Shares\" tab",
+                "title": "Provide your contacts with editing rights to let them edit an item."
+            },
+            {
+                "title": "Select an item to share or move it to another folder."
+            }
+        ],
         "generic": {
             "message": "Click an item to select it",
             "title": "View files and folders, share them with your contacts"
@@ -344,7 +472,7 @@
                     "reset": "Reset filters"
                 },
                 "flagged": {
-                    "description": "Filter the results by items that you’ve flagged",
+                    "description": "Filter the results by items that you've flagged",
                     "label": "Flagged"
                 },
                 "folder": {

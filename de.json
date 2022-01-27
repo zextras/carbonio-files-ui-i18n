@@ -256,9 +256,6 @@
             "sharing": "Wird geteilt",
             "versioning": "Versionierung"
         },
-        "folder": {
-            "preview": "Sie befinden sich in einem Ordner"
-        },
         "search": {
             "message": "Hier können Sie alle Ergebnisse für Ihre Suche finden",
             "title": "Suchvorschläge"

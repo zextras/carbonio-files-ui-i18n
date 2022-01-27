@@ -256,9 +256,6 @@
             "sharing": "Delen",
             "versioning": "Versiebeheer"
         },
-        "folder": {
-            "preview": "U bent in een folder"
-        },
         "search": {
             "message": "Hier vindt u alle resultaten van uw zoekopdracht",
             "title": "Suggesties zoeken"
