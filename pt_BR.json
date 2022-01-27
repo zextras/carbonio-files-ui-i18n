@@ -11,7 +11,8 @@
         "team": "Team",
         "driveHome": "Drive Home",
         "filters": "Filtros",
-        "uploads": "Uploads"
+        "uploads": "Uploads",
+        "filesHome": "Home"
     },
     "create": {
         "options": {
@@ -76,7 +77,8 @@
                 "trash": "Lixeira",
                 "myElements": "Meus itens",
                 "sharedWitMe": "Itens compartilhados"
-            }
+            },
+            "filesHome": "Home"
         },
         "deleteShare": {
             "body": "Tem certeza que deseja remover toda a permissão de acesso concedida a {{shareTarget}} ?",
@@ -89,6 +91,16 @@
                     "answer": "Tem certeza que deseja se remover desta colaboração?",
                     "permissionLost": "Toda permissão de acesso já concedida a você será perdida."
                 }
+            }
+        },
+        "removeLink": {
+            "button": {
+                "confirm": "Remover"
+            }
+        },
+        "revokeLink": {
+            "button": {
+                "confirm": "Revogar"
             }
         }
     },
@@ -184,6 +196,11 @@
         },
         "unflag": {
             "success": "Retirada a sinalização com sucesso"
+        },
+        "publicLink": {
+            "actionLabel": {
+                "copyLink": "Copiar Link"
+            }
         }
     },
     "actions": {
@@ -231,15 +248,18 @@
         "advancedSearch": {
             "modal": {
                 "button": {
-                    "reset": "Redefinir filtros"
+                    "reset": "Redefinir filtros",
+                    "confirm": "Buscar"
                 },
                 "flagged": {
                     "label": "Sinalizado"
                 },
                 "folder": {
                     "modal": {
-                        "cancel": "Voltar"
-                    }
+                        "cancel": "Voltar",
+                        "title": "Selecione a pasta"
+                    },
+                    "label": "Selecione a pasta"
                 },
                 "keywords": {
                     "label": "Palavras-chave"
@@ -372,5 +392,21 @@
     "sortingDropdown": {
         "name": "Nome",
         "size": "Tamanho"
+    },
+    "errorCode": {
+        "code": "Algo deu errado",
+        "code_Generic": "Algo deu errado"
+    },
+    "publicLink": {
+        "addLink": {
+            "generateLink": "Gerar link",
+            "undo": "Desfazer"
+        },
+        "link": {
+            "edit": "Editar",
+            "remove": "Remover",
+            "revoke": "Revogar",
+            "undo": "Desfazer"
+        }
     }
 }
