@@ -112,7 +112,8 @@
             "sharedElements": "शेयर किए गए एलीमेंट"
         },
         "team": "फाइल Team के माध्यम से भेजी गई",
-        "uploads": "अपलोड"
+        "uploads": "अपलोड",
+        "filesHome": "होम"
     },
     "modal": {
         "button": {
@@ -134,7 +135,8 @@
                 "trash": "रद्दी",
                 "myElements": "मेरे आइटम",
                 "sharedWitMe": "शेयर किए आइटम"
-            }
+            },
+            "filesHome": "होम"
         },
         "deleteShare": {
             "button": {
@@ -147,6 +149,16 @@
                     "answer": "क्या आप वाकई में खुद को इस टीम काम से हटाना चाहते हैं?",
                     "permissionLost": "आपको पहले दी गई सभी एक्सेस अनुमतियाँ खत्म हो जाएंगी।"
                 }
+            }
+        },
+        "removeLink": {
+            "button": {
+                "confirm": "हटाएँ"
+            }
+        },
+        "revokeLink": {
+            "button": {
+                "confirm": "बंद करें"
             }
         }
     },
@@ -191,6 +203,11 @@
         },
         "download": {
             "start": "आपका डाऊनलोड जल्दी ही शुरू होगा"
+        },
+        "publicLink": {
+            "actionLabel": {
+                "copyLink": "लिंक कॉपी करें"
+            }
         }
     },
     "actions": {
@@ -418,6 +435,22 @@
         "expander": {
             "hide": "फोल्डर का पाथ छिपाएँ",
             "show": "फोल्डर का पाथ दिखाएँ"
+        }
+    },
+    "errorCode": {
+        "code": "कुछ गड़बड़ हुई",
+        "code_Generic": "कुछ गड़बड़ हुई"
+    },
+    "publicLink": {
+        "addLink": {
+            "generateLink": "लिंक बनाएँ",
+            "undo": "अनडू करें"
+        },
+        "link": {
+            "edit": "बदलाव करें",
+            "remove": "हटाएँ",
+            "revoke": "बंद करें",
+            "undo": "अनडू करें"
         }
     }
 }
