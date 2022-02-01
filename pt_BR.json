@@ -307,7 +307,7 @@
                     "sharingAllowedDescription": "Descrição do que vai acontecer caso isso esteja marcado"
                 },
                 "you": "Você",
-                "owner": "Proprietário:"
+                "owner": "Proprietário"
             },
             "addShare": {
                 "checkbox": {
