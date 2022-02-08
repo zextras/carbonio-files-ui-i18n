@@ -256,10 +256,6 @@
             "sharing": "Delen",
             "versioning": "Versiebeheer"
         },
-        "search": {
-            "message": "Hier vindt u alle resultaten van uw zoekopdracht",
-            "title": "Suggesties zoeken"
-        },
         "uploads": {
             "message": "Hier vindt u alle items die momenteel aan het uploaden zijn, u kunt ze van hieruit beheren",
             "title": "Suggesties uploaden"

@@ -339,10 +339,6 @@
             },
             "noSharePermissionHeader": "Vous n'êtes pas autorisé à partager cet élément."
         },
-        "search": {
-            "message": "Ou cliquer sur le bouton \"Filtres avancés\" pour affiner votre recherche actuelle",
-            "title": "Voir vos résultats de recherche"
-        },
         "tabs": {
             "activities": "Activités",
             "details": "Détails",

@@ -193,9 +193,31 @@
             "you": "You"
         },
         "search": {
-            "message": "Or click the \"Advanced filter\" button to refine your current search",
-            "title": "View your search's results"
+            "title": "Type some keywords to start a search."
         },
+        "search_empty": [
+            {
+                "message": "Or select “Advanced Filters” to refine your search.",
+                "title": "Start another search."
+            },
+            {
+                "message": "Don’t give up, keep searching!",
+                "title": "No results."
+            },
+            {
+                "message": "Try to start another search.",
+                "title": "We’re sorry but there are no results for your search."
+            },
+            {
+                "message": "Check the spelling and the filters' options or try with another keyword.",
+                "title": "There are no results for your search."
+            }
+        ],
+        "search_full": [
+            {
+                "title": "Select one or more results to perform actions or display details."
+            }
+        ],
         "share": {
             "addShare": {
                 "checkbox": {
@@ -280,7 +302,12 @@
             "state": "Drag a file or create a new one clicking \"NEW\""
         },
         "search": {
-            "hint": "Your search didn't match any files or folders"
+            "hint": "Your search didn't match any files or folders",
+            "noResults": [
+                "No results. Keep searching!",
+                "None of your items matches your search."
+            ],
+            "notRun": "No search was carried out yet."
         }
     },
     "errorCode": {

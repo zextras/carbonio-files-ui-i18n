@@ -256,10 +256,6 @@
             "sharing": "Wird geteilt",
             "versioning": "Versionierung"
         },
-        "search": {
-            "message": "Hier können Sie alle Ergebnisse für Ihre Suche finden",
-            "title": "Suchvorschläge"
-        },
         "uploads": {
             "message": "Here können Sie alle Elemente finden, die sie gerade hochladen, sie können diese hier verwalten",
             "title": "Upload Vorschläge"

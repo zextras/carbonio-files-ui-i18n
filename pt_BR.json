@@ -301,10 +301,6 @@
             },
             "noSharePermissionHeader": "Você não pode compartilhar este item."
         },
-        "search": {
-            "message": "Aqui você encontra todos os resultados da sua pesquisa",
-            "title": "Buscar sugestões"
-        },
         "tabs": {
             "activities": "Atividades",
             "details": "Detalhes",

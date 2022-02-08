@@ -305,10 +305,6 @@
             },
             "noSharePermissionHeader": "Bu öğeyi paylaşmak için izniniz yok."
         },
-        "search": {
-            "message": "Veya \"Gelişmiş filtreleme\" tuşuna tıklayıp yaptığınız aramayı daha detaylandırabilirsiniz",
-            "title": "Arama sonuçlarınızı görüntüleyin"
-        },
         "tabs": {
             "activities": "Aktiviteler",
             "details": "Detaylar",
