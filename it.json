@@ -38,7 +38,8 @@
             "success": "Successo"
         },
         "upload": {
-            "goToFolder": "Vai alla cartella"
+            "goToFolder": "Vai alla cartella",
+            "success": "Caricamenti in {{destination}}"
         },
         "clipboard": {
             "email": "Indirizzo email copiato",
@@ -55,6 +56,18 @@
         },
         "unflag": {
             "success": "Elemento deselezionato"
+        },
+        "publicLink": {
+            "actionLabel": {
+                "copyLink": "Copia Link"
+            },
+            "copyLink": "Link pubblico copiato",
+            "linkUpdated": {
+                "label": "Link pubblico aggiornato"
+            },
+            "newPublicLinkGenerated": {
+                "label": "Nuovo link pubblico generato"
+            }
         }
     },
     "secondaryBar": {
@@ -69,7 +82,8 @@
         },
         "filters": "Filtri",
         "driveHome": "Home Drive",
-        "uploads": "Caricamenti"
+        "uploads": "Caricamenti",
+        "filesHome": "Home"
     },
     "primaryBar": {
         "driveHome": "Home Drive"
@@ -147,7 +161,8 @@
                 "trash": "Cestino",
                 "sharedWitMe": "Elementi condivisi",
                 "myElements": "I miei file"
-            }
+            },
+            "filesHome": "Home"
         },
         "deleteShare": {
             "body": "Vuoi rimuovere i permessi di accesso dati a {{shareTarget}} ?",
@@ -161,6 +176,20 @@
                     "permissionLost": "Tutti i permessi di accesso a te assegnati andranno persi."
                 }
             }
+        },
+        "removeLink": {
+            "button": {
+                "confirm": "Rimuovi"
+            },
+            "header": "Rimuovi link pubblico {{nodeName}}",
+            "body": "Il link è scaduto e quindi non è più utilizzabile per accedere all'elemento. Puoi rimuovere il link dalla lista oppure puoi aggiornare la sua data di scadenza e altre informazioni per poter continuare ad utilizzarlo"
+        },
+        "revokeLink": {
+            "body": "Revocando questo link, bloccherai l'accesso a {{nodeName}} per tutti coloro che proveranno ad utilizzare il link per accedere al file",
+            "button": {
+                "confirm": "Revoca"
+            },
+            "header": "Revoca link pubblico {{nodeName}}"
         }
     },
     "filter": {
@@ -236,7 +265,8 @@
                         "yourself": "Rimuovi la tua collaborazione"
                     },
                     "edit": {
-                        "you": "Modifica la tua collaborazione"
+                        "you": "Modifica la tua collaborazione",
+                        "collaborator": "Modifica la collaborazione di {{username}}"
                     }
                 }
             },
@@ -327,12 +357,12 @@
                     "reset": "Ripristina filtri"
                 },
                 "folder": {
-                    "label": "Cartella Drive",
+                    "label": "Seleziona una cartella",
                     "modal": {
                         "cancel": "Indietro",
                         "confirm": "Scegli cartella",
-                        "title": "Cartella Drive",
-                        "subtitle": "Seleziona la cartella in cui iniziare la ricerca avanzata",
+                        "title": "Seleziona una cartella",
+                        "subtitle": "I risultati saranno cercati solo all'interno della cartella selezionata",
                         "cascade": "cerca anche nelle cartelle contenute"
                     }
                 },
@@ -381,7 +411,7 @@
                     "enabled": "Trascina qui gli allegati\nper aggiungerli velocemente a questa cartella"
                 },
                 "otherView": {
-                    "enabled": "Trascina qui gli allegati\nper aggiungerli velocemente alla Home di Drive"
+                    "enabled": "Trascina qui gli allegati\nper aggiungerli velocemente alla Home"
                 }
             },
             "title": {
@@ -393,7 +423,7 @@
             "completed": "Rimuovi i caricamenti completati"
         },
         "destination": {
-            "home": "Caricamenti in Home di Drive"
+            "home": "Caricamenti in Home di Files"
         }
     },
     "selectionMode": {
@@ -424,6 +454,57 @@
         "expander": {
             "hide": "Nascondi il percorso della cartella",
             "show": "Mostra il percorso della cartella"
+        }
+    },
+    "errorCode": {
+        "code": "Qualcosa è andato storto",
+        "code_ACCOUNT_NOT_FOUND": "Sembra che questo utente non faccia parte del sistema Carbonio",
+        "code_FILE_VERSION_NOT_FOUND": "Impossibile trovare questa versione del file",
+        "code_Generic": "Qualcosa è andato storto",
+        "code_LINK_NOT_FOUND": "Azione fallita. Questo link non è più esistente",
+        "code_MISSING_FIELD": "Si è verificato un errore interno, non è stato possibile ripristinare tutte le informazioni di questo oggetto",
+        "code_NODE_NOT_FOUND": "Sembra che questo oggetto non esista, o che tu non abbia i permessi per accedervi",
+        "code_NODE_WRITE_ERROR": "Sembra che questo oggetto non possa essere modificato, o che tu non abbia i permessi per modificarlo",
+        "code_SHARE_CREATION_ERROR": "Non è possibile condividere l'elemento con questo utente",
+        "code_SHARE_NOT_FOUND": "Impossibile trovare questa condivisione"
+    },
+    "publicLink": {
+        "addLink": {
+            "addLink": "Aggiungi Link",
+            "generateLink": "Genera Link",
+            "limitReached": "Hai raggiunto il numero massimo di link pubblici",
+            "title": "Link pubblico",
+            "undo": "Annulla"
+        },
+        "datePickerInput": {
+            "description": "Il link scade al termine del giorno selezionato"
+        },
+        "dateTimePicker": {
+            "label": "Data di scadenza"
+        },
+        "input": {
+            "description": {
+                "error": {
+                    "maxLengthAllowed": "Il numero massimo di caratteri consentiti è 300"
+                }
+            },
+            "label": "Descrizione link"
+        },
+        "link": {
+            "edit": "Modifica",
+            "editLink": "Modifica Link",
+            "expireOn": "Scade il:",
+            "expiredOn": "Il link è scaduto il:",
+            "noExpirationDate": "Non ha data di scadenza",
+            "remove": "Rimuovi",
+            "revoke": "Revoca",
+            "undo": "Annulla",
+            "urlChip": {
+                "tooltip": {
+                    "copy": "Copia link pubblico",
+                    "expired": "Questo link è scaduto"
+                }
+            }
         }
     }
 }

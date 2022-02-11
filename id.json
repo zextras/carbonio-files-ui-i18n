@@ -45,7 +45,8 @@
                 "trash": "Tempat Sampah",
                 "myElements": "Item saya",
                 "sharedWitMe": "Item bersama"
-            }
+            },
+            "filesHome": "Beranda"
         },
         "deleteShare": {
             "button": {
@@ -59,6 +60,16 @@
                 }
             },
             "header": "Hapus berbagi"
+        },
+        "removeLink": {
+            "button": {
+                "confirm": "Hapus"
+            }
+        },
+        "revokeLink": {
+            "button": {
+                "confirm": "Batalkan"
+            }
         }
     },
     "node": {
@@ -77,7 +88,9 @@
         },
         "alias": {
             "name_LOCAL_CHAT_ROOT": "Tim",
-            "name_LOCAL_ROOT": "Drive Home"
+            "name_LOCAL_ROOT": "Drive Home",
+            "name_SHARED_WITH_ME_ROOT": "Dibagikan dengan saya",
+            "name_TRASH_ROOT": "Tempat Sampah"
         },
         "copy": {
             "modal": {
@@ -85,7 +98,8 @@
                     "confirm": "Salin"
                 },
                 "title": "Salin {{node.name}}",
-                "title_plurals": "Salin item"
+                "title_plurals": "Salin item",
+                "title_plural": "Salin item"
             }
         },
         "move": {
@@ -98,13 +112,17 @@
                 },
                 "subtitle": "Pilih folder tujuan:",
                 "title": "Pindahkan {{node.name}}",
-                "title_plurals": "Pindahkan item"
+                "title_plurals": "Pindahkan item",
+                "title_plural": "Pindahkan item"
             },
             "error": {
                 "not": {
                     "allowed": "Anda tidak dapat memindahkan banyak node dari filter atau pencarian"
                 }
             }
+        },
+        "type": {
+            "folder": "Folder"
         }
     },
     "primaryBar": {
@@ -122,7 +140,8 @@
             "sharedElements": "Elemen Bersama"
         },
         "team": "Tim",
-        "uploads": "Unggahan"
+        "uploads": "Unggahan",
+        "filesHome": "Beranda"
     },
     "snackbar": {
         "markForDeletion": {
@@ -144,16 +163,36 @@
         },
         "moveNodes": {
             "error": "Terjadi kesalahan, coba lagi",
-            "success": "Item dipindahkan ke folder tujuan"
+            "success": "Item dipindahkan ke folder tujuan",
+            "action": "Buka folder"
         },
         "upload": {
             "goToFolder": "Buka folder"
+        },
+        "copyNodes": {
+            "action": "Buka folder",
+            "error": "Terjadi kesalahan, coba lagi"
+        },
+        "deletePermanently": {
+            "error": "Kesalahan",
+            "success": "Berhasil"
+        },
+        "publicLink": {
+            "actionLabel": {
+                "copyLink": "Salin Tautan"
+            }
+        },
+        "unflag": {
+            "success": "Tanda bendera pada item berhasil dihapus"
         }
     },
     "empty": {
         "folder": {
             "hint": "Sepertinya tidak ada apa pun di sini.",
             "state": "Seret file atau buat file baru dengan mengklik \"BARU\""
+        },
+        "filter": {
+            "hint": "Sepertinya tidak ada apa pun di sini."
         }
     },
     "filter": {
@@ -198,7 +237,8 @@
                     },
                     "sharingAllowed": "Berbagi diperbolehkan",
                     "sharingAllowedDescription": "Gambaran tentang hal yang akan terjadi jika bagian ini dicentang"
-                }
+                },
+                "owner": "Pemilik"
             },
             "addShare": {
                 "checkbox": {
@@ -220,7 +260,10 @@
             "content": "Konten",
             "downloads": "Unduh melalui tautan publik",
             "lastEdit": "Editan terakhir",
-            "showPath": "Tampilkan jalur"
+            "showPath": "Tampilkan jalur",
+            "editDescription": {
+                "editIconTooltip": "Edit deskripsi"
+            }
         },
         "tabs": {
             "details": "Detail",
@@ -256,7 +299,35 @@
                 "default": "Ketik pencarian Anda",
                 "active": "Pisahkan kata kunci dengan koma, titik koma, atau tekan TAB"
             }
-        }
+        },
+        "advancedSearch": {
+            "button": {
+                "noFilter": "Filter lanjutan"
+            },
+            "modal": {
+                "button": {
+                    "confirm": "Cari"
+                },
+                "folder": {
+                    "modal": {
+                        "title": "Pilih folder",
+                        "cancel": "Kembali"
+                    },
+                    "label": "Pilih folder"
+                },
+                "keywords": {
+                    "label": "Kata sandi"
+                },
+                "flagged": {
+                    "label": "Diberi tanda bendera"
+                },
+                "shared": {
+                    "label": "Dibagikan"
+                },
+                "title": "Filter Tingkat Lanjut"
+            }
+        },
+        "resultsFor": "Hasil untuk:"
     },
     "docs": {
         "create": {
@@ -301,5 +372,25 @@
                 "enabled": "Mode Seret & Lepas"
             }
         }
+    },
+    "publicLink": {
+        "addLink": {
+            "generateLink": "Buat Tautan",
+            "undo": "Batalkan"
+        },
+        "link": {
+            "remove": "Hapus",
+            "edit": "Edit",
+            "revoke": "Batalkan",
+            "undo": "Batalkan"
+        }
+    },
+    "sortingDropdown": {
+        "name": "Nama",
+        "size": "Ukuran"
+    },
+    "errorCode": {
+        "code": "Terjadi masalah",
+        "code_Generic": "Terjadi masalah"
     }
 }

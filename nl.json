@@ -42,7 +42,8 @@
                 "trash": "Prullenbak",
                 "myElements": "Mijn items",
                 "sharedWitMe": "Gedeelde items"
-            }
+            },
+            "filesHome": "Startpagina"
         },
         "deleteShare": {
             "button": {
@@ -55,6 +56,16 @@
                     "answer": "Weet u zeker dat u zich uit deze samenwerking wilt terugtrekken?",
                     "permissionLost": "Alle eerder aan u verleende toegangsrechten gaan verloren."
                 }
+            }
+        },
+        "removeLink": {
+            "button": {
+                "confirm": "Verwijderen"
+            }
+        },
+        "revokeLink": {
+            "button": {
+                "confirm": "Intrekken"
             }
         }
     },
@@ -73,7 +84,8 @@
             "myElements": "Mijn elementen",
             "sharedElements": "Gedeelde elementen"
         },
-        "uploads": "Uploads"
+        "uploads": "Uploads",
+        "filesHome": "Startpagina"
     },
     "snackbar": {
         "markForDeletion": {
@@ -111,6 +123,11 @@
         },
         "unflag": {
             "success": "Item met succes ontvlagd"
+        },
+        "publicLink": {
+            "actionLabel": {
+                "copyLink": "Link kopiëren"
+            }
         }
     },
     "create": {
@@ -235,7 +252,7 @@
                     "sharingAllowedDescription": "Beschrijving van wat er gebeurt als dit is aangevinkt"
                 },
                 "you": "U",
-                "owner": "Eigenaar:"
+                "owner": "Eigenaar"
             },
             "addShare": {
                 "checkbox": {
@@ -300,8 +317,10 @@
                 },
                 "folder": {
                     "modal": {
-                        "cancel": "Teruggaan"
-                    }
+                        "cancel": "Teruggaan",
+                        "title": "Een map selecteren"
+                    },
+                    "label": "Een map selecteren"
                 },
                 "keywords": {
                     "label": "Zoekwoorden"
@@ -367,5 +386,21 @@
     "sortingDropdown": {
         "size": "Grootte",
         "name": "Naam"
+    },
+    "errorCode": {
+        "code": "Er is iets fout gegaan",
+        "code_Generic": "Er ging iets mis."
+    },
+    "publicLink": {
+        "addLink": {
+            "generateLink": "Link genereren",
+            "undo": "Ongedaan maken"
+        },
+        "link": {
+            "edit": "Bewerken",
+            "remove": "Verwijderen",
+            "revoke": "Intrekken",
+            "undo": "Ongedaan maken"
+        }
     }
 }

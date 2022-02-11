@@ -62,7 +62,8 @@
                 "trash": "Papierkorb",
                 "myElements": "Meine Elemente",
                 "sharedWitMe": "Geteilte Elemente"
-            }
+            },
+            "filesHome": "Home"
         },
         "deleteShare": {
             "button": {
@@ -75,6 +76,16 @@
                     "answer": "Sind Sie sicher, dass Sie sich selbst von dieser Mitarbeit entfernen möchten?",
                     "permissionLost": "Alle Zugriffsrechte, die Ihnen erteilt wurden, werden verloren sein."
                 }
+            }
+        },
+        "removeLink": {
+            "button": {
+                "confirm": "Entfernen"
+            }
+        },
+        "revokeLink": {
+            "button": {
+                "confirm": "Widerrufen"
             }
         }
     },
@@ -146,7 +157,8 @@
             "sharedElements": "Geteilte Elemente"
         },
         "team": "Team",
-        "uploads": "Uploads"
+        "uploads": "Uploads",
+        "filesHome": "Home"
     },
     "snackbar": {
         "markForDeletion": {
@@ -184,6 +196,11 @@
         },
         "unflag": {
             "success": "Markierung erfolgreich entfernt"
+        },
+        "publicLink": {
+            "actionLabel": {
+                "copyLink": "Link kopieren"
+            }
         }
     },
     "actions": {
@@ -235,7 +252,7 @@
                     "sharingAllowedDescription": "Beschreibung, was passiert, wenn dies ausgewählt wurde"
                 },
                 "you": "Sie",
-                "owner": "Besitzer:"
+                "owner": "Besitzer"
             },
             "addShare": {
                 "checkbox": {
@@ -297,8 +314,10 @@
                 },
                 "folder": {
                     "modal": {
-                        "cancel": "Zurück"
-                    }
+                        "cancel": "Zurück",
+                        "title": "Einen Ordner auswählen"
+                    },
+                    "label": "Einen Ordner auswählen"
                 },
                 "shared": {
                     "label": "Geteilt"
@@ -367,5 +386,21 @@
     "sortingDropdown": {
         "name": "Name",
         "size": "Größe"
+    },
+    "errorCode": {
+        "code": "Etwas ist schiefgegangen",
+        "code_Generic": "Etwas ist schiefgegangen"
+    },
+    "publicLink": {
+        "addLink": {
+            "generateLink": "Link erstellen",
+            "undo": "Rückgängig machen"
+        },
+        "link": {
+            "edit": "Bearbeiten",
+            "remove": "Entfernen",
+            "revoke": "Widerrufen",
+            "undo": "Rückgängig machen"
+        }
     }
 }

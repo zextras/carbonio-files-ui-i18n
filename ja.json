@@ -38,7 +38,8 @@
                 "trash": "ゴミ箱",
                 "myElements": "私のアイテム",
                 "sharedWitMe": "共有アイテム"
-            }
+            },
+            "filesHome": "ホーム"
         },
         "deleteShare": {
             "button": {
@@ -51,6 +52,16 @@
                     "answer": "このコラボレーションから退会しますか？",
                     "permissionLost": "付与されたアクセス許可がすべて失われます。"
                 }
+            }
+        },
+        "removeLink": {
+            "button": {
+                "confirm": "削除する"
+            }
+        },
+        "revokeLink": {
+            "button": {
+                "confirm": "取り消す"
             }
         }
     },
@@ -122,7 +133,8 @@
             "myElements": "私の要素",
             "sharedElements": "共有要素"
         },
-        "uploads": "アップロード"
+        "uploads": "アップロード",
+        "filesHome": "ホーム"
     },
     "snackbar": {
         "markForDeletion": {
@@ -296,8 +308,10 @@
                 },
                 "folder": {
                     "modal": {
-                        "cancel": "戻る"
-                    }
+                        "cancel": "戻る",
+                        "title": "フォルダを選択"
+                    },
+                    "label": "フォルダを選択"
                 },
                 "keywords": {
                     "label": "キーワード"
@@ -366,5 +380,21 @@
     "sortingDropdown": {
         "name": "名前",
         "size": "サイズ"
+    },
+    "errorCode": {
+        "code": "エラーが発生しました",
+        "code_Generic": "エラーが発生しました"
+    },
+    "publicLink": {
+        "addLink": {
+            "generateLink": "リンクを作成",
+            "undo": "元に戻す"
+        },
+        "link": {
+            "edit": "編集",
+            "remove": "削除する",
+            "revoke": "取り消す",
+            "undo": "元に戻す"
+        }
     }
 }

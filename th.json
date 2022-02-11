@@ -62,7 +62,8 @@
                 "trash": "ถังขยะ",
                 "myElements": "รายการของฉัน",
                 "sharedWitMe": "รายการที่แชร์"
-            }
+            },
+            "filesHome": "หน้าแรก"
         },
         "deleteShare": {
             "button": {
@@ -76,6 +77,16 @@
                 }
             },
             "body": "คุณแน่ใจหรือไม่ว่าต้องการลบการอนุญาตการเข้าถึงทั้งหมดที่ให้กับ {{shareTarget}} ก่อนหน้านี้?"
+        },
+        "removeLink": {
+            "button": {
+                "confirm": "ลบออก"
+            }
+        },
+        "revokeLink": {
+            "button": {
+                "confirm": "เพิกถอน"
+            }
         }
     },
     "node": {
@@ -146,7 +157,8 @@
             "sharedElements": "องค์ประกอบที่ใช้ร่วมกัน"
         },
         "team": "Team",
-        "uploads": "อัปโหลด"
+        "uploads": "อัปโหลด",
+        "filesHome": "หน้าแรก"
     },
     "snackbar": {
         "markForDeletion": {
@@ -184,6 +196,11 @@
         },
         "unflag": {
             "success": "ยกเลิกการติดธงรายการเรียบร้อยแล้ว"
+        },
+        "publicLink": {
+            "actionLabel": {
+                "copyLink": "คัดลอกลิงค์"
+            }
         }
     },
     "actions": {
@@ -296,8 +313,10 @@
                 },
                 "folder": {
                     "modal": {
-                        "cancel": "ย้อนกลับ"
-                    }
+                        "cancel": "ย้อนกลับ",
+                        "title": "เลือกโฟลเดอร์"
+                    },
+                    "label": "เลือกโฟลเดอร์"
                 },
                 "shared": {
                     "label": "แชร์"
@@ -357,5 +376,21 @@
     "sortingDropdown": {
         "name": "ชื่อ",
         "size": "ขนาด"
+    },
+    "errorCode": {
+        "code_Generic": "มีบางอย่างผิดพลาด",
+        "code": "มีบางอย่างผิดพลาด"
+    },
+    "publicLink": {
+        "addLink": {
+            "generateLink": "สร้างลิงก์",
+            "undo": "ย้อนกลับ"
+        },
+        "link": {
+            "edit": "แก้ไข",
+            "remove": "ลบออก",
+            "revoke": "เพิกถอน",
+            "undo": "ย้อนกลับ"
+        }
     }
 }
