@@ -253,7 +253,8 @@
                     "role": {
                         "editorDescription": "Può visualizzare e modificare il file o la cartella",
                         "viewerDescription": "Può visualizzare e scaricare il file o la cartella",
-                        "editor": "Editor"
+                        "editor": "Editor",
+                        "viewer": "Vista"
                     },
                     "sharingAllowed": "Condivisione concessa",
                     "sharingAllowedDescription": "Potrà gestire le condivisioni di file e cartelle"
