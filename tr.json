@@ -239,7 +239,7 @@
         "download": "İndir",
         "markForDeletion": "Silmek için işaretle",
         "move": "Taşı",
-        "openWithDocs": "Docs ile Aç",
+        "openWithDocs": "Dokümanı aç",
         "rename": "Yeniden adlandır",
         "restore": "Geri yükle",
         "cancelUpload": "Yüklemeyi iptal et",
@@ -273,7 +273,9 @@
                 }
             },
             "missingDescription": "Tanım eklemek için düzenle tuşuna tıklayın",
-            "owner": "Sahibi"
+            "owner": "Sahibi",
+            "collaboratorsTooltip": "Katılımcıları görüntüleyin",
+            "sendMailTo": "E-posta gönder: {{email}}"
         },
         "list": {
             "you": "Siz"
@@ -362,6 +364,131 @@
         "search_full": [
             {
                 "title": "Detayları görüntülemek veya işlem yapmak için bir veya daha fazla sonuç seçin."
+            }
+        ],
+        "filter": {
+            "flagged_empty": [
+                {
+                    "message": " Ne zaman gerekirse burada bulabilirsiniz.",
+                    "title": "Öğeyi işaretlemek için bayrağı tıklayın."
+                },
+                {
+                    "message": "Burada listelenecek.",
+                    "title": "Bayrağa tıklayıp önemli öğelerinizi işaretleyin."
+                }
+            ],
+            "flagged_full": [
+                {
+                    "title": "Öğeyi işaretlemek için bayrağı tıklayın.",
+                    "message": "Ne zaman gerekirse burada bulabilirsiniz."
+                },
+                {
+                    "message": "Burada listelenecek.",
+                    "title": "Bayrağa tıklayıp önemli öğelerinizi işaretleyin."
+                }
+            ],
+            "sharedByMe_empty": [
+                {
+                    "title": "Kişileriniz ile paylaştığınız öğeleri gözden geçirin ve düzenleyin.",
+                    "message": "Devam etmek için bir öğe seçin."
+                },
+                {
+                    "message": "Seçmek için öğeye tıklayın.",
+                    "title": "Paylaştığınız klasörlerin detaylarını görüntüleyin."
+                },
+                {
+                    "title": "Kişileriniz ile paylaştığınız tüm öğeleri burada bulabilirsiniz.",
+                    "message": "Seçmek için öğeye tıklayın."
+                }
+            ],
+            "sharedByMe_full": [
+                {
+                    "message": "Devam etmek için bir öğe seçin.",
+                    "title": "Kişileriniz ile paylaştığınız öğeleri gözden geçirin ve düzenleyin. "
+                },
+                {
+                    "message": "Seçmek için öğeye tıklayın.",
+                    "title": "Paylaştığınız klasörlerin detaylarını görüntüleyin."
+                }
+            ],
+            "sharedWithMe_empty": [
+                {
+                    "message": "Yeni bir doküman oluşturmak ve kişiler ile paylaşmak için \"YENİ\" tuşuna tıklayın.",
+                    "title": "Henüz sizinle paylaşılan bir öğe yok."
+                },
+                {
+                    "title": "Yeni bir e-posta oluşturmak için \"YENİ\" tuşuna tıklayın.",
+                    "message": "Diğer kullanıcılara birlikte çalışmak için hazır olduğunuzu bildirin."
+                }
+            ],
+            "sharedWithMe_full": [
+                {
+                    "title": "Dosyalarınızı düzenlemeye ve paylaşmaya başlayın.",
+                    "message": "Seçmek için öğeye tıklayın."
+                },
+                {
+                    "message": "Seçmek için öğeye tıklayın.",
+                    "title": "Klasörlerin detaylarını görüntüleyin ve kişiler ile paylaşın."
+                },
+                {
+                    "title": "Bir öğe seçerek diğer kullanıcılar ile birlikte çalışmaya başlayın."
+                }
+            ],
+            "trash_empty": [
+                {
+                    "message": "Öğeyi silmek için çöp kutusu simgesine tıklayın.",
+                    "title": "İhtiyacınız olmayan herşeyi çöp kutusuna taşıyın."
+                },
+                {
+                    "message": "Öğeyi silmek için çöp kutusu simgesine tıklayın.",
+                    "title": "Çöp kutusu boş."
+                },
+                {
+                    "title": "Çalışma alanınızı temiz tutun: ihtiyacınız olmayan herşeyi silin."
+                }
+            ],
+            "trash_full": [
+                {
+                    "title": "Çöp kutusunda olan dokümanlarınızı seçin ve geri yükleyin."
+                },
+                {
+                    "message": "Geri yüklemek veya tamamen silmek için bir öğe seçin.",
+                    "title": "Hiçbir şey kaybolmadı!"
+                },
+                {
+                    "title": "Tamamen silmek için bir öğe seçin.",
+                    "message": "Veya öğeyi seçin ve orijinal klasörüne geri yükleyin."
+                }
+            ]
+        },
+        "folder_empty": [
+            {
+                "title": "Yeni bir öğe oluşturmak ve kişiler ile paylaşmak için \"YENİ\" tuşuna tıklayın."
+            },
+            {
+                "message": "\"YENİ\" tuşuna tıklayıp yeni bir dosya oluşturun",
+                "title": "Çalışmalarınızı düzenlemeye ve paylaşmaya başlayın."
+            },
+            {
+                "title": "Yeni bir öğe oluşturmak için \"YENİ\" tuşuna tıklayın.",
+                "message": "Öğeyi düzenleyebilir, bayrakla işaretleyebilir ve paylaşabilirsiniz."
+            }
+        ],
+        "folder_full": [
+            {
+                "message": "Seçmek için öğeye tıklayın.",
+                "title": "Dosyalarınızı düzenlemeye ve paylaşmaya başlayın."
+            },
+            {
+                "message": "Seçmek için öğeye tıklayın.",
+                "title": "Klasörlerin detaylarını görüntüleyin ve kişiler ile paylaşın."
+            },
+            {
+                "title": "İçeriğini düzenlemek veya yeniden adlandırmak için bir klasör seçin."
+            },
+            {
+                "message": "Bir öğe seçin ve \"Paylaşımlar\" sekmesine gidin",
+                "title": "Bir öğeyi düzenlemesi için kişilere düzenleme yetkileri tanımlayın."
             }
         ]
     },
