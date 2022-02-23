@@ -1,1 +1,61 @@
-{}
+{
+    "modal": {
+        "button": {
+            "confirm": "Potwierdź",
+            "cancel": "Anuluj"
+        },
+        "close": {
+            "tooltip": "Zamknij"
+        },
+        "decreaseYourOwnSharePermissions": {
+            "button": {
+                "confirm": "Potwierdź"
+            }
+        }
+    },
+    "search": {
+        "advancedSearch": {
+            "modal": {
+                "button": {
+                    "confirm": "Szukaj"
+                }
+            }
+        },
+        "header": {
+            "search": "Szukaj"
+        },
+        "search": {
+            "tooltip": {
+                "search": "Szukaj"
+            }
+        }
+    },
+    "snackbar": {
+        "deletePermanently": {
+            "error": "Błąd",
+            "success": "Sukces"
+        },
+        "deleteShare": {
+            "error": "Błąd",
+            "success": "Sukces"
+        },
+        "restore": {
+            "success": "Sukces"
+        }
+    },
+    "actions": {
+        "restore": "Przywróć"
+    },
+    "displayer": {
+        "share": {
+            "chip": {
+                "popover": {
+                    "save": "Zapisz"
+                }
+            }
+        },
+        "tabs": {
+            "details": "Szczegóły"
+        }
+    }
+}
