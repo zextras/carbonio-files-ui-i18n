@@ -71,6 +71,14 @@
                 "confirm": "İptal et"
             },
             "header": "{{nodeName}} genel erişim bağlantısını iptal et"
+        },
+        "close": {
+            "tooltip": "Kapat"
+        },
+        "decreaseYourOwnSharePermissions": {
+            "button": {
+                "confirm": "Onayla"
+            }
         }
     },
     "create": {
@@ -94,7 +102,10 @@
             "hint": "Burada hiçbir şey yok."
         },
         "search": {
-            "hint": "Aramanız ile eşleşen hiçbir dosya veya klasör bulunamadı"
+            "hint": "Aramanız ile eşleşen hiçbir dosya veya klasör bulunamadı",
+            "noResults": [
+                "Aramanız ile uyumlu öğe bulunamadı."
+            ]
         }
     },
     "node": {
@@ -261,7 +272,8 @@
                     "label": "İzin verilen maksimum uzunluk 4096 karakterdir"
                 }
             },
-            "missingDescription": "Tanım eklemek için düzenle tuşuna tıklayın"
+            "missingDescription": "Tanım eklemek için düzenle tuşuna tıklayın",
+            "owner": "Sahibi"
         },
         "list": {
             "you": "Siz"
@@ -318,7 +330,40 @@
         "generic": {
             "message": "Seçmek için öğeye tıklayın",
             "title": "Dosya ve klasörleri görün ve kişiler ile paylaşın"
-        }
+        },
+        "version": {
+            "actions": {
+                "deleteVersion": "Versiyonu sil",
+                "downloadVersion": "Versiyonu indir",
+                "keepVersion": "Bu versiyonu her zaman sakla",
+                "removeKeepVersion": "Her zaman saklamayı iptal et"
+            },
+            "button": {
+                "upload": "Versiyon yükle"
+            },
+            "rowHeaders": {
+                "currentVersion": "Güncel versiyon",
+                "lastWeek": "Geçen hafta"
+            }
+        },
+        "search_empty": [
+            {
+                "message": "Veya aramanızı detaylandırmak için “Gelişmiş Filtreler”i seçin."
+            },
+            {},
+            {
+                "message": "Başka bir arama yapmayı deneyin."
+            },
+            {
+                "message": "Yazım hatalarını ve filtre seçeneklerini kontrol edin veya farklı kelimeler ile deneyin.",
+                "title": "Aramanız için sonuç bulunamadı."
+            }
+        ],
+        "search_full": [
+            {
+                "title": "Detayları görüntülemek veya işlem yapmak için bir veya daha fazla sonuç seçin."
+            }
+        ]
     },
     "search": {
         "header": {
@@ -438,6 +483,9 @@
             "exit": "Seçme modundan çık",
             "selectAll": "Tümünü seç",
             "unselectAll": "tümünden seçimi kaldır"
+        },
+        "node": {
+            "tooltip": "Seçim modunu aktive et"
         }
     },
     "sortingDropdown": {
