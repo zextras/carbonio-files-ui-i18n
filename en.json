@@ -60,7 +60,7 @@
         "filter": {
             "flagged_empty": [
                 {
-                    "message": " You'll find it here whenever you'll need it.",
+                    "message": "You'll find it here whenever you'll need it.",
                     "title": "Click the flag to mark an item."
                 },
                 {
@@ -95,7 +95,7 @@
             "sharedByMe_full": [
                 {
                     "message": "Select an item to proceed.",
-                    "title": "Review and edit the items you've shared with your contacts. "
+                    "title": "Review and edit the items you've shared with your contacts."
                 },
                 {
                     "message": "Click an item to select it.",
