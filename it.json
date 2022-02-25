@@ -242,7 +242,7 @@
         "download": "Scarica",
         "markForDeletion": "Seleziona per la rimozione",
         "move": "Sposta",
-        "openWithDocs": "Apri con Docs",
+        "openWithDocs": "Apri documento",
         "rename": "Rinomina",
         "restore": "Ripristina",
         "flag": "Etichetta",
@@ -315,7 +315,9 @@
             },
             "missingDescription": "Clicca sul pulsante modifica per aggiungere una descrizione",
             "copyShortcut": "Copia scorciatoia dell'elemento",
-            "owner": "Proprietario"
+            "owner": "Proprietario",
+            "collaboratorsTooltip": "Vedi la lista dei collaboratori",
+            "sendMailTo": "Invia e-mail a: {{email}}"
         },
         "uploads": {
             "message": "Qui sono elencati tutti gli elementi in caricamento, puoi gestirli direttamente da qui",
@@ -363,7 +365,51 @@
             {
                 "title": "Seleziona uno o più risultati per completare delle azioni o visualizzare i dettagli."
             }
-        ]
+        ],
+        "filter": {
+            "flagged_full": [
+                {
+                    "title": "Seleziona la bandierina per contrassegnare un elemento."
+                },
+                {
+                    "message": "Verranno visualizzati qui.",
+                    "title": "Contrassegna gli elementi più importanti selezionando la bandierina."
+                }
+            ],
+            "sharedByMe_empty": [
+                {
+                    "message": "Seleziona un elemento per procedere.",
+                    "title": "Rivedi e modifica gli elementi che hai condiviso con i tuoi contatti."
+                },
+                {
+                    "message": "Clicca su un elemento per selezionarlo.",
+                    "title": "Visualizza i dettagli della cartella che hai condiviso."
+                },
+                {
+                    "title": "Visualizza qui tutti gli elementi che hai condiviso con i tuoi contatti.",
+                    "message": "Clicca su un elemento per selezionarlo."
+                }
+            ],
+            "sharedByMe_full": [
+                {
+                    "title": "Rivedi e modifica gli elementi che hai condiviso con i tuoi contatti.",
+                    "message": "Seleziona un elemento per procedere."
+                },
+                {
+                    "message": "Clicca su un elemento per selezionarlo.",
+                    "title": "Visualizza i dettagli della cartella che hai condiviso."
+                }
+            ],
+            "flagged_empty": [
+                {
+                    "title": "Seleziona la bandierina per contrassegnare un elemento."
+                },
+                {
+                    "message": "Verranno visualizzati qui.",
+                    "title": "Contrassegna gli elementi più importanti selezionando la bandierina."
+                }
+            ]
+        }
     },
     "search": {
         "header": {
