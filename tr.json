@@ -78,7 +78,9 @@
         "decreaseYourOwnSharePermissions": {
             "button": {
                 "confirm": "Onayla"
-            }
+            },
+            "body": "Bu nod için izinlerinizi azaltmak istediğinizden emin misiniz? Bu işlem kalıcıdır ve daha önceki paylaşım izinlerini kendiniz geri alamazsınız. Daha önceki paylaşım izinlerini geri yüklemek isterseniz paylaşılan öğenin sahibi ile görüşmeniz gerekir",
+            "header": "Geçerli izinlerinizi azaltın"
         }
     },
     "create": {
@@ -99,13 +101,18 @@
             "displayerContent": "Bu klasör boş"
         },
         "filter": {
-            "hint": "Burada hiçbir şey yok."
+            "hint": "Burada hiçbir şey yok.",
+            "flagged": "Bayrak işaretli öğe yok.",
+            "sharedByMe": "Birlikte çalıştığınız kişilerle henüz hiç öğe paylaşmadınız. ",
+            "sharedWithMe": "Henüz sizinle paylaşılan bir öğe yok.",
+            "trash": "Çöp kutusu boş."
         },
         "search": {
             "hint": "Aramanız ile eşleşen hiçbir dosya veya klasör bulunamadı",
             "noResults": [
-                "Aramanız ile uyumlu öğe bulunamadı."
-            ]
+                "Sonuç bulunamadı. Aramaya devam edin!"
+            ],
+            "notRun": "Henüz hiç arama yapılmadı."
         }
     },
     "node": {
@@ -125,7 +132,10 @@
         "copy": {
             "modal": {
                 "button": {
-                    "confirm": "Kopyala"
+                    "confirm": "Kopyala",
+                    "tooltip": {
+                        "confirm": "Bu işlemi burada yapamazsınız"
+                    }
                 },
                 "title": "Kopyala {{node.name}}",
                 "title_plurals": "Öğeleri kopyala",
@@ -141,7 +151,10 @@
         "move": {
             "modal": {
                 "button": {
-                    "confirm": "Taşı"
+                    "confirm": "Taşı",
+                    "tooltip": {
+                        "confirm": "Bu işlemi burada yapamazsınız"
+                    }
                 },
                 "input": {
                     "filter": "Klasörleri filtrele"
@@ -233,6 +246,14 @@
             "actionLabel": {
                 "copyLink": "Bağlantıyı kopyala"
             }
+        },
+        "decreaseYourOwnShare": {
+            "success": "İzinler başarıyla güncellendi"
+        },
+        "version": {
+            "clone": "Kullanımda olan versiyon olarak kopyalandı",
+            "keepForeverAdded": "Versiyon sürekli saklamak üzere işaretlendi",
+            "keepForeverRemoved": "Sürekli sakla iptal edildi"
         }
     },
     "actions": {
@@ -338,23 +359,40 @@
                 "deleteVersion": "Versiyonu sil",
                 "downloadVersion": "Versiyonu indir",
                 "keepVersion": "Bu versiyonu her zaman sakla",
-                "removeKeepVersion": "Her zaman saklamayı iptal et"
+                "removeKeepVersion": "Her zaman saklamayı iptal et",
+                "cloneAsCurrent": "Kullanılan olarak kopyala",
+                "openDocumentVersion": "Doküman versiyonunu aç"
             },
             "button": {
-                "upload": "Versiyon yükle"
+                "upload": "Versiyon yükle",
+                "purgeAllVersions": "Tüm versiyonları sil"
             },
             "rowHeaders": {
                 "currentVersion": "Güncel versiyon",
-                "lastWeek": "Geçen hafta"
+                "lastWeek": "Geçen hafta",
+                "olderVersions": "Eski versiyonlar"
+            },
+            "mainHint": "Herhangi bir dosya versiyonunu manuel olarak silebilir veya güncel versiyon olarak geri alabilirsiniz. Her zaman saklamak istediğiniz bir veya daha fazla versiyonu seçin.",
+            "row": {
+                "clonedIcon": {
+                    "tooltip1": "Kopyalanan versiyon {{versionNumber}} ({{cloneDate}})",
+                    "tooltip2": "Kopyalanan versiyon {{versionNumber}} (version deleted)"
+                },
+                "versionNumber": "Versiyon {{versionNumber}}"
             }
         },
         "search_empty": [
             {
-                "message": "Veya aramanızı detaylandırmak için “Gelişmiş Filtreler”i seçin."
+                "message": "Veya aramanızı detaylandırmak için “Gelişmiş Filtreler”i seçin.",
+                "title": "Farklı arama başlat."
             },
-            {},
             {
-                "message": "Başka bir arama yapmayı deneyin."
+                "message": "Vazgeçmeyin, aramaya devam!",
+                "title": "Sonuç bulunamadı."
+            },
+            {
+                "message": "Başka bir arama yapmayı deneyin.",
+                "title": "Üzgünüz, aramanız için sonuç bulunamadı."
             },
             {
                 "message": "Yazım hatalarını ve filtre seçeneklerini kontrol edin veya farklı kelimeler ile deneyin.",
@@ -369,7 +407,7 @@
         "filter": {
             "flagged_empty": [
                 {
-                    "message": " Ne zaman gerekirse burada bulabilirsiniz.",
+                    "message": "Ne zaman gerekirse burada bulabilirsiniz.",
                     "title": "Öğeyi işaretlemek için bayrağı tıklayın."
                 },
                 {
@@ -489,8 +527,14 @@
             {
                 "message": "Bir öğe seçin ve \"Paylaşımlar\" sekmesine gidin",
                 "title": "Bir öğeyi düzenlemesi için kişilere düzenleme yetkileri tanımlayın."
+            },
+            {
+                "title": "Başka klasöre taşımak veya paylaşmak için bir öğe seçin."
             }
-        ]
+        ],
+        "search": {
+            "title": "Aramayı başlatmak için bazı anahtar kelimeleri yazın."
+        }
     },
     "search": {
         "header": {
@@ -642,7 +686,8 @@
         "code_SHARE_CREATION_ERROR": "Üzgünüz, bu öğeyi bu kullanıcı ile paylaşamazsınız",
         "code_SHARE_NOT_FOUND": "Üzgünüz, bu paylaşım bulunamadı",
         "code_ACCOUNT_NOT_FOUND": "Bu kullanıcı Carbonio sisteminde bulunmuyor",
-        "code_FILE_VERSION_NOT_FOUND": "Üzgünüz, dosyanın bu versiyonu bulunamadı"
+        "code_FILE_VERSION_NOT_FOUND": "Üzgünüz, dosyanın bu versiyonu bulunamadı",
+        "code_NODE_DUPLICATED": "Bu klasörde aynı isimde bir dosya var"
     },
     "publicLink": {
         "addLink": {
