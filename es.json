@@ -223,6 +223,7 @@
         "search": {
             "hint": "Tu búsqueda no coincidió con ningún archivo ni carpeta",
             "noResults": [
+                "Ninguno de tus elementos coincide con tu búsqueda.",
                 "Ninguno de tus elementos coincide con tu búsqueda."
             ]
         }
