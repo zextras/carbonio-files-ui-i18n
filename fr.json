@@ -22,6 +22,7 @@
         "search": {
             "hint": "Votre recherche ne correspond à aucun fichier ou dossier",
             "noResults": [
+                "Aucun de vos éléments ne correspond à votre recherche.",
                 "Aucun de vos éléments ne correspond à votre recherche."
             ]
         }
@@ -412,15 +413,19 @@
                 "removeKeepVersion": "Supprimer l'option de garder définitivement",
                 "deleteVersion": "Supprimer cette version",
                 "downloadVersion": "Télécharger cette version",
-                "keepVersion": "Garder cette version définitivement"
+                "keepVersion": "Garder cette version définitivement",
+                "cloneAsCurrent": "Cloner comme actuel"
             },
             "button": {
-                "upload": "Téléverser une version"
+                "upload": "Téléverser une version",
+                "purgeAllVersions": "Purger toutes les versions"
             },
             "rowHeaders": {
                 "currentVersion": "Version en cours",
-                "lastWeek": "La semaine dernière"
-            }
+                "lastWeek": "La semaine dernière",
+                "olderVersions": "Versions plus anciennes"
+            },
+            "mainHint": "Vous pouvez supprimer manuellement les versions du fichier ou en restaurer une comme version en cours. Sélectionnez une ou plusieurs versions que vous souhaitez garder pour toujours."
         },
         "search_full": [
             {
