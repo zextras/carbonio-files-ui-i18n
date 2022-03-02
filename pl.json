@@ -11,6 +11,32 @@
             "button": {
                 "confirm": "Potwierdź"
             }
+        },
+        "removeLink": {
+            "button": {
+                "confirm": "Usuń"
+            }
+        },
+        "revokeLink": {
+            "button": {
+                "confirm": "Odbierz"
+            }
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "Usuń trwale"
+            }
+        },
+        "deleteShare": {
+            "button": {
+                "confirm": "Usuń"
+            }
+        },
+        "roots": {
+            "trash": {
+                "sharedWitMe": "Udostępnione przedmioty",
+                "trash": "Kosz"
+            }
         }
     },
     "search": {
@@ -18,7 +44,20 @@
             "modal": {
                 "button": {
                     "confirm": "Szukaj"
-                }
+                },
+                "folder": {
+                    "modal": {
+                        "confirm": "Wybierz folder",
+                        "cancel": "Powrót"
+                    }
+                },
+                "keywords": {
+                    "label": "Słowa kluczowe"
+                },
+                "flagged": {
+                    "label": "Oflagowany"
+                },
+                "title": "Zaawansowane Filtry"
             }
         },
         "header": {
@@ -26,9 +65,18 @@
         },
         "search": {
             "tooltip": {
-                "search": "Szukaj"
+                "search": "Szukaj",
+                "edit": "Edytuj swoje pole wyszukiwania, aby rozpocząć nowe",
+                "empty": "Wpisz słowa kluczowe aby rozpocząć wyszukiwanie"
             }
-        }
+        },
+        "clear": {
+            "tooltip": {
+                "clear": "Wyszyść pole wyszukiwania",
+                "empty": "Pole wyszukiwania jest puste"
+            }
+        },
+        "resultsFor": "Wyniki dla:"
     },
     "snackbar": {
         "deletePermanently": {
@@ -44,18 +92,114 @@
         }
     },
     "actions": {
-        "restore": "Przywróć"
+        "restore": "Przywróć",
+        "deletePermanently": "Trwale usuń",
+        "download": "Pobierz",
+        "move": "Przenieś"
     },
     "displayer": {
         "share": {
             "chip": {
                 "popover": {
                     "save": "Zapisz"
-                }
+                },
+                "owner": "Posiadacz",
+                "you": "Ty"
             }
         },
         "tabs": {
             "details": "Szczegóły"
+        },
+        "details": {
+            "owner": "Posiadacz",
+            "size": "Rozmiar"
+        },
+        "search_empty": [
+            {
+                "message": "Lub wybierz \"Zaawansowane filtry\", aby urozmaicić wyniki wyszukiwania."
+            },
+            {},
+            {
+                "message": "Spróbuj rozpocząć kolejne wyszukiwanie."
+            },
+            {
+                "title": "Nie znaleziono wyników wyszukiwania."
+            }
+        ],
+        "list": {
+            "you": "Ty"
+        }
+    },
+    "publicLink": {
+        "link": {
+            "remove": "Usuń",
+            "revoke": "Odbierz",
+            "undo": "Cofnij",
+            "edit": "Edytuj"
+        },
+        "addLink": {
+            "undo": "Cofnij"
+        }
+    },
+    "secondaryBar": {
+        "filters": "Filtry",
+        "filtersList": {
+            "flagged": "Oflagowany",
+            "trash": "Kosz"
+        }
+    },
+    "selectionMode": {
+        "node": {
+            "tooltip": "Aktywuj tryb wyboru"
+        }
+    },
+    "sortingDropdown": {
+        "size": "Rozmiar"
+    },
+    "create": {
+        "options": {
+            "new": {
+                "folder": "Nowy Folder"
+            }
+        }
+    },
+    "uploads": {
+        "dropzone": {
+            "title": {
+                "disabled": "Tryb Drag&Drop",
+                "enabled": "Tryb Drag&Drop"
+            }
+        }
+    },
+    "empty": {
+        "search": {
+            "noResults": [
+                "Żaden z twoich przedmiotów nie pasuje do kryteriów wyszukiwania."
+            ]
+        }
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "button": {
+                    "confirm": "Stwórz"
+                }
+            }
+        }
+    },
+    "node": {
+        "alias": {
+            "name_TRASH_ROOT": "Kosz"
+        },
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "Przenieś"
+                },
+                "input": {
+                    "filter": "Filtruj foldery"
+                }
+            }
         }
     }
 }
