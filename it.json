@@ -423,10 +423,12 @@
             ],
             "sharedWithMe_full": [
                 {
-                    "title": "Inizia a modificare e condividere i tuoi file."
+                    "title": "Inizia a modificare e condividere i tuoi file.",
+                    "message": "Clicca su un elemento per selezionarlo."
                 },
                 {
-                    "title": "Visualizza i dettagli delle tue cartelle e condividile con i tuoi contatti."
+                    "title": "Visualizza i dettagli delle tue cartelle e condividile con i tuoi contatti.",
+                    "message": "Clicca su un elemento per selezionarlo."
                 },
                 {
                     "title": "Seleziona un elemento e inizia a lavorarci con altri utenti."
@@ -474,10 +476,12 @@
         ],
         "folder_full": [
             {
-                "title": "Inizia a modificare e condividere i tuoi file."
+                "title": "Inizia a modificare e condividere i tuoi file.",
+                "message": "Clicca su un elemento per selezionarlo."
             },
             {
-                "title": "Visualizza i dettagli delle tue cartelle e condividile con i tuoi contatti."
+                "title": "Visualizza i dettagli delle tue cartelle e condividile con i tuoi contatti.",
+                "message": "Clicca su un elemento per selezionarlo."
             }
         ]
     },
