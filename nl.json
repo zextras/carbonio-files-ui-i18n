@@ -178,6 +178,7 @@
         "search": {
             "hint": "Uw zoekopdracht kwam niet overeen met bestanden of mappen",
             "noResults": [
+                "Geen van uw items komt overeen met uw zoekopdracht.",
                 "Geen van uw items komt overeen met uw zoekopdracht."
             ]
         }
