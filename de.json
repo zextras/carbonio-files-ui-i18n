@@ -22,6 +22,7 @@
         "search": {
             "hint": "Ihre Suche ergab keine Treffer für Dateien oder Ordner",
             "noResults": [
+                "Keiner Ihrer Artikel entspricht Ihrer Suche.",
                 "Keiner Ihrer Artikel entspricht Ihrer Suche."
             ]
         }
