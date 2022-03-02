@@ -37,6 +37,7 @@
         "search": {
             "hint": "Sua busca não coincide com nenhum arquivo ou pasta",
             "noResults": [
+                "Nenhum dos seus itens corresponde à sua busca.",
                 "Nenhum dos seus itens corresponde à sua busca."
             ]
         }
