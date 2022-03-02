@@ -223,6 +223,7 @@
         "search": {
             "hint": "Pencarian Anda tidak cocok dengan file atau folder apa pun",
             "noResults": [
+                "Tak ada item yang cocok dengan pencarian Anda.",
                 "Tak ada item yang cocok dengan pencarian Anda."
             ]
         }
