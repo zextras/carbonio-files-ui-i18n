@@ -369,7 +369,8 @@
         "filter": {
             "flagged_full": [
                 {
-                    "title": "Seleziona la bandierina per contrassegnare un elemento."
+                    "title": "Seleziona la bandierina per contrassegnare un elemento.",
+                    "message": "Lo troverai qui quando ne avrai bisogno."
                 },
                 {
                     "message": "Verranno visualizzati qui.",
@@ -402,14 +403,83 @@
             ],
             "flagged_empty": [
                 {
-                    "title": "Seleziona la bandierina per contrassegnare un elemento."
+                    "title": "Seleziona la bandierina per contrassegnare un elemento.",
+                    "message": "Lo troverai qui quando ne avrai bisogno."
                 },
                 {
                     "message": "Verranno visualizzati qui.",
                     "title": "Contrassegna gli elementi più importanti selezionando la bandierina."
                 }
+            ],
+            "sharedWithMe_empty": [
+                {
+                    "title": "Non c'è ancora nessun elemento condiviso con te.",
+                    "message": "Clicca il pulsante \"NUOVO\" per creare un nuovo documento e condividilo anche con i tuoi contatti."
+                },
+                {
+                    "message": "Fai sapere agli altri utenti che puoi iniziare a collaborare con loro.",
+                    "title": "Clicca il pulsante \"NUOVO\" per creare una nuova e-mail."
+                }
+            ],
+            "sharedWithMe_full": [
+                {
+                    "title": "Inizia a modificare e condividere i tuoi file."
+                },
+                {
+                    "title": "Visualizza i dettagli delle tue cartelle e condividile con i tuoi contatti."
+                },
+                {
+                    "title": "Seleziona un elemento e inizia a lavorarci con altri utenti."
+                }
+            ],
+            "trash_empty": [
+                {
+                    "message": "Seleziona l'icona del cestino per eliminare un elemento.",
+                    "title": "Sposta nel cestino tutto quello che non ti serve più."
+                },
+                {
+                    "message": "Seleziona l'icona del cestino per eliminare un elemento.",
+                    "title": "Il cestino è vuoto."
+                },
+                {
+                    "title": "Mantieni ordinato il tuo spazio di lavoro: elimina tutti gli elementi che non ti servono più."
+                }
+            ],
+            "trash_full": [
+                {
+                    "title": "Seleziona e ripristina i tuoi documenti che sono attualmente nel cestino."
+                },
+                {
+                    "message": "Seleziona un elemento per ripristinarlo oppure per eliminarlo definitivamente.",
+                    "title": "Niente è perduto!"
+                },
+                {
+                    "message": "O, quando possibile, selezionalo e ripristinalo nella sua cartella originaria.",
+                    "title": "Seleziona un elemento per eliminarlo definitivamente."
+                }
             ]
-        }
+        },
+        "folder_empty": [
+            {
+                "title": "Clicca il pulsante \"NUOVO\" per creare un nuovo elemento e condividilo anche con i tuoi contatti."
+            },
+            {
+                "message": "Crea un file cliccando il pulsante \"NUOVO\"",
+                "title": "Inizia a modificare e condividere i tuoi progetti."
+            },
+            {
+                "message": "Potrai modificare, contrassegnare e condividere.",
+                "title": "Clicca il pulsante \"NUOVO\" per creare un nuovo elemento."
+            }
+        ],
+        "folder_full": [
+            {
+                "title": "Inizia a modificare e condividere i tuoi file."
+            },
+            {
+                "title": "Visualizza i dettagli delle tue cartelle e condividile con i tuoi contatti."
+            }
+        ]
     },
     "search": {
         "header": {
