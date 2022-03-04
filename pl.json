@@ -24,7 +24,7 @@
         },
         "deletePermanently": {
             "button": {
-                "confirm": "Usuń trwale"
+                "confirm": "Trwale usuń"
             }
         },
         "deleteShare": {
@@ -116,7 +116,7 @@
         },
         "search_empty": [
             {
-                "message": "Lub wybierz \"Zaawansowane filtry\", aby urozmaicić wyniki wyszukiwania."
+                "message": "Lub wybierz \"Zaawansowane filtry\", aby udoskonalićwyniki wyszukiwania."
             },
             {},
             {
