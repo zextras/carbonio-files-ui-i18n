@@ -482,6 +482,12 @@
             {
                 "title": "Visualizza i dettagli delle tue cartelle e condividile con i tuoi contatti.",
                 "message": "Clicca su un elemento per selezionarlo."
+            },
+            {
+                "title": "Seleziona una cartella per modificarla o rinominarla."
+            },
+            {
+                "message": "Seleziona un elemento e poi vai alla finestra \"Condivisioni\""
             }
         ]
     },
