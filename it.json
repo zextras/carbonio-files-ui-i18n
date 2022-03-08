@@ -221,7 +221,9 @@
             ]
         },
         "filter": {
-            "hint": "Sembra non ci sia niente qui."
+            "hint": "Sembra non ci sia niente qui.",
+            "sharedWithMe": "Non c'è ancora nessun elemento condiviso con te.",
+            "trash": "Il cestino è vuoto."
         }
     },
     "create": {
@@ -335,11 +337,16 @@
         },
         "search_empty": [
             {
-                "message": "O seleziona \"Filtri Avanzati\" per rifinire la tua ricerca."
+                "message": "O seleziona \"Filtri Avanzati\" per rifinire la tua ricerca.",
+                "title": "Inizia una nuova ricerca."
             },
-            {},
             {
-                "message": "Prova a iniziare una nuova ricerca."
+                "message": "Non mollare, continua a cercare!",
+                "title": "Nessun risultato."
+            },
+            {
+                "message": "Prova a iniziare una nuova ricerca.",
+                "title": "Nessun risultato per la tua ricerca."
             },
             {
                 "message": "Controlla l'ortografia e i filtri oppure prova con un'altra parola chiave.",
@@ -354,12 +361,15 @@
                 "downloadVersion": "Scarica versione"
             },
             "button": {
-                "upload": "Carica versione"
+                "upload": "Carica versione",
+                "purgeAllVersions": "Elimina tutte le versioni"
             },
             "rowHeaders": {
                 "currentVersion": "Versione corrente",
-                "lastWeek": "Una settimana fa"
-            }
+                "lastWeek": "Una settimana fa",
+                "olderVersions": "Versioni più vecchie"
+            },
+            "mainHint": "Puoi eliminare manualmente qualsiasi versione di un file oppure ripristinarne una come quella corrente. Seleziona una o più versioni da conservare per sempre."
         },
         "search_full": [
             {
@@ -487,9 +497,16 @@
                 "title": "Seleziona una cartella per modificarla o rinominarla."
             },
             {
-                "message": "Seleziona un elemento e poi vai alla finestra \"Condivisioni\""
+                "message": "Seleziona un elemento e poi vai alla finestra \"Condivisioni\"",
+                "title": "Dai ai tuoi contatti i privilegi di modifica per far sì che possano modificare un elemento."
+            },
+            {
+                "title": "Seleziona un elemento per condividerlo o spostarlo in un'altra cartella."
             }
-        ]
+        ],
+        "search": {
+            "title": "Digita alcune parole chiave per iniziare una ricerca."
+        }
     },
     "search": {
         "header": {
