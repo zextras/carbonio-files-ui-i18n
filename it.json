@@ -68,6 +68,14 @@
             "newPublicLinkGenerated": {
                 "label": "Nuovo link pubblico generato"
             }
+        },
+        "decreaseYourOwnShare": {
+            "success": "Permessi aggiornati correttamente"
+        },
+        "version": {
+            "clone": "Versione clonata e impostata come quella corrente",
+            "keepForeverAdded": "Versione contrassegnata come da conservare per sempre",
+            "keepForeverRemoved": "\"Conserva per sempre\" rimosso"
         }
     },
     "secondaryBar": {
@@ -111,7 +119,10 @@
         "copy": {
             "modal": {
                 "button": {
-                    "confirm": "Copia"
+                    "confirm": "Copia",
+                    "tooltip": {
+                        "confirm": "Non puoi effettuare questa azione qui"
+                    }
                 },
                 "title": "Copia {{node.name}}",
                 "title_plurals": "Copia elementi",
@@ -121,7 +132,10 @@
         "move": {
             "modal": {
                 "button": {
-                    "confirm": "Sposta"
+                    "confirm": "Sposta",
+                    "tooltip": {
+                        "confirm": "Non puoi effettuare questa azione qui"
+                    }
                 },
                 "input": {
                     "filter": "Filtra cartelle"
@@ -197,7 +211,9 @@
         "decreaseYourOwnSharePermissions": {
             "button": {
                 "confirm": "Conferma"
-            }
+            },
+            "header": "Diminuisci i tuoi permessi attuali",
+            "body": "Vuoi diminuire i tuoi permessi su questa condivisione? L'azione è permanente e non sarà possibile ripristinare i permessi precedenti in maniera autonoma. Per ripristinare i tuoi permessi originali dovrai contattare il proprietario della condivisione per farli riabilitare"
         }
     },
     "filter": {
@@ -217,13 +233,16 @@
         "search": {
             "hint": "La tua ricerca non ha prodotto risultati per nessun file o cartella",
             "noResults": [
-                "Nessun elemento corrisponde alla tua ricerca."
-            ]
+                "Nessun risultato. Continua a cercare!"
+            ],
+            "notRun": "Nessuna ricerca effettuata."
         },
         "filter": {
             "hint": "Sembra non ci sia niente qui.",
             "sharedWithMe": "Non c'è ancora nessun elemento condiviso con te.",
-            "trash": "Il cestino è vuoto."
+            "trash": "Il cestino è vuoto.",
+            "flagged": "Non ci sono elementi contrassegnati.",
+            "sharedByMe": "Non hai ancora condiviso nessun elemento con i tuoi collaboratori."
         }
     },
     "create": {
@@ -369,7 +388,14 @@
                 "lastWeek": "Una settimana fa",
                 "olderVersions": "Versioni più vecchie"
             },
-            "mainHint": "Puoi eliminare manualmente qualsiasi versione di un file oppure ripristinarne una come quella corrente. Seleziona una o più versioni da conservare per sempre."
+            "mainHint": "Puoi eliminare manualmente qualsiasi versione di un file oppure ripristinarne una come quella corrente. Seleziona una o più versioni da conservare per sempre.",
+            "row": {
+                "clonedIcon": {
+                    "tooltip1": "Clonato da versione {{versionNumber}} ({{cloneDate}})",
+                    "tooltip2": "Clonato da versione {{versionNumber}} (version deleted)"
+                },
+                "versionNumber": "Versione {{versionNumber}}"
+            }
         },
         "search_full": [
             {
@@ -564,7 +590,7 @@
                 },
                 "title": "Filtri Avanzati",
                 "flagged": {
-                    "description": "Filtri i risultati per gli elementi che hai contrassegnato",
+                    "description": "Filtra i risultati tra gli elementi che hai contrassegnato",
                     "label": "Contrassegnato"
                 }
             }
@@ -658,7 +684,8 @@
         "code_NODE_NOT_FOUND": "Sembra che questo oggetto non esista, o che tu non abbia i permessi per accedervi",
         "code_NODE_WRITE_ERROR": "Sembra che questo oggetto non possa essere modificato, o che tu non abbia i permessi per modificarlo",
         "code_SHARE_CREATION_ERROR": "Non è possibile condividere l'elemento con questo utente",
-        "code_SHARE_NOT_FOUND": "Impossibile trovare questa condivisione"
+        "code_SHARE_NOT_FOUND": "Impossibile trovare questa condivisione",
+        "code_NODE_DUPLICATED": "É già presente un file con lo stesso nome in questa cartella"
     },
     "publicLink": {
         "addLink": {
