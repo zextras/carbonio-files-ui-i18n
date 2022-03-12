@@ -12,7 +12,7 @@
                 "confirm": "Potwierdź"
             },
             "header": "Obniż swoje aktualne uprawnienia",
-            "body": "Czy na pewno chcesz obniżyć swoje uprawnienia do tego obiektu? Tej czynności nie da się odwrócić, nie będziesz w stanie samemu przywrócić poprzednich uprawnień. Możesz zawsze skontaktować się z posiadaczem elementu jeśli potrzebujesz przywrócić poprzednie uprawnienia"
+            "body": "Czy na pewno chcesz obniżyć swoje uprawnienia do tego obiektu? Tej czynności nie da się odwrócić, nie będziesz w stanie samemu przywrócić poprzednich uprawnień. Możesz zawsze skontaktować się z posiadaczem elementu jeśli będziesz jednak potrzebował to zrobić"
         },
         "removeLink": {
             "button": {
@@ -62,31 +62,49 @@
         "advancedSearch": {
             "modal": {
                 "button": {
-                    "confirm": "Szukaj"
+                    "confirm": "Wyszukaj",
+                    "reset": "Zresetuj filtry"
                 },
                 "folder": {
                     "modal": {
                         "confirm": "Wybierz folder",
-                        "cancel": "Powrót"
-                    }
+                        "cancel": "Powrót",
+                        "subtitle": "Wyszukiwanie zostanie przeprowadzone jedynie w wybranym folderze",
+                        "cascade": "wyszukaj również w folderach zawartych w tym folderze",
+                        "title": "Wybierz folder"
+                    },
+                    "label": "Wybierz folder"
                 },
                 "keywords": {
                     "label": "Słowa kluczowe"
                 },
                 "flagged": {
-                    "label": "Oflagowany"
+                    "label": "Oflagowany",
+                    "description": "Filtruj wyniki wyszukiwania według oflagowanych elementów"
                 },
-                "title": "Zaawansowane Filtry"
+                "title": "Zaawansowane Filtry",
+                "shared": {
+                    "label": "Udostępnione",
+                    "description": "Filtruj wyniki wyszukiwania wg elementów, które zawierają co najmniej jednego współpracownika (nie wliczając ciebie)"
+                }
+            },
+            "button": {
+                "filters": "{{count}} zaawansowany filtr",
+                "filters_plural": "{{count}} zaawansowane filtry",
+                "noFilter": "Zaawansowanych filtrów"
             }
         },
         "header": {
-            "search": "Szukaj"
+            "search": "Wyszukaj",
+            "start": "Rozpocznij wyszukiwanie",
+            "close": "Wyjdź z wyszukiwania",
+            "result": "Wyniki zawierające wszystkie słowa kluczowe:"
         },
         "search": {
             "tooltip": {
-                "search": "Szukaj",
-                "edit": "Edytuj swoje pole wyszukiwania aby rozpocząć nowe",
-                "empty": "Wpisz słowa kluczowe aby rozpocząć wyszukiwanie"
+                "search": "Wyszukaj",
+                "edit": "Edytuj pole wyszukiwania, aby rozpocząć nowe",
+                "empty": "Wpisz słowa kluczowe, aby rozpocząć wyszukiwanie"
             }
         },
         "clear": {
@@ -95,7 +113,13 @@
                 "empty": "Pole wyszukiwania jest puste"
             }
         },
-        "resultsFor": "Wyniki dla:"
+        "resultsFor": "Wyniki dla:",
+        "searchBar": {
+            "label": {
+                "default": "Wyszukaj coś",
+                "active": "Oddziel słowa kluczowe przecinkiem, średnikiem lub klikając TAB"
+            }
+        }
     },
     "snackbar": {
         "deletePermanently": {
@@ -107,22 +131,73 @@
             "success": "Sukces"
         },
         "restore": {
-            "success": "Sukces"
+            "success": "Sukces",
+            "error": "Coś poszło nie tak, spróbuj ponownie",
+            "showInFolder": "Pokaż w folderze"
+        },
+        "clipboard": {
+            "email": "Adres e-mail został skopiowany",
+            "itemShortcutCopied": "Skrót do elementu został skopiowany"
+        },
+        "copyNodes": {
+            "action": "Idź do folderu",
+            "error": "Coś poszło nie tak, spróbuj ponownie",
+            "success": "Element został skopiowany"
+        },
+        "decreaseYourOwnShare": {
+            "success": "Uprawnienia zostały zaktualizowane pomyślnie"
+        },
+        "download": {
+            "start": "Pobieranie za chwilę się zacznie"
+        },
+        "markForDeletion": {
+            "error": "Coś poszło nie tak, spróbuj ponownie",
+            "success": "Element został przeniesiony do kosza",
+            "showTrash": "Otwórz Kosz"
+        },
+        "moveNodes": {
+            "action": "Idź do folderu",
+            "success": "Element został przeniesiony",
+            "error": "Coś poszło nie tak, spróbuj ponownie"
+        },
+        "unflag": {
+            "success": "Flaga została usunięta z przedmiotu"
+        },
+        "upload": {
+            "goToFolder": "Idź do folderu",
+            "success": "Przeprowadzono przesyłanie w {{destination}}"
+        },
+        "version": {
+            "clone": "Wersja została sklonowana jako aktualna",
+            "keepForeverAdded": "Wersja została zachowana na zawsze",
+            "keepForeverRemoved": "Wersja przestała być zachowywana na zawsze"
+        },
+        "publicLink": {
+            "actionLabel": {
+                "copyLink": "Skopiuj link"
+            },
+            "linkUpdated": {
+                "label": "Publiczny Link został zaktualizowany"
+            },
+            "copyLink": "Publiczny Link został skopiowany",
+            "newPublicLinkGenerated": {
+                "label": "Nowy publiczny Link został wygenerowany"
+            }
         }
     },
     "actions": {
-        "restore": "Odzyskaj",
+        "restore": "Przywróć",
         "deletePermanently": "Trwale usuń",
         "download": "Pobierz",
         "move": "Przenieś",
         "copy": "Skopiuj",
-        "retryUpload": "Ponów wgranie",
+        "retryUpload": "Ponów przesyłanie",
         "flag": "Oflaguj",
         "goToFolder": "Idź do folderu docelowego",
         "markForDeletion": "Zaznacz jako \"do usunięcia\"",
         "moveToTrash": "Przenieś do Kosza",
         "openWithDocs": "Otwórz dokument",
-        "removeUpload": "Usuń wgranie",
+        "removeUpload": "Usuń przesyłanie",
         "rename": "Zmień nazwę",
         "unflag": "Usuń flagę"
     },
@@ -134,7 +209,8 @@
                     "role": {
                         "editor": "Edytor",
                         "editorDescription": "Będzie w stanie oglądać oraz edytować ten plik lub folder",
-                        "viewerDescription": "Będzie w stanie jedynie oglądać lub pobierać ten plik lub folder"
+                        "viewerDescription": "Będzie w stanie jedynie oglądać lub pobierać ten plik lub folder",
+                        "viewer": "Wyświetlający"
                     },
                     "sharingAllowedDescription": "Będzie w stanie zarządzać udostępnieniami tego pliku lub folderu",
                     "sharingAllowed": "Udostępnianie dozwolone"
@@ -143,7 +219,7 @@
                 "you": "Ty",
                 "tooltip": {
                     "edit": {
-                        "collaborator": "Edytuj współpracę użytkownika {{username}}",
+                        "collaborator": "Edytuj współpracę z użytkownikiem {{username}}",
                         "you": "Edytuj swoją współpracę"
                     },
                     "remove": {
@@ -220,7 +296,7 @@
             "flagged_empty": [
                 {
                     "title": "Kliknij flagę aby oznaczyć element.",
-                    "message": "Kiedykolwiek tylko ten element będzie potrzebny, znajdziesz go tutaj."
+                    "message": "Kiedykolwiek tylko będzie potrzebny, znajdziesz go tutaj."
                 },
                 {
                     "message": "Będą tutaj wylistowane.",
@@ -299,14 +375,14 @@
             ],
             "trash_full": [
                 {
-                    "title": "Wybierz i odzyskaj swoje dokumenty znajdujące się aktualnie w koszu."
+                    "title": "Wybierz i przywróć swoje dokumenty znajdujące się aktualnie w koszu."
                 },
                 {
-                    "message": "Wybierz element, aby go odzyskać lub trwale usunąć.",
-                    "title": "Nic nie straciłeś!"
+                    "message": "Wybierz element, aby go przywrócić lub trwale usunąć.",
+                    "title": "Nic straconego!"
                 },
                 {
-                    "message": "Lub, kiedy to możliwe, wybierz oraz odzyskaj w oryginalnym folderze.",
+                    "message": "Lub, kiedy to możliwe, wybierz oraz przywróć w oryginalnym folderze.",
                     "title": "Wybierz element, aby go trwale usunąć."
                 }
             ]
@@ -334,7 +410,7 @@
                 "title": "Zobacz szczegóły swoich folderów i udostępnij je swoim kontaktom."
             },
             {
-                "title": "Wybierz folder, aby go edytować lub zmienić nazwę jego zawartości."
+                "title": "Wybierz folder, aby go edytować lub zmienić jego nazwę."
             },
             {
                 "message": "Wybierz element a następnie przejdź do zakładki \"Udostępnienia\"",
@@ -350,8 +426,8 @@
             }
         ],
         "uploads": {
-            "message": "Tutaj znajdziesz wszystkie elementy, które aktualnie wgrywasz. Możesz z tąd nimi zarządzać",
-            "title": "Wgraj sugestie"
+            "message": "Tutaj znajdziesz wszystkie elementy, które aktualnie przesyłasz. Możesz z tąd nimi zarządzać",
+            "title": "Prześlij sugestie"
         },
         "version": {
             "actions": {
@@ -393,26 +469,80 @@
             "remove": "Usuń",
             "revoke": "Odbierz",
             "undo": "Cofnij",
-            "edit": "Edytuj"
+            "edit": "Edytuj",
+            "editLink": "Edytuj Link",
+            "expireOn": "Wygasa:",
+            "expiredOn": "Ten link wygasł:",
+            "noExpirationDate": "Nie wygasa",
+            "urlChip": {
+                "tooltip": {
+                    "copy": "Skopiuj publiczny link",
+                    "expired": "Ten link wygasł"
+                }
+            }
         },
         "addLink": {
-            "undo": "Cofnij"
+            "undo": "Cofnij",
+            "generateLink": "Wygeneruj Link",
+            "limitReached": "Osiągnięto maksymalną liczbę publicznych linków",
+            "title": "Publiczy Link",
+            "addLink": "Dodaj Link"
+        },
+        "dateTimePicker": {
+            "label": "Data wygaśnięcia"
+        },
+        "input": {
+            "description": {
+                "error": {
+                    "maxLengthAllowed": "Maksymalna dozwolona długość to 300 znaków"
+                }
+            },
+            "label": "Opis Linku"
+        },
+        "datePickerInput": {
+            "description": "Link wygaśnie z końcem wybranego dnia"
         }
     },
     "secondaryBar": {
         "filters": "Filtry",
         "filtersList": {
             "flagged": "Oflagowany",
-            "trash": "Kosz"
-        }
+            "trash": "Kosz",
+            "myElements": "Moje elementy",
+            "sharedByMe": "Udostępnione przeze mnie",
+            "sharedElements": "Udostępnione Elementy",
+            "sharedWithMe": "Udostępnione mi"
+        },
+        "filesHome": "Start",
+        "team": "Pliki wysłane do Zespołu",
+        "uploads": "Przesłania"
     },
     "selectionMode": {
         "node": {
-            "tooltip": "Aktywuj tryb wyboru"
+            "tooltip": "Aktywuj tryb wybierania"
+        },
+        "header": {
+            "exit": "Wyjdź z trybu wybierania",
+            "unselectAll": "Odznacz wszystkie",
+            "selectAll": "Zaznacz wszystkie"
         }
     },
     "sortingDropdown": {
-        "size": "Rozmiar"
+        "size": "Rozmiar",
+        "ascendingOrder": "Rosnąco",
+        "descendingOrder": "Malejąco",
+        "icon": {
+            "tooltip": {
+                "OrderLastUpdateAscending": "Rosnąco wg ostatniej aktualizacji",
+                "OrderLastUpdateDescending": "Malejąco wg ostatniej aktualizacji",
+                "OrderNameAscending": "Rosnąco wg nazwy",
+                "OrderNameDescending": "Malejąco wg nazwy",
+                "OrderSizeAscending": "Rosnąco wg rozmiaru",
+                "OrderSizeDescending": "Malejąco wg rozmiaru"
+            }
+        },
+        "lastUpdate": "Ostatnia Aktualizacja",
+        "name": "Nazwa"
     },
     "create": {
         "options": {
@@ -421,7 +551,7 @@
                 "document": "Nowy Dokument",
                 "presentation": "Nowa Prezentacja",
                 "spreadsheet": "Nowy Arkusz",
-                "upload": "Wgraj"
+                "upload": "Prześlij"
             }
         }
     },
@@ -438,8 +568,15 @@
                 },
                 "otherView": {
                     "enabled": "Tutaj upuść załączniki, aby szybko dodać je do twojego Startu"
-                }
+                },
+                "disabled": "Nie możesz upuścić załącznika w tym miejscu"
             }
+        },
+        "clean": {
+            "completed": "Wyczyść ukończone przesyłania"
+        },
+        "destination": {
+            "home": "Przesyłanie wystąpiło w Plikach Startu"
         }
     },
     "empty": {
@@ -481,7 +618,7 @@
     "node": {
         "alias": {
             "name_TRASH_ROOT": "Kosz",
-            "name_LOCAL_CHAT_ROOT": "Pliki wysłane przez Zespół",
+            "name_LOCAL_CHAT_ROOT": "Pliki wysłane do Zespołu",
             "name_LOCAL_ROOT": "Start",
             "name_SHARED_WITH_ME_ROOT": "Udostępnione mi"
         },
