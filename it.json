@@ -377,7 +377,9 @@
                 "deleteVersion": "Elimina versione",
                 "keepVersion": "Conserva questa versione per sempre",
                 "removeKeepVersion": "Disabilita mantieni per sempre",
-                "downloadVersion": "Scarica versione"
+                "downloadVersion": "Scarica versione",
+                "cloneAsCurrent": "Clona come versione corrente",
+                "openDocumentVersion": "Apri la versione del documento"
             },
             "button": {
                 "upload": "Carica versione",
