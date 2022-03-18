@@ -514,7 +514,7 @@
             "sharedWithMe": "Udostępnione mi"
         },
         "filesHome": "Start",
-        "team": "Pliki wysłane do Zespołu",
+        "team": "Pliki wysłane przez Team",
         "uploads": "Przesłania"
     },
     "selectionMode": {
@@ -618,7 +618,7 @@
     "node": {
         "alias": {
             "name_TRASH_ROOT": "Kosz",
-            "name_LOCAL_CHAT_ROOT": "Pliki wysłane do Zespołu",
+            "name_LOCAL_CHAT_ROOT": "Pliki wysłane przez Team",
             "name_LOCAL_ROOT": "Start",
             "name_SHARED_WITH_ME_ROOT": "Udostępnione mi"
         },
