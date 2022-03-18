@@ -103,7 +103,7 @@
         "filter": {
             "hint": "Burada hiçbir şey yok.",
             "flagged": "Bayrak işaretli öğe yok.",
-            "sharedByMe": "Birlikte çalıştığınız kişilerle henüz hiç öğe paylaşmadınız. ",
+            "sharedByMe": "Birlikte çalıştığınız kişilerle henüz hiç öğe paylaşmadınız.",
             "sharedWithMe": "Henüz sizinle paylaşılan bir öğe yok.",
             "trash": "Çöp kutusu boş."
         },
@@ -253,7 +253,7 @@
         "version": {
             "clone": "Kullanımda olan versiyon olarak kopyalandı",
             "keepForeverAdded": "Versiyon sürekli saklamak üzere işaretlendi",
-            "keepForeverRemoved": "Sürekli sakla iptal edildi"
+            "keepForeverRemoved": "\"Sürekli sakla\" iptal edildi"
         }
     },
     "actions": {
@@ -522,7 +522,7 @@
                 "title": "Klasörlerin detaylarını görüntüleyin ve kişiler ile paylaşın."
             },
             {
-                "title": "İçeriğini düzenlemek veya yeniden adlandırmak için bir klasör seçin."
+                "title": "Düzenlemek veya yeniden adlandırmak için bir klasör seçin."
             },
             {
                 "message": "Bir öğe seçin ve \"Paylaşımlar\" sekmesine gidin",
