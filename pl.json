@@ -170,7 +170,7 @@
         "version": {
             "clone": "Wersja została sklonowana jako aktualna",
             "keepForeverAdded": "Wersja została zachowana na zawsze",
-            "keepForeverRemoved": "Wersja przestała być zachowywana na zawsze"
+            "keepForeverRemoved": "\"Zachowaj na zawsze\" zostało usunięte"
         },
         "publicLink": {
             "actionLabel": {
@@ -592,7 +592,7 @@
             "hint": "Wygląda na to, że nic tu nie ma.",
             "sharedWithMe": "Nie ma jeszcze żadnych elementów udostępnionych tobie.",
             "trash": "Kosz jest pusty.",
-            "sharedByMe": "Nie udostępniono jeszcze żadnego elementu współpracownikom. "
+            "sharedByMe": "Nie udostępniono jeszcze żadnego elementu współpracownikom."
         },
         "folder": {
             "displayerContent": "Ten folder nie ma żadnej zawartości",
