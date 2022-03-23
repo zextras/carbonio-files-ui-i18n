@@ -208,8 +208,8 @@
                     "save": "Zapisz",
                     "role": {
                         "editor": "Edytor",
-                        "editorDescription": "Będzie w stanie oglądać oraz edytować ten plik lub folder",
-                        "viewerDescription": "Będzie w stanie jedynie oglądać lub pobierać ten plik lub folder",
+                        "editorDescription": "Będzie w stanie wyświetlać oraz edytować ten plik lub folder",
+                        "viewerDescription": "Będzie w stanie jedynie wyświetlać lub pobierać ten plik lub folder",
                         "viewer": "Wyświetlający"
                     },
                     "sharingAllowedDescription": "Będzie w stanie zarządzać udostępnieniami tego pliku lub folderu",
