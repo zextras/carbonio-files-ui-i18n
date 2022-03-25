@@ -377,6 +377,16 @@
                     "message": "Se listarán aquí.",
                     "title": "Coloca una marca de seguimiento a los items más importantes haciendo clic en la bandera."
                 }
+            ],
+            "flagged_full": [
+                {
+                    "message": "Lo encontrarás aquí cuando lo necesites.",
+                    "title": "Haz clic en la bandera para marcar un elemento."
+                },
+                {
+                    "message": "Se listarán aquí.",
+                    "title": "Coloca una marca de seguimiento a los items más importantes haciendo clic en la bandera."
+                }
             ]
         }
     },
