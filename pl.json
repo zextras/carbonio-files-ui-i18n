@@ -23,10 +23,10 @@
         },
         "revokeLink": {
             "button": {
-                "confirm": "Odbierz"
+                "confirm": "Deaktywuj"
             },
-            "body": "Odbierając ten link, zablokujesz dostęp do {{nodeName}} każdemu, kto spróbuje użyć tego linku, aby dostać się do tego pliku",
-            "header": "Odbierz publiczny link {{nodeName}}"
+            "body": "Deaktywując ten link, zablokujesz dostęp do {{nodeName}} każdemu, kto spróbuje użyć tego linku, aby dostać się do tego pliku",
+            "header": "Deaktywuj publiczny link {{nodeName}}"
         },
         "deletePermanently": {
             "button": {
@@ -467,7 +467,7 @@
     "publicLink": {
         "link": {
             "remove": "Usuń",
-            "revoke": "Odbierz",
+            "revoke": "Deaktywuj",
             "undo": "Cofnij",
             "edit": "Edytuj",
             "editLink": "Edytuj Link",
