@@ -110,7 +110,40 @@
                 "currentVersion": "当前版本",
                 "lastWeek": "上周"
             }
-        }
+        },
+        "filter": {
+            "sharedByMe_empty": [
+                {},
+                {
+                    "message": "点击项目以将其选择"
+                },
+                {
+                    "message": "点击项目以将其选择"
+                }
+            ],
+            "sharedByMe_full": [
+                {},
+                {
+                    "message": "点击项目以将其选择"
+                }
+            ],
+            "sharedWithMe_full": [
+                {
+                    "message": "点击项目以将其选择"
+                },
+                {
+                    "message": "点击项目以将其选择"
+                }
+            ]
+        },
+        "folder_full": [
+            {
+                "message": "点击项目以将其选择"
+            },
+            {
+                "message": "点击项目以将其选择"
+            }
+        ]
     },
     "snackbar": {
         "restore": {
