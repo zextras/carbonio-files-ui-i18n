@@ -20,12 +20,13 @@
             "hint": "Il semble qu'il n'y ait rien ici.",
             "flagged": "Il n'y a pas d'éléments marqués.",
             "sharedWithMe": "Il n'y a pas encore d'éléments partagés avec vous.",
-            "trash": "La corbeille est vide."
+            "trash": "La corbeille est vide.",
+            "sharedByMe": "Vous n'avez pas encore partagé des éléments avec vos collaborateurs."
         },
         "search": {
             "hint": "Votre recherche ne correspond à aucun fichier ou dossier",
             "noResults": [
-                "Aucun de vos éléments ne correspond à votre recherche.",
+                "Aucun de vos éléments ne correspond à votre recherche. Continuez à chercher !",
                 "Aucun de vos éléments ne correspond à votre recherche."
             ],
             "notRun": "Aucune recherche n'a encore été effectuée."
@@ -252,7 +253,8 @@
         },
         "version": {
             "clone": "Version clonée comme version courante",
-            "keepForeverAdded": "Version marquée comme à garder pour toujours"
+            "keepForeverAdded": "Version marquée comme à garder pour toujours",
+            "keepForeverRemoved": "\"Conservation définitive\" supprimée"
         }
     },
     "actions": {
@@ -583,7 +585,9 @@
                 "message": "Cliquez sur un élément pour le sélectionner.",
                 "title": "Affichez les détails de vos dossiers et partagez-les avec vos contacts."
             },
-            {},
+            {
+                "title": "Sélectionner un dossier pour l'éditer ou le renommer."
+            },
             {
                 "message": "Sélectionnez un élément et allez dans l'onglet \"Partages\"",
                 "title": "Fournissez les droits d'édition à vos contacts et permettez-leur d'éditer un élément."
