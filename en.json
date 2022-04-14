@@ -404,8 +404,8 @@
             }
         },
         "nodesSelection": {
-            "selectedCount": "{{count}} element selected",
-            "selectedCount_plural": "{{count}} elements selected"
+            "selectedCount": "{{count}} selected element",
+            "selectedCount_plural": "{{count}} selected elements"
         },
         "removeLink": {
             "body": "This link has expired, therefore it can't be used anymore to access the element. You can remove the link from the list or you can update its expiration date and other information in order to keep using it",
