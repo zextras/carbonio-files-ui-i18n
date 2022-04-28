@@ -79,7 +79,7 @@
                     "label": "Słowa kluczowe"
                 },
                 "flagged": {
-                    "label": "Oflagowany",
+                    "label": "Oflagowane",
                     "description": "Filtruj wyniki wyszukiwania według oflagowanych elementów"
                 },
                 "title": "Zaawansowane Filtry",
@@ -506,7 +506,7 @@
     "secondaryBar": {
         "filters": "Filtry",
         "filtersList": {
-            "flagged": "Oflagowany",
+            "flagged": "Oflagowane",
             "trash": "Kosz",
             "myElements": "Moje elementy",
             "sharedByMe": "Udostępnione przeze mnie",
