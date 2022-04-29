@@ -728,5 +728,19 @@
                 }
             }
         }
+    },
+    "preview": {
+        "actions": {
+            "tooltip": {
+                "addCollaborator": "Ajouter un collaborateur",
+                "download": "Télécharger"
+            }
+        },
+        "close": {
+            "tooltip": "Fermer"
+        }
+    },
+    "label": {
+        "app_name": "Drive"
     }
 }
