@@ -726,5 +726,19 @@
         "datePickerInput": {
             "description": "लिंक चुने गए दिन के खत्म होने पर एक्सपायर हो जाती है"
         }
+    },
+    "label": {
+        "app_name": "फाइलें"
+    },
+    "preview": {
+        "actions": {
+            "tooltip": {
+                "addCollaborator": "साथ में काम करने वाले जोड़ें",
+                "download": "डाऊनलोड करें"
+            }
+        },
+        "close": {
+            "tooltip": "बंद करें"
+        }
     }
 }
