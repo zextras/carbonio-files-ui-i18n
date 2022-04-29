@@ -728,5 +728,19 @@
         "node": {
             "tooltip": "เปิดใช้งานโหมดการเลือก"
         }
+    },
+    "label": {
+        "app_name": "Files"
+    },
+    "preview": {
+        "actions": {
+            "tooltip": {
+                "addCollaborator": "เพิ่มผู้เข้าร่วม",
+                "download": "ดาวน์โหลด"
+            }
+        },
+        "close": {
+            "tooltip": "ปิด"
+        }
     }
 }
