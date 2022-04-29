@@ -728,5 +728,19 @@
             "show": "Pad van de map weergeven",
             "hide": "Het pad van de map verbergen"
         }
+    },
+    "label": {
+        "app_name": "Bestanden"
+    },
+    "preview": {
+        "actions": {
+            "tooltip": {
+                "addCollaborator": "Medewerker toevoegen",
+                "download": "Download"
+            }
+        },
+        "close": {
+            "tooltip": "Sluiten"
+        }
     }
 }
