@@ -582,7 +582,8 @@
     "empty": {
         "search": {
             "noResults": [
-                "Brak wyników. Nie poddawaj się!"
+                "Brak wyników. Nie poddawaj się!",
+                "Żaden z elementów nie pasuje do kryteriów wyszukiwania."
             ],
             "hint": "Twoje wyszukiwanie nie pasuje do żadnych plików ani folderów",
             "notRun": "Nie przeprowadzono jeszcze żadnego wyszukiwania."
@@ -709,6 +710,20 @@
         "expander": {
             "hide": "Ukryj ścieżkę folderu",
             "show": "Pokaż ścieżkę folderu"
+        }
+    },
+    "label": {
+        "app_name": "Pliki"
+    },
+    "preview": {
+        "actions": {
+            "tooltip": {
+                "addCollaborator": "Dodaj współpracownika",
+                "download": "Pobierz"
+            }
+        },
+        "close": {
+            "tooltip": "Zamknij"
         }
     }
 }
