@@ -728,5 +728,19 @@
             "hide": "Ocultar ruta de la carpeta",
             "show": "Mostrar ruta de la carpeta"
         }
+    },
+    "label": {
+        "app_name": "Drive"
+    },
+    "preview": {
+        "actions": {
+            "tooltip": {
+                "addCollaborator": "Agregar colaborador",
+                "download": "Download"
+            }
+        },
+        "close": {
+            "tooltip": "Cerrar"
+        }
     }
 }
