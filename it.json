@@ -233,7 +233,8 @@
         "search": {
             "hint": "La tua ricerca non ha prodotto risultati per nessun file o cartella",
             "noResults": [
-                "Nessun risultato. Continua a cercare!"
+                "Nessun risultato. Continua a cercare!",
+                "Nessun elemento corrisponde alla tua ricerca."
             ],
             "notRun": "Nessuna ricerca effettuata."
         },
@@ -726,6 +727,20 @@
                     "expired": "Questo link è scaduto"
                 }
             }
+        }
+    },
+    "label": {
+        "app_name": "File"
+    },
+    "preview": {
+        "actions": {
+            "tooltip": {
+                "addCollaborator": "Aggiungi collaboratore",
+                "download": "Scarica"
+            }
+        },
+        "close": {
+            "tooltip": "Chiudi"
         }
     }
 }
