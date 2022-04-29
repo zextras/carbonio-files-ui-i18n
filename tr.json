@@ -110,7 +110,8 @@
         "search": {
             "hint": "Aramanız ile eşleşen hiçbir dosya veya klasör bulunamadı",
             "noResults": [
-                "Sonuç bulunamadı. Aramaya devam edin!"
+                "Sonuç bulunamadı. Aramaya devam edin!",
+                "Aramanız ile uyumlu öğe bulunamadı."
             ],
             "notRun": "Henüz hiç arama yapılmadı."
         }
@@ -726,6 +727,17 @@
         },
         "datePickerInput": {
             "description": "Seçilen gün sonunda bağlantı iptal olur"
+        }
+    },
+    "preview": {
+        "actions": {
+            "tooltip": {
+                "addCollaborator": "Birlikte çalışan ekle",
+                "download": "İndir"
+            }
+        },
+        "close": {
+            "tooltip": "Kapat"
         }
     }
 }
