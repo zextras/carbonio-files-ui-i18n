@@ -728,5 +728,19 @@
         "node": {
             "tooltip": "Aktifkan mode pemilihan"
         }
+    },
+    "label": {
+        "app_name": "File"
+    },
+    "preview": {
+        "actions": {
+            "tooltip": {
+                "addCollaborator": "Tambahkan kolaborator",
+                "download": "Unduh"
+            }
+        },
+        "close": {
+            "tooltip": "Tutup"
+        }
     }
 }
