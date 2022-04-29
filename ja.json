@@ -728,5 +728,19 @@
             "hide": "フォルダのパスを非表示にする",
             "show": "フォルダのパスを表示する"
         }
+    },
+    "preview": {
+        "actions": {
+            "tooltip": {
+                "addCollaborator": "共同編集者を追加する",
+                "download": "ダウンロード"
+            }
+        },
+        "close": {
+            "tooltip": "閉じる"
+        }
+    },
+    "label": {
+        "app_name": "ファイル"
     }
 }
