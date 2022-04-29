@@ -725,5 +725,19 @@
             "hide": "隐藏文件夹路径",
             "show": "显示文件夹路径"
         }
+    },
+    "preview": {
+        "close": {
+            "tooltip": "关闭"
+        },
+        "actions": {
+            "tooltip": {
+                "addCollaborator": "添加协作者",
+                "download": "下载"
+            }
+        }
+    },
+    "label": {
+        "app_name": "文件"
     }
 }
