@@ -81,6 +81,10 @@
             },
             "body": "Bu nod için izinlerinizi azaltmak istediğinizden emin misiniz? Bu işlem kalıcıdır ve daha önceki paylaşım izinlerini kendiniz geri alamazsınız. Daha önceki paylaşım izinlerini geri yüklemek isterseniz paylaşılan öğenin sahibi ile görüşmeniz gerekir",
             "header": "Geçerli izinlerinizi azaltın"
+        },
+        "nodesSelection": {
+            "selectedCount": "{{count}} seçilen öğe",
+            "selectedCount_plural": "{{count}} seçilen öğe"
         }
     },
     "create": {
@@ -739,5 +743,8 @@
         "close": {
             "tooltip": "Kapat"
         }
+    },
+    "label": {
+        "app_name": "Dosyalar"
     }
 }
