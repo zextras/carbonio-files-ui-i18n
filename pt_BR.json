@@ -129,6 +129,10 @@
         },
         "close": {
             "tooltip": "Fechar"
+        },
+        "nodesSelection": {
+            "selectedCount": "{{count}} item selecionado",
+            "selectedCount_plural": "{{count}} itens selecionados"
         }
     },
     "node": {
