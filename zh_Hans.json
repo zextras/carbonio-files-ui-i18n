@@ -450,8 +450,8 @@
             "header": "降低您当前的权限"
         },
         "nodesSelection": {
-            "selectedCount": "{{count}} 已选择元素",
-            "selectedCount_plural": "{{count}} 已选择元素"
+            "selectedCount": "{{count}} 已选择项目",
+            "selectedCount_plural": "{{count}} 已选择项目"
         }
     },
     "node": {
