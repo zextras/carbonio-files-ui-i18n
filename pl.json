@@ -439,7 +439,7 @@
                 "removeKeepVersion": "Usuń zachowanie tej wersji na zawsze"
             },
             "button": {
-                "purgeAllVersions": "Skasuj wszystkie wersje",
+                "purgeAllVersions": "Czystka wszystkich wersji",
                 "upload": "Wgraj wersję"
             },
             "row": {
