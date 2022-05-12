@@ -11,6 +11,11 @@
         "folder": {
             "hint": "Parece que esta pasta está vazia",
             "state": "Arraste um arquivo ou crie um novo clicando em \"NOVO\""
+        },
+        "search": {
+            "noResults": [
+                "Nenhum dos seus itens corresponde à sua busca."
+            ]
         }
     },
     "filter": {
@@ -51,7 +56,8 @@
             "rootsList": "Drive",
             "sharedWitMe": "Partilhado comigo",
             "trash": {
-                "trash": "Reciclagem"
+                "trash": "Reciclagem",
+                "sharedWitMe": "Itens compartilhados"
             }
         },
         "close": {
@@ -70,6 +76,11 @@
         "removeLink": {
             "button": {
                 "confirm": "Remover"
+            }
+        },
+        "revokeLink": {
+            "button": {
+                "confirm": "Revogar"
             }
         }
     },
@@ -104,6 +115,9 @@
             "modal": {
                 "button": {
                     "confirm": "Mover"
+                },
+                "input": {
+                    "filter": "Filtrar pastas"
                 }
             }
         },
@@ -139,7 +153,24 @@
             "success": "Êxito"
         },
         "restore": {
-            "success": "Êxito"
+            "success": "Êxito",
+            "error": "Algo deu errado, tente novamente"
+        },
+        "publicLink": {
+            "actionLabel": {
+                "copyLink": "Copiar Link"
+            }
+        },
+        "copyNodes": {
+            "action": "Ir para a pasta",
+            "error": "Algo deu errado, tente novamente"
+        },
+        "moveNodes": {
+            "action": "Ir para a pasta",
+            "error": "Algo deu errado, tente novamente"
+        },
+        "upload": {
+            "goToFolder": "Ir para a pasta"
         }
     },
     "actions": {
@@ -150,7 +181,8 @@
         "move": "Mover",
         "openWithDocs": "Abrir com Docs",
         "rename": "Renomear",
-        "restore": "Restaurar"
+        "restore": "Restaurar",
+        "deletePermanently": "Excluir Permanentemente"
     },
     "displayer": {
         "list": {
@@ -160,9 +192,15 @@
             "chip": {
                 "you": "Você",
                 "popover": {
-                    "save": "Salvar"
+                    "save": "Salvar",
+                    "role": {
+                        "viewer": "Visualizador"
+                    }
                 },
                 "owner": "Proprietário"
+            },
+            "addShare": {
+                "note": "Nota:"
             }
         },
         "details": {
@@ -192,7 +230,25 @@
         },
         "tabs": {
             "details": "Detalhes"
-        }
+        },
+        "search_empty": [
+            {
+                "message": "Ou selecione \"Filtros Avançados\" para refinar sua busca."
+            },
+            {},
+            {
+                "message": "Tente iniciar uma nova busca."
+            },
+            {
+                "message": "Verifique a ortografia e as opções de filtros ou experimente uma nova palavra-chave.",
+                "title": "Não existem resultados para sua busca."
+            }
+        ],
+        "search_full": [
+            {
+                "title": "Selecione um ou mais resultados para realizar ações ou exibir os detalhes."
+            }
+        ]
     },
     "search": {
         "header": {
@@ -200,14 +256,18 @@
         },
         "search": {
             "tooltip": {
-                "search": "Busca"
+                "search": "Busca",
+                "edit": "Edite para fazer uma nova pesquisa",
+                "empty": "Digite algumas palavras-chave para fazer uma pesquisa"
             }
         },
         "advancedSearch": {
             "modal": {
                 "folder": {
                     "modal": {
-                        "title": "Seleccione um directório"
+                        "title": "Seleccione um directório",
+                        "cancel": "Voltar",
+                        "confirm": "Escolher pasta"
                     },
                     "label": "Seleccione um directório"
                 },
@@ -216,12 +276,26 @@
                 },
                 "button": {
                     "confirm": "Procurar"
-                }
+                },
+                "flagged": {
+                    "label": "Sinalizado"
+                },
+                "keywords": {
+                    "label": "Palavras-chave"
+                },
+                "title": "Filtros Avançados"
             },
             "button": {
                 "noFilter": "Filtros avançados"
             }
-        }
+        },
+        "clear": {
+            "tooltip": {
+                "clear": "Limpar caixa de pesquisa",
+                "empty": "Caixa de pesquisa está vazia"
+            }
+        },
+        "resultsFor": "Resultados para:"
     },
     "publicLink": {
         "addLink": {
@@ -231,7 +305,8 @@
         "link": {
             "edit": "Editar",
             "remove": "Remover",
-            "undo": "Desfazer"
+            "undo": "Desfazer",
+            "revoke": "Revogar"
         }
     },
     "sortingDropdown": {
@@ -267,6 +342,19 @@
         },
         "close": {
             "tooltip": "Fechar"
+        }
+    },
+    "uploads": {
+        "dropzone": {
+            "title": {
+                "enabled": "Modo Arrastar e Soltar",
+                "disabled": "Modo Arrastar e Soltar"
+            }
+        }
+    },
+    "selectionMode": {
+        "node": {
+            "tooltip": "Ativar modo de seleção"
         }
     }
 }
