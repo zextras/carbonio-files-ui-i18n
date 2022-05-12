@@ -206,7 +206,8 @@
         },
         "upload": {
             "goToFolder": "Перейти в папку",
-            "success": "Загрузка произошла в {{destination}}"
+            "success": "Загрузка произошла в {{destination}}",
+            "moreInfo": "Подробная информация"
         },
         "moveNodes": {
             "error": "Что-то пошло не так, попробуйте еще раз",
