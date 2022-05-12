@@ -740,7 +740,7 @@
         "actions": {
             "tooltip": {
                 "addCollaborator": "Добавить сотрудника",
-                "download": "Загрузить"
+                "download": "Скачать"
             }
         },
         "close": {

@@ -9,8 +9,8 @@
     },
     "empty": {
         "folder": {
-            "hint": "",
-            "state": ""
+            "hint": "Parece que esta pasta está vazia",
+            "state": "Arraste um arquivo ou crie um novo clicando em \"NOVO\""
         }
     },
     "filter": {
@@ -27,10 +27,10 @@
                 "button": {
                     "confirm": "Criar"
                 },
-                "title": "",
+                "title": "Criar Nova Pasta",
                 "input": {
                     "label": {
-                        "name": ""
+                        "name": "Nome da Pasta"
                     }
                 }
             }
@@ -81,15 +81,15 @@
                 },
                 "input": {
                     "label": {
-                        "name": ""
+                        "name": "Nome do Item"
                     }
                 },
-                "title": ""
+                "title": "Renomear Item"
             }
         },
         "alias": {
             "name_LOCAL_CHAT_ROOT": "Team",
-            "name_LOCAL_ROOT": "",
+            "name_LOCAL_ROOT": "Home",
             "name_SHARED_WITH_ME_ROOT": "Partilhado comigo",
             "name_TRASH_ROOT": "Reciclagem"
         },
@@ -116,9 +116,9 @@
     },
     "secondaryBar": {
         "driveHome": "Drive Home",
-        "filters": "",
+        "filters": "Filtros",
         "filtersList": {
-            "flagged": "",
+            "flagged": "Sinalizado",
             "sharedByMe": "Partilhados por mim",
             "sharedWithMe": "Partilhado comigo",
             "trash": "Reciclagem"
@@ -127,8 +127,8 @@
     },
     "snackbar": {
         "markForDeletion": {
-            "error": "",
-            "success": ""
+            "error": "Algo deu errado, tente novamente",
+            "success": "Item movido para lixeira"
         },
         "deleteShare": {
             "error": "Erro",
@@ -256,7 +256,7 @@
         "code_Generic": "Algo correu mal"
     },
     "label": {
-        "app_name": "Ficheiros"
+        "app_name": "Files"
     },
     "preview": {
         "actions": {
