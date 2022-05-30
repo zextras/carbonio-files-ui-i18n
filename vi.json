@@ -14,7 +14,7 @@
         "rename": "Đổi tên",
         "restore": "Khôi phục",
         "retryUpload": "Tải lại",
-        "unflag": "bỏ gắn cờ"
+        "unflag": "Bỏ gắn cờ"
     },
     "create": {
         "options": {
@@ -56,21 +56,21 @@
             "flagged_empty": [
                 {
                     "message": "Bạn sẽ tìm thấy nó ở đây bất cứ khi nào bạn cần.",
-                    "title": "Bấm vào cờ để gắn cờ (flag) một mục."
+                    "title": "Bấm vào cờ để gắn cờ một mục."
                 },
                 {
                     "message": "Chúng liệt kê ở đây.",
-                    "title": "Gắn cờ (flag) mục quan trọng bằng cách bấm vào flag."
+                    "title": "Gắn cờ mục quan trọng bằng cách bấm vào flag."
                 }
             ],
             "flagged_full": [
                 {
                     "message": "Bạn sẽ tìm thấy nó ở đây bất cứ khi nào bạn cần.",
-                    "title": "Bấm vào cờ để gắn cờ (flag) một mục."
+                    "title": "Bấm vào cờ để gắn cờ một mục."
                 },
                 {
                     "message": "Chúng liệt kê ở đây.",
-                    "title": "Gắn cờ (fag) mục quan trọng bằng cách bấm vào flag."
+                    "title": "Gắn cờ mục quan trọng bằng cách bấm vào cờ."
                 }
             ],
             "sharedByMe_empty": [
@@ -136,7 +136,7 @@
             "sharedWithMe_full": [
                 {
                     "message": "Bấm vào một mục để lựa chọn nó.",
-                    "title": "Bắt đầu chỉnh sửa và chia sẻ tệp (File) của bạn."
+                    "title": "Bắt đầu chỉnh sửa và chia sẻ tệp của bạn."
                 },
                 {
                     "message": "Bấm vào một mục để lựa chọn nó.",
@@ -152,17 +152,17 @@
                 "title": "Bấm vào nút \"MỚI\" để tại một mục mới và chia sẻ với liên hệ của bạn."
             },
             {
-                "message": "Tạo một tệp (File) bằng cách bấm vào nút \"MỚI\"",
+                "message": "Tạo một tệp bằng cách bấm vào nút \"MỚI\"",
                 "title": "Bắt đầu chỉnh sửa và chia sẻ công việc của bạn."
             },
             {
                 "title": "Bấm vào nút \"MỚI\" và tạo một mục mới.",
-                "message": "Bạn có thể chỉnh sửa, gắn cờ (flag) và chia sẻ nó."
+                "message": "Bạn có thể chỉnh sửa, gắn cờ và chia sẻ nó."
             }
         ],
         "folder_full": [
             {
-                "title": "Bắt đầu chỉnh sửa và chia sẻ tệp (File) của bạn.",
+                "title": "Bắt đầu chỉnh sửa và chia sẻ tệp của bạn.",
                 "message": "Bấm vào một mục để lựa chọn nó."
             },
             {
@@ -321,7 +321,7 @@
         "filter": {
             "hint": "Có vẻ như không có gì ở đây.",
             "trash": "Thùng rác đang rỗng.",
-            "flagged": "Không có mục nào được gắn cờ (flagged).",
+            "flagged": "Không có mục nào được gắn cờ.",
             "sharedWithMe": "Không có mục nào được chia sẻ với bạn bây giờ.",
             "sharedByMe": "Bạn chưa chia sẻ bất kỳ mục nào với các cộng tác viên của mình."
         },
@@ -367,7 +367,7 @@
             "button": {
                 "confirm": "xoá"
             },
-            "header": "Xoá liên kết Public {{nodeName}}",
+            "header": "Xoá liên kết công khai {{nodeName}}",
             "body": "Liên kết này đã hết hạn, do đó nó không thể sử dụng để truy cập phần tử được nữa. Bạn có thể xóa liên kết khỏi danh sách hoặc bạn có thể cập nhật ngày hết hạn và thông tin khác để tiếp tục sử dụng liên kết đó"
         },
         "revokeLink": {
@@ -375,7 +375,7 @@
             "button": {
                 "confirm": "Thu hồi"
             },
-            "header": "Thu hồi liên kết public {{nodeName}}"
+            "header": "Thu hồi liên kết công khai {{nodeName}}"
         },
         "roots": {
             "sharedWitMe": "Chia sẻ với tôi",
@@ -427,7 +427,7 @@
     },
     "node": {
         "alias": {
-            "name_LOCAL_CHAT_ROOT": "Gửi tệp qua Team",
+            "name_LOCAL_CHAT_ROOT": "Gửi tệp qua đội",
             "name_LOCAL_ROOT": "Trang chủ",
             "name_SHARED_WITH_ME_ROOT": "Chia sẻ với tôi",
             "name_TRASH_ROOT": "Thùng rác"
@@ -499,7 +499,7 @@
             "generateLink": "Tạo liên kết",
             "limitReached": "Đã đạt đến số lượng liên kết công khai tối đa",
             "undo": "Hoàn tác",
-            "title": "Liên kết công khai (Link Public)"
+            "title": "Liên kết công khai"
         },
         "dateTimePicker": {
             "label": "Ngày hết hạn"
@@ -510,7 +510,7 @@
                     "maxLengthAllowed": "Độ dài tối đa được phép là 300 ký tự"
                 }
             },
-            "label": "Mô tả liên kết (Link's description)"
+            "label": "Mô tả liên kết"
         },
         "link": {
             "edit": "Chỉnh sửa",
@@ -524,7 +524,7 @@
             "urlChip": {
                 "tooltip": {
                     "expired": "Liên kết đã hết hạn",
-                    "copy": "Sao chép liên kết public"
+                    "copy": "Sao chép liên kết công khai"
                 }
             }
         },
@@ -555,8 +555,8 @@
                     }
                 },
                 "flagged": {
-                    "description": "Loc kết quả theo mục mà bạn đã gắn cờ (flag)",
-                    "label": "Gắn cờ (flag)"
+                    "description": "Lọc kết quả theo mục mà bạn đã gắn cờ",
+                    "label": "Gắn cờ"
                 },
                 "shared": {
                     "description": "Lọc kết quả theo các mục có ít nhất một cộng tác viên ngoài bạn",
@@ -601,12 +601,12 @@
         "filtersList": {
             "myElements": "Các yếu tố của tôi",
             "sharedByMe": "Chia sẻ bởi tôi",
-            "flagged": "Gắn cờ (flag)",
+            "flagged": "Gắn cờ",
             "sharedElements": "các yếu tố được chia sẻ",
             "sharedWithMe": "Chia sẻ với tôi",
             "trash": "Thùng rác"
         },
-        "team": "Gửi tệp qua Team",
+        "team": "Gửi tệp qua",
         "uploads": "Tải lên"
     },
     "selectionMode": {
@@ -621,11 +621,11 @@
     },
     "snackbar": {
         "clipboard": {
-            "itemShortcutCopied": "Sao chép Item shortcut",
+            "itemShortcutCopied": "Sao chép shortcut mục",
             "email": "Đã sao chép địa chỉ thư"
         },
         "copyNodes": {
-            "action": "Chuyển đến thư mục",
+            "action": "Đi đến thư mục",
             "error": "Có lỗi, vui lòng thử lại",
             "success": "Sao chép mục"
         },
@@ -655,14 +655,14 @@
         },
         "publicLink": {
             "actionLabel": {
-                "copyLink": "Sao chép Link"
+                "copyLink": "Sao chép liên kết"
             },
-            "copyLink": "Sao chép liên kết Public",
+            "copyLink": "Sao chép liên kết công khai",
             "linkUpdated": {
-                "label": "Liên kết public được cập nhập"
+                "label": "Liên kết công khai được cập nhập"
             },
             "newPublicLinkGenerated": {
-                "label": "Đã tạo liên kết public mới"
+                "label": "Đã tạo liên kết công khai mới"
             }
         },
         "upload": {
@@ -683,7 +683,7 @@
             "success": "Thành công"
         },
         "unflag": {
-            "success": "Đã gỡ gắn cờ (unflagged) thành công"
+            "success": "Đã gỡ gắn cờ thành công"
         }
     },
     "sortingDropdown": {
@@ -715,15 +715,15 @@
                 "disabled": "Bạn không thể kéo thả đính kèm vào vùng này",
                 "folderView": {
                     "disabled": "Bạn không thể kéo thả đính kèm vào vùng này",
-                    "enabled": "Kéo/thả vào đây các tệp đính kèm của bạn để nhanh chóng thêm vào e-mail"
+                    "enabled": "Kéo/thả vào đây các tệp đính kèm của bạn để nhanh chóng thêm vào thư điện tử"
                 },
                 "otherView": {
                     "enabled": "Kéo/thả vào đây các tệp đính kèm của bạn để nhanh chóng thêm vào trang chủ"
                 }
             },
             "title": {
-                "disabled": "Chế độ kéo thả(Drag&Drop Mode)",
-                "enabled": "Chế độ kéo thả(Drag&Drop Mode)"
+                "disabled": "Chế độ kéo thả",
+                "enabled": "Chế độ kéo thả"
             }
         },
         "error": {
@@ -739,6 +739,6 @@
         }
     },
     "label": {
-        "app_name": "Tệp (File)"
+        "app_name": "Tệp"
     }
 }
