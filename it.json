@@ -277,12 +277,12 @@
         "openWithDocs": "Apri documento",
         "rename": "Rinomina",
         "restore": "Ripristina",
-        "flag": "Etichetta",
+        "flag": "Contrassegna",
         "goToFolder": "Vai alla cartella di destinazione",
         "moveToTrash": "Sposta nel Cestino",
         "removeUpload": "rimuovi caricamento",
         "retryUpload": "Riprova caricamento",
-        "unflag": "Deseleziona",
+        "unflag": "Rimuovi contrassegno",
         "sendViaMail": "Invia via e-mail"
     },
     "displayer": {
