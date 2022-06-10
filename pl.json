@@ -248,7 +248,7 @@
                     "placeholder": "Dodaj nowe osoby lub grupy"
                 },
                 "note": "Notka:",
-                "noteDescription": "Domyślna wiadomość zawiera twoje imię, nazwę udostępnianiego elementu, uprawnienia przyznane odbiorcom oraz informacje dot. logowania."
+                "noteDescription": "Domyślna wiadomość zawiera Twoje imię, nazwę udostępnianiego elementu, uprawnienia przyznane odbiorcom oraz informacje dot. logowania."
             },
             "noSharePermissionHeader": "Nie masz uprawnień, aby udostępnić ten element."
         },
@@ -578,7 +578,7 @@
                     "enabled": "Tutaj upuść załączniki, aby szybko dodać je do tego folderu"
                 },
                 "otherView": {
-                    "enabled": "Tutaj upuść załączniki, aby szybko dodać je do twojego Startu"
+                    "enabled": "Tutaj upuść załączniki, aby szybko dodać je do Twojego Startu"
                 },
                 "disabled": "Nie możesz upuścić załącznika w tym miejscu"
             }
