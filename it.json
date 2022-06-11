@@ -224,6 +224,12 @@
         },
         "moreInfo": {
             "title": "Ulteriori informazioni"
+        },
+        "purgeAllVersions": {
+            "button": {
+                "confirm": "Elimina tutte le versioni"
+            },
+            "header": "Elimina tutte le versioni"
         }
     },
     "filter": {
@@ -283,7 +289,9 @@
         "removeUpload": "rimuovi caricamento",
         "retryUpload": "Riprova caricamento",
         "unflag": "Rimuovi contrassegno",
-        "sendViaMail": "Invia via e-mail"
+        "sendViaMail": "Invia via e-mail",
+        "edit": "Modifica",
+        "preview": "Anteprima"
     },
     "displayer": {
         "list": {
