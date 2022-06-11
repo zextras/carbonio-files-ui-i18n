@@ -121,6 +121,12 @@
         },
         "moreInfo": {
             "title": "Informations complémentaires"
+        },
+        "purgeAllVersions": {
+            "button": {
+                "confirm": "Purger toutes les versions"
+            },
+            "header": "Purger toutes les versions"
         }
     },
     "node": {
@@ -283,7 +289,9 @@
         "removeUpload": "Supprimer le téléchargement",
         "retryUpload": "Réessayer le téléchargement",
         "unflag": "Décocher",
-        "sendViaMail": "Envoyer par email"
+        "sendViaMail": "Envoyer par email",
+        "edit": "Modifier",
+        "preview": "Prévisualisation"
     },
     "search": {
         "header": {
