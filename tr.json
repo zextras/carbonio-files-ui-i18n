@@ -90,7 +90,11 @@
             "title": "Ek Bilgi"
         },
         "purgeAllVersions": {
-            "body": "Şu anda geçerli olan dışında, sürekli sakla olarak işaretlenmemiş tüm versiyonlar silinecek. Bu versiyonları geri getiremezsiniz."
+            "body": "Şu anda geçerli olan dışında, sürekli sakla olarak işaretlenmemiş tüm versiyonlar silinecek. Bu versiyonları geri getiremezsiniz.",
+            "button": {
+                "confirm": "Tüm versiyonları sil"
+            },
+            "header": "Tüm versiyonları sil"
         }
     },
     "create": {
@@ -287,7 +291,9 @@
         "retryUpload": "Yüklemeyi tekrar dene",
         "unflag": "Bayrağı kaldır",
         "sendViaMail": "E-posta ile gönder",
-        "manageShares": "Paylaşımları Yönet"
+        "manageShares": "Paylaşımları Yönet",
+        "edit": "Düzenle",
+        "preview": "Önizleme"
     },
     "displayer": {
         "details": {
