@@ -63,6 +63,12 @@
         "nodesSelection": {
             "selectedCount": "{{count}} wybrany element",
             "selectedCount_plural": "{{count}} wybranych elementów"
+        },
+        "purgeAllVersions": {
+            "button": {
+                "confirm": "Czystka wszystkich wersji"
+            },
+            "header": "Czystka wszystkich wersji"
         }
     },
     "search": {
@@ -210,7 +216,9 @@
         "removeUpload": "Usuń przesyłanie",
         "rename": "Zmień nazwę",
         "unflag": "Usuń flagę",
-        "sendViaMail": "Wyślij e-mailem"
+        "sendViaMail": "Wyślij e-mailem",
+        "edit": "Edytuj",
+        "preview": "Podgląd"
     },
     "displayer": {
         "share": {
