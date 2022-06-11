@@ -14,7 +14,9 @@
         "rename": "Đổi tên",
         "restore": "Khôi phục",
         "retryUpload": "Tải lại",
-        "unflag": "Bỏ gắn cờ"
+        "unflag": "Bỏ gắn cờ",
+        "edit": "Soan thảo",
+        "preview": "Xem trước"
     },
     "create": {
         "options": {
@@ -313,7 +315,8 @@
     "empty": {
         "search": {
             "noResults": [
-                "Không có kết quả. Tiếp tục tìm kiếm!"
+                "Không có kết quả. Tiếp tục tìm kiếm!",
+                "Không có mục nào phù hợp với tìm kiếm của bạn."
             ],
             "notRun": "Không có cuộc tìm kiếm nào được thực hiện.",
             "hint": "Không tìm thấy tệp hay thư mục nào phù hợp với tìm kiếm của bạn"
@@ -423,6 +426,12 @@
         "nodesSelection": {
             "selectedCount_plural": "{{count}} mục đã chọn",
             "selectedCount": "{{count}} mục đã chọn"
+        },
+        "purgeAllVersions": {
+            "button": {
+                "confirm": "Xóa tất cả các phiên bản"
+            },
+            "header": "Xóa tất cả các phiên bản"
         }
     },
     "node": {
