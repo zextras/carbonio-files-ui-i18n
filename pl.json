@@ -68,7 +68,8 @@
             "button": {
                 "confirm": "Czystka wszystkich wersji"
             },
-            "header": "Czystka wszystkich wersji"
+            "header": "Czystka wszystkich wersji",
+            "body": "Wszystkie wersje, które nie są oznaczone jako zachowywane na zawsze zostaną usunięte. Nie będziesz mógł ich odzyskać."
         }
     },
     "search": {
@@ -218,7 +219,8 @@
         "unflag": "Usuń flagę",
         "sendViaMail": "Wyślij e-mailem",
         "edit": "Edytuj",
-        "preview": "Podgląd"
+        "preview": "Podgląd",
+        "manageShares": "Zarządzaj Udostępnieniami"
     },
     "displayer": {
         "share": {
@@ -728,7 +730,8 @@
         "code_NODE_WRITE_ERROR": "Wygląda na to, że ten obiekt nie może być edytowany lub nie masz do tego uprawnień",
         "code_SHARE_CREATION_ERROR": "Przepraszamy, niestety nie da się udostępnić wskazanego elementu temu użytkownikowi",
         "code_SHARE_NOT_FOUND": "Przepraszamy, nie udało się znaleźc tego udostępnienia",
-        "code_MISSING_FIELD": "Nastąpił błąd wewnętrzny, nie udało się odzyskać wszystkich informacji o tym obiekcie"
+        "code_MISSING_FIELD": "Nastąpił błąd wewnętrzny, nie udało się odzyskać wszystkich informacji o tym obiekcie",
+        "code_VERSIONS_LIMIT_REACHED": "Ta operacja nie może zostać ukończona. Osignięto max. limit."
     },
     "breadcrumb": {
         "expander": {
@@ -742,7 +745,8 @@
     "preview": {
         "actions": {
             "tooltip": {
-                "download": "Pobierz"
+                "download": "Pobierz",
+                "manageShares": "Zarządzaj Udostępnieniami"
             }
         },
         "close": {
