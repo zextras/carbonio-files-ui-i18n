@@ -319,7 +319,7 @@
                 "Không có kết quả. Tiếp tục tìm kiếm!",
                 "Không có mục nào phù hợp với tìm kiếm của bạn."
             ],
-            "notRun": "Không có cuộc tìm kiếm nào được thực hiện.",
+            "notRun": "Hiện tại, không có kết quả tìm kiếm nào được đưa ra.",
             "hint": "Không tìm thấy tệp hay thư mục nào phù hợp với tìm kiếm của bạn"
         },
         "filter": {
