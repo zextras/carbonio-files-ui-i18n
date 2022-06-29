@@ -23,7 +23,7 @@
             "button": {
                 "confirm": "Eliminar permanentemente"
             },
-            "body": "Borrarás permanentemente este elemento/estos elementos. Ya no podrás recuperar este archivo/estos archivos. Esta acción es irreversible.",
+            "body": "Eliminarás permanentemente este(os) elemento(s). Ya no podrás recuperar este(os) archivo(s). Esta acción es irreversible.",
             "header": "Esta acción es irreversible"
         },
         "roots": {
@@ -85,7 +85,8 @@
             "button": {
                 "confirm": "Eliminar todas las versiones"
             },
-            "header": "Eliminar todas las versiones"
+            "header": "Eliminar todas las versiones",
+            "body": "Todas las versiones que no están marcadas para ser retenidas permanentemente, con excepción de la actual, serán eliminadas. No habrá posibilidad de recuperar aquellas versiones."
         }
     },
     "node": {
@@ -103,7 +104,7 @@
             }
         },
         "alias": {
-            "name_LOCAL_CHAT_ROOT": "Archivos enviados vía Team",
+            "name_LOCAL_CHAT_ROOT": "Archivos enviados a través de Team",
             "name_LOCAL_ROOT": "Home",
             "name_SHARED_WITH_ME_ROOT": "Compartido conmigo",
             "name_TRASH_ROOT": "Papelera"
@@ -161,7 +162,7 @@
             "myElements": "Mis elementos",
             "sharedElements": "Elementos compartidos"
         },
-        "team": "Archivos enviados vía Team",
+        "team": "Archivos enviados a través de Team",
         "uploads": "Subidas",
         "filesHome": "Home"
     },
@@ -259,7 +260,7 @@
         "search": {
             "hint": "Tu búsqueda no coincidió con ningún archivo ni carpeta",
             "noResults": [
-                "Ninguno de tus elementos coincide con tu búsqueda.",
+                "¡No hay resultados para mostrar!",
                 "Ninguno de tus elementos coincide con tu búsqueda."
             ],
             "notRun": "Aún no se ha realizado ninguna búsqueda."
@@ -291,7 +292,8 @@
         "unflag": "Quitar etiqueta",
         "sendViaMail": "Enviar por e-mail",
         "edit": "Editar",
-        "preview": "Vista previa"
+        "preview": "Vista previa",
+        "manageShares": "Administrar comparticiones"
     },
     "displayer": {
         "list": {
@@ -372,7 +374,7 @@
         },
         "generic": {
             "message": "Haz clic en un elemento para seleccionarlo",
-            "title": "Ver archivos y carpetas, compartirlas con tus contactos"
+            "title": "Ver archivos y carpetas, compártelas con tus contactos"
         },
         "search_empty": [
             {
@@ -535,7 +537,7 @@
         "folder_full": [
             {
                 "message": "Haz clic en un artículo para seleccionarlo.",
-                "title": "Empieza por editar y compartir tus archivos."
+                "title": "Empieza a editar y compartir tus archivos."
             },
             {
                 "message": "Haz clic sobre un artículo para seleccionarlo.",
@@ -644,7 +646,7 @@
             "completed": "Limpiar subidas completadas"
         },
         "destination": {
-            "home": "Subida realizada en Files Home"
+            "home": "Upload efectuado en el Home de Files"
         },
         "dropzone": {
             "message": {
@@ -706,7 +708,8 @@
         "code_NODE_WRITE_ERROR": "Parece que este objeto no puede ser editado o que no tienes permiso para editarlo",
         "code_SHARE_CREATION_ERROR": "Lo sentimos, pero no es posible compartir el elemento con este usuario",
         "code_SHARE_NOT_FOUND": "Lo sentimos, pero esta compartición no puede ser encontrada",
-        "code_NODE_DUPLICATED": "Hay un archivo con el mismo nombre en esta carpeta"
+        "code_NODE_DUPLICATED": "Hay un archivo con el mismo nombre en esta carpeta",
+        "code_VERSIONS_LIMIT_REACHED": "La operación no se puede completar. Has alcanzado el límite máximo."
     },
     "publicLink": {
         "addLink": {
@@ -759,7 +762,8 @@
     "preview": {
         "actions": {
             "tooltip": {
-                "download": "Download"
+                "download": "Download",
+                "manageShares": "Administrar comparticiones"
             }
         },
         "close": {
