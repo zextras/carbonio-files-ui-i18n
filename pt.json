@@ -8,7 +8,7 @@
             "myElements": "Meus elementos",
             "sharedElements": "Elementos Compartilhados"
         },
-        "team": "Arquivos enviados via Team",
+        "team": "Ficheiros enviados via Team",
         "driveHome": "Drive Home",
         "filters": "Filtros",
         "uploads": "Uploads",
@@ -39,7 +39,7 @@
             "sharedWithMe": "Ainda não há itens compartilhados com você."
         },
         "search": {
-            "hint": "Sua busca não coincide com nenhum arquivo ou pasta",
+            "hint": "Sua busca não coincide com nenhum ficheiro ou pasta",
             "noResults": [
                 "Nenhum dos seus itens corresponde à sua busca.",
                 "Nenhum dos seus itens corresponde à sua busca."
@@ -80,7 +80,7 @@
                 "confirm": "Excluir permanentemente"
             },
             "header": "Esta ação é irreversível",
-            "body": "Você irá excluir permanentemente este(s) item(ns). Não será possível recuperar mais este(s) arquivo(s). Esta ação é irreversível."
+            "body": "Você irá excluir permanentemente este(s) item(ns). Não será possível recuperar mais este(s) ficheiro(s). Esta ação é irreversível."
         },
         "roots": {
             "driveHome": "Home",
@@ -169,7 +169,7 @@
             }
         },
         "alias": {
-            "name_LOCAL_CHAT_ROOT": "Arquivos enviados via Team",
+            "name_LOCAL_CHAT_ROOT": "Ficheiros enviados via Team",
             "name_LOCAL_ROOT": "Home",
             "name_TRASH_ROOT": "Lixeira",
             "name_SHARED_WITH_ME_ROOT": "Compartilhados comigo"
@@ -429,7 +429,7 @@
         },
         "generic": {
             "message": "Clique em um item para selecioná-lo",
-            "title": "Veja arquivos e pasta, compartilhe-os com seus contatos"
+            "title": "Veja ficheiros e pastas, partilhe-os com seus contactos"
         },
         "search_empty": [
             {
@@ -539,7 +539,7 @@
             "sharedWithMe_full": [
                 {
                     "message": "Clique em um item para selecioná-lo.",
-                    "title": "Comece a editar e compartilhar seus arquivos."
+                    "title": "Comece a editar e partilhar seus ficheiros."
                 },
                 {
                     "message": "Clique em um item para selecioná-lo.",
@@ -595,7 +595,7 @@
         "folder_full": [
             {
                 "message": "Clique em um item para selecioná-lo.",
-                "title": "Comece a editar e compartilhar seus arquivos."
+                "title": "Comece a editar e partilhar seus ficheiros."
             },
             {
                 "title": "Veja os detalhes das suas pastas e compartilhe-as com seus contatos.",
@@ -654,7 +654,7 @@
             }
         },
         "destination": {
-            "home": "Carregamento feito na Home do Files"
+            "home": "Carregamento foi feito na Home do Files"
         }
     },
     "selectionMode": {
