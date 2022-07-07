@@ -35,7 +35,7 @@
                 "myElements": "Mis elementos",
                 "sharedWitMe": "Elementos compartidos"
             },
-            "filesHome": "Home"
+            "filesHome": "Inicio"
         },
         "deleteShare": {
             "button": {
@@ -105,7 +105,7 @@
         },
         "alias": {
             "name_LOCAL_CHAT_ROOT": "Archivos enviados a través de Team",
-            "name_LOCAL_ROOT": "Home",
+            "name_LOCAL_ROOT": "Inicio",
             "name_SHARED_WITH_ME_ROOT": "Compartido conmigo",
             "name_TRASH_ROOT": "Papelera"
         },
@@ -163,8 +163,8 @@
             "sharedElements": "Elementos compartidos"
         },
         "team": "Archivos enviados a través de Team",
-        "uploads": "Subidas",
-        "filesHome": "Home"
+        "uploads": "Cargas",
+        "filesHome": "Inicio"
     },
     "snackbar": {
         "markForDeletion": {
@@ -191,10 +191,10 @@
         },
         "upload": {
             "goToFolder": "Ir a carpeta",
-            "success": "Subida realizada en {{destination}}",
+            "success": "Carga realizada en {{destination}}",
             "moreInfo": "Más información",
-            "foldersNotAllowed": "Las carpetas no se pueden actualizar",
-            "nodesNotAllowed": "Algunos elementos no han sido actualizados"
+            "foldersNotAllowed": "No es posible cargar carpetas",
+            "nodesNotAllowed": "Algunos elementos no han sido cargados"
         },
         "copyNodes": {
             "error": "Algo fue mal, inténtalo de nuevo",
@@ -287,8 +287,8 @@
         "flag": "Etiqueta",
         "goToFolder": "Ir a la carpeta de destino",
         "moveToTrash": "Mover a la papelera",
-        "removeUpload": "Eliminar subida",
-        "retryUpload": "Reintentar subida",
+        "removeUpload": "Eliminar archivo",
+        "retryUpload": "Reintentar carga",
         "unflag": "Quitar etiqueta",
         "sendViaMail": "Enviar por e-mail",
         "edit": "Editar",
@@ -308,7 +308,7 @@
                         "editor": "Editor",
                         "editorDescription": "Podrá ver y editar el archivo o la carpeta",
                         "viewer": "Visor",
-                        "viewerDescription": "Solo podrá ver o descargar el archivo o la carpeta"
+                        "viewerDescription": "Podrá solamente ver o descargar el archivo o la carpeta"
                     },
                     "sharingAllowed": "Compartir permitido",
                     "sharingAllowedDescription": "Podrá administrar las comparticiones del archivo o la carpeta"
@@ -345,7 +345,7 @@
             "position": "Posición",
             "collaborators": "Colaboradores",
             "content": "Contenido",
-            "downloads": "Descargar a través de enlace público",
+            "downloads": "Descargar a través del enlace público",
             "lastEdit": "Última edición",
             "showPath": "Mostrar ruta",
             "editDescription": {
@@ -369,8 +369,8 @@
             "versioning": "Versión"
         },
         "uploads": {
-            "message": "Aquí puedes encontrar todos los elementos que se están subiendo, puedes administrarlos desde aquí",
-            "title": "Subir sugerencias"
+            "message": "Aquí encontrarás todos los elementos que están siendo cargados en Files, y podrás también administrarlos",
+            "title": "Sugerencias de carga"
         },
         "generic": {
             "message": "Haz clic en un elemento para seleccionarlo",
@@ -404,7 +404,7 @@
                 "openDocumentVersion": "Abrir versión del documento"
             },
             "button": {
-                "upload": "Cargar versión",
+                "upload": "Aumentar de versión",
                 "purgeAllVersions": "Eliminar todas las versiones"
             },
             "rowHeaders": {
@@ -643,30 +643,30 @@
     },
     "uploads": {
         "clean": {
-            "completed": "Limpiar subidas completadas"
+            "completed": "Limpiar cargas completadas"
         },
         "destination": {
-            "home": "Upload efectuado en el Home de Files"
+            "home": "Carga efectuada en la carpeta Inicio de Files"
         },
         "dropzone": {
             "message": {
-                "disabled": "No puedes soltar un archivo adjunto en este área",
+                "disabled": "No puedes soltar un archivo en esta área",
                 "folderView": {
-                    "enabled": "Suelta tus archivos adjuntos aquí\n para añadirlos rápidamente a esta carpeta",
-                    "disabled": "No puedes soltar un archivo adjunto en este área"
+                    "enabled": "Suelta tus archivos aquí\n para añadirlos rápidamente a esta carpeta",
+                    "disabled": "No puedes soltar un archivo en esta área"
                 },
                 "otherView": {
-                    "enabled": "Suelta aquí tus archivos adjuntos\npara añadirlos rápidamente a tu Home"
+                    "enabled": "Suelta aquí tus archivos\npara añadirlos rápidamente a la carpeta Inicio"
                 }
             },
             "title": {
-                "disabled": "Modo Arrastrar y Soltar",
-                "enabled": "Modo Arrastrar y Soltar"
+                "disabled": "Modo \"arrastrar y soltar\"",
+                "enabled": "Modo \"arrastrar y soltar\""
             }
         },
         "error": {
             "moreInfo": {
-                "foldersNotAllowed": "Las carpetas no se pueden subir. En lugar de eso, si estás intentando subir un archivo, puede que el sistema no lo haya reconocido. Prueba de nuevo dándole al botón \"SUBIR\"."
+                "foldersNotAllowed": "No es posible cargar carpetas. Si estás intentando cargar un archivo, puede que el sistema no lo haya reconocido. Prueba de nuevo haciendo clic sobre El botón \"CARGAR\"."
             }
         }
     },
