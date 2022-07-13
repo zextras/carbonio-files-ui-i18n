@@ -222,7 +222,7 @@
         },
         "clipboard": {
             "email": "Dirección email copiada",
-            "itemShortcutCopied": "Atajo del elemento copiado"
+            "itemShortcutCopied": "Enlace del elemento copiado"
         },
         "decreaseYourOwnShare": {
             "success": "Derechos actualizados con éxito"
@@ -356,7 +356,7 @@
                     "label": "La longitud máxima permitida es de 4096 caracteres"
                 }
             },
-            "copyShortcut": "copiar el atajo al elemento",
+            "copyShortcut": "copiar el enlace al elemento",
             "missingDescription": "Haz clic en el botón editar y añade una descripción",
             "owner": "Propietario",
             "sendMailTo": "Enviar por e-mail a: {{email}}",
