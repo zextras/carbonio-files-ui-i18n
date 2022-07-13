@@ -263,7 +263,7 @@
         },
         "clipboard": {
             "email": "Endereço de e-mail copiado",
-            "itemShortcutCopied": "Atalho do item copiado"
+            "itemShortcutCopied": "Link do item copiado"
         },
         "version": {
             "clone": "Versão clonada como a versão atual",
@@ -378,7 +378,7 @@
                 }
             },
             "missingDescription": "Clique no botão de edição para adicionar uma descrição",
-            "copyShortcut": "copiar atalho do item",
+            "copyShortcut": "copiar link para o item",
             "owner": "Proprietário",
             "sendMailTo": "Enviar e-mail para: {{email}}",
             "collaboratorsTooltip": "Ver lista de colaboradores"
