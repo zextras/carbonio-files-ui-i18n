@@ -231,6 +231,21 @@
             },
             "header": "Elimina tutte le versioni",
             "body": "Tutte le versioni che non sono contrassegnate per essere tenute per sempre, eccetto quella corrente, saranno eliminate. Non sarà possibile recuperarle."
+        },
+        "unsaved_changes": {
+            "title": {
+                "cannot_saved_changes": "Alcune modifiche non possono essere salvate"
+            }
+        },
+        "nodeSelection": {
+            "input": {
+                "newFolder": "Nome della nuova cartella"
+            },
+            "button": {
+                "newFolder": {
+                    "disabled": "Non hai i permessi necessari"
+                }
+            }
         }
     },
     "filter": {
@@ -768,6 +783,14 @@
         },
         "close": {
             "tooltip": "Chiudi"
+        },
+        "loading": {
+            "retrying": "Caricamento dell'anteprima in corso...",
+            "file": "Caricamento dell'anteprima del file in corso, attendi...",
+            "error": "Si è verificato un errore durante il caricamento dell'anteprima. Riprova."
+        },
+        "button": {
+            "refresh": "Ricarica l'anteprima"
         }
     }
 }
