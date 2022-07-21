@@ -90,6 +90,27 @@
                 "confirm": "すべてのバージョンをパージする"
             },
             "header": "すべてのバージョンをパージする"
+        },
+        "unsaved_changes": {
+            "title": {
+                "unsaved_changes": "未保存の変更があります"
+            },
+            "button": {
+                "save_and_leave": "保存して離れる",
+                "leave_anyway": "とにかく離れる"
+            },
+            "body": {
+                "line2": "保存されていない変更はすべて失われます",
+                "line1": "本当に保存せずにこのページを離れますか？"
+            }
+        },
+        "nodeSelection": {
+            "button": {
+                "newFolder": {
+                    "label": "新しいフォルダー"
+                },
+                "create": "作成する"
+            }
         }
     },
     "node": {
@@ -765,5 +786,8 @@
     },
     "label": {
         "app_name": "ファイル"
+    },
+    "uploadItem": {
+        "queued": "キューに入れられました"
     }
 }
