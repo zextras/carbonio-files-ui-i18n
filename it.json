@@ -234,7 +234,16 @@
         },
         "unsaved_changes": {
             "title": {
-                "cannot_saved_changes": "Alcune modifiche non possono essere salvate"
+                "cannot_saved_changes": "Alcune modifiche non possono essere salvate",
+                "unsaved_changes": "Alcune modifiche non sono salvate"
+            },
+            "button": {
+                "save_and_leave": "Salva e esci",
+                "leave_anyway": "Esci comunque"
+            },
+            "body": {
+                "line2": "Tutte le modifiche non salvate andranno perse",
+                "line1": "Vuoi abbandonare questa pagina senza salvare?"
             }
         },
         "nodeSelection": {
@@ -243,8 +252,10 @@
             },
             "button": {
                 "newFolder": {
-                    "disabled": "Non hai i permessi necessari"
-                }
+                    "disabled": "Non hai i permessi necessari",
+                    "label": "Nuova cartella"
+                },
+                "create": "Crea"
             }
         }
     },
@@ -792,5 +803,8 @@
         "button": {
             "refresh": "Ricarica l'anteprima"
         }
+    },
+    "uploadItem": {
+        "queued": "In coda"
     }
 }
