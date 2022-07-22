@@ -90,7 +90,8 @@
         },
         "unsaved_changes": {
             "title": {
-                "unsaved_changes": "Tienes cambios no guardados"
+                "unsaved_changes": "Tienes cambios no guardados",
+                "cannot_saved_changes": "Algunos cambios no pudieron guardarse"
             },
             "button": {
                 "save_and_leave": "Guardar y salir",
@@ -104,9 +105,13 @@
         "nodeSelection": {
             "button": {
                 "newFolder": {
-                    "label": "Nueva carpeta"
+                    "label": "Nueva carpeta",
+                    "disabled": "No tienes los permisos correctos"
                 },
                 "create": "Crear"
+            },
+            "input": {
+                "newFolder": "Nuevo nombre de la carpeta"
             }
         }
     },
@@ -789,6 +794,14 @@
         },
         "close": {
             "tooltip": "Cerrar"
+        },
+        "loading": {
+            "retrying": "Intentando cargar la vista previa...",
+            "file": "Cargando vista previa de los archivos, por favor, espera...",
+            "error": "Ocurrió un error mientras se cargaba la vista previa. Prueba de nuevo."
+        },
+        "button": {
+            "refresh": "Actualizar vista previa"
         }
     },
     "uploadItem": {
