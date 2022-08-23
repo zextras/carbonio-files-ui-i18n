@@ -311,7 +311,7 @@
         "restore": "Восстановить",
         "deletePermanently": "Удалить навсегда",
         "flag": "Пометить",
-        "moveToTrash": "Переместить в Корзину",
+        "moveToTrash": "Удалить",
         "removeUpload": "Удалить загрузку",
         "retryUpload": "Повторить загрузку",
         "unflag": "Снять пометку",
