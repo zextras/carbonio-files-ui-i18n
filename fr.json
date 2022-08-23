@@ -312,7 +312,7 @@
         "deletePermanently": "Supprimer définitivement",
         "flag": "Etiquette",
         "goToFolder": "Aller au dossier de destination",
-        "moveToTrash": "Déplacer vers la corbeille",
+        "moveToTrash": "Supprimer",
         "removeUpload": "Supprimer le téléchargement",
         "retryUpload": "Réessayer le téléchargement",
         "unflag": "Décocher",
