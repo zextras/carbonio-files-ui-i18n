@@ -185,9 +185,6 @@
             "folder": "Folder"
         }
     },
-    "primaryBar": {
-        "driveHome": ""
-    },
     "secondaryBar": {
         "driveHome": "Drive Home",
         "filters": "Filter",

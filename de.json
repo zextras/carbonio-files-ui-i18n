@@ -215,9 +215,6 @@
             "folder": "Ordner"
         }
     },
-    "primaryBar": {
-        "driveHome": ""
-    },
     "secondaryBar": {
         "driveHome": "Drive Home",
         "filters": "Filter",

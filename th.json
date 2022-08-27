@@ -215,9 +215,6 @@
             "folder": "โฟลเดอร์"
         }
     },
-    "primaryBar": {
-        "driveHome": ""
-    },
     "secondaryBar": {
         "driveHome": "หน้าหลัก Drive",
         "filters": "ตัวกรอง",

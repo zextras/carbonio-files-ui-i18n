@@ -215,9 +215,6 @@
             "folder": "Klasör"
         }
     },
-    "primaryBar": {
-        "driveHome": ""
-    },
     "secondaryBar": {
         "driveHome": "Drive Giriş",
         "filters": "Filtreler",

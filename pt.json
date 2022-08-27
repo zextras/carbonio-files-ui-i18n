@@ -225,9 +225,6 @@
             "folder": "Pasta"
         }
     },
-    "primaryBar": {
-        "driveHome": ""
-    },
     "snackbar": {
         "markForDeletion": {
             "error": "Algo deu errado, tente novamente",

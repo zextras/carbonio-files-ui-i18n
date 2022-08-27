@@ -174,9 +174,6 @@
             "folder": "Carpeta"
         }
     },
-    "primaryBar": {
-        "driveHome": ""
-    },
     "secondaryBar": {
         "driveHome": "Home de Drive",
         "filters": "Filtros",
