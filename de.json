@@ -35,7 +35,6 @@
     "filter": {
         "snackbar": {
             "unflag": {
-                "error": "Etwas ist schiefgegangen, bitte versuchen Sie es erneut",
                 "success": "Markierung erfolgreich entfernt"
             }
         }
@@ -68,7 +67,6 @@
             "header": "Diese Aktion ist unwiderruflich"
         },
         "roots": {
-            "driveHome": "Home",
             "rootsList": "Drive",
             "sharedWitMe": "Mit mir geteilt",
             "trash": {
@@ -179,7 +177,6 @@
                     }
                 },
                 "title": "Kopieren {{node.name}}",
-                "title_plurals": "Elemente kopieren",
                 "title_plural": "Elemente kopieren"
             }
         },
@@ -202,7 +199,6 @@
                 },
                 "subtitle": "Wählen Sie einen Zielordner aus:",
                 "title": "Verschieben {{node.name}}",
-                "title_plurals": "Elemente verschieben",
                 "title_plural": "Elemente verschieben"
             },
             "error": {
@@ -216,7 +212,6 @@
         }
     },
     "secondaryBar": {
-        "driveHome": "Drive Home",
         "filters": "Filter",
         "filtersList": {
             "flagged": "Markiert",
@@ -298,7 +293,6 @@
         }
     },
     "actions": {
-        "cancelUpload": "Upload abbrechen",
         "copy": "Kopieren",
         "download": "Download",
         "markForDeletion": "Zum Löschen kennzeichnen",

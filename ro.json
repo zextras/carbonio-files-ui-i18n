@@ -21,7 +21,6 @@
             }
         },
         "roots": {
-            "driveHome": "Acasa",
             "rootsList": "Drive",
             "sharedWitMe": "Partajate cu mine",
             "trash": {
@@ -93,7 +92,6 @@
         }
     },
     "secondaryBar": {
-        "driveHome": "Drive Home",
         "filters": "Filtre",
         "filtersList": {
             "flagged": "Marcat",
