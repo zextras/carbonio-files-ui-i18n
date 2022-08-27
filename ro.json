@@ -10,22 +10,10 @@
             }
         }
     },
-    "empty": {
-        "folder": {
-            "state": ""
-        }
-    },
     "filter": {
         "snackbar": {
             "unflag": {
                 "success": ""
-            }
-        }
-    },
-    "folder": {
-        "create": {
-            "modal": {
-                "title": ""
             }
         }
     },
@@ -84,8 +72,7 @@
             "modal": {
                 "button": {
                     "confirm": "Redenumire"
-                },
-                "title": ""
+                }
             }
         },
         "alias": {
@@ -125,9 +112,6 @@
         "filesHome": "Acasa"
     },
     "snackbar": {
-        "markForDeletion": {
-            "success": ""
-        },
         "deleteShare": {
             "error": "Eroare",
             "success": "Succes"
