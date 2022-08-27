@@ -10,13 +10,6 @@
             }
         }
     },
-    "filter": {
-        "snackbar": {
-            "unflag": {
-                "success": ""
-            }
-        }
-    },
     "modal": {
         "button": {
             "cancel": "Anulare",
