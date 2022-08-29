@@ -1,11 +1,4 @@
 {
-    "filter": {
-        "snackbar": {
-            "unflag": {
-                "error": "Bir sorun oluştu, lütfen tekrar deneyin"
-            }
-        }
-    },
     "folder": {
         "create": {
             "modal": {
@@ -303,7 +296,7 @@
         "deletePermanently": "Kalıcı olarak sil",
         "flag": "Bayrak",
         "goToFolder": "Hedef klasöre git",
-        "moveToTrash": "Çöp Kutusuna Taşı",
+        "moveToTrash": "Sil",
         "removeUpload": "Yüklemeyi kaldır",
         "retryUpload": "Yüklemeyi tekrar dene",
         "unflag": "Bayrağı kaldır",
