@@ -1,11 +1,4 @@
 {
-    "filter": {
-        "snackbar": {
-            "unflag": {
-                "success": "Item met succes ontvlagd"
-            }
-        }
-    },
     "folder": {
         "create": {
             "modal": {
@@ -122,7 +115,6 @@
         }
     },
     "secondaryBar": {
-        "driveHome": "Srive Startpagina",
         "team": "Bestanden verstuurd via Team",
         "filters": "Filters",
         "filtersList": {
@@ -304,7 +296,7 @@
         "deletePermanently": "Permanent Verwijderen",
         "flag": "Vlaggen",
         "goToFolder": "Naar de bestemmingsmap gaan",
-        "moveToTrash": "Naar Trash verplaatsen",
+        "moveToTrash": "Löschen",
         "removeUpload": "Upload verwijderen",
         "retryUpload": "Upload opnieuw proberen",
         "unflag": "Vlag verwijderen",
