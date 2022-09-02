@@ -32,13 +32,6 @@
             "notRun": "Es wurde noch keine Durchsuchung durchgeführt."
         }
     },
-    "filter": {
-        "snackbar": {
-            "unflag": {
-                "success": "Markierung erfolgreich entfernt"
-            }
-        }
-    },
     "folder": {
         "create": {
             "modal": {
@@ -303,7 +296,7 @@
         "deletePermanently": "Endgültig löschen",
         "flag": "Markieren",
         "goToFolder": "Zum Zielordner gehen",
-        "moveToTrash": "Zum Papierkorb verschieben",
+        "moveToTrash": "Löschen",
         "removeUpload": "Upload entfernen",
         "retryUpload": "Upload erneut versuchen",
         "unflag": "Markierung entfernen",
