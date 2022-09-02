@@ -46,13 +46,6 @@
             "notRun": "Ainda não foi feita nenhuma busca."
         }
     },
-    "filter": {
-        "snackbar": {
-            "unflag": {
-                "success": "Retirada a sinalização com sucesso"
-            }
-        }
-    },
     "folder": {
         "create": {
             "modal": {
@@ -303,7 +296,7 @@
         "deletePermanently": "Excluir Permanentemente",
         "flag": "Sinalizar",
         "goToFolder": "Ir para a pasta de destino",
-        "moveToTrash": "Mover para Lixeira",
+        "moveToTrash": "Excluir",
         "removeUpload": "Remover arquivo",
         "retryUpload": "Tentar upload novamente",
         "unflag": "Retirar sinalização",
