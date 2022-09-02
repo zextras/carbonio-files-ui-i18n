@@ -32,13 +32,6 @@
             "notRun": "ยังไม่มีการดำเนินการค้นหา"
         }
     },
-    "filter": {
-        "snackbar": {
-            "unflag": {
-                "success": "ยกเลิกการติดธงรายการเรียบร้อยแล้ว"
-            }
-        }
-    },
     "folder": {
         "create": {
             "modal": {
@@ -303,7 +296,7 @@
         "deletePermanently": "ลบอย่างถาวร",
         "flag": "ธง",
         "goToFolder": "ไปที่โฟลเดอร์ปลายทาง",
-        "moveToTrash": "ย้ายไปที่ถังขยะ",
+        "moveToTrash": "ลบ",
         "removeUpload": "ลบการอัปโหลด",
         "retryUpload": "ลองอัปโหลดอีกครั้ง",
         "unflag": "เอาธงออก",
