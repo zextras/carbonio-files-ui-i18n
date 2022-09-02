@@ -340,7 +340,7 @@
         "deletePermanently": "永久删除",
         "flag": "标记",
         "goToFolder": "前往目标文件夹",
-        "moveToTrash": "移动至垃圾箱",
+        "moveToTrash": "删除",
         "removeUpload": "移除上传",
         "retryUpload": "重试上传",
         "unflag": "取消标记",
@@ -649,13 +649,6 @@
                 "没有符合您搜索的项目。"
             ],
             "notRun": "尚未进行搜索。"
-        }
-    },
-    "filter": {
-        "snackbar": {
-            "unflag": {
-                "error": "出现了一些错误，请重试"
-            }
         }
     },
     "uploads": {
