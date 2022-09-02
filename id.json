@@ -285,13 +285,6 @@
             "notRun": "Tidak ada pencarian yang dilakukan."
         }
     },
-    "filter": {
-        "snackbar": {
-            "unflag": {
-                "success": "Tanda bendera pada item berhasil dihapus"
-            }
-        }
-    },
     "actions": {
         "copy": "Salin",
         "download": "Unduh",
@@ -303,7 +296,7 @@
         "deletePermanently": "Hapus Secara Permanen",
         "flag": "Bendera",
         "goToFolder": "Buka folder tujuan",
-        "moveToTrash": "Pindahkan ke Tempat Sampah",
+        "moveToTrash": "Hapus",
         "removeUpload": "Hapus unggahan",
         "retryUpload": "Coba unggah lagi",
         "unflag": "Hapus tanda bendera",
