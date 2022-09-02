@@ -285,13 +285,6 @@
             "notRun": "Aún no se ha realizado ninguna búsqueda."
         }
     },
-    "filter": {
-        "snackbar": {
-            "unflag": {
-                "success": "Elemento desmarcado con éxito"
-            }
-        }
-    },
     "actions": {
         "copy": "Copiar",
         "download": "Download",
@@ -303,7 +296,7 @@
         "deletePermanently": "Eliminar permanentemente",
         "flag": "Etiqueta",
         "goToFolder": "Ir a la carpeta de destino",
-        "moveToTrash": "Mover a la papelera",
+        "moveToTrash": "Eliminar",
         "removeUpload": "Eliminar archivo",
         "retryUpload": "Reintentar carga",
         "unflag": "Quitar etiqueta",
