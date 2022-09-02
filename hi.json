@@ -32,13 +32,6 @@
             "notRun": "अभी तक कोई सर्च नहीं की गई है।"
         }
     },
-    "filter": {
-        "snackbar": {
-            "unflag": {
-                "success": "आइटम का फ्लैग हटाया गया"
-            }
-        }
-    },
     "folder": {
         "create": {
             "modal": {
@@ -303,7 +296,7 @@
         "deletePermanently": "सदा के लिए मिटाएँ",
         "flag": "चिन्हित करें",
         "goToFolder": "गंतव्य फोल्डर पर जाएँ",
-        "moveToTrash": "रद्दी में डालें",
+        "moveToTrash": "डिलीट करें",
         "removeUpload": "अपलोड हटाएँ",
         "retryUpload": "अपलोड की दोबारा कोशिश करें",
         "unflag": "फ्लैग हटाएँ",
