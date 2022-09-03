@@ -108,6 +108,11 @@
             "input": {
                 "newFolder": "新しいフォルダの名前"
             }
+        },
+        "revokeCollaborationLink": {
+            "button": {
+                "confirm": "解除"
+            }
         }
     },
     "node": {
@@ -246,6 +251,11 @@
             "clone": "現在のバージョンとして複製されたバージョン",
             "keepForeverAdded": "永久に保持されるようにマークされたバージョン",
             "keepForeverRemoved": "「永久に保持する」バージョンが削除されました"
+        },
+        "collaborationLink": {
+            "actionLabel": {
+                "copyLink": "リンクをコピーする"
+            }
         }
     },
     "empty": {
@@ -416,7 +426,10 @@
                 "keepVersion": "このバージョンを維持する",
                 "removeKeepVersion": "バージョンの維持を削除する",
                 "cloneAsCurrent": "現在として複製する",
-                "openDocumentVersion": "ドキュメントバージョンを開く"
+                "openDocumentVersion": "ドキュメントバージョンを開く",
+                "tooltip": {
+                    "disabledByPermission": "正しい権限がありません"
+                }
             },
             "button": {
                 "upload": "バージョンをアップロードする",
@@ -790,5 +803,19 @@
     },
     "uploadItem": {
         "queued": "キューに入れられました"
+    },
+    "dropzone": {
+        "move": {
+            "title": {
+                "enabled": "ドラッグ＆ドロップモード",
+                "disabled": "ドラッグ＆ドロップモード"
+            }
+        }
+    },
+    "collaborationLinks": {
+        "button": {
+            "revoke": "解除",
+            "generateLink": "リンクを作成"
+        }
     }
 }
