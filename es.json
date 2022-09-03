@@ -112,6 +112,11 @@
             "input": {
                 "newFolder": "Nuevo nombre de la carpeta"
             }
+        },
+        "revokeCollaborationLink": {
+            "button": {
+                "confirm": "Revocar"
+            }
         }
     },
     "node": {
@@ -250,6 +255,11 @@
             "clone": "Versión clonada como versión actual",
             "keepForeverAdded": "Versión marcada para guardarla para siempre",
             "keepForeverRemoved": "\"Mantener para siempre\" eliminado"
+        },
+        "collaborationLink": {
+            "actionLabel": {
+                "copyLink": "Copiar Enlace"
+            }
         }
     },
     "create": {
@@ -411,7 +421,10 @@
                 "keepVersion": "Mantener esta versión para siempre",
                 "removeKeepVersion": "Deshacer mantener para siempre",
                 "cloneAsCurrent": "Clonar como actual",
-                "openDocumentVersion": "Abrir versión del documento"
+                "openDocumentVersion": "Abrir versión del documento",
+                "tooltip": {
+                    "disabledByPermission": "No tienes los permisos correctos"
+                }
             },
             "button": {
                 "upload": "Aumentar de versión",
@@ -725,7 +738,7 @@
         "addLink": {
             "generateLink": "Generar enlace",
             "undo": "Deshacer",
-            "title": "Enlace Público",
+            "title": "Enlaces públicos",
             "addLink": "Añadir enlace",
             "limitReached": "Se ha alcanzado el número máximo de enlaces públicos"
         },
@@ -790,5 +803,19 @@
     },
     "uploadItem": {
         "queued": "En cola"
+    },
+    "dropzone": {
+        "move": {
+            "title": {
+                "enabled": "Modo \"arrastrar y soltar\"",
+                "disabled": "Modo \"arrastrar y soltar\""
+            }
+        }
+    },
+    "collaborationLinks": {
+        "button": {
+            "revoke": "Revocar",
+            "generateLink": "Generar enlace"
+        }
     }
 }
