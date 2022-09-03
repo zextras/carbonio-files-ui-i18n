@@ -79,6 +79,11 @@
             "clone": "Versione clonata e impostata come quella corrente",
             "keepForeverAdded": "Versione contrassegnata come da conservare per sempre",
             "keepForeverRemoved": "\"Conserva per sempre\" rimosso"
+        },
+        "collaborationLink": {
+            "actionLabel": {
+                "copyLink": "Copia Link"
+            }
         }
     },
     "secondaryBar": {
@@ -250,6 +255,11 @@
                 },
                 "create": "Crea"
             }
+        },
+        "revokeCollaborationLink": {
+            "button": {
+                "confirm": "Revoca"
+            }
         }
     },
     "empty": {
@@ -411,7 +421,10 @@
                 "removeKeepVersion": "Disabilita mantieni per sempre",
                 "downloadVersion": "Scarica versione",
                 "cloneAsCurrent": "Clona come versione corrente",
-                "openDocumentVersion": "Apri la versione del documento"
+                "openDocumentVersion": "Apri la versione del documento",
+                "tooltip": {
+                    "disabledByPermission": "Non hai i permessi necessari"
+                }
             },
             "button": {
                 "upload": "Carica versione",
@@ -732,7 +745,7 @@
             "addLink": "Aggiungi Link",
             "generateLink": "Genera Link",
             "limitReached": "Hai raggiunto il numero massimo di link pubblici",
-            "title": "Link pubblico",
+            "title": "Link Pubblici",
             "undo": "Annulla"
         },
         "datePickerInput": {
@@ -790,5 +803,19 @@
     },
     "uploadItem": {
         "queued": "In coda"
+    },
+    "dropzone": {
+        "move": {
+            "title": {
+                "enabled": "Modalità Drag&Drop",
+                "disabled": "Modalità Drag&Drop"
+            }
+        }
+    },
+    "collaborationLinks": {
+        "button": {
+            "revoke": "Revoca",
+            "generateLink": "Genera Link"
+        }
     }
 }
