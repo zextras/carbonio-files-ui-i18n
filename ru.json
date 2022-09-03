@@ -134,6 +134,11 @@
                 },
                 "create": "Создать"
             }
+        },
+        "revokeCollaborationLink": {
+            "button": {
+                "confirm": "Отменить"
+            }
         }
     },
     "node": {
@@ -272,6 +277,11 @@
             "clone": "Версия клонирована как текущая",
             "keepForeverAdded": "Версия с отметкой \"Храниться навсегда\"",
             "keepForeverRemoved": "\"Хранить всегда\" удалено"
+        },
+        "collaborationLink": {
+            "actionLabel": {
+                "copyLink": "Копировать ссылку"
+            }
         }
     },
     "create": {
@@ -474,7 +484,10 @@
                 "keepVersion": "Сохранить эту версию навсегда",
                 "removeKeepVersion": "Удалить навсегда",
                 "cloneAsCurrent": "Клонировать как текущий",
-                "openDocumentVersion": "Открыть версию документа"
+                "openDocumentVersion": "Открыть версию документа",
+                "tooltip": {
+                    "disabledByPermission": "У вас нет необходимых разрешений"
+                }
             },
             "rowHeaders": {
                 "currentVersion": "Текущая версия",
@@ -732,7 +745,7 @@
             "addLink": "Добавить ссылку",
             "generateLink": "Создать ссылку",
             "limitReached": "Достигнуто максимальное количество публичных ссылок",
-            "title": "Публичная ссылка",
+            "title": "Публичные ссылки",
             "undo": "Отменить"
         },
         "datePickerInput": {
@@ -790,5 +803,19 @@
     },
     "uploadItem": {
         "queued": "В очереди"
+    },
+    "dropzone": {
+        "move": {
+            "title": {
+                "enabled": "Режим перетаскивания",
+                "disabled": "Режим перетаскивания"
+            }
+        }
+    },
+    "collaborationLinks": {
+        "button": {
+            "revoke": "Отменить",
+            "generateLink": "Создать ссылку"
+        }
     }
 }
