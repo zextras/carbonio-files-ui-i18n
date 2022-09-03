@@ -115,7 +115,10 @@
         },
         "revokeCollaborationLink": {
             "header": "{{nodeName}} birlikte çalışma bağlantısını iptal et",
-            "body": "Bu bağlantıyı iptal ederek yeni paylaşım oluşturma olasılığını engelliyorsunuz. Birlikte çalışma bağlantısını kullanan herkesin bu öğeye erişimi devam edecek."
+            "body": "Bu bağlantıyı iptal ederek yeni paylaşım oluşturma olasılığını engelliyorsunuz. Birlikte çalışma bağlantısını kullanan herkesin bu öğeye erişimi devam edecek.",
+            "button": {
+                "confirm": "İptal Et"
+            }
         }
     },
     "create": {
@@ -292,7 +295,10 @@
             "newCollaborationLinkGenerated": {
                 "label": "Yeni Birlikte Çalışma bağlantısı oluşturuldu"
             },
-            "copyCollaborationLink": "Birlikte çalışma bağlantısı kopyalandı"
+            "copyCollaborationLink": "Birlikte çalışma bağlantısı kopyalandı",
+            "actionLabel": {
+                "copyLink": "Bağlantıyı kopyala"
+            }
         }
     },
     "actions": {
@@ -409,7 +415,8 @@
                     "disabledByMaxVersion": "Versiyonlar için maksimum sayıya ulaştınız",
                     "disabledByMaxKeepVersion": "Sürekli saklanacak versiyonlar için maksimum sayıya ulaştınız",
                     "disabledByDocs": "Bu versiyon çevrimiçi düzenleyici ile açılamaz",
-                    "disabledByDeleteCurrent": "Geçerli versiyon silinemez"
+                    "disabledByDeleteCurrent": "Geçerli versiyon silinemez",
+                    "disabledByPermission": "Doğru izniniz yok"
                 }
             },
             "button": {
@@ -748,7 +755,7 @@
         "addLink": {
             "addLink": "Bağlantı ekle",
             "limitReached": "Genel kullanım bağlantısı için maksimum değere ulaşıldı",
-            "title": "Genel bağlantı",
+            "title": "Genel Bağlantılar",
             "undo": "Geri al",
             "generateLink": "Bağlantı oluştur",
             "description": "Bu bağlantıyı kullanan iç ve dış kullanıcılar dosyayı indirebilirler."
@@ -823,6 +830,10 @@
             "message": {
                 "enabled": "Öğeleri sürükle bırak özelliğiyle \n bu klasöre kolayca taşıyabilirsiniz",
                 "disabled": "Bu alana sürükle bırak işlemi yapamazsınız"
+            },
+            "title": {
+                "enabled": "Sürükle ve Bırak Modu",
+                "disabled": "Sürükle ve Bırak Modu"
             }
         }
     },
@@ -842,6 +853,10 @@
                 }
             }
         },
-        "description": "İç kullanıcılar bağlantıyı açarak izinleri alacak. Verilen izinleri istediğiniz zaman değiştirebilirsiniz."
+        "description": "İç kullanıcılar bağlantıyı açarak izinleri alacak. Verilen izinleri istediğiniz zaman değiştirebilirsiniz.",
+        "button": {
+            "revoke": "İptal Et",
+            "generateLink": "Bağlantı oluştur"
+        }
     }
 }
