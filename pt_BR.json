@@ -159,6 +159,11 @@
             "input": {
                 "newFolder": "Nome da nova pasta"
             }
+        },
+        "revokeCollaborationLink": {
+            "button": {
+                "confirm": "Revogar"
+            }
         }
     },
     "node": {
@@ -283,6 +288,11 @@
         },
         "decreaseYourOwnShare": {
             "success": "Direitos atualizados com sucesso"
+        },
+        "collaborationLink": {
+            "actionLabel": {
+                "copyLink": "Copiar Link"
+            }
         }
     },
     "actions": {
@@ -474,7 +484,10 @@
                 "deleteVersion": "Excluir versão",
                 "downloadVersion": "Baixar versão",
                 "cloneAsCurrent": "Clonar como atual",
-                "openDocumentVersion": "Abrir versão do documento"
+                "openDocumentVersion": "Abrir versão do documento",
+                "tooltip": {
+                    "disabledByPermission": "Você não possui as permissões necessárias"
+                }
             },
             "rowHeaders": {
                 "currentVersion": "Versão atual",
@@ -725,7 +738,7 @@
         "addLink": {
             "generateLink": "Gerar link",
             "undo": "Desfazer",
-            "title": "Link Público",
+            "title": "Links Públicos",
             "addLink": "Adicionar Link",
             "limitReached": "O número máximo de links públicos foi atingido"
         },
@@ -790,5 +803,19 @@
     },
     "uploadItem": {
         "queued": "Em fila"
+    },
+    "dropzone": {
+        "move": {
+            "title": {
+                "enabled": "Modo Arrastar e Soltar",
+                "disabled": "Modo Arrastar e Soltar"
+            }
+        }
+    },
+    "collaborationLinks": {
+        "button": {
+            "revoke": "Revogar",
+            "generateLink": "Gerar link"
+        }
     }
 }
