@@ -21,13 +21,6 @@
             "notRun": "Поиск еще не проводился."
         }
     },
-    "filter": {
-        "snackbar": {
-            "unflag": {
-                "success": "Отметка успешно снята"
-            }
-        }
-    },
     "folder": {
         "create": {
             "modal": {

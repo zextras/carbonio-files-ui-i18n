@@ -32,13 +32,6 @@
             "notRun": "Aucune recherche n'a encore été effectuée."
         }
     },
-    "filter": {
-        "snackbar": {
-            "unflag": {
-                "success": "Item décoché avec succès"
-            }
-        }
-    },
     "folder": {
         "create": {
             "modal": {
@@ -212,7 +205,6 @@
         }
     },
     "secondaryBar": {
-        "driveHome": "Accueil",
         "filters": "Filtres",
         "filtersList": {
             "flagged": "Marqué",
