@@ -110,7 +110,10 @@
                 "keepVersion": "永久保留该版本",
                 "removeKeepVersion": "移除永久保留",
                 "cloneAsCurrent": "克隆为当前",
-                "openDocumentVersion": "打开文档版本"
+                "openDocumentVersion": "打开文档版本",
+                "tooltip": {
+                    "disabledByPermission": "您没有合适的权限"
+                }
             },
             "button": {
                 "upload": "上传版本",
@@ -327,6 +330,11 @@
             "clone": "版本已克隆为当前值",
             "keepForeverAdded": "版本已标记以永久保留",
             "keepForeverRemoved": "“永久保留”已移除"
+        },
+        "collaborationLink": {
+            "actionLabel": {
+                "copyLink": "复制链接"
+            }
         }
     },
     "actions": {
@@ -492,6 +500,11 @@
             },
             "input": {
                 "newFolder": "新文件夹名称"
+            }
+        },
+        "revokeCollaborationLink": {
+            "button": {
+                "confirm": "撤销"
             }
         }
     },
@@ -790,5 +803,19 @@
     },
     "uploadItem": {
         "queued": "已加入队列"
+    },
+    "dropzone": {
+        "move": {
+            "title": {
+                "enabled": "拖放模式",
+                "disabled": "拖放模式"
+            }
+        }
+    },
+    "collaborationLinks": {
+        "button": {
+            "revoke": "撤销",
+            "generateLink": "生成链接"
+        }
     }
 }
