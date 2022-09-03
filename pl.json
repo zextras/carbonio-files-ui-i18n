@@ -96,6 +96,11 @@
             "input": {
                 "newFolder": "Nazwa nowego folderu"
             }
+        },
+        "revokeCollaborationLink": {
+            "button": {
+                "confirm": "Odwołaj"
+            }
         }
     },
     "search": {
@@ -225,6 +230,11 @@
             "copyLink": "Publiczny Link został skopiowany",
             "newPublicLinkGenerated": {
                 "label": "Nowy publiczny Link został wygenerowany"
+            }
+        },
+        "collaborationLink": {
+            "actionLabel": {
+                "copyLink": "Skopiuj link"
             }
         }
     },
@@ -483,7 +493,10 @@
                 "downloadVersion": "Pobierz wersję",
                 "keepVersion": "Zachowaj tą wersję na zawsze",
                 "openDocumentVersion": "Otwórz wersję dokumentu",
-                "removeKeepVersion": "Usuń zachowanie tej wersji na zawsze"
+                "removeKeepVersion": "Usuń zachowanie tej wersji na zawsze",
+                "tooltip": {
+                    "disabledByPermission": "Nie masz odpowiednich uprawnień"
+                }
             },
             "button": {
                 "purgeAllVersions": "Czystka wszystkich wersji",
@@ -532,7 +545,7 @@
             "undo": "Cofnij",
             "generateLink": "Wygeneruj Link",
             "limitReached": "Osiągnięto maksymalną liczbę publicznych linków",
-            "title": "Publiczy Link",
+            "title": "Publiczne linki",
             "addLink": "Dodaj Link"
         },
         "dateTimePicker": {
@@ -789,5 +802,19 @@
     },
     "uploadItem": {
         "queued": "W kolejce"
+    },
+    "dropzone": {
+        "move": {
+            "title": {
+                "enabled": "Tryb Drag&Drop",
+                "disabled": "Tryb Drag&Drop"
+            }
+        }
+    },
+    "collaborationLinks": {
+        "button": {
+            "revoke": "Odwołaj",
+            "generateLink": "Wygeneruj Link"
+        }
     }
 }
