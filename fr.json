@@ -145,6 +145,11 @@
             "input": {
                 "newFolder": "Nouveau nom de dossier"
             }
+        },
+        "revokeCollaborationLink": {
+            "button": {
+                "confirm": "Retirer"
+            }
         }
     },
     "node": {
@@ -283,6 +288,11 @@
             "clone": "Version clonée comme version courante",
             "keepForeverAdded": "Version marquée comme à garder pour toujours",
             "keepForeverRemoved": "\"Conservation définitive\" supprimée"
+        },
+        "collaborationLink": {
+            "actionLabel": {
+                "copyLink": "Copier le lien"
+            }
         }
     },
     "actions": {
@@ -474,7 +484,10 @@
                 "downloadVersion": "Télécharger cette version",
                 "keepVersion": "Garder cette version définitivement",
                 "cloneAsCurrent": "Cloner comme actuel",
-                "openDocumentVersion": "Ouvrir la version du document"
+                "openDocumentVersion": "Ouvrir la version du document",
+                "tooltip": {
+                    "disabledByPermission": "Vous n'avez pas les bonnes permissions"
+                }
             },
             "button": {
                 "upload": "Téléverser une version",
@@ -732,7 +745,7 @@
             "addLink": "Ajouter un lien",
             "generateLink": "Générer un lien",
             "limitReached": "Le nombre maximum de lien publique a été atteint",
-            "title": "Lien publique",
+            "title": "Liens publiques",
             "undo": "Retour arrière"
         },
         "datePickerInput": {
@@ -790,5 +803,19 @@
     },
     "uploadItem": {
         "queued": "Ajouté(e) dans la queue"
+    },
+    "dropzone": {
+        "move": {
+            "title": {
+                "enabled": "Mode glisser déposer",
+                "disabled": "Mode glisser déposer"
+            }
+        }
+    },
+    "collaborationLinks": {
+        "button": {
+            "revoke": "Retirer",
+            "generateLink": "Générer un lien"
+        }
     }
 }
