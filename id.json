@@ -123,6 +123,11 @@
             "input": {
                 "newFolder": "Nama folder baru"
             }
+        },
+        "revokeCollaborationLink": {
+            "button": {
+                "confirm": "Batalkan"
+            }
         }
     },
     "node": {
@@ -261,6 +266,11 @@
             "clone": "Versi digandakan sebagai saat ini",
             "keepForeverAdded": "Versi ditandai untuk disimpan selamanya",
             "keepForeverRemoved": "\"Simpan selamanya\" dihapus"
+        },
+        "collaborationLink": {
+            "actionLabel": {
+                "copyLink": "Salin Tautan"
+            }
         }
     },
     "empty": {
@@ -416,7 +426,10 @@
                 "keepVersion": "Pertahankan versi ini seterusnya",
                 "removeKeepVersion": "Hapus pertahankan seterusnya",
                 "cloneAsCurrent": "Gandakan sebagai saat ini",
-                "openDocumentVersion": "Buka versi dokumen"
+                "openDocumentVersion": "Buka versi dokumen",
+                "tooltip": {
+                    "disabledByPermission": "Anda tidak memiliki izin yang benar"
+                }
             },
             "button": {
                 "upload": "Unggah versi",
@@ -790,5 +803,19 @@
     },
     "uploadItem": {
         "queued": "Diantrekan"
+    },
+    "dropzone": {
+        "move": {
+            "title": {
+                "enabled": "Mode Seret & Lepas",
+                "disabled": "Mode Seret & Lepas"
+            }
+        }
+    },
+    "collaborationLinks": {
+        "button": {
+            "revoke": "Batalkan",
+            "generateLink": "Buat Tautan"
+        }
     }
 }
