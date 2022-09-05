@@ -100,7 +100,9 @@
         "revokeCollaborationLink": {
             "button": {
                 "confirm": "Odwołaj"
-            }
+            },
+            "header": "Deaktywuj link do współpracy {{nodeName}}",
+            "body": "Po deaktywacji tego linka, tworzenie nowych udostępnień stanie się niemożliwe. Każdy, kto już użył tego linka do współpracy, dalej będzie miał dostep do tego węzła."
         }
     },
     "search": {
@@ -235,7 +237,11 @@
         "collaborationLink": {
             "actionLabel": {
                 "copyLink": "Skopiuj link"
-            }
+            },
+            "newCollaborationLinkGenerated": {
+                "label": "Nowy link do współpracy został wygenerowany"
+            },
+            "copyCollaborationLink": "Link do współpracy został skopiowany"
         }
     },
     "actions": {
@@ -276,11 +282,11 @@
                 "you": "Ty",
                 "tooltip": {
                     "edit": {
-                        "collaborator": "Edytuj współpracę z użytkownikiem {{username}}",
+                        "collaborator": "Edytuj współpracę",
                         "you": "Edytuj swoją współpracę"
                     },
                     "remove": {
-                        "collaborator": "Usuń użytkownika {{username}}",
+                        "collaborator": "Usuń współpracę",
                         "yourself": "Usuń swoją współpracę"
                     }
                 }
@@ -495,7 +501,12 @@
                 "openDocumentVersion": "Otwórz wersję dokumentu",
                 "removeKeepVersion": "Usuń zachowanie tej wersji na zawsze",
                 "tooltip": {
-                    "disabledByPermission": "Nie masz odpowiednich uprawnień"
+                    "disabledByPermission": "Nie masz odpowiednich uprawnień",
+                    "disabledByVersionKeepForever": "Wersje oznaczone jako zachowywane na zawsze nie mogą zostać usunięte",
+                    "disabledByMaxVersion": "Osiągnięto max. ilość wersji",
+                    "disabledByMaxKeepVersion": "Osiągnięto max. ilość wersji zachowywanych na zawsze",
+                    "disabledByDocs": "Ta wersja nie może zostać otworzona za pomocą edytora online",
+                    "disabledByDeleteCurrent": "Aktualna wersja nie może zostać usunięta"
                 }
             },
             "button": {
@@ -514,7 +525,7 @@
                 "lastWeek": "Ostatniego tygodnia",
                 "olderVersions": "Starsze wersje"
             },
-            "mainHint": "Możesz ręcznie usunąć lub przywrócić którąkolwiek wersję pliku. Wybierz jedną lub więcej wersji, które chcesz zachować na zawsze."
+            "mainHint": "Files zapisuje ostatnie {{maxVersions}} wersje Twoich plików. Możesz ręcznie usunąć lub przywrócić którąkolwiek wersję pliku. Wybierz jedną lub więcej wersji, które chcesz zachować na zawsze."
         },
         "generic": {
             "message": "Kliknij w element, aby go wybrać",
@@ -546,7 +557,8 @@
             "generateLink": "Wygeneruj Link",
             "limitReached": "Osiągnięto maksymalną liczbę publicznych linków",
             "title": "Publiczne linki",
-            "addLink": "Dodaj Link"
+            "addLink": "Dodaj Link",
+            "description": "Użytkownicy z i spoza tej domeny mogą pobrać ten plik przy użyciu linku."
         },
         "dateTimePicker": {
             "label": "Data wygaśnięcia"
@@ -808,6 +820,10 @@
             "title": {
                 "enabled": "Tryb Drag&Drop",
                 "disabled": "Tryb Drag&Drop"
+            },
+            "message": {
+                "enabled": "Tutaj upuść swoje elementy,\n aby szybko je przenieść do tego folderu",
+                "disabled": "Nie można upuszczać elementów w tym polu"
             }
         }
     },
@@ -815,6 +831,31 @@
         "button": {
             "revoke": "Odwołaj",
             "generateLink": "Wygeneruj Link"
+        },
+        "title": "Linki do współpracy",
+        "row": {
+            "title": {
+                "writeAndShare": "Edytowanie i Udosepnianie",
+                "ReadAndShare": "Czytanie i Udostępnianie"
+            },
+            "placeholder": "Stwórz link, aby udostępnić węzeł"
+        },
+        "link": {
+            "urlChip": {
+                "tooltip": {
+                    "copy": "Skopiuj link do współpracy"
+                }
+            }
+        },
+        "description": "Użytkownicy z tej domeny otrzymają uprawnienia klikając w ten link. Zawsze możesz edytować przyznane uprawnienia."
+    },
+    "share": {
+        "chip": {
+            "tooltip": {
+                "error": {
+                    "contactNotFound": "Ten adres e-mail nie jest przypisany do użytkownika Carbonio"
+                }
+            }
         }
     }
 }
