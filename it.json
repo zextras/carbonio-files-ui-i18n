@@ -83,7 +83,11 @@
         "collaborationLink": {
             "actionLabel": {
                 "copyLink": "Copia Link"
-            }
+            },
+            "newCollaborationLinkGenerated": {
+                "label": "Nuovo link per la collaborazione generato"
+            },
+            "copyCollaborationLink": "Link per la collaborazione copiato"
         }
     },
     "secondaryBar": {
@@ -259,7 +263,9 @@
         "revokeCollaborationLink": {
             "button": {
                 "confirm": "Revoca"
-            }
+            },
+            "header": "Revoca il link di collaborazione di {{nodeName}}",
+            "body": "Revocando questo link, anche la possibilità di creare nuove condivisioni tramite lo stesso verrà rimossa. Tutti coloro che stanno già utilizzando questo link manterranno comunque l'accesso al nodo."
         }
     },
     "empty": {
@@ -336,12 +342,12 @@
                 "owner": "Proprietario",
                 "tooltip": {
                     "remove": {
-                        "collaborator": "Rimuovi {{username}}",
+                        "collaborator": "Rimuovi collaborazione",
                         "yourself": "Rimuovi la tua collaborazione"
                     },
                     "edit": {
                         "you": "Modifica la tua collaborazione",
-                        "collaborator": "Modifica la collaborazione di {{username}}"
+                        "collaborator": "Modifica la collaborazione"
                     }
                 }
             },
@@ -423,7 +429,12 @@
                 "cloneAsCurrent": "Clona come versione corrente",
                 "openDocumentVersion": "Apri la versione del documento",
                 "tooltip": {
-                    "disabledByPermission": "Non hai i permessi necessari"
+                    "disabledByPermission": "Non hai i permessi necessari",
+                    "disabledByVersionKeepForever": "Le versioni indicate come quelle da conservare per sempre non possono essere eliminate",
+                    "disabledByMaxVersion": "Hai raggiunto il numero massimo di versioni",
+                    "disabledByMaxKeepVersion": "Hai raggiunto il limite massimo di versioni che puoi conservare per sempre",
+                    "disabledByDocs": "Questa versione non può essere aperta dall'editor online",
+                    "disabledByDeleteCurrent": "La versione corrente non può essere eliminata"
                 }
             },
             "button": {
@@ -435,7 +446,7 @@
                 "lastWeek": "Una settimana fa",
                 "olderVersions": "Versioni più vecchie"
             },
-            "mainHint": "Puoi eliminare manualmente qualsiasi versione di un file oppure ripristinarne una come quella corrente. Seleziona una o più versioni da conservare per sempre.",
+            "mainHint": "Files salva le ultime {{maxVersions}} versioni dei tuoi documenti. Seleziona una o più versioni da conservare per sempre.",
             "row": {
                 "clonedIcon": {
                     "tooltip1": "Clonato da versione {{versionNumber}} ({{cloneDate}})",
@@ -746,7 +757,8 @@
             "generateLink": "Genera Link",
             "limitReached": "Hai raggiunto il numero massimo di link pubblici",
             "title": "Link Pubblici",
-            "undo": "Annulla"
+            "undo": "Annulla",
+            "description": "Gli utenti esterni ed interni che hanno accesso al link possono scaricare il file."
         },
         "datePickerInput": {
             "description": "Il link scade al termine del giorno selezionato"
@@ -809,6 +821,10 @@
             "title": {
                 "enabled": "Modalità Drag&Drop",
                 "disabled": "Modalità Drag&Drop"
+            },
+            "message": {
+                "enabled": "Trascina qui gli elementi\nper aggiungerli velocemente a questa cartella",
+                "disabled": "Non puoi trascinare i tuoi elementi in questa sezione"
             }
         }
     },
@@ -816,6 +832,31 @@
         "button": {
             "revoke": "Revoca",
             "generateLink": "Genera Link"
+        },
+        "title": "Link per la Collaborazione",
+        "row": {
+            "title": {
+                "writeAndShare": "Scrittura e Condivisione",
+                "ReadAndShare": "Lettura e Condivisione"
+            },
+            "placeholder": "Crea un link per condividere il nodo"
+        },
+        "link": {
+            "urlChip": {
+                "tooltip": {
+                    "copy": "Copia link per la collaborazione"
+                }
+            }
+        },
+        "description": "Gli utenti interni riceveranno i permessi dopo aver aperto il link. Puoi modificare i permessi concessi in qualsiasi momento."
+    },
+    "share": {
+        "chip": {
+            "tooltip": {
+                "error": {
+                    "contactNotFound": "Questo indirizzo email non è associato a nessun utente Carbonio"
+                }
+            }
         }
     }
 }
