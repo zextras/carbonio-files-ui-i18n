@@ -758,7 +758,7 @@
             "title": "Genel Bağlantılar",
             "undo": "Geri al",
             "generateLink": "Bağlantı oluştur",
-            "description": "Bu bağlantıyı kullanan iç ve dış kullanıcılar dosyayı indirebilirler."
+            "description": "Bu bağlantıya erişimi olan iç ve dış kullanıcılar dosyayı indirebilirler."
         },
         "dateTimePicker": {
             "label": "İptal Tarihi"
