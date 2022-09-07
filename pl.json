@@ -558,7 +558,7 @@
             "limitReached": "Osiągnięto maksymalną liczbę publicznych linków",
             "title": "Publiczne linki",
             "addLink": "Dodaj Link",
-            "description": "Użytkownicy z i spoza tej domeny mogą pobrać ten plik przy użyciu linku."
+            "description": "Użytkownicy z i spoza tej domeny, którzy mają dostęp do linka, mogą pobrać ten plik."
         },
         "dateTimePicker": {
             "label": "Data wygaśnięcia"
