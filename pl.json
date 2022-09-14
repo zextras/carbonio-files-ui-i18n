@@ -12,7 +12,7 @@
                 "confirm": "Potwierdź"
             },
             "header": "Obniż swoje aktualne uprawnienia",
-            "body": "Czy na pewno chcesz obniżyć swoje uprawnienia do tego węzła? Tej czynności nie da się odwrócić, nie będziesz w stanie samemu przywrócić poprzednich uprawnień. Możesz zawsze skontaktować się z posiadaczem elementu jeśli będziesz jednak potrzebował to zrobić"
+            "body": "Czy na pewno chcesz obniżyć swoje uprawnienia do tego węzła? Tej czynności nie da się odwrócić, nie będziesz w stanie samemu przywrócić poprzednich uprawnień. Możesz zawsze skontaktować się z właścicielem elementu jeśli będziesz jednak potrzebował to zrobić"
         },
         "removeLink": {
             "button": {
@@ -278,7 +278,7 @@
                     "sharingAllowedDescription": "Będzie w stanie zarządzać udostępnieniami tego pliku lub folderu",
                     "sharingAllowed": "Udostępnianie dozwolone"
                 },
-                "owner": "Posiadacz",
+                "owner": "Właściciel",
                 "you": "Ty",
                 "tooltip": {
                     "edit": {
@@ -311,7 +311,7 @@
             "versioning": "Ustawienia wersji"
         },
         "details": {
-            "owner": "Posiadacz",
+            "owner": "Właściciel",
             "size": "Rozmiar",
             "collaboratorsTooltip": "Zobacz listę współpracowników",
             "sendMailTo": "Wyślij e-mail do: {{email}}",
