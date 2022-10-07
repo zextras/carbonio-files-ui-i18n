@@ -6,7 +6,12 @@
                 "upload": "Upload",
                 "document": "Neues Dokument",
                 "presentation": "Neue Präsentation",
-                "spreadsheet": "Neues Tabellenblatt"
+                "spreadsheet": "Neues Tabellenblatt",
+                "msDocument_xlsx": "Microsoft Excel {{ext}}",
+                "msDocument_pptx": "Microsoft PowerPoint {{ext}}",
+                "msDocument_docx": "Microsoft Word {{ext}}",
+                "msDocument": "Microsoft {{ext}}",
+                "libreDocument": "OpenDocument {{ext}}"
             }
         }
     },
@@ -816,6 +821,22 @@
         "button": {
             "revoke": "Entziehen",
             "generateLink": "Link erstellen"
-        }
+        },
+        "title": "Links zur Mitarbeit",
+        "row": {
+            "title": {
+                "writeAndShare": "Schreiben und teilen",
+                "ReadAndShare": "Lesen und teilen"
+            },
+            "placeholder": "Einen Link erstellen, um den Knotenpunkt zu teilen"
+        },
+        "link": {
+            "urlChip": {
+                "tooltip": {
+                    "copy": "Link zur Mitarbeit kopieren"
+                }
+            }
+        },
+        "description": "Interne Benutzer werden die Berechtigungen durch Öffnen des Links erhalten. Sie können die vergebenen Berechtigungen jederzeit ändern."
     }
 }
