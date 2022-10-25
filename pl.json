@@ -99,10 +99,10 @@
         },
         "revokeCollaborationLink": {
             "button": {
-                "confirm": "Odwołaj"
+                "confirm": "Deaktywuj"
             },
-            "header": "Deaktywuj link do współpracy {{nodeName}}",
-            "body": "Po deaktywacji tego linka, tworzenie nowych udostępnień stanie się niemożliwe. Każdy, kto już użył tego linka do współpracy, dalej będzie miał dostep do tego węzła."
+            "header": "Deaktywuj link do elementu {{nodeName}}",
+            "body": "Po deaktywacji tego linka, tworzenie nowych udostępnień stanie się niemożliwe. Każdy, kto już użył tego linka do elementu, dalej będzie miał do niego dostep."
         }
     },
     "search": {
@@ -129,7 +129,7 @@
                     "label": "Oflagowane",
                     "description": "Filtruj wyniki wyszukiwania według oflagowanych elementów"
                 },
-                "title": "Zaawansowane Filtry",
+                "title": "Zaawansowane filtry",
                 "shared": {
                     "label": "Udostępnione",
                     "description": "Filtruj wyniki wyszukiwania wg elementów, które zawierają co najmniej jednego współpracownika (nie wliczając ciebie)"
@@ -239,9 +239,9 @@
                 "copyLink": "Skopiuj link"
             },
             "newCollaborationLinkGenerated": {
-                "label": "Nowy link do współpracy został wygenerowany"
+                "label": "Nowy link do elementu został wygenerowany"
             },
-            "copyCollaborationLink": "Link do współpracy został skopiowany"
+            "copyCollaborationLink": "Link do elementu został skopiowany"
         }
     },
     "actions": {
@@ -282,11 +282,11 @@
                 "you": "Ty",
                 "tooltip": {
                     "edit": {
-                        "collaborator": "Edytuj współpracę",
+                        "collaborator": "Edytuj uprawnienia",
                         "you": "Edytuj swoją współpracę"
                     },
                     "remove": {
-                        "collaborator": "Usuń współpracę",
+                        "collaborator": "Usuń współpracownika",
                         "yourself": "Usuń swoją współpracę"
                     }
                 }
@@ -299,7 +299,7 @@
                     "label": "Dodaj niestandardową wiadomość do tego powiadomienia",
                     "placeholder": "Dodaj nowe osoby lub grupy"
                 },
-                "note": "Notatka:",
+                "note": "Uwaga:",
                 "noteDescription": "Domyślna wiadomość zawiera Twoje imię, nazwę udostępnianiego elementu, uprawnienia przyznane odbiorcom oraz informacje dot. logowania."
             },
             "noSharePermissionHeader": "Nie masz uprawnień, aby udostępnić ten element."
@@ -324,7 +324,7 @@
                 "closeIconTooltip": "Zamknij bez zapisywania",
                 "editIconTooltip": "Edytuj opis",
                 "input": {
-                    "label": "Maksymalna dozwolona długość to 4096 znaków"
+                    "label": "Max. dozwolona długość to 4096 znaków"
                 },
                 "saveIconTooltip": "Zapisz zmiany"
             },
@@ -485,11 +485,11 @@
         ],
         "search_full": [
             {
-                "title": "Wybierz jeden lub więcej wyników, aby przeprowadzić czynności lub wyświetlić szczegóły."
+                "title": "Wybierz jeden lub więcej wyników, aby wykonać czynności lub wyświetlić szczegóły."
             }
         ],
         "uploads": {
-            "message": "Tutaj znajdziesz wszystkie elementy, które aktualnie przesyłasz. Możesz z tąd nimi zarządzać",
+            "message": "Tutaj znajdziesz wszystkie elementy, które aktualnie przesyłasz. Możesz stąd nimi zarządzać",
             "title": "Prześlij pliki"
         },
         "version": {
@@ -566,7 +566,7 @@
         "input": {
             "description": {
                 "error": {
-                    "maxLengthAllowed": "Maksymalna dozwolona długość to 300 znaków"
+                    "maxLengthAllowed": "Max. dozwolona długość to 300 znaków"
                 }
             },
             "label": "Opis Linku"
@@ -582,7 +582,7 @@
             "trash": "Kosz",
             "myElements": "Moje elementy",
             "sharedByMe": "Udostępnione przeze mnie",
-            "sharedElements": "Udostępnione Elementy",
+            "sharedElements": "Udostępnione elementy",
             "sharedWithMe": "Udostępnione mi"
         },
         "filesHome": "Start",
@@ -613,7 +613,7 @@
                 "OrderSizeDescending": "Malejąco wg rozmiaru"
             }
         },
-        "lastUpdate": "Ostatnia Aktualizacja",
+        "lastUpdate": "Ostatnia aktualizacja",
         "name": "Nazwa"
     },
     "create": {
@@ -834,25 +834,25 @@
     },
     "collaborationLinks": {
         "button": {
-            "revoke": "Odwołaj",
+            "revoke": "Deaktywuj",
             "generateLink": "Wygeneruj Link"
         },
-        "title": "Linki do współpracy",
+        "title": "Linki do elementu",
         "row": {
             "title": {
-                "writeAndShare": "Edytowanie i Udosepnianie",
-                "ReadAndShare": "Czytanie i Udostępnianie"
+                "writeAndShare": "Edytowanie i udostępnianie",
+                "ReadAndShare": "Czytanie i udostępnianie"
             },
-            "placeholder": "Stwórz link, aby udostępnić węzeł"
+            "placeholder": "Stwórz link, aby udostępnić element"
         },
         "link": {
             "urlChip": {
                 "tooltip": {
-                    "copy": "Skopiuj link do współpracy"
+                    "copy": "Skopiuj link do elementu"
                 }
             }
         },
-        "description": "Użytkownicy z tej domeny otrzymają uprawnienia klikając w ten link. Zawsze możesz edytować przyznane uprawnienia."
+        "description": "Użytkownicy z tej domeny otrzymają uprawnienia klikając w ten link. Zawsze możesz edytować przyznane im uprawnienia."
     },
     "share": {
         "chip": {
