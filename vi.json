@@ -148,6 +148,20 @@
                 {
                     "title": "Chọn một mục và bắt đầu làm việc trên đó với người dùng khác."
                 }
+            ],
+            "recents_full": [
+                {
+                    "message": "Bấm vào một mục để lựa chọn nó."
+                },
+                {
+                    "message": "Chọn một mục để tiến hành."
+                },
+                {
+                    "message": "Bấm vào một mục để lựa chọn nó."
+                },
+                {
+                    "message": "Bấm vào một mục để lựa chọn nó."
+                }
             ]
         },
         "folder_empty": [
