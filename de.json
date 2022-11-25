@@ -558,6 +558,20 @@
                     "message": "Oder, wenn möglich, wählen Sie sie aus und stellen sie in ihrem ursprünglichen Ordner wieder her.",
                     "title": "Wählen Sie ein Element aus, um es endgültig zu löschen."
                 }
+            ],
+            "recents_full": [
+                {
+                    "message": "Klicken Sie auf ein Element, um es auszuwählen."
+                },
+                {
+                    "message": "Wählen Sie einen Artikel aus, um fortzufahren."
+                },
+                {
+                    "message": "Klicken Sie auf ein Element, um es auszuwählen."
+                },
+                {
+                    "message": "Klicken Sie auf ein Element, um es auszuwählen."
+                }
             ]
         },
         "folder_empty": [
