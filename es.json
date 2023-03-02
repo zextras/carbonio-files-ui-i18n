@@ -354,7 +354,7 @@
                     },
                     "remove": {
                         "collaborator": "Remover colaborador",
-                        "yourself": "Abandonar colaboración"
+                        "yourself": "Dejar colaboración"
                     }
                 }
             },
