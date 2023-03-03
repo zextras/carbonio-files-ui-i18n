@@ -31,8 +31,8 @@
             "sharedWitMe": "Compartido conmigo",
             "trash": {
                 "trash": "Papelera",
-                "myElements": "Mis elementos",
-                "sharedWitMe": "Elementos compartidos"
+                "myElements": "Mis documentos",
+                "sharedWitMe": "Documentos compartidos"
             },
             "filesHome": "Inicio"
         },
@@ -51,17 +51,17 @@
         },
         "removeLink": {
             "button": {
-                "confirm": "Remover"
+                "confirm": "Eliminar"
             },
-            "body": "Este enlace ha expirado, por lo tanto, ya no se puede utilizar para acceder al elemento. Puedes quitar el enlace de la lista o puedes actualizar su fecha de caducidad y demás información para seguir utilizándolo",
-            "header": "Eliminar enlace público {{nodeName}}"
+            "body": "Este enlace ha caducado y ya no puede ser usado para acceder al elemento. Puedes eliminarlo de la lista o puedes actualizar su fecha de validez para seguir utilizándolo",
+            "header": "Eliminar el enlace público \"{{nodeName}}\""
         },
         "revokeLink": {
             "button": {
-                "confirm": "Revocar"
+                "confirm": "Invalidar"
             },
-            "body": "Revocando este enlace, estás bloqueando el acceso a {{nodeName}} para cualquier persona que intente utilizar el enlace para acceder al archivo",
-            "header": "Revocar enlace público {{nodeName}}"
+            "body": "Al invalidar este enlace estarás restringiendo el acceso a cualquiera que intente abrir \"{{nodeName}}\"",
+            "header": "Invalidar enlace público para \"{{nodeName}}\""
         },
         "close": {
             "tooltip": "Cerrar"
@@ -71,7 +71,7 @@
                 "confirm": "Confirmar"
             },
             "body": "¿Seguro que quieres disminuir los permisos que te fueron otorgados para este elemento? Esta acción es permanente y no podrás restaurarlos por ti mismo. Siempre puedes contactar con el propietario del elemento compartido si necesitas restablecer los permisos originales",
-            "header": "Disminuir permisos"
+            "header": "Degradar tus permisos"
         },
         "nodesSelection": {
             "selectedCount": "{{count}} elemento seleccionado",
@@ -89,15 +89,15 @@
         },
         "unsaved_changes": {
             "title": {
-                "unsaved_changes": "Tienes cambios no guardados",
-                "cannot_saved_changes": "Algunos cambios no pudieron guardarse"
+                "unsaved_changes": "Hay cambios sin guardar",
+                "cannot_saved_changes": "Algunos cambios no se han guardado"
             },
             "button": {
                 "save_and_leave": "Guardar y salir",
-                "leave_anyway": "Abandonar de todos modos"
+                "leave_anyway": "Salir sin guardar"
             },
             "body": {
-                "line2": "Todos tus cambios no guardados se perderán",
+                "line2": "Los cambios no guardados se perderán",
                 "line1": "¿Seguro que quieres salir de esta página sin guardar?"
             }
         },
@@ -115,10 +115,10 @@
         },
         "revokeCollaborationLink": {
             "button": {
-                "confirm": "Revocar"
+                "confirm": "Invalidar"
             },
-            "header": "Revocar enlace de colaboración {{nodeName}}",
-            "body": "Al revocar este enlace, se elimina la posibilidad de realizar nuevas acciones con él. Todos los que hayan utilizado ya el enlace de colaboración podrán seguir accediendo al nodo."
+            "header": "Invalidar enlace para \"{{nodeName}}\"",
+            "body": "Al invalidar este enlace ya no se podrá compartir el elemento. Todos aquellos usuarios que lo estén utilizando dejarán de tener acceso."
         }
     },
     "node": {
@@ -129,10 +129,10 @@
                 },
                 "input": {
                     "label": {
-                        "name": "Nombre de elemento"
+                        "name": "Nombre"
                     }
                 },
-                "title": "Renombrar elemento"
+                "title": "Renombrar"
             }
         },
         "alias": {
@@ -149,7 +149,7 @@
                         "confirm": "No puedes realizar esta acción aquí"
                     }
                 },
-                "title": "Copiar {{node.name}}",
+                "title": "Copiar \"{{node.name}}\"",
                 "title_plural": "Copiar elementos"
             }
         },
@@ -162,15 +162,15 @@
                     }
                 },
                 "input": {
-                    "filter": "Filtrar carpetas"
+                    "filter": "Buscar carpetas"
                 },
-                "subtitle": "Elige una carpeta de destino:",
-                "title": "Mover {{node.name}}",
+                "subtitle": "Elige la carpeta de destino:",
+                "title": "Mover \"{{node.name}}\"",
                 "title_plural": "Mover elementos"
             },
             "error": {
                 "not": {
-                    "allowed": "No puedes mover varios nodos de un filtro o una búsqueda"
+                    "allowed": "No puedes mover varios resultados de una búsqueda o filtro"
                 }
             }
         },
@@ -181,63 +181,63 @@
     "secondaryBar": {
         "filters": "Filtros",
         "filtersList": {
-            "flagged": "Marcado",
+            "flagged": "Con bandera",
             "trash": "Papelera",
             "sharedByMe": "Compartido por mi",
             "sharedWithMe": "Compartido conmigo",
-            "myElements": "Mis elementos",
+            "myElements": "Mis documentos",
             "sharedElements": "Elementos compartidos",
             "recents": "Recientes"
         },
-        "team": "Archivos enviados a través de Team",
-        "uploads": "Cargas",
+        "team": "Enviados en Team",
+        "uploads": "Cargas de archivos",
         "filesHome": "Inicio"
     },
     "snackbar": {
         "markForDeletion": {
-            "error": "Algo fue mal, prueba de nuevo",
-            "success": "Elemento movido a la papelera",
+            "error": "Algo ha salido mal. Intenta nuevamente",
+            "success": "Elemento movido a la Papelera",
             "showTrash": "Ir a la Papelera"
         },
         "deleteShare": {
             "error": "Error",
-            "success": "Éxito"
+            "success": "Compartición anulada"
         },
         "restore": {
-            "success": "Éxito",
-            "error": "Algo fue mal, prueba de nuevo",
+            "success": "Restaurado",
+            "error": "Algo ha salido mal Intenta nuevamente",
             "showInFolder": "Mostrar en carpeta"
         },
         "download": {
-            "start": "Tu descarga se iniciará pronto"
+            "start": "La descarga comenzará pronto"
         },
         "moveNodes": {
-            "error": "Algo fue mal, prueba de nuevo",
+            "error": "Algo ha salido mal. Intenta nuevamente",
             "success": "Elemento movido",
-            "action": "Ir a carpeta"
+            "action": "Ir a la carpeta"
         },
         "upload": {
-            "goToFolder": "Ir a carpeta",
+            "goToFolder": "Ir a la carpeta",
             "success": "Carga realizada en {{destination}}",
             "moreInfo": "Más información",
             "foldersNotAllowed": "No es posible cargar carpetas",
             "nodesNotAllowed": "Algunos elementos no han sido cargados"
         },
         "copyNodes": {
-            "error": "Algo fue mal, inténtalo de nuevo",
-            "action": "Ir a carpeta",
+            "error": "Algo ha salido mal. Intenta nuevamente",
+            "action": "Ir a la carpeta",
             "success": "Elemento copiado"
         },
         "deletePermanently": {
             "error": "Error",
-            "success": "Éxito"
+            "success": "Eliminado definitivamente"
         },
         "unflag": {
-            "success": "Elemento desmarcado con éxito"
+            "success": "Bandera removida"
         },
         "publicLink": {
             "actionLabel": {
-                "copyLink": "Copiar Enlace"
+                "copyLink": "Copiar enlace"
             },
             "copyLink": "Enlace público copiado",
             "linkUpdated": {
@@ -248,32 +248,32 @@
             }
         },
         "clipboard": {
-            "email": "Dirección email copiada",
-            "itemShortcutCopied": "Enlace del elemento copiado"
+            "email": "Dirección de Email copiada",
+            "itemShortcutCopied": "El enlace se ha copiado"
         },
         "decreaseYourOwnShare": {
-            "success": "Derechos actualizados con éxito"
+            "success": "Permisos actualizados correctamente"
         },
         "version": {
             "clone": "Versión clonada como vigente",
-            "keepForeverAdded": "Versión marcada para guardarla para siempre",
+            "keepForeverAdded": "Versión marcada como mantener para siempre",
             "keepForeverRemoved": "Esta versión ya no se mantendrá para siempre"
         },
         "collaborationLink": {
             "actionLabel": {
-                "copyLink": "Copiar Enlace"
+                "copyLink": "Copiar enlace"
             },
             "newCollaborationLinkGenerated": {
-                "label": "Nuevo enlace de colaboración creado"
+                "label": "Nuevo enlace de uso interno creado"
             },
-            "copyCollaborationLink": "Enlace de colaboración copiado"
+            "copyCollaborationLink": "Enlace de uso interno copiado"
         }
     },
     "create": {
         "options": {
             "new": {
                 "folder": "Nueva carpeta",
-                "upload": "Cargar",
+                "upload": "Carga de archivos",
                 "document": "Nuevo documento",
                 "presentation": "Nueva presentación",
                 "spreadsheet": "Nueva hoja de cálculo",
@@ -320,7 +320,7 @@
         "flag": "Aplicar bandera",
         "goToFolder": "Ir a la carpeta de destino",
         "moveToTrash": "Eliminar",
-        "removeUpload": "Quitar de la lista",
+        "removeUpload": "Remover de la lista",
         "retryUpload": "Reintentar carga",
         "unflag": "Remover bandera",
         "sendViaMail": "Enviar por Email",
@@ -378,7 +378,7 @@
             "position": "Ruta",
             "collaborators": "Colaboradores",
             "content": "Contenido",
-            "downloads": "Descargar utilizando el enlace público",
+            "downloads": "Descargar utilizando el Enlace público",
             "lastEdit": "Última edición",
             "showPath": "Mostrar ruta completa",
             "editDescription": {
@@ -403,7 +403,7 @@
         },
         "uploads": {
             "message": "Aquí podrás ver y administrar todos los elementos que están siendo cargados en Files",
-            "title": "Sugerencia"
+            "title": "Sugerencias de carga"
         },
         "generic": {
             "message": "Haz clic en un elemento para seleccionarlo",
@@ -445,7 +445,7 @@
                 }
             },
             "button": {
-                "upload": "Cargar versión",
+                "upload": "Cargar nueva versión",
                 "purgeAllVersions": "Eliminar todas las versiones"
             },
             "rowHeaders": {
@@ -491,7 +491,7 @@
             "sharedByMe_empty": [
                 {
                     "message": "Elige un elemento para continuar.",
-                    "title": "Consulta y edita los elementos compartidos con tus contactos."
+                    "title": "Consulta y edita los elementos que has compartido con tus contactos."
                 },
                 {
                     "message": "Haz clic sobre un elemento para seleccionarlo.",
@@ -626,39 +626,39 @@
     "search": {
         "header": {
             "search": "Buscar",
-            "result": "Resultados que contienen todas las palabras clave:",
+            "result": "Resultados que coinciden con las palabras clave:",
             "start": "Iniciar búsqueda",
-            "close": "Abandonar la búsqueda"
+            "close": "Salir de la búsqueda"
         },
         "search": {
             "tooltip": {
                 "search": "Buscar",
-                "edit": "Edita tu búsqueda para iniciar una nueva",
-                "empty": "Introduce algunas palabras clave para iniciar una búsqueda"
+                "edit": "Edita la búsqueda para iniciar una nueva",
+                "empty": "Escribe las palabras clave para iniciar una búsqueda"
             }
         },
         "clear": {
             "tooltip": {
-                "clear": "Borrar la entrada de la búsqueda",
-                "empty": "La entrada de la búsqueda se ha borrado"
+                "clear": "Borrar términos de búsqueda",
+                "empty": "Se han borrado los términos de la búsqueda"
             }
         },
         "searchBar": {
             "label": {
-                "active": "Separa las palabras clave con una coma, un punto y coma o presionado TAB",
-                "default": "Introduce tu búsqueda"
+                "active": "Separa las palabras clave con espacio, coma, o punto y coma",
+                "default": "Comienza a escribir para buscar"
             }
         },
         "advancedSearch": {
             "button": {
-                "noFilter": "Filtros avanzado",
-                "filters": "{{count}} filtro avanzado",
-                "filters_plural": "{{count}} filtros avanzados"
+                "noFilter": "Filtros avanzados",
+                "filters": "{{count}} filtro aplicado",
+                "filters_plural": "{{count}} filtros aplicados"
             },
             "modal": {
                 "button": {
                     "confirm": "Buscar",
-                    "reset": "Reiniciar filtros"
+                    "reset": "Restablecer"
                 },
                 "flagged": {
                     "label": "Bandera aplicada",
@@ -668,9 +668,9 @@
                     "modal": {
                         "cancel": "Volver",
                         "title": "Seleccionar carpeta",
-                        "cascade": "buscar también en las subcarpetas",
-                        "confirm": "Elegir carpeta",
-                        "subtitle": "El resultado se buscará solo dentro de la carpeta seleccionada"
+                        "cascade": "Buscar también en subcarpetas",
+                        "confirm": "Aceptar",
+                        "subtitle": "La búsqueda se realizará en la carpeta elegida"
                     },
                     "label": "Seleccionar carpeta"
                 },
@@ -690,7 +690,7 @@
                         "presentation": "Presentación",
                         "image": "Imagen",
                         "folder": "Carpeta",
-                        "document": "Documento",
+                        "document": "Texto",
                         "audio": "Audio"
                     }
                 },
@@ -723,30 +723,30 @@
     },
     "uploads": {
         "clean": {
-            "completed": "Limpiar lista de Uploads"
+            "completed": "Limpiar cargas completadas"
         },
         "destination": {
-            "home": "El archivo se ha cargado en la carpeta \"Inicio\" de Files"
+            "home": "El archivo se ha cargado en la carpeta /Inicio"
         },
         "dropzone": {
             "message": {
                 "disabled": "No puedes soltar un archivo en esta área",
                 "folderView": {
-                    "enabled": "Selecciona y arrastra los archivos\npara moverlos rápidamente a esta carpeta",
+                    "enabled": "Selecciona y arrastra tus archivos\npara moverlos rápidamente a esta carpeta",
                     "disabled": "No puedes soltar un archivo en esta área"
                 },
                 "otherView": {
-                    "enabled": "Selecciona y arrastra los archivos\npara añadirlos rápidamente a la carpeta Inicio"
+                    "enabled": "Selecciona y arrastra tus archivos\npara añadirlos rápidamente a la carpeta Inicio"
                 }
             },
             "title": {
-                "disabled": "Modo \"arrastrar y soltar\"",
-                "enabled": "Modo \"arrastrar y soltar\""
+                "disabled": "Arrastrar y soltar",
+                "enabled": "Arrastrar y soltar"
             }
         },
         "error": {
             "moreInfo": {
-                "foldersNotAllowed": "No es posible cargar carpetas. Si estás intentando cargar un archivo, puede que el sistema no lo haya reconocido. Prueba de nuevo haciendo clic sobre El botón \"CARGAR\"."
+                "foldersNotAllowed": "No es posible cargar carpetas. Si estás intentando cargar un archivo, puede que el sistema no lo haya reconocido. Intenta otra vez desde el botón \"Nuevo\"."
             }
         }
     },
@@ -754,10 +754,10 @@
         "header": {
             "selectAll": "Seleccionar todos",
             "unselectAll": "Deseleccionar todos",
-            "exit": "Salir del modo de selección"
+            "exit": "Salir de selección múltiple"
         },
         "node": {
-            "tooltip": "Modo de selección"
+            "tooltip": "Activar selección múltiple"
         }
     },
     "sortingDropdown": {
@@ -775,7 +775,7 @@
                 "OrderSizeDescending": "Orden descendente por tamaño"
             }
         },
-        "lastUpdate": "Ultima actualización"
+        "lastUpdate": "Actualizado por último"
     },
     "errorCode": {
         "code": "Algo ha salido mal",
@@ -795,20 +795,20 @@
     "publicLink": {
         "addLink": {
             "generateLink": "Generar enlace",
-            "undo": "Deshacer",
+            "undo": "Cancelar",
             "title": "Enlaces públicos",
-            "addLink": "Añadir enlace",
-            "limitReached": "Se ha alcanzado el número máximo de enlaces públicos",
-            "description": "Los usuarios internos y externos que tengan acceso al enlace pueden descargar el archivo."
+            "addLink": "Nuevo enlace",
+            "limitReached": "Se ha alcanzado el máximo permitido de enlaces públicos",
+            "description": "Todas las personas que tengan acceso al enlace podrán descargar el archivo."
         },
         "link": {
             "edit": "Editar",
-            "remove": "Remover",
-            "revoke": "Revocar",
-            "undo": "Deshacer",
-            "editLink": "Editar enlace",
-            "expireOn": "Caduca en:",
-            "expiredOn": "Este enlace caducó en:",
+            "remove": "Quitar",
+            "revoke": "Invalidar",
+            "undo": "Cancelar",
+            "editLink": "Confirmar edición",
+            "expireOn": "Caduca el:",
+            "expiredOn": "Este enlace caducó el:",
             "noExpirationDate": "No tiene fecha de caducidad",
             "urlChip": {
                 "tooltip": {
@@ -818,15 +818,15 @@
             }
         },
         "datePickerInput": {
-            "description": "El enlace caduca al final del día que se ha elegido"
+            "description": "El enlace caduca a las 23:59 hs del día seleccionado"
         },
         "dateTimePicker": {
-            "label": "Fecha de caducidad"
+            "label": "Fecha de validez"
         },
         "input": {
             "description": {
                 "error": {
-                    "maxLengthAllowed": "La longitud máxima permitida es de 300 caracteres"
+                    "maxLengthAllowed": "La longitud máxima es de 300 caracteres"
                 }
             },
             "label": "Descripción del enlace"
@@ -877,7 +877,7 @@
     },
     "collaborationLinks": {
         "button": {
-            "revoke": "Anular enlace",
+            "revoke": "Invalidar",
             "generateLink": "Generar enlace"
         },
         "title": "Enlaces de colaboración",
@@ -891,7 +891,7 @@
         "link": {
             "urlChip": {
                 "tooltip": {
-                    "copy": "Copiar enlace"
+                    "copy": "Copiar enlace de uso interno"
                 }
             }
         },
