@@ -89,11 +89,11 @@
         },
         "unsaved_changes": {
             "title": {
-                "unsaved_changes": "Hay cambios sin guardar",
+                "unsaved_changes": "No se han guardado los cambios",
                 "cannot_saved_changes": "Algunos cambios no se han guardado"
             },
             "button": {
-                "save_and_leave": "Guardar y salir",
+                "save_and_leave": "Guardar",
                 "leave_anyway": "Salir sin guardar"
             },
             "body": {
@@ -162,7 +162,7 @@
                     }
                 },
                 "input": {
-                    "filter": "Buscar carpetas"
+                    "filter": "Buscar carpeta"
                 },
                 "subtitle": "Elige la carpeta de destino:",
                 "title": "Mover \"{{node.name}}\"",
@@ -248,7 +248,7 @@
             }
         },
         "clipboard": {
-            "email": "Dirección de Email copiada",
+            "email": "Dirección de e-mail copiada",
             "itemShortcutCopied": "El enlace se ha copiado"
         },
         "decreaseYourOwnShare": {
@@ -323,7 +323,7 @@
         "removeUpload": "Remover de la lista",
         "retryUpload": "Reintentar carga",
         "unflag": "Remover bandera",
-        "sendViaMail": "Enviar por Email",
+        "sendViaMail": "Enviar por e-mail",
         "edit": "Editar",
         "preview": "Vista previa",
         "manageShares": "Compartir"
@@ -392,7 +392,7 @@
             "copyShortcut": "copiar enlace",
             "missingDescription": "Haz clic en el lápiz para añadir una descripción",
             "owner": "Propietario",
-            "sendMailTo": "Enviar por Email a: {{email}}",
+            "sendMailTo": "Enviar por e-mail a: {{email}}",
             "collaboratorsTooltip": "Ver la lista de colaboradores"
         },
         "tabs": {
@@ -518,7 +518,7 @@
                     "title": "Aún no hay elementos compartidos contigo."
                 },
                 {
-                    "title": "Haz clic en el botón \"NUEVO\" para redactar un Email.",
+                    "title": "Haz clic en el botón \"NUEVO\" para redactar un e-mail.",
                     "message": "Informa a los demás usuarios de que estás dispuesto a colaborar con ellos."
                 }
             ],
@@ -640,7 +640,7 @@
         "clear": {
             "tooltip": {
                 "clear": "Borrar términos de búsqueda",
-                "empty": "Se han borrado los términos de la búsqueda"
+                "empty": "Los términos de la búsqueda ya han sido borrados"
             }
         },
         "searchBar": {
@@ -901,7 +901,7 @@
         "chip": {
             "tooltip": {
                 "error": {
-                    "contactNotFound": "Esta dirección Email no está asociada a un usuario interno"
+                    "contactNotFound": "Esta dirección e-mail no está asociada a un usuario interno"
                 }
             }
         }
