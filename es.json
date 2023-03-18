@@ -195,7 +195,7 @@
     },
     "snackbar": {
         "markForDeletion": {
-            "error": "Algo ha salido mal. Intenta nuevamente",
+            "error": "Algo salió mal. Intenta nuevamente",
             "success": "Elemento movido a la Papelera",
             "showTrash": "Ir a la Papelera"
         },
@@ -205,14 +205,14 @@
         },
         "restore": {
             "success": "Restaurado",
-            "error": "Algo ha salido mal Intenta nuevamente",
+            "error": "Algo salió mal. Intenta nuevamente",
             "showInFolder": "Mostrar en carpeta"
         },
         "download": {
             "start": "La descarga comenzará pronto"
         },
         "moveNodes": {
-            "error": "Algo ha salido mal. Intenta nuevamente",
+            "error": "Algo salió mal. Intenta nuevamente",
             "success": "Elemento movido",
             "action": "Ir a la carpeta"
         },
@@ -224,7 +224,7 @@
             "nodesNotAllowed": "Algunos elementos no han sido cargados"
         },
         "copyNodes": {
-            "error": "Algo ha salido mal. Intenta nuevamente",
+            "error": "Algo salió mal. Intenta nuevamente",
             "action": "Ir a la carpeta",
             "success": "Elemento copiado"
         },
@@ -778,8 +778,8 @@
         "lastUpdate": "Actualizado por último"
     },
     "errorCode": {
-        "code": "Algo ha salido mal",
-        "code_Generic": "Algo ha salido mal",
+        "code": "Algo salió mal",
+        "code_Generic": "Algo salió mal",
         "code_ACCOUNT_NOT_FOUND": "Este usuario no forma parte del sistema Carbonio",
         "code_FILE_VERSION_NOT_FOUND": "No se puede encontrar la versión del archivo",
         "code_LINK_NOT_FOUND": "Acción fallida. Este enlace ya no existe",
