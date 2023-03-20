@@ -851,8 +851,8 @@
             "tooltip": "Zamknij"
         },
         "loading": {
-            "retrying": "Ładowanie podglądu...",
-            "file": "Ładowanie podglądu pliku, proszę czekać...",
+            "retrying": "Ładowanie podglądu…",
+            "file": "Ładowanie podglądu pliku, proszę czekać…",
             "error": "Wystąpił błąd przy ładowaniu podglądu. Spróbuj ponownie."
         },
         "button": {
