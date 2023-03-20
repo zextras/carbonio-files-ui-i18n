@@ -849,8 +849,8 @@
             "tooltip": "Fechar"
         },
         "loading": {
-            "retrying": "Tentando carregar a pré-visualização...",
-            "file": "Carregando a pré-visualização do arquivo. Por favor, aguarde...",
+            "retrying": "Tentando carregar a pré-visualização…",
+            "file": "Carregando a pré-visualização do arquivo. Por favor, aguarde…",
             "error": "Houve um erro ao carregar a pré-visualização. Tente novamente."
         },
         "button": {
