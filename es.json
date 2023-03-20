@@ -852,8 +852,8 @@
             "tooltip": "Cerrar"
         },
         "loading": {
-            "retrying": "Intentando cargar la vista previa...",
-            "file": "Cargando vista previa. Por favor, espera...",
+            "retrying": "Intentando cargar la vista previa…",
+            "file": "Cargando vista previa. Por favor, espera…",
             "error": "Error al cargar la vista previa. Por favor, intenta de nuevo."
         },
         "button": {
