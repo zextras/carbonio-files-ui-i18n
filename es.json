@@ -61,7 +61,7 @@
                 "confirm": "Invalidar"
             },
             "body": "Al invalidar este enlace estarás restringiendo el acceso a cualquiera que intente abrir \"{{nodeName}}\"",
-            "header": "Invalidar enlace público para \"{{nodeName}}\""
+            "header": "Remover el enlace público de \"{{nodeName}}\""
         },
         "close": {
             "tooltip": "Cerrar"
@@ -292,7 +292,7 @@
             "displayerContent": "La carpeta está vacía"
         },
         "filter": {
-            "hint": "No hay nada aquí.",
+            "hint": "Aún no hay nada aquí.",
             "flagged": "No hay banderas aplicadas.",
             "sharedByMe": "No has compartido nada aún.",
             "sharedWithMe": "No hay elementos compartidos contigo.",
@@ -453,7 +453,7 @@
                 "lastWeek": "Últimos 7 días",
                 "olderVersions": "Versiones anteriores"
             },
-            "mainHint": "Files guarda las últimas {{maxVersions}} de tus archivos. Puedes eliminar cualquier versión o restaurar una de ellas como la versión \"vigente\". Puedes también indicar una o más versiones que quieres mantener para siempre (ꝏ).",
+            "mainHint": "Files guarda las últimas {{maxVersions}} de tus archivos. Puedes eliminar manualmente cualquier versión, o restaurar una de ellas como la versión Actual. Elige una o más versiones que quieras mantener para siempre (ꝏ).",
             "row": {
                 "clonedIcon": {
                     "tooltip1": "Clonado a partir de la versión {{versionNumber}} ({{cloneDate}})",
@@ -804,7 +804,7 @@
         "link": {
             "edit": "Editar",
             "remove": "Quitar",
-            "revoke": "Invalidar",
+            "revoke": "Remover",
             "undo": "Cancelar",
             "editLink": "Confirmar edición",
             "expireOn": "Caduca el:",
