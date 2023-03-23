@@ -23,7 +23,7 @@
             "button": {
                 "confirm": "Eliminar"
             },
-            "body": "Estás a punto de eliminar definitivamente el/los elemento(s) seleccionado(s). Esta acción no se puede deshacer.",
+            "body": "Estás a punto de eliminar definitivamente el/los elemento(s) seleccionado(s). Esta acción es irreversible.",
             "header": "Eliminar definitivamente"
         },
         "roots": {
@@ -58,7 +58,7 @@
         },
         "revokeLink": {
             "button": {
-                "confirm": "Invalidar"
+                "confirm": "Revocar"
             },
             "body": "Al invalidar este enlace estarás restringiendo el acceso a cualquiera que intente abrir \"{{nodeName}}\"",
             "header": "Remover el enlace público de \"{{nodeName}}\""
@@ -90,7 +90,7 @@
         "unsaved_changes": {
             "title": {
                 "unsaved_changes": "No se han guardado los cambios",
-                "cannot_saved_changes": "Algunos cambios no se han guardado"
+                "cannot_saved_changes": "Algunos cambios no han sido guardados"
             },
             "button": {
                 "save_and_leave": "Guardar",
@@ -162,15 +162,15 @@
                     }
                 },
                 "input": {
-                    "filter": "Buscar carpeta"
+                    "filter": "Filtrar carpetas"
                 },
-                "subtitle": "Elige la carpeta de destino:",
+                "subtitle": "Selecciona la carpeta de destino:",
                 "title": "Mover \"{{node.name}}\"",
                 "title_plural": "Mover elementos"
             },
             "error": {
                 "not": {
-                    "allowed": "No puedes mover varios resultados de una búsqueda o filtro"
+                    "allowed": "No puedes mover varios resultados de una búsqueda o filtro a la vez"
                 }
             }
         },
@@ -181,7 +181,7 @@
     "secondaryBar": {
         "filters": "Filtros",
         "filtersList": {
-            "flagged": "Con bandera",
+            "flagged": "Bandera aplicada",
             "trash": "Papelera",
             "sharedByMe": "Compartido por mi",
             "sharedWithMe": "Compartido conmigo",
@@ -233,7 +233,7 @@
             "success": "Eliminado definitivamente"
         },
         "unflag": {
-            "success": "Bandera removida"
+            "success": "La bandera ha sido removida"
         },
         "publicLink": {
             "actionLabel": {
@@ -252,7 +252,7 @@
             "itemShortcutCopied": "El enlace se ha copiado"
         },
         "decreaseYourOwnShare": {
-            "success": "Permisos actualizados correctamente"
+            "success": "Se han editado los permisos"
         },
         "version": {
             "clone": "Versión clonada como vigente",
@@ -316,17 +316,17 @@
         "openWithDocs": "Abrir documento",
         "rename": "Renombrar",
         "restore": "Restaurar",
-        "deletePermanently": "Eliminar permanentemente",
+        "deletePermanently": "Eliminar definitivamente",
         "flag": "Aplicar bandera",
         "goToFolder": "Ir a la carpeta de destino",
         "moveToTrash": "Eliminar",
         "removeUpload": "Remover de la lista",
         "retryUpload": "Reintentar carga",
         "unflag": "Remover bandera",
-        "sendViaMail": "Enviar por e-mail",
+        "sendViaMail": "Enviar por correo",
         "edit": "Editar",
         "preview": "Vista previa",
-        "manageShares": "Compartir"
+        "manageShares": "Admininstrar uso compartido"
     },
     "displayer": {
         "list": {
@@ -344,7 +344,7 @@
                         "viewerDescription": "Podrá solamente ver o descargar el archivo o carpeta"
                     },
                     "sharingAllowed": "Compartir",
-                    "sharingAllowedDescription": "Podrá administrar las comparticiones del archivo o carpeta"
+                    "sharingAllowedDescription": "Podrá administrar el uso compartido del archivo o carpeta"
                 },
                 "owner": "Propietario",
                 "tooltip": {
@@ -364,10 +364,10 @@
                 },
                 "input": {
                     "label": "Añadir un mensaje personalizado a esta notificación",
-                    "placeholder": "Añadir nuevos contactos o grupos"
+                    "placeholder": "Añadir nuevos participantes o grupos"
                 },
                 "note": "Nota:",
-                "noteDescription": "El mensaje estándar muestra tu nombre, el nombre del elemento compartido, el tipo de permiso otorgado a los destinatarios e información de acceso."
+                "noteDescription": "El mensaje estándar muestra tu nombre, el nombre del elemento compartido, los permisos otorgados a los usuarios y la información de acceso, si fuera necesaria."
             },
             "noSharePermissionHeader": "No tienes permiso para compartir este elemento."
         },
@@ -375,10 +375,10 @@
             "createdBy": "Creado por",
             "description": "Descripción",
             "size": "Tamaño",
-            "position": "Ruta",
+            "position": "Posición",
             "collaborators": "Colaboradores",
             "content": "Contenido",
-            "downloads": "Descargar utilizando el Enlace público",
+            "downloads": "Descargar utilizando el enlace público",
             "lastEdit": "Última edición",
             "showPath": "Mostrar ruta completa",
             "editDescription": {
@@ -416,11 +416,11 @@
             },
             {
                 "message": "¡No te rindas, sigue buscando!",
-                "title": "Sin resultados."
+                "title": "No hay resultados."
             },
             {
                 "message": "Inicia una nueva búsqueda.",
-                "title": "No hay resultados para tu búsqueda."
+                "title": "No hay resultados para la búsqueda efectuada."
             },
             {
                 "title": "No hay resultados para la búsqueda.",
@@ -431,8 +431,8 @@
             "actions": {
                 "deleteVersion": "Eliminar versión",
                 "downloadVersion": "Descargar versión",
-                "keepVersion": "Mantener para siempre",
-                "removeKeepVersion": "No mantener para siempre",
+                "keepVersion": "Mantener esta versión para siempre",
+                "removeKeepVersion": "Deshacer mantener para siempre",
                 "cloneAsCurrent": "Clonar como vigente",
                 "openDocumentVersion": "Abrir documento",
                 "tooltip": {
@@ -471,7 +471,7 @@
             "flagged_empty": [
                 {
                     "message": "Lo encontrarás aquí cuando lo necesites.",
-                    "title": "Utiliza la bandera para marcar tus elementos."
+                    "title": "Haz clic en la bandera para marcar un elemento."
                 },
                 {
                     "message": "Se listarán aquí.",
@@ -609,7 +609,7 @@
                 "title": "Consulta los detalles de tus carpetas y compártelas con tus contactos."
             },
             {
-                "title": "Elige una carpeta para editarla o renombrarla."
+                "title": "Selecciona una carpeta para editarla o renombrarla."
             },
             {
                 "title": "Otorga permisos a tus contactos para que puedan editar tus elementos.",
@@ -781,15 +781,15 @@
         "code": "Algo salió mal",
         "code_Generic": "Algo salió mal",
         "code_ACCOUNT_NOT_FOUND": "Este usuario no forma parte del sistema Carbonio",
-        "code_FILE_VERSION_NOT_FOUND": "No se puede encontrar la versión del archivo",
+        "code_FILE_VERSION_NOT_FOUND": "No se pudo encontrar la versión del archivo",
         "code_LINK_NOT_FOUND": "Acción fallida. Este enlace ya no existe",
         "code_MISSING_FIELD": "Ha ocurrido un error, no toda la información de este objeto ha sido recuperada",
         "code_NODE_NOT_FOUND": "Parece que este objeto no existe o no tienes permiso para acceder al mismo",
-        "code_NODE_WRITE_ERROR": "Parece que este objeto no puede ser editado o no tienes permiso para editarlo",
+        "code_NODE_WRITE_ERROR": "Al parecer este objeto no puede ser editado o no tienes los permiso apropiados",
         "code_SHARE_CREATION_ERROR": "Lo sentimos, pero no es posible compartir el elemento con este usuario",
-        "code_SHARE_NOT_FOUND": "Lo sentimos, pero esta compartición no puede ser encontrada",
+        "code_SHARE_NOT_FOUND": "No se pudo encontrar la compartición",
         "code_NODE_DUPLICATED": "Ya hay un archivo con el mismo nombre en esta carpeta",
-        "code_VERSIONS_LIMIT_REACHED": "La operación no se puede completar. Has alcanzado el límite.",
+        "code_VERSIONS_LIMIT_REACHED": "La operación no se pudo completar. Has alcanzado el límite.",
         "code_NODE_COPY_ERROR": "Fallo al copiar el elemento. Intente de nuevo"
     },
     "publicLink": {
@@ -803,7 +803,7 @@
         },
         "link": {
             "edit": "Editar",
-            "remove": "Quitar",
+            "remove": "Remover",
             "revoke": "Remover",
             "undo": "Cancelar",
             "editLink": "Confirmar edición",
@@ -834,8 +834,8 @@
     },
     "breadcrumb": {
         "expander": {
-            "hide": "Ocultar ruta",
-            "show": "Mostrar ruta"
+            "hide": "Ocultar ruta de la carpeta",
+            "show": "Mostrar ruta de la carpeta"
         }
     },
     "label": {
@@ -845,7 +845,7 @@
         "actions": {
             "tooltip": {
                 "download": "Descargar",
-                "manageShares": "Compartir"
+                "manageShares": "Administrar uso compartido"
             }
         },
         "close": {
@@ -877,7 +877,7 @@
     },
     "collaborationLinks": {
         "button": {
-            "revoke": "Invalidar",
+            "revoke": "Revocar",
             "generateLink": "Generar enlace"
         },
         "title": "Enlaces de colaboración",
@@ -886,7 +886,7 @@
                 "writeAndShare": "Modificar y compartir",
                 "ReadAndShare": "Leer y compartir"
             },
-            "placeholder": "Crear un enlace para compartir el nodo"
+            "placeholder": "Crear un enlace para compartir el archivo"
         },
         "link": {
             "urlChip": {
@@ -895,7 +895,7 @@
                 }
             }
         },
-        "description": "Los usuarios internos accederán al elemento compartido al abrir el enlace. Siempre podrás editar los permisos otorgados."
+        "description": "Los usuarios internos accederán al elemento al abrir el enlace. Podrás editar los permisos otorgados en cualquier momento."
     },
     "share": {
         "chip": {
