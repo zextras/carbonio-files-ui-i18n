@@ -19,11 +19,11 @@
             "new": {
                 "folder": "Nova pasta",
                 "upload": "Upload",
-                "document": "Novo Documento",
-                "presentation": "Nova Apresentação",
-                "spreadsheet": "Nova Planilha",
+                "document": "Novo documento",
+                "presentation": "Nova apresentação",
+                "spreadsheet": "Nova planilha",
                 "msDocument_xlsx": "Microsoft Excel {{ext}}",
-                "libreDocument": "OpenDocument {{ext}}",
+                "libreDocument": "Open Document {{ext}}",
                 "msDocument_pptx": "Microsoft PowerPoint {{ext}}",
                 "msDocument_docx": "Microsoft Word {{ext}}",
                 "msDocument": "Microsoft {{ext}}"
@@ -47,7 +47,7 @@
         "search": {
             "hint": "Sua busca não coincide com nenhum arquivo ou pasta",
             "noResults": [
-                "Nenhum dos seus itens corresponde à sua busca.",
+                "Sem resultados. Continue procurando!",
                 "Nenhum dos seus itens corresponde à sua busca."
             ],
             "notRun": "Ainda não foi feita nenhuma busca."
@@ -316,13 +316,13 @@
         "copy": "Copiar",
         "rename": "Renomear",
         "restore": "Restaurar",
-        "deletePermanently": "Excluir Permanentemente",
+        "deletePermanently": "Excluir permanentemente",
         "flag": "Sinalizar",
         "goToFolder": "Ir para a pasta de destino",
         "moveToTrash": "Excluir",
         "removeUpload": "Remover arquivo",
         "retryUpload": "Tentar upload novamente",
-        "unflag": "Retirar sinalização",
+        "unflag": "Remover sinalização",
         "sendViaMail": "Enviar por e-mail",
         "edit": "Editar",
         "preview": "Pré-visualizar",
@@ -339,7 +339,7 @@
             "tooltip": {
                 "search": "Buscar",
                 "edit": "Edite para fazer uma nova pesquisa",
-                "empty": "Digite algumas palavras-chave para fazer uma pesquisa"
+                "empty": "Digite as palavras-chave para iniciar a busca"
             }
         },
         "clear": {
@@ -425,10 +425,10 @@
                     "label": "O tamanho máximo permitido é de 4096 caracteres"
                 }
             },
-            "missingDescription": "Clique no botão de edição para adicionar uma descrição",
+            "missingDescription": "Clique no lápis para adicionar uma descrição",
             "copyShortcut": "copiar link para o item",
             "owner": "Proprietário",
-            "sendMailTo": "Enviar e-mail para: {{email}}",
+            "sendMailTo": "Enviar por e-mail para: {{email}}",
             "collaboratorsTooltip": "Ver lista de colaboradores"
         },
         "list": {
@@ -439,24 +439,24 @@
                 "popover": {
                     "save": "Salvar",
                     "role": {
-                        "editor": "Editor",
-                        "viewer": "Visualizador",
-                        "viewerDescription": "Poderá apenas visualizar ou baixar o arquivo ou pasta",
-                        "editorDescription": "Poderá visualizar e editar o arquivo ou pasta"
+                        "editor": "Editar",
+                        "viewer": "Visualizar",
+                        "viewerDescription": "Pode apenas visualizar ou baixar o arquivo ou pasta",
+                        "editorDescription": "Pode visualizar e editar o arquivo ou pasta"
                     },
-                    "sharingAllowed": "Compartilhamento permitido",
-                    "sharingAllowedDescription": "Será possível gerenciar os compartilhamentos do arquivo ou pasta"
+                    "sharingAllowed": "Compartilhar",
+                    "sharingAllowedDescription": "Pode gerenciar os compartilhamentos do arquivo ou pasta"
                 },
                 "you": "Você",
                 "owner": "Proprietário",
                 "tooltip": {
                     "edit": {
-                        "collaborator": "Editar colaboração",
-                        "you": "Modificar sua colaboração"
+                        "collaborator": "Editar permissões",
+                        "you": "Modificar minhas permissões"
                     },
                     "remove": {
-                        "collaborator": "Remover colaboração",
-                        "yourself": "Remover sua colaboração"
+                        "collaborator": "Remover compartilhamento",
+                        "yourself": "Remover meu acesso ao ítem compartilhado"
                     }
                 }
             },
@@ -480,17 +480,17 @@
             "versioning": "Versionamento"
         },
         "uploads": {
-            "message": "Aqui você encontra todos os itens que estão sendo enviados no momento. Você pode gerenciá-los aqui",
+            "message": "Aqui você poderá ver e gerenciar todos os elementos que estão sendo carregados no Files",
             "title": "Sugestões de upload"
         },
         "generic": {
             "message": "Clique em um item para selecioná-lo",
-            "title": "Veja arquivos e pasta, compartilhe-os com seus contatos"
+            "title": "Visualize arquivos e pastas e compartilhe-os com seus contatos"
         },
         "search_empty": [
             {
                 "message": "Ou selecione \"Filtros Avançados\" para refinar sua busca.",
-                "title": "Inicie outra busca."
+                "title": "Inicie uma nova busca"
             },
             {
                 "message": "Não desista, continue procurando!",
@@ -501,7 +501,7 @@
                 "title": "Desculpe, mas não existem resultados para sua busca."
             },
             {
-                "message": "Verifique a ortografia e as opções de filtros ou experimente uma nova palavra-chave.",
+                "message": "Verifique a ortografia e as opções dos filtros ou tente uma nova palavra-chave.",
                 "title": "Não existem resultados para sua busca."
             }
         ],
@@ -511,8 +511,8 @@
                 "removeKeepVersion": "Remover manter para sempre",
                 "deleteVersion": "Excluir versão",
                 "downloadVersion": "Baixar versão",
-                "cloneAsCurrent": "Clonar como atual",
-                "openDocumentVersion": "Abrir versão do documento",
+                "cloneAsCurrent": "Clone como versão atual",
+                "openDocumentVersion": "Abrir documento",
                 "tooltip": {
                     "disabledByPermission": "Você não possui as permissões necessárias",
                     "disabledByVersionKeepForever": "As versões marcadas para serem guardadas para sempre não podem ser excluídas",
@@ -549,7 +549,7 @@
             "sharedByMe_full": [
                 {
                     "title": "Revise e edite os itens que você compartilhou com seus contatos.",
-                    "message": "Selecione um item para prosseguir."
+                    "message": "Selecione um item para continuar."
                 },
                 {
                     "title": "Veja os detalhes das pastas que você compartilhou.",
@@ -559,26 +559,26 @@
             "flagged_empty": [
                 {
                     "message": "Você vai encontrá-lo aqui sempre que precisar.",
-                    "title": "Clique na bandeira para marcar um item."
+                    "title": "Clique na bandeira para sinalizar um item."
                 },
                 {
                     "message": "Eles estarão listados aqui.",
-                    "title": "Marque seus itens mais importantes clicando na bandeira."
+                    "title": "Sinalize seus itens mais importantes clicando na bandeira."
                 }
             ],
             "flagged_full": [
                 {
                     "message": "Você vai encontrá-lo aqui sempre que precisar.",
-                    "title": "Clique na bandeira para marcar um item."
+                    "title": "Clique na bandeira para sinalizar um item."
                 },
                 {
                     "message": "Eles estarão listados aqui.",
-                    "title": "Marque seus itens mais importantes clicando na bandeira."
+                    "title": "Sinalize seus itens mais importantes clicando na bandeira."
                 }
             ],
             "sharedByMe_empty": [
                 {
-                    "message": "Selecione um item para prosseguir.",
+                    "message": "Selecione um item para continuar.",
                     "title": "Revise e edite os itens que você compartilhou com seus contatos."
                 },
                 {
@@ -592,7 +592,7 @@
             ],
             "sharedWithMe_empty": [
                 {
-                    "message": "Clique no botão \"NOVO\" para criar um novo documento e compartilhe com seus contatos.",
+                    "message": "Clique no botão \"NOVO\" para criar um documento e compartilhe com seus contatos.",
                     "title": "Ainda não há itens compartilhados com você."
                 },
                 {
@@ -628,14 +628,14 @@
             ],
             "trash_full": [
                 {
-                    "title": "Selecione e restaure seus documentos que estão na lixeira."
+                    "title": "Selecione os itens que deseja restaurar da lixeira."
                 },
                 {
                     "message": "Selecione um item para restaurá-lo ou excluí-lo permanentemente.",
                     "title": "Nada está perdido!"
                 },
                 {
-                    "message": "Ou, quanto possível, selecione-o e restaure-o em sua pasta original.",
+                    "message": "Ou, quando possível, selecione-o e restaure-o em sua pasta original.",
                     "title": "Selecione um item para excluí-lo permanentemente."
                 }
             ],
@@ -645,16 +645,16 @@
                     "title": "Ver detalhes dos últimos itens atualizados."
                 },
                 {
-                    "message": "Selecione um item para prosseguir.",
+                    "message": "Selecione um item para continuar.",
                     "title": "Revisar e editar os últimos itens atualizados."
                 },
                 {
                     "message": "Clique em um item para selecioná-lo.",
-                    "title": "Revisar rapidamente os últimos itens atualizados."
+                    "title": "Revise rapidamente os últimos itens atualizados."
                 },
                 {
                     "message": "Clique em um item para selecioná-lo.",
-                    "title": "Manter-se atualizado sobre os últimos itens atualizados."
+                    "title": "Mantenha-se informado sobre os últimos itens atualizados."
                 }
             ],
             "recents_empty": [
@@ -665,15 +665,15 @@
             ]
         },
         "search": {
-            "title": "Digite algumas palavras-chave para iniciar uma pesquisa."
+            "title": "Digite as palavras-chave para iniciar a busca"
         },
         "folder_empty": [
             {
-                "title": "Clique no botão \"NOVO\" para criar um novo item e compartilhe com seus contatos."
+                "title": "Clique em \"NOVO\" para criar um documento ou pasta, e compartilhe com seus contatos."
             },
             {
                 "message": "Crie um arquivo clicando no botão \"NOVO\"",
-                "title": "Comece editando e compartilhando seus trabalhos."
+                "title": "Comece a editar e compartilhar seu trabalho."
             },
             {
                 "message": "Você poderá editar, sinalizar ou compartilhar.",
@@ -694,7 +694,7 @@
             },
             {
                 "message": "Selecione o item e acesse a aba \"Compartilhamentos\"",
-                "title": "Conceda aos seus contatos direitos de edição para permitir que eles editem um item."
+                "title": "Conceda permissões aos seus contatos para que possam editar seus itens."
             },
             {
                 "title": "Selecione um item para compartilhar ou mover para outra pasta."
@@ -880,13 +880,13 @@
             "revoke": "Revogar",
             "generateLink": "Gerar link"
         },
-        "title": "Links de Colaboração",
+        "title": "Links de colaboração",
         "row": {
             "title": {
-                "writeAndShare": "Escrever e Compartilhar",
-                "ReadAndShare": "Ler e Compartilhar"
+                "writeAndShare": "Modificar e compartilhar",
+                "ReadAndShare": "Ler e compartilhar"
             },
-            "placeholder": "Crie um link para compartilhar o nó"
+            "placeholder": "Crie um link para compartilhar o arquivo"
         },
         "link": {
             "urlChip": {
@@ -895,7 +895,7 @@
                 }
             }
         },
-        "description": "Os usuários internos vão receber as permissões ao abrir o link. Você sempre pode modificar as permissões concedidas."
+        "description": "Os usuários internos acessarão o item ao abrir o link. Você poderá editar as permissões outorgadas a qualquer momento."
     },
     "share": {
         "chip": {
