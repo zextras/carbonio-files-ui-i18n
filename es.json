@@ -281,7 +281,7 @@
                 "msDocument_pptx": "Microsoft PowerPoint {{ext}}",
                 "msDocument_docx": "Microsoft Word {{ext}}",
                 "msDocument": "Microsoft {{ext}}",
-                "libreDocument": "OpenDocument {{ext}}"
+                "libreDocument": "Open Document {{ext}}"
             }
         }
     },
@@ -588,7 +588,7 @@
         },
         "folder_empty": [
             {
-                "title": "Haz clic en \"NUEVO\" para crear un documento o carpeta y compartirlo con tus contactos."
+                "title": "Haz clic en \"NUEVO\" para crear un documento o carpeta, y compártelo con tus contactos."
             },
             {
                 "title": "Empieza a editar y compartir tus archivos.",
