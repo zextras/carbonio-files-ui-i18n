@@ -55,7 +55,8 @@
                 "myElements": "Moje elementy"
             },
             "sharedWitMe": "Udostępnione dla mnie",
-            "filesHome": "Start"
+            "filesHome": "Start",
+            "rootsList": "Files"
         },
         "moreInfo": {
             "title": "Dodatkowe informacje"
