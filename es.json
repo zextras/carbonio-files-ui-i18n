@@ -31,7 +31,7 @@
             "sharedWitMe": "Compartido conmigo",
             "trash": {
                 "trash": "Papelera",
-                "myElements": "Mis elementos",
+                "myElements": "Mis documentos",
                 "sharedWitMe": "Documentos compartidos"
             },
             "filesHome": "Inicio"
@@ -58,10 +58,10 @@
         },
         "revokeLink": {
             "button": {
-                "confirm": "Revocar"
+                "confirm": "Invalidar"
             },
             "body": "Al invalidar este enlace estarás restringiendo el acceso a cualquiera que intente abrir \"{{nodeName}}\"",
-            "header": "Remover el enlace público de \"{{nodeName}}\""
+            "header": "Invalidar enlace público de \"{{nodeName}}\""
         },
         "close": {
             "tooltip": "Cerrar"
@@ -70,7 +70,7 @@
             "button": {
                 "confirm": "Confirmar"
             },
-            "body": "¿Seguro que quieres degradar los permisos que te fueron otorgados para este elemento? Esta acción es permanente y no podrás restaurarlos por ti mismo. Siempre puedes contactar con el propietario del elemento compartido si necesitas restablecer los permisos originales",
+            "body": "¿Seguro que quieres degradar los permisos que te fueron otorgados para acceder a este elemento? Esta acción es permanente y no podrás restaurarlos por ti mismo. Siempre puedes contactar con el propietario del elemento compartido si necesitas restablecer los permisos originales",
             "header": "Degradar los permisos actuales"
         },
         "nodesSelection": {
@@ -84,7 +84,7 @@
             "button": {
                 "confirm": "Eliminar"
             },
-            "header": "Eliminar versiones",
+            "header": "Eliminar todas las versiones",
             "body": "Todas las versiones que no hayan sido indicadas para mantenerse para siempre, con excepción de aquella actual, serán eliminadas. Esta acción es irreversible."
         },
         "unsaved_changes": {
@@ -185,8 +185,8 @@
             "trash": "Papelera",
             "sharedByMe": "Compartido por mi",
             "sharedWithMe": "Compartido conmigo",
-            "myElements": "Mis elementos",
-            "sharedElements": "Elementos compartidos",
+            "myElements": "Mis documentos",
+            "sharedElements": "Documentos compartidos",
             "recents": "Recientes"
         },
         "team": "Enviados en Team",
@@ -340,7 +340,7 @@
                     "role": {
                         "editor": "Editar",
                         "editorDescription": "Podrá ver y editar el archivo o la carpeta",
-                        "viewer": "Visualizar",
+                        "viewer": "Visualizador",
                         "viewerDescription": "Podrá solamente ver o descargar el archivo o carpeta"
                     },
                     "sharingAllowed": "Permitido compartir",
@@ -445,7 +445,7 @@
                 }
             },
             "button": {
-                "upload": "Cargar nueva versión",
+                "upload": "Cargar versión",
                 "purgeAllVersions": "Eliminar todas las versiones"
             },
             "rowHeaders": {
@@ -681,7 +681,7 @@
                     "label": "Compartido",
                     "description": "Filtra los resultados según sean compartidos por ti o por otros colaboradores"
                 },
-                "title": "Filtros Avanzados",
+                "title": "Filtros avanzados",
                 "itemType": {
                     "label": "Tipo",
                     "dropdownOption": {
@@ -726,7 +726,7 @@
             "completed": "Limpiar cargas completadas"
         },
         "destination": {
-            "home": "El archivo se ha cargado en la carpeta /Inicio"
+            "home": "El archivo se ha cargado en la carpeta Inicio de Files"
         },
         "dropzone": {
             "message": {
@@ -784,8 +784,8 @@
         "code_FILE_VERSION_NOT_FOUND": "No se pudo encontrar la versión del archivo",
         "code_LINK_NOT_FOUND": "Acción fallida. Este enlace ya no existe",
         "code_MISSING_FIELD": "Ha ocurrido un error. No toda la información de este objeto ha sido recuperada",
-        "code_NODE_NOT_FOUND": "Parece que este objeto no existe o no tienes permiso para acceder al mismo",
-        "code_NODE_WRITE_ERROR": "Al parecer este objeto no puede ser editado o no tienes los permisos apropiados",
+        "code_NODE_NOT_FOUND": "Parece que este elemento no existe o no tienes permiso para acceder al mismo",
+        "code_NODE_WRITE_ERROR": "Parece que este elemento no puede ser editado o no tienes los permisos apropiados",
         "code_SHARE_CREATION_ERROR": "Lo sentimos, pero no es posible compartir el elemento con este usuario",
         "code_SHARE_NOT_FOUND": "No se pudo encontrar el uso compartido",
         "code_NODE_DUPLICATED": "Ya hay un archivo con el mismo nombre en esta carpeta",
@@ -807,9 +807,9 @@
             "revoke": "Remover",
             "undo": "Cancelar",
             "editLink": "Confirmar edición",
-            "expireOn": "Caduca el:",
-            "expiredOn": "Este enlace caducó el:",
-            "noExpirationDate": "No tiene fecha de caducidad",
+            "expireOn": "Expira el:",
+            "expiredOn": "Este enlace expiró el:",
+            "noExpirationDate": "No tiene fecha de expiración",
             "urlChip": {
                 "tooltip": {
                     "copy": "Copiar enlace público",
@@ -821,7 +821,7 @@
             "description": "El enlace caduca a las 23:59 hs del día seleccionado"
         },
         "dateTimePicker": {
-            "label": "Fecha de validez"
+            "label": "Fecha de expiración"
         },
         "input": {
             "description": {
@@ -886,7 +886,7 @@
                 "writeAndShare": "Modificar y compartir",
                 "ReadAndShare": "Leer y compartir"
             },
-            "placeholder": "Crea un enlace para compartir el archivo"
+            "placeholder": "Crea un enlace para compartir el elemento"
         },
         "link": {
             "urlChip": {
