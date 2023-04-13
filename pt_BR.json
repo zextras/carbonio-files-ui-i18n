@@ -344,7 +344,7 @@
         },
         "clear": {
             "tooltip": {
-                "clear": "Limpar entrada de pesquisa",
+                "clear": "Limpar caixa de pesquisa",
                 "empty": "A caixa de pesquisa está vazia"
             }
         },
