@@ -98,7 +98,7 @@
             "header": "Remover compartilhamento",
             "yourShare": {
                 "body": {
-                    "answer": "Tem certeza de que deseja interromper a colaboração?",
+                    "answer": "Tem certeza que deseja interromper a colaboração?",
                     "permissionLost": "Toda permissão de acesso já concedida a você será perdida."
                 }
             }
