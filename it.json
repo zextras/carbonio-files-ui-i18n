@@ -785,7 +785,7 @@
     },
     "errorCode": {
         "code": "Qualcosa è andato storto",
-        "code_ACCOUNT_NOT_FOUND": "Sembra che questo utente non faccia parte del sistema Carbonio",
+        "code_ACCOUNT_NOT_FOUND": "Sembra che questa email non sia associata ad alcun utente",
         "code_FILE_VERSION_NOT_FOUND": "Impossibile trovare questa versione del file",
         "code_Generic": "Qualcosa è andato storto",
         "code_LINK_NOT_FOUND": "Azione fallita. Questo link non è più esistente",
