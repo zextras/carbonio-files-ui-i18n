@@ -901,7 +901,7 @@
         "chip": {
             "tooltip": {
                 "error": {
-                    "contactNotFound": "Esta dirección e-mail no está asociada a un usuario interno"
+                    "contactNotFound": "Sólo puedes compartir elementos con usuarios para los que esta función esté habilitada y no con listas de distribución. Parece que la dirección de correo electrónico proporcionada no está asociada a ningún usuario habilitado. Por favor, comprueba la dirección e intenta de nuevo."
                 }
             }
         }
