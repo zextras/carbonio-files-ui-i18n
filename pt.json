@@ -469,7 +469,8 @@
                     "placeholder": "Adicionar novas pessoas ou grupos"
                 },
                 "noteDescription": "A mensagem padrão exibe seu nome, o nome do item compartilhado, as permissões concedidas aos destinatários e as informações de acesso.",
-                "note": "Nota:"
+                "note": "Nota:",
+                "button": "Partilhar"
             },
             "noSharePermissionHeader": "Você não pode compartilhar este item."
         },
