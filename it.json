@@ -405,12 +405,12 @@
             "versioning": "Versione"
         },
         "generic": {
-            "message": "Clicca su un elemento per selezionarlo",
-            "title": "Visualizza file e cartelle e condividile con i tuoi contatti"
+            "message": "Clicca su un elemento per selezionarlo.",
+            "title": "Visualizza file e cartelle e condividile con i tuoi contatti."
         },
         "search_empty": [
             {
-                "message": "O seleziona \"Filtri Avanzati\" per rifinire la tua ricerca.",
+                "message": "O seleziona \"Filtri avanzati\" per rifinire la tua ricerca.",
                 "title": "Inizia una nuova ricerca."
             },
             {
@@ -514,7 +514,7 @@
             "sharedWithMe_empty": [
                 {
                     "title": "Non c'è ancora nessun elemento condiviso con te.",
-                    "message": "Clicca il pulsante \"NUOVO\" per creare un nuovo documento e condividilo anche con i tuoi contatti."
+                    "message": "Clicca il pulsante \"NUOVO\" per creare un nuovo elemento e condividilo anche con i tuoi contatti."
                 },
                 {
                     "message": "Fai sapere agli altri utenti che puoi iniziare a collaborare con loro.",
@@ -523,7 +523,7 @@
             ],
             "sharedWithMe_full": [
                 {
-                    "title": "Inizia a modificare e condividere i tuoi file.",
+                    "title": "Inizia a modificare e condividere i tuoi elementi.",
                     "message": "Clicca su un elemento per selezionarlo."
                 },
                 {
@@ -549,7 +549,7 @@
             ],
             "trash_full": [
                 {
-                    "title": "Seleziona e ripristina i tuoi documenti che sono attualmente nel cestino."
+                    "title": "Seleziona e ripristina gli elementi che sono attualmente nel cestino."
                 },
                 {
                     "message": "Seleziona un elemento per ripristinarlo oppure per eliminarlo definitivamente.",
@@ -580,7 +580,7 @@
             ],
             "recents_empty": [
                 {
-                    "title": "Apri, leggi, modifica i tuoi documenti.",
+                    "title": "Apri, leggi, modifica i tuoi elementi.",
                     "message": "Vedrai i più recenti qui."
                 }
             ]
@@ -590,7 +590,7 @@
                 "title": "Clicca il pulsante \"NUOVO\" per creare un nuovo elemento e condividilo anche con i tuoi contatti."
             },
             {
-                "message": "Crea un file cliccando il pulsante \"NUOVO\"",
+                "message": "Crea un elemento cliccando il pulsante \"NUOVO\".",
                 "title": "Inizia a modificare e condividere i tuoi progetti."
             },
             {
@@ -600,7 +600,7 @@
         ],
         "folder_full": [
             {
-                "title": "Inizia a modificare e condividere i tuoi file.",
+                "title": "Inizia a modificare e condividere i tuoi elementi.",
                 "message": "Clicca su un elemento per selezionarlo."
             },
             {
@@ -611,7 +611,7 @@
                 "title": "Seleziona una cartella per modificarla o rinominarla."
             },
             {
-                "message": "Seleziona un elemento e poi vai alla finestra \"Condivisioni\"",
+                "message": "Seleziona un elemento e poi vai alla finestra \"Condivisioni\".",
                 "title": "Dai ai tuoi contatti i privilegi di modifica per far sì che possano modificare un elemento."
             },
             {
@@ -788,7 +788,7 @@
         "code_FILE_VERSION_NOT_FOUND": "Impossibile trovare questa versione dell'elemento",
         "code_Generic": "Qualcosa è andato storto",
         "code_LINK_NOT_FOUND": "Azione fallita. Questo link non è più esistente",
-        "code_MISSING_FIELD": "Si è verificato un errore interno, non è stato possibile ripristinare tutte le informazioni di questo oggetto",
+        "code_MISSING_FIELD": "Si è verificato un errore interno, non è stato possibile ripristinare tutte le informazioni di questo elemento",
         "code_NODE_NOT_FOUND": "Sembra che questo elemento non esista, o che tu non abbia i permessi per accedervi",
         "code_NODE_WRITE_ERROR": "Sembra che questo elemento non possa essere modificato, o che tu non abbia i permessi per modificarlo",
         "code_SHARE_CREATION_ERROR": "Non è possibile condividere l'elemento con questo utente",
