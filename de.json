@@ -2,11 +2,11 @@
     "create": {
         "options": {
             "new": {
-                "folder": "Neuer Ordner",
+                "folder": "Neuer ordner",
                 "upload": "Upload",
-                "document": "Neues Dokument",
-                "presentation": "Neue Präsentation",
-                "spreadsheet": "Neues Tabellenblatt",
+                "document": "Neues dokument",
+                "presentation": "Neue präsentation",
+                "spreadsheet": "Neues tabellenblatt",
                 "msDocument_xlsx": "Microsoft Excel {{ext}}",
                 "msDocument_pptx": "Microsoft PowerPoint {{ext}}",
                 "msDocument_docx": "Microsoft Word {{ext}}",
@@ -17,9 +17,9 @@
     },
     "empty": {
         "folder": {
-            "hint": "Es scheint, dass dieser Ordner leer ist",
-            "state": "Eine Datei ziehen oder eine neue erstellen, indem Sie auf \"NEU\" klicken",
-            "displayerContent": "Dieser Ordner hat keinen Inhalt"
+            "hint": "Es scheint, dass dieser Ordner leer ist.",
+            "state": "Eine Datei ziehen oder eine neue erstellen, indem Sie auf \"NEU\" klicken.",
+            "displayerContent": "Dieser Ordner hat keinen Inhalt."
         },
         "filter": {
             "hint": "Hier gibt es scheinbar nichts.",
@@ -30,7 +30,7 @@
             "recents": "Es sieht so aus, als gäbe es noch keine kürzlich verwendete Elemente."
         },
         "search": {
-            "hint": "Ihre Suche ergab keine Treffer für Dateien oder Ordner",
+            "hint": "Ihre Suche ergab keine Treffer für Dateien oder Ordner.",
             "noResults": [
                 "Keine Ergebnisse. Suchen Sie weiter!",
                 "Keiner Ihrer Artikel entspricht Ihrer Suche."
@@ -44,7 +44,7 @@
                 "button": {
                     "confirm": "Erstellen"
                 },
-                "title": "Neuen Ordner erstellen",
+                "title": "Neuen ordner erstellen",
                 "input": {
                     "label": {
                         "name": "Ordnernname"
@@ -93,14 +93,14 @@
                 "confirm": "Entfernen"
             },
             "body": "Dieser Link ist abgelaufen und kann daher nicht mehr für den Zugriff auf das Element verwendet werden. Sie können den Link aus der Liste entfernen oder sein Ablaufdatum und andere Informationen aktualisieren, um ihn weiter zu verwenden",
-            "header": "Öffentlichen Link {{nodeName}} entfernen"
+            "header": "Öffentlichen link {{nodeName}} entfernen"
         },
         "revokeLink": {
             "button": {
                 "confirm": "Widerrufen"
             },
             "body": "Indem Sie diesen Link widerrufen, blockieren Sie den Zugriff auf {{NodeName}} für jeden, der versucht, den Link zu benutzen, um auf die Datei zuzugreifen",
-            "header": "{{NodeName}} öffentlicher Link widerrufen"
+            "header": "{{NodeName}} öffentlicher link widerrufen"
         },
         "close": {
             "tooltip": "Schließen"
@@ -136,7 +136,7 @@
                 "leave_anyway": "Trotzdem gehen"
             },
             "body": {
-                "line2": "Alle nicht gespeicherten Änderungen gehen verloren",
+                "line2": "Alle nicht gespeicherten Änderungen gehen verloren.",
                 "line1": "Sind Sie sicher, dass Sie diese Seite verlassen wollen, ohne zu speichern?"
             }
         },
@@ -277,10 +277,10 @@
                 "copyLink": "Link kopieren"
             },
             "linkUpdated": {
-                "label": "Öffentlicher Link aktualisiert"
+                "label": "Öffentlicher link aktualisiert"
             },
             "newPublicLinkGenerated": {
-                "label": "Neuer öffentlicher Link generiert"
+                "label": "Neuer öffentlicher link generiert"
             },
             "copyLink": "Öffentlicher Link kopiert"
         },
@@ -301,7 +301,7 @@
                 "copyLink": "Link kopieren"
             },
             "newCollaborationLinkGenerated": {
-                "label": "Neuer Link zur Mitarbeit erstellt"
+                "label": "Neuer link zur Mitarbeit erstellt"
             },
             "copyCollaborationLink": "Mitarbeits-Link kopiert"
         }
@@ -334,7 +334,7 @@
             "position": "Position",
             "collaborators": "Mitarbeiter",
             "content": "Inhalt",
-            "downloads": "Über öffentlichen Link herunterladen",
+            "downloads": "Über öffentlichen link herunterladen",
             "lastEdit": "Letzte Bearbeitung",
             "showPath": "Pfad anzeigen",
             "editDescription": {
@@ -401,16 +401,16 @@
             "versioning": "Versionierung"
         },
         "uploads": {
-            "message": "Here können Sie alle Elemente finden, die sie gerade hochladen, sie können diese hier verwalten",
+            "message": "Here können Sie alle Elemente finden, die sie gerade hochladen, sie können diese hier verwalten.",
             "title": "Upload Vorschläge"
         },
         "generic": {
-            "message": "Klicken Sie auf ein Element, um es auszuwählen",
-            "title": "Ansicht von Dateien und Ordnern, gemeinsame Nutzung mit Ihren Kontakten"
+            "message": "Klicken Sie auf ein Element, um es auszuwählen.",
+            "title": "Ansicht von Dateien und Ordnern, gemeinsame Nutzung mit Ihren Kontakten."
         },
         "search_empty": [
             {
-                "message": "Oder wählen Sie \"Erweiterte Filter\", um Ihre Suche zu verfeinern.",
+                "message": "Oder wählen Sie \"Erweiterte filter\", um Ihre Suche zu verfeinern.",
                 "title": "Starten Sie eine weitere Suche."
             },
             {
@@ -611,7 +611,7 @@
                 "title": "Wählen Sie einen Ordner aus, um ihn zu bearbeiten oder umzubenennen."
             },
             {
-                "message": "Wählen Sie den Artikel aus und gehen Sie dann auf die Registerkarte \" Freigaben \"",
+                "message": "Wählen Sie den Artikel aus und gehen Sie dann auf die Registerkarte \" Freigaben \".",
                 "title": "Geben Sie Ihren Kontakten Bearbeitungsrechte, damit sie einen Artikel bearbeiten können."
             },
             {
@@ -673,7 +673,7 @@
                     "label": "Geteilt",
                     "description": "Filtern Sie die Ergebnisse nach Elementen, die außer Ihnen noch mindestens einen weiteren Mitarbeiter enthalten"
                 },
-                "title": "Fortgeschrittene Filter",
+                "title": "Fortgeschrittene filter",
                 "flagged": {
                     "label": "Markiert",
                     "description": "Filtern Sie die Ergebnisse nach von Ihnen markierten Elementen"
@@ -713,9 +713,9 @@
                     }
                 },
                 "title": {
-                    "document": "Neues Dokument erstellen",
-                    "presentation": "Neue Präsentation erstellen",
-                    "spreadsheet": "Neues Tabellenblatt erstellen"
+                    "document": "Neues dokument erstellen",
+                    "presentation": "Neue präsentation erstellen",
+                    "spreadsheet": "Neues tabellenblatt erstellen"
                 }
             }
         }
@@ -733,8 +733,8 @@
                 }
             },
             "title": {
-                "disabled": "Drag&Drop Modus",
-                "enabled": "Drag&Drop Modus"
+                "disabled": "Drag&Drop modus.",
+                "enabled": "Drag&Drop modus."
             }
         },
         "clean": {
@@ -762,8 +762,8 @@
     "sortingDropdown": {
         "name": "Name",
         "size": "Größe",
-        "ascendingOrder": "Aufsteigende Reihenfolge",
-        "descendingOrder": "Absteigende Reihenfolge",
+        "ascendingOrder": "Aufsteigende reihenfolge",
+        "descendingOrder": "Absteigende reihenfolge",
         "icon": {
             "tooltip": {
                 "OrderNameDescending": "Absteigende Reihenfolge nach Name",
@@ -774,7 +774,7 @@
                 "OrderSizeAscending": "Aufsteigende Reihenfolge nach Größe"
             }
         },
-        "lastUpdate": "Letzte Aktualisierung"
+        "lastUpdate": "Letzte aktualisierung"
     },
     "errorCode": {
         "code": "Etwas ist schiefgegangen",
@@ -811,7 +811,7 @@
             "noExpirationDate": "Hat kein Verfallsdatum",
             "urlChip": {
                 "tooltip": {
-                    "copy": "Öffentlichen Link kopieren",
+                    "copy": "Öffentlichen link kopieren",
                     "expired": "Dieser Link ist abgelaufen"
                 }
             }
@@ -865,12 +865,12 @@
     "dropzone": {
         "move": {
             "title": {
-                "enabled": "Drag&Drop Modus",
-                "disabled": "Drag&Drop Modus"
+                "enabled": "Drag&Drop modus.",
+                "disabled": "Drag&Drop modus."
             },
             "message": {
-                "enabled": "Legen Sie hier Ihre Elemente ab\n, um Sie schnell in diesen Ordner zu verschieben",
-                "disabled": "Sie können Ihre Elemente in diesem Bereich ablegen"
+                "enabled": "Legen Sie hier Ihre Elemente ab\n, um Sie schnell in diesen Ordner zu verschieben.",
+                "disabled": "Sie können Ihre Elemente in diesem Bereich ablegen."
             }
         }
     },
