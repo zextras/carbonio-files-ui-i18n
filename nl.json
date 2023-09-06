@@ -900,7 +900,7 @@
         "chip": {
             "tooltip": {
                 "error": {
-                    "contactNotFound": "U kunt items alleen delen met gebruikers waarvoor deze functie is ingeschakeld en niet met distributielijsten.  Het lijkt erop dat de opgegeven e-mail niet is gekoppeld aan een ingeschakelde gebruiker. Controleer nogmaals en voeg een geldig adres in."
+                    "contactNotFound": "U kunt items alleen delen met gebruikers waarvoor deze functie is ingeschakeld en niet met distributielijsten. Het lijkt erop dat de opgegeven e-mail niet is gekoppeld aan een ingeschakelde gebruiker. Controleer nogmaals en voeg een geldig adres in."
                 }
             }
         }
