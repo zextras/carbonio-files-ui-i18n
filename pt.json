@@ -74,10 +74,10 @@
         },
         "deletePermanently": {
             "button": {
-                "confirm": "Excluir permanentemente"
+                "confirm": "Apagar permanentemente"
             },
             "header": "Esta ação é irreversível",
-            "body": "Vai excluir permanentemente este(s) item(ns). Não será possível recuperar este(s) documento(s). Esta ação é irreversível."
+            "body": "Vai apagar permanentemente este(s) item(ns). Não será possível recuperar este(s) documento(s). Esta ação é irreversível."
         },
         "roots": {
             "rootsList": "Files",
@@ -135,9 +135,9 @@
         },
         "purgeAllVersions": {
             "button": {
-                "confirm": "Excluir todas as versões"
+                "confirm": "Apagar todas as versões"
             },
-            "header": "Excluir todas as versões",
+            "header": "Apagar todas as versões",
             "body": "Todas as versões sinalizadas para serem mantidas para sempre, exceto a atual, serão excluídas. Você não poderá recuperar estas versões."
         },
         "unsaved_changes": {
@@ -308,16 +308,16 @@
     },
     "actions": {
         "download": "Descarregar",
-        "markForDeletion": "Excluir",
+        "markForDeletion": "Marcar para apagar",
         "move": "Mover",
         "openWithDocs": "Abrir o documento",
         "copy": "Copiar",
         "rename": "Renomear",
         "restore": "Restaurar",
-        "deletePermanently": "Excluir permanentemente",
+        "deletePermanently": "Apagar permanentemente",
         "flag": "Marcar",
         "goToFolder": "Ir para a pasta de destino",
-        "moveToTrash": "Excluir",
+        "moveToTrash": "Apagar",
         "removeUpload": "Remover o documento",
         "retryUpload": "Tentar novamente o carregamento",
         "unflag": "Retirar a marca",
@@ -508,7 +508,7 @@
             "actions": {
                 "keepVersion": "Manter esta versão para sempre",
                 "removeKeepVersion": "Remover manter para sempre",
-                "deleteVersion": "Excluir versão",
+                "deleteVersion": "Apagar versão",
                 "downloadVersion": "Baixar versão",
                 "cloneAsCurrent": "Clone como versão atual",
                 "openDocumentVersion": "Abrir documento",
@@ -528,7 +528,7 @@
             },
             "button": {
                 "upload": "Upload versão",
-                "purgeAllVersions": "Excluir todas as versões"
+                "purgeAllVersions": "Apagar todas as versões"
             },
             "row": {
                 "clonedIcon": {
@@ -614,11 +614,11 @@
             ],
             "trash_empty": [
                 {
-                    "message": "Clique no ícone da lixeira para excluir um item.",
+                    "message": "Clique no ícone da lixeira para apagar um item.",
                     "title": "Mova para a lixeira tudo que não precisar."
                 },
                 {
-                    "message": "Clique no ícone da lixeira para excluir um item.",
+                    "message": "Clique no ícone da lixeira para apagar um item.",
                     "title": "A lixeira está vazia."
                 },
                 {
