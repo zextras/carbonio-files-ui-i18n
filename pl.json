@@ -903,5 +903,14 @@
                 }
             }
         }
+    },
+    "carbonio-public-folder-ui": {
+        "emptyFolder": "W tym folderze nie ma żadnych elementów.",
+        "invalidLink": {
+            "description": {
+                "line1": "Ten link został usunięty lub jest nieprawidłowy.",
+                "line2": "Aby uzyskać więcej informacji, skontaktuj się z osobą, która Ci go wysłała."
+            }
+        }
     }
 }
