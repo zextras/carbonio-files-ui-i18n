@@ -274,7 +274,7 @@
             "success": "Réussi"
         },
         "unflag": {
-            "success": "Élément décoché avec succès"
+            "success": "Marqueur des éléments enlevé avec succès"
         },
         "publicLink": {
             "actionLabel": {
@@ -315,12 +315,12 @@
         "rename": "Renommer",
         "restore": "Restaurer",
         "deletePermanently": "Supprimer définitivement",
-        "flag": "Etiquette",
+        "flag": "Marquer",
         "goToFolder": "Aller au dossier de destination",
         "moveToTrash": "Supprimer",
         "removeUpload": "Supprimer le téléchargement",
         "retryUpload": "Réessayer le téléchargement",
-        "unflag": "Décocher",
+        "unflag": "Enlever le marqueur",
         "sendViaMail": "Envoyer par email",
         "edit": "Modifier",
         "preview": "Prévisualisation",
@@ -364,7 +364,7 @@
                     "reset": "Réinitialiser les filtres"
                 },
                 "flagged": {
-                    "description": "Filtrer les résultats par les éléments que vous avez marqué",
+                    "description": "Filtrer les résultats par les éléments que vous avez marqués",
                     "label": "Marqué"
                 },
                 "folder": {
