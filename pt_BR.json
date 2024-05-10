@@ -128,6 +128,7 @@
         },
         "nodesSelection": {
             "selectedCount_one": "{{count}} item selecionado",
+            "selectedCount_many": "",
             "selectedCount_other": "{{count}} itens selecionados"
         },
         "moreInfo": {
@@ -197,6 +198,7 @@
                     }
                 },
                 "title_one": "Copiar {{node.name}}",
+                "title_many": "",
                 "title_other": "Copiar itens"
             }
         },
@@ -218,6 +220,7 @@
                 },
                 "subtitle": "Selecionar pasta de destino:",
                 "title_one": "Mover {{node.name}}",
+                "title_many": "",
                 "title_other": "Mover itens"
             },
             "error": {
@@ -397,8 +400,8 @@
                 }
             },
             "button": {
-                "filters_zero": "Filtros avançados",
                 "filters_one": "{{count}} filtro aplicado",
+                "filters_many": "",
                 "filters_other": "{{count}} filtros aplicados"
             }
         },
@@ -836,7 +839,6 @@
         },
         "fileLink": {
             "title": "Link de download público",
-            "title_plural": "Links de download público",
             "addLink": {
                 "description": "Usuários internos e externos com acesso ao link podem baixar o item."
             }
@@ -845,8 +847,7 @@
             "addLink": {
                 "description": "Qualquer pessoa com este link pode visualizar e baixar o conteúdo desta pasta."
             },
-            "title": "Link de acesso público",
-            "title_plural": "Links de acesso público"
+            "title": "Link de acesso público"
         }
     },
     "breadcrumb": {
