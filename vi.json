@@ -464,8 +464,7 @@
             }
         },
         "nodesSelection": {
-            "selectedCount_other": "{{count}} mục đã chọn",
-            "selectedCount_one": "{{count}} mục đã chọn"
+            "selectedCount_other": "{{count}} mục đã chọn"
         },
         "purgeAllVersions": {
             "button": {
@@ -522,7 +521,6 @@
                         "confirm": "Bạn không thể thực hiện tác vụ này ở đây"
                     }
                 },
-                "title_one": "Sao chép {{node.name}}",
                 "title_other": "Sao chép mục"
             }
         },
@@ -538,7 +536,6 @@
                     "filter": "Lọc thư mục"
                 },
                 "subtitle": "Lựa chọn thư mục đích:",
-                "title_one": "Di chuyển {{node.name}}",
                 "title_other": "Di chuyển mục"
             },
             "error": {
@@ -625,9 +622,7 @@
     "search": {
         "advancedSearch": {
             "button": {
-                "filters_one": "Bộ lọc nâng cao {{count}}",
-                "filters_other": "Bộ lọc nâng cao {{count}}",
-                "filters_zero": "Bộ lọc nâng cao"
+                "filters_other": "Bộ lọc nâng cao {{count}}"
             },
             "modal": {
                 "button": {
