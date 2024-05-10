@@ -501,7 +501,6 @@
             "header": "降低您当前的权限"
         },
         "nodesSelection": {
-            "selectedCount_one": "{{count}} 已选择项目",
             "selectedCount_other": "{{count}} 已选择项目"
         },
         "moreInfo": {
@@ -562,7 +561,6 @@
                         "confirm": "您不能在此执行此操作"
                     }
                 },
-                "title_one": "复制{{node.name}}",
                 "title_other": "复制项目"
             }
         },
@@ -578,7 +576,6 @@
                     "filter": "筛选文件夹"
                 },
                 "subtitle": "选择一个目标文件夹：",
-                "title_one": "移动{{node.name}}",
                 "title_other": "移动项目"
             },
             "error": {
@@ -633,8 +630,6 @@
         "resultsFor": "结果：",
         "advancedSearch": {
             "button": {
-                "filters_zero": "高级过滤条件",
-                "filters_one": "{{count}}高级过滤条件",
                 "filters_other": "{{count}}高级过滤条件"
             },
             "modal": {
