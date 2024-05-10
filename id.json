@@ -90,7 +90,6 @@
             "header": "Kurangi hak saat ini"
         },
         "nodesSelection": {
-            "selectedCount_one": "{{count}} item dipilih",
             "selectedCount_other": "{{count}} item dipilih"
         },
         "moreInfo": {
@@ -164,7 +163,6 @@
                         "confirm": "Anda tidak dapat melakukan tindakan ini di sini"
                     }
                 },
-                "title_one": "Salin {{node.name}}",
                 "title_other": "Salin item"
             }
         },
@@ -180,7 +178,6 @@
                     "filter": "Filter folder"
                 },
                 "subtitle": "Pilih folder tujuan:",
-                "title_one": "Pindahkan {{node.name}}",
                 "title_other": "Pindahkan item"
             },
             "error": {
@@ -649,8 +646,6 @@
         },
         "advancedSearch": {
             "button": {
-                "filters_zero": "Filter lanjutan",
-                "filters_one": "{{count}} filter lanjutan",
                 "filters_other": "{{count}} filter lanjutan"
             },
             "modal": {
