@@ -189,9 +189,6 @@
             }
         },
         "advancedSearch": {
-            "button": {
-                "filters_zero": "Filtre avansate"
-            },
             "modal": {
                 "button": {
                     "confirm": "Cauta"
