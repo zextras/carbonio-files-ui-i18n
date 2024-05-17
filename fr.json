@@ -92,7 +92,7 @@
             "button": {
                 "confirm": "Supprimer"
             },
-            "header": "Supprimer le {{nodeName}} {{nodeName}}",
+            "header": "Supprimer le {{nodeName}} {{linkName}}",
             "body": "Ce lien a expiré, il ne peut donc plus être utilisé pour accéder à l'élément. Vous pouvez supprimer le lien de la liste ou mettre à jour sa date d'expiration et d'autres informations afin de continuer à l'utiliser."
         },
         "revokeLink": {
@@ -114,6 +114,7 @@
         },
         "nodesSelection": {
             "selectedCount_one": "{{count}} élément sélectionné",
+            "selectedCount_many": "{{count}} éléments sélectionnés",
             "selectedCount_other": "{{count}} éléments sélectionnés"
         },
         "moreInfo": {
@@ -183,6 +184,7 @@
                     }
                 },
                 "title_one": "Copier {{node.name}}",
+                "title_many": "Copier les éléments",
                 "title_other": "Copier les éléments"
             }
         },
@@ -204,6 +206,7 @@
                 },
                 "subtitle": "Sélectionnez un dossier de destination :",
                 "title_one": "Déplacer {{node.name}}",
+                "title_many": "Déplacer les éléments",
                 "title_other": "Déplacer les éléments"
             },
             "error": {
@@ -355,8 +358,8 @@
         "advancedSearch": {
             "button": {
                 "filters_one": "{{count}} filtre avancé",
-                "filters_other": "{{count}} filtres avancés",
-                "filters_zero": "Filtres avancés"
+                "filters_many": "",
+                "filters_other": "{{count}} filtres avancés"
             },
             "modal": {
                 "button": {
@@ -842,6 +845,7 @@
         },
         "fileLink": {
             "title_one": "Lien de téléchargement publique",
+            "title_many": "Liens de téléchargement publiques",
             "title_other": "Liens de téléchargement publiques",
             "addLink": {
                 "description": "Les utilisateurs internes ou externes qui sont en possession du lien peuvent télécharger l'élément."
@@ -852,6 +856,7 @@
                 "description": "Toute personne ayant ce lien peut voir et télécharger le contenu de ce dossier."
             },
             "title_one": "Lien d'accès publique",
+            "title_many": "Liens d'accès publiques",
             "title_other": "Liens d'accès publiques"
         }
     },
