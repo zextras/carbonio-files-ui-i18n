@@ -63,7 +63,8 @@
         },
         "nodesSelection": {
             "selectedCount_one": "{{count}} wybrany element",
-            "selectedCount_other": "{{count}} wybranych elementów"
+            "selectedCount_few": "{{count}} wybrane elementy",
+            "selectedCount_many": "{{count}} wybranych elementów"
         },
         "purgeAllVersions": {
             "button": {
@@ -153,8 +154,8 @@
             },
             "button": {
                 "filters_one": "{{count}} zaawansowany filtr",
-                "filters_other": "{{count}} zaawansowane filtry",
-                "filters_zero": "Zaawansowane filtry"
+                "filters_few": "{{count}} zaawansowane filtry",
+                "filters_many": "{{count}} zaawansowanych filtrów"
             }
         },
         "header": {
@@ -618,11 +619,13 @@
                 "description": "Użytkownicy z i spoza tej domeny, którzy mają dostęp do linka, mogą pobrać ten element."
             },
             "title_one": "Link publiczny z opcją pobierania",
-            "title_other": "Linki publiczne z opcją pobierania"
+            "title_few": "Linki publiczne z opcją pobierania",
+            "title_many": "Linków publicznych z opcją pobierania"
         },
         "folderLink": {
             "title_one": "Link dostępu publicznego",
-            "title_other": "Linki dostępu publicznego",
+            "title_few": "Linki dostępu publicznego",
+            "title_many": "Linków dostępu publicznego",
             "addLink": {
                 "description": "Każda osoba mająca dostęp do tego linka może wyświetlać i pobierać zawartość tego folderu."
             }
@@ -777,7 +780,8 @@
                 },
                 "subtitle": "Wybierz folder docelowy:",
                 "title_one": "Przenieś {{node.name}}",
-                "title_other": "Przenieś elementy"
+                "title_few": "Przenieś elementy",
+                "title_many": "Przenieś elementy"
             },
             "error": {
                 "not": {
@@ -794,7 +798,8 @@
                     }
                 },
                 "title_one": "Skopiuj {{node.name}}",
-                "title_other": "Skopiuj elementy"
+                "title_few": "Skopiuj elementy",
+                "title_many": "Skopiuj elementy"
             }
         },
         "rename": {
