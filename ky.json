@@ -1,7 +1,55 @@
 {
     "displayer": {
         "details": {
-            "description": "Сүрөттөө"
+            "description": "Сүрөттөө",
+            "collaboratorsTooltip": "Тең авторлордун тизмесин көрүү",
+            "copyShortcut": "Элементтин ярлыгын көчүрүү",
+            "editDescription": {
+                "input": {
+                    "label": "Максималдуу жол берилген узундугу - 4096 символ"
+                },
+                "closeIconTooltip": "Сактабастан жабуу",
+                "editIconTooltip": "Сүрөттөлүшүн өзгөртүү",
+                "saveIconTooltip": "Өзгөртүүнү сактоо"
+            },
+            "collaborators": "Кызматкерлер",
+            "content": "Мазмуну",
+            "createdBy": "Түзүлдү",
+            "lastEdit": "Акыркы редакциялоо",
+            "missingDescription": "Сүрөттөөнү кошуу үчүн, редакциялоо баскычын басыңыз",
+            "owner": "Ээси",
+            "position": "Орун",
+            "sendMailTo": "Кат жөнөтүү: {{email}}",
+            "showPath": "Жол көрсөтүү",
+            "size": "Өлчөмү"
+        },
+        "filter": {
+            "flagged_empty": [
+                {
+                    "message": "Керек болгон учурда, элементтерди бул жерден табасыз.",
+                    "title": "Элементти белгилөө."
+                },
+                {
+                    "title": "Желекчени басуу менен, эң маанилүү элементтерди белгилеңиз.",
+                    "message": "Элементтер бул жерде чагылдырылат."
+                }
+            ],
+            "flagged_full": [
+                {
+                    "message": "Керек болгон учурда, элменттерди бул жерден табасыз.",
+                    "title": "Элементти белгилөө үчүн желекчен басыңыз."
+                },
+                {
+                    "title": "Желекчени басуу менен, маанилүү элементтерди белгилеңиз.",
+                    "message": "Алар бул жерде чагылдырылат."
+                }
+            ],
+            "recents_empty": [
+                {
+                    "message": "Сиз бул жерден эң акыркы документтерди табасыз.",
+                    "title": "Документтериңизди ачыңыз,окуңуз, реадакциялаңыз."
+                }
+            ]
         }
     },
     "preview": {
@@ -17,6 +65,86 @@
     "modal": {
         "close": {
             "tooltip": "Жабуу"
+        }
+    },
+    "actions": {
+        "copy": "Көчүрүү",
+        "deletePermanently": "Биротоло өчүрүү",
+        "manageShares": "Жалпы ресурстарды башкаруу",
+        "removeUpload": "Жүктөлгөндөрдү өчүрүү",
+        "unflag": "Белгини алып салуу",
+        "download": "Жүктөө",
+        "edit": "Редакциялоо",
+        "flag": "Белгилөө",
+        "goToFolder": "Багытталган папкаша өтүү",
+        "markForDeletion": "Өчүрүү үчүн белги коюу",
+        "move": "Жайгаштыруу",
+        "moveToTrash": "Өчүрүү (жок кылуу)",
+        "openWithDocs": "Документти ачуу",
+        "preview": "Алдан ала көрүү",
+        "rename": "Аталышын өзгөртүү",
+        "restore": "Калыбына келтирүү",
+        "retryUpload": "Жүктөөнү кайталоо",
+        "sendViaMail": "Электрондук почта менен жөнөтүү"
+    },
+    "carbonio-public-folder-ui": {
+        "emptyFolder": "Бул папкада элементтер жок",
+        "invalidLink": {
+            "description": {
+                "line2": "Кошумча маалымат алуу үчүн, аны сиз менен бөлүшкөн кесиптешиңиз менен байланышууга аракет кылыңыз.",
+                "line1": "Бул шилтеме өчүрүлгөн же жараксыз"
+            },
+            "title": "Шилтеме жалпы кирүү мүмкүнчүлүгүнө жеткиликсиз."
+        },
+        "listHeader": {
+            "extension": "Кеңейтүү",
+            "lastModified": "Акыркы өзгөртүү",
+            "name": "Аты",
+            "size": "Өлчөмү"
+        }
+    },
+    "collaborationLinks": {
+        "description": "Ички пайдалануучулар шилтемени ачып, уруксаттарды алышат. Сиз ар дайым берилген уруксаттарды өзгөртө аласыз.",
+        "button": {
+            "generateLink": "Шилтеме түзүү",
+            "revoke": "Чакыртып алуу"
+        },
+        "link": {
+            "urlChip": {
+                "tooltip": {
+                    "copy": "Биргелешкен иштер үчүн шилтемени көчүрүү"
+                }
+            }
+        },
+        "row": {
+            "placeholder": "Элемент менен бөлүшүү үчүн, шилтеме түзүңүз",
+            "title": {
+                "ReadAndShare": "Окуу жана бөлүшүү",
+                "writeAndShare": "Жазуу жана бөлүшүү"
+            }
+        },
+        "title": "Биргелешкен иштер үчүн шилтеме"
+    },
+    "create": {
+        "options": {
+            "new": {
+                "msDocument_pptx": "Microsoft PowerPoint {{ext}}",
+                "document": "Жаңы документ",
+                "folder": "Жаңы папка",
+                "libreDocument": "OpenDocument {{ext}}",
+                "msDocument": "Microsoft {{ext}}",
+                "msDocument_docx": "Microsoft Word {{ext}}",
+                "msDocument_xlsx": "Microsoft Excel {{ext}}",
+                "presentation": "Жаңы презентация",
+                "spreadsheet": "Жаңы таблица",
+                "upload": "Жүктөө"
+            }
+        }
+    },
+    "breadcrumb": {
+        "expander": {
+            "hide": "Папкага жолду жашыруу",
+            "show": "Папкага жолду көрсөтүү"
         }
     }
 }
