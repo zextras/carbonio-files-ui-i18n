@@ -217,7 +217,7 @@
         "markForDeletion": {
             "error": "Coś poszło nie tak, spróbuj ponownie",
             "success": "Element został przeniesiony do kosza",
-            "showTrash": "Otwórz Kosz"
+            "showTrash": "Otwórz kosz"
         },
         "moveNodes": {
             "action": "Idź do folderu",
