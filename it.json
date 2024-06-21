@@ -132,6 +132,7 @@
                     }
                 },
                 "title_one": "Copia {{node.name}}",
+                "title_many": "",
                 "title_other": "Copia elementi"
             }
         },
@@ -148,6 +149,7 @@
                 },
                 "subtitle": "Seleziona una cartella di destinazione:",
                 "title_one": "Sposta {{node.name}}",
+                "title_many": "",
                 "title_other": "Sposta elementi"
             },
             "error": {
@@ -221,6 +223,7 @@
         },
         "nodesSelection": {
             "selectedCount_one": "{{count}} elemento selezionato",
+            "selectedCount_many": "",
             "selectedCount_other": "{{count}} elementi selezionati"
         },
         "moreInfo": {
@@ -650,7 +653,7 @@
         "advancedSearch": {
             "button": {
                 "filters_one": "{{count}} filtro avanzato",
-                "filters_zero": "Filtri avanzati",
+                "filters_many": "",
                 "filters_other": "{{count}} filtri avanzati"
             },
             "modal": {
@@ -746,6 +749,12 @@
             "moreInfo": {
                 "foldersNotAllowed": "Le cartelle non possono essere caricate. Se invece stai cercando di caricare un file, il sistema potrebbe non averlo riconosciuto correttamente. Riprova utilizzando il bottone \"CARICA\"."
             }
+        },
+        "banner": {
+            "overQuota": {
+                "description": "Il caricamento di alcuni elementi non è riuscito perché è stato raggiunto il limite di memoria. Eliminare alcuni elementi per liberare spazio e riprovare.",
+                "title": "Quota superata"
+            }
         }
     },
     "selectionMode": {
@@ -836,6 +845,7 @@
         },
         "fileLink": {
             "title_one": "Link pubblico per il download",
+            "title_many": "",
             "title_other": "Link pubblico per il download",
             "addLink": {
                 "description": "Gli utenti interni e esterni che hanno accesso al link possono scaricare l'elemento."
@@ -843,6 +853,7 @@
         },
         "folderLink": {
             "title_one": "Link pubblico per l'accesso",
+            "title_many": "",
             "title_other": "Link pubblico per l'accesso",
             "addLink": {
                 "description": "Chiunque abbia questo link può vedere e scaricare il contenuto di questa cartella."
@@ -933,5 +944,19 @@
             "name": "Nome",
             "size": "Dimensione"
         }
+    },
+    "quota": {
+        "overQuota": {
+            "tooltip": {
+                "label": "È stata raggiunta la quota massima disponibile."
+            }
+        },
+        "refresh": {
+            "tooltip": {
+                "label": "Aggiorna"
+            }
+        },
+        "limitedSpace": "{{used}} di {{limit}} utilizzati",
+        "unlimitedSpace": "{{used}} di spazio illimitato"
     }
 }
