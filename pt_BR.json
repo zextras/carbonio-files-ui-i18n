@@ -839,8 +839,8 @@
         },
         "fileLink": {
             "title_one": "Link de download público",
-            "title_many": "",
-            "title_other": "",
+            "title_many": "Links de download público",
+            "title_other": "Links de download público",
             "addLink": {
                 "description": "Usuários internos e externos com acesso ao link podem baixar o item."
             }
@@ -850,8 +850,8 @@
                 "description": "Qualquer pessoa com este link pode visualizar e baixar o conteúdo desta pasta."
             },
             "title_one": "Link de acesso público",
-            "title_many": "",
-            "title_other": ""
+            "title_many": "Links de acesso público",
+            "title_other": "Links de acesso público"
         }
     },
     "breadcrumb": {
