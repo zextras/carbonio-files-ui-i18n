@@ -70,14 +70,14 @@
                 "confirm": "Hapus"
             },
             "body": "Tautan ini sudah kedaluwarsa, jadi tidak bisa digunakan lagi untuk mengakses item. Anda bisa menghapus tautan dari daftar atau memperbarui tanggal berakhir dan informasi lain agar tetap bisa menggunakannya.",
-            "header": "Hapus tautan publik {{nodeName}}"
+            "header": "Hapus {{nodeName}} {{linkName}}"
         },
         "revokeLink": {
             "button": {
                 "confirm": "Batalkan"
             },
             "body": "Dengan mencabut tautan ini, Anda memblokir akses ke {{nodeName}} bagi siapa saja yang mencoba menggunakan tautan untuk mengakses item.",
-            "header": "Cabut tautan publik {{nodeName}}"
+            "header": "Cabut {{nodeName}} {{linkName}}"
         },
         "close": {
             "tooltip": "Tutup"
@@ -248,12 +248,12 @@
                 "copyLink": "Salin Tautan"
             },
             "linkUpdated": {
-                "label": "Tautan Publik diperbarui"
+                "label": "{{linkName}} diperbarui"
             },
             "newPublicLinkGenerated": {
-                "label": "Tautan publik baru dibuat"
+                "label": "{{linkName}} baru dibuat"
             },
-            "copyLink": "Tautan publik disalin"
+            "copyLink": "{{linkName}} disalin"
         },
         "unflag": {
             "success": "Tanda bendera pada item berhasil dihapus"
@@ -741,6 +741,12 @@
             "moreInfo": {
                 "foldersNotAllowed": "Folder tidak bisa diunggah. Jika Anda mengunggah file, sistem mungkin tidak akan mengenalinya. Coba lagi gunakan tombol \"UNGGAH\"."
             }
+        },
+        "banner": {
+            "overQuota": {
+                "description": "Pengunggahan beberapa item gagal karena Anda telah mencapai batas penyimpanan. Hapus beberapa item untuk mengosongkan ruang penyimpanan, lalu coba lagi.",
+                "title": "Kuota terlampaui"
+            }
         }
     },
     "publicLink": {
@@ -762,7 +768,7 @@
             "noExpirationDate": "Tidak memiliki tanggal berakhir",
             "urlChip": {
                 "tooltip": {
-                    "copy": "Salin tautan publik",
+                    "copy": "Salin {{linkName}}",
                     "expired": "Tautan ini kedaluwarsa"
                 }
             }
@@ -780,6 +786,18 @@
                 }
             },
             "label": "Deskripsi tautan"
+        },
+        "folderLink": {
+            "addLink": {
+                "description": "Siapa pun yang memiliki tautan ini dapat melihat dan mengunduh konten folder ini."
+            },
+            "title_other": "Tautan akses publik"
+        },
+        "fileLink": {
+            "addLink": {
+                "description": "Pengguna internal dan eksternal yang memiliki akses ke tautan dapat mengunduh item tersebut."
+            },
+            "title_other": "Tautan unduhan publik"
         }
     },
     "sortingDropdown": {
@@ -896,6 +914,36 @@
                 "error": {
                     "contactNotFound": "Anda bisa berbagi item ini hanya dengan pengguna yang mengaktifkan fitur ini dan bukan dengan daftar distribusi. Tampaknya email yang diberikan tidak terkait dengan pengguna yang diaktifkan. Periksa lagi dan masukkan alamat yang valid."
                 }
+            }
+        }
+    },
+    "carbonio-public-folder-ui": {
+        "emptyFolder": "Tidak ada item dalam folder ini.",
+        "invalidLink": {
+            "description": {
+                "line1": "Tautan ini telah dihapus atau tidak valid.",
+                "line2": "Untuk informasi selengkapnya, hubungi orang yang membagikannya kepada Anda."
+            },
+            "title": "Tautan akses publik tidak tersedia."
+        },
+        "listHeader": {
+            "extension": "Ekstensi",
+            "lastModified": "Terakhir diubah",
+            "name": "Nama",
+            "size": "Ukuran"
+        }
+    },
+    "quota": {
+        "limitedSpace": "{{used}} dari {{limit}} digunakan",
+        "overQuota": {
+            "tooltip": {
+                "label": "Anda telah mencapai batas kuota maksimum yang tersedia."
+            }
+        },
+        "unlimitedSpace": "{{used}} ruang tidak terbatas",
+        "refresh": {
+            "tooltip": {
+                "label": "Segarkan"
             }
         }
     }
