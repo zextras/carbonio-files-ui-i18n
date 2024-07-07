@@ -75,6 +75,7 @@
         },
         "nodesSelection": {
             "selectedCount_one": "{{count}} elemento seleccionado",
+            "selectedCount_many": "",
             "selectedCount_other": "{{count}} elementos seleccionados"
         },
         "moreInfo": {
@@ -149,6 +150,7 @@
                     }
                 },
                 "title_one": "Copiar \"{{node.name}}\"",
+                "title_many": "",
                 "title_other": "Copiar elementos"
             }
         },
@@ -165,6 +167,7 @@
                 },
                 "subtitle": "Selecciona la carpeta de destino:",
                 "title_one": "Mover \"{{node.name}}\"",
+                "title_many": "",
                 "title_other": "Mover elementos"
             },
             "error": {
@@ -324,7 +327,7 @@
         "sendViaMail": "Enviar por correo",
         "edit": "Editar",
         "preview": "Vista previa",
-        "manageShares": "Administrar uso compartido"
+        "manageShares": "Administrar compartidos"
     },
     "displayer": {
         "list": {
@@ -649,8 +652,8 @@
         },
         "advancedSearch": {
             "button": {
-                "filters_zero": "Filtros avanzados",
                 "filters_one": "{{count}} filtro aplicado",
+                "filters_many": "",
                 "filters_other": "{{count}} filtros aplicados"
             },
             "modal": {
@@ -902,6 +905,22 @@
                     "contactNotFound": "Sólo puedes compartir elementos con usuarios para los que esta función esté habilitada y no con listas de distribución. Parece que la dirección de correo electrónico proporcionada no está asociada a ningún usuario habilitado. Por favor, comprueba la dirección e intenta de nuevo."
                 }
             }
+        }
+    },
+    "carbonio-public-folder-ui": {
+        "emptyFolder": "No hay elementos en esta carpeta.",
+        "invalidLink": {
+            "description": {
+                "line1": "Este enlace ha sido eliminado o no es válido.",
+                "line2": "Para más información, prueba a contactar con la persona que lo compartió contigo."
+            },
+            "title": "El enlace de acceso público no está disponible."
+        },
+        "listHeader": {
+            "extension": "Extensión",
+            "lastModified": "Última modificación",
+            "name": "Nombre",
+            "size": "Tamaño"
         }
     }
 }
