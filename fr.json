@@ -3,7 +3,7 @@
         "options": {
             "new": {
                 "folder": "Nouveau dossier",
-                "upload": "Upload",
+                "upload": "Téléverser",
                 "document": "Nouveau document",
                 "presentation": "Nouvelle présentation",
                 "spreadsheet": "Nouveau tableur",
@@ -236,8 +236,8 @@
     "snackbar": {
         "markForDeletion": {
             "error": "Quelque chose s'est mal passé, réessayez",
-            "success": "Elément déplacé dans la poubelle",
-            "showTrash": "Ouvrir le dossier Poubelle"
+            "success": "Élément déplacé dans la corbeille",
+            "showTrash": "Ouvrir le dossier Corbeille"
         },
         "deleteShare": {
             "error": "Erreur",
@@ -481,7 +481,7 @@
             "versioning": "Version"
         },
         "uploads": {
-            "message": "Vous trouverez ici tous les éléments en cours de téléchargement, vous pouvez les gérer à partir d'ici.",
+            "message": "Vous trouverez ici tous les éléments en cours de téléversement, vous pouvez les gérer à partir d'ici.",
             "title": "Suggestions de téléchargement"
         },
         "generic": {
