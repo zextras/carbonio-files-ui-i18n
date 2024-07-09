@@ -216,7 +216,7 @@
     "secondaryBar": {
         "filters": "ตัวกรอง",
         "filtersList": {
-            "flagged": "ติดธง",
+            "flagged": "ถูกตั้งค่าสถานะ",
             "sharedByMe": "แชร์โดยฉัน",
             "sharedWithMe": "แชร์กับฉัน",
             "trash": "ถังขยะ",
@@ -312,12 +312,12 @@
         "rename": "เปลี่ยนชื่อ",
         "restore": "กู้คืน",
         "deletePermanently": "ลบอย่างถาวร",
-        "flag": "ธง",
+        "flag": "ทำเครื่องหมายว่า",
         "goToFolder": "ไปที่โฟลเดอร์ปลายทาง",
         "moveToTrash": "ลบ",
         "removeUpload": "ลบการอัปโหลด",
         "retryUpload": "ลองอัปโหลดอีกครั้ง",
-        "unflag": "เอาธงออก",
+        "unflag": "ยกเลิกการตั้งค่าสถานะ",
         "sendViaMail": "ส่งทางอีเมล์",
         "edit": "แก้ไข",
         "preview": "ดูตัวอย่าง",
@@ -654,7 +654,7 @@
                     "reset": "รีเซ็ตตัวกรอง"
                 },
                 "flagged": {
-                    "label": "ติดธง",
+                    "label": "ถูกตั้งค่าสถานะ",
                     "description": "กรองผลลัพธ์ตามรายการที่คุณตั้งค่าติดธงไว้"
                 },
                 "folder": {
