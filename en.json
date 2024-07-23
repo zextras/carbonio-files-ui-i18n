@@ -442,7 +442,8 @@
         "code_NODE_WRITE_ERROR": "It seems that this item cannot be edited or that you do not have permission to edit it",
         "code_SHARE_CREATION_ERROR": "We are sorry, but it is not possible to share the item with this user",
         "code_SHARE_NOT_FOUND": "We're sorry, but this share cannot be found",
-        "code_VERSIONS_LIMIT_REACHED": "The operation cannot be completed. You have reached the maximum limit."
+        "code_VERSIONS_LIMIT_REACHED": "The operation cannot be completed. You have reached the maximum limit.",
+        "code_OVER_QUOTA_REACHED": "Copy action failed. You have reached your storage limit. Delete some items to free up storage space and try again"
     },
     "folder": {
         "create": {
@@ -460,7 +461,8 @@
         }
     },
     "label": {
-        "app_name": "Files"
+        "app_name": "Files",
+        "app_description": "Files module"
     },
     "modal": {
         "button": {
@@ -716,8 +718,7 @@
         "advancedSearch": {
             "button": {
                 "filters_one": "{{count}} advanced filter",
-                "filters_other": "{{count}} advanced filters",
-                "filters_zero": "Advanced filters"
+                "filters_other": "{{count}} advanced filters"
             },
             "modal": {
                 "button": {
@@ -897,6 +898,16 @@
             "clone": "Version cloned as the current one",
             "keepForeverAdded": "Version marked as to be kept forever",
             "keepForeverRemoved": "\"Keep forever\" removed"
+        },
+        "createDocument": {
+            "error": {
+                "overQuota": {
+                    "spreadsheet": "New spreadsheet creation failed. You have reached your storage limit. Delete some items to free up storage space and try again",
+                    "document": "New document creation failed. You have reached your storage limit. Delete some items to free up storage space and try again",
+                    "presentation": "New presentation creation failed. You have reached your storage limit. Delete some items to free up storage space and try again",
+                    "actionLabel": "OK"
+                }
+            }
         }
     },
     "sortingDropdown": {
