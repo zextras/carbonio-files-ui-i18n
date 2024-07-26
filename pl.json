@@ -259,6 +259,16 @@
                 "label": "Nowy link do elementu został wygenerowany"
             },
             "copyCollaborationLink": "Link do elementu został skopiowany"
+        },
+        "createDocument": {
+            "error": {
+                "overQuota": {
+                    "document": "Tworzenie nowego dokumentu się nie powiodło. Osiągnąłeś Twój limit przestrzeni. Usuń kilka elementów, aby zwolnić miejsce i spróbuj ponownie",
+                    "spreadsheet": "Tworzenie nowego arkusza się nie powiodło. Osiągnąłeś Twój limit przestrzeni. Usuń kilka elementów, aby zwolnić miejsce i spróbuj ponownie",
+                    "presentation": "Tworzenie nowej prezentacji się nie powiodło. Osiągnąłeś Twój limit przestrzeni. Usuń kilka elementów, aby zwolnić miejsce i spróbuj ponownie",
+                    "actionLabel": "OK"
+                }
+            }
         }
     },
     "actions": {
@@ -852,7 +862,8 @@
         "code_SHARE_NOT_FOUND": "Przepraszamy, nie udało się znaleźc tego udostępnienia",
         "code_MISSING_FIELD": "Nastąpił błąd wewnętrzny, nie udało się odzyskać wszystkich informacji o tym elemencie",
         "code_VERSIONS_LIMIT_REACHED": "Ta operacja nie może zostać ukończona. Osignięto max. limit.",
-        "code_NODE_COPY_ERROR": "Kopiowanie elementu się nie powiodło. Spróbuj ponownie"
+        "code_NODE_COPY_ERROR": "Kopiowanie elementu się nie powiodło. Spróbuj ponownie",
+        "code_OVER_QUOTA_REACHED": "Kopiowanie się nie powiodło. Osiągnąłeś Twój limit przestrzeni. Usuń kilka elementów, aby zwolnić miejsce i spróbuj ponownie"
     },
     "breadcrumb": {
         "expander": {
@@ -861,7 +872,8 @@
         }
     },
     "label": {
-        "app_name": "Pliki"
+        "app_name": "Pliki",
+        "app_description": "Moduł Pliki"
     },
     "preview": {
         "actions": {
