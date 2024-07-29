@@ -307,6 +307,16 @@
                 "label": "Nouveau lien de collaboration généré"
             },
             "copyCollaborationLink": "Lien de collaboration copié"
+        },
+        "createDocument": {
+            "error": {
+                "overQuota": {
+                    "presentation": "La création d'une nouvelle présentation a échoué. Vous avez atteint votre limite de stockage. Supprimez certains éléments pour libérer de l'espace de stockage et réessayez.",
+                    "spreadsheet": "La création d'une nouvelle feuille de calcul a échoué. Vous avez atteint votre limite de stockage. Supprimez certains éléments pour libérer de l'espace de stockage et réessayez.",
+                    "actionLabel": "OK",
+                    "document": "La création d'un nouveau document a échoué. Vous avez atteint votre limite de stockage. Supprimez certains éléments pour libérer de l'espace de stockage et réessayez."
+                }
+            }
         }
     },
     "actions": {
@@ -803,7 +813,8 @@
         "code_NODE_NOT_FOUND": "Il semble que cet élément n'existe pas ou que vous n'avez pas la permission d'y accéder",
         "code_NODE_DUPLICATED": "Il y a déjà un élément portant le même nom dans ce dossier",
         "code_VERSIONS_LIMIT_REACHED": "L'opération ne peut être terminée. Vous avez atteint la limite maximum.",
-        "code_NODE_COPY_ERROR": "Désolé, la copie de l'élément a échoué. Merci de réessayer"
+        "code_NODE_COPY_ERROR": "Désolé, la copie de l'élément a échoué. Merci de réessayer",
+        "code_OVER_QUOTA_REACHED": "L'action de copie a échoué. Vous avez atteint votre limite de stockage. Supprimez certains éléments pour libérer de l'espace de stockage et réessayez."
     },
     "publicLink": {
         "addLink": {
@@ -881,7 +892,8 @@
         }
     },
     "label": {
-        "app_name": "Files"
+        "app_name": "Files",
+        "app_description": "Module Fichiers"
     },
     "uploadItem": {
         "queued": "Ajouté(e) dans la queue"
