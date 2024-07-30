@@ -88,6 +88,16 @@
                 "label": "Nuovo link per la collaborazione generato"
             },
             "copyCollaborationLink": "Link per la collaborazione copiato"
+        },
+        "createDocument": {
+            "error": {
+                "overQuota": {
+                    "actionLabel": "OK",
+                    "document": "Creazione di un nuovo documento fallita. Hai raggiunto lo spazio massimo di archiviazione. Elimina alcuni elementi per liberare dello spazio e riprova",
+                    "spreadsheet": "Creazione di un nuovo foglio di calcolo fallita. Hai raggiunto lo spazio massimo di archiviazione. Elimina alcuni elementi per liberare dello spazio e riprova",
+                    "presentation": "Creazione di una nuova presentazione fallita. Hai raggiunto lo spazio massimo di archiviazione. Elimina alcuni elementi per liberare dello spazio e riprova"
+                }
+            }
         }
     },
     "secondaryBar": {
@@ -861,7 +871,8 @@
         }
     },
     "label": {
-        "app_name": "Files"
+        "app_name": "Files",
+        "app_description": "Modulo Files"
     },
     "preview": {
         "actions": {
