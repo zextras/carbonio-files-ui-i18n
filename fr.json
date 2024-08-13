@@ -317,6 +317,11 @@
                     "document": "La création d'un nouveau document a échoué. Vous avez atteint votre limite de stockage. Supprimez certains éléments pour libérer de l'espace de stockage et réessayez."
                 }
             }
+        },
+        "error": {
+            "overQuota": {
+                "actionLabel": "OK"
+            }
         }
     },
     "actions": {
@@ -814,7 +819,9 @@
         "code_NODE_DUPLICATED": "Il y a déjà un élément portant le même nom dans ce dossier",
         "code_VERSIONS_LIMIT_REACHED": "L'opération ne peut être terminée. Vous avez atteint la limite maximum.",
         "code_NODE_COPY_ERROR": "Désolé, la copie de l'élément a échoué. Merci de réessayer",
-        "code_OVER_QUOTA_REACHED": "L'action de copie a échoué. Vous avez atteint votre limite de stockage. Supprimez certains éléments pour libérer de l'espace de stockage et réessayez."
+        "code_OVER_QUOTA_REACHED": "Vous avez atteint votre limite de stockage. Supprimez certains éléments afin de libérer de l'espace de stockage puis réessayez",
+        "operation_copyNodes": "La copie a échoué.",
+        "operation_cloneVersion": "Le clonage a échoué."
     },
     "publicLink": {
         "addLink": {
