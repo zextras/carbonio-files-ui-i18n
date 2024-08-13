@@ -98,6 +98,11 @@
                     "presentation": "Creazione di una nuova presentazione fallita. Hai raggiunto lo spazio massimo di archiviazione. Elimina alcuni elementi per liberare dello spazio e riprova"
                 }
             }
+        },
+        "error": {
+            "overQuota": {
+                "actionLabel": "OK"
+            }
         }
     },
     "secondaryBar": {
@@ -813,7 +818,10 @@
         "code_SHARE_NOT_FOUND": "Impossibile trovare questa condivisione",
         "code_NODE_DUPLICATED": "É già presente un elemento con questo nome nella cartella",
         "code_VERSIONS_LIMIT_REACHED": "L'operazione non può essere completata. Hai raggiunto il limite massimo.",
-        "code_NODE_COPY_ERROR": "Copia dell'elemento fallita. Per favore, riprova"
+        "code_NODE_COPY_ERROR": "Copia dell'elemento fallita. Per favore, riprova",
+        "operation_copyNodes": "Azione copia non riuscita.",
+        "code_OVER_QUOTA_REACHED": "Hai raggiunto il limite di spazio di archiviazione. Elimina alcuni elementi per liberare spazio e riprova",
+        "operation_cloneVersion": "Azione clona non riuscita."
     },
     "publicLink": {
         "addLink": {
