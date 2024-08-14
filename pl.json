@@ -269,6 +269,11 @@
                     "actionLabel": "OK"
                 }
             }
+        },
+        "error": {
+            "overQuota": {
+                "actionLabel": "OK"
+            }
         }
     },
     "actions": {
@@ -863,7 +868,9 @@
         "code_MISSING_FIELD": "Nastąpił błąd wewnętrzny, nie udało się odzyskać wszystkich informacji o tym elemencie",
         "code_VERSIONS_LIMIT_REACHED": "Ta operacja nie może zostać ukończona. Osignięto max. limit.",
         "code_NODE_COPY_ERROR": "Kopiowanie elementu się nie powiodło. Spróbuj ponownie",
-        "code_OVER_QUOTA_REACHED": "Kopiowanie się nie powiodło. Osiągnąłeś Twój limit przestrzeni. Usuń kilka elementów, aby zwolnić miejsce i spróbuj ponownie"
+        "code_OVER_QUOTA_REACHED": "Osiągnąłeś Twój limit przestrzeni. Usuń kilka elementów, aby zwolnić miejsce i spróbuj ponownie",
+        "operation_cloneVersion": "Czynność klonowania nie powiodła się.",
+        "operation_copyNodes": "Czynność kopiowania nie powiodła się."
     },
     "breadcrumb": {
         "expander": {
