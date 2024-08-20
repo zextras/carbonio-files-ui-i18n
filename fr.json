@@ -217,6 +217,9 @@
         },
         "type": {
             "folder": "Dossier"
+        },
+        "preview": {
+            "failed": "Échec du chargement de l'image"
         }
     },
     "secondaryBar": {
@@ -977,5 +980,22 @@
             }
         },
         "unlimitedSpace": "{{used}} sur un espace illimité"
+    },
+    "size": {
+        "unitMeasure_YB": "Yo",
+        "unitMeasure_B": "o",
+        "unitMeasure_KB": "Ko",
+        "unitMeasure_MB": "Mo",
+        "unitMeasure_GB": "Go",
+        "unitMeasure_TB": "To",
+        "unitMeasure_ZB": "Zo",
+        "unitMeasure_PB": "Po",
+        "unitMeasure_EB": "Eo"
+    },
+    "header": {
+        "iconTooltip": {
+            "ListLayout": "Disposition des listes",
+            "GridLayout": "Disposition des grilles"
+        }
     }
 }
