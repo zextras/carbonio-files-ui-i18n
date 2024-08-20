@@ -627,6 +627,9 @@
         },
         "type": {
             "folder": "Folder"
+        },
+        "preview": {
+            "failed": "Failed to load image"
         }
     },
     "preview": {
@@ -970,6 +973,23 @@
             "moreInfo": {
                 "foldersNotAllowed": "Folders cannot be uploaded. Instead, if you are trying to upload a file, the system may not have recognized it. Try again using the \"UPLOAD\" button."
             }
+        }
+    },
+    "size": {
+        "unitMeasure_B": "B",
+        "unitMeasure_KB": "KB",
+        "unitMeasure_MB": "MB",
+        "unitMeasure_TB": "TB",
+        "unitMeasure_GB": "GB",
+        "unitMeasure_ZB": "ZB",
+        "unitMeasure_PB": "PB",
+        "unitMeasure_EB": "EB",
+        "unitMeasure_YB": "YB"
+    },
+    "header": {
+        "iconTooltip": {
+            "ListLayout": "List layout",
+            "GridLayout": "Grid layout"
         }
     }
 }
