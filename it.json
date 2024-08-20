@@ -175,6 +175,9 @@
         },
         "type": {
             "folder": "Cartella"
+        },
+        "preview": {
+            "failed": "Caricamento dell'immagine fallito"
         }
     },
     "modal": {
@@ -977,5 +980,22 @@
         },
         "limitedSpace": "{{used}} di {{limit}} utilizzati",
         "unlimitedSpace": "{{used}} di spazio illimitato"
+    },
+    "size": {
+        "unitMeasure_B": "B",
+        "unitMeasure_KB": "KB",
+        "unitMeasure_MB": "MB",
+        "unitMeasure_GB": "GB",
+        "unitMeasure_TB": "TB",
+        "unitMeasure_PB": "PB",
+        "unitMeasure_EB": "EB",
+        "unitMeasure_ZB": "ZB",
+        "unitMeasure_YB": "YB"
+    },
+    "header": {
+        "iconTooltip": {
+            "ListLayout": "Layout lista",
+            "GridLayout": "Layout griglia"
+        }
     }
 }
