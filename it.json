@@ -882,8 +882,7 @@
         }
     },
     "label": {
-        "app_name": "Files",
-        "app_description": "Modulo Files"
+        "app_name": "Files"
     },
     "preview": {
         "actions": {
