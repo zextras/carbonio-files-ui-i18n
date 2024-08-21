@@ -463,8 +463,7 @@
         }
     },
     "label": {
-        "app_name": "Files",
-        "app_description": "Files module"
+        "app_name": "Files"
     },
     "modal": {
         "button": {
