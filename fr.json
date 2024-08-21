@@ -902,8 +902,7 @@
         }
     },
     "label": {
-        "app_name": "Files",
-        "app_description": "Module Fichiers"
+        "app_name": "Files"
     },
     "uploadItem": {
         "queued": "Ajouté(e) dans la queue"
