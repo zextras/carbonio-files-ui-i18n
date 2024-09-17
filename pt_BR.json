@@ -113,7 +113,7 @@
             "button": {
                 "confirm": "Revogar"
             },
-            "body": "Ao revogar este link, você estará restringindo o acesso a qualquer um que tentar usá-lo para acessar o item.",
+            "body": "Ao revogar este link, você estará restringindo o acesso a {{nodeName}} para qualquer pessoa que tentar usá-lo para acessar o item.",
             "header": "Revogar {{linkName}} de {{nodeName}}"
         },
         "decreaseYourOwnSharePermissions": {
@@ -128,7 +128,7 @@
         },
         "nodesSelection": {
             "selectedCount_one": "{{count}} item selecionado",
-            "selectedCount_many": "",
+            "selectedCount_many": "{{count}} itens selecionados",
             "selectedCount_other": "{{count}} itens selecionados"
         },
         "moreInfo": {
@@ -198,7 +198,7 @@
                     }
                 },
                 "title_one": "Copiar {{node.name}}",
-                "title_many": "",
+                "title_many": "Copiar itens",
                 "title_other": "Copiar itens"
             }
         },
@@ -220,7 +220,7 @@
                 },
                 "subtitle": "Selecionar pasta de destino:",
                 "title_one": "Mover {{node.name}}",
-                "title_many": "",
+                "title_many": "Mover itens",
                 "title_other": "Mover itens"
             },
             "error": {
@@ -231,6 +231,9 @@
         },
         "type": {
             "folder": "Pasta"
+        },
+        "preview": {
+            "failed": "Falha ao carregar imagem"
         }
     },
     "snackbar": {
@@ -307,6 +310,21 @@
                 "label": "Novo link de colaboração gerado"
             },
             "copyCollaborationLink": "Link de colaboração interna copiado"
+        },
+        "createDocument": {
+            "error": {
+                "overQuota": {
+                    "actionLabel": "Ok",
+                    "spreadsheet": "Falha ao criar nova planilha. Você atingiu seu limite de armazenamento. Exclua alguns itens para liberar espaço de armazenamento e tente novamente",
+                    "document": "Falha ao criar novo documento. Você atingiu seu limite de armazenamento. Exclua alguns itens para liberar espaço de armazenamento e tente novamente",
+                    "presentation": "Falha ao criar nova apresentação. Você atingiu seu limite de armazenamento. Exclua alguns itens para liberar espaço de armazenamento e tente novamente"
+                }
+            }
+        },
+        "error": {
+            "overQuota": {
+                "actionLabel": "Ok"
+            }
         }
     },
     "actions": {
@@ -382,7 +400,7 @@
                     "label": "Compartilhado",
                     "description": "Filtre os resultados por itens que contenham ao menos um colaborador além de você"
                 },
-                "title": "Filtros avançados.",
+                "title": "Filtros avançados",
                 "itemType": {
                     "label": "Tipo",
                     "dropdownOption": {
@@ -401,7 +419,7 @@
             },
             "button": {
                 "filters_one": "{{count}} filtro aplicado",
-                "filters_many": "",
+                "filters_many": "{{count}} filtros aplicados",
                 "filters_other": "{{count}} filtros aplicados"
             }
         },
@@ -797,7 +815,10 @@
         "code_SHARE_NOT_FOUND": "Este compartilhamento não pode ser encontrado",
         "code_NODE_DUPLICATED": "Já existe um item com o mesmo nome nesta pasta",
         "code_VERSIONS_LIMIT_REACHED": "A operação não pode ser completada. Você atingiu o limite máximo.",
-        "code_NODE_COPY_ERROR": "A cópia do item falhou. Tente novamente"
+        "code_NODE_COPY_ERROR": "A cópia do item falhou. Tente novamente",
+        "operation_copyNodes": "Falha ao copiar.",
+        "operation_cloneVersion": "Falha ao clonar.",
+        "code_OVER_QUOTA_REACHED": "Você atingiu seu limite de armazenamento. Exclua alguns itens para liberar espaço de armazenamento e tente novamente"
     },
     "publicLink": {
         "addLink": {
@@ -958,5 +979,22 @@
             }
         },
         "unlimitedSpace": "{{used}} de espaço ilimitado"
+    },
+    "size": {
+        "unitMeasure_GB": "GB",
+        "unitMeasure_TB": "TB",
+        "unitMeasure_PB": "PB",
+        "unitMeasure_ZB": "ZB",
+        "unitMeasure_EB": "EB",
+        "unitMeasure_B": "B",
+        "unitMeasure_KB": "KB",
+        "unitMeasure_MB": "MB",
+        "unitMeasure_YB": "YB"
+    },
+    "header": {
+        "iconTooltip": {
+            "ListLayout": "Layout de lista",
+            "GridLayout": "Layout de grade"
+        }
     }
 }
