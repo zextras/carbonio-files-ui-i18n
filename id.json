@@ -188,6 +188,9 @@
         },
         "type": {
             "folder": "Folder"
+        },
+        "preview": {
+            "failed": "Gagal memuat gambar"
         }
     },
     "secondaryBar": {
@@ -278,6 +281,21 @@
                 "label": "Tautan Kolaborasi Baru dibuat"
             },
             "copyCollaborationLink": "Tautan kolaborasi disalin"
+        },
+        "createDocument": {
+            "error": {
+                "overQuota": {
+                    "document": "Pembuatan dokumen baru gagal. Anda telah mencapai batas penyimpanan. Hapus beberapa item untuk mengosongkan ruang penyimpanan dan coba lagi",
+                    "spreadsheet": "Pembuatan spreadsheet baru gagal. Anda telah mencapai batas penyimpanan. Hapus beberapa item untuk mengosongkan ruang penyimpanan dan coba lagi",
+                    "presentation": "Pembuatan presentasi baru gagal. Anda telah mencapai batas penyimpanan. Hapus beberapa item untuk mengosongkan ruang penyimpanan dan coba lagi",
+                    "actionLabel": "OKE"
+                }
+            }
+        },
+        "error": {
+            "overQuota": {
+                "actionLabel": "OKE"
+            }
         }
     },
     "empty": {
@@ -830,7 +848,10 @@
         "code_SHARE_NOT_FOUND": "Maaf, berbagi ini tidak ditemukan",
         "code_NODE_DUPLICATED": "Ada item dengan nama yang sama di folder ini",
         "code_VERSIONS_LIMIT_REACHED": "Operasi tidak bisa diselesaikan. Anda telah mencapai batas maksimum.",
-        "code_NODE_COPY_ERROR": "Maaf, item gagal disalin. Coba lagi"
+        "code_NODE_COPY_ERROR": "Maaf, item gagal disalin. Coba lagi",
+        "operation_copyNodes": "Tindakan penyalinan gagal.",
+        "operation_cloneVersion": "Tindakan klon gagal.",
+        "code_OVER_QUOTA_REACHED": "Anda telah mencapai batas penyimpanan. Hapus beberapa item untuk mengosongkan ruang penyimpanan dan coba lagi"
     },
     "breadcrumb": {
         "expander": {
@@ -945,6 +966,23 @@
             "tooltip": {
                 "label": "Segarkan"
             }
+        }
+    },
+    "size": {
+        "unitMeasure_GB": "GB",
+        "unitMeasure_TB": "TB",
+        "unitMeasure_PB": "PB",
+        "unitMeasure_EB": "EB",
+        "unitMeasure_ZB": "ZB",
+        "unitMeasure_B": "B",
+        "unitMeasure_KB": "KB",
+        "unitMeasure_MB": "MB",
+        "unitMeasure_YB": "YB"
+    },
+    "header": {
+        "iconTooltip": {
+            "ListLayout": "Tata letak daftar",
+            "GridLayout": "Tata letak kisi"
         }
     }
 }
