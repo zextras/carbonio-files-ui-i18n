@@ -990,5 +990,11 @@
         "unitMeasure_KB": "KB",
         "unitMeasure_MB": "MB",
         "unitMeasure_YB": "YB"
+    },
+    "header": {
+        "iconTooltip": {
+            "ListLayout": "Структура списка",
+            "GridLayout": "Расположение сетки"
+        }
     }
 }
