@@ -178,6 +178,9 @@
         },
         "type": {
             "folder": "Carpeta"
+        },
+        "preview": {
+            "failed": "Fallo al cargar la imagen"
         }
     },
     "secondaryBar": {
@@ -268,6 +271,21 @@
                 "label": "Nuevo enlace de colaboración creado"
             },
             "copyCollaborationLink": "Enlace de colaboración interna copiado"
+        },
+        "createDocument": {
+            "error": {
+                "overQuota": {
+                    "actionLabel": "OK",
+                    "presentation": "Fallo al crear presentación nueva. Has alcanzado tu límite de almacenamiento. Borra algunos elementos para liberar espacio y prueba de nuevo",
+                    "document": "Fallo al crear documento nuevo. Has alcanzado tu límite de almacenamiento. Borra algunos elementos para liberar espacio y prueba de nuevo",
+                    "spreadsheet": "Fallo al crear nueva hoja de cálculo. Has alcanzado tu límite de almacenamiento. Borra algunos elementos para liberar espacio y probar de nuevo"
+                }
+            }
+        },
+        "error": {
+            "overQuota": {
+                "actionLabel": "OK"
+            }
         }
     },
     "create": {
@@ -797,7 +815,10 @@
         "code_SHARE_NOT_FOUND": "No se pudo encontrar el uso compartido",
         "code_NODE_DUPLICATED": "Ya hay un objeto con el mismo nombre en esta carpeta",
         "code_VERSIONS_LIMIT_REACHED": "La operación no se pudo completar. Has alcanzado el límite máximo.",
-        "code_NODE_COPY_ERROR": "Falló al copiar el elemento. Intenta de nuevo"
+        "code_NODE_COPY_ERROR": "Falló al copiar el elemento. Intenta de nuevo",
+        "operation_copyNodes": "La acción de copiar falló.",
+        "operation_cloneVersion": "La acción de clonar falló.",
+        "code_OVER_QUOTA_REACHED": "Has alcanzado tu límite de almacenamiento. Borra algún elemento para liberar espacio y probar de nuevo"
     },
     "publicLink": {
         "addLink": {
@@ -958,5 +979,22 @@
             }
         },
         "unlimitedSpace": "{{used}} de espacio infinito"
+    },
+    "size": {
+        "unitMeasure_GB": "GB",
+        "unitMeasure_TB": "TB",
+        "unitMeasure_PB": "PB",
+        "unitMeasure_ZB": "ZB",
+        "unitMeasure_EB": "EB",
+        "unitMeasure_B": "B",
+        "unitMeasure_KB": "KB",
+        "unitMeasure_MB": "MB",
+        "unitMeasure_YB": "YB"
+    },
+    "header": {
+        "iconTooltip": {
+            "ListLayout": "Diseño de lista",
+            "GridLayout": "Diseño de cuadrícula"
+        }
     }
 }
