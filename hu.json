@@ -8,5 +8,366 @@
         "close": {
             "tooltip": "Bezárás"
         }
+    },
+    "carbonio-public-folder-ui": {
+        "invalidLink": {
+            "description": {
+                "line1": "A link törölve lett vagy nem érvényes.",
+                "line2": "További információért lépjen kapcsolatba azzal a személlyel, aki megosztotta önnel ezt."
+            },
+            "title": "A nyilvános link nem érhető el."
+        },
+        "listHeader": {
+            "extension": "Kiterjesztés",
+            "name": "Név",
+            "size": "Méret",
+            "lastModified": "Utolsó módosítás"
+        },
+        "emptyFolder": "Nincsenek elemek a mappában."
+    },
+    "create": {
+        "options": {
+            "new": {
+                "libreDocument": "Megnyitás ezzel: {{ext}}",
+                "msDocument": "Microsoft {{ext}}",
+                "msDocument_docx": "Microsoft Word {{ext}}",
+                "document": "Új dokumentum",
+                "folder": "Új mappa",
+                "msDocument_pptx": "Microsoft PowerPoint {{ext}}",
+                "msDocument_xlsx": "Microsoft Excel {{ext}}",
+                "presentation": "Új prezentáció",
+                "spreadsheet": "Új táblázat",
+                "upload": "Feltöltés"
+            }
+        }
+    },
+    "displayer": {
+        "details": {
+            "description": "Leírás",
+            "lastEdit": "Utolsó módosítás",
+            "editDescription": {
+                "closeIconTooltip": "Bezárás mentés nélkül",
+                "editIconTooltip": "Leírás szerkesztése",
+                "input": {
+                    "label": "Maximum 4096 karakter engedélyezett"
+                },
+                "saveIconTooltip": "Módosítások mentése"
+            },
+            "collaborators": "Együttműködők",
+            "content": "Tartalom",
+            "createdBy": "Készítette",
+            "collaboratorsTooltip": "Együttműködők listájának megjelenítése",
+            "owner": "Tulajdonos",
+            "position": "Pozíció",
+            "sendMailTo": "Elküldés emailben: {{email}}",
+            "missingDescription": "Kattintson a szerkesztés gombra a leírás hozzáadásához",
+            "showPath": "Elérési út mutatása",
+            "size": "Méret",
+            "copyShortcut": "elemre mutató hivatkozás másolása"
+        },
+        "share": {
+            "chip": {
+                "popover": {
+                    "role": {
+                        "editor": "Szerkesztő",
+                        "viewerDescription": "Csak az elem megtekintési és letöltési joga",
+                        "viewer": "nem szükséges fordítani",
+                        "editorDescription": "Az elem megtekintési és szerkesztési joga"
+                    },
+                    "save": "Mentés",
+                    "sharingAllowedDescription": "Az elem megosztási jogainak szerkesztése",
+                    "sharingAllowed": "Megosztás engedélyezve"
+                },
+                "tooltip": {
+                    "edit": {
+                        "collaborator": "Csoportmunka szerkesztés"
+                    }
+                },
+                "owner": "Tulajdonos",
+                "you": "Ön"
+            },
+            "addShare": {
+                "note": "Megjegyzés:",
+                "input": {
+                    "placeholder": "Adjon hozzá új embereket vagy csoportokat",
+                    "label": "Egyéni üzenet hozzáadása ehhez az értesítéshez"
+                },
+                "button": "Megosztás",
+                "checkbox": {
+                    "label": "Egyéni üzenet hozzáadása az email értesítőhöz"
+                },
+                "noteDescription": "Az alapértelmezett üzenet tartalmazza a nevét, a megosztott fájl nevét, a kiosztott jogosultságokat és a bejelentkezési információkat."
+            },
+            "noSharePermissionHeader": "Az elem megosztásához nincs jogosultsága."
+        },
+        "search_full": [
+            {
+                "title": "Válasszon egy vagy több elemet a találatok közül a műveletekhez vagy részletek megtekintéséhez."
+            }
+        ],
+        "search_empty": [
+            {
+                "title": "Új keresés indítása.",
+                "message": "Vagy válassza a \"Bővített keresést\" a keresés pontosításához."
+            },
+            {
+                "message": "Ne adja fel, keressen tovább!",
+                "title": "Nincsenek eredmények."
+            },
+            {
+                "message": "Próbáljon új keresést indítani.",
+                "title": "Sajnáljuk, a keresése nem hozott eredményt."
+            },
+            {
+                "message": "Ellenőrizze a helyesírást és a szűrő beállításokat, vagy próbálja más keresőszóval.",
+                "title": "Keresése nem hozott eredményt."
+            }
+        ],
+        "tabs": {
+            "versioning": "Verziózás",
+            "activities": "Tevékenységek",
+            "details": "Részletek",
+            "sharing": "Megosztás"
+        },
+        "version": {
+            "actions": {
+                "cloneAsCurrent": "Klónozás aktuálisként",
+                "keepVersion": "A verzió végleges megtartása",
+                "removeKeepVersion": "A végleges megtartás eltávolítása",
+                "deleteVersion": "Verzió törlése",
+                "downloadVersion": "Teljes verzió letöltése",
+                "tooltip": {
+                    "disabledByDeleteCurrent": "A jelenlegi verzió nem törölhető",
+                    "disabledByDocs": "Ez a verzió nem nyitható meg az online szerkesztővel",
+                    "disabledByVersionKeepForever": "A véglegesen megtartottként jelölt verziók nem törölhetők",
+                    "disabledByPermission": "Nincsenek megfelelő jogosultságai",
+                    "disabledByMaxKeepVersion": "Elérte a véglegesen megtartható verziók maximális számát",
+                    "disabledByMaxVersion": "Elérte a maximum verziószámot"
+                },
+                "openDocumentVersion": "Dokumentumverzió megnyitása"
+            },
+            "button": {
+                "purgeAllVersions": "Összes verzió törlése"
+            }
+        },
+        "filter": {
+            "recents_empty": [
+                {
+                    "message": "Utoljára használt elemek listája.",
+                    "title": "Nyissa meg, vagy szerkessze elemeit."
+                }
+            ],
+            "recents_full": [
+                {
+                    "message": "Kattintson egy elemre a kijelöléshez.",
+                    "title": "Az utoljára frissített elemek részleteinek megtekintése."
+                },
+                {
+                    "message": "Kattintson egy elemre a folytatáshoz.",
+                    "title": "Nézze át és szerkessze az utoljára frissített elemeket."
+                },
+                {
+                    "message": "Kattintson egy elemre a kijelöléshez.",
+                    "title": "Az utoljára frissített elemek gyors áttekintése."
+                },
+                {
+                    "message": "Kattintson egy elemre a kiválasztáshoz.",
+                    "title": "Maradjon naprakész a legutóbb módosított elemekről."
+                }
+            ],
+            "sharedWithMe_full": [
+                {
+                    "message": "Kattintson egy elemre a kiválasztáshoz.",
+                    "title": "Kezdje el szerkeszteni és megosztani elemeit."
+                },
+                {
+                    "message": "Kattintson egy elemre a kiválasztáshoz.",
+                    "title": "A megosztott mappák tulajdonságainak megtekintése és megosztásuk."
+                },
+                {
+                    "title": "Válasszon ki egy elemet és kezdjen el másokkal közösen dolgozni azon."
+                }
+            ],
+            "trash_empty": [
+                {
+                    "message": "Kattintson a kuka ikonra egy elem törléséhez.",
+                    "title": "Az összes felesleges elem kukába helyezése."
+                },
+                {
+                    "message": "Kattintson a kuka ikonra egy elem törléséhez.",
+                    "title": "A kuka üres."
+                },
+                {
+                    "title": "Tartsa tisztán a munkaterületet: törölje az összes szükségtelen elemet."
+                }
+            ],
+            "trash_full": [
+                {
+                    "title": "Válasszon ki és állítson vissza elemeket a kukából."
+                },
+                {
+                    "title": "Semmi sincs veszve!",
+                    "message": "Válasszon ki egy elemet a visszaállításhoz vagy a végleges törléshez."
+                },
+                {
+                    "title": "Válasszon ki egy elemet a végleges törléshez.",
+                    "message": "Vagy amennyiben lehetséges, válassza ki és állítsa helyre az eredeti mappába."
+                }
+            ],
+            "flagged_empty": [
+                {
+                    "title": "Kattinson a jelölőre egy elem megjelöléséhez",
+                    "message": "Itt mindig megtalálja, amikor szükséges."
+                },
+                {
+                    "title": "Jelölje meg a legfontosabb elemeit a jelölőre kattintva.",
+                    "message": "Itt lesznek listázva."
+                }
+            ],
+            "flagged_full": [
+                {
+                    "title": "Kattinson a jelölőre egy elem megjelöléséhez",
+                    "message": "Itt mindig megtalálja, amikor szükséges."
+                },
+                {
+                    "title": "Jelölje meg a legfontosabb elemeit a jelölőre kattintva.",
+                    "message": "Itt lesznek listázva."
+                }
+            ],
+            "sharedByMe_empty": [
+                {
+                    "message": "Válasszon ki egy elemet a folytatáshoz.",
+                    "title": "A kapcsolataival megosztott elemek áttekintése és szerkesztése."
+                },
+                {
+                    "message": "Kattintson egy elemre a kijelöléshez.",
+                    "title": "A megosztott mappák tulajdonságainak megtekintése."
+                },
+                {
+                    "message": "Kattintson egy elemre a kijelöléshez.",
+                    "title": "Itt találja az összes megosztott elemet."
+                }
+            ],
+            "sharedByMe_full": [
+                {
+                    "message": "Válasszon ki egy elemet a folytatáshoz.",
+                    "title": "A kapcsolatokkal megosztott elemek áttekintése és szerkesztése."
+                },
+                {
+                    "message": "Kattintson egy elemre a kiválasztáshoz.",
+                    "title": "A megosztott mappák tulajdonságainak megtekintése."
+                }
+            ],
+            "sharedWithMe_empty": [
+                {
+                    "message": "Kattintson az \"Új\" gombra új elem létrehozásához és megosztásához.",
+                    "title": "Még nincsenek önnel megosztott elemek."
+                },
+                {
+                    "title": "Kattintson az \"Új\" gombra új email létrehozásához.",
+                    "message": "Tudassa másokkal, hogy készen áll a közös munkára."
+                }
+            ]
+        },
+        "folder_empty": [
+            {
+                "title": "Kattintson az \"Új\" gombra új elem létrehozásához és megosztásához."
+            },
+            {
+                "message": "Hozzon létre új elemet az \"Új\" gombra kattintással.",
+                "title": "Kezdjen el szerkeszteni és megosztani."
+            },
+            {
+                "title": "Kattintson az \"Új\" gombra új elem létrehozásához.",
+                "message": "Szerkeszthet, megjelölhet és megoszthat elemet."
+            }
+        ],
+        "folder_full": [
+            {
+                "message": "Kattintson egy elemre a kiválasztáshoz.",
+                "title": "Kezdje el szerkeszteni és megosztani elemeit."
+            },
+            {
+                "message": "Kattintson egy elemre a kijelöléshez.",
+                "title": "A mappa tulajdonságainak megtekintése és megosztásuk."
+            },
+            {
+                "title": "Válasszon mappát szerkesztésre vagy átnevezésre."
+            },
+            {
+                "title": "Adjon szerkesztő jogosultságot a kapcsolatainak, hogy szerkeszthessék az elemet.",
+                "message": "Válassza ki az elemet és ugorjon a \"Megosztások\" lapra."
+            },
+            {
+                "title": "Válasszon elemet megosztáshoz vagy másik mappába mozgatáshoz."
+            }
+        ],
+        "generic": {
+            "title": "A fájlok és mappák megtekintése, megosztásuk a kapcsolatokkal.",
+            "message": "Kattintson egy elemre a kijelöléshez."
+        },
+        "uploads": {
+            "message": "Itt megtalálhatja az összes jelenleg feltöltött elemet, itt kezelheti őket.",
+            "title": "Javaslatok feltöltése"
+        },
+        "search": {
+            "title": "Írjon be kulcsszavakat a keresés kezdéséhez."
+        },
+        "list": {
+            "you": "Ön"
+        }
+    },
+    "modal": {
+        "close": {
+            "tooltip": "Bezárás"
+        }
+    },
+    "actions": {
+        "copy": "Másolás",
+        "deletePermanently": "Végleges törlés",
+        "download": "Letöltés",
+        "edit": "Szerkesztés",
+        "flag": "Jelölő",
+        "goToFolder": "Ugrás a célmappához",
+        "manageShares": "Megosztások kezelése",
+        "markForDeletion": "Törlésre jelölés",
+        "move": "Áthelyezés",
+        "openWithDocs": "Dokumentum megnyitása",
+        "preview": "Előnézet",
+        "removeUpload": "Feltöltés törlése",
+        "rename": "Átnevezés",
+        "restore": "Helyreállítás",
+        "retryUpload": "Feltöltés újrapróbálása",
+        "sendViaMail": "Elküldés emailben",
+        "unflag": "Jelölő törlése",
+        "moveToTrash": "Törlés"
+    },
+    "collaborationLinks": {
+        "button": {
+            "revoke": "Visszavonás",
+            "generateLink": "Link generálása"
+        },
+        "description": "A belső felhasználók a jogokat a link megnyitásával kapják. Bármikor módosíthatja a kiosztott jogokat.",
+        "row": {
+            "placeholder": "Link készítése az elem megosztásához",
+            "title": {
+                "writeAndShare": "Írás és megosztás",
+                "ReadAndShare": "Olvasás és megosztás"
+            }
+        },
+        "link": {
+            "urlChip": {
+                "tooltip": {
+                    "copy": "Kollaborációs link másolása"
+                }
+            }
+        },
+        "title": "Kollaborációs link"
+    },
+    "breadcrumb": {
+        "expander": {
+            "hide": "Elérési út elrejtése",
+            "show": "Elérési út mutatása"
+        }
     }
 }
