@@ -80,7 +80,12 @@
                 },
                 "tooltip": {
                     "edit": {
-                        "collaborator": "Csoportmunka szerkesztés"
+                        "collaborator": "Csoportmunka szerkesztés",
+                        "you": "Szerkeszd az együttműködésedet"
+                    },
+                    "remove": {
+                        "yourself": "Az együttműködésed eltávolítása",
+                        "collaborator": "Együttműködés eltávolítása"
                     }
                 },
                 "owner": "Tulajdonos",
@@ -147,7 +152,21 @@
                 "openDocumentVersion": "Dokumentumverzió megnyitása"
             },
             "button": {
-                "purgeAllVersions": "Összes verzió törlése"
+                "purgeAllVersions": "Összes verzió törlése",
+                "upload": "Verzió feltöltése"
+            },
+            "mainHint": "A fájlok a tételek legutóbbi {{maxVersions}} verzióját mentik. Manuálisan törölhető bármely elem verziója vagy visszaállítható jelenlegiként. Válasszon egy vagy több verziót a végleges megtartáshoz.",
+            "row": {
+                "clonedIcon": {
+                    "tooltip1": "Klónozva a (z) {{versionNumber}} verzióból ({{cloneDate}})",
+                    "tooltip2": "Klónozva a (z) {{versionNumber}} verzióból (verzió törölve)"
+                },
+                "versionNumber": "{{versionNumber}} verzió"
+            },
+            "rowHeaders": {
+                "currentVersion": "Jelenlegi verzió",
+                "lastWeek": "Utolsó 7 nap",
+                "olderVersions": "Régebbi verziók"
             }
         },
         "filter": {
@@ -320,6 +339,23 @@
     "modal": {
         "close": {
             "tooltip": "Bezárás"
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "Végleges törlés"
+            },
+            "body": "Véglegesen törölni fogja ezt a tételt/ezeket a tételeket. Nem lehetséges az elem(ek) visszaállítása. A művelet nem vonható vissza."
+        },
+        "button": {
+            "cancel": "Mégse",
+            "confirm": "Megerősítés"
+        },
+        "decreaseYourOwnSharePermissions": {
+            "button": {
+                "confirm": "Megerősítés"
+            },
+            "header": "Csökkentse a jelenlegi jogait",
+            "body": "Biztosan csökkenti a jogait ezzel a tétellel kapcsolatban? A művelet végleges, és egyedül nem tudja visszaállítani az előző megosztás jogait. Bármikor kapcsolatba léphet az elem tulajdonosával, amennyiben a korábbi jogosultságainak visszaállítására van szükség."
         }
     },
     "actions": {
@@ -368,6 +404,97 @@
         "expander": {
             "hide": "Elérési út elrejtése",
             "show": "Elérési út mutatása"
+        }
+    },
+    "errorCode": {
+        "operation_copyNodes": "A másolás művelet nem sikerült.",
+        "operation_cloneVersion": "A klónozás művelet nem sikerült.",
+        "code_LINK_NOT_FOUND": "A művelet nem sikerült. A link már nem létezik",
+        "code_MISSING_FIELD": "Belső hiba történt, nem sikerült helyreállítani az elemhez tartozó összes információt",
+        "code_NODE_WRITE_ERROR": "Úgy tűnik, hogy ez az elem nem szerkeszthető, vagy nincs engedélye annak szerkesztésére",
+        "code_VERSIONS_LIMIT_REACHED": "A művelet nem fejezhető be. Elérte a maximális számot.",
+        "code": "Valamilyen hiba történt",
+        "code_NODE_DUPLICATED": "Ebben a mappában van egy azonos nevű elem",
+        "code_Generic": "Valamilyen hiba történt",
+        "code_ACCOUNT_NOT_FOUND": "Úgy tűnik, hogy ez az e-mail-cím nincs felhasználóhoz társítva",
+        "code_NODE_COPY_ERROR": "Sajnáljuk, a tétel másolása nem sikerült. Próbálja újra",
+        "code_NODE_NOT_FOUND": "Úgy tűnik, hogy ez az elem nem létezik, vagy nincs engedélye a hozzáféréshez",
+        "code_FILE_VERSION_NOT_FOUND": "Sajnáljuk, de az elemnek ez a verziója nem található",
+        "code_SHARE_CREATION_ERROR": "Sajnáljuk, de az elemet nem lehet megosztani ezzel a felhasználóval",
+        "code_SHARE_NOT_FOUND": "Sajnáljuk, de ez a megosztás nem található",
+        "code_OVER_QUOTA_REACHED": "Elérte a tárhelykorlátot. Töröljön elemeket tárhely felszabadításához vagy próbálja újra"
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "title": {
+                    "presentation": "Új bemutató létrehozása",
+                    "document": "Új dokumentum létrehozása",
+                    "spreadsheet": "Új táblázat létrehozása"
+                },
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "Dokumentum címe",
+                            "presentation": "Bemutató neve",
+                            "spreadsheet": "Táblázat neve"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "dropzone": {
+        "move": {
+            "message": {
+                "enabled": "Húzza ide a tárgyait \n hogy gyorsan áthelyezhesse őket ebbe a mappába.",
+                "disabled": "Ezen a területen nem ejtheti le a tételeket."
+            },
+            "title": {
+                "enabled": "Drag&Drop mód.",
+                "disabled": "Drag&Drop mód"
+            }
+        }
+    },
+    "empty": {
+        "filter": {
+            "hint": "Úgy tűnik, nincs itt semmi.",
+            "recents": "Úgy tűnik, még nincsenek friss tételek.",
+            "flagged": "Nincsenek megjelölt elemek.",
+            "sharedWithMe": "Még nincsenek önnel megosztott elemek.",
+            "trash": "A kuka üres.",
+            "sharedByMe": "Még nem osztott meg egyetlen elemet sem a munkatársaival."
+        },
+        "folder": {
+            "displayerContent": "Ennek a mappának nincs tartalma.",
+            "hint": "Úgy tűnik, hogy ez a mappa üres.",
+            "state": "Húzzon egy fájlt, vagy hozzon létre egy újat az „ÚJ” gombra kattintva."
+        },
+        "search": {
+            "hint": "A keresés nem egyezett egyetlen fájllal vagy mappával sem.",
+            "noResults": [
+                "Nincs találat. Folytassa a keresést!",
+                "Nincs találat a keresésre."
+            ],
+            "notRun": "Még nem történt keresés."
+        }
+    },
+    "label": {
+        "app_name": "Fájlok"
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "title": "Új mappa létrehozása",
+                "input": {
+                    "label": {
+                        "name": "Mappa neve"
+                    }
+                },
+                "button": {
+                    "confirm": "Létrehoz"
+                }
+            }
         }
     }
 }
