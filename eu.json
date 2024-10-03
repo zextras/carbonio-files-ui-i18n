@@ -1,7 +1,128 @@
 {
     "displayer": {
         "details": {
-            "description": "Deskribapena"
+            "description": "Deskribapena",
+            "collaborators": "Laguntzaileak",
+            "content": "Edukia",
+            "copyShortcut": "elementuaren lasterbidea kopiatu",
+            "createdBy": "Sortzailea",
+            "editDescription": {
+                "editIconTooltip": "Deskribapena aldatu",
+                "saveIconTooltip": "Edizioak gorde",
+                "input": {
+                    "label": "Baimendutako gehienezko luzera 4096 karakterekoa da"
+                },
+                "closeIconTooltip": "Gorde gabe itxi"
+            },
+            "lastEdit": "Azken edizioa",
+            "missingDescription": "Editatu botoian klik egin deskribapen bat eransteko",
+            "owner": "Jabea",
+            "position": "Posizioa",
+            "sendMailTo": "Posta elektronikoa bidali:{{email}}",
+            "showPath": "Helbidea erakutsi",
+            "size": "Tamaina",
+            "collaboratorsTooltip": "Laguntzaile zerrenda ikusi"
+        },
+        "filter": {
+            "flagged_empty": [
+                {
+                    "message": "Behar duzun guztietan aurkituko duzu hemen.",
+                    "title": "Klik egin banderan elementu bat markatzeko."
+                },
+                {
+                    "message": "Hemen egongo dira zerrendatuta.",
+                    "title": "Bandera bat eman item garrantzitsuei beraien jarraipena izateko."
+                }
+            ],
+            "flagged_full": [
+                {
+                    "message": "Behar duzun guztietan aurkituko duzu hemen.",
+                    "title": "Klik egin markan elementu bat markatzeko."
+                },
+                {
+                    "message": "Hemen egongo dira zerrendatuta."
+                }
+            ]
+        }
+    },
+    "actions": {
+        "deletePermanently": "Betirako ezabatu",
+        "download": "Deskargatu",
+        "edit": "Editatu",
+        "flag": "Bandera ezarri",
+        "goToFolder": "Helburu karpetara joan",
+        "manageShares": "Partekatuak kudeatu",
+        "markForDeletion": "Ezabatu",
+        "move": "Mugitu",
+        "moveToTrash": "Ezabatu",
+        "openWithDocs": "Dokumentua ireki",
+        "preview": "Aurrebista",
+        "restore": "Berrezarri",
+        "unflag": "Bandera kendu",
+        "copy": "Kopiatu",
+        "rename": "Izena aldatu",
+        "sendViaMail": "E-mail bidez bidali",
+        "removeUpload": "Karga ezabatu",
+        "retryUpload": "Berriro saiatu kargatzen"
+    },
+    "breadcrumb": {
+        "expander": {
+            "hide": "Karpetaren helbidea ezkutatu",
+            "show": "Karpetaren helbidea erakutsi"
+        }
+    },
+    "carbonio-public-folder-ui": {
+        "invalidLink": {
+            "description": {
+                "line1": "Esteka hau ezabatu egin da edo ez da baliozkoa.",
+                "line2": "Informazio gehiago lortu nahi izanez gero, jarri zaitez harremanetan zurekin partekatu zuen pertsonarekin."
+            },
+            "title": "Sarbide publikoko esteka ez dago eskuragarri."
+        },
+        "listHeader": {
+            "extension": "Extensioa",
+            "lastModified": "Azken aldiz aldatua",
+            "name": "Izena",
+            "size": "Tamaina"
+        },
+        "emptyFolder": "Ez dago fitxategirik karpeta honetan."
+    },
+    "collaborationLinks": {
+        "button": {
+            "generateLink": "Esteka Sortu",
+            "revoke": "Ezeztatu"
+        },
+        "link": {
+            "urlChip": {
+                "tooltip": {
+                    "copy": "Kolaborazio esteka kopiatu"
+                }
+            }
+        },
+        "row": {
+            "title": {
+                "ReadAndShare": "Irakurri eta Partekatu",
+                "writeAndShare": "Idatzi eta Partekatu"
+            },
+            "placeholder": "Esteka bat sortu elementua partekatzeko"
+        },
+        "title": "Kolaborazio estekak",
+        "description": "Barne-erabiltzaileek esteka irekitzean jasoko dituzte baimenak. Emandako baimenak beti alda ditzakezu."
+    },
+    "create": {
+        "options": {
+            "new": {
+                "document": "Dokumentu berria",
+                "folder": "Karpeta berria",
+                "libreDocument": "DukumentuaIreki{{ext}}",
+                "msDocument": "Microsoft{{ext}}",
+                "msDocument_docx": "Microsoft Word {{ext}}",
+                "msDocument_xlsx": "Microsoft Excel {{ext}}",
+                "presentation": "Presentazio berria",
+                "spreadsheet": "Kalkulu.orri berria",
+                "msDocument_pptx": "Microsoft PowerPoint {{ext}}",
+                "upload": "Igo"
+            }
         }
     }
 }
