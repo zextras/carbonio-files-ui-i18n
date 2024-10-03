@@ -214,6 +214,9 @@
         },
         "type": {
             "folder": "Klasör"
+        },
+        "preview": {
+            "failed": "Resim yüklenemedi"
         }
     },
     "secondaryBar": {
@@ -650,8 +653,7 @@
         "advancedSearch": {
             "button": {
                 "filters_one": "{{count}} gelişmiş filtre",
-                "filters_other": "{{count}} gelişmiş filtre",
-                "filters_zero": "Gelişmiş filtreler"
+                "filters_other": "{{count}} gelişmiş filtre"
             },
             "modal": {
                 "button": {
@@ -794,7 +796,10 @@
         "code_FILE_VERSION_NOT_FOUND": "Üzgünüz, öğenin bu versiyonu bulunamadı",
         "code_NODE_DUPLICATED": "Bu klasörde aynı isimde bir öğe var",
         "code_VERSIONS_LIMIT_REACHED": "İşlem tamamlanamadı. Maksimum limite ulaştınız.",
-        "code_NODE_COPY_ERROR": "Öğe kopyalanamadı. Lütfen tekrar deneyin"
+        "code_NODE_COPY_ERROR": "Öğe kopyalanamadı. Lütfen tekrar deneyin",
+        "code_OVER_QUOTA_REACHED": "Depolama alanı sınırınıza ulaştınız. Depolama alanını boşaltmak için bazı öğeleri silin ve tekrar deneyin",
+        "operation_copyNodes": "Kopyalama işlemi başarısız.",
+        "operation_cloneVersion": "Klonlama işlemi başarısız."
     },
     "publicLink": {
         "addLink": {
@@ -933,5 +938,8 @@
             "name": "Ad",
             "size": "Boyut"
         }
+    },
+    "quota": {
+        "limitedSpace": "{{used}} - {{limit}} kullanıldı"
     }
 }
