@@ -899,6 +899,9 @@
         },
         "button": {
             "refresh": "Rafraîchir l'aperçu"
+        },
+        "video": {
+            "errorLabel": "Cette vidéo ne peut pas être lue. Essayez de la lancer depuis un autre navigateur"
         }
     },
     "label": {
