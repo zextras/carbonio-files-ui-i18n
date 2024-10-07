@@ -902,6 +902,9 @@
         },
         "button": {
             "refresh": "Ricarica l'anteprima"
+        },
+        "video": {
+            "errorLabel": "Questo video non può essere riprodotto. Prova a riprodurlo utilizzando un altro browser"
         }
     },
     "uploadItem": {
