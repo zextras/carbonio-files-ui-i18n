@@ -649,6 +649,9 @@
             "error": "An error occurred while loading the preview. Try again.",
             "file": "Loading item preview, please wait…",
             "retrying": "Trying to load the preview…"
+        },
+        "video": {
+            "errorLabel": "This video cannot be played. Try to reproduce it using another browser"
         }
     },
     "publicLink": {
