@@ -902,6 +902,9 @@
         },
         "button": {
             "refresh": "Odśwież podgląd"
+        },
+        "video": {
+            "errorLabel": "Nie udało się odtworzyć tego wideo. Spróbuj używając innej przeglądarki"
         }
     },
     "uploadItem": {
