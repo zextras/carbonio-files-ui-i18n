@@ -10,7 +10,7 @@
             "recents": "Recentes"
         },
         "filters": "Filtros",
-        "uploads": "Uploads",
+        "uploads": "Carregamentos",
         "filesHome": "Início"
     },
     "create": {
@@ -691,7 +691,7 @@
                 "title": "Clique em \"NOVO\" para criar um documento ou pasta, e compartilhe com seus contatos."
             },
             {
-                "message": "Crie um item clicando no botão \"NOVO\"",
+                "message": "Crie um item clicando no botão \"NOVO\".",
                 "title": "Comece a editar e compartilhar seu trabalho."
             },
             {
@@ -899,6 +899,9 @@
         },
         "button": {
             "refresh": "Atualizar pré-visualização"
+        },
+        "video": {
+            "errorLabel": "Este vídeo não pode ser reproduzido. Tente reproduzi-lo usando outro navegador"
         }
     },
     "label": {
