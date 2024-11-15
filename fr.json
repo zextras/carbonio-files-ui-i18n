@@ -268,7 +268,8 @@
         },
         "clipboard": {
             "email": "Adresse e-mail copiée",
-            "itemShortcutCopied": "Raccourci de l'élément copié"
+            "itemShortcutCopied": "Raccourci de l'élément copié",
+            "accessCodeCopied": "Code d'accès copié"
         },
         "copyNodes": {
             "action": "Aller au dossier",
@@ -324,6 +325,15 @@
         "error": {
             "overQuota": {
                 "actionLabel": "OK"
+            }
+        },
+        "accessCode": {
+            "regenerate": "Nouveau code d'accès généré"
+        },
+        "openWithDocs": {
+            "error": {
+                "exceedSizeLimit": "L'article dépasse la taille limite autorisée et ne peut être ouvert.",
+                "pleaseDownload": "Pour visualiser l'article, veuillez le télécharger sur votre appareil"
             }
         }
     },
@@ -879,6 +889,26 @@
             "title_one": "Lien d'accès publique",
             "title_many": "Liens d'accès publiques",
             "title_other": "Liens d'accès publiques"
+        },
+        "accessCode": {
+            "input": {
+                "label": "Code d'accès"
+            },
+            "chip": {
+                "label": "Code d'accès",
+                "tooltip": "Copier le code d'accès"
+            },
+            "switch": {
+                "label": "Activer le code d'accès"
+            },
+            "buttons": {
+                "copy": {
+                    "tooltip": "Copier le code d'accès"
+                },
+                "regenerate": {
+                    "tooltip": "Générer un nouveau code d'accès"
+                }
+            }
         }
     },
     "preview": {
@@ -967,6 +997,16 @@
             "lastModified": "Dernière modification",
             "name": "Nom",
             "size": "Taille"
+        },
+        "accessCode": {
+            "modal": {
+                "button": {
+                    "confirm": "Fait"
+                },
+                "title": "Le lien est sécurisé par un code d'accès",
+                "description": "Veuillez insérer le code d'accès pour visualiser le dossier",
+                "wrongAccessCode": "Code d'accès erroné, réessayer"
+            }
         }
     },
     "quota": {
