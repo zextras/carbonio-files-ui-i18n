@@ -39,6 +39,16 @@
             "lastModified": "Last modified",
             "name": "Name",
             "size": "Size"
+        },
+        "accessCode": {
+            "modal": {
+                "title": "The link is secured by an access code",
+                "description": "Please, insert the access code to view the folder",
+                "button": {
+                    "confirm": "Done"
+                },
+                "wrongAccessCode": "Wrong access code, try again"
+            }
         }
     },
     "collaborationLinks": {
@@ -705,6 +715,26 @@
                     "expired": "This link has expired"
                 }
             }
+        },
+        "accessCode": {
+            "chip": {
+                "tooltip": "Copy access code",
+                "label": "Access code"
+            },
+            "switch": {
+                "label": "Enable access code"
+            },
+            "input": {
+                "label": "Access code"
+            },
+            "buttons": {
+                "copy": {
+                    "tooltip": "Copy access code"
+                },
+                "regenerate": {
+                    "tooltip": "Generate new access code"
+                }
+            }
         }
     },
     "quota": {
@@ -834,7 +864,8 @@
     "snackbar": {
         "clipboard": {
             "email": "Email address copied",
-            "itemShortcutCopied": "Item shortcut copied"
+            "itemShortcutCopied": "Item shortcut copied",
+            "accessCodeCopied": "Access code copied"
         },
         "collaborationLink": {
             "actionLabel": {
@@ -919,6 +950,15 @@
         "error": {
             "overQuota": {
                 "actionLabel": "OK"
+            }
+        },
+        "accessCode": {
+            "regenerate": "New access code generated"
+        },
+        "openWithDocs": {
+            "error": {
+                "pleaseDownload": "To view the item, please download it on your device",
+                "exceedSizeLimit": "The item exceeds the size limit allowed and cannot be opened."
             }
         }
     },
