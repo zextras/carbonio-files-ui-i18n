@@ -46,7 +46,8 @@
         },
         "clipboard": {
             "email": "Indirizzo email copiato",
-            "itemShortcutCopied": "Scorciatoia elemento copiata"
+            "itemShortcutCopied": "Scorciatoia elemento copiata",
+            "accessCodeCopied": "Codice di accesso copiato"
         },
         "copyNodes": {
             "action": "Vai alla cartella",
@@ -103,6 +104,9 @@
             "overQuota": {
                 "actionLabel": "OK"
             }
+        },
+        "accessCode": {
+            "regenerate": "Nuovo codice di accesso generato"
         }
     },
     "secondaryBar": {
@@ -879,6 +883,26 @@
             "addLink": {
                 "description": "Chiunque abbia questo link può vedere e scaricare il contenuto di questa cartella."
             }
+        },
+        "accessCode": {
+            "chip": {
+                "tooltip": "Copia codice di accesso",
+                "label": "Codice di accesso"
+            },
+            "input": {
+                "label": "Codice di accesso"
+            },
+            "switch": {
+                "label": "Abilita codice di accesso"
+            },
+            "buttons": {
+                "regenerate": {
+                    "tooltip": "Genera nuovo codice di accesso"
+                },
+                "copy": {
+                    "tooltip": "Copia codice di accesso"
+                }
+            }
         }
     },
     "label": {
@@ -967,6 +991,16 @@
             "lastModified": "Ultima modifica",
             "name": "Nome",
             "size": "Dimensione"
+        },
+        "accessCode": {
+            "modal": {
+                "button": {
+                    "confirm": "Fatto"
+                },
+                "description": "Per favore inserisci il codice di accesso per visualizzare la cartella",
+                "wrongAccessCode": "Codice di accesso errato, riprova",
+                "title": "Questo link è protetto da un codice di accesso"
+            }
         }
     },
     "quota": {
