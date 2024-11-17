@@ -3,5 +3,98 @@
         "close": {
             "tooltip": "أغلق"
         }
+    },
+    "create": {
+        "options": {
+            "new": {
+                "folder": "مجلد جديد",
+                "presentation": "عرض تقديمي جديد",
+                "spreadsheet": "جدول بيانات جديد",
+                "document": "مستند جديد",
+                "libreDocument": "ملف حر بصيغة {{ext}}",
+                "msDocument": "ملف مايكروسوفت بصيغة {{ext}}",
+                "msDocument_docx": "مايكروسوفت وورد {{ext}}",
+                "msDocument_pptx": "مايكروسوفت باوربوينت {{ext}}",
+                "msDocument_xlsx": "مايكروسوفت إكسل {{ext}}",
+                "upload": "رفع"
+            }
+        }
+    },
+    "carbonio-public-folder-ui": {
+        "emptyFolder": "لا يوجد أي عناصر في هذا المجلد.",
+        "invalidLink": {
+            "description": {
+                "line1": "لقد تمت إزالة هذا الرابط أو أنه غير صالح.",
+                "line2": "لمزيد من المعلومات، حاول الاتصال بالشخص الذي شاركها معك."
+            },
+            "title": "رابط الوصول العام غير متاح."
+        },
+        "listHeader": {
+            "extension": "امتداد",
+            "lastModified": "التعديل الأخير",
+            "name": "الإسم",
+            "size": "الحجم"
+        }
+    },
+    "collaborationLinks": {
+        "button": {
+            "generateLink": "إنشاء رابط",
+            "revoke": "فسخ"
+        },
+        "description": "سيحصل المستخدمون الداخليون على الأذونات بفتح الرابط. يمكنك دائمًا تعديل الأذونات الممنوحة.",
+        "link": {
+            "urlChip": {
+                "tooltip": {
+                    "copy": "نسخ رابط التعاون"
+                }
+            }
+        },
+        "row": {
+            "placeholder": "إنشاء رابط لمشاركة العنصر",
+            "title": {
+                "ReadAndShare": "قرائة و مشاركة",
+                "writeAndShare": "كتابة و مشاركة"
+            }
+        },
+        "title": "روابط التعاون"
+    },
+    "displayer": {
+        "details": {
+            "collaborators": "المتعاونون",
+            "collaboratorsTooltip": "مشاهدة قائمة المتعاونين",
+            "content": "المحتوى",
+            "copyShortcut": "نسخ اختصار عنصر/عناصر",
+            "createdBy": "تم إنشاؤه بواسطة",
+            "description": "الوصف",
+            "editDescription": {
+                "closeIconTooltip": "إغلاق بدون حفظ"
+            }
+        }
+    },
+    "actions": {
+        "copy": "نسخ",
+        "deletePermanently": "حذف بشكل نهائي",
+        "download": "تنزيل",
+        "edit": "تحرير",
+        "flag": "تعلِيم",
+        "goToFolder": "انتقل إلى مجلد الوجهة",
+        "manageShares": "إدارة المشاركات",
+        "markForDeletion": "وضع علامة للحذف",
+        "move": "نقل",
+        "moveToTrash": "حذف",
+        "openWithDocs": "فتح مستند",
+        "preview": "معاينة",
+        "removeUpload": "إزالة التحميل",
+        "rename": "إعادة تسمية",
+        "restore": "استعادة",
+        "retryUpload": "إعادة محاولة التحميل",
+        "sendViaMail": "إرسال عبر البريد الإلكتروني",
+        "unflag": "إزالة العلامة"
+    },
+    "breadcrumb": {
+        "expander": {
+            "hide": "إخفاء مسار المجلد",
+            "show": "إظهار مسار المجلد"
+        }
     }
 }
