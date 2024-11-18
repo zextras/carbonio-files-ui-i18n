@@ -107,6 +107,12 @@
         },
         "accessCode": {
             "regenerate": "Nuovo codice di accesso generato"
+        },
+        "openWithDocs": {
+            "error": {
+                "exceedSizeLimit": "L'elemento supera il limite di dimensione consentito e non può essere aperto.",
+                "pleaseDownload": "Per visualizzare l'elemento, scaricalo sul tuo dispositivo"
+            }
         }
     },
     "secondaryBar": {
