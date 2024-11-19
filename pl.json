@@ -201,7 +201,8 @@
         },
         "clipboard": {
             "email": "Adres e-mail został skopiowany",
-            "itemShortcutCopied": "Skrót do elementu został skopiowany"
+            "itemShortcutCopied": "Skrót do elementu został skopiowany",
+            "accessCodeCopied": "Kod dostępu został skopiowany"
         },
         "copyNodes": {
             "action": "Idź do folderu",
@@ -273,6 +274,15 @@
         "error": {
             "overQuota": {
                 "actionLabel": "OK"
+            }
+        },
+        "accessCode": {
+            "regenerate": "Nowy kod dostępu został wygenerowany"
+        },
+        "openWithDocs": {
+            "error": {
+                "pleaseDownload": "Aby wyświetlić element, pobierz go na Twoje urządzenie",
+                "exceedSizeLimit": "Element przekracza dozwolony limit rozmiaru i nie może zostać otwarty."
             }
         }
     },
@@ -644,6 +654,26 @@
             "addLink": {
                 "description": "Każda osoba mająca dostęp do tego linka może wyświetlać i pobierać zawartość tego folderu."
             }
+        },
+        "accessCode": {
+            "chip": {
+                "label": "Kod dostępu",
+                "tooltip": "Skopiuj kod dostępu"
+            },
+            "input": {
+                "label": "Kod dostępu"
+            },
+            "switch": {
+                "label": "Włącz kod dostępu"
+            },
+            "buttons": {
+                "copy": {
+                    "tooltip": "Skopiuj kod dostępu"
+                },
+                "regenerate": {
+                    "tooltip": "Wygeneruj nowy kod dostępu"
+                }
+            }
         }
     },
     "secondaryBar": {
@@ -967,6 +997,16 @@
             "lastModified": "Ostatnio zmodyfikowano",
             "name": "Nazwa",
             "size": "Rozmiar"
+        },
+        "accessCode": {
+            "modal": {
+                "title": "Link jest zabezpieczony kodem dostępu",
+                "button": {
+                    "confirm": "Gotowe"
+                },
+                "description": "Wprowadź kod dostępu, aby zobaczyć folder",
+                "wrongAccessCode": "Niepoprawny kod dostępu, spróbuj ponownie"
+            }
         }
     },
     "quota": {
