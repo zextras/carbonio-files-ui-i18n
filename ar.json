@@ -2,6 +2,112 @@
     "modal": {
         "close": {
             "tooltip": "أغلق"
+        },
+        "deleteShare": {
+            "yourShare": {
+                "body": {
+                    "answer": "هل أنت متأكد من إزالة نفسك من هذا التعاون؟",
+                    "permissionLost": "سيتم فقدان جميع أذونات الوصول الممنوحة لك سابقًا."
+                }
+            },
+            "body": "هل أنت متأكد من إزالة جميع أذونات الوصول الممنوحة مسبقًا لـ {{shareTarget}}؟",
+            "button": {
+                "confirm": "إزالة"
+            },
+            "header": "Remove share"
+        },
+        "moreInfo": {
+            "title": "معلومات إضافية"
+        },
+        "nodeSelection": {
+            "button": {
+                "create": "أنشىء",
+                "newFolder": {
+                    "disabled": "ليس لديك الأذونات الصحيحة",
+                    "label": "مجلد جديد"
+                }
+            },
+            "input": {
+                "newFolder": "اسم المجلد الجديد"
+            }
+        },
+        "purgeAllVersions": {
+            "button": {
+                "confirm": "إزالة جميع الإصدارات"
+            },
+            "body": "سيتم حذف جميع الإصدارات التي لم يتم تحديدها للاحتفاظ بها إلى الأبد، باستثناء الإصدار الحالي. لن تتمكن من استعادة هذه الإصدارات.",
+            "header": "إزالة جميع الإصدارات"
+        },
+        "removeLink": {
+            "button": {
+                "confirm": "إزالة"
+            },
+            "header": "إزالة {{nodeName}} {{linkName}}",
+            "body": "انتهت صلاحية هذا الرابط، وبالتالي لا يمكن استخدامه بعد الآن للوصول إلى العنصر. يمكنك إزالة الرابط من القائمة أو تحديث تاريخ انتهاء صلاحيته والمعلومات الأخرى حتى تتمكن من الاستمرار في استخدامه."
+        },
+        "revokeCollaborationLink": {
+            "header": "إلغاء رابط التعاون {{nodeName}}",
+            "button": {
+                "confirm": "أَلْغَى"
+            },
+            "body": "من خلال إلغاء هذا الرابط، فإنك تمنع إمكانية إنشاء مشاركات جديدة به. وسيحتفظ كل من استخدم رابط التعاون بالفعل بالقدرة على الوصول إلى العنصر."
+        },
+        "revokeLink": {
+            "button": {
+                "confirm": "أَلْغَى"
+            },
+            "body": "من خلال إلغاء هذا الرابط، فإنك تمنع الوصول إلى {{nodeName}} لأي شخص يحاول استخدام الرابط للوصول إلى العنصر.",
+            "header": "إلغاء {{nodeName}} {{linkName}}"
+        },
+        "roots": {
+            "trash": {
+                "myElements": "عناصري",
+                "sharedWitMe": "العناصر المُشتركة",
+                "trash": "سلة المهملات"
+            },
+            "sharedWitMe": "التي تمت مشاركتها معي",
+            "rootsList": "الملفات",
+            "filesHome": "الرئيسية"
+        },
+        "unsaved_changes": {
+            "body": {
+                "line1": "متأكد أنك تريد مغادرة هذه الصفحة دون الحفظ؟",
+                "line2": "سيتم فقدان جميع التغييرات غير المحفوظة."
+            },
+            "button": {
+                "leave_anyway": "المغادرة على أية حال",
+                "save_and_leave": "احفظ و وغادر"
+            },
+            "title": {
+                "cannot_saved_changes": "لا يمكن حفظ بعض التغييرات",
+                "unsaved_changes": "لديك تغييرات غير محفوظة"
+            }
+        },
+        "nodesSelection": {
+            "selectedCount_zero": "{{count}} عنصر محدد",
+            "selectedCount_one": "{{count}} عنصر محدد",
+            "selectedCount_two": "عنصران {{count}} محددان",
+            "selectedCount_few": "{{count}} عناصر محدده",
+            "selectedCount_many": "{{count}} عنصراً محدداً",
+            "selectedCount_other": "{{count}} عنصرٍ محددٍ"
+        },
+        "decreaseYourOwnSharePermissions": {
+            "header": "تقليل حقوقك الحالية",
+            "body": "هل أنت متأكد من تقليص حقوقك على هذا العنصر؟ الإجراء دائم ولن تتمكن من استعادة حقوق المشاركة السابقة بنفسك. يمكنك دائمًا الاتصال بمالك العنصر المشترك إذا كنت بحاجة إلى استعادة الإذن السابق.",
+            "button": {
+                "confirm": "أكد"
+            }
+        },
+        "deletePermanently": {
+            "body": "سيتم حذف هذا العنصرأو هذه العناصر بشكل دائم. لن تتمكن من استرداد هذا العنصر أو هذه العناصر بعد الآن. هذا الإجراء لا رجعة فيه.",
+            "button": {
+                "confirm": "حذف نهائيا"
+            },
+            "header": "هذا الإجراء لا رجعة فيه"
+        },
+        "button": {
+            "cancel": "أَلْغَى",
+            "confirm": "أكد"
         }
     },
     "create": {
@@ -39,7 +145,7 @@
     "collaborationLinks": {
         "button": {
             "generateLink": "إنشاء رابط",
-            "revoke": "فسخ"
+            "revoke": "أَلْغَى"
         },
         "description": "سيحصل المستخدمون الداخليون على الأذونات بفتح الرابط. يمكنك دائمًا تعديل الأذونات الممنوحة.",
         "link": {
@@ -308,7 +414,49 @@
             }
         ],
         "tabs": {
-            "activities": "الأنشطة"
+            "activities": "الأنشطة",
+            "details": "التفاصيل",
+            "sharing": "المشاركة",
+            "versioning": "الإصدارات"
+        },
+        "version": {
+            "rowHeaders": {
+                "lastWeek": "آخر 7 أيام",
+                "currentVersion": "النسخة الحالية",
+                "olderVersions": "الإصدارات الأقدم"
+            },
+            "actions": {
+                "cloneAsCurrent": "استنساخ كحالي",
+                "deleteVersion": "حذف الإصدار",
+                "downloadVersion": "تنزيل النسخة",
+                "keepVersion": "احتفظ بهذه النسخة للأبد",
+                "removeKeepVersion": "إزالة الاحتفاظ بها إلى الأبد",
+                "tooltip": {
+                    "disabledByDocs": "لا يمكن فتح هذه النسخة بواسطة محرر الإنترنت",
+                    "disabledByMaxKeepVersion": "لقد وصلت إلى الحد الأقصى لعدد الإصدارات التي يجب الاحتفاظ بها إلى الأبد",
+                    "disabledByMaxVersion": "لقد وصلت إلى الحد الأقصى لعدد الإصدارات",
+                    "disabledByPermission": "ليس لديك الأذونات الصحيحة",
+                    "disabledByVersionKeepForever": "لا يمكن حذف الإصدارات التي تم تحديدها للاحتفاظ بها إلى الأبد",
+                    "disabledByDeleteCurrent": "لا يمكن حذف الإصدار الحالي"
+                },
+                "openDocumentVersion": "نسخة المستند المفتوح"
+            },
+            "button": {
+                "purgeAllVersions": "إزالة جميع الإصدارات",
+                "upload": "تحميل نسخة"
+            },
+            "mainHint": "يحفظ تطبيق الملفات -Files- أخر {{maxVersions}} إصدارًا من العناصر لديك. يمكنك حذف أي إصدار من العناصر يدويًا أو استعادة إصدار واحد كإصدار حالي. حدد إصدارًا واحدًا أو أكثر تريد الاحتفاظ به إلى الأبد.",
+            "row": {
+                "clonedIcon": {
+                    "tooltip1": "تم استنساخه من الإصدار {{versionNumber}} ({{cloneDate}})",
+                    "tooltip2": "تم استنساخه من الإصدار {{versionNumber}} (تم حذف الإصدار)"
+                },
+                "versionNumber": "الإصدار {{versionNumber}}"
+            }
+        },
+        "uploads": {
+            "message": "هنا يمكنك العثور على جميع العناصر التي يتم تحميلها حاليًا، ويمكنك إدارتها من هنا.",
+            "title": "اقتراحات التحميل"
         }
     },
     "actions": {
@@ -358,7 +506,8 @@
     "dropzone": {
         "move": {
             "title": {
-                "disabled": "وضع السحب والإفلات."
+                "disabled": "وضع السحب والإفلات.",
+                "enabled": "وضع السحب والإفلات."
             },
             "message": {
                 "enabled": "قم بإفلات العناصر الخاصة بك هنا \n  لتتمكن من نقلها بسرعة إلى هذا المجلد.",
@@ -408,12 +557,170 @@
         "create": {
             "modal": {
                 "title": {
-                    "spreadsheet": "إنشاء جدول بيانات جديد"
+                    "spreadsheet": "إنشاء جدول بيانات جديد",
+                    "presentation": "إنشاء عرض تقديمي جديد",
+                    "document": "إنشاء مستند جديد"
+                },
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "اسم المستند",
+                            "presentation": "اسم العرض التقديمي",
+                            "spreadsheet": "اسم جدول البيانات"
+                        }
+                    }
                 }
             }
         }
     },
     "label": {
         "app_name": "الملفات"
+    },
+    "node": {
+        "alias": {
+            "name_LOCAL_ROOT": "الرئيسية",
+            "name_SHARED_WITH_ME_ROOT": "التي تمت مشاركتها معي",
+            "name_TRASH_ROOT": "سلة المهملات"
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "tooltip": {
+                        "confirm": "لا يمكنك تنفيذ هذا الإجراء هنا"
+                    },
+                    "confirm": "نسخ"
+                },
+                "title_zero": "نسخ",
+                "title_one": "نسخ {{node.name}}",
+                "title_two": "نسخ العناصرين",
+                "title_few": "نسخ العناصر",
+                "title_many": "نسخ العناصر",
+                "title_other": "نسخ العناصر"
+            }
+        },
+        "move": {
+            "error": {
+                "not": {
+                    "allowed": "لا يمكنك نقل عناصر متعددة من مرشح أو بحث"
+                }
+            },
+            "modal": {
+                "button": {
+                    "confirm": "نقل",
+                    "tooltip": {
+                        "confirm": "لا يمكنك تنفيذ هذا الإجراء هنا"
+                    }
+                },
+                "input": {
+                    "filter": "تصفية المجلدات"
+                },
+                "subtitle": "حدد مجلد الوجهة:",
+                "title_zero": "نقل",
+                "title_one": "نقل {{node.name}}",
+                "title_two": "نقل العنصرين",
+                "title_few": "نقل العناصر",
+                "title_many": "نقل العناصر",
+                "title_other": "نقل العناصر"
+            }
+        },
+        "rename": {
+            "modal": {
+                "button": {
+                    "confirm": "إعادة تسمية"
+                },
+                "input": {
+                    "label": {
+                        "name": "اسم العنصر"
+                    }
+                },
+                "title": "إعادة تسمية العنصر"
+            }
+        },
+        "preview": {
+            "failed": "فشل تحميل الصورة"
+        },
+        "type": {
+            "folder": "مجلد"
+        }
+    },
+    "preview": {
+        "actions": {
+            "tooltip": {
+                "manageShares": "إدارة المشاركة",
+                "download": "تنزيل",
+                "edit": "تحرير"
+            }
+        },
+        "loading": {
+            "error": "حدث خطأ أثناء عرض المعاينة. حاول مرة أخرى.",
+            "retrying": "محاولة عرض المعاينة…",
+            "file": "جاري عرض معاينة العنصر، يرجى الانتظار…"
+        },
+        "button": {
+            "refresh": "تحديث المعاينة"
+        },
+        "close": {
+            "tooltip": "إغلاق"
+        }
+    },
+    "publicLink": {
+        "addLink": {
+            "addLink": "إضافة رابط",
+            "generateLink": "إنشاء رابط",
+            "limitReached": "تم الوصول إلى الحد الأقصى لعدد الروابط العامة",
+            "undo": "تراجع",
+            "description": "يمكن للمستخدمين الداخليين والخارجيين الذين لديهم إمكانية الوصول إلى الرابط تنزيل العنصر."
+        },
+        "datePickerInput": {
+            "description": "ينتهي الرابط في نهاية اليوم المحدد"
+        },
+        "input": {
+            "description": {
+                "error": {
+                    "maxLengthAllowed": "الحد الأقصى المسموح به هو 300 حرف"
+                }
+            },
+            "label": "وصف الرابط"
+        },
+        "link": {
+            "editLink": "تعديل الرابط",
+            "expiredOn": "انتهت صلاحية الرابط في:",
+            "noExpirationDate": "ليس له تاريخ انتهاء الصلاحية",
+            "undo": "تراجع",
+            "urlChip": {
+                "tooltip": {
+                    "copy": "نسخ {{linkName}}"
+                }
+            },
+            "edit": "تحرير",
+            "expireOn": "تنتهي صلاحيته في:",
+            "revoke": "إلغاء",
+            "remove": "إزالة"
+        },
+        "folderLink": {
+            "title_zero": "رابط الوصول العام",
+            "title_one": "رابط الوصول العام",
+            "title_two": "رابطا الوصول العام",
+            "title_few": "روابط الوصول العام",
+            "title_many": "روابط الوصول العام",
+            "title_other": "روابط الوصول العام",
+            "addLink": {
+                "description": "يمكن لأي شخص لديه هذا الرابط عرض وتنزيل محتوى هذا المجلد."
+            }
+        },
+        "fileLink": {
+            "title_zero": "رابط التنزيل العام",
+            "title_one": "رابط التنزيل العام",
+            "title_two": "رابطا التنزيل العام",
+            "title_few": "روابط التنزيل العام",
+            "title_many": "روابط التنزيل العام",
+            "title_other": "روابط التنزيل العام",
+            "addLink": {
+                "description": "يمكن للمستخدمين الداخليين والخارجيين الذين لديهم إمكانية الوصول إلى الرابط تنزيل العنصر."
+            }
+        },
+        "dateTimePicker": {
+            "label": "تاريخ انتهاء الصلاحية"
+        }
     }
 }
