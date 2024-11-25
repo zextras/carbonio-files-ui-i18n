@@ -292,7 +292,8 @@
         },
         "clipboard": {
             "email": "Endereço de e-mail copiado",
-            "itemShortcutCopied": "Link do item copiado"
+            "itemShortcutCopied": "Link do item copiado",
+            "accessCodeCopied": "Código de acesso copiado"
         },
         "version": {
             "clone": "Versão clonada como atual",
@@ -325,6 +326,15 @@
             "overQuota": {
                 "actionLabel": "Ok"
             }
+        },
+        "openWithDocs": {
+            "error": {
+                "exceedSizeLimit": "O item excede o limite de tamanho permitido e não pode ser aberto.",
+                "pleaseDownload": "Para visualizar o item, faça o download no seu dispositivo"
+            }
+        },
+        "accessCode": {
+            "regenerate": "Novo código de acesso gerado"
         }
     },
     "actions": {
@@ -873,6 +883,26 @@
             "title_one": "Link de acesso público",
             "title_many": "Links de acesso público",
             "title_other": "Links de acesso público"
+        },
+        "accessCode": {
+            "chip": {
+                "label": "Código de acesso",
+                "tooltip": "Copiar o código de acesso"
+            },
+            "input": {
+                "label": "Código de acesso"
+            },
+            "switch": {
+                "label": "Habilitar código de acesso"
+            },
+            "buttons": {
+                "copy": {
+                    "tooltip": "Copiar o código de acesso"
+                },
+                "regenerate": {
+                    "tooltip": "Gerar novo código de acesso"
+                }
+            }
         }
     },
     "breadcrumb": {
@@ -967,7 +997,17 @@
             "name": "Nome",
             "size": "Tamanho"
         },
-        "emptyFolder": "Não há itens nesta pasta."
+        "emptyFolder": "Não há itens nesta pasta.",
+        "accessCode": {
+            "modal": {
+                "title": "O link é protegido por um código de acesso",
+                "button": {
+                    "confirm": "Feito"
+                },
+                "description": "Por favor, insira o código de acesso para visualizar a pasta",
+                "wrongAccessCode": "Código de acesso incorreto, tente novamente"
+            }
+        }
     },
     "quota": {
         "limitedSpace": "Usado {{used}} de {{limit}}",
