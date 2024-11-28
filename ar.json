@@ -122,7 +122,7 @@
                 "msDocument_docx": "مايكروسوفت وورد {{ext}}",
                 "msDocument_pptx": "مايكروسوفت باوربوينت {{ext}}",
                 "msDocument_xlsx": "مايكروسوفت إكسل {{ext}}",
-                "upload": "رفع"
+                "upload": "تحميل"
             }
         }
     },
@@ -140,6 +140,16 @@
             "lastModified": "التعديل الأخير",
             "name": "الإسم",
             "size": "الحجم"
+        },
+        "accessCode": {
+            "modal": {
+                "title": "تم تأمين الرابط برمز الوصول",
+                "button": {
+                    "confirm": "تم"
+                },
+                "wrongAccessCode": "رمز الوصول خاطئ، حاول مرة أخرى",
+                "description": "من فضلك أدخل رمز الدخول لعرض المجلد"
+            }
         }
     },
     "collaborationLinks": {
@@ -661,6 +671,9 @@
         },
         "close": {
             "tooltip": "إغلاق"
+        },
+        "video": {
+            "errorLabel": "لا يمكن تشغيل هذا الفيديو. حاول إعادة تشغيله باستخدام متصفح آخر"
         }
     },
     "publicLink": {
@@ -722,6 +735,26 @@
         },
         "dateTimePicker": {
             "label": "تاريخ انتهاء الصلاحية"
+        },
+        "accessCode": {
+            "chip": {
+                "label": "رمز الدخول",
+                "tooltip": "نسخ رمز الوصول"
+            },
+            "switch": {
+                "label": "تمكين رمز الوصول"
+            },
+            "input": {
+                "label": "رمز الدخول"
+            },
+            "buttons": {
+                "copy": {
+                    "tooltip": "نسخ رمز الوصول"
+                },
+                "regenerate": {
+                    "tooltip": "إنشاء رمز وصول جديد"
+                }
+            }
         }
     },
     "search": {
@@ -832,7 +865,8 @@
     "snackbar": {
         "clipboard": {
             "email": "تم نسخ عنوان البريد الإلكتروني",
-            "itemShortcutCopied": "تم نسخ اختصار العنصر"
+            "itemShortcutCopied": "تم نسخ اختصار العنصر",
+            "accessCodeCopied": "تم نسخ رمز الدخول"
         },
         "collaborationLink": {
             "actionLabel": {
@@ -864,6 +898,69 @@
         },
         "decreaseYourOwnShare": {
             "success": "تم تحديث الصلاحيات بنجاح"
+        },
+        "markForDeletion": {
+            "error": "لقد حدث خطأ، حاول مرة أخرى",
+            "showTrash": "فتح مجلد سلة المهملات",
+            "success": "تم نقل العنصر إلى سلة المهملات"
+        },
+        "moveNodes": {
+            "error": "لقد حدث خطأ ما، حاول مرة أخرى",
+            "success": "تم نقل العنصر",
+            "action": "انتقل إلى المجلد"
+        },
+        "publicLink": {
+            "actionLabel": {
+                "copyLink": "نسخ الرابط"
+            },
+            "copyLink": "تم نسخ {{linkName}}",
+            "newPublicLinkGenerated": {
+                "label": "تم إنشاء {{linkName}} جديد"
+            },
+            "linkUpdated": {
+                "label": "تم تحديث {{linkName}}"
+            }
+        },
+        "restore": {
+            "showInFolder": "عرض في المجلد",
+            "error": "لقد حدث خطأ ما، حاول مرة أخرى",
+            "success": "نجح"
+        },
+        "upload": {
+            "moreInfo": "مزيد من المعلومات‭‮",
+            "foldersNotAllowed": "لا يمكن تحميل المجلدات",
+            "success": "تم تحميله في {{destination}}",
+            "nodesNotAllowed": "لم يتم تحميل بعض العناصر",
+            "goToFolder": "انتقل إلى المجلد"
+        },
+        "version": {
+            "keepForeverAdded": "عُلِم هذا الإصدار ليتم الاحتفاظ به إلى الأبد",
+            "keepForeverRemoved": "أُزِيل \"الاحتفاظ بها إلى الأبد\"",
+            "clone": "تم استنساخ الإصدار كالإصدار الحالي"
+        },
+        "error": {
+            "overQuota": {
+                "actionLabel": "حسناً"
+            }
+        },
+        "accessCode": {
+            "regenerate": "تم إنشاء رمز وصول جديد"
+        },
+        "openWithDocs": {
+            "error": {
+                "pleaseDownload": "لمشاهدة العنصر، يرجى تنزيله على جهازك",
+                "exceedSizeLimit": "يتجاوز العنصر الحد الأقصى للحجم المسموح به ولا يمكن فتحه."
+            }
+        },
+        "createDocument": {
+            "error": {
+                "overQuota": {
+                    "document": "فشل إنشاء مستند جديد. لقد وصلت إلى الحد الأقصى للتخزين. احذف بعض العناصر لتحرير مساحة التخزين وحاول مرة أخرى",
+                    "spreadsheet": "فشل إنشاء جدول بيانات جديد. لقد وصلت إلى الحد الأقصى للتخزين. احذف بعض العناصر لتحرير مساحة التخزين وحاول مرة أخرى",
+                    "presentation": "فشل إنشاء عرض تقديمي جديد. لقد وصلت إلى الحد الأقصى للتخزين. احذف بعض العناصر لتحرير مساحة التخزين وحاول مرة أخرى",
+                    "actionLabel": "حسناً"
+                }
+            }
         }
     },
     "share": {
@@ -888,5 +985,77 @@
             }
         },
         "unlimitedSpace": "المستخدم {{used}} من المساحة الغير محدودة"
+    },
+    "sortingDropdown": {
+        "ascendingOrder": "ترتيب تصاعدي",
+        "descendingOrder": "ترتيب تنازلي",
+        "icon": {
+            "tooltip": {
+                "OrderLastUpdateDescending": "ترتيب تنازلي حسب التحديث الأخير",
+                "OrderSizeDescending": "ترتيب تنازلي حسب الحجم",
+                "OrderNameDescending": "ترتيب تنازلي حسب الاسم",
+                "OrderSizeAscending": "ترتيب تصاعدي حسب الحجم",
+                "OrderLastUpdateAscending": "ترتيب تصاعدي حسب التحديث الأخير",
+                "OrderNameAscending": "ترتيب تصاعدي حسب الاسم"
+            }
+        },
+        "lastUpdate": "اخر تحديث",
+        "size": "الحجم",
+        "name": "الاسم"
+    },
+    "uploadItem": {
+        "queued": "في قائمة الانتظار"
+    },
+    "uploads": {
+        "dropzone": {
+            "message": {
+                "folderView": {
+                    "enabled": "لإضافتها بسرعة إلى هذا المجلد\nقم بإفلات مرفقاتك هنا",
+                    "disabled": "لا يمكنك إفلات المرفق في هذه المنطقة"
+                },
+                "disabled": "لا يمكنك إفلات المرفق في هذه المنطقة",
+                "otherView": {
+                    "enabled": "لإضافتها بسرعة إلى صفحتك الرئيسية\nقم بإفلات مرفقاتك هنا"
+                }
+            },
+            "title": {
+                "disabled": "وضع السحب والإفلات.",
+                "enabled": "وضع السحب والإفلات."
+            }
+        },
+        "error": {
+            "moreInfo": {
+                "foldersNotAllowed": "لا يمكن تحميل المجلدات. بدلاً من ذلك، إذا كنت تحاول تحميل ملف، قد لا يتعرف عليه النظام. حاول مرة أخرى باستخدام زر \"تحميل\"."
+            }
+        },
+        "destination": {
+            "home": "تم التحميل في الرئيسية"
+        },
+        "banner": {
+            "overQuota": {
+                "description": "فشل تحميل بعض العناصر لأنك وصلت إلى الحد الأقصى للتخزين. احذف بعض العناصر لتحرير مساحة التخزين وحاول مرة أخرى.",
+                "title": "تم تجاوز الحصة"
+            }
+        },
+        "clean": {
+            "completed": "تنظيف التحميلات المكتملة"
+        }
+    },
+    "size": {
+        "unitMeasure_TB": "تيرابايت",
+        "unitMeasure_GB": "جيجابايت",
+        "unitMeasure_ZB": "زيتابايت",
+        "unitMeasure_PB": "بيتابايت",
+        "unitMeasure_EB": "إكسابايت",
+        "unitMeasure_B": "بايت",
+        "unitMeasure_KB": "كيلوبايت",
+        "unitMeasure_MB": "ميغابايت",
+        "unitMeasure_YB": "يوتابايت"
+    },
+    "header": {
+        "iconTooltip": {
+            "GridLayout": "التوزيع الشبكي",
+            "ListLayout": "التوزيع القائمي"
+        }
     }
 }
