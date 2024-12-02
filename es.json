@@ -253,7 +253,8 @@
         },
         "clipboard": {
             "email": "Dirección de e-mail copiada",
-            "itemShortcutCopied": "El enlace se ha copiado"
+            "itemShortcutCopied": "El enlace se ha copiado",
+            "accessCodeCopied": "Código de acceso copiado"
         },
         "decreaseYourOwnShare": {
             "success": "Se han editado los permisos"
@@ -285,6 +286,15 @@
         "error": {
             "overQuota": {
                 "actionLabel": "OK"
+            }
+        },
+        "accessCode": {
+            "regenerate": "Nuevo código de acceso generado"
+        },
+        "openWithDocs": {
+            "error": {
+                "exceedSizeLimit": "El elemento supera el límite de tamaño permitido y no puede ser abierto.",
+                "pleaseDownload": "Para ver el elemento, por favor, descárgalo a tu dispositivo"
             }
         }
     },
@@ -873,6 +883,26 @@
             "title_one": "Enlace de descarga público",
             "title_many": "Enlace de descargas públicos",
             "title_other": "Enlace de descargas públicos"
+        },
+        "accessCode": {
+            "chip": {
+                "label": "Código de acceso",
+                "tooltip": "Copiar código de acceso"
+            },
+            "input": {
+                "label": "Código de acceso"
+            },
+            "switch": {
+                "label": "Activar código de acceso"
+            },
+            "buttons": {
+                "copy": {
+                    "tooltip": "Copiar código de acceso"
+                },
+                "regenerate": {
+                    "tooltip": "Generar nuevo código de acceso"
+                }
+            }
         }
     },
     "breadcrumb": {
@@ -902,6 +932,9 @@
         },
         "button": {
             "refresh": "Refrescar vista previa"
+        },
+        "video": {
+            "errorLabel": "Este vídeo no puede ser reproducido. Prueba a reproducirlo utilizando otro navegador"
         }
     },
     "uploadItem": {
@@ -964,6 +997,16 @@
             "lastModified": "Última modificación",
             "name": "Nombre",
             "size": "Tamaño"
+        },
+        "accessCode": {
+            "modal": {
+                "button": {
+                    "confirm": "Hecho"
+                },
+                "title": "El enlace está asegurado por un código de acceso",
+                "description": "Por favor, introduce el código de acceso para ver la carpeta",
+                "wrongAccessCode": "Código de acceso incorrecto, prueba de nuevo"
+            }
         }
     },
     "quota": {
