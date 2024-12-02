@@ -263,7 +263,8 @@
         },
         "clipboard": {
             "email": "Alamat email disalin",
-            "itemShortcutCopied": "Pintasan item disalin"
+            "itemShortcutCopied": "Pintasan item disalin",
+            "accessCodeCopied": "Kode akses disalin"
         },
         "decreaseYourOwnShare": {
             "success": "Hak berhasil diperbarui"
@@ -295,6 +296,15 @@
         "error": {
             "overQuota": {
                 "actionLabel": "OKE"
+            }
+        },
+        "accessCode": {
+            "regenerate": "Kode akses baru dibuat"
+        },
+        "openWithDocs": {
+            "error": {
+                "exceedSizeLimit": "Item melebihi batas ukuran yang diizinkan dan tidak dapat dibuka.",
+                "pleaseDownload": "Untuk melihat item, silakan unduh di perangkat Anda"
             }
         }
     },
@@ -816,6 +826,26 @@
                 "description": "Pengguna internal dan eksternal yang memiliki akses ke tautan dapat mengunduh item tersebut."
             },
             "title_other": "Tautan unduhan publik"
+        },
+        "accessCode": {
+            "chip": {
+                "label": "Kode akses",
+                "tooltip": "Salin kode akses"
+            },
+            "input": {
+                "label": "Kode akses"
+            },
+            "switch": {
+                "label": "Aktifkan kode akses"
+            },
+            "buttons": {
+                "copy": {
+                    "tooltip": "Salin kode akses"
+                },
+                "regenerate": {
+                    "tooltip": "Buat kode akses baru"
+                }
+            }
         }
     },
     "sortingDropdown": {
@@ -890,6 +920,9 @@
         },
         "button": {
             "refresh": "Muat ulang pratinjau"
+        },
+        "video": {
+            "errorLabel": "Video ini tidak dapat diputar. Coba putar ulang menggunakan browser lain"
         }
     },
     "uploadItem": {
@@ -952,6 +985,16 @@
             "lastModified": "Terakhir diubah",
             "name": "Nama",
             "size": "Ukuran"
+        },
+        "accessCode": {
+            "modal": {
+                "title": "Tautan ini dilindungi dengan kode akses",
+                "button": {
+                    "confirm": "Selesai"
+                },
+                "description": "Masukkan kode akses untuk melihat folder",
+                "wrongAccessCode": "Kode akses salah, coba lagi"
+            }
         }
     },
     "quota": {
