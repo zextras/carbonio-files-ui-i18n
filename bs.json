@@ -1,6 +1,891 @@
 {
     "actions": {
         "copy": "Kopiraj",
-        "deletePermanently": "Trajno obriši"
+        "deletePermanently": "Trajno obriši",
+        "flag": "Oznaka",
+        "manageShares": "Upravljanje dijeljenjima",
+        "goToFolder": "Idi u odredišnu mapu",
+        "edit": "Uredi",
+        "download": "Preuzimanje",
+        "markForDeletion": "Označi za brisanje",
+        "move": "Premjesti",
+        "moveToTrash": "Izbriši",
+        "openWithDocs": "Otvori dokument",
+        "preview": "Pregled",
+        "removeUpload": "Ukloni učitano",
+        "restore": "Povrati",
+        "retryUpload": "Ponovno učitaj",
+        "sendViaMail": "Pošalji putem e-maila",
+        "rename": "Preimenuj",
+        "unflag": "Ukloni oznaku"
+    },
+    "breadcrumb": {
+        "expander": {
+            "hide": "Sakrij putanju mape",
+            "show": "Prikaži putanju mape"
+        }
+    },
+    "carbonio-public-folder-ui": {
+        "emptyFolder": "Nema stavki u ovoj mapi.",
+        "invalidLink": {
+            "description": {
+                "line2": "Za više informacija pokušajte kontaktirati osobu koja je to podijelila s vama.",
+                "line1": "Ova veza je uklonjena ili nije važeća."
+            },
+            "title": "Link za javni pristup nije dostupan."
+        },
+        "listHeader": {
+            "extension": "Dodatak",
+            "lastModified": "Zadnja izmjena",
+            "name": "Naziv",
+            "size": "Veličina"
+        },
+        "accessCode": {
+            "modal": {
+                "title": "Link je zaštićen pristupnim kodom",
+                "button": {
+                    "confirm": "Završeno"
+                },
+                "wrongAccessCode": "Neispravan pristupni kod, pokušajte ponovo.",
+                "description": "Molimo unesite pristupni kod da biste pristupili mapi."
+            }
+        }
+    },
+    "collaborationLinks": {
+        "button": {
+            "generateLink": "Generiši link",
+            "revoke": "Opozovi"
+        },
+        "row": {
+            "placeholder": "Kreiraj link kako bi podijelili stavku",
+            "title": {
+                "ReadAndShare": "Pročitaj i podijeli",
+                "writeAndShare": "Napiši i podijeli"
+            }
+        },
+        "link": {
+            "urlChip": {
+                "tooltip": {
+                    "copy": "Kopiraj link za saradnju"
+                }
+            }
+        },
+        "title": "Linkovi za saradnju",
+        "description": "Interni korisnici će dobiti dozvole otvaranjem poveznice. Dodeljene dozvole možete u svakom trenutku izmeniti."
+    },
+    "create": {
+        "options": {
+            "new": {
+                "document": "Novi dokument",
+                "folder": "Nova mapa",
+                "libreDocument": "Otvori dokument{{ext}}",
+                "msDocument": "Microsoft {{ext}}",
+                "msDocument_docx": "Microsoft Word {{ext}}",
+                "msDocument_pptx": "Microsoft PowerPoint {{ext}}",
+                "msDocument_xlsx": "Microsoft Excel {{ext}}",
+                "presentation": "Nova prezentacija",
+                "spreadsheet": "Nova tabela",
+                "upload": "Priloži"
+            }
+        }
+    },
+    "displayer": {
+        "details": {
+            "collaborators": "Saradnici",
+            "collaboratorsTooltip": "Prikaz liste saradnika",
+            "content": "Sadržaj",
+            "copyShortcut": "Kopiraj prečicu stavke",
+            "createdBy": "Kreirao/la",
+            "editDescription": {
+                "closeIconTooltip": "Zatvori bez spremanja",
+                "editIconTooltip": "Uredi opis",
+                "input": {
+                    "label": "Maksimalna dopuštena dužina je 4096 znakova"
+                },
+                "saveIconTooltip": "Spremi izmjene"
+            },
+            "lastEdit": "Posljednja izmjena",
+            "missingDescription": "Kliknite na dugme uredi kako bi dodali opis",
+            "owner": "Vlasnik",
+            "sendMailTo": "Pošalji e-mail na: {{email}}",
+            "showPath": "Prikaži putanju",
+            "size": "Veličina",
+            "position": "Pozicija"
+        },
+        "filter": {
+            "flagged_empty": [
+                {
+                    "message": "Naći ćeš to ovde kad god ti zatreba.",
+                    "title": "Označite stavku"
+                },
+                {
+                    "message": "Biće prikazani ovde.",
+                    "title": "Klikom na oznaku označi svoje najvažnije stavke."
+                }
+            ],
+            "flagged_full": [
+                {
+                    "message": "Naći ćeš to ovde kad god ti zatreba.",
+                    "title": "Označite stavku"
+                },
+                {
+                    "message": "Biće prikazani ovde.",
+                    "title": "Klikom na oznaku označi svoje najvažnije stavke."
+                }
+            ],
+            "recents_empty": [
+                {
+                    "message": "Najnoviji sadržaj",
+                    "title": "Otvori, pročitaj, uredi svoje stavke."
+                }
+            ],
+            "recents_full": [
+                {
+                    "message": "Odaberi stavku",
+                    "title": "Prikaz detalja najnovijih ažuriranih stavki."
+                },
+                {
+                    "message": "Odaberi stavku za nastavak.",
+                    "title": "Pregledaj i uredi posljednje ažurirane stavke."
+                },
+                {
+                    "message": "Odaberi stavku",
+                    "title": "Brzi pregled najnoviji ažuriranih stavki."
+                },
+                {
+                    "message": "Odaberi stavku",
+                    "title": "Budi u toku sa najnovijim ažuriranim stavkama."
+                }
+            ],
+            "sharedByMe_empty": [
+                {
+                    "message": "Odaberi stavku za nastavak.",
+                    "title": "Pregledaj i uredi stavke podijeljene sa kontaktima."
+                },
+                {
+                    "message": "Odaberi stavku",
+                    "title": "Prikaz detalja dijeljene mape."
+                },
+                {
+                    "message": "Odaberi stavku",
+                    "title": "Sve stavke podijeljene sa vašim kontaktima možete pronaći ovde."
+                }
+            ],
+            "sharedByMe_full": [
+                {
+                    "message": "Odaberite stavku za nastavak.",
+                    "title": "Pregledaj i uredi stavke podijeljene sa kontaktima."
+                },
+                {
+                    "message": "Odaberi stavku",
+                    "title": "Prikaz detalja dijeljene mape."
+                }
+            ],
+            "sharedWithMe_empty": [
+                {
+                    "message": "Kliknite na dugme \"NOVO\" kako biste kreirali novu stavku i podijelili je sa svojim kontaktima.",
+                    "title": "Trenutno nema stavki podijeljenih sa vama."
+                },
+                {
+                    "message": "Dajte do znanja drugim korisnicima da ste spremni za saradnju.",
+                    "title": "Klikni na dugme \"NOVI\" i kreiraj novu e-mail."
+                }
+            ],
+            "sharedWithMe_full": [
+                {
+                    "message": "Odaberi stavku",
+                    "title": "Započni sa uređivanjem i dijeljenjem stavki."
+                },
+                {
+                    "message": "Odaberi stavku",
+                    "title": "Pogledajte detalje svojih mapa i podijelite ih sa svojim kontaktima."
+                },
+                {
+                    "title": "Odaberite stavku i započnite rad na njoj sa drugim korisnicima."
+                }
+            ],
+            "trash_empty": [
+                {
+                    "message": "Za brisanje stavke kliknite na ikonu za Smeće.",
+                    "title": "Premjestite u Smeće sve što vam nije potrebno."
+                },
+                {
+                    "message": "Za brisanje stavke kliknite na ikonu za Smeće.",
+                    "title": "Smeće je prazno"
+                },
+                {
+                    "title": "Održavajte svoj radni prostor urednim: obrišite sve stavke koje vam nisu više potrebne."
+                }
+            ],
+            "trash_full": [
+                {
+                    "title": "Odaberite i vratite stavke iz Smeća."
+                },
+                {
+                    "message": "Odaberite stavku da je vratite ili trajno obrišete.",
+                    "title": "Ništa nije izgubljeno!"
+                },
+                {
+                    "title": "Odaberite stavku da biste je trajno obrisali.",
+                    "message": "Ili, kada je to moguće, odaberite stavku i vratite je u originalnu mapu."
+                }
+            ]
+        },
+        "folder_empty": [
+            {
+                "title": "Kliknite na dugme \"NOVO\" kako biste kreirali novu stavku i podijelili je sa svojim kontaktima."
+            },
+            {
+                "message": "Kreirajte stavku klikom na dugme \"NOVO\".",
+                "title": "Započnite sa uređivanjem i dijeljenjem svoga rada."
+            },
+            {
+                "message": "Bićete u mogućnosti da uređujete, označite i dijelite.",
+                "title": "Kreirajte novu stavku klikom na dugme \"NOVO\"."
+            }
+        ],
+        "folder_full": [
+            {
+                "message": "Odaberi stavku",
+                "title": "Započni sa uređivanjem i dijeljenjem stavki."
+            },
+            {
+                "message": "Odaberi stavku",
+                "title": "Pogledajte detalje svojih mapa i podijelite ih sa svojim kontaktima."
+            },
+            {
+                "title": "Odaberite mapu za uređivanje ili preimenovanje."
+            },
+            {
+                "message": "Odaberite stavku, a zatim idite na karticu \"Dijeljenja\".",
+                "title": "Omogućite svojim kontaktima mogućnost uređivanja kako bi mogli da vrše izmjene nad stavkom."
+            },
+            {
+                "title": "Odaberite stavku za dijeljenje ili premještanje u drugu mapu."
+            }
+        ],
+        "generic": {
+            "message": "Odaberi stavku",
+            "title": "Pregledajte fajlove i mape, podijelite ih sa svojim kontaktima."
+        },
+        "list": {
+            "you": "Vi"
+        },
+        "search_empty": [
+            {
+                "title": "Pokreni novu pretragu:",
+                "message": "Ili odaberite “Napredni filteri” da precizirate pretragu."
+            },
+            {
+                "message": "Ne odustajte, nastavite sa pretragom!",
+                "title": "Nema rezultata."
+            },
+            {
+                "message": "Pokušajte pokrenuti novu pretragu.",
+                "title": "Izvinjavamo se, ali nema rezultata za vašu pretragu."
+            },
+            {
+                "title": "Nema rezultata za vašu pretragu.",
+                "message": "Provjerite pravopis i opcije filtera ili pokušajte s drugom ključnom riječju."
+            }
+        ],
+        "search_full": [
+            {
+                "title": "Odaberite jedan ili više rezultata za izvršavanje radnji ili prikaz detalja."
+            }
+        ],
+        "share": {
+            "addShare": {
+                "button": "Dijeli",
+                "checkbox": {
+                    "label": "Dodajte prilagođenu poruku u obaveštenje putem e-maila."
+                },
+                "input": {
+                    "label": "Dodajte prilagođenu poruku u ovo obaveštenje",
+                    "placeholder": "Dodajte nove osobe ili grupe"
+                },
+                "note": "Napomena:",
+                "noteDescription": "Standardna poruka prikazuje vaše ime, naziv dijeljene stavke, dozvole dodijeljene primaocima te informacije za prijavu."
+            },
+            "chip": {
+                "owner": "Vlasnik",
+                "popover": {
+                    "role": {
+                        "editor": "Editor",
+                        "editorDescription": "Biće u mogućnosti da pregleda i uređuje stavku",
+                        "viewerDescription": "Biće u mogućnosti samo da pregleda ili preuzme stavku"
+                    },
+                    "save": "Sačuvaj",
+                    "sharingAllowedDescription": "Biće u mogućnosti da upravlja dijeljenjem stavke",
+                    "sharingAllowed": "Dijeljenje je dozvoljeno"
+                },
+                "tooltip": {
+                    "edit": {
+                        "collaborator": "Uredi saradnju",
+                        "you": "Uredi svoju saradnju"
+                    },
+                    "remove": {
+                        "collaborator": "Ukloni saradnju",
+                        "yourself": "Ukloni svoju saradanju"
+                    }
+                },
+                "you": "Vi"
+            },
+            "noSharePermissionHeader": "Nemate dozvolu da podijelite ovu stavku."
+        },
+        "tabs": {
+            "activities": "Aktivnosti",
+            "details": "Detalji",
+            "sharing": "Dijeljenje",
+            "versioning": "Upravljanje verzijama"
+        },
+        "uploads": {
+            "title": "Prijedlozi za učitavanje",
+            "message": "Ovdje možete pronaći sve stavke koje se trenutno učitavaju i upravljati njima."
+        },
+        "version": {
+            "actions": {
+                "cloneAsCurrent": "Kloniraj kao trenutni",
+                "downloadVersion": "Preuzmite verziju",
+                "deleteVersion": "Obrište verziju",
+                "keepVersion": "Zadržite ovu verziju zauvijek",
+                "openDocumentVersion": "Otvorite verziju dokumenta",
+                "tooltip": {
+                    "disabledByDeleteCurrent": "Trenutna verzija ne može biti obrisana",
+                    "disabledByDocs": "Ova verzija ne može biti otvorena od strane online editora",
+                    "disabledByMaxVersion": "Dostigli ste maksimalni broj verzija",
+                    "disabledByPermission": "Nemate odgovarajuće dozvole",
+                    "disabledByVersionKeepForever": "Verzije označene za trajno čuvanje ne mogu biti obrisane",
+                    "disabledByMaxKeepVersion": "Dostigli ste maksimalni broj verzija koje možete zadržati zauvijek"
+                },
+                "removeKeepVersion": "Ukloni trajno čuvanje"
+            },
+            "button": {
+                "purgeAllVersions": "Ukloni sve verzije",
+                "upload": "Učitaj verziju"
+            },
+            "row": {
+                "clonedIcon": {
+                    "tooltip1": "Klonirano iz verzije {{versionNumber}} ({{cloneDate}})",
+                    "tooltip2": "Klonirano iz verzije {{versionNumber}} (verzija izbrisana)"
+                },
+                "versionNumber": "Verzija {{versionNumber}}"
+            },
+            "rowHeaders": {
+                "currentVersion": "Aktuelna verzija",
+                "lastWeek": "Posljednjih 7 dana",
+                "olderVersions": "Starije verzije"
+            },
+            "mainHint": "Datoteke pohranjuju posljednjih {{maxVersions}} verzija vaših stavki. Možete ručno izbrisati bilo koju verziju stavke ili je vratiti kao aktuelnu verziju. Odaberite jednu ili više verzija koje želite sačuvati zauvijek."
+        },
+        "search": {
+            "title": "Unesite ključne riječi za početak pretrage:"
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "Naziv dokumenta",
+                            "presentation": "Naziv prezentacije",
+                            "spreadsheet": "Naziv tabele"
+                        }
+                    }
+                },
+                "title": {
+                    "presentation": "Kreiraj novu prezentaciju",
+                    "document": "Kreiraj novi dokument",
+                    "spreadsheet": "Kreiraj novu tabelu"
+                }
+            }
+        }
+    },
+    "dropzone": {
+        "move": {
+            "message": {
+                "disabled": "Nije moguće spustiti stavke ovdje.",
+                "enabled": "Spustite svoje stavke ovdje za brzo premještanje u ovu mapu."
+            },
+            "title": {
+                "disabled": "Drag&Drop način rada.",
+                "enabled": "Drag&Drop način rada."
+            }
+        }
+    },
+    "empty": {
+        "filter": {
+            "flagged": "Nema označenih stavki.",
+            "hint": "Izgleda da ovdje nema ničega.",
+            "recents": "Izgleda da još nema nedavnih stavki.",
+            "sharedByMe": "Još uvijek niste podijelili nijednu stavku sa svojim saradnicima.",
+            "sharedWithMe": "Trenutno nema stavki podijeljenih sa vama.",
+            "trash": "Smeće je prazno."
+        },
+        "folder": {
+            "displayerContent": "Ova mapa je prazna.",
+            "hint": "Ova mapa ne sadrži ništa.",
+            "state": "Prevucite datoteku ili kreirajte novu klikom na \"NOVO\"."
+        },
+        "search": {
+            "hint": "Vaša pretraga nije dala rezultate za datoteke ili mape.",
+            "noResults": [
+                "Nema rezultata. Nastavite sa pretragom!",
+                "Nijedna od vaših stavki ne odgovara vašoj potrazi."
+            ],
+            "notRun": "Pretraga još nije izvršena."
+        }
+    },
+    "errorCode": {
+        "code": "Došlo je do greške",
+        "code_ACCOUNT_NOT_FOUND": "Izgleda da ovaj email nije povezan sa korisnikom",
+        "code_FILE_VERSION_NOT_FOUND": "Nažalost, ova verzija stavke nije pronađena.",
+        "code_Generic": "Došlo je do greške",
+        "code_LINK_NOT_FOUND": "Akcija nije uspjela. Ovaj link više ne postoji",
+        "code_MISSING_FIELD": "Došlo je do greške u sistemu, nisu vraćene sve informacije o ovog stavci",
+        "code_NODE_COPY_ERROR": "Žao nam je, kopiranje stavke nije uspjelo. Pokušajte ponovo",
+        "code_NODE_DUPLICATED": "U ovoj mapi već postoji stavka sa istim nazivom",
+        "code_NODE_NOT_FOUND": "Izgleda da ova stavka ne postoji ili nemate dozvolu za pristup.",
+        "code_NODE_WRITE_ERROR": "Izgleda da ovu stavku nije moguće uređivati ili nemate dozvolu za uređivanje",
+        "code_SHARE_CREATION_ERROR": "Nažalost, nije moguće podijeliti stavku sa ovim korisnikom",
+        "code_SHARE_NOT_FOUND": "Nažalost, dijeljeni sadržaj nije moguće pronaći",
+        "code_VERSIONS_LIMIT_REACHED": "Operacija ne može biti završena. Dostigli ste maksimalni limit.",
+        "code_OVER_QUOTA_REACHED": "Dostigli ste svoj limit za pohranu. Obrišite neke stavke da biste oslobodili prostor za pohranu i pokušajte ponovo",
+        "operation_copyNodes": "Akcija kopiranja nije uspjela.",
+        "operation_cloneVersion": "Akcija kloniranja nije uspjela."
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "button": {
+                    "confirm": "Kreiraj"
+                },
+                "input": {
+                    "label": {
+                        "name": "Naziv mape"
+                    }
+                },
+                "title": "Kreiraj novu mapu"
+            }
+        }
+    },
+    "label": {
+        "app_name": "Datoteke"
+    },
+    "modal": {
+        "button": {
+            "cancel": "Odustani",
+            "confirm": "Potvrdi"
+        },
+        "decreaseYourOwnSharePermissions": {
+            "button": {
+                "confirm": "Potvrdi"
+            },
+            "header": "Smanjite svoja trenutna prava",
+            "body": "Da li ste sigurni da želite da smanjite svoja prava na ovoj stavci? Ova akcija je trajna i nećete moći sami da vratite prethodna prava dijeljenja. Uvijek možete kontaktirati vlasnika dijeljene stavke ako želite obnoviti prethodna prava."
+        },
+        "deletePermanently": {
+            "body": "Ove stavke/ovu stavku ćete trajno izbrisati. Nećete moći da je/ih povratite. Ova akcija je nepovratna.",
+            "button": {
+                "confirm": "Trajno obriši"
+            },
+            "header": "Ova akcija je nepovratna"
+        },
+        "deleteShare": {
+            "button": {
+                "confirm": "Ukloni"
+            },
+            "header": "Ukloni dijeljenje",
+            "yourShare": {
+                "body": {
+                    "answer": "Da li ste sigurni da želite da napustite ovu saradnju?",
+                    "permissionLost": "Sva prava pristupa koja su vam prethodno dodijeljena biće izgubljena."
+                }
+            },
+            "body": "Da li ste sigurni da želite ukloniti sva prethodna prava pristupa koja ste dodijelili {{shareTarget}}?"
+        },
+        "moreInfo": {
+            "title": "Dodatne informacije"
+        },
+        "nodeSelection": {
+            "button": {
+                "create": "Kreiraj",
+                "newFolder": {
+                    "disabled": "Nemate odgovarajuće dozvole",
+                    "label": "Nova mapa"
+                }
+            },
+            "input": {
+                "newFolder": "Naziv nove mape"
+            }
+        },
+        "purgeAllVersions": {
+            "body": "Sve verzije koje nisu označene za čuvanje zauvijek, izuzev trenutne, biće obrisane. Ove verzije nećete moći obnoviti.",
+            "button": {
+                "confirm": "Ukloni sve verzije"
+            },
+            "header": "Ukloni sve verzije"
+        },
+        "removeLink": {
+            "body": "Ovaj link je istekao i više nije moguć pristup stavci. Možete ukloniti link sa liste ili ažurirati datum isteka i druge podatke kako biste nastavili sa njegovim korišćenjem.",
+            "button": {
+                "confirm": "Ukloni"
+            },
+            "header": "Ukloni {{nodeName}} {{linkName}}"
+        },
+        "revokeCollaborationLink": {
+            "button": {
+                "confirm": "Opozovi"
+            },
+            "header": "Opozovi {{nodeName}} vezu za saradnju",
+            "body": "Poništavanjem ovog linka, onemogućavate njegovo dalje korištenje za dijeljenje. Svi koju su već koristili ovaj link za saradnju zadržat će pristup stavci."
+        },
+        "revokeLink": {
+            "body": "Poništenjem ovog linka, blokirate pristup {{nodeName}} za sve koji pokušaju koristiti link za pristup stavci.",
+            "button": {
+                "confirm": "Opozovi"
+            },
+            "header": "Opozovi {{nodeName}} {{linkName}}"
+        },
+        "roots": {
+            "filesHome": "Početna",
+            "rootsList": "Datoteke",
+            "sharedWitMe": "Dijeljeno sa mnom",
+            "trash": {
+                "myElements": "Moje stavke",
+                "sharedWitMe": "Dijeljene stavke",
+                "trash": "Smeće"
+            }
+        },
+        "unsaved_changes": {
+            "body": {
+                "line2": "Sve promene koje niste sačuvali biće izgubljene.",
+                "line1": "Jeste li sigurni da želite napustiti ovu stranicu bez spašavanja?"
+            },
+            "button": {
+                "leave_anyway": "Svejedno napusti",
+                "save_and_leave": "Sačuvaj i napusti"
+            },
+            "title": {
+                "cannot_saved_changes": "Neke promjene ne mogu biti sačuvane",
+                "unsaved_changes": "Imate promjene koje nisu sačuvane"
+            }
+        }
+    },
+    "node": {
+        "alias": {
+            "name_LOCAL_ROOT": "Početna",
+            "name_SHARED_WITH_ME_ROOT": "Dijeljeno sa mnom",
+            "name_TRASH_ROOT": "Smeće"
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "Kopiraj",
+                    "tooltip": {
+                        "confirm": "Ovu akciju nije moguće izvršiti ovde"
+                    }
+                }
+            }
+        },
+        "move": {
+            "error": {
+                "not": {
+                    "allowed": "Nije moguće premjestiti više stavki iz filtra ili pretrage."
+                }
+            },
+            "modal": {
+                "button": {
+                    "confirm": "Premjesti",
+                    "tooltip": {
+                        "confirm": "Ovu akciju nije moguće izvršiti ovde"
+                    }
+                },
+                "input": {
+                    "filter": "Filtriraj mape"
+                }
+            }
+        }
+    },
+    "preview": {
+        "close": {
+            "tooltip": "Zatvori"
+        },
+        "loading": {
+            "error": "Došlo je do greške prilikom učitavanja prikaza. Pokušajte ponovo.",
+            "file": "Učitavanje pregleda stavke, molimo sačekajte…",
+            "retrying": "Učitavanje prikaza…"
+        }
+    },
+    "search": {
+        "advancedSearch": {
+            "modal": {
+                "folder": {
+                    "modal": {
+                        "cascade": "pretraži također u sadržanim mapama",
+                        "confirm": "Odaberi mapu",
+                        "title": "Odaberi mapu",
+                        "cancel": "Nazad",
+                        "subtitle": "Rezultat će biti pretražen samo unutar odabrane mape"
+                    }
+                },
+                "itemType": {
+                    "dropdownOption": {
+                        "audio": "Zvuk",
+                        "document": "Dokument",
+                        "folder": "Mapa",
+                        "image": "Slika",
+                        "presentation": "Prezentacija",
+                        "spreadsheet": "Tabela",
+                        "video": "Video"
+                    },
+                    "label": "Vrsta stavke"
+                },
+                "keywords": {
+                    "label": "Ključne riječi"
+                },
+                "owner": {
+                    "label": "Vlasnik"
+                },
+                "shared": {
+                    "description": "Filtrirajte rezultate po stavkama koje sadrže barem jednog saradnika osim vas",
+                    "label": "Dijeljeno"
+                },
+                "title": "Napredni filteri"
+            }
+        },
+        "clear": {
+            "tooltip": {
+                "clear": "Očisti pretragu",
+                "empty": "Unos za pretragu je već prazan"
+            }
+        },
+        "header": {
+            "close": "Prekini pretragu",
+            "result": "Rezultati koji sadrže sve ključne riječi:",
+            "search": "Pretraga",
+            "start": "Započni pretragu"
+        },
+        "resultsFor": "Rezultati za:",
+        "search": {
+            "tooltip": {
+                "edit": "Uredi pretragu da biste počeli novu",
+                "empty": "Unesite neke ključne riječi za početak pretrage",
+                "search": "Pretraga"
+            }
+        },
+        "searchBar": {
+            "label": {
+                "active": "Odvojite svoje ključne riječi zarezom, tačkom sa zarezom ili pritiskom na tipku TAB",
+                "default": "Unesite pretragu"
+            }
+        }
+    },
+    "secondaryBar": {
+        "filesHome": "Početna",
+        "filters": "Filteri",
+        "filtersList": {
+            "flagged": "Označeno",
+            "myElements": "Moje stavke",
+            "recents": "Nedavno",
+            "sharedByMe": "Podijelio sam",
+            "sharedElements": "Dijeljene stavke",
+            "sharedWithMe": "Dijeljeno sa mnom",
+            "trash": "Smeće"
+        },
+        "uploads": "Priložene datoteke"
+    },
+    "selectionMode": {
+        "header": {
+            "exit": "Izađite iz režima odabira",
+            "selectAll": "Odaberi sve",
+            "unselectAll": "Poništi sve"
+        },
+        "node": {
+            "tooltip": "Aktiviraj režim selekcije"
+        }
+    },
+    "snackbar": {
+        "clipboard": {
+            "email": "E-mail adresa kopirana",
+            "itemShortcutCopied": "Prečica za stavku kopirana",
+            "accessCodeCopied": "Pristupni kôd kopiran"
+        },
+        "collaborationLink": {
+            "actionLabel": {
+                "copyLink": "Kopiraj link"
+            },
+            "copyCollaborationLink": "Link za saradnju kopiran",
+            "newCollaborationLinkGenerated": {
+                "label": "Novi link za saradnju generiran"
+            }
+        },
+        "copyNodes": {
+            "action": "Idi u mapu",
+            "error": "Nešto je pošlo krivo, pokušajte ponovo",
+            "success": "Stavka kopirana"
+        },
+        "decreaseYourOwnShare": {
+            "success": "Prava uspješno ažurirana"
+        },
+        "deletePermanently": {
+            "error": "Greška",
+            "success": "Uspjeh"
+        },
+        "deleteShare": {
+            "error": "Greška",
+            "success": "Uspjeh"
+        },
+        "download": {
+            "start": "Vaše preuzimanje će uskoro početi"
+        },
+        "markForDeletion": {
+            "showTrash": "Otvori mapu Smeće",
+            "success": "Stavka premještena u smeće",
+            "error": "Nešto je pošlo krivo, pokušajte ponovo"
+        },
+        "moveNodes": {
+            "action": "Idi u mapu",
+            "error": "Nešto je pošlo krivo, pokušajte ponovo",
+            "success": "Stavka je premještena"
+        },
+        "publicLink": {
+            "copyLink": "{{linkName}} kopiran",
+            "linkUpdated": {
+                "label": "{{linkName}} ažuriran"
+            },
+            "newPublicLinkGenerated": {
+                "label": "Novi/a {{linkName}} generisan/a"
+            },
+            "actionLabel": {
+                "copyLink": "Kopiraj link"
+            }
+        },
+        "restore": {
+            "error": "Nešto je pošlo krivo, pokušajte ponovo",
+            "showInFolder": "Prikaži u mapi",
+            "success": "Uspjeh"
+        },
+        "upload": {
+            "foldersNotAllowed": "Mape nije moguće priložiti",
+            "goToFolder": "Idi u mapu",
+            "moreInfo": "Više informacija",
+            "success": "Upload je obavljen u {{destination}}",
+            "nodesNotAllowed": "Neke stavke nisu priložene"
+        },
+        "version": {
+            "keepForeverAdded": "Verzija označena kao za čuvanje zauvijek",
+            "keepForeverRemoved": "\"Čuvaj zauvijek\" uklonjeno",
+            "clone": "Verzija klonirana kao trenutna"
+        },
+        "createDocument": {
+            "error": {
+                "overQuota": {
+                    "document": "Nije uspjelo kreiranje novog dokumenta. Dostigli ste ograničenje prostora za pohranjivanje. Izbrišite neke stavke kako biste oslobodili prostora za pohranu i pokušajte ponovno",
+                    "actionLabel": "U redu",
+                    "presentation": "Nije uspjelo kreiranje nove prezentacije. Dostigli ste ograničenje prostora za pohranjivanje. Izbrišite neke stavke kako biste oslobodili prostora za pohranu i pokušajte ponovno",
+                    "spreadsheet": "Kreiranje nove tabele nije uspjelo. Dostigli ste ograničenje prostora za pohranjivanje. Izbrišite neke stavke kako biste oslobodili prostora za pohranu i pokušajte ponovno"
+                }
+            }
+        },
+        "error": {
+            "overQuota": {
+                "actionLabel": "U redu"
+            }
+        },
+        "accessCode": {
+            "regenerate": "Novi kod za pristup generisan"
+        },
+        "openWithDocs": {
+            "error": {
+                "pleaseDownload": "Za prikaz stavke, molimo preuzmite je na uređaj",
+                "exceedSizeLimit": "Stavka premašuje veličinu dopuštenog ograničenja i ne može biti otvorena."
+            }
+        },
+        "unflag": {
+            "success": "Stavka uspješno uklonjena"
+        }
+    },
+    "sortingDropdown": {
+        "ascendingOrder": "Rastući redoslijed",
+        "descendingOrder": "Opadajući redoslijed",
+        "icon": {
+            "tooltip": {
+                "OrderLastUpdateAscending": "Rastući redoslijed po zadnjem ažuriranju",
+                "OrderLastUpdateDescending": "Opadajući redoslijed po zadnjem ažuriranju",
+                "OrderNameAscending": "Rastući redoslijed po imenu",
+                "OrderNameDescending": "Opadajući redoslijed po imenu",
+                "OrderSizeAscending": "Rastući redoslijed po veličini",
+                "OrderSizeDescending": "Opadajući redoslijed po veličini"
+            }
+        },
+        "lastUpdate": "Zadnje ažuriranje",
+        "name": "Ime",
+        "size": "Veličina"
+    },
+    "uploadItem": {
+        "queued": "U redu"
+    },
+    "uploads": {
+        "banner": {
+            "overQuota": {
+                "title": "Kvota premašena",
+                "description": "Prilaganje nekih stavki nije uspjelo jer ste dostigli limit prostora za pohranu. Obrišite neke stavke kako biste oslobodili memoriju i pokušajte ponovo."
+            }
+        },
+        "clean": {
+            "completed": "Obriši završena prilaganja"
+        },
+        "destination": {
+            "home": "Prilaganje je počelo u datotekama početne stranice"
+        },
+        "dropzone": {
+            "message": {
+                "disabled": "Nije moguće priložiti prilog u ovom području",
+                "folderView": {
+                    "disabled": "Nije moguće priložiti prilog u ovom području",
+                    "enabled": "Ovdje otpustite svoje priloge \n da biste ih brzo dodali u ovu mapu"
+                },
+                "otherView": {
+                    "enabled": "Ovdje otpustite svoje priloge \n da biste ih brzo dodali na vašu početnu stranicu"
+                }
+            },
+            "title": {
+                "disabled": "Drag&Drop način rada.",
+                "enabled": "Drag&Drop način rada."
+            }
+        },
+        "error": {
+            "moreInfo": {
+                "foldersNotAllowed": "Mape ne mogu biti priložene. Umjesto toga, ako pokušavate priložiti datoteku, sistem je možda nije prepoznao. Pokušajte ponovo koristeći dugme \"PRILOŽI\"."
+            }
+        }
+    },
+    "size": {
+        "unitMeasure_B": "B",
+        "unitMeasure_KB": "KB",
+        "unitMeasure_MB": "MB",
+        "unitMeasure_TB": "TB",
+        "unitMeasure_GB": "GB",
+        "unitMeasure_ZB": "ZB",
+        "unitMeasure_PB": "PB",
+        "unitMeasure_EB": "EB",
+        "unitMeasure_YB": "YB"
+    },
+    "header": {
+        "iconTooltip": {
+            "ListLayout": "Raspored liste",
+            "GridLayout": "Raspored mreže"
+        }
+    },
+    "share": {
+        "chip": {
+            "tooltip": {
+                "error": {
+                    "contactNotFound": "Moguće je dijeliti stavke samo s korisnicima za koje je ova funkcija omogućena i ne sa distribucijskim listama. Čini se da navedena e-mail adresa nije povezana sa omogućenim korisnikom. Provjerite ponovo i unesite valjanu adresu."
+                }
+            }
+        }
     }
 }
