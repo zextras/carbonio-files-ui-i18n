@@ -204,7 +204,7 @@
                     "sharingAllowed": "يسمح مشاركته",
                     "role": {
                         "editor": "محرر",
-                        "viewer": "مشاهد",
+                        "viewer": "مُشاهد",
                         "viewerDescription": "لن يكون من الممكن سوى عرض العنصر أو تنزيله",
                         "editorDescription": "سيكون قادرًا على عرض العنصر وتعديله"
                     },
