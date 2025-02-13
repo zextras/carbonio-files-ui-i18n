@@ -173,7 +173,7 @@
         },
         "clear": {
             "tooltip": {
-                "clear": "Wyszyść pole wyszukiwania",
+                "clear": "Wyczyść pole wyszukiwania",
                 "empty": "Pole wyszukiwania jest puste"
             }
         },
