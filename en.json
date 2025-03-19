@@ -43,11 +43,18 @@
         "accessCode": {
             "modal": {
                 "title": "The link is secured by an access code",
-                "description": "Please, insert the access code to view the folder",
+                "description": "Please, insert the access code to proceed",
                 "button": {
                     "confirm": "Done"
                 },
                 "wrongAccessCode": "Wrong access code, try again"
+            }
+        },
+        "fileDownload": {
+            "modal": {
+                "confirmLabel1": "Download",
+                "confirmLabel2": "Download again",
+                "description": "Access code entered correctly. Now you can download the file."
             }
         }
     },
