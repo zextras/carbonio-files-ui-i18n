@@ -1003,9 +1003,16 @@
                 "button": {
                     "confirm": "Fatto"
                 },
-                "description": "Per favore inserisci il codice di accesso per visualizzare la cartella",
+                "description": "Per favore inserisci il codice di accesso per continuare",
                 "wrongAccessCode": "Codice di accesso errato, riprova",
                 "title": "Questo link è protetto da un codice di accesso"
+            }
+        },
+        "fileDownload": {
+            "modal": {
+                "confirmLabel1": "Scarica",
+                "confirmLabel2": "Scarica nuovamente",
+                "description": "Codice di accesso inserito correttamente. Ora puoi scaricare il file."
             }
         }
     },
