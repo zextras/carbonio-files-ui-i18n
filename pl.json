@@ -1004,8 +1004,15 @@
                 "button": {
                     "confirm": "Gotowe"
                 },
-                "description": "Wprowadź kod dostępu, aby zobaczyć folder",
+                "description": "Wprowadź kod dostępu, aby kontynuować",
                 "wrongAccessCode": "Niepoprawny kod dostępu, spróbuj ponownie"
+            }
+        },
+        "fileDownload": {
+            "modal": {
+                "confirmLabel1": "Pobierz",
+                "confirmLabel2": "Pobierz ponownie",
+                "description": "Kod dostępu wprowadzony poprawnie. Możesz teraz pobrać plik."
             }
         }
     },
