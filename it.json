@@ -237,7 +237,7 @@
             "button": {
                 "confirm": "Revoca"
             },
-            "header": "Revoca {nodeName}} {{linkName}}"
+            "header": "Revoca {{nodeName}} {{linkName}}"
         },
         "close": {
             "tooltip": "Chiudi"
