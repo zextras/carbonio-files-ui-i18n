@@ -1004,8 +1004,15 @@
                     "confirm": "Fait"
                 },
                 "title": "Le lien est sécurisé par un code d'accès",
-                "description": "Veuillez insérer le code d'accès pour visualiser le dossier",
+                "description": "Veuillez insérer le code d'accès pour continuer",
                 "wrongAccessCode": "Code d'accès erroné, réessayer"
+            }
+        },
+        "fileDownload": {
+            "modal": {
+                "description": "Le code d'accès a été correctement saisi. Vous pouvez maintenant télécharger le fichier.",
+                "confirmLabel1": "Téléchargement",
+                "confirmLabel2": "Télécharger à nouveau"
             }
         }
     },
