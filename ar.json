@@ -150,6 +150,11 @@
                 "wrongAccessCode": "رمز الوصول خاطئ، حاول مرة أخرى",
                 "description": "من فضلك أدخل رمز الدخول لعرض المجلد"
             }
+        },
+        "fileDownload": {
+            "modal": {
+                "confirmLabel1": "تنزيل"
+            }
         }
     },
     "collaborationLinks": {
