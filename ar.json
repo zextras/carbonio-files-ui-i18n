@@ -153,7 +153,9 @@
         },
         "fileDownload": {
             "modal": {
-                "confirmLabel1": "تنزيل"
+                "confirmLabel1": "تنزيل",
+                "confirmLabel2": "تنزيل مرة أخرى",
+                "description": "تم إدخال رمز الوصول بشكل صحيح. يمكنك الآن تنزيل الملف."
             }
         }
     },
