@@ -47,7 +47,14 @@
                     "confirm": "Završeno"
                 },
                 "wrongAccessCode": "Neispravan pristupni kod, pokušaj ponovo",
-                "description": "Unesi pristupni kod za pregled mape"
+                "description": "Unesite kod za pristup da biste nastavili"
+            }
+        },
+        "fileDownload": {
+            "modal": {
+                "confirmLabel1": "Preuzmi",
+                "confirmLabel2": "Preuzmite ponovo",
+                "description": "Kôd pristupa unesen ispravno. Sada možete preuzeti datoteku."
             }
         }
     },
