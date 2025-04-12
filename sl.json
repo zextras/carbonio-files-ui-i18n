@@ -16,5 +16,16 @@
                 "confirm": "Trajno izbriši"
             }
         }
+    },
+    "size": {
+        "unitMeasure_ZB": "ZB",
+        "unitMeasure_MB": "MB",
+        "unitMeasure_B": "B",
+        "unitMeasure_KB": "KB",
+        "unitMeasure_GB": "GB",
+        "unitMeasure_TB": "TB",
+        "unitMeasure_PB": "PB",
+        "unitMeasure_EB": "EB",
+        "unitMeasure_YB": "YB"
     }
 }
