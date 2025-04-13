@@ -27,5 +27,15 @@
         "unitMeasure_PB": "PB",
         "unitMeasure_EB": "EB",
         "unitMeasure_YB": "YB"
+    },
+    "preview": {
+        "actions": {
+            "tooltip": {
+                "download": "Prenesi"
+            }
+        },
+        "close": {
+            "tooltip": "Zapri"
+        }
     }
 }
