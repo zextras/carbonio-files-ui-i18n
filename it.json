@@ -935,6 +935,47 @@
         },
         "video": {
             "errorLabel": "Questo video non può essere riprodotto. Prova a riprodurlo utilizzando un altro browser"
+        },
+        "document": {
+            "loadingLabel": "Caricamento anteprima documento…",
+            "errorLabel": "Impossibile caricare l'anteprima del documento."
+        },
+        "print": {
+            "tooltip": "Stampa"
+        },
+        "fileSizeExceeded": {
+            "download": "SCARICA IL FILE",
+            "title": "Questo elemento non può essere visualizzato",
+            "content": "La dimensione del file supera il limite consentito e non può essere visualizzato",
+            "openTab": "APRI IN UNA SCHEDA SEPARATA",
+            "note": "Per favore, scaricalo o aprilo in una scheda separata"
+        },
+        "page": {
+            "label": "Pagina"
+        },
+        "zoomOut": {
+            "tooltip": "Diminuisci zoom"
+        },
+        "previous": {
+            "tooltip": "Indietro"
+        },
+        "next": {
+            "tooltip": "Avanti"
+        },
+        "resetZoom": {
+            "tooltip": "Reimposta zoom"
+        },
+        "maximumZoomReached": {
+            "tooltip": "Livello massimo di zoom raggiunto"
+        },
+        "minimumZoomReached": {
+            "tooltip": "Livello minimo di zoom raggiunto"
+        },
+        "fitWidth": {
+            "label": "Adatta in larghezza"
+        },
+        "zoomIn": {
+            "tooltip": "Aumenta zoom"
         }
     },
     "uploadItem": {
