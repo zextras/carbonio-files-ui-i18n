@@ -669,6 +669,47 @@
         },
         "video": {
             "errorLabel": "This video cannot be played. Try to reproduce it using another browser"
+        },
+        "print": {
+            "tooltip": "Print"
+        },
+        "document": {
+            "loadingLabel": "Loading document preview…",
+            "errorLabel": "Failed to load document preview."
+        },
+        "page": {
+            "label": "Page"
+        },
+        "fileSizeExceeded": {
+            "download": "DOWNLOAD FILE",
+            "openTab": "OPEN IN A SEPARATE TAB",
+            "note": "Please, download it or open it in a separate tab",
+            "title": "This item cannot be displayed",
+            "content": "The file size exceeds the limit allowed and cannot be displayed"
+        },
+        "previous": {
+            "tooltip": "Previous"
+        },
+        "next": {
+            "tooltip": "Next"
+        },
+        "zoomOut": {
+            "tooltip": "Zoom out"
+        },
+        "resetZoom": {
+            "tooltip": "Reset zoom"
+        },
+        "fitWidth": {
+            "label": "Fit to width"
+        },
+        "maximumZoomReached": {
+            "tooltip": "Maximum zoom level reached"
+        },
+        "minimumZoomReached": {
+            "tooltip": "Minimum zoom level reached"
+        },
+        "zoomIn": {
+            "tooltip": "Zoom in"
         }
     },
     "publicLink": {
