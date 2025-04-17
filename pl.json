@@ -935,6 +935,47 @@
         },
         "video": {
             "errorLabel": "Nie udało się odtworzyć tego wideo. Spróbuj używając innej przeglądarki"
+        },
+        "document": {
+            "loadingLabel": "Ładowanie podglądu dokumentu…",
+            "errorLabel": "Nie udało się załadować podglądu dokumentu."
+        },
+        "print": {
+            "tooltip": "Drukuj"
+        },
+        "fileSizeExceeded": {
+            "download": "POBIERZ PLIK",
+            "title": "Nie da się wyświetlić tego elementu",
+            "openTab": "OTWÓRZ W NOWEJ ZAKŁADCE",
+            "note": "Pobierz go lub otwórz w nowej zakładce",
+            "content": "Plik ma zbyt duży rozmiar i nie może zostać wyświetlony"
+        },
+        "page": {
+            "label": "Strona"
+        },
+        "zoomOut": {
+            "tooltip": "Pomniejsz"
+        },
+        "previous": {
+            "tooltip": "Poprzedni"
+        },
+        "next": {
+            "tooltip": "Następny"
+        },
+        "fitWidth": {
+            "label": "Dopasuj do szerokości"
+        },
+        "minimumZoomReached": {
+            "tooltip": "Osiągnięto minimalne przybliżenie"
+        },
+        "resetZoom": {
+            "tooltip": "Zresetuj przybliżenie"
+        },
+        "maximumZoomReached": {
+            "tooltip": "Osiągnięto maksymalne przybliżenie"
+        },
+        "zoomIn": {
+            "tooltip": "Powiększ"
         }
     },
     "uploadItem": {
