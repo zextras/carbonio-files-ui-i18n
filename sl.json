@@ -5,7 +5,9 @@
         }
     },
     "actions": {
-        "deletePermanently": "Trajno izbriši"
+        "deletePermanently": "Trajno izbriši",
+        "copy": "Kopiraj",
+        "restore": "Obnovi"
     },
     "modal": {
         "close": {
