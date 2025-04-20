@@ -685,6 +685,9 @@
         "document": {
             "loadingLabel": "تحميل المستند للمعاينة…",
             "errorLabel": "فشل في تحميل معاينة المستند."
+        },
+        "print": {
+            "tooltip": "طباعه"
         }
     },
     "publicLink": {
