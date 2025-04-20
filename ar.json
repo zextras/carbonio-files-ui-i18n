@@ -701,6 +701,12 @@
         },
         "next": {
             "tooltip": "التالي"
+        },
+        "previous": {
+            "tooltip": "السابق"
+        },
+        "minimumZoomReached": {
+            "tooltip": "تم الوصول إلى الحد الأدنى لتكبير"
         }
     },
     "publicLink": {
