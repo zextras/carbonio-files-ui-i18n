@@ -719,6 +719,9 @@
         },
         "zoomIn": {
             "tooltip": "التكبير"
+        },
+        "zoomOut": {
+            "tooltip": "التصغير"
         }
     },
     "publicLink": {
