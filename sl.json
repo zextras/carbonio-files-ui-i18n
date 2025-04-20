@@ -7,7 +7,18 @@
     "actions": {
         "deletePermanently": "Trajno izbriši",
         "copy": "Kopiraj",
-        "restore": "Obnovi"
+        "restore": "Obnovi",
+        "download": "Prenesi",
+        "edit": "Uredi",
+        "flag": "Označi",
+        "manageShares": "Upravljaj skupno rabo",
+        "move": "Premakni",
+        "moveToTrash": "Izbriši",
+        "preview": "Predogled",
+        "removeUpload": "Odstrani nalaganje",
+        "goToFolder": "Pojdi v ciljno mapo",
+        "openWithDocs": "Odpri dokument",
+        "markForDeletion": "Označi za izbris"
     },
     "modal": {
         "close": {
