@@ -18,7 +18,9 @@
         "removeUpload": "Odstrani nalaganje",
         "goToFolder": "Pojdi v ciljno mapo",
         "openWithDocs": "Odpri dokument",
-        "markForDeletion": "Označi za izbris"
+        "markForDeletion": "Označi za izbris",
+        "rename": "Preimenuj",
+        "retryUpload": "Ponovi naložitev"
     },
     "modal": {
         "close": {
