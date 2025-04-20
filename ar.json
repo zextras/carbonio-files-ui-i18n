@@ -688,6 +688,9 @@
         },
         "print": {
             "tooltip": "طباعه"
+        },
+        "page": {
+            "label": "صفحة"
         }
     },
     "publicLink": {
