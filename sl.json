@@ -73,19 +73,24 @@
         "listHeader": {
             "extension": "Končnica",
             "lastModified": "Zadnja sprememba",
-            "size": "Velikost"
+            "size": "Velikost",
+            "name": "Ime"
         },
         "accessCode": {
             "modal": {
                 "description": "Vnesi dostopno kodo za nadaljevanje",
                 "wrongAccessCode": "Napačna dostopna koda, poskusite znova",
-                "title": "Povezava je zaščitena z dostopno kodo"
+                "title": "Povezava je zaščitena z dostopno kodo",
+                "button": {
+                    "confirm": "Končano"
+                }
             }
         },
         "fileDownload": {
             "modal": {
                 "confirmLabel2": "Prenesi znova",
-                "description": "Dostopna koda je pravilna. Zdaj lahko prenesete datoteko."
+                "description": "Dostopna koda je pravilna. Zdaj lahko prenesete datoteko.",
+                "confirmLabel1": "Prenesi"
             }
         }
     },
@@ -106,7 +111,8 @@
         },
         "title": "Povezave za sodelovanje",
         "button": {
-            "generateLink": "Ustvari povezavo"
+            "generateLink": "Ustvari povezavo",
+            "revoke": "Prekliči"
         },
         "description": "Notranji uporabniki bodo prejeli dovoljenja ob odprtju povezave. Dodeljena dovoljenja lahko vedno spremenite."
     },
