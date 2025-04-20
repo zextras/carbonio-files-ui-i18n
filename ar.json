@@ -710,6 +710,12 @@
         },
         "fitWidth": {
             "label": "الملائمة لعرض الشاشة"
+        },
+        "resetZoom": {
+            "tooltip": "إعادة ضبط التكبير"
+        },
+        "maximumZoomReached": {
+            "tooltip": "تم الوصول إلى الحد الأقصى لتكبير"
         }
     },
     "publicLink": {
