@@ -716,6 +716,9 @@
         },
         "maximumZoomReached": {
             "tooltip": "تم الوصول إلى الحد الأقصى لتكبير"
+        },
+        "zoomIn": {
+            "tooltip": "التكبير"
         }
     },
     "publicLink": {
