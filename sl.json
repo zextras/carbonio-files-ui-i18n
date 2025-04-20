@@ -20,7 +20,9 @@
         "openWithDocs": "Odpri dokument",
         "markForDeletion": "Označi za izbris",
         "rename": "Preimenuj",
-        "retryUpload": "Ponovi naložitev"
+        "retryUpload": "Ponovno naloži",
+        "sendViaMail": "Pošlji po e-pošti",
+        "unflag": "Odstrani oznako"
     },
     "modal": {
         "close": {
@@ -51,6 +53,77 @@
         },
         "close": {
             "tooltip": "Zapri"
+        }
+    },
+    "breadcrumb": {
+        "expander": {
+            "hide": "Skrij pot do mape",
+            "show": "Pokaži pot do mape"
+        }
+    },
+    "carbonio-public-folder-ui": {
+        "emptyFolder": "Ta mapa je prazna.",
+        "invalidLink": {
+            "description": {
+                "line1": "Ta povezava je bila odstranjena ali ni več veljavna.",
+                "line2": "Za več informacij kontaktirajte osebo, ki vam je povezavo delila."
+            },
+            "title": "Povezava za javni dostop ni na voljo."
+        },
+        "listHeader": {
+            "extension": "Končnica",
+            "lastModified": "Zadnja sprememba",
+            "size": "Velikost"
+        },
+        "accessCode": {
+            "modal": {
+                "description": "Vnesi dostopno kodo za nadaljevanje",
+                "wrongAccessCode": "Napačna dostopna koda, poskusite znova",
+                "title": "Povezava je zaščitena z dostopno kodo"
+            }
+        },
+        "fileDownload": {
+            "modal": {
+                "confirmLabel2": "Prenesi znova",
+                "description": "Dostopna koda je pravilna. Zdaj lahko prenesete datoteko."
+            }
+        }
+    },
+    "collaborationLinks": {
+        "link": {
+            "urlChip": {
+                "tooltip": {
+                    "copy": "Kopiraj povezavo za sodelovanje"
+                }
+            }
+        },
+        "row": {
+            "placeholder": "Ustvarite povezavo za deljenje elementa",
+            "title": {
+                "writeAndShare": "Pisanje in deljenje",
+                "ReadAndShare": "Branje in deljenje"
+            }
+        },
+        "title": "Povezave za sodelovanje",
+        "button": {
+            "generateLink": "Ustvari povezavo"
+        },
+        "description": "Notranji uporabniki bodo prejeli dovoljenja ob odprtju povezave. Dodeljena dovoljenja lahko vedno spremenite."
+    },
+    "create": {
+        "options": {
+            "new": {
+                "document": "Nov dokument",
+                "folder": "Nova mapa",
+                "msDocument": "Microsoft {{ext}}",
+                "msDocument_docx": "Microsoft Word {{ext}}",
+                "msDocument_xlsx": "Microsoft Excel {{ext}}",
+                "upload": "Naloži",
+                "libreDocument": "OpenDocument {{ext}}",
+                "presentation": "Nova predstavitev",
+                "spreadsheet": "Nova preglednica",
+                "msDocument_pptx": "Microsoft PowerPoint {{ext}}"
+            }
         }
     }
 }
