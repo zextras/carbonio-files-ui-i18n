@@ -668,6 +668,47 @@
         },
         "video": {
             "errorLabel": "Video nije moguće prikazati. Pokušajte sa drugim pretraživačem"
+        },
+        "print": {
+            "tooltip": "Štampaj"
+        },
+        "document": {
+            "loadingLabel": "Učitavanje pretpregleda dokumenta…",
+            "errorLabel": "Nije uspješno učitana pretpregled dokumenta."
+        },
+        "page": {
+            "label": "Stranica"
+        },
+        "fileSizeExceeded": {
+            "download": "PREUZMI DATOTEKU",
+            "note": "Molimo, preuzmite ga ili otvorite u posebnom tabu",
+            "title": "Ovaj stavka ne može biti prikazana",
+            "content": "Veličina datoteke premašuje dopuštenu granicu i nije moguće ju prikazati",
+            "openTab": "OTVORI U ODVOJENOM TABU"
+        },
+        "next": {
+            "tooltip": "Dalje"
+        },
+        "zoomOut": {
+            "tooltip": "Smanji približavanje"
+        },
+        "previous": {
+            "tooltip": "Prethodno"
+        },
+        "resetZoom": {
+            "tooltip": "Resetiraj zumiranje"
+        },
+        "fitWidth": {
+            "label": "Prilagodi širini"
+        },
+        "maximumZoomReached": {
+            "tooltip": "Maksimalni nivo zumiranja dostignut"
+        },
+        "minimumZoomReached": {
+            "tooltip": "Minimalni nivo zumiranja dostignut"
+        },
+        "zoomIn": {
+            "tooltip": "Uvećaj"
         }
     },
     "search": {
@@ -904,7 +945,7 @@
             "completed": "Ukloni završena učitavanja"
         },
         "destination": {
-            "home": "Učitavanje je obavljeno u Početnoj mapi"
+            "home": "Učitavanje je počelo u Početnoj mapi"
         },
         "dropzone": {
             "message": {
