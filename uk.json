@@ -97,7 +97,7 @@
             "description": "Опис",
             "editDescription": {
                 "input": {
-                    "label": "Максимальна довжина - 4096 символів"
+                    "label": "Максимальна довжина 4096 символів"
                 },
                 "closeIconTooltip": "Закрити без збереження",
                 "editIconTooltip": "Редагувати опис",
@@ -113,7 +113,8 @@
             "owner": "Власник",
             "position": "Позиція",
             "showPath": "Показати шлях",
-            "size": "Розмір"
+            "size": "Розмір",
+            "sendMailTo": "Надіслати e-mail на: {{email}}"
         },
         "filter": {
             "recents_full": [
@@ -194,6 +195,18 @@
                     "title": "Відкрийте, прочитайте, редагуйте свої елементи."
                 }
             ]
+        },
+        "version": {
+            "actions": {
+                "tooltip": {
+                    "disabledByMaxKeepVersion": "Досягнуто максимальної кількості версій для збереження назавжди",
+                    "disabledByDocs": "Цю версію не можна відкрити в онлайн-редакторі",
+                    "disabledByMaxVersion": "Досягнуто максимальної кількості версій"
+                },
+                "keepVersion": "Зберегти цю версію назавжди",
+                "removeKeepVersion": "Скасувати збереження назавжди",
+                "openDocumentVersion": "Відкрити версію документа"
+            }
         }
     },
     "create": {
