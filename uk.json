@@ -207,6 +207,9 @@
                 "removeKeepVersion": "Скасувати збереження назавжди",
                 "openDocumentVersion": "Відкрити версію документа"
             }
+        },
+        "tabs": {
+            "details": "Деталі"
         }
     },
     "create": {
