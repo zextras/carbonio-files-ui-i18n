@@ -98,7 +98,30 @@
             "editDescription": {
                 "input": {
                     "label": "Максимальна довжина - 4096 символів"
-                }
+                },
+                "closeIconTooltip": "Закрити без збереження",
+                "editIconTooltip": "Редагувати опис"
+            },
+            "collaborators": "Співробітники",
+            "collaboratorsTooltip": "Переглянути список співробітників",
+            "content": "Зміст",
+            "copyShortcut": "Копіювати посилання на елемент",
+            "createdBy": "Створено"
+        }
+    },
+    "create": {
+        "options": {
+            "new": {
+                "msDocument": "Microsoft {{ext}}",
+                "folder": "Нова папка",
+                "document": "Новий документ",
+                "libreDocument": "Відкрити документ {{ext}}",
+                "msDocument_docx": "Microsoft Word {{ext}}",
+                "msDocument_pptx": "Microsoft PowerPoint {{ext}}",
+                "msDocument_xlsx": "Microsoft Excel {{ext}}",
+                "presentation": "Нова презентація",
+                "spreadsheet": "Новий аркуш",
+                "upload": "Завантажити"
             }
         }
     }
