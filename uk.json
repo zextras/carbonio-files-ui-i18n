@@ -43,6 +43,9 @@
         },
         "fileSizeExceeded": {
             "note": "Будь ласка, завантажте це або відкрийте в окремій вкладці"
+        },
+        "next": {
+            "tooltip": "Далі"
         }
     },
     "collaborationLinks": {
@@ -85,7 +88,18 @@
         "listHeader": {
             "extension": "Розширення",
             "lastModified": "Остання зміна",
-            "size": "Розмір"
+            "size": "Розмір",
+            "name": "Ім’я"
+        }
+    },
+    "displayer": {
+        "details": {
+            "description": "Опис",
+            "editDescription": {
+                "input": {
+                    "label": "Максимальна довжина - 4096 символів"
+                }
+            }
         }
     }
 }
