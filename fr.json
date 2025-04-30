@@ -755,7 +755,7 @@
             "completed": "Nettoyer les téléchargements terminés"
         },
         "destination": {
-            "home": "Le téléchargement a été fait dans l'Accueil des fichiers"
+            "home": "Le téléversement a été lancé dans l'accueil de Files"
         },
         "dropzone": {
             "message": {
@@ -932,6 +932,9 @@
         },
         "video": {
             "errorLabel": "Cette vidéo ne peut pas être lue. Essayez de la lancer depuis un autre navigateur"
+        },
+        "document": {
+            "loadingLabel": "Chargement de l'aperçu de document…"
         }
     },
     "label": {
