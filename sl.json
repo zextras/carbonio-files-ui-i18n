@@ -14,8 +14,285 @@
                 },
                 "saveIconTooltip": "Shranite spremembe"
             },
-            "copyShortcut": "kopiraj bližnjico do elementa"
-        }
+            "copyShortcut": "kopiraj bližnjico do elementa",
+            "lastEdit": "Zadnja sprememba",
+            "missingDescription": "Kliknite gumb za urejanje za dodajanje opisa",
+            "owner": "Lastnik",
+            "position": "Položaj",
+            "sendMailTo": "Pošlji e-pošto na: {{email}}",
+            "showPath": "Pokaži pot",
+            "size": "Velikost"
+        },
+        "filter": {
+            "flagged_empty": [
+                {
+                    "message": "Tukaj ga boste našli, kadar ga boste potrebovali.",
+                    "title": "Kliknite zastavico, da označite element."
+                },
+                {
+                    "message": "Tukaj bodo prikazani.",
+                    "title": "Označite najpomembnejše elemente s klikom na zastavico."
+                }
+            ],
+            "flagged_full": [
+                {
+                    "message": "Tukaj ga boste našli, kadar ga boste potrebovali.",
+                    "title": "Kliknite zastavico, da označite element."
+                },
+                {
+                    "message": "Tukaj bodo prikazani.",
+                    "title": "Označite najpomembnejše elemente s klikom na zastavico."
+                }
+            ],
+            "recents_empty": [
+                {
+                    "message": "Tukaj boste videli najnovejše elemente.",
+                    "title": "Odprite, preberite, uredite svoje elemente."
+                }
+            ],
+            "recents_full": [
+                {
+                    "title": "Poglejte podrobnosti zadnje posodobljenih elementov.",
+                    "message": "Kliknite element, da ga izberete."
+                },
+                {
+                    "message": "Izberite element za nadaljevanje.",
+                    "title": "Preglejte in uredite najnovejše posodobljene elemente."
+                },
+                {
+                    "message": "Kliknite element, da ga izberete.",
+                    "title": "Hitro preglejte zadnje posodobljene elemente."
+                },
+                {
+                    "message": "Kliknite element, da ga izberete.",
+                    "title": "Ostanite na tekočem z najnovejšimi posodobljenimi elementi."
+                }
+            ],
+            "sharedByMe_empty": [
+                {
+                    "message": "Izberite element za nadaljevanje.",
+                    "title": "Preglejte in uredite elemente, ki ste jih delili s svojimi stiki."
+                },
+                {
+                    "message": "Kliknite element, da ga izberete.",
+                    "title": "Oglejte si podrobnosti map, ki ste jih delili."
+                },
+                {
+                    "message": "Kliknite element, da ga izberete.",
+                    "title": "Tukaj najdite vse elemente, ki ste jih delili s svojimi stiki."
+                }
+            ],
+            "sharedByMe_full": [
+                {
+                    "message": "Izberite element za nadaljevanje.",
+                    "title": "Preglejte in uredite elemente, ki ste jih delili s svojimi stiki."
+                },
+                {
+                    "message": "Kliknite element, da ga izberete.",
+                    "title": "Oglejte si podrobnosti map, ki ste jih delili."
+                }
+            ],
+            "sharedWithMe_empty": [
+                {
+                    "title": "Zaenkrat ni elementov, ki bi bili deljeni z vami.",
+                    "message": "Kliknite gumb \"NOVO\" za ustvarjanje novega elementa in deljenje s svojimi stiki."
+                },
+                {
+                    "message": "Obvestite druge uporabnike, da ste pripravljeni na sodelovanje z njimi.",
+                    "title": "Kliknite gumb \"NOVO\" in ustvarite novo e-pošto."
+                }
+            ],
+            "sharedWithMe_full": [
+                {
+                    "message": "Kliknite element, da ga izberete.",
+                    "title": "Začnite urejati in deliti svoje elemente."
+                },
+                {
+                    "message": "Kliknite element, da ga izberete.",
+                    "title": "Oglejte si podrobnosti svojih map in jih delite s svojimi stiki."
+                },
+                {
+                    "title": "Izberite element in začnite z delom z drugimi uporabniki."
+                }
+            ],
+            "trash_empty": [
+                {
+                    "message": "Kliknite ikono koša, da izbrišete element.",
+                    "title": "Premaknite v koš vse, česar ne potrebujete."
+                },
+                {
+                    "message": "Kliknite ikono koša, da izbrišete element.",
+                    "title": "Koš je prazen."
+                },
+                {
+                    "title": "Ohranite svoj delovni prostor urejen: izbrišite vse elemente, ki jih ne potrebujete več."
+                }
+            ],
+            "trash_full": [
+                {
+                    "title": "Izberite in obnovite elemente, ki so trenutno v košu."
+                },
+                {
+                    "message": "Izberite element za obnovitev ali trajno brisanje.",
+                    "title": "Nič ni izgubljeno!"
+                },
+                {
+                    "message": "Če je mogoče, ga izberite in obnovite v izvorno mapo.",
+                    "title": "Izberite element za trajno brisanje."
+                }
+            ]
+        },
+        "folder_empty": [
+            {
+                "title": "Kliknite gumb \"NOVO\", da ustvarite nov element in ga delite s svojimi stiki."
+            },
+            {
+                "message": "Ustvarite element s klikom na gumb \"NOVO\".",
+                "title": "Začnite urejati in deliti svoja dela."
+            },
+            {
+                "message": "Lahko ga boste urejali, označili in delili.",
+                "title": "Kliknite gumb \"NOVO\", da ustvarite nov element."
+            }
+        ],
+        "folder_full": [
+            {
+                "message": "Kliknite element, da ga izberete.",
+                "title": "Začnite urejati in deliti svoje elemente."
+            },
+            {
+                "message": "Kliknite element, da ga izberete.",
+                "title": "Oglejte si podrobnosti svojih map in jih delite s svojimi stiki."
+            },
+            {
+                "title": "Izberite mapo za urejanje ali preimenovanje."
+            },
+            {
+                "message": "Izberite element in nato pojdite na zavihek \"Deljenje\".",
+                "title": "Dajte svojim stikom pravice za urejanje, da bodo lahko urejali element."
+            },
+            {
+                "title": "Izberite element za deljenje ali premik v drugo mapo."
+            }
+        ],
+        "generic": {
+            "message": "Kliknite element, da ga izberete.",
+            "title": "Oglejte si podrobnosti svojih map in jih delite s svojimi stiki."
+        },
+        "list": {
+            "you": "Vi"
+        },
+        "search": {
+            "title": "Vnesite nekaj ključnih besed za začetek iskanja."
+        },
+        "search_empty": [
+            {
+                "message": "Ali izberite \"Napredni filtri\" za natančnejše iskanje.",
+                "title": "Začnite novo iskanje."
+            },
+            {
+                "message": "Ne obupajte, nadaljujte z iskanjem!",
+                "title": "Ni rezultatov."
+            },
+            {
+                "message": "Poskusite začeti novo iskanje.",
+                "title": "Oprostite, vendar ni rezultatov za vaše iskanje."
+            },
+            {
+                "message": "Preverite črkovanje in nastavitve filtrov ali poskusite z drugo ključno besedo.",
+                "title": "Za vaše iskanje ni rezultatov."
+            }
+        ],
+        "share": {
+            "addShare": {
+                "button": "Deli",
+                "checkbox": {
+                    "label": "Dodaj prilagojeno sporočilo v obvestilo po e-pošti"
+                },
+                "input": {
+                    "label": "Dodaj prilagojeno sporočilo k temu obvestilu",
+                    "placeholder": "Dodaj nove osebe ali skupine"
+                },
+                "note": "Opomba:",
+                "noteDescription": "Standardno sporočilo vsebuje vaše ime, ime deljenega elementa, podeljena dovoljenja prejemnikom in informacije za prijavo."
+            },
+            "chip": {
+                "owner": "Lastnik",
+                "popover": {
+                    "role": {
+                        "editor": "Urejevalnik",
+                        "editorDescription": "Lahko bo ogledal in urejal element",
+                        "viewer": "Ogledovalec",
+                        "viewerDescription": "Lahko bo samo ogledal ali prenesel element"
+                    },
+                    "save": "Shrani",
+                    "sharingAllowed": "Deljenje omogočeno",
+                    "sharingAllowedDescription": "Lahko bo upravljal deljenje tega elementa"
+                },
+                "tooltip": {
+                    "edit": {
+                        "collaborator": "Uredi sodelovanje",
+                        "you": "Uredi svoje sodelovanje"
+                    },
+                    "remove": {
+                        "collaborator": "Odstrani sodelovanje",
+                        "yourself": "Odstrani svoje sodelovanje"
+                    }
+                },
+                "you": "Vi"
+            },
+            "noSharePermissionHeader": "Nimate dovoljenja za deljenje tega elementa."
+        },
+        "tabs": {
+            "activities": "Dejavnosti",
+            "sharing": "Deljenje",
+            "details": "Podrobnosti",
+            "versioning": "Različice"
+        },
+        "uploads": {
+            "title": "Predlogi za nalaganje",
+            "message": "Tukaj lahko najdete vse elemente, ki se trenutno nalagajo, in jih tukaj tudi upravljate."
+        },
+        "version": {
+            "actions": {
+                "downloadVersion": "Prenesi različico",
+                "keepVersion": "Ohrani to različico za vedno",
+                "openDocumentVersion": "Odpri različico dokumenta",
+                "removeKeepVersion": "Odstrani ohranjanje za vedno",
+                "tooltip": {
+                    "disabledByDeleteCurrent": "Trenutne različice ni mogoče izbrisati",
+                    "disabledByMaxKeepVersion": "Dosegli ste največje število različic za trajno hrambo",
+                    "disabledByMaxVersion": "Dosegli ste največje število različic",
+                    "disabledByPermission": "Nimate ustreznih dovoljenj",
+                    "disabledByVersionKeepForever": "Različic, označenih za trajno hrambo, ni mogoče izbrisati",
+                    "disabledByDocs": "Te različice ni mogoče odpreti v spletnem urejevalniku"
+                },
+                "deleteVersion": "Izbriši različico",
+                "cloneAsCurrent": "Kloniraj kot trenutno"
+            },
+            "button": {
+                "purgeAllVersions": "Počisti vse različice",
+                "upload": "Naloži različico"
+            },
+            "row": {
+                "clonedIcon": {
+                    "tooltip1": "Klonirano iz različice {{versionNumber}} ({{cloneDate}})",
+                    "tooltip2": "Klonirano iz različice {{versionNumber}} (različica izbrisana)"
+                },
+                "versionNumber": "Različica {{versionNumber}}"
+            },
+            "rowHeaders": {
+                "currentVersion": "Trenutna različica",
+                "olderVersions": "Starejše različice",
+                "lastWeek": "Zadnjih 7 dni"
+            },
+            "mainHint": "Datoteke shranjujejo zadnjih {{maxVersions}} različic vaših elementov. Vsako različico lahko ročno izbrišete ali obnovite kot trenutno. Izberite eno ali več različic, ki jih želite ohraniti za vedno."
+        },
+        "search_full": [
+            {
+                "title": "Izberite enega ali več rezultatov za izvedbo dejanj ali prikaz podrobnosti."
+            }
+        ]
     },
     "actions": {
         "deletePermanently": "Trajno izbriši",
@@ -143,6 +420,61 @@
                 "spreadsheet": "Nova preglednica",
                 "msDocument_pptx": "Microsoft PowerPoint {{ext}}"
             }
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "Ime dokumenta",
+                            "presentation": "Ime predstavitve",
+                            "spreadsheet": "Ime preglednice"
+                        }
+                    }
+                },
+                "title": {
+                    "document": "Ustvari nov dokument",
+                    "presentation": "Ustvari novo predstavitev",
+                    "spreadsheet": "Ustvari novo preglednico"
+                }
+            }
+        }
+    },
+    "dropzone": {
+        "move": {
+            "message": {
+                "enabled": "Spustite elemente tukaj,\n da jih hitro premaknete v to mapo.",
+                "disabled": "Elementov ni mogoče spustiti na to območje."
+            },
+            "title": {
+                "disabled": "Način povleci in spusti.",
+                "enabled": "Način povleci in spusti."
+            }
+        }
+    },
+    "empty": {
+        "filter": {
+            "flagged": "Ni označenih elementov.",
+            "hint": "Zdi se, da tukaj ni ničesar.",
+            "sharedByMe": "Sodelavcem še niste delili nobenega elementa.",
+            "sharedWithMe": "Ni elementov, ki bi bili deljeni z vami.",
+            "recents": "Zdi se, da še ni nedavnih elementov.",
+            "trash": "Koš je prazen."
+        },
+        "folder": {
+            "displayerContent": "Ta mapa je prazna.",
+            "hint": "Zdi se, da je ta mapa prazna.",
+            "state": "Povlecite datoteko ali ustvarite novo s klikom na \"NOVO\"."
+        },
+        "search": {
+            "hint": "Vaše iskanje se ni ujemalo z nobeno datoteko ali mapo.",
+            "noResults": [
+                "Ni rezultatov. Nadaljujte z iskanjem!",
+                "Noben element se ne ujema z vašim iskanjem."
+            ],
+            "notRun": "Iskanje še ni bilo izvedeno."
         }
     }
 }
