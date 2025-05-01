@@ -1,7 +1,20 @@
 {
     "displayer": {
         "details": {
-            "description": "Opis"
+            "description": "Opis",
+            "collaborators": "Sodelavci",
+            "collaboratorsTooltip": "Poglej seznam sodelavcev",
+            "content": "Vsebina",
+            "createdBy": "Ustvaril",
+            "editDescription": {
+                "closeIconTooltip": "Zapri brez shranjevanja",
+                "editIconTooltip": "Uredi opis",
+                "input": {
+                    "label": "Največja dovoljena dolžina je 4096 znakov"
+                },
+                "saveIconTooltip": "Shrani spremembe"
+            },
+            "copyShortcut": "kopiraj bližnjico do elementa"
         }
     },
     "actions": {
