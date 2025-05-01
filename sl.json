@@ -12,7 +12,7 @@
                 "input": {
                     "label": "Največja dovoljena dolžina je 4096 znakov"
                 },
-                "saveIconTooltip": "Shrani spremembe"
+                "saveIconTooltip": "Shranite spremembe"
             },
             "copyShortcut": "kopiraj bližnjico do elementa"
         }
