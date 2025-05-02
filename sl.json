@@ -822,7 +822,9 @@
         "filters": "Filtri",
         "filtersList": {
             "flagged": "Označeno",
-            "myElements": "Moje elemente"
-        }
+            "myElements": "Moje elemente",
+            "recents": "Nedavni"
+        },
+        "uploads": "Naložena datoteka"
     }
 }
