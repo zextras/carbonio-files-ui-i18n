@@ -735,7 +735,16 @@
         },
         "header": {
             "close": "Prenehaјte z iskanjem",
-            "result": "Rezultati, ki vsebujejo vse ključne besede:"
+            "result": "Rezultati, ki vsebujejo vse ključne besede:",
+            "search": "Iskanje"
+        },
+        "resultsFor": "Rezultati za:",
+        "search": {
+            "tooltip": {
+                "edit": "Uredite iskanje za začetek novega",
+                "empty": "Vnesite ključne besede za začetek iskanja",
+                "search": "Iskanje"
+            }
         }
     },
     "node": {
