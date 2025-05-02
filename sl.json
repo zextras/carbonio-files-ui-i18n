@@ -736,7 +736,8 @@
         "header": {
             "close": "Prenehaјte z iskanjem",
             "result": "Rezultati, ki vsebujejo vse ključne besede:",
-            "search": "Iskanje"
+            "search": "Iskanje",
+            "start": "Začnite iskanje"
         },
         "resultsFor": "Rezultati za:",
         "search": {
@@ -744,6 +745,12 @@
                 "edit": "Uredite iskanje za začetek novega",
                 "empty": "Vnesite ključne besede za začetek iskanja",
                 "search": "Iskanje"
+            }
+        },
+        "searchBar": {
+            "label": {
+                "default": "Vnesite iskalni niz",
+                "active": "Ločite ključne besede z vejico, podpičjem ali pritiskom na tipko TAB"
             }
         }
     },
@@ -808,6 +815,14 @@
         },
         "preview": {
             "failed": "Nalaganje slike neuspešno"
+        }
+    },
+    "secondaryBar": {
+        "filesHome": "Domov",
+        "filters": "Filtri",
+        "filtersList": {
+            "flagged": "Označeno",
+            "myElements": "Moje elemente"
         }
     }
 }
