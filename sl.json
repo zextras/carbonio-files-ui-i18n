@@ -321,11 +321,100 @@
         "deletePermanently": {
             "button": {
                 "confirm": "Trajno izbriši"
-            }
+            },
+            "header": "To dejanje je nepovratno",
+            "body": "Ta element/elementi bodo trajno izbrisani. Obnovitev ne bo mogoča. To dejanje je nepovratno."
         },
         "decreaseYourOwnSharePermissions": {
             "button": {
                 "confirm": "Potrdi"
+            },
+            "header": "Zmanjšaj svoje trenutne pravice"
+        },
+        "deleteShare": {
+            "body": "Ali ste prepričani, da želite odstraniti vsa dostopna dovoljenja, prej dodeljena uporabniku {{shareTarget}}?",
+            "button": {
+                "confirm": "Odstrani"
+            },
+            "header": "Odstrani skupno rabo",
+            "yourShare": {
+                "body": {
+                    "answer": "Ali ste prepričani, da se želite odstraniti iz te skupne rabe?",
+                    "permissionLost": "Izgubili boste vsa prej dodeljena dovoljenja za dostop."
+                }
+            }
+        },
+        "moreInfo": {
+            "title": "Dodatne informacije"
+        },
+        "nodeSelection": {
+            "button": {
+                "create": "Ustvari",
+                "newFolder": {
+                    "disabled": "Nimate ustreznih dovoljenj",
+                    "label": "Nova mapa"
+                }
+            },
+            "input": {
+                "newFolder": "Ime nove mape"
+            }
+        },
+        "nodesSelection": {
+            "selectedCount_one": "{{count}} izbran element",
+            "selectedCount_two": "{{count}} izbrana elementa",
+            "selectedCount_few": "{{count}} izbrani elemento",
+            "selectedCount_other": "{{count}} izbranih elementov"
+        },
+        "purgeAllVersions": {
+            "button": {
+                "confirm": "Počisti vse različice"
+            },
+            "header": "Počisti vse različice",
+            "body": "Vse različice, ki niso označene za trajno hrambo, razen trenutne, bodo izbrisane. Obnovitev ne bo mogoča."
+        },
+        "removeLink": {
+            "body": "Povezava je potekla in zato ni več dostopna. Lahko jo odstranite s seznama ali posodobite datum poteka in druge informacije za nadaljnjo uporabo.",
+            "button": {
+                "confirm": "Odstrani"
+            },
+            "header": "Odstrani {{nodeName}} {{linkName}}"
+        },
+        "revokeCollaborationLink": {
+            "body": "S preklicem te povezave onemogočite ustvarjanje novih skupnih rabe z njo. Uporabniki, ki so jo že uporabili, bodo še naprej imeli dostop.",
+            "button": {
+                "confirm": "Prekliči"
+            },
+            "header": "Prekliči povezavo za sodelovanje {{nodeName}}"
+        },
+        "revokeLink": {
+            "body": "Z ukinitvijo te povezave preprečite dostop do {{nodeName}} vsem, ki bi jo želeli uporabiti.",
+            "button": {
+                "confirm": "Prekliči"
+            },
+            "header": "Prekliči {{nodeName}} {{linkName}}"
+        },
+        "roots": {
+            "filesHome": "Domov",
+            "rootsList": "Datoteke",
+            "sharedWitMe": "Deljeno z mano",
+            "trash": {
+                "myElements": "Moji elementi",
+                "sharedWitMe": "Deljeni elementi",
+                "trash": "Smeti"
+            }
+        },
+        "unsaved_changes": {
+            "body": {
+                "line1": "Ali ste prepričani, da želite zapustiti stran brez shranjevanja?",
+                "line2": "Vse neshranjene spremembe bodo izgubljene."
+            },
+            "button": {
+                "leave_anyway": "Zapusti vseeno",
+                "save_and_leave": "Shrani in zapusti"
+            },
+            "title": {
+                "cannot_saved_changes": "Nekaterih sprememb ni mogoče shraniti",
+                "unsaved_changes": "Imate neshranjene spremembe"
             }
         }
     },
@@ -344,11 +433,23 @@
         "actions": {
             "tooltip": {
                 "download": "Prenesi",
-                "edit": "Uredi"
+                "edit": "Uredi",
+                "manageShares": "Upravljaj z deljenji"
             }
         },
         "close": {
             "tooltip": "Zapri"
+        },
+        "button": {
+            "refresh": "Osveži predogled"
+        },
+        "loading": {
+            "error": "Pri nalaganju predogleda je prišlo do napake. Poskusite znova.",
+            "file": "Nalagam predogled elementa, prosimo počakajte…",
+            "retrying": "Poskušam znova naložiti predogled…"
+        },
+        "video": {
+            "errorLabel": "Videoposnetka ni mogoče predvajati. Poskusite ga ponovno predvajati v drugem brskalniku."
         }
     },
     "breadcrumb": {
@@ -488,12 +589,72 @@
             "edit": "Uredi",
             "remove": "Odstrani",
             "revoke": "Prekliči",
+            "undo": "Razveljavi",
+            "expireOn": "Poteče:",
+            "expiredOn": "Povezava je potekla dne:",
+            "noExpirationDate": "Brez datuma poteka"
+        },
+        "addLink": {
+            "addLink": "Dodaj povezavo",
+            "description": "Notranji in zunanji uporabniki, ki imajo dostop do povezave, lahko prenesejo element.",
+            "generateLink": "Ustvari povezavo",
+            "limitReached": "Doseženo je bilo največje število javnih povezav",
             "undo": "Razveljavi"
+        },
+        "datePickerInput": {
+            "description": "Povezava poteče ob koncu izbranega dne"
+        },
+        "fileLink": {
+            "title_one": "Javna povezava za prenos",
+            "title_two": "Javni povezavi za prenos",
+            "title_few": "Javne povezave za prenos",
+            "title_other": "Javnih povezav za prenos"
+        },
+        "folderLink": {
+            "addLink": {
+                "description": "Vsakdo s to povezavo si lahko ogleda in prenese vsebino te mape."
+            },
+            "title_one": "Javno dostopna povezava",
+            "title_two": "Javno dostopni povezava",
+            "title_few": "Javno dostopne povezave",
+            "title_other": "Javno dostopnih povezav"
+        },
+        "input": {
+            "description": {
+                "error": {
+                    "maxLengthAllowed": "Največje dovoljeno število znakov je 300"
+                }
+            }
+        },
+        "accessCode": {
+            "chip": {
+                "tooltip": "Kopirajte dostopno kodo",
+                "label": "Dostopna koda"
+            },
+            "switch": {
+                "label": "Omogoči dostopno kodo"
+            },
+            "input": {
+                "label": "Dostopna koda"
+            },
+            "buttons": {
+                "copy": {
+                    "tooltip": "Kopiraj dostopno kodo"
+                },
+                "regenerate": {
+                    "tooltip": "Ustvari novo dostopno kodo"
+                }
+            }
         }
     },
     "quota": {
         "limitedSpace": "{{used}} od {{limit}} uporabljenih",
-        "unlimitedSpace": "{{used}} od neomejenega prostora"
+        "unlimitedSpace": "{{used}} od neomejenega prostora",
+        "overQuota": {
+            "tooltip": {
+                "label": "Dosegli ste največjo razpoložljivo kvoto."
+            }
+        }
     },
     "search": {
         "advancedSearch": {
@@ -506,7 +667,76 @@
                         "cancel": "Pojdi nazaj"
                     }
                 }
+            },
+            "button": {
+                "filters_one": "{{count}} napreden filter",
+                "filters_two": "{{count}} napredna filtra",
+                "filters_few": "{{count}} napredni filtri",
+                "filters_other": "{{count}} naprednih filtrov"
             }
+        }
+    },
+    "node": {
+        "alias": {
+            "name_LOCAL_ROOT": "Domov",
+            "name_SHARED_WITH_ME_ROOT": "Deljeno z mano",
+            "name_TRASH_ROOT": "Smeti"
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "Kopiraj",
+                    "tooltip": {
+                        "confirm": "Tega dejanja tukaj ni mogoče izvesti"
+                    }
+                },
+                "title_one": "Kopiraj {{node.name}}",
+                "title_two": "Kopiraj {{node.name}}",
+                "title_few": "Kopiraj {{node.name}}",
+                "title_other": "Kopiraj {{node.name}}"
+            }
+        },
+        "move": {
+            "error": {
+                "not": {
+                    "allowed": "Ni mogoče premakniti več elementov iz filtra ali iskanja"
+                }
+            },
+            "modal": {
+                "button": {
+                    "confirm": "Premakni",
+                    "tooltip": {
+                        "confirm": "Tega dejanja tukaj ni mogoče izvesti"
+                    }
+                },
+                "input": {
+                    "filter": "Filtriraj mape"
+                },
+                "subtitle": "Izberite ciljno mapo:",
+                "title_one": "Premakni {{node.name}}",
+                "title_two": "Premakni elementa",
+                "title_few": "Premakni elemente",
+                "title_other": "Premakni elemente"
+            }
+        },
+        "rename": {
+            "modal": {
+                "button": {
+                    "confirm": "Preimenuj"
+                },
+                "input": {
+                    "label": {
+                        "name": "Ime elementa"
+                    }
+                },
+                "title": "Preimenuj element"
+            }
+        },
+        "type": {
+            "folder": "Mapa"
+        },
+        "preview": {
+            "failed": "Nalaganje slike neuspešno"
         }
     }
 }
