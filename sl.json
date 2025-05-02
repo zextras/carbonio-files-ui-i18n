@@ -916,7 +916,8 @@
     "selectionMode": {
         "header": {
             "exit": "Izhod iz načina izbire",
-            "unselectAll": "Počisti izbor"
+            "unselectAll": "Počisti izbor",
+            "selectAll": "Izberite vse"
         }
     },
     "share": {
