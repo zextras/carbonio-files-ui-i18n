@@ -918,6 +918,9 @@
             "exit": "Izhod iz načina izbire",
             "unselectAll": "Počisti izbor",
             "selectAll": "Izberite vse"
+        },
+        "node": {
+            "tooltip": "Aktiviraj način izbire"
         }
     },
     "share": {
