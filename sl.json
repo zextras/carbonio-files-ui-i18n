@@ -712,7 +712,13 @@
                     "description": "Filtriraj rezultate po elementih z vsaj enim sodelujočim (poleg vas)",
                     "label": "Deljeno"
                 },
-                "title": "Napredni filtri"
+                "title": "Napredni filtri",
+                "keywords": {
+                    "label": "Ključne besede"
+                },
+                "owner": {
+                    "label": "Lastnik"
+                }
             },
             "button": {
                 "filters_one": "{{count}} napreden filter",
@@ -723,7 +729,8 @@
         },
         "clear": {
             "tooltip": {
-                "empty": "Iskalno polje je že prazno"
+                "empty": "Iskalno polje je že prazno",
+                "clear": "Počisti iskalni vnos"
             }
         },
         "header": {
