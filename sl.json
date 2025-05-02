@@ -329,7 +329,8 @@
             "button": {
                 "confirm": "Potrdi"
             },
-            "header": "Zmanjšaj svoje trenutne pravice"
+            "header": "Zmanjšaj svoje trenutne pravice",
+            "body": "Ali ste prepričani, da želite zmanjšati svoje pravice za ta element? To dejanje je trajno in prejšnjih dovoljenj za skupno rabo ne boste mogli obnoviti sami. Vedno se lahko obrnete na lastnika elementa, če želite, da vam prejšnja dovoljenja znova omogoči."
         },
         "deleteShare": {
             "body": "Ali ste prepričani, da želite odstraniti vsa dostopna dovoljenja, prej dodeljena uporabniku {{shareTarget}}?",
@@ -416,6 +417,10 @@
                 "cannot_saved_changes": "Nekaterih sprememb ni mogoče shraniti",
                 "unsaved_changes": "Imate neshranjene spremembe"
             }
+        },
+        "button": {
+            "cancel": "Prekliči",
+            "confirm": "Potrdi"
         }
     },
     "size": {
@@ -449,7 +454,48 @@
             "retrying": "Poskušam znova naložiti predogled…"
         },
         "video": {
-            "errorLabel": "Videoposnetka ni mogoče predvajati. Poskusite ga ponovno predvajati v drugem brskalniku."
+            "errorLabel": "Videoposnetka ni mogoče predvajati. Poskusite ga ponovno predvajati v drugem brskalniku"
+        },
+        "document": {
+            "loadingLabel": "Nalaganje predogleda dokumenta…",
+            "errorLabel": "Predogleda dokumenta ni bilo mogoče naložiti."
+        },
+        "print": {
+            "tooltip": "Tiskanje"
+        },
+        "fileSizeExceeded": {
+            "download": "PRENESI DATOTEKO",
+            "title": "Tega elementa ni mogoče prikazati",
+            "content": "Velikost datoteke presega dovoljeno velikost in je ni mogoče prikazati",
+            "openTab": "ODPRI V LOČENEM ZAVIHKU",
+            "note": "Prosimo, prenesite datoteko ali jo odprite v ločenem zavihku."
+        },
+        "page": {
+            "label": "Stran"
+        },
+        "previous": {
+            "tooltip": "Predhodni"
+        },
+        "next": {
+            "tooltip": "Naslednji"
+        },
+        "fitWidth": {
+            "label": "Prilagodi širini"
+        },
+        "minimumZoomReached": {
+            "tooltip": "Dosežena je najmanjša raven povečave"
+        },
+        "resetZoom": {
+            "tooltip": "Ponastavi povečavo"
+        },
+        "maximumZoomReached": {
+            "tooltip": "Dosežena je največja raven povečave"
+        },
+        "zoomIn": {
+            "tooltip": "Povečaj"
+        },
+        "zoomOut": {
+            "tooltip": "Pomanjšaj"
         }
     },
     "breadcrumb": {
@@ -829,6 +875,219 @@
             "sharedWithMe": "Deljeno z menoj",
             "trash": "Smeti"
         },
-        "uploads": "Naložena datoteka"
+        "uploads": "Naložene datoteke"
+    },
+    "errorCode": {
+        "code_ACCOUNT_NOT_FOUND": "Zdi se, da ta e-poštni naslov ni povezan z nobenim uporabnikom",
+        "code_FILE_VERSION_NOT_FOUND": "Oprostite, te različice elementa ni mogoče najti",
+        "code_LINK_NOT_FOUND": "Dejanje ni uspelo. Ta povezava ne obstaja več",
+        "code": "Nekaj je šlo narobe",
+        "code_Generic": "Nekaj je šlo narobe",
+        "code_NODE_COPY_ERROR": "Oprostite, kopiranje elementa ni uspelo. Poskusite znova",
+        "code_NODE_DUPLICATED": "V tej mapi že obstaja element z enakim imenom",
+        "code_NODE_NOT_FOUND": "Zdi se, da ta element ne obstaja ali pa nimate dovoljenja za dostop do njega",
+        "code_SHARE_CREATION_ERROR": "Opravičujemo se, vendar tega elementa ni mogoče deliti s tem uporabnikom",
+        "code_SHARE_NOT_FOUND": "Opravičujemo se, vendar tega deljenja ni mogoče najti",
+        "code_VERSIONS_LIMIT_REACHED": "Dejanja ni mogoče dokončati. Dosegli ste največjo dovoljeno mejo.",
+        "code_OVER_QUOTA_REACHED": "Dosegli ste omejitev shrambe. Izbrišite nekaj elementov, da sprostite prostor, in poskusite znova",
+        "operation_copyNodes": "Kopiranje ni uspelo.",
+        "operation_cloneVersion": "Kloniranje ni uspelo.",
+        "code_MISSING_FIELD": "Prišlo je do notranje napake, zato ni bilo mogoče obnoviti vseh podatkov o tem elementu",
+        "code_NODE_WRITE_ERROR": "Zdi se, da tega elementa ni mogoče urejati ali pa nimate dovoljenja za njegovo urejanje"
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "title": "Ustvari novo mapo",
+                "button": {
+                    "confirm": "Ustvari"
+                },
+                "input": {
+                    "label": {
+                        "name": "Ime mape"
+                    }
+                }
+            }
+        }
+    },
+    "label": {
+        "app_name": "Datoteke"
+    },
+    "selectionMode": {
+        "header": {
+            "exit": "Izhod iz načina izbire",
+            "unselectAll": "Počisti izbor"
+        }
+    },
+    "share": {
+        "chip": {
+            "tooltip": {
+                "error": {
+                    "contactNotFound": "Elemente lahko delite samo z uporabniki, za katere je ta funkcija omogočena, in ne z distribucijskimi seznami. Zdi se, da navedeni e-poštni naslov ni povezan z nobenim omogočenim uporabnikom. Preverite in vnesite veljaven naslov."
+                }
+            }
+        }
+    },
+    "snackbar": {
+        "clipboard": {
+            "email": "E-poštni naslov kopiran",
+            "itemShortcutCopied": "Bližnjica do elementa kopirana",
+            "accessCodeCopied": "Dostopna koda kopirana"
+        },
+        "collaborationLink": {
+            "actionLabel": {
+                "copyLink": "Kopiraj povezavo"
+            },
+            "copyCollaborationLink": "Povezava za sodelovanje kopirana",
+            "newCollaborationLinkGenerated": {
+                "label": "Nova povezava za sodelovanje ustvarjena"
+            }
+        },
+        "copyNodes": {
+            "action": "Pojdi v mapo",
+            "error": "Nekaj je šlo narobe, poskusite znova",
+            "success": "Element kopiran"
+        },
+        "decreaseYourOwnShare": {
+            "success": "Pravice uspešno posodobljene"
+        },
+        "deletePermanently": {
+            "error": "Napaka",
+            "success": "Uspešno"
+        },
+        "deleteShare": {
+            "error": "Napaka",
+            "success": "Uspešno"
+        },
+        "download": {
+            "start": "Prenos se bo kmalu začel"
+        },
+        "markForDeletion": {
+            "error": "Nekaj je šlo narobe, poskusite znova",
+            "showTrash": "Odpri mapo Smeti",
+            "success": "Element premaknjen v smeti"
+        },
+        "moveNodes": {
+            "action": "Pojdi v mapo",
+            "success": "Element premaknjen",
+            "error": "Nekaj je šlo narobe, poskusite znova"
+        },
+        "publicLink": {
+            "actionLabel": {
+                "copyLink": "Kopiraj povezavo"
+            },
+            "copyLink": "{{linkName}} kopirana",
+            "linkUpdated": {
+                "label": "{{linkName}} posodobljena"
+            },
+            "newPublicLinkGenerated": {
+                "label": "Nova {{linkName}} ustvarjena"
+            }
+        },
+        "restore": {
+            "showInFolder": "Prikaži v mapi",
+            "success": "Uspešno",
+            "error": "Nekaj je šlo narobe, poskusite znova"
+        },
+        "unflag": {
+            "success": "Zastavica uspešno odstranjena"
+        },
+        "upload": {
+            "foldersNotAllowed": "Map ni mogoče naložiti",
+            "goToFolder": "Pojdi v mapo",
+            "moreInfo": "Več informacij",
+            "nodesNotAllowed": "Nekaterih elementov ni bilo mogoče naložiti",
+            "success": "Nalaganje uspešno v {{destination}}"
+        },
+        "version": {
+            "clone": "Različica klonirana kot trenutna",
+            "keepForeverRemoved": "Oznaka \"trajno shrani\" odstranjena",
+            "keepForeverAdded": "Različica označena za trajno shranjevanje"
+        },
+        "createDocument": {
+            "error": {
+                "overQuota": {
+                    "presentation": "Ustvarjanje nove predstavitve ni uspelo. Dosegli ste omejitev prostora. Izbrišite nekaj elementov in poskusite znova",
+                    "actionLabel": "V redu",
+                    "document": "Ustvarjanje novega dokumenta ni uspelo. Dosegli ste omejitev prostora. Izbrišite nekaj elementov in poskusite znova",
+                    "spreadsheet": "Ustvarjanje nove preglednice ni uspelo. Dosegli ste omejitev prostora. Izbrišite nekaj elementov in poskusite znova"
+                }
+            }
+        },
+        "error": {
+            "overQuota": {
+                "actionLabel": "V redu"
+            }
+        },
+        "accessCode": {
+            "regenerate": "Nova dostopna koda ustvarjena"
+        },
+        "openWithDocs": {
+            "error": {
+                "pleaseDownload": "Za ogled elementa ga prenesite na svojo napravo",
+                "exceedSizeLimit": "Element presega dovoljeno velikost in ga ni mogoče odpreti."
+            }
+        }
+    },
+    "sortingDropdown": {
+        "ascendingOrder": "Naraščajoče",
+        "descendingOrder": "Padajoče",
+        "icon": {
+            "tooltip": {
+                "OrderLastUpdateDescending": "Padajoče po zadnji posodobitvi",
+                "OrderNameAscending": "Naraščajoče po imenu",
+                "OrderNameDescending": "Padajoče po imenu",
+                "OrderSizeAscending": "Naraščajoče po velikosti",
+                "OrderSizeDescending": "Padajoče po velikosti",
+                "OrderLastUpdateAscending": "Naraščajoče po zadnji posodobitvi"
+            }
+        },
+        "lastUpdate": "Zadnja posodobitev",
+        "name": "Ime",
+        "size": "Velikost"
+    },
+    "uploadItem": {
+        "queued": "V čakalni vrsti"
+    },
+    "uploads": {
+        "banner": {
+            "overQuota": {
+                "title": "Presežena kvota",
+                "description": "Nalaganje nekaterih elementov ni uspelo, ker ste dosegli omejitev prostora za shranjevanje. Izbrišite nekaj elementov, da sprostite prostor, in poskusite znova."
+            }
+        },
+        "clean": {
+            "completed": "Počisti zaključena nalaganja"
+        },
+        "destination": {
+            "home": "Nalaganje je bilo izvedeno v domačo mapo"
+        },
+        "dropzone": {
+            "message": {
+                "disabled": "Priloge ni mogoče spustiti na tem območju",
+                "folderView": {
+                    "disabled": "Priloge ni mogoče spustiti na tem območju",
+                    "enabled": "Spustite priloge tukaj,\nda jih hitro dodate tej mapi"
+                },
+                "otherView": {
+                    "enabled": "Spustite priloge tukaj,\nda jih hitro dodate v svojo domačo mapo"
+                }
+            },
+            "title": {
+                "disabled": "Način povleci in spusti.",
+                "enabled": "Način povleci in spusti."
+            }
+        },
+        "error": {
+            "moreInfo": {
+                "foldersNotAllowed": "Map ni mogoče naložiti. Če poskušate naložiti datoteko, je sistem morda ni prepoznal. Poskusite znova z gumbom \"NALOŽI\"."
+            }
+        }
+    },
+    "header": {
+        "iconTooltip": {
+            "ListLayout": "Postavitev seznam",
+            "GridLayout": "Postavitev mreža"
+        }
     }
 }
