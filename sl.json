@@ -684,13 +684,25 @@
                 },
                 "folder": {
                     "modal": {
-                        "cancel": "Pojdi nazaj"
+                        "cancel": "Nazaj",
+                        "cascade": "išči tudi v podmapah",
+                        "subtitle": "Rezultati bodo iskani samo znotraj izbrane mape"
                     },
                     "label": "Izberite mapo"
                 },
                 "flagged": {
                     "label": "Označeno",
                     "description": "Filtrirajte rezultate po elementih, ki ste jih označili"
+                },
+                "itemType": {
+                    "dropdownOption": {
+                        "audio": "Avdio",
+                        "spreadsheet": "Preglednica"
+                    }
+                },
+                "shared": {
+                    "description": "Filtriraj rezultate po elementih z vsaj enim sodelujočim (poleg vas)",
+                    "label": "Deljeno"
                 }
             },
             "button": {
@@ -698,6 +710,11 @@
                 "filters_two": "{{count}} napredna filtra",
                 "filters_few": "{{count}} napredni filtri",
                 "filters_other": "{{count}} naprednih filtrov"
+            }
+        },
+        "clear": {
+            "tooltip": {
+                "empty": "Iskalno polje je že prazno"
             }
         }
     },
