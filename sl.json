@@ -322,6 +322,11 @@
             "button": {
                 "confirm": "Trajno izbriši"
             }
+        },
+        "decreaseYourOwnSharePermissions": {
+            "button": {
+                "confirm": "Potrdi"
+            }
         }
     },
     "size": {
@@ -338,7 +343,8 @@
     "preview": {
         "actions": {
             "tooltip": {
-                "download": "Prenesi"
+                "download": "Prenesi",
+                "edit": "Uredi"
             }
         },
         "close": {
@@ -475,6 +481,32 @@
                 "Noben element se ne ujema z vašim iskanjem."
             ],
             "notRun": "Iskanje še ni bilo izvedeno."
+        }
+    },
+    "publicLink": {
+        "link": {
+            "edit": "Uredi",
+            "remove": "Odstrani",
+            "revoke": "Prekliči",
+            "undo": "Razveljavi"
+        }
+    },
+    "quota": {
+        "limitedSpace": "{{used}} od {{limit}} uporabljenih",
+        "unlimitedSpace": "{{used}} od neomejenega prostora"
+    },
+    "search": {
+        "advancedSearch": {
+            "modal": {
+                "button": {
+                    "confirm": "Iskanje"
+                },
+                "folder": {
+                    "modal": {
+                        "cancel": "Pojdi nazaj"
+                    }
+                }
+            }
         }
     }
 }
