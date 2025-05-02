@@ -822,8 +822,12 @@
         "filters": "Filtri",
         "filtersList": {
             "flagged": "Označeno",
-            "myElements": "Moje elemente",
-            "recents": "Nedavni"
+            "myElements": "Moji elementi",
+            "recents": "Nedavni",
+            "sharedByMe": "Deljeno z moje strani",
+            "sharedElements": "Deljeni elementi",
+            "sharedWithMe": "Deljeno z menoj",
+            "trash": "Smeti"
         },
         "uploads": "Naložena datoteka"
     }
