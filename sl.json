@@ -686,7 +686,9 @@
                     "modal": {
                         "cancel": "Nazaj",
                         "cascade": "išči tudi v podmapah",
-                        "subtitle": "Rezultati bodo iskani samo znotraj izbrane mape"
+                        "subtitle": "Rezultati bodo iskani samo znotraj izbrane mape",
+                        "confirm": "Izberite mapo",
+                        "title": "Izberite mapo"
                     },
                     "label": "Izberite mapo"
                 },
@@ -697,13 +699,20 @@
                 "itemType": {
                     "dropdownOption": {
                         "audio": "Avdio",
-                        "spreadsheet": "Preglednica"
-                    }
+                        "spreadsheet": "Preglednica",
+                        "document": "Dokument",
+                        "folder": "Mapa",
+                        "image": "Slika",
+                        "presentation": "Predstavitev",
+                        "video": "Video"
+                    },
+                    "label": "Vrsta elementa"
                 },
                 "shared": {
                     "description": "Filtriraj rezultate po elementih z vsaj enim sodelujočim (poleg vas)",
                     "label": "Deljeno"
-                }
+                },
+                "title": "Napredni filtri"
             },
             "button": {
                 "filters_one": "{{count}} napreden filter",
@@ -716,6 +725,10 @@
             "tooltip": {
                 "empty": "Iskalno polje je že prazno"
             }
+        },
+        "header": {
+            "close": "Prenehaјte z iskanjem",
+            "result": "Rezultati, ki vsebujejo vsa ključna beseda:"
         }
     },
     "node": {
