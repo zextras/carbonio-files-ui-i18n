@@ -592,7 +592,14 @@
             "undo": "Razveljavi",
             "expireOn": "Poteče:",
             "expiredOn": "Povezava je potekla dne:",
-            "noExpirationDate": "Brez datuma poteka"
+            "noExpirationDate": "Brez datuma poteka",
+            "editLink": "Uredi povezavo",
+            "urlChip": {
+                "tooltip": {
+                    "copy": "Kopiraj {{linkName}}",
+                    "expired": "Ta povezava je potekla"
+                }
+            }
         },
         "addLink": {
             "addLink": "Dodaj povezavo",
@@ -608,7 +615,10 @@
             "title_one": "Javna povezava za prenos",
             "title_two": "Javni povezavi za prenos",
             "title_few": "Javne povezave za prenos",
-            "title_other": "Javnih povezav za prenos"
+            "title_other": "Javnih povezav za prenos",
+            "addLink": {
+                "description": "Notranji in zunanji uporabniki, ki imajo dostop do povezave, lahko prenesejo element."
+            }
         },
         "folderLink": {
             "addLink": {
@@ -624,7 +634,8 @@
                 "error": {
                     "maxLengthAllowed": "Največje dovoljeno število znakov je 300"
                 }
-            }
+            },
+            "label": "Opis povezave"
         },
         "accessCode": {
             "chip": {
@@ -645,6 +656,9 @@
                     "tooltip": "Ustvari novo dostopno kodo"
                 }
             }
+        },
+        "dateTimePicker": {
+            "label": "Datum poteka"
         }
     },
     "quota": {
@@ -654,18 +668,29 @@
             "tooltip": {
                 "label": "Dosegli ste največjo razpoložljivo kvoto."
             }
+        },
+        "refresh": {
+            "tooltip": {
+                "label": "Osveži"
+            }
         }
     },
     "search": {
         "advancedSearch": {
             "modal": {
                 "button": {
-                    "confirm": "Iskanje"
+                    "confirm": "Iskanje",
+                    "reset": "Ponastavi filtre"
                 },
                 "folder": {
                     "modal": {
                         "cancel": "Pojdi nazaj"
-                    }
+                    },
+                    "label": "Izberite mapo"
+                },
+                "flagged": {
+                    "label": "Označeno",
+                    "description": "Filtrirajte rezultate po elementih, ki ste jih označili"
                 }
             },
             "button": {
