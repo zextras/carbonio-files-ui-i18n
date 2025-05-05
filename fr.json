@@ -934,7 +934,45 @@
             "errorLabel": "Cette vidéo ne peut pas être lue. Essayez de la lancer depuis un autre navigateur"
         },
         "document": {
-            "loadingLabel": "Chargement de l'aperçu de document…"
+            "loadingLabel": "Chargement de l'aperçu de document…",
+            "errorLabel": "Impossible de charger l'aperçu du document."
+        },
+        "print": {
+            "tooltip": "Imprimer"
+        },
+        "fileSizeExceeded": {
+            "download": "TÉLÉCHARGER LE FICHIER",
+            "title": "Cet élément ne peut être affiché",
+            "content": "La taille du fichier excède la taille limite autorisée et ne peut être affiché",
+            "openTab": "OUVRIR DANS UN ONGLET SÉPARÉ",
+            "note": "Veuillez le télécharger ou l'ouvrir dans un autre onglet"
+        },
+        "page": {
+            "label": "Page"
+        },
+        "zoomOut": {
+            "tooltip": "Zoom vers l'arrière"
+        },
+        "previous": {
+            "tooltip": "Précédent"
+        },
+        "resetZoom": {
+            "tooltip": "Réinitialiser le zoom"
+        },
+        "next": {
+            "tooltip": "Suivant"
+        },
+        "fitWidth": {
+            "label": "Adaptation à la largeur"
+        },
+        "maximumZoomReached": {
+            "tooltip": "Niveau de zoom maximum atteint"
+        },
+        "minimumZoomReached": {
+            "tooltip": "Niveau de zoom minimum atteint"
+        },
+        "zoomIn": {
+            "tooltip": "Zoom vers l'avant"
         }
     },
     "label": {
