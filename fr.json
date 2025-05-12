@@ -728,6 +728,17 @@
         ],
         "search": {
             "title": "Saisissez des mots clés pour lancer la recherche."
+        },
+        "upload": {
+            "error": {
+                "aborted": "Le téléversement a été interrompu ou bloqué. Merci de réessayer ou de vérifier votre connexion.",
+                "fileSizeExceeded": "Le fichier n'a pas pu être téléversé car il dépasse la limite autorisée.",
+                "maxVersionReached": "Le fichier n'a pas pu être téléversé car le nombre maximum de versions a été atteint."
+            }
+        },
+        "uploadFailure": {
+            "title": "Suggestions d'envoi",
+            "message": "Vous trouverez ici tous les éléments en cours de téléversement. Si un fichier n'a pas pu être téléversé, cliquez dessus pour obtenir plus de détails."
         }
     },
     "docs": {
