@@ -599,6 +599,17 @@
         },
         "search": {
             "title": "Wpisz słowa kluczowe, aby rozpocząć wyszukiwanie."
+        },
+        "upload": {
+            "error": {
+                "aborted": "Przesyłanie zostało przerwane. Spróbuj ponownie lub sprawdź swoje połączenie internetowe.",
+                "fileSizeExceeded": "Plik nie został przesłany, ponieważ przekracza dozwolony limit.",
+                "maxVersionReached": "Nie przesłano pliku, ponieważ osiągnięto max. liczbę wersji."
+            }
+        },
+        "uploadFailure": {
+            "title": "Aktualne przesyłania",
+            "message": "Tutaj znajdziesz wszystkie elementy, które są aktualnie przesyłane. Jeśli nie udało się przesłać pliku, możesz kliknąć na niego, aby zobaczyć szczegóły."
         }
     },
     "publicLink": {
