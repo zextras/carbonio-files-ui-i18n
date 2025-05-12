@@ -389,6 +389,17 @@
                 "lastWeek": "Last 7 days",
                 "olderVersions": "Older versions"
             }
+        },
+        "upload": {
+            "error": {
+                "aborted": "The upload was interrupted or blocked. Please try again or check your connection.",
+                "fileSizeExceeded": "The file could not be uploaded because it exceeds the allowed limit.",
+                "maxVersionReached": "The file could not be uploaded because the maximum number of versions has been reached."
+            }
+        },
+        "uploadFailure": {
+            "title": "Upload suggestions",
+            "message": "Here you can find all the items that are currently uploading. If a file failed to upload, click on it to see more details."
         }
     },
     "docs": {
