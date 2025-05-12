@@ -650,6 +650,17 @@
         ],
         "search": {
             "title": "Digita alcune parole chiave per iniziare una ricerca."
+        },
+        "upload": {
+            "error": {
+                "aborted": "Il caricamento è stato interrotto o bloccato. Riprova o controlla la connessione.",
+                "fileSizeExceeded": "Non è stato possibile caricare il file perché supera il limite consentito.",
+                "maxVersionReached": "Non è stato possibile caricare il file perché è stato raggiunto il numero massimo di versioni."
+            }
+        },
+        "uploadFailure": {
+            "title": "Suggerimenti di caricamento",
+            "message": "Qui sono elencati tutti gli elementi in caricamento. Se un file non è stato caricato, cliccaci sopra per visualizzare maggiori dettagli."
         }
     },
     "search": {
