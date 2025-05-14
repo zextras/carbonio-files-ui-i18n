@@ -388,6 +388,17 @@
         },
         "search": {
             "title": "Unesi ključne riječi za početak pretrage."
+        },
+        "upload": {
+            "error": {
+                "aborted": "Upload je prekinut ili blokiran. Pokušajte ponovo ili provjerite vašu vezu.",
+                "fileSizeExceeded": "Datoteka nije mogla biti otpremljena jer premašuje dozvoljen limit.",
+                "maxVersionReached": "Datoteka nije mogla biti otpremljena jer je dostignut maksimalni broj verzija."
+            }
+        },
+        "uploadFailure": {
+            "title": "Prijedlozi za učitavanje",
+            "message": "Ovdje možete pronaći sve stavke koje se trenutno otpremaju. Ako je datoteka neuspješno otpremljena, kliknite na nju da biste vidjeli više detalja."
         }
     },
     "docs": {
