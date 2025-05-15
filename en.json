@@ -1092,5 +1092,21 @@
             "ListLayout": "List layout",
             "GridLayout": "Grid layout"
         }
+    },
+    "notifications": {
+        "empty": {
+            "title": "No notifications",
+            "message": "You don’t have any notifications at the moment"
+        },
+        "addedNode": {
+            "message": "<bold>{{email}}</bold> added <bold>{{node}}</bold> in <bold>{{folder}}</bold>"
+        },
+        "newShare": {
+            "message": "<bold>{{email}}</bold> shared <bold>{{node}}</bold> with you"
+        },
+        "removedNode": {
+            "message": "<bold>{{email}}</bold> removed <bold>{{node}}</bold> from <bold>{{folder}}</bold>"
+        },
+        "title": "Notifications"
     }
 }
