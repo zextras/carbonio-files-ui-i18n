@@ -1098,5 +1098,16 @@
             "ListLayout": "Layout lista",
             "GridLayout": "Layout griglia"
         }
+    },
+    "notifications": {
+        "newShare": {
+            "message": "<bold>{{email}}</bold> ha condiviso <bold>{{node}}</bold> con te"
+        },
+        "addedNode": {
+            "message": "<bold>{{email}}</bold> ha aggiunto <bold>{{node}}</bold> in <bold>{{folder}}</bold>"
+        },
+        "removedNode": {
+            "message": "<bold>{{email}}</bold> ha rimosso <bold>{{node}}</bold> da <bold>{{folder}}</bold>"
+        }
     }
 }
