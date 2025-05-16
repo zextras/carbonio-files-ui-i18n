@@ -1098,5 +1098,21 @@
             "ListLayout": "Widok listy",
             "GridLayout": "Widok siatki"
         }
+    },
+    "notifications": {
+        "empty": {
+            "title": "Brak powiadomień",
+            "message": "AKtualnie nie masz żadnych powiadomień"
+        },
+        "newShare": {
+            "message": "<bold>{{email}}</bold> udostępnił(a) Ci <bold>{{node}}</bold>"
+        },
+        "addedNode": {
+            "message": "<bold>{{email}}</bold> dodał(a) <bold>{{node}}</bold> do <bold>{{folder}}</bold>"
+        },
+        "title": "Powiadomienia",
+        "removedNode": {
+            "message": "Użytkownik <bold>{{email}}</bold> usunął <bold>{{node}}</bold> z <bold>{{folder}}</bold>"
+        }
     }
 }
