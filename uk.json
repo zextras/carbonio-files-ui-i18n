@@ -326,5 +326,16 @@
                 "upload": "Завантажити"
             }
         }
+    },
+    "size": {
+        "unitMeasure_TB": "TB",
+        "unitMeasure_EB": "EB",
+        "unitMeasure_GB": "GB",
+        "unitMeasure_PB": "PB",
+        "unitMeasure_B": "B",
+        "unitMeasure_KB": "KB",
+        "unitMeasure_MB": "MB",
+        "unitMeasure_YB": "YB",
+        "unitMeasure_ZB": "ZB"
     }
 }
