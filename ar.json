@@ -1116,5 +1116,21 @@
             "GridLayout": "التوزيع الشبكي",
             "ListLayout": "التوزيع القائمي"
         }
+    },
+    "notifications": {
+        "empty": {
+            "title": "لا يوجد إشعارات",
+            "message": "حالياً ليس لديك أي إشعارات"
+        },
+        "newShare": {
+            "message": "قام <bold>{{email}}</bold> بمشاركة <bold>{{node}}</bold> معك"
+        },
+        "addedNode": {
+            "message": "قام <bold>{{email}}</bold> بإضافة <bold>{{node}}</bold> في <bold>{{folder}}</bold>"
+        },
+        "removedNode": {
+            "message": "قام <bold>{{email}}</bold> بإزالة <bold>{{node}}</bold> من <bold>{{folder}}</bold>"
+        },
+        "title": "الإشعارات"
     }
 }
