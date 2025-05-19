@@ -309,6 +309,14 @@
         },
         "list": {
             "you": "Ви"
+        },
+        "upload": {
+            "error": {
+                "maxVersionReached": "Файл не міг бути завантажений, оскільки було досягнуто максимальної кількості версій."
+            }
+        },
+        "uploadFailure": {
+            "message": "Тут ви можете знайти всі елементи, які зараз завантажуються. Якщо файл не вдалося завантажити, натисніть на нього, щоб побачити більше деталей."
         }
     },
     "create": {
@@ -337,5 +345,17 @@
         "unitMeasure_MB": "MB",
         "unitMeasure_YB": "YB",
         "unitMeasure_ZB": "ZB"
+    },
+    "notifications": {
+        "empty": {
+            "title": "Нема сповіщень",
+            "message": "На даний момент у вас немає сповіщень"
+        },
+        "newShare": {
+            "message": "<bold>{{email}}</bold> поділився <bold>{{node}}</bold> з вами"
+        },
+        "addedNode": {
+            "message": "<bold>{{email}}</bold> додав <bold>{{node}}</bold> у <bold>{{folder}}</bold>"
+        }
     }
 }
