@@ -358,7 +358,7 @@
             "message": "<bold>{{email}}</bold> додано <bold>{{node}}</bold> у <bold>{{folder}}</bold>"
         },
         "removedNode": {
-            "message": "<bold>{{email}}</bold> видалив(-ла) <bold>{{node}}</bold> з <bold>{{folder}}</bold>"
+            "message": "<bold>{{email}}</bold> видалить <bold>{{node}}</bold> з <bold>{{folder}}</bold>"
         },
         "title": "Сповіщення"
     }
