@@ -359,6 +359,7 @@
         },
         "removedNode": {
             "message": "<bold>{{email}}</bold> видалив(-ла) <bold>{{node}}</bold> з <bold>{{folder}}</bold>"
-        }
+        },
+        "title": "Сповіщення"
     }
 }
