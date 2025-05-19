@@ -1108,6 +1108,12 @@
         },
         "removedNode": {
             "message": "<bold>{{email}}</bold> ha rimosso <bold>{{node}}</bold> da <bold>{{folder}}</bold>"
-        }
+        },
+        "empty": {
+            "title": "Nessuna notifica",
+            "message": "Al momento non hai notifiche"
+        },
+        "title": "Notifiche",
+        "refresh": "Controlla se ci sono aggiornamenti"
     }
 }
