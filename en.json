@@ -1107,6 +1107,7 @@
         "removedNode": {
             "message": "<bold>{{email}}</bold> removed <bold>{{node}}</bold> from <bold>{{folder}}</bold>"
         },
-        "title": "Notifications"
+        "title": "Notifications",
+        "refresh": "Check for updates"
     }
 }
