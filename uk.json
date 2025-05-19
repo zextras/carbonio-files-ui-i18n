@@ -355,7 +355,7 @@
             "message": "<bold>{{email}}</bold> поділився <bold>{{node}}</bold> з вами"
         },
         "addedNode": {
-            "message": "<bold>{{email}}</bold> додав <bold>{{node}}</bold> у <bold>{{folder}}</bold>"
+            "message": "<bold>{{email}}</bold> додано <bold>{{node}}</bold> у <bold>{{folder}}</bold>"
         },
         "removedNode": {
             "message": "<bold>{{email}}</bold> видалив(-ла) <bold>{{node}}</bold> з <bold>{{folder}}</bold>"
