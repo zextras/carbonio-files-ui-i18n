@@ -1113,6 +1113,7 @@
         "title": "Powiadomienia",
         "removedNode": {
             "message": "Użytkownik <bold>{{email}}</bold> usunął <bold>{{node}}</bold> z <bold>{{folder}}</bold>"
-        }
+        },
+        "refresh": "Odśwież"
     }
 }
