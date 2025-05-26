@@ -364,6 +364,6 @@
             "message": "<bold>{{email}}</bold> видалено <bold>{{node}}</bold> з <bold>{{folder}}</bold>"
         },
         "title": "Сповіщення",
-        "refresh": "Перевірте оновлення"
+        "refresh": "Перевірити оновлення"
     }
 }
