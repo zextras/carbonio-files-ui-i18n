@@ -363,6 +363,7 @@
         "removedNode": {
             "message": "<bold>{{email}}</bold> видалено <bold>{{node}}</bold> з <bold>{{folder}}</bold>"
         },
-        "title": "Сповіщення"
+        "title": "Сповіщення",
+        "refresh": "Перевірити оновлення"
     }
 }
