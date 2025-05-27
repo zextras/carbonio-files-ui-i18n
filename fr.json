@@ -1113,6 +1113,7 @@
         "title": "Notifications",
         "removedNode": {
             "message": "<bold>{{email}}</bold> supprimé <bold>{{node}}</bold> from <bold>{{folder}}</bold>"
-        }
+        },
+        "refresh": "Vérifier les mises à jour"
     }
 }
