@@ -1088,7 +1088,7 @@
             }
         },
         "destination": {
-            "home": "تم التحميل في الرئيسية"
+            "home": "بدأت عملية التحميل في الصفحة الرئيسية للملفات"
         },
         "banner": {
             "overQuota": {
@@ -1131,6 +1131,7 @@
         "removedNode": {
             "message": "قام <bold>{{email}}</bold> بإزالة <bold>{{node}}</bold> من <bold>{{folder}}</bold>"
         },
-        "title": "الإشعارات"
+        "title": "الإشعارات",
+        "refresh": "تحقق من وجود تحديثات"
     }
 }
