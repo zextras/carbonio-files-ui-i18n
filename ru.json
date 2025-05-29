@@ -1098,5 +1098,22 @@
             "ListLayout": "Структура списка",
             "GridLayout": "Расположение сетки"
         }
+    },
+    "notifications": {
+        "empty": {
+            "title": "Нет уведомлений",
+            "message": "На данный момент у вас нет уведомлений"
+        },
+        "newShare": {
+            "message": "<bold>{{email}}</bold> поделился с вами <bold>{{node}}</bold>"
+        },
+        "removedNode": {
+            "message": "<bold>{{email}}</bold> удален <bold>{{node}}</bold> из <bold>{{folder}}</bold>"
+        },
+        "title": "Уведомления",
+        "refresh": "Проверить наличие обновлений",
+        "addedNode": {
+            "message": "<bold>{{email}}</bold> добавлен <bold>{{node}}</bold> в <bold>{{folder}}</bold>"
+        }
     }
 }
