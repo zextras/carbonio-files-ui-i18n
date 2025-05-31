@@ -1094,5 +1094,22 @@
                 "label": "Maksimalna dozvoljena kvota je dostignuta."
             }
         }
+    },
+    "notifications": {
+        "empty": {
+            "title": "Nema obavijesti",
+            "message": "Trenutno nemate nikakva obavještenja"
+        },
+        "newShare": {
+            "message": "<bold>{{email}}</bold> dijelio <bold>{{node}}</bold> s vama"
+        },
+        "addedNode": {
+            "message": "<bold>{{email}}</bold> dodao <bold>{{node}}</bold> u <bold>{{folder}}</bold>"
+        },
+        "removedNode": {
+            "message": "<bold>{{email}}</bold> uklonjeno <bold>{{node}}</bold> iz <bold>{{folder}}</bold>"
+        },
+        "title": "Obavještenja",
+        "refresh": "Provjerite ažuriranja"
     }
 }
