@@ -292,7 +292,18 @@
             {
                 "title": "Izberite enega ali več rezultatov za izvedbo dejanj ali prikaz podrobnosti."
             }
-        ]
+        ],
+        "upload": {
+            "error": {
+                "maxVersionReached": "Datoteke ni bilo mogoče naložiti, ker je doseženo največje število različic.",
+                "aborted": "Nalaganje je bilo prekinjeno ali blokirano. Poskusite znova ali preverite svojo povezavo.",
+                "fileSizeExceeded": "Datoteke ni bilo mogoče naložiti, ker presega dovoljeno velikost."
+            }
+        },
+        "uploadFailure": {
+            "title": "Predlogi za nalaganje",
+            "message": "Tukaj lahko najdete vse elemente, ki se trenutno nalagajo. Če nalaganje datoteke ni uspelo, kliknite nanjo za več podrobnosti."
+        }
     },
     "actions": {
         "deletePermanently": "Trajno izbriši",
@@ -1093,5 +1104,22 @@
             "ListLayout": "Postavitev seznam",
             "GridLayout": "Postavitev mreža"
         }
+    },
+    "notifications": {
+        "newShare": {
+            "message": "<bold>{{email}}</bold> je z vami delil <bold>{{node}}</bold>"
+        },
+        "empty": {
+            "title": "Ni obvestil",
+            "message": "Trenutno nimate nobenih obvestil"
+        },
+        "addedNode": {
+            "message": "<bold>{{email}}</bold> je dodal <bold>{{node}}</bold> v <bold>{{folder}}</bold>"
+        },
+        "removedNode": {
+            "message": "<bold>{{email}}</bold> je odstranil <bold>{{node}}</bold> iz <bold>{{folder}}</bold>"
+        },
+        "title": "Obvestila",
+        "refresh": "Preveri za posodobitve"
     }
 }
