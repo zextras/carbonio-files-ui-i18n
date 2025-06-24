@@ -78,7 +78,24 @@
                 "writeAndShare": "Write and Share"
             }
         },
-        "title": "Collaboration links"
+        "title": "Collaboration links",
+        "permission": {
+            "readOnly": "View",
+            "readAndWrite": "Edit",
+            "optionDisabled": {
+                "tooltip": "This type of link has already been created"
+            },
+            "readWriteAndShare": "Edit and manage sharing",
+            "readAndShare": "View and manage sharing"
+        },
+        "generateButton": {
+            "maximumLinks": {
+                "tooltip": "You've reached the maximum number of links. Revoke one to create a new one."
+            },
+            "choosePermission": {
+                "tooltip": "Choose permissions to generate link"
+            }
+        }
     },
     "create": {
         "options": {
