@@ -61,7 +61,8 @@
     "collaborationLinks": {
         "button": {
             "generateLink": "Generate Link",
-            "revoke": "Revoke"
+            "revoke": "Revoke",
+            "choosePermission": "Choose permissions to generate link"
         },
         "description": "Internal users will receive the permissions by opening the link. You can always modify granted permissions.",
         "link": {
