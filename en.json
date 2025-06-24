@@ -88,11 +88,6 @@
             "readWriteAndShare": "Edit and manage sharing",
             "readAndShare": "View and manage sharing"
         },
-        "generateButton": {
-            "choosePermission": {
-                "tooltip": "Choose permissions to generate link"
-            }
-        },
         "maximumLinks": {
             "tooltip": "You've reached the maximum number of links. Revoke one to create a new one."
         }
