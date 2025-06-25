@@ -1007,7 +1007,8 @@
     "collaborationLinks": {
         "button": {
             "revoke": "Révoquer",
-            "generateLink": "Générer un lien"
+            "generateLink": "Générer un lien",
+            "choosePermission": "Choisissez les permissions pour générer le lien"
         },
         "title": "Liens de collaboration",
         "row": {
@@ -1024,7 +1025,19 @@
                 }
             }
         },
-        "description": "Les utilisateurs internes recevront les permissions en ouvrant le lien. Vous pouvez modifier les droits d'accès à tout moment."
+        "description": "Les utilisateurs internes recevront les permissions en ouvrant le lien. Vous pouvez modifier les droits d'accès à tout moment.",
+        "permission": {
+            "readOnly": "Afficher",
+            "optionDisabled": {
+                "tooltip": "Ce type de lien a déjà été créé"
+            },
+            "readWriteAndShare": "Modifier et gérer les partages",
+            "readAndWrite": "Modifier",
+            "readAndShare": "Afficher et gérer les partages"
+        },
+        "maximumLinks": {
+            "tooltip": "Vous avez atteint le nombre maximum de liens. Supprimez-en un avant de pouvoir en créer un nouveau."
+        }
     },
     "share": {
         "chip": {
