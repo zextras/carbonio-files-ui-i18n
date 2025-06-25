@@ -1007,7 +1007,8 @@
     "collaborationLinks": {
         "button": {
             "revoke": "Deaktywuj",
-            "generateLink": "Wygeneruj Link"
+            "generateLink": "Wygeneruj Link",
+            "choosePermission": "Wybierz uprawnienia, aby wygenerować link"
         },
         "title": "Linki do elementu",
         "row": {
@@ -1024,7 +1025,19 @@
                 }
             }
         },
-        "description": "Użytkownicy z tej domeny otrzymają uprawnienia klikając w ten link. Zawsze możesz edytować przyznane im uprawnienia."
+        "description": "Użytkownicy z tej domeny otrzymają uprawnienia klikając w ten link. Zawsze możesz edytować przyznane im uprawnienia.",
+        "permission": {
+            "optionDisabled": {
+                "tooltip": "Ten rodzaj linku już został stworzony"
+            },
+            "readAndWrite": "Edytowanie",
+            "readWriteAndShare": "Edytowanie i zarządzanie udostępnianiem",
+            "readOnly": "Wyświetlanie",
+            "readAndShare": "Wyświetlanie i zarządzanie udostępnianiem"
+        },
+        "maximumLinks": {
+            "tooltip": "Osiągnąłeś max. liczbę linków. Deaktywuj jeden z nich, aby stworzyć nowy."
+        }
     },
     "share": {
         "chip": {
