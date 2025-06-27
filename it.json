@@ -113,6 +113,14 @@
                 "exceedSizeLimit": "L'elemento supera il limite di dimensione consentito e non può essere aperto.",
                 "pleaseDownload": "Per visualizzare l'elemento, scaricalo sul tuo dispositivo"
             }
+        },
+        "transferOwnership": {
+            "error": {
+                "overQuota": "Trasferimento di proprietà fallito.",
+                "overQuota2": "Il nuovo proprietario non ha abbastanza spazio disponibile."
+            },
+            "success1": "La proprietà è stata trasferita correttamente.",
+            "success2": "Gli elementi sono ora nella cartella \"Condivisi con me\"."
         }
     },
     "secondaryBar": {
@@ -296,6 +304,9 @@
             },
             "header": "Revoca il link di collaborazione di {{nodeName}}",
             "body": "Revocando questo link, anche la possibilità di creare nuove condivisioni tramite lo stesso verrà rimossa. Tutti coloro che stanno già utilizzando questo link manterranno comunque l'accesso all'elemento."
+        },
+        "cancel": {
+            "label": "Annulla"
         }
     },
     "empty": {
@@ -355,7 +366,8 @@
         "sendViaMail": "Invia via e-mail",
         "edit": "Modifica",
         "preview": "Anteprima",
-        "manageShares": "Gestisci condivisioni"
+        "manageShares": "Gestisci condivisioni",
+        "transferOwnership": "Trasferisci proprietà"
     },
     "displayer": {
         "list": {
@@ -1127,6 +1139,29 @@
             "message": "Al momento non hai notifiche"
         },
         "title": "Notifiche",
-        "refresh": "Controlla se ci sono aggiornamenti"
+        "refresh": "Controlla se ci sono aggiornamenti",
+        "transferredOwnership": {
+            "message": "<bold>{{email}}</bold> ti ha trasferito la proprietà di alcuni elementi. Li troverai nella cartella <bold>{{folder}}<bold>"
+        }
+    },
+    "transferOwnership": {
+        "modal": {
+            "note4": "Nota:",
+            "loadingTooltip": "Verifica della quota di archiviazione del nuovo proprietario...",
+            "description": "Seleziona un nuovo proprietario per gli elementi selezionati.",
+            "note6": "Questa azione è permanente e non può essere annullata.",
+            "unavailableTooltip": "Il nuovo proprietario non ha abbastanza spazio a disposizione.",
+            "note": "Dopo il trasferimento:",
+            "note2": "Tutte le impostazioni di condivisione verranno mantenute.",
+            "placeholder": "Seleziona un nuovo proprietario",
+            "note1": "Rimarrai un <bold>collaboratore con diritti di modifica e condivisione.</bold>",
+            "unavailable": "Il nuovo proprietario non ha abbastanza spazio a disposizione.",
+            "note3": "Il nuovo proprietario <bold>riceverà una notifica.</bold>",
+            "note5": "Se il nuovo proprietario supera la quota di spazio di archiviazione, il trasferimento non andrà a buon fine.",
+            "available": "Il nuovo proprietario ha a disposizione abbastanza spazio di archiviazione.",
+            "button": {
+                "confirm": "Trasferisci"
+            }
+        }
     }
 }
