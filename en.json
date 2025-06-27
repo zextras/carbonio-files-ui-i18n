@@ -17,7 +17,8 @@
         "restore": "Restore",
         "retryUpload": "Retry upload",
         "sendViaMail": "Send via e-mail",
-        "unflag": "Unflag"
+        "unflag": "Unflag",
+        "transferOwnership": "Transfer ownership"
     },
     "breadcrumb": {
         "expander": {
@@ -611,6 +612,9 @@
                 "cannot_saved_changes": "Some changes cannot be saved",
                 "unsaved_changes": "You have unsaved changes"
             }
+        },
+        "cancel": {
+            "label": "Cancel"
         }
     },
     "node": {
@@ -1032,6 +1036,14 @@
                 "pleaseDownload": "To view the item, please download it on your device",
                 "exceedSizeLimit": "The item exceeds the size limit allowed and cannot be opened."
             }
+        },
+        "transferOwnership": {
+            "error": {
+                "overQuota": "Ownership transfer failed.",
+                "overQuota2": "The new owner doesn’t have enough storage available."
+            },
+            "success2": "The items are now in your \"Shared with me\" folder.",
+            "success1": "Ownership transferred successfully."
         }
     },
     "sortingDropdown": {
@@ -1121,6 +1133,29 @@
             "message": "<bold>{{email}}</bold> removed <bold>{{node}}</bold> from <bold>{{folder}}</bold>"
         },
         "title": "Notifications",
-        "refresh": "Check for updates"
+        "refresh": "Check for updates",
+        "transferredOwnership": {
+            "message": "<bold>{{email}}</bold> transferred ownership of items to you. You’ll find them in folder <bold>{{folder}}</bold>"
+        }
+    },
+    "transferOwnership": {
+        "modal": {
+            "available": "The new owner has enough storage available.",
+            "description": "Select a new owner for the selected items.",
+            "note1": "You’ll remain as a <bold>collaborator with editing and sharing rights.</bold>",
+            "note4": "Please note:",
+            "note": "After the transfer:",
+            "note5": "If the new owner exceeds their storage quota, the transfer will fail.",
+            "note2": "All sharing settings will be kept.",
+            "note3": "The new owner <bold>will be notified.</bold>",
+            "note6": "This action is permanent and cannot be undone.",
+            "unavailable": "The new owner doesn't have enough storage available.",
+            "placeholder": "Select a new owner",
+            "loadingTooltip": "Checking the new owner’s storage quota...",
+            "unavailableTooltip": "The new owner doesn’t have enough storage available.",
+            "button": {
+                "confirm": "Transfer"
+            }
+        }
     }
 }
