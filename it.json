@@ -120,7 +120,8 @@
                 "overQuota2": "Il nuovo proprietario non ha abbastanza spazio disponibile."
             },
             "success1": "La proprietà è stata trasferita correttamente.",
-            "success2": "Gli elementi sono ora nella cartella \"Condivisi con me\"."
+            "success2": "Gli elementi sono ora nella cartella \"Condivisi con me\".",
+            "actionLabel": "OK"
         }
     },
     "secondaryBar": {
@@ -307,6 +308,11 @@
         },
         "cancel": {
             "label": "Annulla"
+        },
+        "transferOwnership": {
+            "title_one": "Trasferisci la proprietà di{{node.name}}",
+            "title_many": "",
+            "title_other": "Trasferisci la proprietà di {{count}} elementi"
         }
     },
     "empty": {
@@ -1161,7 +1167,8 @@
             "available": "Il nuovo proprietario ha a disposizione abbastanza spazio di archiviazione.",
             "button": {
                 "confirm": "Trasferisci"
-            }
+            },
+            "loading": "Verifica della quota di archiviazione del nuovo proprietario..."
         }
     }
 }
