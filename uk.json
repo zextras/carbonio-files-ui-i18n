@@ -17,7 +17,8 @@
         "restore": "Відновити",
         "retryUpload": "Повторити завантаження",
         "sendViaMail": "Надіслати e-mail",
-        "unflag": "Зняти позначку"
+        "unflag": "Зняти позначку",
+        "transferOwnership": "Передати власність"
     },
     "preview": {
         "zoomOut": {
@@ -52,7 +53,8 @@
         "description": "Внутрішні користувачі отримають дозволи після відкриття посилання. Надані дозволи можна змінити у будь-який час.",
         "button": {
             "generateLink": "Створити посилання",
-            "revoke": "Відкликати"
+            "revoke": "Відкликати",
+            "choosePermission": "Виберіть дозволи для створення посилання"
         },
         "link": {
             "urlChip": {
@@ -68,7 +70,19 @@
                 "writeAndShare": "Редагувати та поділитися"
             }
         },
-        "title": "Посилання для співпраці"
+        "title": "Посилання для співпраці",
+        "permission": {
+            "readOnly": "Перегляд",
+            "optionDisabled": {
+                "tooltip": "Цей тип посилання вже створено"
+            },
+            "readAndWrite": "Редагувати",
+            "readWriteAndShare": "Редагувати та керувати спільним доступом",
+            "readAndShare": "Перегляд і керування спільним доступом"
+        },
+        "maximumLinks": {
+            "tooltip": "Ви досягли ліміту посилань. Скасуйте одне, щоб створити нове."
+        }
     },
     "breadcrumb": {
         "expander": {
@@ -364,6 +378,18 @@
             "message": "<bold>{{email}}</bold> видалено <bold>{{node}}</bold> з <bold>{{folder}}</bold>"
         },
         "title": "Сповіщення",
-        "refresh": "Перевірити оновлення"
+        "refresh": "Перевірити оновлення",
+        "transferredOwnership": {
+            "message": "<bold>{{email}}</bold> передав(ла) вам право власності на елементи. Ви знайдете їх у папці <bold>{{folder}}</bold>"
+        }
+    },
+    "transferOwnership": {
+        "modal": {
+            "note": "Після передачі:",
+            "button": {
+                "confirm": "Передати"
+            },
+            "description": "Виберіть нового власника для вибраних елементів."
+        }
     }
 }
