@@ -105,6 +105,9 @@
             },
             "header": "Deaktywuj link do elementu {{nodeName}}",
             "body": "Po deaktywacji tego linka, tworzenie nowych udostępnień za jego pomocą stanie się niemożliwe. Każdy, kto już użył tego linka, dalej będzie miał dostęp do elementu."
+        },
+        "cancel": {
+            "label": "Anuluj"
         }
     },
     "search": {
@@ -284,6 +287,14 @@
                 "pleaseDownload": "Aby wyświetlić element, pobierz go na Twoje urządzenie",
                 "exceedSizeLimit": "Element przekracza dozwolony limit rozmiaru i nie może zostać otwarty."
             }
+        },
+        "transferOwnership": {
+            "success1": "Pomyślnie przekazano własność.",
+            "success2": "Elementy są teraz w Twoim folderze \"Udostępnione dla mnie\".",
+            "error": {
+                "overQuota": "Przekazanie własności się nie powiodło.",
+                "overQuota2": "Nowy właściciel nie ma wystarczająco przestrzeni."
+            }
         }
     },
     "actions": {
@@ -304,7 +315,8 @@
         "sendViaMail": "Wyślij jako załącznik",
         "edit": "Edytuj",
         "preview": "Podgląd",
-        "manageShares": "Zarządzaj udostępnieniami"
+        "manageShares": "Zarządzaj udostępnieniami",
+        "transferOwnership": "Przekaż własność"
     },
     "displayer": {
         "share": {
@@ -1127,6 +1139,29 @@
         "removedNode": {
             "message": "Użytkownik <bold>{{email}}</bold> usunął <bold>{{node}}</bold> z <bold>{{folder}}</bold>"
         },
-        "refresh": "Odśwież"
+        "refresh": "Odśwież",
+        "transferredOwnership": {
+            "message": "<bold>{{email}}</bold> przekazał Ci własność elementów. Znajdziesz je w folderze <bold>{{folder}}</bold>"
+        }
+    },
+    "transferOwnership": {
+        "modal": {
+            "description": "Wybierz nowego właściciela wybranych elementów.",
+            "note": "Po przekazaniu:",
+            "note1": "Pozostaniesz <bold> współpracownikiem z uprawnieniami edytowania i udostępniania.</bold>",
+            "note2": "Wszystkie ustawienia udostępniania zostaną zachowane.",
+            "note4": "Zwróć uwagę, że:",
+            "note5": "Jeśli nowy właściciel przekroczy swój limit przestrzeni, przekazanie się nie uda.",
+            "note6": "Ta czynność ma trwałe skutki i nie może zostać cofnięta.",
+            "placeholder": "Wybierz nowego właściciela",
+            "loadingTooltip": "Sprawdzanie limitu przestrzeni nowego właściciela...",
+            "available": "Nowy właściciel ma wystarczająco wolnej przestrzeni.",
+            "unavailable": "Nowy właściciel nie ma wystarczająco przestrzeni.",
+            "unavailableTooltip": "Nowy właściciel nie ma wystarczająco przestrzeni.",
+            "button": {
+                "confirm": "Przekaż"
+            },
+            "note3": "Nowy właściciel <bold>zostanie powiadomiony.</bold>"
+        }
     }
 }
