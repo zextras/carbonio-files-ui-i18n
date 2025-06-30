@@ -615,6 +615,10 @@
         },
         "cancel": {
             "label": "Cancel"
+        },
+        "transferOwnership": {
+            "title_one": "Transfer Ownership of {{node.name}}",
+            "title_other": "Transfer Ownership of {{count}} items"
         }
     },
     "node": {
@@ -1043,7 +1047,8 @@
                 "overQuota2": "The new owner doesn’t have enough storage available."
             },
             "success2": "The items are now in your \"Shared with me\" folder.",
-            "success1": "Ownership transferred successfully."
+            "success1": "Ownership transferred successfully.",
+            "actionLabel": "OK"
         }
     },
     "sortingDropdown": {
@@ -1155,7 +1160,8 @@
             "unavailableTooltip": "The new owner doesn’t have enough storage available.",
             "button": {
                 "confirm": "Transfer"
-            }
+            },
+            "loading": "Checking the new owner’s storage quota..."
         }
     }
 }
