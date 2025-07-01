@@ -108,6 +108,11 @@
         },
         "cancel": {
             "label": "Anuluj"
+        },
+        "transferOwnership": {
+            "title_one": "Przekaż własność {{node.name}}",
+            "title_few": "Przekaż własność {{count}} elementów",
+            "title_many": "Przekaż własność {{count}} elementów"
         }
     },
     "search": {
@@ -294,7 +299,8 @@
             "error": {
                 "overQuota": "Przekazanie własności się nie powiodło.",
                 "overQuota2": "Nowy właściciel nie ma wystarczająco przestrzeni."
-            }
+            },
+            "actionLabel": "OK"
         }
     },
     "actions": {
@@ -1161,7 +1167,8 @@
             "button": {
                 "confirm": "Przekaż"
             },
-            "note3": "Nowy właściciel <bold>zostanie powiadomiony.</bold>"
+            "note3": "Nowy właściciel <bold>zostanie powiadomiony.</bold>",
+            "loading": "Sprawdzanie limitu przestrzeni nowego właściciela..."
         }
     }
 }
