@@ -17,7 +17,8 @@
         "retryUpload": "Ponovno učitaj",
         "sendViaMail": "Pošalji putem e-mail poruke",
         "rename": "Preimenuj",
-        "unflag": "Ukloni oznaku"
+        "unflag": "Ukloni oznaku",
+        "transferOwnership": "Prebaciti vlasništvo"
     },
     "breadcrumb": {
         "expander": {
@@ -61,7 +62,8 @@
     "collaborationLinks": {
         "button": {
             "generateLink": "Generiši link",
-            "revoke": "Opozovi"
+            "revoke": "Opozovi",
+            "choosePermission": "Izaberite dozvole za generiranje veze"
         },
         "row": {
             "placeholder": "Kreiraj link za dijeljenje",
@@ -78,7 +80,19 @@
             }
         },
         "title": "Linkovi za saradnju",
-        "description": "Interni korisnici će dobiti dozvole otvaranjem linka. Dodijeljene dozvole se mogu u svakom trenutku izmijeniti."
+        "description": "Interni korisnici će dobiti dozvole otvaranjem linka. Dodijeljene dozvole se mogu u svakom trenutku izmijeniti.",
+        "permission": {
+            "readOnly": "Pregled",
+            "optionDisabled": {
+                "tooltip": "Ovaj tip veze već postoji"
+            },
+            "readAndWrite": "Uredi",
+            "readWriteAndShare": "Uređivanje i upravljanje dijeljenjem",
+            "readAndShare": "Pregledajte i upravljajte dijeljenjem"
+        },
+        "maximumLinks": {
+            "tooltip": "Dostigli ste maksimalan broj linkova. Poništite jedan kako biste kreirali novi."
+        }
     },
     "create": {
         "options": {
@@ -595,6 +609,14 @@
             "selectedCount_one": "{{count}} odabrana stavka",
             "selectedCount_few": "{{count}} odabranih stavki",
             "selectedCount_other": "{{count}} odabranih stavki"
+        },
+        "cancel": {
+            "label": "Odustani"
+        },
+        "transferOwnership": {
+            "title_one": "Prenesi vlasništvo nad {{count}} stavkom",
+            "title_few": "Prenesi vlasništvo nad {{count}} stavke",
+            "title_other": "Prenesi vlasništvo nad {{count}} stavki"
         }
     },
     "node": {
@@ -923,6 +945,15 @@
         },
         "unflag": {
             "success": "Stavka uspješno uklonjena"
+        },
+        "transferOwnership": {
+            "actionLabel": "U redu",
+            "success1": "Vlasništvo uspješno preneseno.",
+            "success2": "Stavke su sada u vašem folderu \"Dijeljeno sa mnom\".",
+            "error": {
+                "overQuota": "Prebacivanje vlasništva nije uspjelo.",
+                "overQuota2": "Novi vlasnik nema dovoljno raspoloživog prostora za pohranu."
+            }
         }
     },
     "sortingDropdown": {
@@ -1110,6 +1141,30 @@
             "message": "<bold>{{email}}</bold> uklonjeno <bold>{{node}}</bold> iz <bold>{{folder}}</bold>"
         },
         "title": "Obavještenja",
-        "refresh": "Provjerite ažuriranja"
+        "refresh": "Provjerite ažuriranja",
+        "transferredOwnership": {
+            "message": "<bold>{{email}}</bold> je prenio vlasništvo predmeta na vas. Pronaći ćete ih u fasciklu <bold>{{folder}}</bold>"
+        }
+    },
+    "transferOwnership": {
+        "modal": {
+            "loading": "Provjeravam kvotu pohrane novog vlasnika...",
+            "description": "Odaberite novog vlasnika za odabrane stavke.",
+            "note": "Nakon transfera:",
+            "note1": "Ostanete kao <bold>saradnik sa ovlašćenjima za uređivanje i dijeljenje.</bold>",
+            "note2": "Svi podešavanja dijeljenja će biti sačuvani.",
+            "note3": "Novi vlasnik <bold> će biti obaviješten. </bold>",
+            "note4": "Molimo obratite pažnju:",
+            "note5": "Ako novi vlasnik prekorači svoju kvotu pohrane, transfer će neuspešno završiti.",
+            "note6": "Ova akcija je stalna i ne može se poništiti.",
+            "placeholder": "Odaberite novog vlasnika",
+            "loadingTooltip": "Provjeravam kvotu pohrane novog vlasnika...",
+            "available": "Novi vlasnik ima dovoljno raspoloživog prostora za pohranu.",
+            "unavailable": "Novi vlasnik nema dovoljno raspoloživog prostora za pohranu.",
+            "unavailableTooltip": "Novi vlasnik nema dovoljno raspoloživog prostora za pohranu.",
+            "button": {
+                "confirm": "Prijenos"
+            }
+        }
     }
 }
