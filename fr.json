@@ -159,6 +159,14 @@
             },
             "header": "Révoquer le lien de collaboration {{nodeName}}",
             "body": "En révoquant ce lien, vous interdisez la possibilité de créer de nouveaux partages. Les personnes ayant déjà utilisé ce lien de collaboration garderont l'accès à cet élément."
+        },
+        "transferOwnership": {
+            "title_one": "Transférer la propriété de {{node.name}}",
+            "title_many": "Transférer la propriété des {{count}} éléments",
+            "title_other": "Transférer la propriété des {{count}} éléments"
+        },
+        "cancel": {
+            "label": "Annuler"
         }
     },
     "node": {
@@ -335,6 +343,15 @@
                 "exceedSizeLimit": "L'article dépasse la taille limite autorisée et ne peut être ouvert.",
                 "pleaseDownload": "Pour visualiser l'article, veuillez le télécharger sur votre appareil"
             }
+        },
+        "transferOwnership": {
+            "actionLabel": "OK",
+            "error": {
+                "overQuota": "Le transfert de propriété a échoué.",
+                "overQuota2": "Le nouveau propriétaire ne dispose pas de suffisamment d'espace de stockage."
+            },
+            "success1": "Transfert de propriété réussi.",
+            "success2": "Les éléments se trouvent maintenant dans votre dossier « Partagés avec moi »."
         }
     },
     "actions": {
@@ -355,7 +372,8 @@
         "sendViaMail": "Envoyer par email",
         "edit": "Modifier",
         "preview": "Prévisualisation",
-        "manageShares": "Gestion des partages"
+        "manageShares": "Gestion des partages",
+        "transferOwnership": "Transfert de propriété"
     },
     "search": {
         "header": {
@@ -1127,6 +1145,30 @@
         "removedNode": {
             "message": "<bold>{{email}}</bold> supprimé <bold>{{node}}</bold> from <bold>{{folder}}</bold>"
         },
-        "refresh": "Vérifier les mises à jour"
+        "refresh": "Vérifier les mises à jour",
+        "transferredOwnership": {
+            "message": "<bold>{{email}}</bold> vous a transféré la propriété des objets. Vous les trouverez dans le dossier <bold>{{folder}}</bold>"
+        }
+    },
+    "transferOwnership": {
+        "modal": {
+            "description": "Sélectionnez un nouveau propriétaire pour les éléments sélectionnés.",
+            "note4": "À noter :",
+            "note": "Après le transfert :",
+            "note1": "Vous resterez en tant que <bold>collaborateur avec des droits d'édition et de partage.</bold>",
+            "note2": "Tous les paramètres de partage seront conservés.",
+            "note3": "Le nouveau propriétaire <bold>sera notifié.</bold>",
+            "note5": "Si le nouveau propriétaire dépasse son quota de stockage, le transfert échoue.",
+            "note6": "Cette action est permanente et ne peut être annulée.",
+            "unavailable": "Le nouveau propriétaire ne dispose pas de suffisamment d'espace de stockage.",
+            "placeholder": "Sélectionner un nouveau propriétaire",
+            "loadingTooltip": "Vérification du quota de stockage du nouveau propriétaire...",
+            "unavailableTooltip": "Le nouveau propriétaire ne dispose pas de suffisamment d'espace de stockage.",
+            "button": {
+                "confirm": "Tranférer"
+            },
+            "available": "Le nouveau propriétaire dispose de suffisamment d'espace de stockage.",
+            "loading": "Vérification du quota de stockage du nouveau propriétaire..."
+        }
     }
 }
