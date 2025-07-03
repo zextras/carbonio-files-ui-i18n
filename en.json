@@ -88,7 +88,10 @@
                 "tooltip": "This type of link has already been created"
             },
             "readWriteAndShare": "Edit and manage sharing",
-            "readAndShare": "View and manage sharing"
+            "readAndShare": "View and manage sharing",
+            "cannotWrite": {
+                "tooltip": "You are not allowed to create this collaboration link because you don't have edit permission"
+            }
         },
         "maximumLinks": {
             "tooltip": "You've reached the maximum number of links. Revoke one to create a new one."
