@@ -1051,7 +1051,10 @@
             "readAndWrite": "Modifica",
             "readWriteAndShare": "Modifica e condivisione",
             "readAndShare": "Visualizzazione e condivisione",
-            "readOnly": "Visualizzazione"
+            "readOnly": "Visualizzazione",
+            "cannotWrite": {
+                "tooltip": "Non sei autorizzato a creare questo link per la collaborazione perché non hai il permesso di modifica"
+            }
         },
         "maximumLinks": {
             "tooltip": "Hai raggiunto il numero massimo di link. Revocane uno per crearne uno nuovo."
