@@ -1051,7 +1051,10 @@
             "readAndWrite": "Edytowanie",
             "readWriteAndShare": "Edytowanie i zarządzanie udostępnianiem",
             "readOnly": "Wyświetlanie",
-            "readAndShare": "Wyświetlanie i zarządzanie udostępnianiem"
+            "readAndShare": "Wyświetlanie i zarządzanie udostępnianiem",
+            "cannotWrite": {
+                "tooltip": "Nie możesz stworzyć tego linku do elementu, ponieważ nie posiadasz uprawnień do edycji"
+            }
         },
         "maximumLinks": {
             "tooltip": "Osiągnąłeś max. liczbę linków. Deaktywuj jeden z nich, aby stworzyć nowy."
