@@ -88,7 +88,10 @@
             },
             "readAndWrite": "Uredi",
             "readWriteAndShare": "Uređivanje i upravljanje dijeljenjem",
-            "readAndShare": "Pregledajte i upravljajte dijeljenjem"
+            "readAndShare": "Pregledajte i upravljajte dijeljenjem",
+            "cannotWrite": {
+                "tooltip": "Nije vam dozvoljeno kreiranje ovog linka za saradnju jer nemate dozvolu za uređivanje"
+            }
         },
         "maximumLinks": {
             "tooltip": "Dostigli ste maksimalan broj linkova. Poništite jedan kako biste kreirali novi."
