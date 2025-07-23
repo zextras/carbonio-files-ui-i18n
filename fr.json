@@ -1051,7 +1051,10 @@
             },
             "readWriteAndShare": "Modifier et gérer les partages",
             "readAndWrite": "Modifier",
-            "readAndShare": "Afficher et gérer les partages"
+            "readAndShare": "Afficher et gérer les partages",
+            "cannotWrite": {
+                "tooltip": "Vous n'êtes pas autorisé à créer ce lien de collaboration, car vous ne disposez pas des droits de modification"
+            }
         },
         "maximumLinks": {
             "tooltip": "Vous avez atteint le nombre maximum de liens. Supprimez-en un avant de pouvoir en créer un nouveau."
