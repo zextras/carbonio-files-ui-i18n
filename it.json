@@ -417,7 +417,14 @@
                 "noteDescription": "Il messaggio predefinito mostra il tuo nome, il nome dell'elemento condiviso, i permessi dati ai destinatari e le informazioni di accesso.",
                 "button": "Condividi"
             },
-            "noSharePermissionHeader": "Non sei autorizzato a condividere questo elemento."
+            "noSharePermissionHeader": "Non sei autorizzato a condividere questo elemento.",
+            "editor": {
+                "tooltip": "Non hai i permessi necessari per assegnare i diritti di editor"
+            },
+            "tooltip": {
+                "no_remove_permission": "Non hai i permessi necessari per rimuovere la collaborazione",
+                "no_edit_permission": "Non hai i permessi necessari per modificare la collaborazione"
+            }
         },
         "details": {
             "createdBy": "Creato da",
