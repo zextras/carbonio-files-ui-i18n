@@ -363,7 +363,10 @@
                 "noteDescription": "Domyślna wiadomość zawiera Twoje imię, nazwę udostępnianiego elementu, uprawnienia przyznane odbiorcom oraz informacje dot. logowania.",
                 "button": "Udostępnij"
             },
-            "noSharePermissionHeader": "Nie masz uprawnień, aby udostępnić ten element."
+            "noSharePermissionHeader": "Nie masz uprawnień, aby udostępnić ten element.",
+            "editor": {
+                "tooltip": "Nie masz uprawnień wymaganych, żeby móc uczynić kogoś edytorem"
+            }
         },
         "tabs": {
             "details": "Szczegóły",
