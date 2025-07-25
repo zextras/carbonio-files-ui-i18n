@@ -360,7 +360,14 @@
                 },
                 "you": "You"
             },
-            "noSharePermissionHeader": "You are not allowed to share this item."
+            "noSharePermissionHeader": "You are not allowed to share this item.",
+            "editor": {
+                "tooltip": "You don't have the necessary permissions to assign editor rights"
+            },
+            "tooltip": {
+                "no_edit_permission": "You don’t have the necessary permissions to edit collaboration",
+                "no_remove_permission": "You don’t have the necessary permissions to remove collaboration"
+            }
         },
         "tabs": {
             "activities": "Activities",
