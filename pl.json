@@ -366,6 +366,10 @@
             "noSharePermissionHeader": "Nie masz uprawnień, aby udostępnić ten element.",
             "editor": {
                 "tooltip": "Nie masz uprawnień wymaganych, żeby móc uczynić kogoś edytorem"
+            },
+            "tooltip": {
+                "no_edit_permission": "Nie masz wystarczających uprawnień, aby edytować współpracownika",
+                "no_remove_permission": "Nie masz wystarczających uprawnień, aby usunąć współpracownika"
             }
         },
         "tabs": {
