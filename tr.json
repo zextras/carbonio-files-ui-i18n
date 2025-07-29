@@ -935,7 +935,8 @@
             "title": "Bu öğe görüntülenemiyor",
             "content": "Dosya boyutu izin verilen limitten fazla olduğu için görüntülenemez",
             "download": "DOSYA İNDİR",
-            "openTab": "AYRI BİR SEKMEDe AÇ"
+            "openTab": "AYRI BİR SEKMEDe AÇ",
+            "note": "Lütfen indirin veya ayrı bir sekmede açın"
         },
         "page": {
             "label": "Sayfa"
