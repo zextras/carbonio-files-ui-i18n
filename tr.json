@@ -945,6 +945,12 @@
             "tooltip": {
                 "label": "Belirlenen maksimum kotaya ulaştınız."
             }
-        }
+        },
+        "refresh": {
+            "tooltip": {
+                "label": "Yenile"
+            }
+        },
+        "unlimitedSpace": "Sınırsız kotadan {{used}} kullanıldı"
     }
 }
