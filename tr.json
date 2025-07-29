@@ -940,6 +940,11 @@
         }
     },
     "quota": {
-        "limitedSpace": "{{used}} - {{limit}} kullanıldı"
+        "limitedSpace": "{{used}} - {{limit}} kullanıldı",
+        "overQuota": {
+            "tooltip": {
+                "label": "Belirlenen maksimum kotaya ulaştınız."
+            }
+        }
     }
 }
