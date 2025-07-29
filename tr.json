@@ -951,7 +951,7 @@
             "label": "Genişliğe sığdır"
         },
         "minimumZoomReached": {
-            "tooltip": "Minimum zoom seviyesine ulaşıldı"
+            "tooltip": "Minimum yakınlaştırma seviyesine ulaşıldı"
         },
         "previous": {
             "tooltip": "Önceki"
