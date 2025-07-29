@@ -313,8 +313,14 @@
                 "overQuota": {
                     "document": "Yeni doküman oluşturma başarısız oldu. Depolama limitinize ulaştınız. Bazı öğeleri silerek depolama alanını boşaltın ve tekrar deneyin",
                     "spreadsheet": "Yeni elektronik tablo oluşturma başarısız oldu. Depolama limitinize ulaştınız. Bazı öğeleri silerek depolama alanını boşaltın ve tekrar deneyin",
-                    "presentation": "Yeni sunum oluşturma başarısız oldu. Depolama limitinize ulaştınız. Bazı öğeleri silerek depolama alanını boşaltın ve tekrar deneyin"
+                    "presentation": "Yeni sunum oluşturma başarısız oldu. Depolama limitinize ulaştınız. Bazı öğeleri silerek depolama alanını boşaltın ve tekrar deneyin",
+                    "actionLabel": "TAMAM"
                 }
+            }
+        },
+        "error": {
+            "overQuota": {
+                "actionLabel": "TAMAM"
             }
         }
     },
@@ -961,5 +967,10 @@
             }
         },
         "unlimitedSpace": "Sınırsız alandan {{used}} kullanıldı"
+    },
+    "size": {
+        "unitMeasure_B": "B",
+        "unitMeasure_KB": "KB",
+        "unitMeasure_MB": "MB"
     }
 }
