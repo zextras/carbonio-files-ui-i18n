@@ -647,6 +647,12 @@
         ],
         "search": {
             "title": "Aramayı başlatmak için bazı anahtar kelimeleri yazın."
+        },
+        "upload": {
+            "error": {
+                "aborted": "Yükleme kesildi veya engellendi. Lütfen tekrar deneyin veya bağlantınızı kontrol edin.",
+                "fileSizeExceeded": "Dosya, izin verilen limite ulaştığı için yüklenemedi."
+            }
         }
     },
     "search": {
