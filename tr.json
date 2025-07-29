@@ -930,6 +930,12 @@
         "document": {
             "loadingLabel": "Doküman önizleme yükleniyor…",
             "errorLabel": "Belge ön izlemesini yüklemek başarısız."
+        },
+        "fileSizeExceeded": {
+            "title": "Bu öğe görüntülenemez"
+        },
+        "page": {
+            "label": "Sayfa"
         }
     },
     "label": {
