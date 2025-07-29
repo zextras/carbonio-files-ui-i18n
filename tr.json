@@ -936,6 +936,9 @@
         },
         "page": {
             "label": "Sayfa"
+        },
+        "print": {
+            "tooltip": "Yazdır"
         }
     },
     "label": {
