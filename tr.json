@@ -933,7 +933,9 @@
         },
         "fileSizeExceeded": {
             "title": "Bu öğe görüntülenemiyor",
-            "content": "Dosya boyutu izin verilen limite ulaştığından ve görüntülenemez"
+            "content": "Dosya boyutu izin verilen limite ulaştığından ve görüntülenemez",
+            "download": "DOSYA İNDİR",
+            "openTab": "AYRI BİR SEKMEDe AÇ"
         },
         "page": {
             "label": "Sayfa"
