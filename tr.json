@@ -929,7 +929,7 @@
         },
         "document": {
             "loadingLabel": "Doküman önizleme yükleniyor…",
-            "errorLabel": "Belge ön izlemesini yüklemek başarısız."
+            "errorLabel": "Doküman önizlemesini yükleme başarısız oldu."
         },
         "fileSizeExceeded": {
             "title": "Bu öğe görüntülenemez"
