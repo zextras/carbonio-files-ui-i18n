@@ -961,6 +961,12 @@
         },
         "maximumZoomReached": {
             "tooltip": "Maksimum zoom seviyesine ulaşıldı"
+        },
+        "zoomOut": {
+            "tooltip": "Uzaklaş"
+        },
+        "zoomIn": {
+            "tooltip": "Yakınlaştır"
         }
     },
     "label": {
