@@ -946,6 +946,15 @@
         },
         "next": {
             "tooltip": "Sonraki"
+        },
+        "fitWidth": {
+            "label": "Genişliğe sığdır"
+        },
+        "minimumZoomReached": {
+            "tooltip": "Minimum zoom seviyesine ulaşıldı"
+        },
+        "previous": {
+            "tooltip": "Önceki"
         }
     },
     "label": {
