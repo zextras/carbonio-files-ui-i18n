@@ -943,6 +943,9 @@
         },
         "print": {
             "tooltip": "Yazdır"
+        },
+        "next": {
+            "tooltip": "Sonraki"
         }
     },
     "label": {
