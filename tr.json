@@ -311,7 +311,9 @@
         "createDocument": {
             "error": {
                 "overQuota": {
-                    "document": "Yeni doküman oluşturma başarısız oldu. Depolama limitinize ulaştınız. Bazı öğeleri silerek depolama alanını boşaltın ve tekrar deneyin"
+                    "document": "Yeni doküman oluşturma başarısız oldu. Depolama limitinize ulaştınız. Bazı öğeleri silerek depolama alanını boşaltın ve tekrar deneyin",
+                    "spreadsheet": "Yeni elektronik tablo oluşturma başarısız oldu. Depolama limitinize ulaştınız. Bazı öğeleri silerek depolama alanını boşaltın ve tekrar deneyin",
+                    "presentation": "Yeni sunum oluşturma başarısız oldu. Depolama limitinize ulaştınız. Bazı öğeleri silerek depolama alanını boşaltın ve tekrar deneyin"
                 }
             }
         }
