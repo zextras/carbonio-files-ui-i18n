@@ -928,7 +928,8 @@
             "errorLabel": "Bu video oynatılamıyor. Başka bir tarayıcı kullanarak yeniden deneyin"
         },
         "document": {
-            "loadingLabel": "Doküman önizleme yükleniyor…"
+            "loadingLabel": "Doküman önizleme yükleniyor…",
+            "errorLabel": "Belge ön izlemesini yüklemek başarısız."
         }
     },
     "label": {
