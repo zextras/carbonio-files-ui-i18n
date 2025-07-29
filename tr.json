@@ -955,6 +955,12 @@
         },
         "previous": {
             "tooltip": "Önceki"
+        },
+        "resetZoom": {
+            "tooltip": "Yakınlaştırma sıfırla"
+        },
+        "maximumZoomReached": {
+            "tooltip": "Maksimum zoom seviyesine ulaşıldı"
         }
     },
     "label": {
