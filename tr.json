@@ -988,7 +988,10 @@
         },
         "accessCode": {
             "modal": {
-                "title": "Bağlantı erişim kodu ile korunuyor"
+                "title": "Bağlantı erişim kodu ile korunuyor",
+                "button": {
+                    "confirm": "Tamamlandı"
+                }
             }
         }
     },
