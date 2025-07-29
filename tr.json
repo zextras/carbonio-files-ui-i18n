@@ -893,6 +893,9 @@
         },
         "button": {
             "refresh": "Ön izlemeyi yenile"
+        },
+        "video": {
+            "errorLabel": "Bu video oynatılamıyor. Başka bir tarayıcı kullanarak yeniden üretmeyi deneyin"
         }
     },
     "label": {
