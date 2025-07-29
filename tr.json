@@ -1009,7 +1009,8 @@
         "fileDownload": {
             "modal": {
                 "description": "Erişim kodu doğru girildi. Şimdi dosyayı indirebilirsiniz.",
-                "confirmLabel2": "Yeniden indir"
+                "confirmLabel2": "Yeniden indir",
+                "confirmLabel1": "İndir"
             }
         }
     },
