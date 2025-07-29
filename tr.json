@@ -326,6 +326,12 @@
         },
         "accessCode": {
             "regenerate": "Yeni erişim kodu üretildi"
+        },
+        "openWithDocs": {
+            "error": {
+                "exceedSizeLimit": "Öğe izin verilen boyut limitini aştığı için açılamıyor.",
+                "pleaseDownload": "Öğeyi görüntülemek için lütfen cihazınıza indirin"
+            }
         }
     },
     "actions": {
@@ -991,7 +997,9 @@
                 "title": "Bağlantı erişim kodu ile korunuyor",
                 "button": {
                     "confirm": "Tamamlandı"
-                }
+                },
+                "wrongAccessCode": "Yanlış erişim kodu, tekrar deneyin",
+                "description": "Devam etmek için lütfen erişim kodu girin"
             }
         }
     },
