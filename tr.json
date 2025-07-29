@@ -960,7 +960,7 @@
             "tooltip": "Yakınlaştırma sıfırla"
         },
         "maximumZoomReached": {
-            "tooltip": "Maksimum zoom seviyesine ulaşıldı"
+            "tooltip": "Maksimum yakınlaştırma seviyesine ulaşıldı"
         },
         "zoomOut": {
             "tooltip": "Uzaklaş"
