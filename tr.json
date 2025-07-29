@@ -926,6 +926,9 @@
         },
         "video": {
             "errorLabel": "Bu video oynatılamıyor. Başka bir tarayıcı kullanarak yeniden deneyin"
+        },
+        "document": {
+            "loadingLabel": "Doküman önizleme yükleniyor…"
         }
     },
     "label": {
@@ -1000,6 +1003,12 @@
                 },
                 "wrongAccessCode": "Yanlış erişim kodu, tekrar deneyin",
                 "description": "Devam etmek için lütfen erişim kodu girin"
+            }
+        },
+        "fileDownload": {
+            "modal": {
+                "description": "Erişim kodu doğru girildi. Şimdi dosyayı indirebilirsiniz.",
+                "confirmLabel2": "Yeniden indir"
             }
         }
     },
