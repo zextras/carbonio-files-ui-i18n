@@ -932,7 +932,8 @@
             "errorLabel": "Doküman önizlemesini yükleme başarısız oldu."
         },
         "fileSizeExceeded": {
-            "title": "Bu öğe görüntülenemez"
+            "title": "Bu öğe görüntülenemez",
+            "content": "Dosya boyutu izin verilen limite ulaştığından ve görüntülenemez"
         },
         "page": {
             "label": "Sayfa"
