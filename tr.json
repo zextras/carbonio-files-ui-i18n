@@ -307,6 +307,13 @@
             "actionLabel": {
                 "copyLink": "Bağlantıyı kopyala"
             }
+        },
+        "createDocument": {
+            "error": {
+                "overQuota": {
+                    "document": "Yeni doküman oluşturma başarısız oldu. Depolama limitinize ulaştınız. Bazı öğeleri silerek depolama alanını boşaltın ve tekrar deneyin"
+                }
+            }
         }
     },
     "actions": {
@@ -951,6 +958,6 @@
                 "label": "Yenile"
             }
         },
-        "unlimitedSpace": "Sınırsız kotadan {{used}} kullanıldı"
+        "unlimitedSpace": "Sınırsız alandan {{used}} kullanıldı"
     }
 }
