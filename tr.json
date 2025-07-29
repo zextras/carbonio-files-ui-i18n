@@ -741,7 +741,7 @@
             "completed": "Tamamlanmış yüklemeleri temizle"
         },
         "destination": {
-            "home": "Dosyalar Giriş'e yükleme yapıldı"
+            "home": "Dosyalar Giriş'e yükleme başlatıldı"
         },
         "dropzone": {
             "message": {
@@ -762,6 +762,12 @@
         "error": {
             "moreInfo": {
                 "foldersNotAllowed": "Klasörler yüklenemiyor. Bir dosya yüklemeye çalışıyorsanız, sistem tarafından tanınmamış olabilir. \"YÜKLE\" tuşunu kullanarak tekrar deneyin."
+            }
+        },
+        "banner": {
+            "overQuota": {
+                "title": "Kota doldu",
+                "description": "Depolama limitinize ulaştığınız için bazı öğelerin yüklenmesi başarısız oldu. Depolama alanında yer açmak için bazı öğeleri silin ve tekrar deneyin."
             }
         }
     },
@@ -971,6 +977,18 @@
     "size": {
         "unitMeasure_B": "B",
         "unitMeasure_KB": "KB",
-        "unitMeasure_MB": "MB"
+        "unitMeasure_MB": "MB",
+        "unitMeasure_TB": "TB",
+        "unitMeasure_GB": "GB",
+        "unitMeasure_ZB": "ZB",
+        "unitMeasure_EB": "EB",
+        "unitMeasure_PB": "PB",
+        "unitMeasure_YB": "YB"
+    },
+    "header": {
+        "iconTooltip": {
+            "GridLayout": "Izgara Görünümü",
+            "ListLayout": "Liste görünümü"
+        }
     }
 }
