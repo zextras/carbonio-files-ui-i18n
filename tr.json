@@ -265,7 +265,8 @@
         },
         "clipboard": {
             "itemShortcutCopied": "Öğe kısayolu kopyalandı",
-            "email": "E-posta adresi kopyalandı"
+            "email": "E-posta adresi kopyalandı",
+            "accessCodeCopied": "Erişim kodu kopyalandı"
         },
         "copyNodes": {
             "action": "Klasöre git",
@@ -322,6 +323,9 @@
             "overQuota": {
                 "actionLabel": "TAMAM"
             }
+        },
+        "accessCode": {
+            "regenerate": "Yeni erişim kodu üretildi"
         }
     },
     "actions": {
@@ -873,6 +877,26 @@
             },
             "title_one": "Herkese Açık Erişim",
             "title_other": "Herkese Açık Erişimler"
+        },
+        "accessCode": {
+            "chip": {
+                "label": "Erişim kodu",
+                "tooltip": "Erişim kodunu kopyala"
+            },
+            "switch": {
+                "label": "Erişim kodunu etkinleştir"
+            },
+            "input": {
+                "label": "Erişim kodu"
+            },
+            "buttons": {
+                "copy": {
+                    "tooltip": "Erişim kodunu kopyala"
+                },
+                "regenerate": {
+                    "tooltip": "Yeni erişim kodu üret"
+                }
+            }
         }
     },
     "preview": {
@@ -895,7 +919,7 @@
             "refresh": "Ön izlemeyi yenile"
         },
         "video": {
-            "errorLabel": "Bu video oynatılamıyor. Başka bir tarayıcı kullanarak yeniden üretmeyi deneyin"
+            "errorLabel": "Bu video oynatılamıyor. Başka bir tarayıcı kullanarak yeniden deneyin"
         }
     },
     "label": {
@@ -961,6 +985,11 @@
             "lastModified": "Son değiştirme",
             "name": "Ad",
             "size": "Boyut"
+        },
+        "accessCode": {
+            "modal": {
+                "title": "Bağlantı erişim kodu ile korunuyor"
+            }
         }
     },
     "quota": {
