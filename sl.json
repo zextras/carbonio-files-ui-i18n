@@ -1067,7 +1067,7 @@
             "success1": "Lastništvo je bilo uspešno preneseno.",
             "success2": "Predmeti so sedaj v vaši mapi \"Deli z menoj\".",
             "error": {
-                "overQuota": "Prenos lastništva je spodrsil.",
+                "overQuota": "Prenos lastništva ni uspel.",
                 "overQuota2": "Novi lastnik nima na voljo dovolj prostora za shranjevanje."
             },
             "actionLabel": "V redu"
