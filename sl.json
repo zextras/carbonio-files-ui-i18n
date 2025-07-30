@@ -1139,7 +1139,7 @@
     "transferOwnership": {
         "modal": {
             "note": "Po prenosu:",
-            "note1": "Ostanete kot <bold>sodelavec z možnostmi urejanja in deljenja.</bold>",
+            "note1": "Ostali boste <bold>sodelavec z možnostmi urejanja in deljenja.</bold>",
             "description": "Izberite novega lastnika za izbrane elemente."
         }
     }
