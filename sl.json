@@ -1056,6 +1056,10 @@
                 "pleaseDownload": "Za ogled elementa ga prenesite na svojo napravo",
                 "exceedSizeLimit": "Element presega dovoljeno velikost in ga ni mogoče odpreti."
             }
+        },
+        "transferOwnership": {
+            "success1": "Lastništvo je bilo uspešno preneseno.",
+            "success2": "Predmeti so sedaj v vaški mapi \"Shared with me\"."
         }
     },
     "sortingDropdown": {
@@ -1145,7 +1149,12 @@
             "note3": "Novi lastnik <bold>bo obveščen.</bold>",
             "note4": "Upoštevajte:",
             "note5": "Če novi lastnik preseže svojo kvoto za shranjevanje, bo prenos neuspešen.",
-            "note6": "Ta dejanje je stalno in ga ni mogoče razveljaviti."
+            "note6": "Ta dejanje je stalno in ga ni mogoče razveljaviti.",
+            "placeholder": "Izberite novega lastnika",
+            "loadingTooltip": "Preverjanje kvote za shranjevanje novega lastnika...",
+            "available": "Novi lastnik ima na voljo dovolj prostora za shranjevanje.",
+            "unavailable": "Novi lastnik nima na voljo dovolj prostora za shranjevanje.",
+            "unavailableTooltip": "Novi lastnik nima na voljo dovolj prostora za shranjevanje."
         }
     }
 }
