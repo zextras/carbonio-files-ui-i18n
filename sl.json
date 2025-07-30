@@ -1149,7 +1149,7 @@
             "note3": "Novi lastnik <bold>bo obveščen.</bold>",
             "note4": "Upoštevajte:",
             "note5": "Če novi lastnik preseže svojo kvoto za shranjevanje, bo prenos neuspešen.",
-            "note6": "Ta dejanje je stalno in ga ni mogoče razveljaviti.",
+            "note6": "Ta dejanje je dokončno in ga ni mogoče razveljaviti.",
             "placeholder": "Izberite novega lastnika",
             "loadingTooltip": "Preverjanje kvote za shranjevanje novega lastnika...",
             "available": "Novi lastnik ima na voljo dovolj prostora za shranjevanje.",
