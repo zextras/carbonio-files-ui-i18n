@@ -433,6 +433,9 @@
         "button": {
             "cancel": "Prekliči",
             "confirm": "Potrdi"
+        },
+        "cancel": {
+            "label": "Prekliči"
         }
     },
     "size": {
@@ -1066,7 +1069,8 @@
             "error": {
                 "overQuota": "Prenos lastništva je spodrsil.",
                 "overQuota2": "Novi lastnik nima na voljo dovolj prostora za shranjevanje."
-            }
+            },
+            "actionLabel": "V redu"
         }
     },
     "sortingDropdown": {
