@@ -1144,7 +1144,8 @@
             "note2": "Vse nastavitve deljenja bodo ohranjena.",
             "note3": "Novi lastnik <bold>bo obveščen.</bold>",
             "note4": "Upoštevajte:",
-            "note5": "Če novi lastnik preseže svojo kvoto za shranjevanje, bo prenos neuspešen."
+            "note5": "Če novi lastnik preseže svojo kvoto za shranjevanje, bo prenos neuspešen.",
+            "note6": "Ta dejanje je stalno in ga ni mogoče razveljaviti."
         }
     }
 }
