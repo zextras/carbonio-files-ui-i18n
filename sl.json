@@ -578,7 +578,10 @@
             },
             "readWriteAndShare": "Uredi in upravljaj deljenje",
             "readAndShare": "Poglej in upravljaj deljenje",
-            "readAndWrite": "Uredi"
+            "readAndWrite": "Uredi",
+            "cannotWrite": {
+                "tooltip": "Niste dovoljeni ustvariti ta povezavo za sodelovanje, ker nimate dovoljenja za urejanje."
+            }
         },
         "maximumLinks": {
             "tooltip": "Dosegli ste največje število povezav. Prekliči eno, da ustvarite novo."
@@ -1061,7 +1064,8 @@
             "success1": "Lastništvo je bilo uspešno preneseno.",
             "success2": "Predmeti so sedaj v vaši mapi \"Deli z menoj\".",
             "error": {
-                "overQuota": "Prenos lastništva je spodrsil."
+                "overQuota": "Prenos lastništva je spodrsil.",
+                "overQuota2": "Novi lastnik nima na voljo dovolj prostora za shranjevanje."
             }
         }
     },
@@ -1141,7 +1145,10 @@
             "message": "<bold>{{email}}</bold> je odstranil <bold>{{node}}</bold> iz <bold>{{folder}}</bold>"
         },
         "title": "Obvestila",
-        "refresh": "Preveri za posodobitve"
+        "refresh": "Preveri za posodobitve",
+        "transferredOwnership": {
+            "message": "<bold>{{email}}</bold> je prenesel lastništvo predmetov na vas. Najdete jih v mapi <bold>{{folder}}</bold>"
+        }
     },
     "transferOwnership": {
         "modal": {
@@ -1157,7 +1164,11 @@
             "loadingTooltip": "Preverjanje kvote za shranjevanje novega lastnika...",
             "available": "Novi lastnik ima na voljo dovolj prostora za shranjevanje.",
             "unavailable": "Novi lastnik nima na voljo dovolj prostora za shranjevanje.",
-            "unavailableTooltip": "Novi lastnik nima na voljo dovolj prostora za shranjevanje."
+            "unavailableTooltip": "Novi lastnik nima na voljo dovolj prostora za shranjevanje.",
+            "button": {
+                "confirm": "Prenesi"
+            },
+            "loading": "Preverjanje kvote za shranjevanje novega lastnika..."
         }
     }
 }
