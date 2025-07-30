@@ -583,7 +583,7 @@
             "readAndShare": "Poglej in upravljaj deljenje",
             "readAndWrite": "Uredi",
             "cannotWrite": {
-                "tooltip": "Niste dovoljeni ustvariti ta povezavo za sodelovanje, ker nimate dovoljenja za urejanje."
+                "tooltip": "Nimate dovoljenja za ustvarjanje te povezave za sodelovanje, ker nimate dovoljenja za urejanje."
             }
         },
         "maximumLinks": {
