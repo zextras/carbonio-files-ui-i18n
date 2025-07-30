@@ -581,7 +581,7 @@
             "readAndWrite": "Uredi"
         },
         "maximumLinks": {
-            "tooltip": "Dostopali ste do največjega števila povezav. Prekliči eno, da ustvarite novo."
+            "tooltip": "Dosegli ste največje število povezav. Prekliči eno, da ustvarite novo."
         }
     },
     "create": {
