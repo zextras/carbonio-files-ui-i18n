@@ -1059,7 +1059,7 @@
         },
         "transferOwnership": {
             "success1": "Lastništvo je bilo uspešno preneseno.",
-            "success2": "Predmeti so sedaj v vaški mapi \"Shared with me\".",
+            "success2": "Predmeti so sedaj v vaši mapi \"Deli z menoj\".",
             "error": {
                 "overQuota": "Prenos lastništva je spodrsil."
             }
