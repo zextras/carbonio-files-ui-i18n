@@ -568,7 +568,10 @@
             "generateLink": "Ustvari povezavo",
             "revoke": "Prekliči"
         },
-        "description": "Notranji uporabniki bodo prejeli dovoljenja ob odprtju povezave. Dodeljena dovoljenja lahko vedno spremenite."
+        "description": "Notranji uporabniki bodo prejeli dovoljenja ob odprtju povezave. Dodeljena dovoljenja lahko vedno spremenite.",
+        "permission": {
+            "readOnly": "Ogled"
+        }
     },
     "create": {
         "options": {
