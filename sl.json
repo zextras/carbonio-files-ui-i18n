@@ -241,7 +241,13 @@
                 },
                 "you": "Vi"
             },
-            "noSharePermissionHeader": "Nimate dovoljenja za deljenje tega elementa."
+            "noSharePermissionHeader": "Nimate dovoljenja za deljenje tega elementa.",
+            "tooltip": {
+                "no_edit_permission": "Nimate nimate potrebne dovolilnice za urejanje sodelovanja"
+            },
+            "editor": {
+                "tooltip": "Nimate nimate potrebne dovoljenje za dodelitev pravic urednika"
+            }
         },
         "tabs": {
             "activities": "Dejavnosti",
