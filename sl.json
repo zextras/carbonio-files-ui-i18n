@@ -1135,5 +1135,12 @@
         },
         "title": "Obvestila",
         "refresh": "Preveri za posodobitve"
+    },
+    "transferOwnership": {
+        "modal": {
+            "note": "Po prenosu:",
+            "note1": "Ostanete kot <bold>sodelavec z možnostmi urejanja in deljenja.</bold>",
+            "description": "Izberite novega lastnika za izbrane elemente."
+        }
     }
 }
