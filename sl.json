@@ -570,7 +570,15 @@
         },
         "description": "Notranji uporabniki bodo prejeli dovoljenja ob odprtju povezave. Dodeljena dovoljenja lahko vedno spremenite.",
         "permission": {
-            "readOnly": "Ogled"
+            "readOnly": "Ogled",
+            "optionDisabled": {
+                "tooltip": "Ta vrsta povezave je že bila ustvarjena"
+            },
+            "readWriteAndShare": "Uredi in upravljaj deljenje",
+            "readAndShare": "Poglej in upravljaj deljenje"
+        },
+        "maximumLinks": {
+            "tooltip": "Dostopali ste do največjega števila povezav. Prekliči eno, da ustvarite novo."
         }
     },
     "create": {
