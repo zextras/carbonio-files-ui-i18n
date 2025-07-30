@@ -575,7 +575,8 @@
                 "tooltip": "Ta vrsta povezave je že bila ustvarjena"
             },
             "readWriteAndShare": "Uredi in upravljaj deljenje",
-            "readAndShare": "Poglej in upravljaj deljenje"
+            "readAndShare": "Poglej in upravljaj deljenje",
+            "readAndWrite": "Uredi"
         },
         "maximumLinks": {
             "tooltip": "Dostopali ste do največjega števila povezav. Prekliči eno, da ustvarite novo."
