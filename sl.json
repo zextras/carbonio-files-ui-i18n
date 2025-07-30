@@ -243,7 +243,8 @@
             },
             "noSharePermissionHeader": "Nimate dovoljenja za deljenje tega elementa.",
             "tooltip": {
-                "no_edit_permission": "Nimate ustreznih pravic za urejanje sodelovanja"
+                "no_edit_permission": "Nimate ustreznih pravic za urejanje sodelovanja",
+                "no_remove_permission": "Nimate nimate potrebne dovoljenje za odstranitev sodelovanja"
             },
             "editor": {
                 "tooltip": "Nimate nimate potrebne dovoljenje za dodelitev pravic urednika"
