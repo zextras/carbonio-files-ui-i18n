@@ -893,14 +893,5 @@
             }
         },
         "description": "Interne Benutzer werden die Berechtigungen durch Öffnen des Links erhalten. Sie können die vergebenen Berechtigungen jederzeit ändern."
-    },
-    "share": {
-        "chip": {
-            "tooltip": {
-                "error": {
-                    "contactNotFound": "Sie können Elemente nur für Benutzer freigeben, für die diese Funktion aktiviert ist, und nicht für Verteilerlisten. Es scheint, dass die angegebene E-Mail mit keinem aktivierten Benutzer verbunden ist. Bitte überprüfen Sie dies erneut und geben Sie eine gültige Adresse ein."
-                }
-            }
-        }
     }
 }
