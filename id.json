@@ -962,15 +962,6 @@
         },
         "description": "Pengguna internal akan menerima izin dengan membukta tautan. Anda dapat selalu mengubah izin yang diberikan."
     },
-    "share": {
-        "chip": {
-            "tooltip": {
-                "error": {
-                    "contactNotFound": "Anda bisa berbagi item ini hanya dengan pengguna yang mengaktifkan fitur ini dan bukan dengan daftar distribusi. Tampaknya email yang diberikan tidak terkait dengan pengguna yang diaktifkan. Periksa lagi dan masukkan alamat yang valid."
-                }
-            }
-        }
-    },
     "carbonio-public-folder-ui": {
         "emptyFolder": "Tidak ada item dalam folder ini.",
         "invalidLink": {
