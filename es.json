@@ -974,15 +974,6 @@
         },
         "description": "Los usuarios internos accederán al elemento al abrir el enlace. Podrás editar los permisos otorgados en cualquier momento."
     },
-    "share": {
-        "chip": {
-            "tooltip": {
-                "error": {
-                    "contactNotFound": "Sólo puedes compartir elementos con usuarios para los que esta función esté habilitada y no con listas de distribución. Parece que la dirección de correo electrónico proporcionada no está asociada a ningún usuario habilitado. Por favor, comprueba la dirección e intenta de nuevo."
-                }
-            }
-        }
-    },
     "carbonio-public-folder-ui": {
         "emptyFolder": "No hay elementos en esta carpeta.",
         "invalidLink": {
