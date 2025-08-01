@@ -981,15 +981,6 @@
     "uploadItem": {
         "queued": "Sırada"
     },
-    "share": {
-        "chip": {
-            "tooltip": {
-                "error": {
-                    "contactNotFound": "Öğeleri yalnızca bu özelliğin etkinleştirildiği kullanıcılarla paylaşabilirsiniz, dağıtım grupları ile paylaşılamaz. Bu e-posta adresi bir kullanıcı ile bağlantılı değil. Lütfen tekrar kontrol ederek geçerli bir adres yazın."
-                }
-            }
-        }
-    },
     "dropzone": {
         "move": {
             "message": {
