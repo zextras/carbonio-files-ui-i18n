@@ -1060,15 +1060,6 @@
             "tooltip": "Vous avez atteint le nombre maximum de liens. Supprimez-en un avant de pouvoir en créer un nouveau."
         }
     },
-    "share": {
-        "chip": {
-            "tooltip": {
-                "error": {
-                    "contactNotFound": "Vous ne pouvez partager des éléments qu'avec des utilisateurs pour lesquels cette fonction est activée et non avec des listes de distribution. Il semble que l'email fournie ne soit pas associée à un utilisateur autorisé. Veuillez vérifier à nouveau et insérer une adresse valide."
-                }
-            }
-        }
-    },
     "carbonio-public-folder-ui": {
         "emptyFolder": "Ce dossier est vide.",
         "invalidLink": {
