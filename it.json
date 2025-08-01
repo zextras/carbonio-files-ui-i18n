@@ -1067,15 +1067,6 @@
             "tooltip": "Hai raggiunto il numero massimo di link. Revocane uno per crearne uno nuovo."
         }
     },
-    "share": {
-        "chip": {
-            "tooltip": {
-                "error": {
-                    "contactNotFound": "Puoi condividere gli elementi sono con gli utenti per cui è stata abilitata questa funzione e non con le liste di distribuzione. L'indirizzo inserito non è associato con alcun utente abilitato. Per favore, controlla e inserisci un indirizzo valido."
-                }
-            }
-        }
-    },
     "carbonio-public-folder-ui": {
         "emptyFolder": "In questa cartella non ci sono elementi.",
         "invalidLink": {
