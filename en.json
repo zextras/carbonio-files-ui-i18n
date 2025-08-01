@@ -942,15 +942,6 @@
             "tooltip": "Activate selection mode"
         }
     },
-    "share": {
-        "chip": {
-            "tooltip": {
-                "error": {
-                    "contactNotFound": "You can share items only with users for which this feature is enabled and not with distribution lists. It seems that the provided email is not associated with any enabled user. Please check again and insert a valid address."
-                }
-            }
-        }
-    },
     "snackbar": {
         "clipboard": {
             "email": "Email address copied",
