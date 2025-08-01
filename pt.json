@@ -974,15 +974,6 @@
         },
         "description": "Os usuários internos acessarão o item ao abrir o link. Você poderá editar as permissões outorgadas a qualquer momento."
     },
-    "share": {
-        "chip": {
-            "tooltip": {
-                "error": {
-                    "contactNotFound": "Só é possível compartilhar itens com usuários para os quais esse recurso está ativado e não com listas de distribuição. Parece que o endereço de e-mail fornecido não está associado a nenhum usuário ativo. Verifique o endereço e tente novamente."
-                }
-            }
-        }
-    },
     "carbonio-public-folder-ui": {
         "invalidLink": {
             "description": {
