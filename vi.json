@@ -871,14 +871,5 @@
             }
         },
         "description": "Người dùng nội bộ sẽ nhận được quyền bằng cách mở liên kết. Bạn luôn có thể sửa đổi các quyền đã được cấp."
-    },
-    "share": {
-        "chip": {
-            "tooltip": {
-                "error": {
-                    "contactNotFound": "Địa chỉ thư này không được liên kết với người dùng Carbonio"
-                }
-            }
-        }
     }
 }
