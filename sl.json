@@ -961,15 +961,6 @@
             "tooltip": "Aktiviraj način izbire"
         }
     },
-    "share": {
-        "chip": {
-            "tooltip": {
-                "error": {
-                    "contactNotFound": "Elemente lahko delite samo z uporabniki, za katere je ta funkcija omogočena, in ne z distribucijskimi seznami. Zdi se, da navedeni e-poštni naslov ni povezan z nobenim omogočenim uporabnikom. Preverite in vnesite veljaven naslov."
-                }
-            }
-        }
-    },
     "snackbar": {
         "clipboard": {
             "email": "E-poštni naslov kopiran",
