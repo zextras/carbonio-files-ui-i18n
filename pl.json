@@ -1067,15 +1067,6 @@
             "tooltip": "Osiągnąłeś max. liczbę linków. Deaktywuj jeden z nich, aby stworzyć nowy."
         }
     },
-    "share": {
-        "chip": {
-            "tooltip": {
-                "error": {
-                    "contactNotFound": "Możesz udostępniać elementy tylko użytkownikom, którzy mają włączoną tę funkcje. Nie możesz też udostępniać elementów listom dystrybucyjnym. Wygląda na to, że wybrany e-mail nie jest przypisany do żadnego aktywnego użytkownika. Wprowadź prawidłowy adres."
-                }
-            }
-        }
-    },
     "carbonio-public-folder-ui": {
         "emptyFolder": "W tym folderze nie ma żadnych elementów.",
         "invalidLink": {
