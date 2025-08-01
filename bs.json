@@ -1031,15 +1031,6 @@
             "GridLayout": "Grid"
         }
     },
-    "share": {
-        "chip": {
-            "tooltip": {
-                "error": {
-                    "contactNotFound": "Stavke je moguće dijeliti samo s korisnicima kojima je ova funkcija omogućena, a ne s distribucijskim listama. Čini se da navedena e-mail adresa nije povezana s omogućenim korisnikom. Provjeri adresu i/ili unesi ispravnu."
-                }
-            }
-        }
-    },
     "publicLink": {
         "addLink": {
             "description": "Svi korisnici koji imaju pristup linku mogu preuzeti stavku.",
