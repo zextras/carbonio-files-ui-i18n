@@ -134,7 +134,8 @@
             "sendMailTo": "Pošalji e-mail na: {{email}}",
             "showPath": "Prikaži putanju",
             "size": "Veličina",
-            "position": "Pozicija"
+            "position": "Pozicija",
+            "description": "Opis"
         },
         "filter": {
             "flagged_empty": [
@@ -356,7 +357,14 @@
                 },
                 "you": "Ti"
             },
-            "noSharePermissionHeader": "Nemaš dozvolu za dijeljenje ove stavke."
+            "noSharePermissionHeader": "Nemaš dozvolu za dijeljenje ove stavke.",
+            "tooltip": {
+                "no_edit_permission": "Nemate potrebne dozvole za uređivanje saradnje",
+                "no_remove_permission": "Nemate potrebne dozvole za uklanjanje saradnje"
+            },
+            "editor": {
+                "tooltip": "Nemate potrebne dozvole za dodjelu prava urednika"
+            }
         },
         "tabs": {
             "activities": "Aktivnosti",
@@ -620,6 +628,9 @@
             "title_one": "Prenesi vlasništvo nad {{count}} stavkom",
             "title_few": "Prenesi vlasništvo nad {{count}} stavke",
             "title_other": "Prenesi vlasništvo nad {{count}} stavki"
+        },
+        "close": {
+            "tooltip": "Zatvori"
         }
     },
     "node": {
