@@ -2,9 +2,6 @@
     "actions": {
         "copy": "Copy",
         "deletePermanently": "Delete permanently",
-        "download": {
-            "multiple": "Download all"
-        },
         "edit": "Edit",
         "flag": "Flag",
         "goToFolder": "Go to destination folder",
