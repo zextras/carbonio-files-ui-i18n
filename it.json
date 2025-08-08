@@ -25,7 +25,8 @@
             "success": "Successo"
         },
         "download": {
-            "start": "Il download comincerà a breve"
+            "start": "Il download comincerà a breve",
+            "error": "La dimensione del download supera il limite di {{limit}}. Riduci gli elementi da scaricare"
         },
         "moveNodes": {
             "error": "Qualcosa è andato storto, riprova",
@@ -357,7 +358,6 @@
     "actions": {
         "deletePermanently": "Elimina definitivamente",
         "copy": "Copia",
-        "download": "Scarica",
         "markForDeletion": "Seleziona per la rimozione",
         "move": "Sposta",
         "openWithDocs": "Apri documento",
@@ -373,7 +373,10 @@
         "edit": "Modifica",
         "preview": "Anteprima",
         "manageShares": "Gestisci condivisioni",
-        "transferOwnership": "Trasferisci proprietà"
+        "transferOwnership": "Trasferisci proprietà",
+        "download": {
+            "multiple": "Scarica tutto"
+        }
     },
     "displayer": {
         "list": {
