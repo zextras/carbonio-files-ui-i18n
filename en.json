@@ -17,7 +17,19 @@
         "retryUpload": "Retry upload",
         "sendViaMail": "Send via e-mail",
         "unflag": "Unflag",
-        "transferOwnership": "Transfer ownership"
+        "transferOwnership": "Transfer ownership",
+        "download": {
+            "multiple": {
+                "modal": {
+                    "button": {
+                        "label": "Download all"
+                    }
+                },
+                "button": {
+                    "tooltip": "Download all"
+                }
+            }
+        }
     },
     "breadcrumb": {
         "expander": {
