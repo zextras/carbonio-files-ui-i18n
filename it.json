@@ -373,7 +373,19 @@
         "edit": "Modifica",
         "preview": "Anteprima",
         "manageShares": "Gestisci condivisioni",
-        "transferOwnership": "Trasferisci proprietà"
+        "transferOwnership": "Trasferisci proprietà",
+        "download": {
+            "multiple": {
+                "modal": {
+                    "button": {
+                        "label": "Scarica tutto"
+                    }
+                },
+                "button": {
+                    "tooltip": "Scarica tutto"
+                }
+            }
+        }
     },
     "displayer": {
         "list": {
