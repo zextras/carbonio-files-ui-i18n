@@ -524,7 +524,6 @@
     "actions": {
         "copy": "نسخ",
         "deletePermanently": "حذف بشكل نهائي",
-        "download": "تنزيل",
         "edit": "تعديل",
         "flag": "تعلِيم",
         "goToFolder": "انتقل إلى مجلد الوجهة",

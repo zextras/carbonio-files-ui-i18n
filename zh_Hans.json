@@ -372,7 +372,6 @@
     },
     "actions": {
         "copy": "复制",
-        "download": "下载",
         "markForDeletion": "标记以删除",
         "move": "移动",
         "openWithDocs": "打开文档",

@@ -47,7 +47,6 @@
     },
     "actions": {
         "deletePermanently": "Betirako ezabatu",
-        "download": "Deskargatu",
         "edit": "Editatu",
         "flag": "Bandera ezarri",
         "goToFolder": "Helburu karpetara joan",

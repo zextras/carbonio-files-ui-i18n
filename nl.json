@@ -307,7 +307,6 @@
         }
     },
     "actions": {
-        "download": "Downloaden",
         "markForDeletion": "Voor verwijdering markeren",
         "move": "Verplaatsen",
         "openWithDocs": "Document openen",

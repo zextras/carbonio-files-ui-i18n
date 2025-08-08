@@ -333,7 +333,6 @@
     },
     "actions": {
         "copy": "Salin",
-        "download": "Unduh",
         "markForDeletion": "Tandai untuk dihapus",
         "move": "Pindahkan",
         "openWithDocs": "Buka dokumen",

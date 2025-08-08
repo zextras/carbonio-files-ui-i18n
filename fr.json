@@ -355,7 +355,6 @@
         }
     },
     "actions": {
-        "download": "Téléchargement",
         "markForDeletion": "Mettre à la corbeille",
         "move": "Déplacer",
         "openWithDocs": "Ouvrir avec Docs",

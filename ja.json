@@ -305,7 +305,6 @@
     },
     "actions": {
         "copy": "コピー",
-        "download": "ダウンロード",
         "markForDeletion": "削除マークを付ける",
         "move": "移動",
         "openWithDocs": "ドキュメントを開く",

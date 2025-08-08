@@ -308,7 +308,6 @@
     },
     "actions": {
         "copy": "Kopieren",
-        "download": "Download",
         "markForDeletion": "Zum Löschen kennzeichnen",
         "move": "Verschieben",
         "openWithDocs": "Dokument öffnen",

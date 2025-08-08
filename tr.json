@@ -335,7 +335,6 @@
         }
     },
     "actions": {
-        "download": "İndir",
         "markForDeletion": "Silmek için işaretle",
         "move": "Taşı",
         "openWithDocs": "Dokümanı aç",

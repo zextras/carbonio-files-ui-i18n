@@ -361,7 +361,6 @@
     "actions": {
         "copy": "Másolás",
         "deletePermanently": "Végleges törlés",
-        "download": "Letöltés",
         "edit": "Szerkesztés",
         "flag": "Jelölő",
         "goToFolder": "Ugrás a célmappához",

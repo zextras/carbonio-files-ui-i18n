@@ -120,7 +120,6 @@
     },
     "actions": {
         "copy": "Copiaza",
-        "download": "Descarcare",
         "markForDeletion": "Marcat pentru stergere",
         "move": "Muta",
         "openWithDocs": "Deschide cu Docs",

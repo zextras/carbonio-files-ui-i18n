@@ -338,7 +338,6 @@
         }
     },
     "actions": {
-        "download": "Download",
         "markForDeletion": "Excluir",
         "move": "Mover",
         "openWithDocs": "Abrir documento",

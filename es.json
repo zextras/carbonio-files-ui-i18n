@@ -339,7 +339,6 @@
     },
     "actions": {
         "copy": "Copiar",
-        "download": "Descargar",
         "markForDeletion": "Eliminar",
         "move": "Mover",
         "openWithDocs": "Abrir documento",
