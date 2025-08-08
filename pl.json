@@ -221,7 +221,8 @@
             "success": "Uprawnienia zostały zaktualizowane"
         },
         "download": {
-            "start": "Pobieranie za chwilę się zacznie"
+            "start": "Pobieranie za chwilę się zacznie",
+            "error": "Rozmiar przekracza limit {{limit}}. Zmniejsz ilość elementów, aby je pobrać"
         },
         "markForDeletion": {
             "error": "Coś poszło nie tak, spróbuj ponownie",
@@ -306,7 +307,6 @@
     "actions": {
         "restore": "Przywróć",
         "deletePermanently": "Trwale usuń",
-        "download": "Pobierz",
         "move": "Przenieś",
         "copy": "Skopiuj",
         "retryUpload": "Ponów przesyłanie",
@@ -322,7 +322,10 @@
         "edit": "Edytuj",
         "preview": "Podgląd",
         "manageShares": "Zarządzaj udostępnieniami",
-        "transferOwnership": "Przekaż własność"
+        "transferOwnership": "Przekaż własność",
+        "download": {
+            "multiple": "Pobierz wszystkie"
+        }
     },
     "displayer": {
         "share": {
