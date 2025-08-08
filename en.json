@@ -2,7 +2,9 @@
     "actions": {
         "copy": "Copy",
         "deletePermanently": "Delete permanently",
-        "download": "Download",
+        "download": {
+            "multiple": "Download all"
+        },
         "edit": "Edit",
         "flag": "Flag",
         "goToFolder": "Go to destination folder",
@@ -974,7 +976,8 @@
             "success": "Success"
         },
         "download": {
-            "start": "Your download will start soon"
+            "start": "Your download will start soon",
+            "error": "Download size exceeds the {{limit}} limit. Please reduce items to download"
         },
         "markForDeletion": {
             "error": "Something went wrong, try again",
