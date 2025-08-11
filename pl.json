@@ -322,7 +322,19 @@
         "edit": "Edytuj",
         "preview": "Podgląd",
         "manageShares": "Zarządzaj udostępnieniami",
-        "transferOwnership": "Przekaż własność"
+        "transferOwnership": "Przekaż własność",
+        "download": {
+            "multiple": {
+                "button": {
+                    "tooltip": "Pobierz wszystko"
+                },
+                "modal": {
+                    "button": {
+                        "label": "Pobierz wszystko"
+                    }
+                }
+            }
+        }
     },
     "displayer": {
         "share": {
