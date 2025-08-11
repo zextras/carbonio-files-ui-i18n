@@ -406,13 +406,15 @@
     "snackbar": {
         "moveNodes": {
             "error": "Щось пішло не так, спробуйте ще раз",
-            "success": "Елемент переміщено"
+            "success": "Елемент переміщено",
+            "action": "Перейти до папки"
         },
         "upload": {
             "nodesNotAllowed": "Деякі елементи не були завантажені",
             "moreInfo": "Більше інформації",
             "success": "Завантаження відбулося в {{destination}}",
-            "foldersNotAllowed": "Папки не можуть бути завантажені"
+            "foldersNotAllowed": "Папки не можуть бути завантажені",
+            "goToFolder": "Перейти до папки"
         },
         "markForDeletion": {
             "error": "Щось пішло не так, спробуйте ще раз",
@@ -532,6 +534,8 @@
         },
         "lastUpdate": "Останнє оновлення",
         "ascendingOrder": "Порядок зростання",
-        "descendingOrder": "Порядок спадання"
+        "descendingOrder": "Порядок спадання",
+        "size": "Розмір",
+        "name": "Ім’я"
     }
 }
