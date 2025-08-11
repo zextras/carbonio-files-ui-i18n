@@ -17,7 +17,16 @@
         "retryUpload": "Повторити завантаження",
         "sendViaMail": "Надіслати e-mail",
         "unflag": "Зняти позначку",
-        "transferOwnership": "Передати власність"
+        "transferOwnership": "Передати власність",
+        "download": {
+            "multiple": {
+                "modal": {
+                    "button": {
+                        "label": "Завантажити все"
+                    }
+                }
+            }
+        }
     },
     "preview": {
         "zoomOut": {
