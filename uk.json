@@ -364,15 +364,15 @@
         }
     },
     "size": {
-        "unitMeasure_TB": "TB",
-        "unitMeasure_EB": "EB",
-        "unitMeasure_GB": "GB",
-        "unitMeasure_PB": "PB",
-        "unitMeasure_B": "B",
-        "unitMeasure_KB": "KB",
-        "unitMeasure_MB": "MB",
+        "unitMeasure_TB": "ТБ",
+        "unitMeasure_EB": "ЕБ",
+        "unitMeasure_GB": "ГБ",
+        "unitMeasure_PB": "ПБ",
+        "unitMeasure_B": "Б",
+        "unitMeasure_KB": "КБ",
+        "unitMeasure_MB": "МБ",
         "unitMeasure_YB": "YB",
-        "unitMeasure_ZB": "ZB"
+        "unitMeasure_ZB": "ЗБ"
     },
     "notifications": {
         "empty": {
@@ -402,5 +402,56 @@
             },
             "description": "Виберіть нового власника для вибраних елементів."
         }
+    },
+    "snackbar": {
+        "moveNodes": {
+            "error": "Щось пішло не так, спробуйте ще раз",
+            "success": "Елемент переміщено"
+        },
+        "upload": {
+            "nodesNotAllowed": "Деякі елементи не були завантажені",
+            "moreInfo": "Більше інформації",
+            "success": "Завантаження відбулося в {{destination}}",
+            "foldersNotAllowed": "Папки не можуть бути завантажені"
+        },
+        "markForDeletion": {
+            "error": "Щось пішло не так, спробуйте ще раз"
+        },
+        "publicLink": {
+            "linkUpdated": {
+                "label": "{{linkName}} оновлено"
+            },
+            "actionLabel": {
+                "copyLink": "Копіювати посилання"
+            },
+            "copyLink": "{{linkName}} скопійовано",
+            "newPublicLinkGenerated": {
+                "label": "Новий {{linkName}} сгенеровано"
+            }
+        },
+        "restore": {
+            "showInFolder": "Показати у папці",
+            "success": "Успіх",
+            "error": "Щось пішло не так, спробуйте ще раз"
+        },
+        "version": {
+            "clone": "Версія клонувана як поточна"
+        }
+    },
+    "uploads": {
+        "dropzone": {
+            "message": {
+                "folderView": {
+                    "enabled": "Положіть сюди свої вкладення, щоб швидко додати їх до цієї папки",
+                    "disabled": "Неможливо відпустити вкладення в цій області"
+                }
+            }
+        },
+        "destination": {
+            "home": "Завантаження відбулося в Files Home"
+        }
+    },
+    "uploadItem": {
+        "queued": "Черга"
     }
 }
