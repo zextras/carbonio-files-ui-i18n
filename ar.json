@@ -539,7 +539,19 @@
         "retryUpload": "إعادة محاولة التحميل",
         "sendViaMail": "إرسال عبر البريد الإلكتروني",
         "unflag": "إزالة العلامة",
-        "transferOwnership": "نقل الملكية"
+        "transferOwnership": "نقل الملكية",
+        "download": {
+            "multiple": {
+                "button": {
+                    "tooltip": "تنزيل الكل"
+                },
+                "modal": {
+                    "button": {
+                        "label": "تنزيل الكل"
+                    }
+                }
+            }
+        }
     },
     "breadcrumb": {
         "expander": {
@@ -984,7 +996,8 @@
             "error": "خطأ"
         },
         "download": {
-            "start": "سيبدأ التنزيل قريبًا"
+            "start": "سيبدأ التنزيل قريبًا",
+            "error": "حجم التنزيل يتجاوز الحد الأقصى المسموح به {{limit}} . يُرجى تقليل عدد العناصر المراد تنزيلها"
         },
         "unflag": {
             "success": "أزلت التمييز بنجاح"
