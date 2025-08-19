@@ -517,7 +517,13 @@
                 "noteDescription": "Le message standard affiche votre nom, le nom de l'élément partagé, les autorisations accordées aux destinataires et les informations de connexion.",
                 "button": "Partage"
             },
-            "noSharePermissionHeader": "Vous n'êtes pas autorisé à partager cet élément."
+            "noSharePermissionHeader": "Vous n'êtes pas autorisé à partager cet élément.",
+            "tooltip": {
+                "no_edit_permission": "Vous ne possédez pas les autorisations nécessaires pour modifier la collaboration"
+            },
+            "editor": {
+                "tooltip": "Vous ne possédez pas les autorisations nécessaires pour affecter des droits d'édition"
+            }
         },
         "tabs": {
             "activities": "Activités",
