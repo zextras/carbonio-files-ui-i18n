@@ -420,7 +420,7 @@
                     "modal": {
                         "cancel": "Retour",
                         "cascade": "rechercher également dans les sous-dossiers",
-                        "confirm": "Choisir un dossier",
+                        "confirm": "Choisissez un dossier",
                         "subtitle": "Les résultats seront recherchés seulement dans le dossier sélectionné",
                         "title": "Sélectionner un dossier"
                     }
@@ -519,7 +519,8 @@
             },
             "noSharePermissionHeader": "Vous n'êtes pas autorisé à partager cet élément.",
             "tooltip": {
-                "no_edit_permission": "Vous ne possédez pas les autorisations nécessaires pour modifier la collaboration"
+                "no_edit_permission": "Vous ne possédez pas les autorisations nécessaires pour modifier la collaboration",
+                "no_remove_permission": "Vous n'avez pas les permission nécessaires pour supprimer la collaboration"
             },
             "editor": {
                 "tooltip": "Vous ne possédez pas les autorisations nécessaires pour affecter des droits d'édition"
