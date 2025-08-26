@@ -442,6 +442,12 @@
         },
         "cancel": {
             "label": "Prekliči"
+        },
+        "transferOwnership": {
+            "title_one": "Prenesi lastništvo {{node.name}}",
+            "title_two": "Prenesi lastništvo {{count}} predmetov",
+            "title_few": "Prenesi lastništvo {{count}} predmetov",
+            "title_other": "Prenesi lastništvo {{count}} predmetov"
         }
     },
     "size": {
