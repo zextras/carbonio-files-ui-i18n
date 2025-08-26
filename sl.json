@@ -998,7 +998,8 @@
             "success": "Uspešno"
         },
         "download": {
-            "start": "Prenos se bo kmalu začel"
+            "start": "Prenos se bo kmalu začel",
+            "error": "Velikost prenosa presega {{limit}} omejitve. Zmanjšajte elemente za prenos"
         },
         "markForDeletion": {
             "error": "Nekaj je šlo narobe, poskusite znova",
