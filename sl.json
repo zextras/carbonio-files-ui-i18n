@@ -999,7 +999,7 @@
         },
         "download": {
             "start": "Prenos se bo kmalu začel",
-            "error": "Velikost prenosa presega {{limit}} omejitve. Zmanjšajte elemente za prenos"
+            "error": "Velikost prenosa presega {{limit}} omejitve. Zmanjšajte velikost elementov za prenos"
         },
         "markForDeletion": {
             "error": "Nekaj je šlo narobe, poskusite znova",
