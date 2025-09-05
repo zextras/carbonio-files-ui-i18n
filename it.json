@@ -385,7 +385,8 @@
                     "tooltip": "Scarica tutto"
                 }
             }
-        }
+        },
+        "downloadNode": "Scarica"
     },
     "displayer": {
         "list": {
