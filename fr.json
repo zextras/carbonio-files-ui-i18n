@@ -255,7 +255,8 @@
             "success": "Succès"
         },
         "download": {
-            "start": "Votre téléchargement va bientôt démarrer"
+            "start": "Votre téléchargement va bientôt démarrer",
+            "error": "La taille du téléchargement dépasse la limit de {{limit}}. Veuillez réduire les éléments à télécharger"
         },
         "moveNodes": {
             "error": "Quelque chose s'est mal passé, réessayez",
@@ -372,7 +373,19 @@
         "edit": "Modifier",
         "preview": "Prévisualisation",
         "manageShares": "Gestion des partages",
-        "transferOwnership": "Transfert de propriété"
+        "transferOwnership": "Transfert de propriété",
+        "download": {
+            "multiple": {
+                "modal": {
+                    "button": {
+                        "label": "Tout télécharger"
+                    }
+                },
+                "button": {
+                    "tooltip": "Tout télécharger"
+                }
+            }
+        }
     },
     "search": {
         "header": {
