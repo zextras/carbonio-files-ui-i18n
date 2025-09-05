@@ -29,7 +29,8 @@
                     "tooltip": "Download all"
                 }
             }
-        }
+        },
+        "downloadNode": "Download"
     },
     "breadcrumb": {
         "expander": {
