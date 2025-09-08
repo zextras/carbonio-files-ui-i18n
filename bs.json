@@ -17,7 +17,20 @@
         "sendViaMail": "Pošalji putem e-mail poruke",
         "rename": "Preimenuj",
         "unflag": "Ukloni oznaku",
-        "transferOwnership": "Prebaciti vlasništvo"
+        "transferOwnership": "Prebaciti vlasništvo",
+        "download": {
+            "multiple": {
+                "button": {
+                    "tooltip": "Preuzmi sve"
+                },
+                "modal": {
+                    "button": {
+                        "label": "Preuzmi sve"
+                    }
+                }
+            }
+        },
+        "downloadNode": "Preuzmi"
     },
     "breadcrumb": {
         "expander": {
@@ -891,7 +904,8 @@
             "success": "Uspjeh"
         },
         "download": {
-            "start": "Preuzimanje će uskoro početi"
+            "start": "Preuzimanje će uskoro početi",
+            "error": "Veličina preuzimanja prelazi ograničenje od {{limit}}. Molimo smanjite broj stavki za preuzimanje"
         },
         "markForDeletion": {
             "showTrash": "Otvori mapu Smeće",
