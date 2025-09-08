@@ -334,7 +334,8 @@
                     }
                 }
             }
-        }
+        },
+        "downloadNode": "Pobierz"
     },
     "displayer": {
         "share": {
