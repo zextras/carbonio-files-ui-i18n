@@ -29,7 +29,8 @@
                     "tooltip": "Завантажити все"
                 }
             }
-        }
+        },
+        "downloadNode": "Завантажити"
     },
     "preview": {
         "zoomOut": {
