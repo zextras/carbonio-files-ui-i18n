@@ -385,7 +385,8 @@
                     "tooltip": "Tout télécharger"
                 }
             }
-        }
+        },
+        "downloadNode": "Télécharger"
     },
     "search": {
         "header": {
