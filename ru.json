@@ -385,7 +385,8 @@
                     }
                 }
             }
-        }
+        },
+        "downloadNode": "Скачать"
     },
     "search": {
         "header": {
