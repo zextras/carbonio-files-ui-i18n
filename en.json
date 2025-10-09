@@ -987,7 +987,8 @@
         },
         "download": {
             "start": "Your download will start soon",
-            "error": "Download size exceeds the {{limit}} limit. Please reduce items to download"
+            "error": "Download size exceeds the {{limit}} limit. Please reduce items to download",
+            "sizeExceedsError": "Download size exceeds the maximum limit. Please reduce items to download"
         },
         "markForDeletion": {
             "error": "Something went wrong, try again",
