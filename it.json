@@ -26,7 +26,8 @@
         },
         "download": {
             "start": "Il download comincerà a breve",
-            "error": "La dimensione del download supera il limite di {{limit}}. Riduci gli elementi da scaricare"
+            "error": "La dimensione del download supera il limite di {{limit}}. Riduci gli elementi da scaricare",
+            "sizeExceedsError": "La dimensione del download supera il limite massimo. Riduci gli elementi da scaricare"
         },
         "moveNodes": {
             "error": "Qualcosa è andato storto, riprova",
