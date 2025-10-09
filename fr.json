@@ -256,7 +256,8 @@
         },
         "download": {
             "start": "Votre téléchargement va bientôt démarrer",
-            "error": "La taille du téléchargement dépasse la limit de {{limit}}. Veuillez réduire les éléments à télécharger"
+            "error": "La taille du téléchargement dépasse la limit de {{limit}}. Veuillez réduire les éléments à télécharger",
+            "sizeExceedsError": "La taille du téléchargement dépasse la limite maximale. Veuillez réduire le nombre d'éléments à télécharger"
         },
         "moveNodes": {
             "error": "Quelque chose s'est mal passé, réessayez",
