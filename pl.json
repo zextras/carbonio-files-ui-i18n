@@ -222,7 +222,8 @@
         },
         "download": {
             "start": "Pobieranie za chwilę się zacznie",
-            "error": "Rozmiar przekracza limit {{limit}}. Zmniejsz ilość elementów, aby je pobrać"
+            "error": "Rozmiar przekracza limit {{limit}}. Zmniejsz ilość elementów, aby je pobrać",
+            "sizeExceedsError": "Rozmiar pobierania przekracza max. limit. Zmniejsz liczbę elementów do pobrania"
         },
         "markForDeletion": {
             "error": "Coś poszło nie tak, spróbuj ponownie",
