@@ -331,7 +331,19 @@
         "sendViaMail": "Pošlji po e-pošti",
         "unflag": "Odstrani oznako",
         "transferOwnership": "Prenesite lastništvo",
-        "downloadNode": "Prenesi"
+        "downloadNode": "Prenesi",
+        "download": {
+            "multiple": {
+                "modal": {
+                    "button": {
+                        "label": "Prenesi vse"
+                    }
+                },
+                "button": {
+                    "tooltip": "Prenesi vse"
+                }
+            }
+        }
     },
     "modal": {
         "close": {
