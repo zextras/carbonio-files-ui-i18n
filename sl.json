@@ -330,7 +330,8 @@
         "retryUpload": "Ponovno naloži",
         "sendViaMail": "Pošlji po e-pošti",
         "unflag": "Odstrani oznako",
-        "transferOwnership": "Prenesite lastništvo"
+        "transferOwnership": "Prenesite lastništvo",
+        "downloadNode": "Prenesi"
     },
     "modal": {
         "close": {
@@ -595,7 +596,7 @@
             "readAndShare": "Poglej in upravljaj deljenje",
             "readAndWrite": "Uredi",
             "cannotWrite": {
-                "tooltip": "Nimate dovoljenja za ustvarjanje te povezave za sodelovanje, ker nimate dovoljenja za urejanje."
+                "tooltip": "Nimate dovoljenja za ustvarjanje te povezave za sodelovanje, ker nimate dovoljenja za urejanje"
             }
         },
         "maximumLinks": {
@@ -1000,7 +1001,7 @@
         "download": {
             "start": "Prenos se bo kmalu začel",
             "error": "Velikost prenosa presega {{limit}} omejitve. Zmanjšajte velikost elementov za prenos",
-            "sizeExceedsError": "Velikost podatkov presega največjo dovoljeno mejo. Zmanjšajte število predmetov za prenos."
+            "sizeExceedsError": "Velikost podatkov presega največjo dovoljeno mejo. Zmanjšajte število predmetov za prenos"
         },
         "markForDeletion": {
             "error": "Nekaj je šlo narobe, poskusite znova",
