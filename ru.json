@@ -1125,7 +1125,7 @@
                 "label": "Обновить"
             }
         },
-        "unlimitedSpace": "{{used}} неограниченного пространства"
+        "unlimitedSpace": "{{used}} из неограниченного пространства"
     },
     "size": {
         "unitMeasure_TB": "TB",
