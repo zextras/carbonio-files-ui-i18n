@@ -4,7 +4,7 @@
         "deletePermanently": "Trajno obriši",
         "flag": "Označi",
         "manageShares": "Upravljaj dijeljenjima",
-        "goToFolder": "Idi u odredišnu mapu",
+        "goToFolder": "Idi u odredišni direktorij",
         "edit": "Uredi",
         "markForDeletion": "Označi za brisanje",
         "move": "Premjesti",
@@ -264,7 +264,7 @@
                 },
                 {
                     "title": "Odaberi stavku za trajno brisanje.",
-                    "message": "Ili, kada je to moguće, odaberi stavku i vrati je u originalnu mapu."
+                    "message": "Ili, kada je to moguće, odaberi stavku i vrati je u originalni direktorij."
                 }
             ]
         },
@@ -291,14 +291,14 @@
                 "title": "Pogledaj detalje svojih mapa i podijeli ih sa svojim kontaktima."
             },
             {
-                "title": "Odaberi mapu za uređivanje ili preimenovanje."
+                "title": "Odaberi direktorij za uređivanje ili preimenovanje."
             },
             {
                 "message": "Odaberi stavku, a zatim idi na karticu \"Dijeljenja\".",
                 "title": "Omogući svojim kontaktima mogućnost uređivanja kako bi mogli da vrše izmjene nad stavkom."
             },
             {
-                "title": "Odaberi stavku za dijeljenje ili premještanje u drugu mapu."
+                "title": "Odaberi stavku za dijeljenje ili premještanje u drugi direktorij."
             }
         ],
         "generic": {
@@ -522,7 +522,7 @@
                         "name": "Naziv mape"
                     }
                 },
-                "title": "Kreiraj novu mapu"
+                "title": "Kreiraj novi direktorij"
             }
         }
     },
@@ -680,7 +680,7 @@
                 "input": {
                     "filter": "Filtriraj mape"
                 },
-                "subtitle": "Odaberi odredišnu mapu:",
+                "subtitle": "Odaberi odredišni direktorij:",
                 "title_one": "Premjesti {{node.name}}",
                 "title_few": "Premjesti stavke",
                 "title_other": "Premjesti stavke"
@@ -776,12 +776,12 @@
                 "folder": {
                     "modal": {
                         "cascade": "pretraži i u podmapama",
-                        "confirm": "Odaberi mapu",
-                        "title": "Odaberi mapu",
+                        "confirm": "Odaberi direktorij",
+                        "title": "Odaberi direktorij",
                         "cancel": "Nazad",
                         "subtitle": "Rezultat će biti pretražen samo unutar odabrane mape"
                     },
-                    "label": "Odaberi mapu"
+                    "label": "Odaberi direktorij"
                 },
                 "itemType": {
                     "dropdownOption": {
@@ -858,7 +858,7 @@
             "sharedByMe": "Podijeljeno od strane mene",
             "sharedElements": "Dijeljene stavke",
             "sharedWithMe": "Dijeljeno sa mnom",
-            "trash": "Smeće"
+            "trash": "Otpad"
         },
         "uploads": "Priložene datoteke"
     },
@@ -888,7 +888,7 @@
             }
         },
         "copyNodes": {
-            "action": "Idi u mapu",
+            "action": "Idi u direktorij",
             "error": "Došlo je do greške, pokušaj ponovo",
             "success": "Stavka kopirana"
         },
@@ -908,12 +908,12 @@
             "error": "Veličina preuzimanja prelazi ograničenje od {{limit}}. Molimo smanjite broj stavki za preuzimanje"
         },
         "markForDeletion": {
-            "showTrash": "Otvori mapu Smeće",
-            "success": "Stavka premještena u Smeće",
+            "showTrash": "Otvori direktorij Otpad",
+            "success": "Stavka premještena u Otpad",
             "error": "Došlo je do greške, pokušaj ponovo"
         },
         "moveNodes": {
-            "action": "Idi u mapu",
+            "action": "Idi u direktorij",
             "error": "Došlo je do greške, pokušaj ponovo",
             "success": "Stavka je premještena"
         },
@@ -936,7 +936,7 @@
         },
         "upload": {
             "foldersNotAllowed": "Mape nije moguće učitati",
-            "goToFolder": "Idi u mapu",
+            "goToFolder": "Idi u direktorij",
             "moreInfo": "Više informacija",
             "success": "Učitano u {{destination}}",
             "nodesNotAllowed": "Neke stavke nisu učitane"
@@ -1021,7 +1021,7 @@
                 "disabled": "Ovdje nije moguće prevući prilog",
                 "folderView": {
                     "disabled": "Ovdje nije moguće prevući prilog",
-                    "enabled": "Ovdje prevuci svoje priloge \n za brzo dodavanje u ovu mapu"
+                    "enabled": "Ovdje prevuci svoje priloge \n za brzo dodavanje u ovaj direktorij"
                 },
                 "otherView": {
                     "enabled": "Ovdje prevuci svoje priloge \n za brzo dodavanje na početnu stranicu"
