@@ -243,12 +243,12 @@
             ],
             "trash_empty": [
                 {
-                    "message": "Za brisanje stavke klikni na ikonu za Smeće.",
-                    "title": "Premjesti u Smeće sve što ti nije potrebno."
+                    "message": "Za brisanje stavke klikni na ikonu kante.",
+                    "title": "Premjesti u Otpad sve što ti nije potrebno."
                 },
                 {
-                    "message": "Za brisanje stavke klikni na ikonu za Smeće.",
-                    "title": "Smeće je prazno."
+                    "message": "Za brisanje stavke klikni na ikonu kante.",
+                    "title": "Kanta za otpad je prazna."
                 },
                 {
                     "title": "Održavaj svoj radni prostor urednim: obriši sve stavke koje ti nisu više potrebne."
@@ -256,7 +256,7 @@
             ],
             "trash_full": [
                 {
-                    "title": "Odaberi i vrati stavke iz Smeća."
+                    "title": "Odaberi i vrati stavke iz Otpada."
                 },
                 {
                     "message": "Odaberi stavku za vraćanje ili trajno brisanje.",
@@ -477,7 +477,7 @@
             "recents": "Izgleda da još nema nedavnih stavki.",
             "sharedByMe": "Nijedna stavka nije podijeljena s vašim saradnicima.",
             "sharedWithMe": "Trenutno nema stavki podijeljenih sa vama.",
-            "trash": "Smeće je prazno."
+            "trash": "Kanta za otpad je prazna."
         },
         "folder": {
             "displayerContent": "Ova mapa je prazna.",
@@ -611,7 +611,7 @@
             "trash": {
                 "myElements": "Moje stavke",
                 "sharedWitMe": "Dijeljene stavke",
-                "trash": "Smeće"
+                "trash": "Otpad"
             }
         },
         "unsaved_changes": {
@@ -649,7 +649,7 @@
         "alias": {
             "name_LOCAL_ROOT": "Početna",
             "name_SHARED_WITH_ME_ROOT": "Dijeljeno sa mnom",
-            "name_TRASH_ROOT": "Smeće"
+            "name_TRASH_ROOT": "Otpad"
         },
         "copy": {
             "modal": {
