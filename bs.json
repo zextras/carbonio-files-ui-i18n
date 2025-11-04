@@ -34,12 +34,12 @@
     },
     "breadcrumb": {
         "expander": {
-            "hide": "Sakrij putanju mape",
-            "show": "Prikaži putanju mape"
+            "hide": "Sakrij putanju direktorija",
+            "show": "Prikaži putanju direktorija"
         }
     },
     "carbonio-public-folder-ui": {
-        "emptyFolder": "Nema stavki u ovoj mapi.",
+        "emptyFolder": "Nema stavki u ovom direktoriju.",
         "invalidLink": {
             "description": {
                 "line2": "Za više informacija pokušajte kontaktirati osobu koja je to podijelila s vama.",
