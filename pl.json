@@ -673,7 +673,7 @@
             "generateLink": "Wygeneruj Link",
             "limitReached": "Osiągnięto max. liczbę publicznych linków",
             "addLink": "Dodaj Link",
-            "description": "Użytkownicy z i spoza tej domeny, którzy mają dostęp do linka, mogą pobrać ten element."
+            "description": "Użytkownicy z i spoza organizacji, którzy mają dostęp do linka, mogą pobrać ten element."
         },
         "dateTimePicker": {
             "label": "Data wygaśnięcia"
@@ -691,7 +691,7 @@
         },
         "fileLink": {
             "addLink": {
-                "description": "Użytkownicy z i spoza tej domeny, którzy mają dostęp do linka, mogą pobrać ten element."
+                "description": "Użytkownicy z i spoza organizacji, którzy mają dostęp do linka, mogą pobrać ten element."
             },
             "title_one": "Link publiczny z opcją pobierania",
             "title_few": "Linki publiczne z opcją pobierania",
@@ -1064,7 +1064,7 @@
                 }
             }
         },
-        "description": "Użytkownicy z tej domeny otrzymają uprawnienia klikając w ten link. Zawsze możesz edytować przyznane im uprawnienia.",
+        "description": "Użytkownicy z organizacji otrzymają uprawnienia klikając w link. Zawsze możesz edytować przyznane im uprawnienia.",
         "permission": {
             "optionDisabled": {
                 "tooltip": "Ten rodzaj linku już został stworzony"
