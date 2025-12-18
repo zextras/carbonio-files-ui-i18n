@@ -220,7 +220,7 @@
             ],
             "sharedWithMe_empty": [
                 {
-                    "message": "Klikni na dugme \"NOVO\" za kreiranje nove stavke i dijeljenje sa svojim kontaktima.",
+                    "message": "Klikni na dugme \"NOVI\" za kreiranje nove stavke i dijeljenje sa svojim kontaktima.",
                     "title": "Trenutno nema stavki podijeljenih sa vama."
                 },
                 {
@@ -270,7 +270,7 @@
         },
         "folder_empty": [
             {
-                "title": "Klikni na dugme \"NOVO\" za kreiranje nove stavku i dijeljenje sa svojim kontaktima."
+                "title": "Klikni na dugme \"NOVI\" za kreiranje nove stavku i dijeljenje sa svojim kontaktima."
             },
             {
                 "message": "Kreiraj stavku klikom na dugme \"NOVO\".",
