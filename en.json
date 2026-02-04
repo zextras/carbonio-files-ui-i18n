@@ -30,7 +30,8 @@
                 }
             }
         },
-        "downloadNode": "Download"
+        "downloadNode": "Download",
+        "viewContents": "View contents"
     },
     "breadcrumb": {
         "expander": {
