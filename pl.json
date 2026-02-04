@@ -336,7 +336,8 @@
                 }
             }
         },
-        "downloadNode": "Pobierz"
+        "downloadNode": "Pobierz",
+        "viewContents": "Zobacz zawartość"
     },
     "displayer": {
         "share": {
