@@ -387,7 +387,8 @@
                 }
             }
         },
-        "downloadNode": "Télécharger"
+        "downloadNode": "Télécharger",
+        "viewContents": "Afficher le contenu"
     },
     "search": {
         "header": {
