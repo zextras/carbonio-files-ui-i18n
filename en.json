@@ -550,9 +550,6 @@
         },
         "deleteShare": {
             "body": "Are you sure to remove all the access permission previously given to {{shareTarget}} ?",
-            "button": {
-                "confirm": "Remove"
-            },
             "yourShare": {
                 "body": {
                     "answer": "Are you sure to remove yourself from this collaboration?",
