@@ -363,7 +363,6 @@
             "description": "説明",
             "size": "サイズ",
             "position": "場所",
-            "collaborators": "共同編集者",
             "content": "コンテンツ",
             "lastEdit": "最終編集",
             "showPath": "パスを表示する",
