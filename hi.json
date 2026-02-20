@@ -149,9 +149,6 @@
             "filesHome": "होम"
         },
         "deleteShare": {
-            "button": {
-                "confirm": "हटाएँ"
-            },
             "body": "क्या आप वाकई में {{shareTarget}} को पहले दी गई एक्सेस अनुमति हटाना चाहते हैं?",
             "yourShare": {
                 "body": {
