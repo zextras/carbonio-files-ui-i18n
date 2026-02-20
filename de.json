@@ -76,9 +76,6 @@
             "filesHome": "Home"
         },
         "deleteShare": {
-            "button": {
-                "confirm": "Entfernen"
-            },
             "body": "Sind Sie sicher, dass Sie alle Zugriffsrechte widerrufen möchten, die bereits an {{shareTarget}} vergeben wurden?",
             "yourShare": {
                 "body": {
