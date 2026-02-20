@@ -363,11 +363,13 @@
                 "tooltip": {
                     "edit": {
                         "collaborator": "Edit collaboration",
-                        "you": "Edit your collaboration"
+                        "you": "Edit your collaboration",
+                        "bulk": "Edit collaboration for all"
                     },
                     "remove": {
                         "collaborator": "Remove collaboration",
-                        "yourself": "Remove your collaboration"
+                        "yourself": "Remove your collaboration",
+                        "bulk": "Remove collaboration for all"
                     }
                 },
                 "you": "You"
@@ -379,7 +381,9 @@
             "tooltip": {
                 "no_edit_permission": "You don’t have the necessary permissions to edit collaboration",
                 "no_remove_permission": "You don’t have the necessary permissions to remove collaboration"
-            }
+            },
+            "allCollaborators": "All Collaborators",
+            "selected": "{{count}} selected"
         },
         "tabs": {
             "activities": "Activities",
@@ -538,7 +542,12 @@
             "tooltip": "Close"
         },
         "decreaseYourOwnSharePermissions": {
-            "header": "Decrease your current rights"
+            "header": "Decrease your current rights",
+            "body1": "Are you sure to decrease your rights on this item? The action is permanent and you won't be able to restore the previous share's rights by yourself.",
+            "body2": "You can always contact the shared item's owner if you need the previous permission to be restored.",
+            "button": {
+                "confirmDecrease": "Yes, confirm"
+            }
         },
         "deletePermanently": {
             "body": "You will delete permanently this item/these items. You will not be able to recover this item/these items anymore. This action is irreversible.",
@@ -553,6 +562,24 @@
                 "body": {
                     "answer": "Are you sure to remove yourself from this collaboration?",
                     "permissionLost": "All the access permissions previously given to you will be lost."
+                }
+            },
+            "warning": "This action cannot be undone.",
+            "button": {
+                "cancel": "No, cancel",
+                "confirmAll": "Yes, remove all",
+                "confirmRemove": "Yes, remove"
+            },
+            "title": {
+                "yourShare": "Remove your share",
+                "single": "Remove collaborator",
+                "all": "Remove all collaborators",
+                "multiple": "Remove collaborators"
+            },
+            "bulk": {
+                "body": {
+                    "all": "You're about to remove all collaborators from this file. After this action, only you will have access to the file and people it was shared with will no longer be able to view or edit it.",
+                    "multiple": "You're about to remove {{count}} collaborator(s) from this file. After this action, these people will no longer be able to view or edit it."
                 }
             }
         },
