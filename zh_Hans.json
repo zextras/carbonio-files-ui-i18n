@@ -457,7 +457,6 @@
                 "confirm": "移除"
             },
             "body": "确定要移除之前授予{{shareTarget}}的所有访问权限吗？",
-            "header": "移除共享",
             "yourShare": {
                 "body": {
                     "answer": "确定要将您自己从此协作中移除吗？",
