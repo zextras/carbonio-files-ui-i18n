@@ -225,9 +225,6 @@
         },
         "deleteShare": {
             "body": "Vuoi rimuovere i permessi di accesso dati a {{shareTarget}} ?",
-            "button": {
-                "confirm": "Rimuovi"
-            },
             "yourShare": {
                 "body": {
                     "answer": "Vuoi uscire da questa collaborazione?",
