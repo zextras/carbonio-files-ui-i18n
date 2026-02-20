@@ -545,9 +545,6 @@
             "header": "Ova akcija je nepovratna"
         },
         "deleteShare": {
-            "button": {
-                "confirm": "Ukloni"
-            },
             "yourShare": {
                 "body": {
                     "answer": "Napusti ovu saradnju?",
