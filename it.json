@@ -230,6 +230,24 @@
                     "answer": "Vuoi uscire da questa collaborazione?",
                     "permissionLost": "Tutti i permessi di accesso a te assegnati andranno persi."
                 }
+            },
+            "warning": "Questa azione non può essere annullata.",
+            "button": {
+                "cancel": "No, annulla",
+                "confirmAll": "Si, rimuovi tutti",
+                "confirmRemove": "Si, rimuovi"
+            },
+            "title": {
+                "yourShare": "Rimuovi la tua condivisione",
+                "single": "Rimuovi collaboratore",
+                "all": "Rimuovi tutti i collaboratori",
+                "multiple": "Rimuovi collaboratori"
+            },
+            "bulk": {
+                "body": {
+                    "all": "Stai per rimuovere tutti i collaboratori da questo file. Dopo questa azione, solo tu avrai accesso al file e le persone con cui è stato condiviso non potranno più visualizzarlo o modificarlo.",
+                    "multiple": "Stai per rimuovere {{count}} collaboratori da questo file. Dopo questa azione, queste persone non potranno più visualizzarlo o modificarlo."
+                }
             }
         },
         "removeLink": {
@@ -250,7 +268,12 @@
             "tooltip": "Chiudi"
         },
         "decreaseYourOwnSharePermissions": {
-            "header": "Diminuisci i tuoi permessi attuali"
+            "header": "Diminuisci i tuoi permessi attuali",
+            "button": {
+                "confirmDecrease": "Si, conferma"
+            },
+            "body1": "Sei sicuro di voler ridurre i tuoi diritti su questo elemento? L'azione è permanente e non sarà possibile ripristinare i permessi precedenti in maniera autonoma.",
+            "body2": "Puoi sempre contattare il proprietario dell'elemento condiviso se hai bisogno di ripristinare i permessi precedenti."
         },
         "nodesSelection": {
             "selectedCount_one": "{{count}} elemento selezionato",
@@ -404,11 +427,13 @@
                 "tooltip": {
                     "remove": {
                         "collaborator": "Rimuovi collaborazione",
-                        "yourself": "Rimuovi la tua collaborazione"
+                        "yourself": "Rimuovi la tua collaborazione",
+                        "bulk": "Rimuovi la collaborazione per tutti"
                     },
                     "edit": {
                         "you": "Modifica la tua collaborazione",
-                        "collaborator": "Modifica la collaborazione"
+                        "collaborator": "Modifica la collaborazione",
+                        "bulk": "Modifica la collaborazione per tutti"
                     }
                 }
             },
@@ -431,7 +456,9 @@
             "tooltip": {
                 "no_remove_permission": "Non hai i permessi necessari per rimuovere la collaborazione",
                 "no_edit_permission": "Non hai i permessi necessari per modificare la collaborazione"
-            }
+            },
+            "allCollaborators": "Tutti i collaboratori",
+            "selected": "{{count}} selezionati"
         },
         "details": {
             "createdBy": "Creato da",
