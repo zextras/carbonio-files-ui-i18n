@@ -361,9 +361,6 @@
         },
         "deleteShare": {
             "body": "Ali ste prepričani, da želite odstraniti vsa dostopna dovoljenja, prej dodeljena uporabniku {{shareTarget}}?",
-            "button": {
-                "confirm": "Odstrani"
-            },
             "yourShare": {
                 "body": {
                     "answer": "Ali ste prepričani, da se želite odstraniti iz te skupne rabe?",
