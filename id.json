@@ -83,7 +83,6 @@
             "tooltip": "Tutup"
         },
         "decreaseYourOwnSharePermissions": {
-            "body": "Apakah Anda yakin akan mengurangi hak Anda pada item ini? Tindakan ini bersifat permanen dan Anda tidak akan dapat memulihkan hak berbagi sebelumnya sendiri. Anda selalu dapat menghubungi pemilik item bersama jika memerlukan izin sebelumnya untuk dipulihkan.",
             "header": "Kurangi hak saat ini"
         },
         "nodesSelection": {
