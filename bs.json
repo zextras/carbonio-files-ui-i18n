@@ -535,9 +535,6 @@
             "confirm": "Potvrdi"
         },
         "decreaseYourOwnSharePermissions": {
-            "button": {
-                "confirm": "Potvrdi"
-            },
             "header": "Smanji svoja trenutna prava",
             "body": "Da li ste sigurni da želite da smanjite svoja prava na ovoj stavci? Ova akcija je trajna i nećete moći vratiti prethodna prava na dijeljenje. Ako vam je potrebna obnova prethodnih prava, uvijek možete kontaktirati vlasnika dijeljene stavke."
         },
