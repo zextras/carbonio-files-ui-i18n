@@ -31,11 +31,6 @@
         "close": {
             "tooltip": "Inchide"
         },
-        "decreaseYourOwnSharePermissions": {
-            "button": {
-                "confirm": "Confirmare"
-            }
-        },
         "revokeLink": {
             "button": {
                 "confirm": "Revocare"
