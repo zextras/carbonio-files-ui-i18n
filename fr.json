@@ -80,7 +80,6 @@
             "button": {
                 "confirm": "Retirer"
             },
-            "header": "Retirer le partage",
             "yourShare": {
                 "body": {
                     "answer": "Etes-vous certain de vouloir vous retirer de cette collaboration ?",
