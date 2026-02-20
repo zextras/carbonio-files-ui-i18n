@@ -351,8 +351,7 @@
             "confirm": "Megerősítés"
         },
         "decreaseYourOwnSharePermissions": {
-            "header": "Csökkentse a jelenlegi jogait",
-            "body": "Biztosan csökkenti a jogait ezzel a tétellel kapcsolatban? A művelet végleges, és egyedül nem tudja visszaállítani az előző megosztás jogait. Bármikor kapcsolatba léphet az elem tulajdonosával, amennyiben a korábbi jogosultságainak visszaállítására van szükség."
+            "header": "Csökkentse a jelenlegi jogait"
         }
     },
     "actions": {
