@@ -67,7 +67,6 @@
             "tooltip": "Kapat"
         },
         "decreaseYourOwnSharePermissions": {
-            "body": "Bu öğe için izinlerinizi azaltmak istediğinizden emin misiniz? Bu işlem kalıcıdır ve daha önceki paylaşım izinlerini kendiniz geri alamazsınız. Daha önceki paylaşım izinlerini geri yüklemek isterseniz paylaşılan öğenin sahibi ile görüşmeniz gerekir.",
             "header": "Geçerli izinlerinizi azaltın"
         },
         "nodesSelection": {
