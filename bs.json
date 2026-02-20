@@ -127,7 +127,6 @@
     },
     "displayer": {
         "details": {
-            "collaborators": "Saradnici",
             "collaboratorsTooltip": "Lista saradnika",
             "content": "Sadržaj",
             "copyShortcut": "kopiraj prečicu stavke",
