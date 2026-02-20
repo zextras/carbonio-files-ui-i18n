@@ -32,9 +32,6 @@
             "body": "Trwale usuniesz ten/te elementy. Nie będziesz w stanie ich już odzyskać. Tej czynności nie da się odwrócić."
         },
         "deleteShare": {
-            "button": {
-                "confirm": "Usuń"
-            },
             "body": "Czy na pewno chcesz usunąć wszystkie uprawnienia poprzednio nadane {{shareTarget}} ?",
             "yourShare": {
                 "body": {
