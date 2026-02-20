@@ -453,9 +453,6 @@
             "header": "该操作为不可逆操作"
         },
         "deleteShare": {
-            "button": {
-                "confirm": "移除"
-            },
             "body": "确定要移除之前授予{{shareTarget}}的所有访问权限吗？",
             "yourShare": {
                 "body": {
