@@ -432,8 +432,7 @@
             "tooltip": "Đóng"
         },
         "decreaseYourOwnSharePermissions": {
-            "header": "Giảm quyền hiện tại của bạn",
-            "body": "Bạn có chắc chắn giảm quyền của mình trên nốt này không? Tác vụ này là vĩnh viễn và bạn sẽ không thể tự mình khôi phục quyền của phần chia sẻ trước đó. Bạn luôn có thể liên hệ với chủ sở hữu của mục được chia sẻ nếu bạn cần khôi phục quyền trước đó"
+            "header": "Giảm quyền hiện tại của bạn"
         },
         "button": {
             "cancel": "Huỷ",
