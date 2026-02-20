@@ -37,9 +37,6 @@
             "filesHome": "Inicio"
         },
         "deleteShare": {
-            "button": {
-                "confirm": "Aceptar"
-            },
             "body": "¿Seguro que quieres anular todos los permisos de acceso concedidos a {{shareTarget}} ?",
             "yourShare": {
                 "body": {
