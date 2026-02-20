@@ -391,7 +391,6 @@
             "description": "Deskripsi",
             "size": "Ukuran",
             "position": "Posisi",
-            "collaborators": "Kolaborator",
             "content": "Konten",
             "lastEdit": "Editan terakhir",
             "showPath": "Tampilkan jalur",
