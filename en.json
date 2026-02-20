@@ -553,7 +553,6 @@
             "button": {
                 "confirm": "Remove"
             },
-            "header": "Remove share",
             "yourShare": {
                 "body": {
                     "answer": "Are you sure to remove yourself from this collaboration?",
