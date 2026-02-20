@@ -390,7 +390,6 @@
             "size": "Rozmiar",
             "collaboratorsTooltip": "Zobacz listę współpracowników",
             "sendMailTo": "Wyślij e-mail do: {{email}}",
-            "collaborators": "Współpracownicy",
             "content": "Zawartość",
             "createdBy": "Stworzone przez",
             "description": "Opis",
