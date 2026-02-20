@@ -67,9 +67,6 @@
             "tooltip": "Cerrar"
         },
         "decreaseYourOwnSharePermissions": {
-            "button": {
-                "confirm": "Confirmar"
-            },
             "body": "¿Seguro que quieres degradar tus permisos sobre este elemento? Esta acción es permanente y no podrás restaurar tus derechos de compartidos anteriores por ti mismo. Siempre puedes contactar con el propietario del elemento compartido si necesitas restablecer los permisos originales.",
             "header": "Degradar los permisos actuales"
         },
