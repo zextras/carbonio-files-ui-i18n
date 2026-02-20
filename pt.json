@@ -117,9 +117,6 @@
             "header": "Revogar {{linkName}} de {{nodeName}}"
         },
         "decreaseYourOwnSharePermissions": {
-            "button": {
-                "confirm": "Confirmar"
-            },
             "header": "Rebaixar as permissões atuais",
             "body": "Tem certeza de que quer reduzir os direitos que lhe foram outorgados para acessar este item? A ação é permanente e você não poderá restaurar sozinho os direitos do compartilhamento. Você sempre pode entrar em contato com o proprietário do item compartilhado caso precise que a permissão anterior seja restaurada."
         },
