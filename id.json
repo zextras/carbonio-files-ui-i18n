@@ -62,8 +62,7 @@
                     "permissionLost": "Semua izin akses yang sebelumnya diberikan kepada Anda akan hilang.",
                     "answer": "Anda yakin ingin keluar dari kolaborasi ini?"
                 }
-            },
-            "header": "Hapus berbagi"
+            }
         },
         "removeLink": {
             "button": {
