@@ -36,11 +36,6 @@
                 "confirm": "Revocare"
             }
         },
-        "deleteShare": {
-            "button": {
-                "confirm": "Eliminare"
-            }
-        },
         "removeLink": {
             "button": {
                 "confirm": "Eliminare"
