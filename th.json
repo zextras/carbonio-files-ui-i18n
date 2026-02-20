@@ -391,7 +391,6 @@
             "description": "คำอธิบาย",
             "size": "ขนาด",
             "position": "ตำแหน่ง",
-            "collaborators": "ผู้เข้าร่วม",
             "content": "เนื้อหา",
             "lastEdit": "แก้ไขล่าสุด",
             "showPath": "แสดงเส้นทาง",
