@@ -37,9 +37,6 @@
             "filesHome": "Startpagina"
         },
         "deleteShare": {
-            "button": {
-                "confirm": "Verwijderen"
-            },
             "body": "Weet u zeker dat u alle toegangsrechten verwijdert die eerder zijn gegeven aan {{shareTarget}} ?",
             "yourShare": {
                 "body": {
