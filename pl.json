@@ -8,8 +8,7 @@
             "tooltip": "Zamknij"
         },
         "decreaseYourOwnSharePermissions": {
-            "header": "Obniż swoje aktualne uprawnienia",
-            "body": "Czy na pewno chcesz obniżyć swoje uprawnienia do tego elementu? Tej czynności nie da się odwrócić, nie będziesz w stanie samemu przywrócić poprzednich uprawnień. Możesz zawsze skontaktować się z właścicielem elementu jeśli będziesz jednak potrzebował to zrobić."
+            "header": "Obniż swoje aktualne uprawnienia"
         },
         "removeLink": {
             "button": {
