@@ -357,8 +357,7 @@
             "body": "Ta element/elementi bodo trajno izbrisani. Obnovitev ne bo mogoča. To dejanje je nepovratno."
         },
         "decreaseYourOwnSharePermissions": {
-            "header": "Zmanjšaj svoje trenutne pravice",
-            "body": "Ali ste prepričani, da želite zmanjšati svoje pravice za ta element? To dejanje je trajno in prejšnjih dovoljenj za skupno rabo ne boste mogli obnoviti sami. Vedno se lahko obrnete na lastnika elementa, če želite, da vam prejšnja dovoljenja znova omogoči."
+            "header": "Zmanjšaj svoje trenutne pravice"
         },
         "deleteShare": {
             "body": "Ali ste prepričani, da želite odstraniti vsa dostopna dovoljenja, prej dodeljena uporabniku {{shareTarget}}?",
