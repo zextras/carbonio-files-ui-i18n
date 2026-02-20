@@ -77,9 +77,6 @@
         },
         "deleteShare": {
             "body": "Êtes-vous certain de vouloir supprimer toutes les autorisations d'accès précédemment accordées à {{shareTarget}} ?",
-            "button": {
-                "confirm": "Retirer"
-            },
             "yourShare": {
                 "body": {
                     "answer": "Etes-vous certain de vouloir vous retirer de cette collaboration ?",
