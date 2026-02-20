@@ -36,7 +36,6 @@
                 "confirm": "Usuń"
             },
             "body": "Czy na pewno chcesz usunąć wszystkie uprawnienia poprzednio nadane {{shareTarget}} ?",
-            "header": "Usuń udostępnienie",
             "yourShare": {
                 "body": {
                     "answer": "Czy na pewno chcesz usunąć siebie z tej współpracy?",
