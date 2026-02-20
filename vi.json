@@ -447,9 +447,6 @@
         },
         "deleteShare": {
             "body": "Bạn có chắc chắn xóa tất cả quyền truy cập trước đây đã cấp cho {{shareTarget}} không?",
-            "button": {
-                "confirm": "xoá"
-            },
             "yourShare": {
                 "body": {
                     "answer": "Bạn có chắc chắn loại bỏ chính mình khỏi sự hợp tác này không?",
