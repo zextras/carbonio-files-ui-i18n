@@ -38,9 +38,6 @@
             "filesHome": "ホーム"
         },
         "deleteShare": {
-            "button": {
-                "confirm": "削除する"
-            },
             "body": "{{shareTarget}}に与えられたアクセス許可をすべて削除しますか？",
             "yourShare": {
                 "body": {
