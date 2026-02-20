@@ -42,7 +42,6 @@
                 "confirm": "削除する"
             },
             "body": "{{shareTarget}}に与えられたアクセス許可をすべて削除しますか？",
-            "header": "共有を削除する",
             "yourShare": {
                 "body": {
                     "answer": "このコラボレーションから退会しますか？",
