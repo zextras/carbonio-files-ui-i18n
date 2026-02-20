@@ -41,7 +41,6 @@
                 "confirm": "Verwijderen"
             },
             "body": "Weet u zeker dat u alle toegangsrechten verwijdert die eerder zijn gegeven aan {{shareTarget}} ?",
-            "header": "Delen verwijderen",
             "yourShare": {
                 "body": {
                     "answer": "Weet u zeker dat u zich uit deze samenwerking wilt terugtrekken?",
