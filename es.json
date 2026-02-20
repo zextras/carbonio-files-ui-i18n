@@ -397,7 +397,6 @@
             "description": "Descripción",
             "size": "Tamaño",
             "position": "Posición",
-            "collaborators": "Colaboradores",
             "content": "Contenido",
             "lastEdit": "Última edición",
             "showPath": "Mostrar ruta completa",
