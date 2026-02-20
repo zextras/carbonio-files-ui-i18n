@@ -91,9 +91,6 @@
         },
         "deleteShare": {
             "body": "Tem certeza que deseja remover toda a permissão de acesso concedida a {{shareTarget}} ?",
-            "button": {
-                "confirm": "Remover"
-            },
             "yourShare": {
                 "body": {
                     "answer": "Tem certeza que deseja interromper a colaboração?",
