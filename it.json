@@ -254,8 +254,7 @@
             "tooltip": "Chiudi"
         },
         "decreaseYourOwnSharePermissions": {
-            "header": "Diminuisci i tuoi permessi attuali",
-            "body": "Vuoi diminuire i tuoi permessi su questo elemento? L'azione è permanente e non sarà possibile ripristinare i permessi precedenti in maniera autonoma. Per ripristinare i tuoi permessi originali dovrai contattare il proprietario della condivisione per farli riabilitare."
+            "header": "Diminuisci i tuoi permessi attuali"
         },
         "nodesSelection": {
             "selectedCount_one": "{{count}} elemento selezionato",
