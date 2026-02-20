@@ -38,9 +38,6 @@
         },
         "deleteShare": {
             "body": "{{shareTarget}} için önceden verilen tüm erişim izinlerini kaldırmak istediğinizden emin misiniz?",
-            "button": {
-                "confirm": "Kaldır"
-            },
             "yourShare": {
                 "body": {
                     "answer": "Kendinizi bu birlikte çalışmadan kaldırmak istediğinize emin misiniz?",
