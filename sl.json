@@ -2,7 +2,6 @@
     "displayer": {
         "details": {
             "description": "Opis",
-            "collaborators": "Sodelavci",
             "collaboratorsTooltip": "Poglej seznam sodelavcev",
             "content": "Vsebina",
             "createdBy": "Ustvaril",
