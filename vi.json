@@ -36,7 +36,6 @@
     },
     "displayer": {
         "details": {
-            "collaborators": "Cộng tác viên",
             "collaboratorsTooltip": "Xem danh sách cộng tác viên",
             "content": "Nội dung",
             "copyShortcut": "Sao chép item's shortcut",
