@@ -26,11 +26,6 @@
             "button": {
                 "confirm": "Poista"
             }
-        },
-        "deleteShare": {
-            "button": {
-                "confirm": "Poista"
-            }
         }
     },
     "publicLink": {
