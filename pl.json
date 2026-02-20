@@ -8,7 +8,12 @@
             "tooltip": "Zamknij"
         },
         "decreaseYourOwnSharePermissions": {
-            "header": "Obniż swoje aktualne uprawnienia"
+            "header": "Obniż swoje aktualne uprawnienia",
+            "body1": "Czy na pewno chcesz obniżyć Twoje uprawnienia co do tego elementu? Ta czynność jest nieodwracalna. Nie będziesz w stanie samemu przywrócić poprzednich uprawnień udostępniania.",
+            "body2": "Zawsze możesz skontaktować się z właścicielem udostępnianego elementu jeśli potrzebujesz przywrócenia poprzednich uprawnień.",
+            "button": {
+                "confirmDecrease": "Tak, potwierdź"
+            }
         },
         "removeLink": {
             "button": {
@@ -37,6 +42,24 @@
                 "body": {
                     "answer": "Czy na pewno chcesz usunąć siebie z tej współpracy?",
                     "permissionLost": "Wszystkie uprawnienia, które zostały ci wcześniej udzielone zostaną utracone."
+                }
+            },
+            "warning": "Tej czynności nie da się cofnąć.",
+            "button": {
+                "cancel": "Nie, anuluj",
+                "confirmAll": "Tak, usuń wszystkich",
+                "confirmRemove": "Tak, usuń"
+            },
+            "title": {
+                "yourShare": "Usuń swoje udostępnienie",
+                "single": "Usuń współpracownika",
+                "all": "Usuń wszystkich współpracowników",
+                "multiple": "Usuń współpracowników"
+            },
+            "bulk": {
+                "body": {
+                    "all": "Zamierzasz usunąć wszystkich współpracowników z tego pliku. Po wykonaniu tej czynności, tylko Ty będziesz miał(a) dostęp do pliku. Osoby, którym plik został udostępniony, nie będą już mogli go wyświetlać ani edytować.",
+                    "multiple": "Zamierzasz usunąć {{count}} współpracowników z tego pliku. Po wykonaniu tej czynności, te osoby nie będą już mogły wyświetlać ani edytować pliku."
                 }
             }
         },
@@ -350,11 +373,13 @@
                 "tooltip": {
                     "edit": {
                         "collaborator": "Edytuj uprawnienia",
-                        "you": "Edytuj swoją współpracę"
+                        "you": "Edytuj swoją współpracę",
+                        "bulk": "Edytuj współpracę dla wszystkich"
                     },
                     "remove": {
                         "collaborator": "Usuń współpracownika",
-                        "yourself": "Usuń swoją współpracę"
+                        "yourself": "Usuń swoją współpracę",
+                        "bulk": "Usuń współpracę dla wszystkich"
                     }
                 }
             },
@@ -377,7 +402,9 @@
             "tooltip": {
                 "no_edit_permission": "Nie masz wystarczających uprawnień, aby edytować współpracownika",
                 "no_remove_permission": "Nie masz wystarczających uprawnień, aby usunąć współpracownika"
-            }
+            },
+            "allCollaborators": "Wszyscy współpracownicy",
+            "selected": "wybrano {{count}}"
         },
         "tabs": {
             "details": "Szczegóły",
