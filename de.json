@@ -106,9 +106,6 @@
             "tooltip": "Schließen"
         },
         "decreaseYourOwnSharePermissions": {
-            "button": {
-                "confirm": "Bestätigen"
-            },
             "body": "Sind Sie sicher, dass Sie Ihre Rechte an diesem Artikel verringern wollen? Die Aktion ist dauerhaft und Sie können die Rechte der vorherigen Freigabe nicht mehr selbst wiederherstellen. Sie können sich jederzeit an den Eigentümer des freigegebenen Objekts wenden, wenn Sie die vorherigen Rechte wiederherstellen möchten.",
             "header": "Ihre derzeitigen Rechte vermindern"
         },
