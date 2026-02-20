@@ -80,7 +80,6 @@
                 "confirm": "Entfernen"
             },
             "body": "Sind Sie sicher, dass Sie alle Zugriffsrechte widerrufen möchten, die bereits an {{shareTarget}} vergeben wurden?",
-            "header": "Teilen entfernen",
             "yourShare": {
                 "body": {
                     "answer": "Sind Sie sicher, dass Sie sich selbst von dieser Mitarbeit entfernen möchten?",
