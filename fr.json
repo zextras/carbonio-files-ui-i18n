@@ -82,6 +82,24 @@
                     "answer": "Etes-vous certain de vouloir vous retirer de cette collaboration ?",
                     "permissionLost": "Toutes les autorisations d'accès qui vous ont été accordées précédemment seront perdues."
                 }
+            },
+            "warning": "Cette action ne peut pas être annulée.",
+            "button": {
+                "cancel": "Non, annuler",
+                "confirmAll": "Oui, les retirer tous",
+                "confirmRemove": "Oui, retirer"
+            },
+            "title": {
+                "yourShare": "Supprimer votre partage",
+                "single": "Retirer le collaborateur",
+                "all": "Retirer tous les collaborateurs",
+                "multiple": "Retirer des collaborateurs"
+            },
+            "bulk": {
+                "body": {
+                    "all": "Vous allez retirer tous les collaborateurs de ce fichier. Après cette action, vous serez seul à avoir accès au fichier et les personnes qui disposaient du partage ne pourront plus le voir, ni l'éditer.",
+                    "multiple": "Vous allez retirer {{count}} collaborateur(s) de ce fichier. Après cette action, ils ne pourront plus voir ni modifier le fichier."
+                }
             }
         },
         "removeLink": {
@@ -102,7 +120,10 @@
             "tooltip": "Fermer"
         },
         "decreaseYourOwnSharePermissions": {
-            "header": "Diminuez vos droits actuels"
+            "header": "Diminuez vos droits actuels",
+            "button": {
+                "confirmDecrease": "Oui, confirmer"
+            }
         },
         "nodesSelection": {
             "selectedCount_one": "{{count}} élément sélectionné",
@@ -508,7 +529,8 @@
                     },
                     "remove": {
                         "collaborator": "Supprimer la collaboration",
-                        "yourself": "Retirer votre collaboration"
+                        "yourself": "Retirer votre collaboration",
+                        "bulk": "Supprimer la collaboration pour tous"
                     }
                 }
             },
@@ -531,7 +553,9 @@
             },
             "editor": {
                 "tooltip": "Vous ne possédez pas les autorisations nécessaires pour affecter des droits d'édition"
-            }
+            },
+            "allCollaborators": "Tous les collaborateurs",
+            "selected": "{{count}} sélectionné"
         },
         "tabs": {
             "activities": "Activités",
