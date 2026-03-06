@@ -123,7 +123,9 @@
             "header": "Diminuez vos droits actuels",
             "button": {
                 "confirmDecrease": "Oui, confirmer"
-            }
+            },
+            "body1": "Êtes-vous sûr de vouloir diminuer vos droits sur cet élément ? Cette action est irréversible et vous ne pourrez pas restaurer vous-même les droits de partage précédents.",
+            "body2": "Vous pouvez toujours contacter le propriétaire de l'élément partagé si vous souhaitez que l'autorisation précédente soit rétablie."
         },
         "nodesSelection": {
             "selectedCount_one": "{{count}} élément sélectionné",
@@ -525,12 +527,13 @@
                 "tooltip": {
                     "edit": {
                         "collaborator": "Modifier la collaboration",
-                        "you": "Modifier votre collaboration"
+                        "you": "Modifier votre collaboration",
+                        "bulk": "Éditer les rôles pour tous"
                     },
                     "remove": {
                         "collaborator": "Supprimer la collaboration",
                         "yourself": "Retirer votre collaboration",
-                        "bulk": "Supprimer la collaboration pour tous"
+                        "bulk": "Retirer tous les collaborateur sélectionnés"
                     }
                 }
             },
@@ -555,7 +558,7 @@
                 "tooltip": "Vous ne possédez pas les autorisations nécessaires pour affecter des droits d'édition"
             },
             "allCollaborators": "Tous les collaborateurs",
-            "selected": "{{count}} sélectionné"
+            "selected": "{{count}} sélectionnés"
         },
         "tabs": {
             "activities": "Activités",
