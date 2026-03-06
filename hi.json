@@ -318,7 +318,20 @@
         "sendViaMail": "ई-मेल के द्वारा भेजा",
         "preview": "प्रीव्यू",
         "edit": "बदलाव करें",
-        "manageShares": "शेयर मैनेज करें"
+        "manageShares": "शेयर मैनेज करें",
+        "transferOwnership": "स्वामित्व हस्तांतरण",
+        "download": {
+            "multiple": {
+                "modal": {
+                    "button": {
+                        "label": "सभी डाउनलोड करें"
+                    }
+                },
+                "button": {
+                    "tooltip": "सभी डाउनलोड करें"
+                }
+            }
+        }
     },
     "displayer": {
         "details": {
@@ -876,7 +889,8 @@
     "collaborationLinks": {
         "button": {
             "revoke": "रद्द करना",
-            "generateLink": "लिंक बनाएँ"
+            "generateLink": "लिंक बनाएँ",
+            "choosePermission": "अनुमतियाँ चुनें लिंक उत्पन्न करने के लिए"
         },
         "title": "सहयोग की लिंक्स",
         "link": {
@@ -909,6 +923,20 @@
             "lastModified": "अंतिम बार संशोधित",
             "name": "नाम",
             "size": "आकार"
+        },
+        "fileDownload": {
+            "modal": {
+                "description": "प्रवेश कोड सही ढंग से दर्ज किया गया है। अब आप फ़ाइल डाउनलोड कर सकते हैं।"
+            }
+        },
+        "accessCode": {
+            "modal": {
+                "title": "लिंक एक एक्सेस कोड द्वारा सुरक्षित है",
+                "description": "आगे बढ़ने के लिए कृपया एक्सेस कोड डालें।",
+                "button": {
+                    "confirm": "पूर्ण"
+                }
+            }
         }
     }
 }
