@@ -342,7 +342,19 @@
         "preview": "ดูตัวอย่าง",
         "manageShares": "จัดการการแชร์",
         "transferOwnership": "โอนความเป็นเจ้าของ",
-        "viewContents": "ดูเนื้อหา"
+        "viewContents": "ดูเนื้อหา",
+        "download": {
+            "multiple": {
+                "modal": {
+                    "button": {
+                        "label": "ดาวน์โหลดทั้งหมด"
+                    }
+                },
+                "button": {
+                    "tooltip": "ดาวน์โหลดทั้งหมด"
+                }
+            }
+        }
     },
     "displayer": {
         "list": {
@@ -995,7 +1007,8 @@
         },
         "fileDownload": {
             "modal": {
-                "description": "ป้อนรหัสเข้าถึงถูกต้อง คุณสามารถดาวน์โหลดไฟล์ได้แล้ว"
+                "description": "ป้อนรหัสเข้าถึงถูกต้อง คุณสามารถดาวน์โหลดไฟล์ได้แล้ว",
+                "confirmLabel2": "ดาวน์โหลดอีกครั้ง"
             }
         }
     },
