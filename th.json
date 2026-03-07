@@ -152,6 +152,9 @@
         },
         "transferOwnership": {
             "title_other": "โอนความเป็นเจ้าของ {{count}} รายการ"
+        },
+        "cancel": {
+            "label": "ยกเลิก"
         }
     },
     "node": {
