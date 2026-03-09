@@ -68,7 +68,8 @@
                 "presentation": "Presentació nova",
                 "spreadsheet": "Full de càlcul nou",
                 "msDocument_xlsx": "Microsoft Excel {{ext}}",
-                "upload": "Pujar"
+                "upload": "Pujar",
+                "folder": "Carpeta nova"
             }
         }
     },
@@ -88,20 +89,25 @@
             "editDescription": {
                 "editIconTooltip": "Edita la descripció",
                 "saveIconTooltip": "Desa les edicions",
-                "closeIconTooltip": "Tancar sense desar"
+                "closeIconTooltip": "Tancar sense desar",
+                "input": {
+                    "label": "La longitud màxima de la contrasenya és de {0} caràcters"
+                }
             },
             "showPath": "Mostra la ruta"
         },
         "share": {
             "addShare": {
                 "button": "Comparteix",
-                "note": "Nota:"
+                "note": "Nota:",
+                "noteDescription": "<b>Nota:</b> El missatge estàndard inclou el vostre nom, el nom de l’element compartit, els permisos concedits als destinataris i les dades d’inici de sessió, si s’escau."
             },
             "chip": {
                 "owner": "Propietari",
                 "popover": {
                     "role": {
-                        "viewer": "Visualitzador"
+                        "viewer": "Visualitzador",
+                        "editor": "Edita"
                     },
                     "save": "Desa"
                 }
@@ -210,7 +216,10 @@
     "modal": {
         "nodeSelection": {
             "button": {
-                "create": "Creat"
+                "create": "Creat",
+                "newFolder": {
+                    "label": "Carpeta nova"
+                }
             }
         },
         "removeLink": {
@@ -266,6 +275,11 @@
             "title_one": "Transferir la propietat de {{node.name}}",
             "title_many": "",
             "title_other": "Transferir la propietat dels elements {{count}}"
+        },
+        "deleteShare": {
+            "button": {
+                "confirmRemove": "Sí, Suprimiu-lo"
+            }
         }
     },
     "node": {
@@ -359,6 +373,12 @@
         },
         "video": {
             "errorLabel": "No es pot reproduir aquest vídeo. Intenteu reproduir-lo mitjançant un altre navegador"
+        },
+        "page": {
+            "label": "Cercapersones"
+        },
+        "fileSizeExceeded": {
+            "download": "BAIXAR PDF"
         }
     },
     "publicLink": {
@@ -389,6 +409,14 @@
                     "tooltip": "Genera un nou codi d'accés"
                 }
             }
+        },
+        "input": {
+            "description": {
+                "error": {
+                    "maxLengthAllowed": "La longitud màxima de la contrasenya és de {0} caràcters"
+                }
+            },
+            "label": "Descripció de l'arxiu"
         }
     },
     "quota": {
@@ -435,15 +463,25 @@
                     "modal": {
                         "cancel": "Tornar",
                         "cascade": "cerca també a les carpetes contingudes",
-                        "subtitle": "El resultat només es cercarà dins de la carpeta seleccionada"
-                    }
+                        "subtitle": "El resultat només es cercarà dins de la carpeta seleccionada",
+                        "confirm": "Seleccioneu una carpeta",
+                        "title": "Selecioni carpeta"
+                    },
+                    "label": "Selecioni carpeta"
                 },
                 "keywords": {
                     "label": "Paraules clau"
                 },
                 "shared": {
-                    "description": "Filtrar els resultats per elements que continguin almenys un col·laborador a part de vostè"
-                }
+                    "description": "Filtrar els resultats per elements que continguin almenys un col·laborador a part de vostè",
+                    "label": "Comparteix"
+                },
+                "title": "Filtres avançats"
+            },
+            "button": {
+                "filters_one": "{{count}} Filtre avançat",
+                "filters_many": "",
+                "filters_other": "{{count}} filtres avançats"
             }
         },
         "header": {
@@ -522,10 +560,25 @@
             "actionLabel": "Accepta"
         },
         "restore": {
-            "success": "Correcte"
+            "success": "Correcte",
+            "error": "Alguna cosa ha anat malament, torneu-ho a provar"
         },
         "clipboard": {
             "email": "Adreça de correu electrònic copiada"
+        },
+        "copyNodes": {
+            "error": "Alguna cosa ha anat malament, torneu-ho a provar"
+        },
+        "markForDeletion": {
+            "error": "Alguna cosa ha anat malament, torneu-ho a provar"
+        },
+        "moveNodes": {
+            "error": "Alguna cosa ha anat malament, torneu-ho a provar"
+        },
+        "collaborationLink": {
+            "actionLabel": {
+                "copyLink": "Copia l'enllaç"
+            }
         }
     },
     "size": {
@@ -542,6 +595,29 @@
         "size": "Mida"
     },
     "notifications": {
-        "title": "Notificacions"
+        "title": "Notificacions",
+        "empty": {
+            "title": "Notificacions"
+        }
+    },
+    "dropzone": {
+        "move": {
+            "title": {
+                "disabled": "Mode d'arrosatge",
+                "enabled": "Mode d'arrosatge"
+            }
+        }
+    },
+    "errorCode": {
+        "code": "Alguna cosa ha anat malament",
+        "code_Generic": "Alguna cosa ha anat malament"
+    },
+    "uploads": {
+        "dropzone": {
+            "title": {
+                "disabled": "Mode d'arrosatge",
+                "enabled": "Mode d'arrosatge"
+            }
+        }
     }
 }
