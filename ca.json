@@ -1,1 +1,320 @@
-{}
+{
+    "actions": {
+        "copy": "Copia",
+        "edit": "Edita",
+        "flag": "Marca",
+        "move": "Mou",
+        "moveToTrash": "Suprimeix",
+        "preview": "Visualització prèvia",
+        "rename": "Canvia el nom",
+        "unflag": "Desmarca",
+        "downloadNode": "Descarrega"
+    },
+    "carbonio-public-folder-ui": {
+        "listHeader": {
+            "lastModified": "Darrera modificació:",
+            "name": "Nom",
+            "size": "Mida"
+        },
+        "fileDownload": {
+            "modal": {
+                "confirmLabel1": "Descarrega"
+            }
+        },
+        "accessCode": {
+            "modal": {
+                "button": {
+                    "confirm": "Fet"
+                }
+            }
+        }
+    },
+    "collaborationLinks": {
+        "button": {
+            "revoke": "Revoca"
+        },
+        "permission": {
+            "readOnly": "Mostra",
+            "readAndWrite": "Edita"
+        }
+    },
+    "create": {
+        "options": {
+            "new": {
+                "document": "Document nou",
+                "msDocument_pptx": "Microsoft PowerPoint",
+                "presentation": "Presentació nova",
+                "spreadsheet": "Full de càlcul nou"
+            }
+        }
+    },
+    "displayer": {
+        "details": {
+            "content": "Contingut",
+            "owner": "Propietari",
+            "size": "Mida",
+            "description": "Descripció"
+        },
+        "share": {
+            "addShare": {
+                "button": "Comparteix",
+                "note": "Nota:"
+            },
+            "chip": {
+                "owner": "Propietari",
+                "popover": {
+                    "role": {
+                        "viewer": "Visualitzador"
+                    },
+                    "save": "Desa"
+                }
+            }
+        },
+        "tabs": {
+            "details": "Detalls",
+            "sharing": "Compartició",
+            "versioning": "Versió"
+        },
+        "version": {
+            "actions": {
+                "deleteVersion": "Suprimeix versió"
+            },
+            "rowHeaders": {
+                "lastWeek": "Darrers 60 dies"
+            }
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "presentation": "Nom de presentació",
+                            "spreadsheet": "Nom del full de càlcul"
+                        }
+                    }
+                },
+                "title": {
+                    "document": "Crea un document nou",
+                    "presentation": "Crea una presentació nova",
+                    "spreadsheet": "Crea un full de càlcul nou"
+                }
+            }
+        }
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "button": {
+                    "confirm": "Creat"
+                },
+                "input": {
+                    "label": {
+                        "name": "Nom de carpeta"
+                    }
+                },
+                "title": "Crear una carpeta nova"
+            }
+        }
+    },
+    "modal": {
+        "nodeSelection": {
+            "button": {
+                "create": "Creat"
+            }
+        },
+        "removeLink": {
+            "button": {
+                "confirm": "Elimina"
+            }
+        },
+        "revokeCollaborationLink": {
+            "button": {
+                "confirm": "Revoca"
+            }
+        },
+        "revokeLink": {
+            "button": {
+                "confirm": "Revoca"
+            }
+        },
+        "roots": {
+            "filesHome": "Casa",
+            "rootsList": "Fitxers",
+            "trash": {
+                "trash": "Paperera"
+            }
+        },
+        "cancel": {
+            "label": "Cancel·la"
+        },
+        "button": {
+            "cancel": "Cancel·la",
+            "confirm": "Confirma"
+        },
+        "close": {
+            "tooltip": "Tancar"
+        }
+    },
+    "node": {
+        "alias": {
+            "name_LOCAL_ROOT": "Casa",
+            "name_TRASH_ROOT": "Paperera"
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "Copia"
+                }
+            }
+        },
+        "move": {
+            "modal": {
+                "button": {
+                    "confirm": "Mou"
+                }
+            }
+        },
+        "rename": {
+            "modal": {
+                "button": {
+                    "confirm": "Canvia el nom"
+                }
+            }
+        },
+        "type": {
+            "folder": "Carpeta"
+        }
+    },
+    "preview": {
+        "actions": {
+            "tooltip": {
+                "download": "Descarrega",
+                "edit": "Edita"
+            }
+        },
+        "close": {
+            "tooltip": "Tancar"
+        },
+        "previous": {
+            "tooltip": "Anterior"
+        },
+        "next": {
+            "tooltip": "Següent"
+        },
+        "print": {
+            "tooltip": "Imprimeix"
+        }
+    },
+    "publicLink": {
+        "addLink": {
+            "undo": "Desfés"
+        },
+        "link": {
+            "edit": "Edita",
+            "remove": "Elimina",
+            "revoke": "Revoca",
+            "undo": "Desfés"
+        }
+    },
+    "quota": {
+        "refresh": {
+            "tooltip": {
+                "label": "Actualitza"
+            }
+        }
+    },
+    "search": {
+        "advancedSearch": {
+            "modal": {
+                "flagged": {
+                    "label": "Marcat"
+                },
+                "itemType": {
+                    "dropdownOption": {
+                        "audio": "Àudio",
+                        "document": "Document",
+                        "folder": "Carpeta",
+                        "image": "Imatge",
+                        "presentation": "Presentació",
+                        "spreadsheet": "Full de càlcul",
+                        "video": "Vídeo"
+                    }
+                },
+                "owner": {
+                    "label": "Propietari"
+                },
+                "button": {
+                    "confirm": "Cerca"
+                }
+            }
+        },
+        "header": {
+            "search": "Cerca"
+        },
+        "search": {
+            "tooltip": {
+                "search": "Cerca"
+            }
+        }
+    },
+    "secondaryBar": {
+        "filtersList": {
+            "trash": "Paperera",
+            "flagged": "Marcat"
+        },
+        "filesHome": "Casa",
+        "filters": "Filtres"
+    },
+    "selectionMode": {
+        "header": {
+            "selectAll": "Selecciona-ho tot",
+            "unselectAll": "Anul·la tota la selecció"
+        }
+    },
+    "snackbar": {
+        "deletePermanently": {
+            "error": "Error",
+            "success": "Correcte"
+        },
+        "deleteShare": {
+            "error": "Error",
+            "success": "Correcte"
+        },
+        "createDocument": {
+            "error": {
+                "overQuota": {
+                    "actionLabel": "Accepta"
+                }
+            }
+        },
+        "error": {
+            "overQuota": {
+                "actionLabel": "Accepta"
+            }
+        },
+        "transferOwnership": {
+            "actionLabel": "Accepta"
+        },
+        "restore": {
+            "success": "Correcte"
+        }
+    },
+    "size": {
+        "unitMeasure_B": "B",
+        "unitMeasure_KB": "KB",
+        "unitMeasure_MB": "MB",
+        "unitMeasure_GB": "GB"
+    },
+    "label": {
+        "app_name": "Fitxers"
+    },
+    "sortingDropdown": {
+        "name": "Nom",
+        "size": "Mida"
+    },
+    "notifications": {
+        "title": "Notificacions"
+    }
+}
