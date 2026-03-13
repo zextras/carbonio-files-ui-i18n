@@ -346,7 +346,20 @@
         "sendViaMail": "Enviar por e-mail",
         "edit": "Editar",
         "preview": "Pré-visualizar",
-        "manageShares": "Gerenciar compartilhamentos"
+        "manageShares": "Gerenciar compartilhamentos",
+        "transferOwnership": "Transferir propriedade",
+        "download": {
+            "multiple": {
+                "modal": {
+                    "button": {
+                        "label": "Baixar tudo"
+                    }
+                },
+                "button": {
+                    "tooltip": "Baixar tudo"
+                }
+            }
+        }
     },
     "search": {
         "header": {
@@ -945,7 +958,8 @@
     "collaborationLinks": {
         "button": {
             "revoke": "Revogar",
-            "generateLink": "Gerar link"
+            "generateLink": "Gerar link",
+            "choosePermission": "Escolha permissões para gerar link"
         },
         "title": "Links de colaboração",
         "row": {
@@ -962,7 +976,17 @@
                 }
             }
         },
-        "description": "Os usuários internos acessarão o item ao abrir o link. Você poderá editar as permissões outorgadas a qualquer momento."
+        "description": "Os usuários internos acessarão o item ao abrir o link. Você poderá editar as permissões outorgadas a qualquer momento.",
+        "permission": {
+            "optionDisabled": {
+                "tooltip": "Este tipo de link já foi criado"
+            },
+            "readWriteAndShare": "Editar e gerenciar compartilhamento",
+            "readAndShare": "Visualizar e gerenciar compartilhamento"
+        },
+        "maximumLinks": {
+            "tooltip": "Você atingiu o número máximo de links. Revogue um para criar um novo."
+        }
     },
     "carbonio-public-folder-ui": {
         "invalidLink": {
@@ -987,6 +1011,12 @@
                 },
                 "description": "Por favor, insira o código de acesso para visualizar a pasta",
                 "wrongAccessCode": "Código de acesso incorreto, tente novamente"
+            }
+        },
+        "fileDownload": {
+            "modal": {
+                "confirmLabel2": "Baixar novamente",
+                "description": "Código de acesso inserido corretamente. Agora você pode baixar o arquivo."
             }
         }
     },
