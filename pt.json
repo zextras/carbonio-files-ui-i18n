@@ -987,7 +987,9 @@
             "readAndShare": "Visualizar e gerenciar compartilhamento",
             "cannotWrite": {
                 "tooltip": "Você não tem permissão para criar este link de colaboração porque não possui permissão de edição"
-            }
+            },
+            "readOnly": "Ver",
+            "readAndWrite": "Editar"
         },
         "maximumLinks": {
             "tooltip": "Você atingiu o número máximo de links. Revogue um para criar um novo."
