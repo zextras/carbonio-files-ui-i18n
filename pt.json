@@ -359,7 +359,9 @@
                     "tooltip": "Baixar tudo"
                 }
             }
-        }
+        },
+        "downloadNode": "Baixar",
+        "viewContents": "Visualizar conteúdo"
     },
     "search": {
         "header": {
@@ -982,7 +984,10 @@
                 "tooltip": "Este tipo de link já foi criado"
             },
             "readWriteAndShare": "Editar e gerenciar compartilhamento",
-            "readAndShare": "Visualizar e gerenciar compartilhamento"
+            "readAndShare": "Visualizar e gerenciar compartilhamento",
+            "cannotWrite": {
+                "tooltip": "Você não tem permissão para criar este link de colaboração porque não possui permissão de edição"
+            }
         },
         "maximumLinks": {
             "tooltip": "Você atingiu o número máximo de links. Revogue um para criar um novo."
@@ -1016,7 +1021,8 @@
         "fileDownload": {
             "modal": {
                 "confirmLabel2": "Baixar novamente",
-                "description": "Código de acesso inserido corretamente. Agora você pode baixar o arquivo."
+                "description": "Código de acesso inserido corretamente. Agora você pode baixar o arquivo.",
+                "confirmLabel1": "Baixar"
             }
         }
     },
