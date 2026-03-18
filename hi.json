@@ -922,6 +922,12 @@
         },
         "next": {
             "tooltip": "अगला"
+        },
+        "zoomOut": {
+            "tooltip": "छोटा करें"
+        },
+        "resetZoom": {
+            "tooltip": "ज़ूम रीसेट करें"
         }
     },
     "uploadItem": {
