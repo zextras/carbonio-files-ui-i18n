@@ -928,6 +928,18 @@
         },
         "resetZoom": {
             "tooltip": "ज़ूम रीसेट करें"
+        },
+        "fitWidth": {
+            "label": "चौड़ाई के अनुसार फिट करें"
+        },
+        "maximumZoomReached": {
+            "tooltip": "अधिकतम ज़ूम स्तर प्राप्त किया गया"
+        },
+        "minimumZoomReached": {
+            "tooltip": "न्यूनतम जूम स्तर प्राप्त किया गया"
+        },
+        "zoomIn": {
+            "tooltip": "बड़ा करें"
         }
     },
     "uploadItem": {
