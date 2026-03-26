@@ -872,6 +872,35 @@
         "fileLink": {
             "addLink": {
                 "description": "जिन आंतरिक और बाहरी उपयोगकर्ताओं के पास लिंक तक पहुंच है, वे आइटम डाउनलोड कर सकते हैं।"
+            },
+            "title_one": "सार्वजनिक डाउनलोड लिंक",
+            "title_other": "सार्वजनिक डाउनलोड लिंक"
+        },
+        "folderLink": {
+            "addLink": {
+                "description": "कोई भी जिसके पास यह लिंक है, इस फ़ोल्डर की सामग्री देख और डाउनलोड कर सकता है।"
+            },
+            "title_one": "सार्वजनिक एक्सेस लिंक",
+            "title_other": "सार्वजनिक एक्सेस लिंक"
+        },
+        "accessCode": {
+            "chip": {
+                "tooltip": "प्रवेश कोड कॉपी करें",
+                "label": "प्रवेश कोड"
+            },
+            "switch": {
+                "label": "प्रवेश कोड सक्षम करें"
+            },
+            "input": {
+                "label": "प्रवेश कोड"
+            },
+            "buttons": {
+                "copy": {
+                    "tooltip": "प्रवेश कोड कॉपी करें"
+                },
+                "regenerate": {
+                    "tooltip": "नया एक्सेस कोड उत्पन्न करें"
+                }
             }
         }
     },
@@ -1027,5 +1056,30 @@
                 "wrongAccessCode": "गलत पहुंच कोड, पुनः प्रयास करें"
             }
         }
+    },
+    "quota": {
+        "limitedSpace": "{{used}} का {{limit}} उपयोग किया गया",
+        "overQuota": {
+            "tooltip": {
+                "label": "आप उपलब्ध अधिकतम कोटा तक पहुँच चुके हैं।"
+            }
+        },
+        "refresh": {
+            "tooltip": {
+                "label": "ताज़ा करें"
+            }
+        },
+        "unlimitedSpace": "{{used}} की असीमित स्थान"
+    },
+    "size": {
+        "unitMeasure_ZB": "जेडबी",
+        "unitMeasure_MB": "मेगाबाइट",
+        "unitMeasure_EB": "ईबी",
+        "unitMeasure_B": "बी",
+        "unitMeasure_KB": "केबी",
+        "unitMeasure_GB": "जीबी",
+        "unitMeasure_TB": "टीबी",
+        "unitMeasure_PB": "पीबी",
+        "unitMeasure_YB": "वाईबी"
     }
 }
