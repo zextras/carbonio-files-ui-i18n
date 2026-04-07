@@ -1197,5 +1197,10 @@
             },
             "loading": "Checking the new owner’s storage quota..."
         }
+    },
+    "notification": {
+        "succeededRecording": {
+            "message": "<bold>{{node}}</bold> saved in <bold>{{folder}}</bold>"
+        }
     }
 }
