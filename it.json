@@ -1204,5 +1204,10 @@
             },
             "loading": "Verifica della quota di archiviazione del nuovo proprietario..."
         }
+    },
+    "notification": {
+        "succeededRecording": {
+            "message": "<bold>{{node}}</bold> salvata in <bold>{{folder}}</bold>"
+        }
     }
 }
