@@ -1204,5 +1204,10 @@
             "note3": "Nowy właściciel <bold>zostanie powiadomiony.</bold>",
             "loading": "Sprawdzanie limitu przestrzeni nowego właściciela..."
         }
+    },
+    "notification": {
+        "succeededRecording": {
+            "message": "Zapisano <bold>{{node}}</bold> w <bold>{{folder}}</bold>"
+        }
     }
 }
