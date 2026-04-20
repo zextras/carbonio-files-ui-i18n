@@ -46,8 +46,7 @@
             "description": "Leírás",
             "lastEdit": "Utolsó módosítás",
             "editDescription": {
-                "closeIconTooltip": "Bezárás mentés nélkül",
-                "saveIconTooltip": "Módosítások mentése"
+                "closeIconTooltip": "Bezárás mentés nélkül"
             },
             "content": "Tartalom",
             "createdBy": "Készítette",
