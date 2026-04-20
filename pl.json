@@ -431,8 +431,7 @@
             "lastEdit": "Ostatnia zmiana",
             "position": "Pozycja",
             "showPath": "Pokaż ścieżkę",
-            "copyShortcut": "skopiuj skrót do elementu",
-            "missingDescription": "Kliknij przycisk edytuj aby dodać opis"
+            "copyShortcut": "skopiuj skrót do elementu"
         },
         "search_empty": [
             {
