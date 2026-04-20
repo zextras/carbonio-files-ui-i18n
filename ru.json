@@ -470,10 +470,7 @@
             "copyShortcut": "Скопировать ярлык элемента",
             "editDescription": {
                 "saveIconTooltip": "Сохранить изменения",
-                "closeIconTooltip": "Закрыть без сохранения",
-                "input": {
-                    "label": "Максимальная допустимая длина - 4096 символов"
-                }
+                "closeIconTooltip": "Закрыть без сохранения"
             },
             "owner": "Владелец",
             "collaboratorsTooltip": "Посмотреть список соавторов",
