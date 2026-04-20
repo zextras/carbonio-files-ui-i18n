@@ -5,9 +5,6 @@
             "collaboratorsTooltip": "Poglej seznam sodelavcev",
             "content": "Vsebina",
             "createdBy": "Ustvaril",
-            "editDescription": {
-                "closeIconTooltip": "Zapri brez shranjevanja"
-            },
             "copyShortcut": "kopiraj bližnjico do elementa",
             "lastEdit": "Zadnja sprememba",
             "owner": "Lastnik",
