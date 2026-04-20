@@ -132,8 +132,7 @@
             "copyShortcut": "kopiraj prečicu stavke",
             "createdBy": "Kreirao/la",
             "editDescription": {
-                "closeIconTooltip": "Zatvori bez spremanja",
-                "saveIconTooltip": "Sačuvaj izmjene"
+                "closeIconTooltip": "Zatvori bez spremanja"
             },
             "lastEdit": "Posljednja izmjena",
             "owner": "Vlasnik",
