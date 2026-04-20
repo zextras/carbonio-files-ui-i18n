@@ -83,7 +83,6 @@
             "copyShortcut": "copia l'enllaç de l'element",
             "createdBy": "Creat per",
             "lastEdit": "Darrera edició",
-            "missingDescription": "Feu clic al botó d'edició per afegir una descripció",
             "position": "Posició",
             "sendMailTo": "Envia un correu electrònic a: {{email}}",
             "editDescription": {
