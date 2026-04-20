@@ -409,7 +409,6 @@
                 }
             },
             "copyShortcut": "copiar enlace",
-            "missingDescription": "Haz clic en el lápiz para añadir una descripción",
             "owner": "Propietario",
             "sendMailTo": "Enviar por correo a: {{email}}",
             "collaboratorsTooltip": "Ver la lista de colaboradores"
