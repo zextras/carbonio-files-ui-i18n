@@ -87,10 +87,7 @@
             "sendMailTo": "Envia un correu electrònic a: {{email}}",
             "editDescription": {
                 "saveIconTooltip": "Desa les edicions",
-                "closeIconTooltip": "Tancar sense desar",
-                "input": {
-                    "label": "La longitud màxima de la contrasenya és de {0} caràcters"
-                }
+                "closeIconTooltip": "Tancar sense desar"
             },
             "showPath": "Mostra la ruta"
         },
