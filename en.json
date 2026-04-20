@@ -135,7 +135,6 @@
             "description": "Description",
             "editDescription": {
                 "closeIconTooltip": "Close without saving",
-                "editIconTooltip": "Edit description",
                 "input": {
                     "label": "Maximum length allowed is 4096 characters"
                 },
