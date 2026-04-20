@@ -65,9 +65,6 @@
             "position": "جایگاه",
             "owner": "دارنده",
             "lastEdit": "آخرین ویرایش",
-            "editDescription": {
-                "editIconTooltip": "ویرایش توضیحات"
-            },
             "description": "توضیح",
             "createdBy": "ایجاد شده توسط"
         },
