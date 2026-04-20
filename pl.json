@@ -423,7 +423,12 @@
             "lastEdit": "Ostatnia zmiana",
             "position": "Pozycja",
             "showPath": "Pokaż ścieżkę",
-            "copyShortcut": "skopiuj skrót do elementu"
+            "copyShortcut": "skopiuj skrót do elementu",
+            "editDescription": {
+                "characterLimit": "Max. dozwolona długość to {{max}} znaków",
+                "cancel": "Anuluj",
+                "save": "Zapisz"
+            }
         },
         "search_empty": [
             {
