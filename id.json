@@ -395,8 +395,7 @@
             "lastEdit": "Editan terakhir",
             "showPath": "Tampilkan jalur",
             "editDescription": {
-                "closeIconTooltip": "Tutup tanpa menyimpan",
-                "saveIconTooltip": "Simpan hasil edit"
+                "closeIconTooltip": "Tutup tanpa menyimpan"
             },
             "copyShortcut": "salin pintasan item",
             "owner": "Pemilik",
