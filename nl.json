@@ -327,7 +327,6 @@
             "lastEdit": "Laatste bewerking",
             "showPath": "Pad tonen",
             "editDescription": {
-                "editIconTooltip": "Omschrijving bewerken",
                 "closeIconTooltip": "Sluiten zonder op te slaan",
                 "input": {
                     "label": "Maximaal toegestane lengte is 4096 tekens"
