@@ -495,10 +495,7 @@
             "copyShortcut": "copier le raccourci de l'élément",
             "editDescription": {
                 "closeIconTooltip": "Fermer sans sauvegarder",
-                "saveIconTooltip": "Sauvegarder les modifications",
-                "input": {
-                    "label": "La longueur maximale autorisée est de 4096 caractères"
-                }
+                "saveIconTooltip": "Sauvegarder les modifications"
             },
             "owner": "Propriétaire",
             "collaboratorsTooltip": "Voir la liste des collaborateurs",
