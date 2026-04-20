@@ -122,8 +122,7 @@
         "details": {
             "description": "Опис",
             "editDescription": {
-                "closeIconTooltip": "Закрити без збереження",
-                "saveIconTooltip": "Зберегти зміни"
+                "closeIconTooltip": "Закрити без збереження"
             },
             "collaboratorsTooltip": "Переглянути список співробітників",
             "content": "Зміст",
