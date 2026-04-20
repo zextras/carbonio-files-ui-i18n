@@ -47,7 +47,6 @@
             "lastEdit": "Utolsó módosítás",
             "editDescription": {
                 "closeIconTooltip": "Bezárás mentés nélkül",
-                "editIconTooltip": "Leírás szerkesztése",
                 "input": {
                     "label": "Maximum 4096 karakter engedélyezett"
                 },
