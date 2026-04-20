@@ -41,8 +41,7 @@
             "copyShortcut": "Sao chép item's shortcut",
             "description": "Mô tả",
             "editDescription": {
-                "closeIconTooltip": "Đóng và không lưu",
-                "saveIconTooltip": "Lưu chỉnh sửa"
+                "closeIconTooltip": "Đóng và không lưu"
             },
             "createdBy": "Được tạo bởi",
             "lastEdit": "Chỉnh sửa lần cuối",
