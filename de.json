@@ -326,9 +326,6 @@
             "content": "Inhalt",
             "lastEdit": "Letzte Bearbeitung",
             "showPath": "Pfad anzeigen",
-            "editDescription": {
-                "closeIconTooltip": "Schließen ohne Speichern"
-            },
             "copyShortcut": "Verknüpfung des Elements kopieren",
             "owner": "Besitzer",
             "collaboratorsTooltip": "Siehe die Liste der Mitarbeiter",
