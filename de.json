@@ -327,7 +327,6 @@
             "lastEdit": "Letzte Bearbeitung",
             "showPath": "Pfad anzeigen",
             "editDescription": {
-                "editIconTooltip": "Beschreibung bearbeiten",
                 "closeIconTooltip": "Schließen ohne Speichern",
                 "saveIconTooltip": "Bearbeitungen speichern",
                 "input": {
