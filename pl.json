@@ -420,9 +420,6 @@
             "content": "Zawartość",
             "createdBy": "Stworzone przez",
             "description": "Opis",
-            "editDescription": {
-                "closeIconTooltip": "Zamknij bez zapisywania"
-            },
             "lastEdit": "Ostatnia zmiana",
             "position": "Pozycja",
             "showPath": "Pokaż ścieżkę",
