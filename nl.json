@@ -328,9 +328,6 @@
             "showPath": "Pad tonen",
             "editDescription": {
                 "closeIconTooltip": "Sluiten zonder op te slaan",
-                "input": {
-                    "label": "Maximaal toegestane lengte is 4096 tekens"
-                },
                 "saveIconTooltip": "Bewerkingen opslaan"
             },
             "copyShortcut": "snelkoppeling van het item kopiëren",
