@@ -469,7 +469,6 @@
             "showPath": "Показать путь",
             "copyShortcut": "Скопировать ярлык элемента",
             "editDescription": {
-                "editIconTooltip": "Изменить описание",
                 "saveIconTooltip": "Сохранить изменения",
                 "closeIconTooltip": "Закрыть без сохранения",
                 "input": {
