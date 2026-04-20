@@ -402,10 +402,7 @@
             "showPath": "Mostrar ruta completa",
             "editDescription": {
                 "closeIconTooltip": "Cerrar sin guardar",
-                "saveIconTooltip": "Guardar",
-                "input": {
-                    "label": "La longitud máxima es de 4096 caracteres"
-                }
+                "saveIconTooltip": "Guardar"
             },
             "copyShortcut": "copiar enlace",
             "owner": "Propietario",
