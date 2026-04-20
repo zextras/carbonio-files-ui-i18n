@@ -133,7 +133,6 @@
             "createdBy": "Kreirao/la",
             "editDescription": {
                 "closeIconTooltip": "Zatvori bez spremanja",
-                "editIconTooltip": "Uredi opis",
                 "input": {
                     "label": "Maksimalna dopuštena dužina je 4096 znakova"
                 },
