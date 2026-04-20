@@ -401,8 +401,7 @@
             "lastEdit": "Última edición",
             "showPath": "Mostrar ruta completa",
             "editDescription": {
-                "closeIconTooltip": "Cerrar sin guardar",
-                "saveIconTooltip": "Guardar"
+                "closeIconTooltip": "Cerrar sin guardar"
             },
             "copyShortcut": "copiar enlace",
             "owner": "Propietario",
