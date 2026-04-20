@@ -470,10 +470,7 @@
             "showPath": "Mostra percorso",
             "editDescription": {
                 "closeIconTooltip": "Chiudi senza salvare",
-                "saveIconTooltip": "Salva modifiche",
-                "input": {
-                    "label": "Il numero massimo di caratteri consentiti è 4096"
-                }
+                "saveIconTooltip": "Salva modifiche"
             },
             "copyShortcut": "Copia scorciatoia dell'elemento",
             "owner": "Proprietario",
