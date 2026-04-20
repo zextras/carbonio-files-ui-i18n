@@ -86,7 +86,6 @@
             "position": "Posició",
             "sendMailTo": "Envia un correu electrònic a: {{email}}",
             "editDescription": {
-                "saveIconTooltip": "Desa les edicions",
                 "closeIconTooltip": "Tancar sense desar"
             },
             "showPath": "Mostra la ruta"
