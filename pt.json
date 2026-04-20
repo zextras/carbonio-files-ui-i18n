@@ -451,7 +451,6 @@
             "position": "Posição",
             "showPath": "Exibir caminho completo",
             "editDescription": {
-                "editIconTooltip": "Editar descrição",
                 "saveIconTooltip": "Salvar modificações",
                 "closeIconTooltip": "Fechar sem salvar",
                 "input": {
