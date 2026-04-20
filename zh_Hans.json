@@ -8,9 +8,6 @@
             "content": "内容",
             "lastEdit": "上次编辑",
             "showPath": "显示路径",
-            "editDescription": {
-                "closeIconTooltip": "关闭且不保存"
-            },
             "copyShortcut": "复制项目快捷方式",
             "owner": "所有者",
             "collaboratorsTooltip": "查看协作者列表",
