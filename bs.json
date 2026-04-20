@@ -131,9 +131,6 @@
             "content": "Sadržaj",
             "copyShortcut": "kopiraj prečicu stavke",
             "createdBy": "Kreirao/la",
-            "editDescription": {
-                "closeIconTooltip": "Zatvori bez spremanja"
-            },
             "lastEdit": "Posljednja izmjena",
             "owner": "Vlasnik",
             "sendMailTo": "Pošalji e-mail na: {{email}}",
