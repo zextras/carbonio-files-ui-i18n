@@ -395,7 +395,6 @@
             "lastEdit": "Editan terakhir",
             "showPath": "Tampilkan jalur",
             "editDescription": {
-                "editIconTooltip": "Edit deskripsi",
                 "closeIconTooltip": "Tutup tanpa menyimpan",
                 "saveIconTooltip": "Simpan hasil edit",
                 "input": {
