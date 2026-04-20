@@ -496,7 +496,6 @@
             "editDescription": {
                 "closeIconTooltip": "Fermer sans sauvegarder",
                 "saveIconTooltip": "Sauvegarder les modifications",
-                "editIconTooltip": "Modifier la description",
                 "input": {
                     "label": "La longueur maximale autorisée est de 4096 caractères"
                 }
