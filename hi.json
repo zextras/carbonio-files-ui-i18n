@@ -410,9 +410,6 @@
             "showPath": "पाथ दिखाएँ",
             "content": "कंटेन्ट",
             "lastEdit": "पिछला बदलाव",
-            "editDescription": {
-                "closeIconTooltip": "बिना सेव किए बंद करें"
-            },
             "copyShortcut": "आइटम का शॉर्टकट कॉपी करें",
             "owner": "ओनर",
             "collaboratorsTooltip": "साथ में काम करने वालों की लिस्ट देखें",
