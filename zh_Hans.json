@@ -9,7 +9,6 @@
             "lastEdit": "上次编辑",
             "showPath": "显示路径",
             "editDescription": {
-                "editIconTooltip": "编辑描述",
                 "closeIconTooltip": "关闭且不保存",
                 "input": {
                     "label": "最大允许长度4096个字符"
