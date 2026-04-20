@@ -368,10 +368,7 @@
             "showPath": "パスを表示する",
             "editDescription": {
                 "closeIconTooltip": "保存せずに閉じる",
-                "saveIconTooltip": "編集を保存する",
-                "input": {
-                    "label": "最大文字数は4096文字です"
-                }
+                "saveIconTooltip": "編集を保存する"
             },
             "copyShortcut": "アイテムのショートカットをコピーする",
             "owner": "所有者",
