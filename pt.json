@@ -451,7 +451,6 @@
             "position": "Posição",
             "showPath": "Exibir caminho completo",
             "editDescription": {
-                "saveIconTooltip": "Salvar modificações",
                 "closeIconTooltip": "Fechar sem salvar"
             },
             "copyShortcut": "copiar link para o item",
