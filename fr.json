@@ -1204,5 +1204,10 @@
             "available": "Le nouveau propriétaire dispose de suffisamment d'espace de stockage.",
             "loading": "Vérification du quota de stockage du nouveau propriétaire..."
         }
+    },
+    "notification": {
+        "succeededRecording": {
+            "message": "<bold>{{node}}</bold> enregistré dans <bold>{{folder}}</bold>"
+        }
     }
 }
