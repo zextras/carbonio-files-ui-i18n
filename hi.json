@@ -412,7 +412,6 @@
             "lastEdit": "पिछला बदलाव",
             "editDescription": {
                 "closeIconTooltip": "बिना सेव किए बंद करें",
-                "editIconTooltip": "विवरण बदलें",
                 "saveIconTooltip": "एडिट सेव करें",
                 "input": {
                     "label": "अधिकतम 4096 कैरक्टर की अनुमति है"
