@@ -396,10 +396,7 @@
             "showPath": "Tampilkan jalur",
             "editDescription": {
                 "closeIconTooltip": "Tutup tanpa menyimpan",
-                "saveIconTooltip": "Simpan hasil edit",
-                "input": {
-                    "label": "Panjang maksimum yang diizinkan adalah 4096 karakter"
-                }
+                "saveIconTooltip": "Simpan hasil edit"
             },
             "copyShortcut": "salin pintasan item",
             "owner": "Pemilik",
