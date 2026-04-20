@@ -122,9 +122,6 @@
         "details": {
             "description": "Опис",
             "editDescription": {
-                "input": {
-                    "label": "Максимальна довжина 4096 символів"
-                },
                 "closeIconTooltip": "Закрити без збереження",
                 "saveIconTooltip": "Зберегти зміни"
             },
