@@ -450,9 +450,6 @@
             "lastEdit": "Última edição",
             "position": "Posição",
             "showPath": "Exibir caminho completo",
-            "editDescription": {
-                "closeIconTooltip": "Fechar sem salvar"
-            },
             "copyShortcut": "copiar link para o item",
             "owner": "Proprietário",
             "sendMailTo": "Enviar por e-mail para: {{email}}",
