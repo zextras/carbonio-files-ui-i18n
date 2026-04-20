@@ -461,7 +461,6 @@
             "lastEdit": "แก้ไขล่าสุด",
             "showPath": "แสดงเส้นทาง",
             "editDescription": {
-                "editIconTooltip": "แก้ไขคำอธิบาย",
                 "saveIconTooltip": "บันทึกการแก้ไข",
                 "input": {
                     "label": "ความยาวสูงสุดที่อนุญาตคือ 4096 ตัวอักษร"
