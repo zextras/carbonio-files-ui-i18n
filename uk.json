@@ -126,7 +126,6 @@
                     "label": "Максимальна довжина 4096 символів"
                 },
                 "closeIconTooltip": "Закрити без збереження",
-                "editIconTooltip": "Редагувати опис",
                 "saveIconTooltip": "Зберегти зміни"
             },
             "collaboratorsTooltip": "Переглянути список співробітників",
