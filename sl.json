@@ -7,9 +7,6 @@
             "createdBy": "Ustvaril",
             "editDescription": {
                 "closeIconTooltip": "Zapri brez shranjevanja",
-                "input": {
-                    "label": "Največja dovoljena dolžina je 4096 znakov"
-                },
                 "saveIconTooltip": "Shranite spremembe"
             },
             "copyShortcut": "kopiraj bližnjico do elementa",
