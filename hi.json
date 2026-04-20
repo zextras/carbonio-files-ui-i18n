@@ -411,8 +411,7 @@
             "content": "कंटेन्ट",
             "lastEdit": "पिछला बदलाव",
             "editDescription": {
-                "closeIconTooltip": "बिना सेव किए बंद करें",
-                "saveIconTooltip": "एडिट सेव करें"
+                "closeIconTooltip": "बिना सेव किए बंद करें"
             },
             "copyShortcut": "आइटम का शॉर्टकट कॉपी करें",
             "owner": "ओनर",
