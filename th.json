@@ -460,9 +460,6 @@
             "content": "เนื้อหา",
             "lastEdit": "แก้ไขล่าสุด",
             "showPath": "แสดงเส้นทาง",
-            "editDescription": {
-                "closeIconTooltip": "ปิดโดยไม่บันทึก"
-            },
             "copyShortcut": "คัดลอกทางลัดของรายการ",
             "owner": "เจ้าของ",
             "collaboratorsTooltip": "ดูรายชื่อผู้ทำงานร่วมกัน",
