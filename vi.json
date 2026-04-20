@@ -40,9 +40,6 @@
             "content": "Nội dung",
             "copyShortcut": "Sao chép item's shortcut",
             "description": "Mô tả",
-            "editDescription": {
-                "closeIconTooltip": "Đóng và không lưu"
-            },
             "createdBy": "Được tạo bởi",
             "lastEdit": "Chỉnh sửa lần cuối",
             "position": "Vị trí",
