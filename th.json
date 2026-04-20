@@ -469,7 +469,6 @@
                 "closeIconTooltip": "ปิดโดยไม่บันทึก"
             },
             "copyShortcut": "คัดลอกทางลัดของรายการ",
-            "missingDescription": "คลิกที่ปุ่มแก้ไขเพื่อเพิ่มคำอธิบาย",
             "owner": "เจ้าของ",
             "collaboratorsTooltip": "ดูรายชื่อผู้ทำงานร่วมกัน",
             "sendMailTo": "ส่งอีเมลไปที่: {{email}}"
