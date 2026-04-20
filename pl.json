@@ -422,7 +422,6 @@
             "description": "Opis",
             "editDescription": {
                 "closeIconTooltip": "Zamknij bez zapisywania",
-                "editIconTooltip": "Edytuj opis",
                 "input": {
                     "label": "Max. dozwolona długość to 4096 znaków"
                 },
