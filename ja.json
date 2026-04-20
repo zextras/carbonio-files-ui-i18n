@@ -367,8 +367,7 @@
             "lastEdit": "最終編集",
             "showPath": "パスを表示する",
             "editDescription": {
-                "closeIconTooltip": "保存せずに閉じる",
-                "saveIconTooltip": "編集を保存する"
+                "closeIconTooltip": "保存せずに閉じる"
             },
             "copyShortcut": "アイテムのショートカットをコピーする",
             "owner": "所有者",
