@@ -7,9 +7,6 @@
             "createdBy": "Sortzailea",
             "editDescription": {
                 "saveIconTooltip": "Edizioak gorde",
-                "input": {
-                    "label": "Baimendutako gehienezko luzera 4096 karakterekoa da"
-                },
                 "closeIconTooltip": "Gorde gabe itxi"
             },
             "lastEdit": "Azken edizioa",
