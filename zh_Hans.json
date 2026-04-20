@@ -9,8 +9,7 @@
             "lastEdit": "上次编辑",
             "showPath": "显示路径",
             "editDescription": {
-                "closeIconTooltip": "关闭且不保存",
-                "saveIconTooltip": "保存编辑"
+                "closeIconTooltip": "关闭且不保存"
             },
             "copyShortcut": "复制项目快捷方式",
             "owner": "所有者",
