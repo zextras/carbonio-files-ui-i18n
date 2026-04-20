@@ -452,10 +452,7 @@
             "showPath": "Exibir caminho completo",
             "editDescription": {
                 "saveIconTooltip": "Salvar modificações",
-                "closeIconTooltip": "Fechar sem salvar",
-                "input": {
-                    "label": "O tamanho máximo permitido é de 4096 caracteres"
-                }
+                "closeIconTooltip": "Fechar sem salvar"
             },
             "copyShortcut": "copiar link para o item",
             "owner": "Proprietário",
