@@ -363,7 +363,6 @@
                     "label": "İzin verilen maksimum uzunluk 4096 karakterdir"
                 }
             },
-            "missingDescription": "Tanım eklemek için düzenle tuşuna tıklayın",
             "owner": "Sahibi",
             "collaboratorsTooltip": "Katılımcıları görüntüleyin",
             "sendMailTo": "E-posta gönder: {{email}}"
