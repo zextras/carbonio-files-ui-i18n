@@ -461,7 +461,6 @@
             "lastEdit": "แก้ไขล่าสุด",
             "showPath": "แสดงเส้นทาง",
             "editDescription": {
-                "saveIconTooltip": "บันทึกการแก้ไข",
                 "closeIconTooltip": "ปิดโดยไม่บันทึก"
             },
             "copyShortcut": "คัดลอกทางลัดของรายการ",
