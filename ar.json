@@ -216,7 +216,6 @@
                 "saveIconTooltip": "حفظ التعديلات"
             },
             "lastEdit": "التعديل الأخير",
-            "missingDescription": "انقر على زر التعديل لإضافة وصف",
             "owner": "مالك",
             "position": "حالته",
             "sendMailTo": "أرسل بريدًا إلكترونيًا إلى: {{email}}",
