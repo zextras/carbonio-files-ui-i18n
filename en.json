@@ -138,7 +138,12 @@
             "position": "Position",
             "sendMailTo": "Send e-mail to: {{email}}",
             "showPath": "Show path",
-            "size": "Size"
+            "size": "Size",
+            "editDescription": {
+                "characterLimit": "Maximum length allowed is {{max}} characters",
+                "cancel": "Cancel",
+                "save": "Save"
+            }
         },
         "filter": {
             "flagged_empty": [
