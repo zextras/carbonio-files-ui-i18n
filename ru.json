@@ -468,9 +468,6 @@
             "position": "Место",
             "showPath": "Показать путь",
             "copyShortcut": "Скопировать ярлык элемента",
-            "editDescription": {
-                "closeIconTooltip": "Закрыть без сохранения"
-            },
             "owner": "Владелец",
             "collaboratorsTooltip": "Посмотреть список соавторов",
             "sendMailTo": "Отправить письмо : {{email}}"
