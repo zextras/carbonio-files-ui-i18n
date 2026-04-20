@@ -403,7 +403,6 @@
                 }
             },
             "copyShortcut": "salin pintasan item",
-            "missingDescription": "Klik tombol edit untuk menambahkan deskripsi",
             "owner": "Pemilik",
             "collaboratorsTooltip": "Lihat daftar kolaborator",
             "sendMailTo": "Kirim email ke: {{email}}"
