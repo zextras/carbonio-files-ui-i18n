@@ -501,7 +501,6 @@
                     "label": "La longueur maximale autorisée est de 4096 caractères"
                 }
             },
-            "missingDescription": "Cliquer sur le bouton Modification pour ajouter une description",
             "owner": "Propriétaire",
             "collaboratorsTooltip": "Voir la liste des collaborateurs",
             "sendMailTo": "Envoyer un email à : {{email}}"
