@@ -140,7 +140,6 @@
                 "saveIconTooltip": "Sačuvaj izmjene"
             },
             "lastEdit": "Posljednja izmjena",
-            "missingDescription": "Klikni na dugme Uredi za dodavanje opisa",
             "owner": "Vlasnik",
             "sendMailTo": "Pošalji e-mail na: {{email}}",
             "showPath": "Prikaži putanju",
