@@ -494,8 +494,7 @@
             "showPath": "Montrer le chemin",
             "copyShortcut": "copier le raccourci de l'élément",
             "editDescription": {
-                "closeIconTooltip": "Fermer sans sauvegarder",
-                "saveIconTooltip": "Sauvegarder les modifications"
+                "closeIconTooltip": "Fermer sans sauvegarder"
             },
             "owner": "Propriétaire",
             "collaboratorsTooltip": "Voir la liste des collaborateurs",
