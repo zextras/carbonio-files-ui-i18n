@@ -121,9 +121,6 @@
     "displayer": {
         "details": {
             "description": "Опис",
-            "editDescription": {
-                "closeIconTooltip": "Закрити без збереження"
-            },
             "collaboratorsTooltip": "Переглянути список співробітників",
             "content": "Зміст",
             "copyShortcut": "Копіювати посилання на елемент",
