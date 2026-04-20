@@ -421,8 +421,7 @@
             "createdBy": "Stworzone przez",
             "description": "Opis",
             "editDescription": {
-                "closeIconTooltip": "Zamknij bez zapisywania",
-                "saveIconTooltip": "Zapisz zmiany"
+                "closeIconTooltip": "Zamknij bez zapisywania"
             },
             "lastEdit": "Ostatnia zmiana",
             "position": "Pozycja",
