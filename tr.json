@@ -357,10 +357,7 @@
             "copyShortcut": "öğe kısayolunu kopyala",
             "editDescription": {
                 "saveIconTooltip": "Değişiklikleri kaydet",
-                "closeIconTooltip": "Kaydetmeden kapat",
-                "input": {
-                    "label": "İzin verilen maksimum uzunluk 4096 karakterdir"
-                }
+                "closeIconTooltip": "Kaydetmeden kapat"
             },
             "owner": "Sahibi",
             "collaboratorsTooltip": "Katılımcıları görüntüleyin",
