@@ -476,7 +476,6 @@
                     "label": "Il numero massimo di caratteri consentiti è 4096"
                 }
             },
-            "missingDescription": "Clicca sul pulsante modifica per aggiungere una descrizione",
             "copyShortcut": "Copia scorciatoia dell'elemento",
             "owner": "Proprietario",
             "collaboratorsTooltip": "Vedi la lista dei collaboratori",
