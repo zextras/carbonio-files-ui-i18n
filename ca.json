@@ -85,9 +85,6 @@
             "lastEdit": "Darrera edició",
             "position": "Posició",
             "sendMailTo": "Envia un correu electrònic a: {{email}}",
-            "editDescription": {
-                "closeIconTooltip": "Tancar sense desar"
-            },
             "showPath": "Mostra la ruta"
         },
         "share": {
