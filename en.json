@@ -134,8 +134,7 @@
             "createdBy": "Created by",
             "description": "Description",
             "editDescription": {
-                "closeIconTooltip": "Close without saving",
-                "saveIconTooltip": "Save edits"
+                "closeIconTooltip": "Close without saving"
             },
             "lastEdit": "Last edit",
             "owner": "Owner",
