@@ -401,7 +401,6 @@
             "lastEdit": "Última edición",
             "showPath": "Mostrar ruta completa",
             "editDescription": {
-                "editIconTooltip": "Editar descripción",
                 "closeIconTooltip": "Cerrar sin guardar",
                 "saveIconTooltip": "Guardar",
                 "input": {
