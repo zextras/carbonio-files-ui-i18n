@@ -366,9 +366,6 @@
             "content": "コンテンツ",
             "lastEdit": "最終編集",
             "showPath": "パスを表示する",
-            "editDescription": {
-                "closeIconTooltip": "保存せずに閉じる"
-            },
             "copyShortcut": "アイテムのショートカットをコピーする",
             "owner": "所有者",
             "collaboratorsTooltip": "共同作業者のリストを見る",
