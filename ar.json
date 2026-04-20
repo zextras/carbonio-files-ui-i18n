@@ -207,9 +207,6 @@
             "copyShortcut": "نسخ اختصار عنصر/عناصر",
             "createdBy": "تم إنشاؤه بواسطة",
             "description": "الوصف",
-            "editDescription": {
-                "closeIconTooltip": "إغلاق بدون حفظ"
-            },
             "lastEdit": "التعديل الأخير",
             "owner": "مالك",
             "position": "حالته",
