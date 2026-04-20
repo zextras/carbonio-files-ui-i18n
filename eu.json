@@ -6,7 +6,6 @@
             "copyShortcut": "elementuaren lasterbidea kopiatu",
             "createdBy": "Sortzailea",
             "editDescription": {
-                "editIconTooltip": "Deskribapena aldatu",
                 "saveIconTooltip": "Edizioak gorde",
                 "input": {
                     "label": "Baimendutako gehienezko luzera 4096 karakterekoa da"
