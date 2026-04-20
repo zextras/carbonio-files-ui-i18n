@@ -469,7 +469,6 @@
             "showPath": "Показать путь",
             "copyShortcut": "Скопировать ярлык элемента",
             "editDescription": {
-                "saveIconTooltip": "Сохранить изменения",
                 "closeIconTooltip": "Закрыть без сохранения"
             },
             "owner": "Владелец",
