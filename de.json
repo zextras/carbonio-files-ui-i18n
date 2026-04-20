@@ -335,7 +335,6 @@
                 }
             },
             "copyShortcut": "Verknüpfung des Elements kopieren",
-            "missingDescription": "Klicken Sie auf die Schaltfläche \"Bearbeiten\", um eine Beschreibung hinzuzufügen",
             "owner": "Besitzer",
             "collaboratorsTooltip": "Siehe die Liste der Mitarbeiter",
             "sendMailTo": "Senden Sie eine E-Mail an: {{email}}"
