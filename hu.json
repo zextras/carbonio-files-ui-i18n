@@ -59,7 +59,6 @@
             "owner": "Tulajdonos",
             "position": "Pozíció",
             "sendMailTo": "Elküldés emailben: {{email}}",
-            "missingDescription": "Kattintson a szerkesztés gombra a leírás hozzáadásához",
             "showPath": "Elérési út mutatása",
             "size": "Méret",
             "copyShortcut": "elemre mutató hivatkozás másolása"
