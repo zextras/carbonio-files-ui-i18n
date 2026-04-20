@@ -335,7 +335,6 @@
                 "saveIconTooltip": "Bewerkingen opslaan"
             },
             "copyShortcut": "snelkoppeling van het item kopiëren",
-            "missingDescription": "Klik op de bewerkknop om een beschrijving toe te voegen",
             "owner": "Eigenaar",
             "collaboratorsTooltip": "De lijst van medewerkers bekijken",
             "sendMailTo": "E-mail sturen naar: {{email}}"
