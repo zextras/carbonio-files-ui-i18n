@@ -468,9 +468,6 @@
             "lastEdit": "Ultima modifica",
             "position": "Posizione",
             "showPath": "Mostra percorso",
-            "editDescription": {
-                "closeIconTooltip": "Chiudi senza salvare"
-            },
             "copyShortcut": "Copia scorciatoia dell'elemento",
             "owner": "Proprietario",
             "collaboratorsTooltip": "Vedi la lista dei collaboratori",
