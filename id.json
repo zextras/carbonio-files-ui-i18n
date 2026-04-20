@@ -394,9 +394,6 @@
             "content": "Konten",
             "lastEdit": "Editan terakhir",
             "showPath": "Tampilkan jalur",
-            "editDescription": {
-                "closeIconTooltip": "Tutup tanpa menyimpan"
-            },
             "copyShortcut": "salin pintasan item",
             "owner": "Pemilik",
             "collaboratorsTooltip": "Lihat daftar kolaborator",
