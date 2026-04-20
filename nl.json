@@ -326,9 +326,6 @@
             "content": "Inhoud",
             "lastEdit": "Laatste bewerking",
             "showPath": "Pad tonen",
-            "editDescription": {
-                "closeIconTooltip": "Sluiten zonder op te slaan"
-            },
             "copyShortcut": "snelkoppeling van het item kopiëren",
             "owner": "Eigenaar",
             "collaboratorsTooltip": "De lijst van medewerkers bekijken",
