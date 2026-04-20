@@ -328,10 +328,7 @@
             "showPath": "Pfad anzeigen",
             "editDescription": {
                 "closeIconTooltip": "Schließen ohne Speichern",
-                "saveIconTooltip": "Bearbeitungen speichern",
-                "input": {
-                    "label": "Die maximal zulässige Länge beträgt 4096 Zeichen"
-                }
+                "saveIconTooltip": "Bearbeitungen speichern"
             },
             "copyShortcut": "Verknüpfung des Elements kopieren",
             "owner": "Besitzer",
