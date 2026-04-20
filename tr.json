@@ -356,7 +356,6 @@
             "showPath": "Yolu göster",
             "copyShortcut": "öğe kısayolunu kopyala",
             "editDescription": {
-                "saveIconTooltip": "Değişiklikleri kaydet",
                 "closeIconTooltip": "Kaydetmeden kapat"
             },
             "owner": "Sahibi",
