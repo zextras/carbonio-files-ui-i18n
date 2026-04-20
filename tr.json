@@ -355,9 +355,6 @@
             "position": "Yer",
             "showPath": "Yolu göster",
             "copyShortcut": "öğe kısayolunu kopyala",
-            "editDescription": {
-                "closeIconTooltip": "Kaydetmeden kapat"
-            },
             "owner": "Sahibi",
             "collaboratorsTooltip": "Katılımcıları görüntüleyin",
             "sendMailTo": "E-posta gönder: {{email}}"
