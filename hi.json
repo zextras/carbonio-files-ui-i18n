@@ -412,10 +412,7 @@
             "lastEdit": "पिछला बदलाव",
             "editDescription": {
                 "closeIconTooltip": "बिना सेव किए बंद करें",
-                "saveIconTooltip": "एडिट सेव करें",
-                "input": {
-                    "label": "अधिकतम 4096 कैरक्टर की अनुमति है"
-                }
+                "saveIconTooltip": "एडिट सेव करें"
             },
             "copyShortcut": "आइटम का शॉर्टकट कॉपी करें",
             "owner": "ओनर",
