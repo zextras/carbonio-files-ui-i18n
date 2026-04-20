@@ -462,9 +462,6 @@
             "showPath": "แสดงเส้นทาง",
             "editDescription": {
                 "saveIconTooltip": "บันทึกการแก้ไข",
-                "input": {
-                    "label": "ความยาวสูงสุดที่อนุญาตคือ 4096 ตัวอักษร"
-                },
                 "closeIconTooltip": "ปิดโดยไม่บันทึก"
             },
             "copyShortcut": "คัดลอกทางลัดของรายการ",
