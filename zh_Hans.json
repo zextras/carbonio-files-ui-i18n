@@ -17,7 +17,6 @@
                 "saveIconTooltip": "保存编辑"
             },
             "copyShortcut": "复制项目快捷方式",
-            "missingDescription": "点击编辑按钮以添加描述",
             "owner": "所有者",
             "collaboratorsTooltip": "查看协作者列表",
             "sendMailTo": "发送邮件至：{{email}}"
