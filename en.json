@@ -133,9 +133,6 @@
             "copyShortcut": "copy item's shortcut",
             "createdBy": "Created by",
             "description": "Description",
-            "editDescription": {
-                "closeIconTooltip": "Close without saving"
-            },
             "lastEdit": "Last edit",
             "owner": "Owner",
             "position": "Position",
