@@ -5,9 +5,6 @@
             "collaboratorsTooltip": "Тең авторлордун тизмесин көрүү",
             "copyShortcut": "Элементтин ярлыгын көчүрүү",
             "editDescription": {
-                "input": {
-                    "label": "Максималдуу жол берилген узундугу - 4096 символ"
-                },
                 "closeIconTooltip": "Сактабастан жабуу",
                 "saveIconTooltip": "Өзгөртүүнү сактоо"
             },
