@@ -47,9 +47,6 @@
             "lastEdit": "Utolsó módosítás",
             "editDescription": {
                 "closeIconTooltip": "Bezárás mentés nélkül",
-                "input": {
-                    "label": "Maximum 4096 karakter engedélyezett"
-                },
                 "saveIconTooltip": "Módosítások mentése"
             },
             "content": "Tartalom",
