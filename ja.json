@@ -375,7 +375,6 @@
                 }
             },
             "copyShortcut": "アイテムのショートカットをコピーする",
-            "missingDescription": "編集ボタンをクリックして説明を追加します",
             "owner": "所有者",
             "collaboratorsTooltip": "共同作業者のリストを見る",
             "sendMailTo": "次の宛先にメールを送信します: {{email}}"
