@@ -42,9 +42,6 @@
             "description": "Mô tả",
             "editDescription": {
                 "closeIconTooltip": "Đóng và không lưu",
-                "input": {
-                    "label": "Độ dài tối đa được phép là 4096 ký tự"
-                },
                 "saveIconTooltip": "Lưu chỉnh sửa"
             },
             "createdBy": "Được tạo bởi",
