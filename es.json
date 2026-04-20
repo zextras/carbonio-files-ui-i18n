@@ -400,9 +400,6 @@
             "content": "Contenido",
             "lastEdit": "Última edición",
             "showPath": "Mostrar ruta completa",
-            "editDescription": {
-                "closeIconTooltip": "Cerrar sin guardar"
-            },
             "copyShortcut": "copiar enlace",
             "owner": "Propietario",
             "sendMailTo": "Enviar por correo a: {{email}}",
