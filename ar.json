@@ -209,9 +209,6 @@
             "description": "الوصف",
             "editDescription": {
                 "closeIconTooltip": "إغلاق بدون حفظ",
-                "input": {
-                    "label": "الحد الأقصى المسموح به هو 4096 حرفًا"
-                },
                 "saveIconTooltip": "حفظ التعديلات"
             },
             "lastEdit": "التعديل الأخير",
