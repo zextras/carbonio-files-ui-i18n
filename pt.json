@@ -458,7 +458,6 @@
                     "label": "O tamanho máximo permitido é de 4096 caracteres"
                 }
             },
-            "missingDescription": "Clique no lápis para adicionar uma descrição",
             "copyShortcut": "copiar link para o item",
             "owner": "Proprietário",
             "sendMailTo": "Enviar por e-mail para: {{email}}",
