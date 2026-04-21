@@ -413,7 +413,12 @@
             "copyShortcut": "आइटम का शॉर्टकट कॉपी करें",
             "owner": "ओनर",
             "collaboratorsTooltip": "साथ में काम करने वालों की लिस्ट देखें",
-            "sendMailTo": "यहाँ ई-मेल भेजें: {{email}}"
+            "sendMailTo": "यहाँ ई-मेल भेजें: {{email}}",
+            "editDescription": {
+                "characterLimit": "अधिकतम अनुमत लंबाई {{max}} अक्षर है",
+                "cancel": "रद्द करें",
+                "save": "सहेजें"
+            }
         },
         "list": {
             "you": "आप"
