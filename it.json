@@ -471,7 +471,12 @@
             "copyShortcut": "Copia scorciatoia dell'elemento",
             "owner": "Proprietario",
             "collaboratorsTooltip": "Vedi la lista dei collaboratori",
-            "sendMailTo": "Invia e-mail a: {{email}}"
+            "sendMailTo": "Invia e-mail a: {{email}}",
+            "editDescription": {
+                "characterLimit": "La lunghezza massima consentita è {{max}} caratteri",
+                "cancel": "Annulla",
+                "save": "Salva"
+            }
         },
         "uploads": {
             "message": "Qui sono elencati tutti gli elementi in caricamento, puoi gestirli direttamente da qui.",
