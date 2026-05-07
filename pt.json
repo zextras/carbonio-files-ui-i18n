@@ -755,7 +755,8 @@
             }
         },
         "uploadFailure": {
-            "message": "Aqui você pode encontrar todos os itens que estão sendo carregados no momento, se um arquivo falhou ao carregar, clique nele para ver mais detalhes."
+            "message": "Aqui você pode encontrar todos os itens que estão sendo carregados no momento, se um arquivo falhou ao carregar, clique nele para ver mais detalhes.",
+            "title": "Sugestões de upload"
         }
     },
     "docs": {
