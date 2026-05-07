@@ -511,10 +511,14 @@
             },
             "noSharePermissionHeader": "Você não pode compartilhar este item.",
             "tooltip": {
-                "no_edit_permission": "Você não tem as permissões necessárias para editar a colaboração"
+                "no_edit_permission": "Você não tem as permissões necessárias para editar a colaboração",
+                "no_remove_permission": "Você não tem as permissões necessárias para remover a colaboração"
             },
             "allCollaborators": "Todos os colaboradores",
-            "selected": "{{count}} selecionados"
+            "selected": "{{count}} selecionados",
+            "editor": {
+                "tooltip": "Você não tem as permissões necessárias para atribuir direitos de editor"
+            }
         },
         "tabs": {
             "activities": "Atividades",
@@ -745,8 +749,13 @@
         ],
         "upload": {
             "error": {
-                "aborted": "O upload foi interrompido ou bloqueado. Tente novamente ou verifique sua conexão."
+                "aborted": "O upload foi interrompido ou bloqueado. Tente novamente ou verifique sua conexão.",
+                "fileSizeExceeded": "O arquivo não pôde ser carregado porque excede o limite permitido.",
+                "maxVersionReached": "O arquivo não pôde ser carregado porque o número máximo de versões foi alcançado."
             }
+        },
+        "uploadFailure": {
+            "message": "Aqui você pode encontrar todos os itens que estão sendo carregados no momento, se um arquivo falhou ao carregar, clique nele para ver mais detalhes."
         }
     },
     "docs": {
