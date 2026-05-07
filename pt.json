@@ -96,6 +96,12 @@
                     "answer": "Tem certeza que deseja interromper a colaboração?",
                     "permissionLost": "Toda permissão de acesso já concedida a você será perdida."
                 }
+            },
+            "warning": "Esta ação não pode ser desfeita.",
+            "button": {
+                "cancel": "Não, cancelar",
+                "confirmAll": "Sim, remover tudo",
+                "confirmRemove": "Sim, remover"
             }
         },
         "removeLink": {
@@ -113,7 +119,12 @@
             "header": "Revogar {{linkName}} de {{nodeName}}"
         },
         "decreaseYourOwnSharePermissions": {
-            "header": "Rebaixar as permissões atuais"
+            "header": "Rebaixar as permissões atuais",
+            "body1": "Tem certeza de que deseja reduzir suas permissões neste item? A ação é permanente e você não poderá restaurar as permissões de compartilhamento anteriores por conta própria.",
+            "body2": "Você sempre pode entrar em contato com o proprietário do item compartilhado se precisar restaurar a permissão anterior.",
+            "button": {
+                "confirmDecrease": "Sim, confirmar"
+            }
         },
         "close": {
             "tooltip": "Fechar"
@@ -476,11 +487,13 @@
                 "tooltip": {
                     "edit": {
                         "collaborator": "Editar permissões",
-                        "you": "Modificar minhas permissões"
+                        "you": "Modificar minhas permissões",
+                        "bulk": "Editar colaboração para todos"
                     },
                     "remove": {
                         "collaborator": "Remover compartilhamento",
-                        "yourself": "Remover meu acesso ao ítem compartilhado"
+                        "yourself": "Remover meu acesso ao ítem compartilhado",
+                        "bulk": "Remover colaboração para todos"
                     }
                 }
             },
@@ -496,7 +509,12 @@
                 "note": "Nota:",
                 "button": "Compartilhar"
             },
-            "noSharePermissionHeader": "Você não pode compartilhar este item."
+            "noSharePermissionHeader": "Você não pode compartilhar este item.",
+            "tooltip": {
+                "no_edit_permission": "Você não tem as permissões necessárias para editar a colaboração"
+            },
+            "allCollaborators": "Todos os colaboradores",
+            "selected": "{{count}} selecionados"
         },
         "tabs": {
             "activities": "Atividades",
@@ -724,7 +742,12 @@
             {
                 "title": "Selecione um item para compartilhar ou mover para outra pasta."
             }
-        ]
+        ],
+        "upload": {
+            "error": {
+                "aborted": "O upload foi interrompido ou bloqueado. Tente novamente ou verifique sua conexão."
+            }
+        }
     },
     "docs": {
         "create": {
