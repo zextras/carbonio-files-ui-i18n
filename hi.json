@@ -915,7 +915,7 @@
             "noExpirationDate": "कोई एक्सपायर तारीख नहीं है",
             "urlChip": {
                 "tooltip": {
-                    "copy": "पब्लिक लिंक कॉपी करें",
+                    "copy": "कॉपी {{linkName}}",
                     "expired": "यह लिंक एक्सपायर हो गई है"
                 }
             }
@@ -1123,7 +1123,7 @@
         }
     },
     "quota": {
-        "limitedSpace": "{{used}} का {{limit}} उपयोग किया गया",
+        "limitedSpace": "{{used}} में से {{limit}} उपयोग किया गया",
         "overQuota": {
             "tooltip": {
                 "label": "आप उपलब्ध अधिकतम कोटा तक पहुँच चुके हैं।"
