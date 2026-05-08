@@ -176,6 +176,14 @@
             },
             "header": "Revogar o link de {{nodeName}}",
             "body": "Ao revogar este link, você está bloqueando a possibilidade de criar novos compartilhamentos com ele. Todos que já usaram o link de colaboração manterão o acesso ao item."
+        },
+        "cancel": {
+            "label": "Cancelar"
+        },
+        "transferOwnership": {
+            "title_one": "Transferir a propriedade de {{node.name}}",
+            "title_many": "Transferir a propriedade de {{count}} itens",
+            "title_other": "Transferir a propriedade de {{count}} itens"
         }
     },
     "node": {
@@ -961,6 +969,47 @@
         },
         "video": {
             "errorLabel": "Este vídeo não pode ser reproduzido. Tente reproduzi-lo usando outro navegador"
+        },
+        "print": {
+            "tooltip": "Imprimir"
+        },
+        "document": {
+            "loadingLabel": "Carregando pré-visualização do documento…",
+            "errorLabel": "Não foi possível carregar a pré-visualização do documento."
+        },
+        "page": {
+            "label": "Página"
+        },
+        "fileSizeExceeded": {
+            "download": "BAIXAR ARQUIVO",
+            "openTab": "ABRIR EM UMA ABA SEPARADA",
+            "note": "Por favor, faça o download ou abra em uma nova aba.",
+            "title": "Este item não pode ser exibido",
+            "content": "O tamanho do arquivo excede o limite permitido e não pode ser exibido"
+        },
+        "previous": {
+            "tooltip": "Anterior"
+        },
+        "next": {
+            "tooltip": "Próximo"
+        },
+        "zoomOut": {
+            "tooltip": "Diminuir o zoom"
+        },
+        "resetZoom": {
+            "tooltip": "Redefinir zoom"
+        },
+        "fitWidth": {
+            "label": "Ajustar à largura"
+        },
+        "maximumZoomReached": {
+            "tooltip": "Nível máximo de zoom atingido"
+        },
+        "minimumZoomReached": {
+            "tooltip": "Nível mínimo de zoom atingido"
+        },
+        "zoomIn": {
+            "tooltip": "Ampliar"
         }
     },
     "label": {
