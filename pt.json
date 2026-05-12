@@ -102,6 +102,11 @@
                 "cancel": "Não, cancelar",
                 "confirmAll": "Sim, remover tudo",
                 "confirmRemove": "Sim, remover"
+            },
+            "bulk": {
+                "body": {
+                    "multiple": "Você está prestes a remover {{count}} colaborador(es) deste arquivo. Após esta ação, essas pessoas não poderão mais visualizá-lo ou editá-lo."
+                }
             }
         },
         "removeLink": {
