@@ -301,19 +301,19 @@
         },
         "download": {
             "start": "आपका डाऊनलोड जल्दी ही शुरू होगा",
-            "error": "डाउनलोड आकार {{limit}} सीमा से अधिक है। कृपया डाउनलोड करने के लिए आइटम कम करें।",
-            "sizeExceedsError": "डाउनलोड आकार अधिकतम सीमा से अधिक है। कृपया डाउनलोड करने के लिए आइटम कम करें"
+            "error": "डाउनलोड आकार {{limit}} सीमा से अधिक है। कृपया डाउनलोड करने वाले आइटम कम करें।",
+            "sizeExceedsError": "डाउनलोड आकार अधिकतम सीमा से अधिक है। कृपया डाउनलोड करने के लिए आइटम कम करें।"
         },
         "publicLink": {
             "actionLabel": {
                 "copyLink": "लिंक कॉपी करें"
             },
             "linkUpdated": {
-                "label": "पब्लिक लिंक अपडेट हो गई"
+                "label": "{{linkName}} अपडेट किया गया"
             },
             "copyLink": "पब्लिक लिंक कॉपी हो गई",
             "newPublicLinkGenerated": {
-                "label": "नई पब्लिक लिंक बन गई"
+                "label": "नया {{linkName}} उत्पन्न किया गया"
             }
         },
         "decreaseYourOwnShare": {
@@ -831,7 +831,7 @@
             "completed": "पूरे किए अपलोड साफ करें"
         },
         "destination": {
-            "home": "Files होम में अपलोड हुआ"
+            "home": "Files' Home में अपलोड शुरू हुआ"
         },
         "error": {
             "moreInfo": {
@@ -943,7 +943,7 @@
         },
         "folderLink": {
             "addLink": {
-                "description": "कोई भी जिसके पास यह लिंक है, इस फ़ोल्डर की सामग्री देख और डाउनलोड कर सकता है।"
+                "description": "इस लिंक वाले कोई भी इस फ़ोल्डर की सामग्री देख और डाउनलोड कर सकता है।"
             },
             "title_one": "सार्वजनिक एक्सेस लिंक",
             "title_other": "सार्वजनिक एक्सेस लिंक"
@@ -1024,13 +1024,13 @@
             "tooltip": "ज़ूम रीसेट करें"
         },
         "fitWidth": {
-            "label": "चौड़ाई के अनुसार फिट करें"
+            "label": "चौड़ाई के अनुसार फिट"
         },
         "maximumZoomReached": {
-            "tooltip": "अधिकतम ज़ूम स्तर प्राप्त किया गया"
+            "tooltip": "अधिकतम ज़ूम स्तर पहुँचा"
         },
         "minimumZoomReached": {
-            "tooltip": "न्यूनतम जूम स्तर प्राप्त किया गया"
+            "tooltip": "न्यूनतम ज़ूम स्तर तक पहुँच गया"
         },
         "zoomIn": {
             "tooltip": "बड़ा करें"
@@ -1162,15 +1162,15 @@
             "message": "<bold>{{email}}</bold> ने <bold>{{node}}</bold> को <bold>{{folder}}</bold> में जोड़ा"
         },
         "newShare": {
-            "message": "<bold>{{email}}</bold> ने आपके साथ <bold>{{node}}</bold> साझा किया"
+            "message": "<bold>{{email}}</bold> ने <bold>{{node}}</bold> आपके साथ साझा किया"
         },
         "removedNode": {
-            "message": "<bold>{{email}}</bold> ने <bold>{{node}}</bold> को <bold>{{folder}}</bold> से हटा दिया"
+            "message": "<bold>{{email}}</bold> ने <bold>{{node}}</bold> को <bold>{{folder}}</bold> से हटाया"
         },
         "title": "सूचनाएँ",
         "refresh": "अपडेट के लिए चेक करें",
         "transferredOwnership": {
-            "message": "<bold>{{email}}</bold> ने आइटम्स का मालिकाना हक आपको हस्तांतरित कर दिया है। आप उन्हें <bold>{{folder}}</bold> फोल्डर में पाएंगे।"
+            "message": "<bold>{{email}}</bold> ने आपके लिए वस्तुओं का स्वामित्व स्थानांतरित किया। आप इन्हें फ़ोल्डर <bold>{{folder}}</bold> में पाएँगे।"
         }
     },
     "transferOwnership": {
@@ -1196,7 +1196,7 @@
     },
     "notification": {
         "succeededRecording": {
-            "message": "<bold>{{node}}</bold> <bold>{{folder}}</bold> में सेव हुआ"
+            "message": "<bold>{{node}}</bold> को <bold>{{folder}}</bold> में सहेजा गया"
         }
     }
 }
