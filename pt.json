@@ -105,7 +105,8 @@
             },
             "bulk": {
                 "body": {
-                    "multiple": "Você está prestes a remover {{count}} colaborador(es) deste arquivo. Após esta ação, essas pessoas não poderão mais visualizá-lo ou editá-lo."
+                    "multiple": "Você está prestes a remover {{count}} colaborador(es) deste arquivo. Após esta ação, essas pessoas não poderão mais visualizá-lo ou editá-lo.",
+                    "all": "Você está prestes a remover todos os colaboradores deste arquivo. Após esta ação, somente você terá acesso ao arquivo e as pessoas com quem ele foi compartilhado não poderão mais visualizá-lo ou editá-lo."
                 }
             }
         },
@@ -263,7 +264,9 @@
             "success": "Compartilhamento revogado"
         },
         "download": {
-            "start": "Seu download começará em breve"
+            "start": "Seu download começará em breve",
+            "error": "O tamanho do download excede o limite de {{limit}}. Reduza a quantidade de itens para baixar",
+            "sizeExceedsError": "O tamanho do download excede o limite máximo. Por favor, reduza o número de itens a serem baixados"
         },
         "moveNodes": {
             "error": "Algo deu errado, tente novamente",
@@ -351,6 +354,14 @@
         },
         "accessCode": {
             "regenerate": "Novo código de acesso gerado"
+        },
+        "transferOwnership": {
+            "error": {
+                "overQuota": "A transferência de propriedade falhou.",
+                "overQuota2": "O novo proprietário não tem armazenamento disponível suficiente."
+            },
+            "success2": "Os itens agora estão na sua pasta \"Compartilhado comigo\".",
+            "success1": "Propriedade transferida com sucesso."
         }
     },
     "actions": {
