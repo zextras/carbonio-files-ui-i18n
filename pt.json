@@ -108,6 +108,12 @@
                     "multiple": "Você está prestes a remover {{count}} colaborador(es) deste arquivo. Após esta ação, essas pessoas não poderão mais visualizá-lo ou editá-lo.",
                     "all": "Você está prestes a remover todos os colaboradores deste arquivo. Após esta ação, somente você terá acesso ao arquivo e as pessoas com quem ele foi compartilhado não poderão mais visualizá-lo ou editá-lo."
                 }
+            },
+            "title": {
+                "yourShare": "Remover seu compartilhamento",
+                "single": "Remover colaborador",
+                "all": "Remover todos os colaboradores",
+                "multiple": "Remover colaboradores"
             }
         },
         "removeLink": {
@@ -361,7 +367,8 @@
                 "overQuota2": "O novo proprietário não tem armazenamento disponível suficiente."
             },
             "success2": "Os itens agora estão na sua pasta \"Compartilhado comigo\".",
-            "success1": "Propriedade transferida com sucesso."
+            "success1": "Propriedade transferida com sucesso.",
+            "actionLabel": "OK"
         }
     },
     "actions": {
@@ -488,7 +495,12 @@
             "copyShortcut": "copiar link para o item",
             "owner": "Proprietário",
             "sendMailTo": "Enviar por e-mail para: {{email}}",
-            "collaboratorsTooltip": "Ver lista de colaboradores"
+            "collaboratorsTooltip": "Ver lista de colaboradores",
+            "editDescription": {
+                "characterLimit": "O comprimento máximo permitido é de {{max}} caracteres",
+                "cancel": "Cancelar",
+                "save": "Salvar"
+            }
         },
         "list": {
             "you": "Você"
@@ -824,7 +836,7 @@
             }
         },
         "destination": {
-            "home": "Carregamento feito no diretório Início do Files"
+            "home": "O carregamento foi iniciado na página Inicial do Files"
         },
         "error": {
             "moreInfo": {
@@ -1146,6 +1158,52 @@
         "iconTooltip": {
             "ListLayout": "Layout de lista",
             "GridLayout": "Layout de grade"
+        }
+    },
+    "notifications": {
+        "empty": {
+            "title": "Nenhuma notificação",
+            "message": "Você não tem nenhuma notificação no momento"
+        },
+        "addedNode": {
+            "message": "<bold>{{email}}</bold> adicionou <bold>{{node}}</bold> em <bold>{{folder}}</bold>"
+        },
+        "newShare": {
+            "message": "<bold>{{email}}</bold> compartilhou <bold>{{node}}</bold> com você"
+        },
+        "removedNode": {
+            "message": "<bold>{{email}}</bold> removeu <bold>{{node}}</bold> de <bold>{{folder}}</bold>"
+        },
+        "title": "Notificações",
+        "refresh": "Verificar atualizações",
+        "transferredOwnership": {
+            "message": "<bold>{{email}}</bold> transferiu a propriedade dos itens para você. Você os encontrará na pasta <bold>{{folder}}</bold>"
+        }
+    },
+    "transferOwnership": {
+        "modal": {
+            "available": "O novo proprietário tem armazenamento disponível suficiente.",
+            "description": "Selecione um novo proprietário para os itens selecionados.",
+            "note1": "Você permanecerá como <bold>colaborador com permissões de edição e compartilhamento.</bold>",
+            "note4": "Observação:",
+            "note": "Após a transferência:",
+            "note5": "Se o novo proprietário exceder sua cota de armazenamento, a transferência falhará.",
+            "note2": "Todas as configurações de compartilhamento serão mantidas.",
+            "note3": "O novo proprietário <bold>será notificado.</bold>",
+            "note6": "Esta ação é permanente e não pode ser desfeita.",
+            "unavailable": "O novo proprietário não tem espaço de armazenamento suficiente disponível.",
+            "placeholder": "Selecione um novo proprietário",
+            "loadingTooltip": "Verificando a cota de armazenamento do novo proprietário...",
+            "unavailableTooltip": "O novo proprietário não tem espaço de armazenamento suficiente disponível.",
+            "button": {
+                "confirm": "Transferir"
+            },
+            "loading": "Verificando a cota de armazenamento do novo proprietário..."
+        }
+    },
+    "notification": {
+        "succeededRecording": {
+            "message": "<bold>{{node}}</bold> salvo em <bold>{{folder}}</bold>"
         }
     }
 }
