@@ -1011,7 +1011,7 @@
         "fileSizeExceeded": {
             "download": "BAIXAR ARQUIVO",
             "openTab": "ABRIR EM UMA ABA SEPARADA",
-            "note": "Por favor, faça o download ou abra em uma nova aba.",
+            "note": "Por favor, faça o download ou abra em uma nova aba",
             "title": "Este item não pode ser exibido",
             "content": "O tamanho do arquivo excede o limite permitido e não pode ser exibido"
         },
