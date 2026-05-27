@@ -495,7 +495,12 @@
             "copyShortcut": "copier le raccourci de l'élément",
             "owner": "Propriétaire",
             "collaboratorsTooltip": "Voir la liste des collaborateurs",
-            "sendMailTo": "Envoyer un email à : {{email}}"
+            "sendMailTo": "Envoyer un email à : {{email}}",
+            "editDescription": {
+                "characterLimit": "Maximum {{max}} caractères autorisés",
+                "cancel": "ANNULER",
+                "save": "SAUVEGARDER"
+            }
         },
         "list": {
             "you": "Vous"
