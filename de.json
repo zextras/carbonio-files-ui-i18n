@@ -315,7 +315,21 @@
         "sendViaMail": "Per E-Mail versenden",
         "edit": "Bearbeiten",
         "preview": "Vorschau",
-        "manageShares": "Teilen verwalten"
+        "manageShares": "Teilen verwalten",
+        "transferOwnership": "Besitzrechte übertragen",
+        "download": {
+            "multiple": {
+                "modal": {
+                    "button": {
+                        "label": "Alle herunterladen"
+                    }
+                },
+                "button": {
+                    "tooltip": "Alle herunterladen"
+                }
+            }
+        },
+        "viewContents": "Inhalte ansehen"
     },
     "displayer": {
         "details": {
@@ -652,7 +666,7 @@
                     "label": "Geteilt",
                     "description": "Filtern Sie die Ergebnisse nach Elementen, die außer Ihnen noch mindestens einen weiteren Mitarbeiter enthalten"
                 },
-                "title": "Fortgeschrittene filter",
+                "title": "erweiterte Filter",
                 "flagged": {
                     "label": "Markiert",
                     "description": "Filtern Sie die Ergebnisse nach von Ihnen markierten Elementen"
@@ -877,10 +891,30 @@
     },
     "carbonio-public-folder-ui": {
         "invalidLink": {
-            "title": "Öffentlicher Zugriffslink nicht verfügbar."
+            "title": "Öffentlicher Zugriffslink nicht verfügbar.",
+            "description": {
+                "line1": "Dieser Link wurde entfernt oder ist ungültig.",
+                "line2": "Für weitere Informationen wenden Sie sich bitte an die Person, die dieses Element mit Ihnen geteilt hat."
+            }
         },
         "listHeader": {
-            "extension": "Erweiterung"
+            "extension": "Dateiendung",
+            "lastModified": "Zuletzt bearbeitet",
+            "name": "Name"
+        },
+        "emptyFolder": "Keine Elemente in diesem Ordner.",
+        "accessCode": {
+            "modal": {
+                "title": "Der Link ist durch einen Zugangscode geschützt",
+                "description": "Bitte geben Sie den Zugangscode ein, um fortzufahren",
+                "wrongAccessCode": "Falscher Zugangscode, versuchen Sie es erneut"
+            }
+        },
+        "fileDownload": {
+            "modal": {
+                "confirmLabel2": "Erneut herunterladen",
+                "description": "Zugangscode korrekt. Sie können die Datei jetzt herunterladen."
+            }
         }
     }
 }
