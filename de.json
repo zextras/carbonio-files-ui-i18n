@@ -874,5 +874,13 @@
             }
         },
         "description": "Interne Benutzer werden die Berechtigungen durch Öffnen des Links erhalten. Sie können die vergebenen Berechtigungen jederzeit ändern."
+    },
+    "carbonio-public-folder-ui": {
+        "invalidLink": {
+            "title": "Öffentlicher Zugriffslink nicht verfügbar."
+        },
+        "listHeader": {
+            "extension": "Erweiterung"
+        }
     }
 }
