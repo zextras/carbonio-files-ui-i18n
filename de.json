@@ -329,7 +329,8 @@
                 }
             }
         },
-        "viewContents": "Inhalte ansehen"
+        "viewContents": "Inhalte ansehen",
+        "downloadNode": "Download"
     },
     "displayer": {
         "details": {
@@ -900,20 +901,25 @@
         "listHeader": {
             "extension": "Dateiendung",
             "lastModified": "Zuletzt bearbeitet",
-            "name": "Name"
+            "name": "Name",
+            "size": "Größe"
         },
         "emptyFolder": "Keine Elemente in diesem Ordner.",
         "accessCode": {
             "modal": {
                 "title": "Der Link ist durch einen Zugangscode geschützt",
                 "description": "Bitte geben Sie den Zugangscode ein, um fortzufahren",
-                "wrongAccessCode": "Falscher Zugangscode, versuchen Sie es erneut"
+                "wrongAccessCode": "Falscher Zugangscode, versuchen Sie es erneut",
+                "button": {
+                    "confirm": "Fertig"
+                }
             }
         },
         "fileDownload": {
             "modal": {
                 "confirmLabel2": "Erneut herunterladen",
-                "description": "Zugangscode korrekt. Sie können die Datei jetzt herunterladen."
+                "description": "Zugangscode korrekt. Sie können die Datei jetzt herunterladen.",
+                "confirmLabel1": "Herunterladen"
             }
         }
     }
