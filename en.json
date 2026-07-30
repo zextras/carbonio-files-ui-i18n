@@ -1079,6 +1079,13 @@
             "success2": "The items are now in your \"Shared with me\" folder.",
             "success1": "Ownership transferred successfully.",
             "actionLabel": "OK"
+        },
+        "sendViaMail": {
+            "error": {
+                "fileSizeExceeded": {
+                    "actionLabel": "Ok"
+                }
+            }
         }
     },
     "sortingDropdown": {
