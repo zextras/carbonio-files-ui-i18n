@@ -1,9 +1,1209 @@
 {
     "actions": {
-        "copy": "Αντιγραφή",
-        "deletePermanently": "Διαγραφή μόνιμα",
-        "edit": "Επεξεργασία",
-        "flag": "Σημαία",
-        "goToFolder": "Πήγαινε στο φάκελο προορισμού"
+        "copy": "[GR] Copy",
+        "deletePermanently": "[GR] Delete permanently",
+        "edit": "[GR] Edit",
+        "flag": "[GR] Flag",
+        "goToFolder": "[GR] Go to destination folder",
+        "manageShares": "[GR] Manage shares",
+        "markForDeletion": "[GR] Mark for deletion",
+        "move": "[GR] Move",
+        "moveToTrash": "[GR] Delete",
+        "openWithDocs": "[GR] Open document",
+        "preview": "[GR] Preview",
+        "removeUpload": "[GR] Remove upload",
+        "rename": "[GR] Rename",
+        "restore": "[GR] Restore",
+        "retryUpload": "[GR] Retry upload",
+        "sendViaMail": "[GR] Send via e-mail",
+        "unflag": "[GR] Unflag",
+        "transferOwnership": "[GR] Transfer ownership",
+        "download": {
+            "multiple": {
+                "modal": {
+                    "button": {
+                        "label": "[GR] Download all"
+                    }
+                },
+                "button": {
+                    "tooltip": "[GR] Download all"
+                }
+            }
+        },
+        "downloadNode": "[GR] Download",
+        "viewContents": "[GR] View contents"
+    },
+    "preview": {
+        "actions": {
+            "tooltip": {
+                "download": "[GR] Download",
+                "edit": "[GR] Edit",
+                "manageShares": "[GR] Manage shares"
+            }
+        },
+        "close": {
+            "tooltip": "[GR] Close"
+        },
+        "button": {
+            "refresh": "[GR] Refresh preview"
+        },
+        "loading": {
+            "error": "[GR] An error occurred while loading the preview. Try again.",
+            "file": "[GR] Loading item preview, please wait…",
+            "retrying": "[GR] Trying to load the preview…"
+        },
+        "video": {
+            "errorLabel": "[GR] This video cannot be played. Try to reproduce it using another browser"
+        },
+        "print": {
+            "tooltip": "[GR] Print"
+        },
+        "document": {
+            "loadingLabel": "[GR] Loading document preview…",
+            "errorLabel": "[GR] Failed to load document preview."
+        },
+        "page": {
+            "label": "[GR] Page"
+        },
+        "fileSizeExceeded": {
+            "download": "[GR] DOWNLOAD FILE",
+            "openTab": "[GR] OPEN IN A SEPARATE TAB",
+            "note": "[GR] Please, download it or open it in a separate tab",
+            "title": "[GR] This item cannot be displayed",
+            "content": "[GR] The file size exceeds the limit allowed and cannot be displayed"
+        },
+        "previous": {
+            "tooltip": "[GR] Previous"
+        },
+        "next": {
+            "tooltip": "[GR] Next"
+        },
+        "zoomOut": {
+            "tooltip": "[GR] Zoom out"
+        },
+        "resetZoom": {
+            "tooltip": "[GR] Reset zoom"
+        },
+        "fitWidth": {
+            "label": "[GR] Fit to width"
+        },
+        "maximumZoomReached": {
+            "tooltip": "[GR] Maximum zoom level reached"
+        },
+        "minimumZoomReached": {
+            "tooltip": "[GR] Minimum zoom level reached"
+        },
+        "zoomIn": {
+            "tooltip": "[GR] Zoom in"
+        }
+    },
+    "modal": {
+        "close": {
+            "tooltip": "[GR] Close"
+        },
+        "button": {
+            "cancel": "[GR] Cancel",
+            "confirm": "[GR] Confirm"
+        },
+        "decreaseYourOwnSharePermissions": {
+            "header": "[GR] Decrease your current rights",
+            "body1": "[GR] Are you sure to decrease your rights on this item? The action is permanent and you won't be able to restore the previous share's rights by yourself.",
+            "body2": "[GR] You can always contact the shared item's owner if you need the previous permission to be restored.",
+            "button": {
+                "confirmDecrease": "[GR] Yes, confirm"
+            }
+        },
+        "deletePermanently": {
+            "body": "[GR] You will delete permanently this item/these items. You will not be able to recover this item/these items anymore. This action is irreversible.",
+            "button": {
+                "confirm": "[GR] Delete permanently"
+            },
+            "header": "[GR] This action is irreversible"
+        },
+        "deleteShare": {
+            "body": "[GR] Are you sure to remove all the access permission previously given to {{shareTarget}} ?",
+            "yourShare": {
+                "body": {
+                    "answer": "[GR] Are you sure to remove yourself from this collaboration?",
+                    "permissionLost": "[GR] All the access permissions previously given to you will be lost."
+                }
+            },
+            "warning": "[GR] This action cannot be undone.",
+            "button": {
+                "cancel": "[GR] No, cancel",
+                "confirmAll": "[GR] Yes, remove all",
+                "confirmRemove": "[GR] Yes, remove"
+            },
+            "title": {
+                "yourShare": "[GR] Remove your share",
+                "single": "[GR] Remove collaborator",
+                "all": "[GR] Remove all collaborators",
+                "multiple": "[GR] Remove collaborators"
+            },
+            "bulk": {
+                "body": {
+                    "all": "[GR] You're about to remove all collaborators from this file. After this action, only you will have access to the file and people it was shared with will no longer be able to view or edit it.",
+                    "multiple": "[GR] You're about to remove {{count}} collaborator(s) from this file. After this action, these people will no longer be able to view or edit it."
+                }
+            }
+        },
+        "moreInfo": {
+            "title": "[GR] Additional information"
+        },
+        "nodeSelection": {
+            "button": {
+                "create": "[GR] Create",
+                "newFolder": {
+                    "disabled": "[GR] You don't have the correct permissions",
+                    "label": "[GR] New folder"
+                }
+            },
+            "input": {
+                "newFolder": "[GR] New folder's name"
+            }
+        },
+        "nodesSelection": {
+            "selectedCount_one": "[GR] {{count}} selected item",
+            "selectedCount_other": "[GR] {{count}} selected items"
+        },
+        "purgeAllVersions": {
+            "body": "[GR] All versions that are not marked to be kept forever, except the current one, will be deleted. You will not be able to recover these versions.",
+            "button": {
+                "confirm": "[GR] Purge all versions"
+            },
+            "header": "[GR] Purge all versions"
+        },
+        "removeLink": {
+            "body": "[GR] This link has expired, therefore it can't be used anymore to access the item. You can remove the link from the list or you can update its expiration date and other information in order to keep using it.",
+            "button": {
+                "confirm": "[GR] Remove"
+            },
+            "header": "[GR] Remove {{nodeName}} {{linkName}}"
+        },
+        "revokeCollaborationLink": {
+            "body": "[GR] By revoking this link, you are blocking the possibility to create new shares with it. Everyone who has already used the collaboration link will keep the access to the item.",
+            "button": {
+                "confirm": "[GR] Revoke"
+            },
+            "header": "[GR] Revoke {{nodeName}} collaboration link"
+        },
+        "revokeLink": {
+            "body": "[GR] By revoking this link, you are blocking access to {{nodeName}} for anyone who tries to use the link to access the item.",
+            "button": {
+                "confirm": "[GR] Revoke"
+            },
+            "header": "[GR] Revoke {{nodeName}} {{linkName}}"
+        },
+        "roots": {
+            "filesHome": "[GR] Home",
+            "rootsList": "[GR] Files",
+            "sharedWitMe": "[GR] Shared with me",
+            "trash": {
+                "myElements": "[GR] My items",
+                "sharedWitMe": "[GR] Shared items",
+                "trash": "[GR] Trash"
+            }
+        },
+        "unsaved_changes": {
+            "body": {
+                "line1": "[GR] Are you sure you want to leave this page without saving?",
+                "line2": "[GR] All your unsaved changes will be lost."
+            },
+            "button": {
+                "leave_anyway": "[GR] Leave anyway",
+                "save_and_leave": "[GR] Save and leave"
+            },
+            "title": {
+                "cannot_saved_changes": "[GR] Some changes cannot be saved",
+                "unsaved_changes": "[GR] You have unsaved changes"
+            }
+        },
+        "cancel": {
+            "label": "[GR] Cancel"
+        },
+        "transferOwnership": {
+            "title_one": "[GR] Transfer Ownership of {{node.name}}",
+            "title_other": "[GR] Transfer Ownership of {{count}} items"
+        }
+    },
+    "breadcrumb": {
+        "expander": {
+            "hide": "[GR] Hide folder's path",
+            "show": "[GR] Show folder's path"
+        }
+    },
+    "carbonio-public-folder-ui": {
+        "emptyFolder": "[GR] There are no items in this folder.",
+        "invalidLink": {
+            "description": {
+                "line1": "[GR] This link has been removed or is not valid.",
+                "line2": "[GR] For more information, try to contact the person who shared it with you."
+            },
+            "title": "[GR] Public access link not available."
+        },
+        "listHeader": {
+            "extension": "[GR] Extension",
+            "lastModified": "[GR] Last modified",
+            "name": "[GR] Name",
+            "size": "[GR] Size"
+        },
+        "accessCode": {
+            "modal": {
+                "title": "[GR] The link is secured by an access code",
+                "description": "[GR] Please, insert the access code to proceed",
+                "button": {
+                    "confirm": "[GR] Done"
+                },
+                "wrongAccessCode": "[GR] Wrong access code, try again"
+            }
+        },
+        "fileDownload": {
+            "modal": {
+                "confirmLabel1": "[GR] Download",
+                "confirmLabel2": "[GR] Download again",
+                "description": "[GR] Access code entered correctly. Now you can download the file."
+            }
+        }
+    },
+    "collaborationLinks": {
+        "button": {
+            "generateLink": "[GR] Generate Link",
+            "revoke": "[GR] Revoke",
+            "choosePermission": "[GR] Choose permissions to generate link"
+        },
+        "description": "[GR] Internal users will receive the permissions by opening the link. You can always modify granted permissions.",
+        "link": {
+            "urlChip": {
+                "tooltip": {
+                    "copy": "[GR] Copy Collaboration link"
+                }
+            }
+        },
+        "row": {
+            "placeholder": "[GR] Create a link in order to share the item",
+            "title": {
+                "ReadAndShare": "[GR] Read and Share",
+                "writeAndShare": "[GR] Write and Share"
+            }
+        },
+        "title": "[GR] Collaboration links",
+        "permission": {
+            "readOnly": "[GR] View",
+            "readAndWrite": "[GR] Edit",
+            "optionDisabled": {
+                "tooltip": "[GR] This type of link has already been created"
+            },
+            "readWriteAndShare": "[GR] Edit and manage sharing",
+            "readAndShare": "[GR] View and manage sharing",
+            "cannotWrite": {
+                "tooltip": "[GR] You are not allowed to create this collaboration link because you don't have edit permission"
+            }
+        },
+        "maximumLinks": {
+            "tooltip": "[GR] You've reached the maximum number of links. Revoke one to create a new one."
+        }
+    },
+    "create": {
+        "options": {
+            "new": {
+                "document": "[GR] New document",
+                "folder": "[GR] New folder",
+                "libreDocument": "[GR] OpenDocument {{ext}}",
+                "msDocument": "[GR] Microsoft {{ext}}",
+                "msDocument_docx": "[GR] Microsoft Word {{ext}}",
+                "msDocument_pptx": "[GR] Microsoft PowerPoint {{ext}}",
+                "msDocument_xlsx": "[GR] Microsoft Excel {{ext}}",
+                "presentation": "[GR] New presentation",
+                "spreadsheet": "[GR] New spreadsheet",
+                "upload": "[GR] Upload"
+            }
+        }
+    },
+    "displayer": {
+        "details": {
+            "collaboratorsTooltip": "[GR] See the list of collaborators",
+            "content": "[GR] Content",
+            "copyShortcut": "[GR] copy item's shortcut",
+            "createdBy": "[GR] Created by",
+            "description": "[GR] Description",
+            "lastEdit": "[GR] Last edit",
+            "owner": "[GR] Owner",
+            "position": "[GR] Position",
+            "sendMailTo": "[GR] Send e-mail to: {{email}}",
+            "showPath": "[GR] Show path",
+            "size": "[GR] Size",
+            "editDescription": {
+                "characterLimit": "[GR] Maximum length allowed is {{max}} characters",
+                "cancel": "[GR] Cancel",
+                "save": "[GR] Save"
+            }
+        },
+        "filter": {
+            "flagged_empty": [
+                {
+                    "message": "[GR] You'll find it here whenever you'll need it.",
+                    "title": "[GR] Click the flag to mark an item."
+                },
+                {
+                    "message": "[GR] They'll be listed here.",
+                    "title": "[GR] Flag your most important items by clicking the flag."
+                }
+            ],
+            "flagged_full": [
+                {
+                    "message": "[GR] You'll find it here whenever you'll need it.",
+                    "title": "[GR] Click the flag to mark an item."
+                },
+                {
+                    "message": "[GR] They'll be listed here.",
+                    "title": "[GR] Flag your most important items by clicking the flag."
+                }
+            ],
+            "recents_empty": [
+                {
+                    "message": "[GR] You will see the most recents here.",
+                    "title": "[GR] Open, read, edit your items."
+                }
+            ],
+            "recents_full": [
+                {
+                    "message": "[GR] Click an item to select it.",
+                    "title": "[GR] View details of the latest updated items."
+                },
+                {
+                    "message": "[GR] Select an item to proceed.",
+                    "title": "[GR] Review and edit the latest updated items."
+                },
+                {
+                    "message": "[GR] Click an item to select it.",
+                    "title": "[GR] Quickly review the latest updated items."
+                },
+                {
+                    "message": "[GR] Click an item to select it.",
+                    "title": "[GR] Keep up to date on the latest updated items."
+                }
+            ],
+            "sharedByMe_empty": [
+                {
+                    "message": "[GR] Select an item to proceed.",
+                    "title": "[GR] Review and edit the items you've shared with your contacts."
+                },
+                {
+                    "message": "[GR] Click an item to select it.",
+                    "title": "[GR] View details of folders you've shared."
+                },
+                {
+                    "message": "[GR] Click an item to select it.",
+                    "title": "[GR] Find here all the items shared with your contacts."
+                }
+            ],
+            "sharedByMe_full": [
+                {
+                    "message": "[GR] Select an item to proceed.",
+                    "title": "[GR] Review and edit the items you've shared with your contacts."
+                },
+                {
+                    "message": "[GR] Click an item to select it.",
+                    "title": "[GR] View details of folders you've shared."
+                }
+            ],
+            "sharedWithMe_empty": [
+                {
+                    "message": "[GR] Click the \"NEW\" button to create a new item and share it with your contacts.",
+                    "title": "[GR] There are no items shared with you yet."
+                },
+                {
+                    "message": "[GR] Let other users know that you're ready to collaborate with them.",
+                    "title": "[GR] Click the \"NEW\" button and create a new e-mail."
+                }
+            ],
+            "sharedWithMe_full": [
+                {
+                    "message": "[GR] Click an item to select it.",
+                    "title": "[GR] Start editing and sharing your items."
+                },
+                {
+                    "message": "[GR] Click an item to select it.",
+                    "title": "[GR] View your folders' details and share them with your contacts."
+                },
+                {
+                    "title": "[GR] Select an item and start working on it with other users."
+                }
+            ],
+            "trash_empty": [
+                {
+                    "message": "[GR] Click on the trash icon to delete an item.",
+                    "title": "[GR] Move to trash everything you don't need."
+                },
+                {
+                    "message": "[GR] Click the trash icon to delete an item.",
+                    "title": "[GR] The trash is empty."
+                },
+                {
+                    "title": "[GR] Keep your workspace clean: delete all items you don't need anymore."
+                }
+            ],
+            "trash_full": [
+                {
+                    "title": "[GR] Select and restore your items that are now in the trash."
+                },
+                {
+                    "message": "[GR] Select an item to restore it or delete it permanently.",
+                    "title": "[GR] Nothing is lost!"
+                },
+                {
+                    "message": "[GR] Or, when possible, select it and restore it in its original folder.",
+                    "title": "[GR] Select an item to delete it permanently."
+                }
+            ]
+        },
+        "folder_empty": [
+            {
+                "title": "[GR] Click the \"NEW\" button to create a new item and share it with your contacts."
+            },
+            {
+                "message": "[GR] Create an item by clicking the \"NEW\" button.",
+                "title": "[GR] Start editing and sharing your works."
+            },
+            {
+                "message": "[GR] You'll be able to edit, flag and share it.",
+                "title": "[GR] Click the \"NEW\" button to create a new item."
+            }
+        ],
+        "folder_full": [
+            {
+                "message": "[GR] Click an item to select it.",
+                "title": "[GR] Start editing and sharing your items."
+            },
+            {
+                "message": "[GR] Click an item to select it.",
+                "title": "[GR] View your folders' details and share them with your contacts."
+            },
+            {
+                "title": "[GR] Select a folder to edit or rename it."
+            },
+            {
+                "message": "[GR] Select the item and then go to the \"Shares\" tab.",
+                "title": "[GR] Provide your contacts with editing rights to let them edit an item."
+            },
+            {
+                "title": "[GR] Select an item to share or move it to another folder."
+            }
+        ],
+        "generic": {
+            "message": "[GR] Click an item to select it.",
+            "title": "[GR] View files and folders, share them with your contacts."
+        },
+        "list": {
+            "you": "[GR] You"
+        },
+        "search": {
+            "title": "[GR] Type some keywords to start a search."
+        },
+        "search_empty": [
+            {
+                "message": "[GR] Or select “Advanced filters” to refine your search.",
+                "title": "[GR] Start another search."
+            },
+            {
+                "message": "[GR] Don’t give up, keep searching!",
+                "title": "[GR] No results."
+            },
+            {
+                "message": "[GR] Try to start another search.",
+                "title": "[GR] We’re sorry but there are no results for your search."
+            },
+            {
+                "message": "[GR] Check the spelling and the filters' options or try with another keyword.",
+                "title": "[GR] There are no results for your search."
+            }
+        ],
+        "search_full": [
+            {
+                "title": "[GR] Select one or more results to perform actions or display details."
+            }
+        ],
+        "share": {
+            "addShare": {
+                "button": "[GR] Share",
+                "checkbox": {
+                    "label": "[GR] Add a custom message to mail notification"
+                },
+                "input": {
+                    "label": "[GR] Add a custom message to this notification",
+                    "placeholder": "[GR] Add new people or groups"
+                },
+                "note": "[GR] Note:",
+                "noteDescription": "[GR] The standard message displays your name, the name of the shared item, permissions granted to the recipients and sign in information."
+            },
+            "chip": {
+                "owner": "[GR] Owner",
+                "popover": {
+                    "role": {
+                        "editor": "[GR] Editor",
+                        "editorDescription": "[GR] It will be able to view and edit the item",
+                        "viewer": "[GR] Viewer",
+                        "viewerDescription": "[GR] It will only be able to view or download the item"
+                    },
+                    "save": "[GR] Save",
+                    "sharingAllowed": "[GR] Sharing allowed",
+                    "sharingAllowedDescription": "[GR] It will be able to manage shares of the item"
+                },
+                "tooltip": {
+                    "edit": {
+                        "collaborator": "[GR] Edit collaboration",
+                        "you": "[GR] Edit your collaboration",
+                        "bulk": "[GR] Edit collaboration for all"
+                    },
+                    "remove": {
+                        "collaborator": "[GR] Remove collaboration",
+                        "yourself": "[GR] Remove your collaboration",
+                        "bulk": "[GR] Remove collaboration for all"
+                    }
+                },
+                "you": "[GR] You"
+            },
+            "noSharePermissionHeader": "[GR] You are not allowed to share this item.",
+            "editor": {
+                "tooltip": "[GR] You don't have the necessary permissions to assign editor rights"
+            },
+            "tooltip": {
+                "no_edit_permission": "[GR] You don’t have the necessary permissions to edit collaboration",
+                "no_remove_permission": "[GR] You don’t have the necessary permissions to remove collaboration"
+            },
+            "allCollaborators": "[GR] All Collaborators",
+            "selected": "[GR] {{count}} selected"
+        },
+        "tabs": {
+            "activities": "[GR] Activities",
+            "details": "[GR] Details",
+            "sharing": "[GR] Sharing",
+            "versioning": "[GR] Versioning"
+        },
+        "uploads": {
+            "message": "[GR] Here you can find all the items that are currently uploading, you can manage them from here.",
+            "title": "[GR] Upload suggestions"
+        },
+        "version": {
+            "actions": {
+                "cloneAsCurrent": "[GR] Clone as current",
+                "deleteVersion": "[GR] Delete version",
+                "downloadVersion": "[GR] Download version",
+                "keepVersion": "[GR] Keep this version forever",
+                "openDocumentVersion": "[GR] Open document version",
+                "removeKeepVersion": "[GR] Remove keep forever",
+                "tooltip": {
+                    "disabledByDeleteCurrent": "[GR] Current version cannot be deleted",
+                    "disabledByDocs": "[GR] This version cannot be opened by the online editor",
+                    "disabledByMaxKeepVersion": "[GR] You have reached the maximum number of versions to keep forever",
+                    "disabledByMaxVersion": "[GR] You have reached the maximum number of versions",
+                    "disabledByPermission": "[GR] You don't have the correct permissions",
+                    "disabledByVersionKeepForever": "[GR] Versions marked to be kept forever cannot be deleted"
+                }
+            },
+            "button": {
+                "purgeAllVersions": "[GR] Purge all versions",
+                "upload": "[GR] Upload version"
+            },
+            "mainHint": "[GR] Files saves the last {{maxVersions}} versions of your items. You can manually delete any item version or restore one as the current version. Select one or more versions that you want to keep forever.",
+            "row": {
+                "clonedIcon": {
+                    "tooltip1": "[GR] Cloned from version {{versionNumber}} ({{cloneDate}})",
+                    "tooltip2": "[GR] Cloned from version {{versionNumber}} (version deleted)"
+                },
+                "versionNumber": "[GR] Version {{versionNumber}}"
+            },
+            "rowHeaders": {
+                "currentVersion": "[GR] Current version",
+                "lastWeek": "[GR] Last 7 days",
+                "olderVersions": "[GR] Older versions"
+            }
+        },
+        "upload": {
+            "error": {
+                "aborted": "[GR] The upload was interrupted or blocked. Please try again or check your connection.",
+                "fileSizeExceeded": "[GR] The file could not be uploaded because it exceeds the allowed limit.",
+                "maxVersionReached": "[GR] The file could not be uploaded because the maximum number of versions has been reached."
+            }
+        },
+        "uploadFailure": {
+            "title": "[GR] Upload suggestions",
+            "message": "[GR] Here you can find all the items that are currently uploading. If a file failed to upload, click on it to see more details."
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "[GR] Document name",
+                            "presentation": "[GR] Presentation name",
+                            "spreadsheet": "[GR] Spreadsheet name"
+                        }
+                    }
+                },
+                "title": {
+                    "document": "[GR] Create new document",
+                    "presentation": "[GR] Create new presentation",
+                    "spreadsheet": "[GR] Create new spreadsheet"
+                }
+            }
+        }
+    },
+    "dropzone": {
+        "move": {
+            "message": {
+                "disabled": "[GR] You cannot drop your items in this area.",
+                "enabled": "[GR] Drop here your items \n to quickly move them to this folder."
+            },
+            "title": {
+                "disabled": "[GR] Drag&Drop mode.",
+                "enabled": "[GR] Drag&Drop mode."
+            }
+        }
+    },
+    "empty": {
+        "filter": {
+            "flagged": "[GR] There are no flagged items.",
+            "hint": "[GR] It looks like there's nothing here.",
+            "recents": "[GR] It looks like there are no recent items yet.",
+            "sharedByMe": "[GR] You haven't shared any item with your collaborators yet.",
+            "sharedWithMe": "[GR] There are no items shared with you yet.",
+            "trash": "[GR] The trash is empty."
+        },
+        "folder": {
+            "displayerContent": "[GR] This folder has no content.",
+            "hint": "[GR] It seems that this folder is empty.",
+            "state": "[GR] Drag a file or create a new one clicking \"NEW\"."
+        },
+        "search": {
+            "hint": "[GR] Your search didn't match any files or folders.",
+            "noResults": [
+                "[GR] No results. Keep searching!",
+                "[GR] None of your items matches your search."
+            ],
+            "notRun": "[GR] No search was carried out yet."
+        }
+    },
+    "errorCode": {
+        "code": "[GR] Something went wrong",
+        "code_ACCOUNT_NOT_FOUND": "[GR] It seems that this email is not associated to a user",
+        "code_FILE_VERSION_NOT_FOUND": "[GR] We're sorry, but this version of the item cannot be found",
+        "code_Generic": "[GR] Something went wrong",
+        "code_LINK_NOT_FOUND": "[GR] Action failed. This link no longer exists",
+        "code_MISSING_FIELD": "[GR] An internal error occurred, not all information of this item has been recovered",
+        "code_NODE_COPY_ERROR": "[GR] Sorry, copy of the item failed. Try again",
+        "code_NODE_DUPLICATED": "[GR] There is an item with the same name in this folder",
+        "code_NODE_NOT_FOUND": "[GR] It seems that this item doesn't exist, or you do not have permission to access it",
+        "code_NODE_WRITE_ERROR": "[GR] It seems that this item cannot be edited or that you do not have permission to edit it",
+        "code_SHARE_CREATION_ERROR": "[GR] We are sorry, but it is not possible to share the item with this user",
+        "code_SHARE_NOT_FOUND": "[GR] We're sorry, but this share cannot be found",
+        "code_VERSIONS_LIMIT_REACHED": "[GR] The operation cannot be completed. You have reached the maximum limit.",
+        "code_OVER_QUOTA_REACHED": "[GR] You have reached your storage limit. Delete some items to free up storage space and try again",
+        "operation_copyNodes": "[GR] Copy action failed.",
+        "operation_cloneVersion": "[GR] Clone action failed."
+    },
+    "folder": {
+        "create": {
+            "modal": {
+                "button": {
+                    "confirm": "[GR] Create"
+                },
+                "input": {
+                    "label": {
+                        "name": "[GR] Folder name"
+                    }
+                },
+                "title": "[GR] Create new folder"
+            }
+        }
+    },
+    "label": {
+        "app_name": "[GR] Files"
+    },
+    "node": {
+        "alias": {
+            "name_LOCAL_ROOT": "[GR] Home",
+            "name_SHARED_WITH_ME_ROOT": "[GR] Shared with me",
+            "name_TRASH_ROOT": "[GR] Trash"
+        },
+        "copy": {
+            "modal": {
+                "button": {
+                    "confirm": "[GR] Copy",
+                    "tooltip": {
+                        "confirm": "[GR] You can't perform this action here"
+                    }
+                },
+                "title_one": "[GR] Copy {{node.name}}",
+                "title_other": "[GR] Copy items"
+            }
+        },
+        "move": {
+            "error": {
+                "not": {
+                    "allowed": "[GR] You cannot move multiple items from a filter or a search"
+                }
+            },
+            "modal": {
+                "button": {
+                    "confirm": "[GR] Move",
+                    "tooltip": {
+                        "confirm": "[GR] You can't perform this action here"
+                    }
+                },
+                "input": {
+                    "filter": "[GR] Filter folders"
+                },
+                "subtitle": "[GR] Select a destination folder:",
+                "title_one": "[GR] Move {{node.name}}",
+                "title_other": "[GR] Move items"
+            }
+        },
+        "rename": {
+            "modal": {
+                "button": {
+                    "confirm": "[GR] Rename"
+                },
+                "input": {
+                    "label": {
+                        "name": "[GR] Item name"
+                    }
+                },
+                "title": "[GR] Rename item"
+            }
+        },
+        "type": {
+            "folder": "[GR] Folder"
+        },
+        "preview": {
+            "failed": "[GR] Failed to load image"
+        }
+    },
+    "publicLink": {
+        "addLink": {
+            "addLink": "[GR] Add Link",
+            "description": "[GR] Internal and external users that have access to the link can download the item.",
+            "generateLink": "[GR] Generate Link",
+            "limitReached": "[GR] The maximum amount of public links has been reached",
+            "undo": "[GR] Undo"
+        },
+        "datePickerInput": {
+            "description": "[GR] The link expires at the end of the chosen day"
+        },
+        "dateTimePicker": {
+            "label": "[GR] Expiration date"
+        },
+        "fileLink": {
+            "addLink": {
+                "description": "[GR] Internal and external users that have access to the link can download the item."
+            },
+            "title_one": "[GR] Public download link",
+            "title_other": "[GR] Public download links"
+        },
+        "folderLink": {
+            "addLink": {
+                "description": "[GR] Anyone with this link can view and download the content of this folder."
+            },
+            "title_one": "[GR] Public access link",
+            "title_other": "[GR] Public access links"
+        },
+        "input": {
+            "description": {
+                "error": {
+                    "maxLengthAllowed": "[GR] Maximum length allowed is 300 characters"
+                }
+            },
+            "label": "[GR] Link's description"
+        },
+        "link": {
+            "edit": "[GR] Edit",
+            "editLink": "[GR] Edit Link",
+            "expireOn": "[GR] Expires on:",
+            "expiredOn": "[GR] This link has expired on:",
+            "noExpirationDate": "[GR] Has no expiration date",
+            "remove": "[GR] Remove",
+            "revoke": "[GR] Revoke",
+            "undo": "[GR] Undo",
+            "urlChip": {
+                "tooltip": {
+                    "copy": "[GR] Copy {{linkName}}",
+                    "expired": "[GR] This link has expired"
+                }
+            }
+        },
+        "accessCode": {
+            "chip": {
+                "tooltip": "[GR] Copy access code",
+                "label": "[GR] Access code"
+            },
+            "switch": {
+                "label": "[GR] Enable access code"
+            },
+            "input": {
+                "label": "[GR] Access code"
+            },
+            "buttons": {
+                "copy": {
+                    "tooltip": "[GR] Copy access code"
+                },
+                "regenerate": {
+                    "tooltip": "[GR] Generate new access code"
+                }
+            }
+        }
+    },
+    "quota": {
+        "limitedSpace": "[GR] {{used}} of {{limit}} used",
+        "overQuota": {
+            "tooltip": {
+                "label": "[GR] You have reached the maximum quota available."
+            }
+        },
+        "refresh": {
+            "tooltip": {
+                "label": "[GR] Refresh"
+            }
+        },
+        "unlimitedSpace": "[GR] {{used}} of unlimited space"
+    },
+    "search": {
+        "advancedSearch": {
+            "button": {
+                "filters_one": "[GR] {{count}} advanced filter",
+                "filters_other": "[GR] {{count}} advanced filters"
+            },
+            "modal": {
+                "button": {
+                    "confirm": "[GR] Search",
+                    "reset": "[GR] Reset filters"
+                },
+                "flagged": {
+                    "description": "[GR] Filter the results by items that you've flagged",
+                    "label": "[GR] Flagged"
+                },
+                "folder": {
+                    "label": "[GR] Select a folder",
+                    "modal": {
+                        "cancel": "[GR] Go back",
+                        "cascade": "[GR] search also in contained folders",
+                        "confirm": "[GR] Choose folder",
+                        "subtitle": "[GR] Result will be searched only inside the selected folder",
+                        "title": "[GR] Select a folder"
+                    }
+                },
+                "itemType": {
+                    "dropdownOption": {
+                        "audio": "[GR] Audio",
+                        "document": "[GR] Document",
+                        "folder": "[GR] Folder",
+                        "image": "[GR] Image",
+                        "presentation": "[GR] Presentation",
+                        "spreadsheet": "[GR] Spreadsheet",
+                        "video": "[GR] Video"
+                    },
+                    "label": "[GR] Item type"
+                },
+                "keywords": {
+                    "label": "[GR] Keywords"
+                },
+                "owner": {
+                    "label": "[GR] Owner"
+                },
+                "shared": {
+                    "description": "[GR] Filter the results by items that contain at least one collaborator besides you",
+                    "label": "[GR] Shared"
+                },
+                "title": "[GR] Advanced filters"
+            }
+        },
+        "clear": {
+            "tooltip": {
+                "clear": "[GR] Clear search input",
+                "empty": "[GR] Search input is already clear"
+            }
+        },
+        "header": {
+            "close": "[GR] Quit the search",
+            "result": "[GR] Results that contain all the keywords:",
+            "search": "[GR] Search",
+            "start": "[GR] Start a search"
+        },
+        "resultsFor": "[GR] Results for:",
+        "search": {
+            "tooltip": {
+                "edit": "[GR] Edit your search to start a new one",
+                "empty": "[GR] Type some keywords to start a search",
+                "search": "[GR] Search"
+            }
+        },
+        "searchBar": {
+            "label": {
+                "active": "[GR] Separate your keywords by a comma, semicolon or pressing TAB",
+                "default": "[GR] Type your search"
+            }
+        }
+    },
+    "secondaryBar": {
+        "filesHome": "[GR] Home",
+        "filters": "[GR] Filters",
+        "filtersList": {
+            "flagged": "[GR] Flagged",
+            "myElements": "[GR] My items",
+            "recents": "[GR] Recents",
+            "sharedByMe": "[GR] Shared by me",
+            "sharedElements": "[GR] Shared items",
+            "sharedWithMe": "[GR] Shared with me",
+            "trash": "[GR] Trash"
+        },
+        "uploads": "[GR] Uploads"
+    },
+    "selectionMode": {
+        "header": {
+            "exit": "[GR] Exit selection mode",
+            "selectAll": "[GR] Select all",
+            "unselectAll": "[GR] Deselect all"
+        },
+        "node": {
+            "tooltip": "[GR] Activate selection mode"
+        }
+    },
+    "snackbar": {
+        "clipboard": {
+            "email": "[GR] Email address copied",
+            "itemShortcutCopied": "[GR] Item shortcut copied",
+            "accessCodeCopied": "[GR] Access code copied"
+        },
+        "collaborationLink": {
+            "actionLabel": {
+                "copyLink": "[GR] Copy link"
+            },
+            "copyCollaborationLink": "[GR] Collaboration link copied",
+            "newCollaborationLinkGenerated": {
+                "label": "[GR] New Collaboration link generated"
+            }
+        },
+        "copyNodes": {
+            "action": "[GR] Go to folder",
+            "error": "[GR] Something went wrong, try again",
+            "success": "[GR] Item copied"
+        },
+        "decreaseYourOwnShare": {
+            "success": "[GR] Rights updated successfully"
+        },
+        "deletePermanently": {
+            "error": "[GR] Error",
+            "success": "[GR] Success"
+        },
+        "deleteShare": {
+            "error": "[GR] Error",
+            "success": "[GR] Success"
+        },
+        "download": {
+            "start": "[GR] Your download will start soon",
+            "error": "[GR] Download size exceeds the {{limit}} limit. Please reduce items to download",
+            "sizeExceedsError": "[GR] Download size exceeds the maximum limit. Please reduce items to download"
+        },
+        "markForDeletion": {
+            "error": "[GR] Something went wrong, try again",
+            "showTrash": "[GR] Open Trash folder",
+            "success": "[GR] Item moved to trash"
+        },
+        "moveNodes": {
+            "action": "[GR] Go to folder",
+            "error": "[GR] Something went wrong, try again",
+            "success": "[GR] Item moved"
+        },
+        "publicLink": {
+            "actionLabel": {
+                "copyLink": "[GR] Copy Link"
+            },
+            "copyLink": "[GR] {{linkName}} copied",
+            "linkUpdated": {
+                "label": "[GR] {{linkName}} updated"
+            },
+            "newPublicLinkGenerated": {
+                "label": "[GR] New {{linkName}} generated"
+            }
+        },
+        "restore": {
+            "error": "[GR] Something went wrong, try again",
+            "showInFolder": "[GR] Show in folder",
+            "success": "[GR] Success"
+        },
+        "unflag": {
+            "success": "[GR] Item unflagged successfully"
+        },
+        "upload": {
+            "foldersNotAllowed": "[GR] Folders cannot be uploaded",
+            "goToFolder": "[GR] Go to folder",
+            "moreInfo": "[GR] More info",
+            "nodesNotAllowed": "[GR] Some items have not been uploaded",
+            "success": "[GR] Upload occurred in {{destination}}"
+        },
+        "version": {
+            "clone": "[GR] Version cloned as the current one",
+            "keepForeverAdded": "[GR] Version marked as to be kept forever",
+            "keepForeverRemoved": "[GR] \"Keep forever\" removed"
+        },
+        "createDocument": {
+            "error": {
+                "overQuota": {
+                    "spreadsheet": "[GR] New spreadsheet creation failed. You have reached your storage limit. Delete some items to free up storage space and try again",
+                    "document": "[GR] New document creation failed. You have reached your storage limit. Delete some items to free up storage space and try again",
+                    "presentation": "[GR] New presentation creation failed. You have reached your storage limit. Delete some items to free up storage space and try again",
+                    "actionLabel": "[GR] OK"
+                }
+            }
+        },
+        "error": {
+            "overQuota": {
+                "actionLabel": "[GR] OK"
+            }
+        },
+        "accessCode": {
+            "regenerate": "[GR] New access code generated"
+        },
+        "openWithDocs": {
+            "error": {
+                "pleaseDownload": "[GR] To view the item, please download it on your device",
+                "exceedSizeLimit": "[GR] The item exceeds the size limit allowed and cannot be opened."
+            }
+        },
+        "transferOwnership": {
+            "error": {
+                "overQuota": "[GR] Ownership transfer failed.",
+                "overQuota2": "[GR] The new owner doesn’t have enough storage available."
+            },
+            "success2": "[GR] The items are now in your \"Shared with me\" folder.",
+            "success1": "[GR] Ownership transferred successfully.",
+            "actionLabel": "[GR] OK"
+        },
+        "sendViaMail": {
+            "error": {
+                "fileSizeExceeded": {
+                    "actionLabel": "[GR] Ok"
+                }
+            }
+        }
+    },
+    "sortingDropdown": {
+        "ascendingOrder": "[GR] Ascending order",
+        "descendingOrder": "[GR] Descending order",
+        "icon": {
+            "tooltip": {
+                "OrderLastUpdateAscending": "[GR] Ascending order by last update",
+                "OrderLastUpdateDescending": "[GR] Descending order by last update",
+                "OrderNameAscending": "[GR] Ascending order by name",
+                "OrderNameDescending": "[GR] Descending order by name",
+                "OrderSizeAscending": "[GR] Ascending order by size",
+                "OrderSizeDescending": "[GR] Descending order by size"
+            }
+        },
+        "lastUpdate": "[GR] Last update",
+        "name": "[GR] Name",
+        "size": "[GR] Size"
+    },
+    "uploadItem": {
+        "queued": "[GR] Queued"
+    },
+    "uploads": {
+        "banner": {
+            "overQuota": {
+                "description": "[GR] The uploading of some items failed because you have reached your storage limit. Delete some items to free up storage space and try again.",
+                "title": "[GR] Quota exceeded"
+            }
+        },
+        "clean": {
+            "completed": "[GR] Clean completed uploads"
+        },
+        "destination": {
+            "home": "[GR] Upload started in Files' Home"
+        },
+        "dropzone": {
+            "message": {
+                "disabled": "[GR] You cannot drop an attachment in this area",
+                "folderView": {
+                    "disabled": "[GR] You cannot drop an attachment in this area",
+                    "enabled": "[GR] Drop here your attachments \n to quick-add them to this folder"
+                },
+                "otherView": {
+                    "enabled": "[GR] Drop here your attachments\nto quick-add them to your Home"
+                }
+            },
+            "title": {
+                "disabled": "[GR] Drag&Drop mode.",
+                "enabled": "[GR] Drag&Drop mode."
+            }
+        },
+        "error": {
+            "moreInfo": {
+                "foldersNotAllowed": "[GR] Folders cannot be uploaded. Instead, if you are trying to upload a file, the system may not have recognized it. Try again using the \"UPLOAD\" button."
+            }
+        }
+    },
+    "size": {
+        "unitMeasure_B": "[GR] B",
+        "unitMeasure_KB": "[GR] KB",
+        "unitMeasure_MB": "[GR] MB",
+        "unitMeasure_TB": "[GR] TB",
+        "unitMeasure_GB": "[GR] GB",
+        "unitMeasure_ZB": "[GR] ZB",
+        "unitMeasure_PB": "[GR] PB",
+        "unitMeasure_EB": "[GR] EB",
+        "unitMeasure_YB": "[GR] YB"
+    },
+    "header": {
+        "iconTooltip": {
+            "ListLayout": "[GR] List layout",
+            "GridLayout": "[GR] Grid layout"
+        }
+    },
+    "notifications": {
+        "empty": {
+            "title": "[GR] No notifications",
+            "message": "[GR] You don’t have any notifications at the moment"
+        },
+        "addedNode": {
+            "message": "[GR] <bold>{{email}}</bold> added <bold>{{node}}</bold> in <bold>{{folder}}</bold>"
+        },
+        "newShare": {
+            "message": "[GR] <bold>{{email}}</bold> shared <bold>{{node}}</bold> with you"
+        },
+        "removedNode": {
+            "message": "[GR] <bold>{{email}}</bold> removed <bold>{{node}}</bold> from <bold>{{folder}}</bold>"
+        },
+        "title": "[GR] Notifications",
+        "refresh": "[GR] Check for updates",
+        "transferredOwnership": {
+            "message": "[GR] <bold>{{email}}</bold> transferred ownership of items to you. You’ll find them in folder <bold>{{folder}}</bold>"
+        }
+    },
+    "transferOwnership": {
+        "modal": {
+            "available": "[GR] The new owner has enough storage available.",
+            "description": "[GR] Select a new owner for the selected items.",
+            "note1": "[GR] You’ll remain as a <bold>collaborator with editing and sharing rights.</bold>",
+            "note4": "[GR] Please note:",
+            "note": "[GR] After the transfer:",
+            "note5": "[GR] If the new owner exceeds their storage quota, the transfer will fail.",
+            "note2": "[GR] All sharing settings will be kept.",
+            "note3": "[GR] The new owner <bold>will be notified.</bold>",
+            "note6": "[GR] This action is permanent and cannot be undone.",
+            "unavailable": "[GR] The new owner doesn't have enough storage available.",
+            "placeholder": "[GR] Select a new owner",
+            "loadingTooltip": "[GR] Checking the new owner’s storage quota...",
+            "unavailableTooltip": "[GR] The new owner doesn’t have enough storage available.",
+            "button": {
+                "confirm": "[GR] Transfer"
+            },
+            "loading": "[GR] Checking the new owner’s storage quota..."
+        }
+    },
+    "notification": {
+        "succeededRecording": {
+            "message": "[GR] <bold>{{node}}</bold> saved in <bold>{{folder}}</bold>"
+        }
     }
 }
