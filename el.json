@@ -1,634 +1,634 @@
 {
     "actions": {
-        "copy": "[GR] Copy",
-        "deletePermanently": "[GR] Delete permanently",
-        "edit": "[GR] Edit",
-        "flag": "[GR] Flag",
-        "goToFolder": "[GR] Go to destination folder",
-        "manageShares": "[GR] Manage shares",
-        "markForDeletion": "[GR] Mark for deletion",
-        "move": "[GR] Move",
-        "moveToTrash": "[GR] Delete",
-        "openWithDocs": "[GR] Open document",
-        "preview": "[GR] Preview",
-        "removeUpload": "[GR] Remove upload",
-        "rename": "[GR] Rename",
-        "restore": "[GR] Restore",
-        "retryUpload": "[GR] Retry upload",
-        "sendViaMail": "[GR] Send via e-mail",
-        "unflag": "[GR] Unflag",
-        "transferOwnership": "[GR] Transfer ownership",
+        "copy": "Αντιγραφή",
+        "deletePermanently": "Οριστική διαγραφή",
+        "edit": "Επεξεργασία",
+        "flag": "Σημαία",
+        "goToFolder": "Μετάβαση στον φάκελο προορισμού",
+        "manageShares": "Διαχείριση κοινών χρήσεων",
+        "markForDeletion": "Επισήμανση για διαγραφή",
+        "move": "Μετακίνηση",
+        "moveToTrash": "Διαγραφή",
+        "openWithDocs": "Άνοιγμα εγγράφου",
+        "preview": "Προεπισκόπηση",
+        "removeUpload": "Αφαίρεση μεταφόρτωσης",
+        "rename": "Μετονομασία",
+        "restore": "Επαναφορά",
+        "retryUpload": "Επανάληψη μεταφόρτωσης",
+        "sendViaMail": "Αποστολή μέσω e-mail",
+        "unflag": "Αφαίρεση επισήμανσης",
+        "transferOwnership": "Μεταφορά ιδιοκτησίας",
         "download": {
             "multiple": {
                 "modal": {
                     "button": {
-                        "label": "[GR] Download all"
+                        "label": "Λήψη όλων"
                     }
                 },
                 "button": {
-                    "tooltip": "[GR] Download all"
+                    "tooltip": "Λήψη όλων"
                 }
             }
         },
-        "downloadNode": "[GR] Download",
-        "viewContents": "[GR] View contents"
+        "downloadNode": "Λήψη",
+        "viewContents": "Προβολή περιεχομένων"
     },
     "preview": {
         "actions": {
             "tooltip": {
-                "download": "[GR] Download",
-                "edit": "[GR] Edit",
-                "manageShares": "[GR] Manage shares"
+                "download": "Λήψη",
+                "edit": "Επεξεργασία",
+                "manageShares": "Διαχείριση κοινών χρήσεων"
             }
         },
         "close": {
-            "tooltip": "[GR] Close"
+            "tooltip": "Κλείσιμο"
         },
         "button": {
-            "refresh": "[GR] Refresh preview"
+            "refresh": "Ανανέωση προεπισκόπησης"
         },
         "loading": {
-            "error": "[GR] An error occurred while loading the preview. Try again.",
-            "file": "[GR] Loading item preview, please wait…",
-            "retrying": "[GR] Trying to load the preview…"
+            "error": "Παρουσιάστηκε σφάλμα κατά τη φόρτωση της προεπισκόπησης. Δοκιμάστε ξανά.",
+            "file": "Φόρτωση προεπισκόπησης στοιχείου, παρακαλώ περιμένετε…",
+            "retrying": "Προσπάθεια φόρτωσης της προεπισκόπησης…"
         },
         "video": {
-            "errorLabel": "[GR] This video cannot be played. Try to reproduce it using another browser"
+            "errorLabel": "Αυτό το βίντεο δεν μπορεί να αναπαραχθεί. Δοκιμάστε να το αναπαράγετε χρησιμοποιώντας άλλο πρόγραμμα περιήγησης"
         },
         "print": {
-            "tooltip": "[GR] Print"
+            "tooltip": "Εκτύπωση"
         },
         "document": {
-            "loadingLabel": "[GR] Loading document preview…",
-            "errorLabel": "[GR] Failed to load document preview."
+            "loadingLabel": "Φόρτωση προεπισκόπησης εγγράφου…",
+            "errorLabel": "Αποτυχία φόρτωσης προεπισκόπησης εγγράφου."
         },
         "page": {
-            "label": "[GR] Page"
+            "label": "Σελίδα"
         },
         "fileSizeExceeded": {
-            "download": "[GR] DOWNLOAD FILE",
-            "openTab": "[GR] OPEN IN A SEPARATE TAB",
-            "note": "[GR] Please, download it or open it in a separate tab",
-            "title": "[GR] This item cannot be displayed",
-            "content": "[GR] The file size exceeds the limit allowed and cannot be displayed"
+            "download": "ΛΗΨΗ ΑΡΧΕΙΟΥ",
+            "openTab": "ΑΝΟΙΓΜΑ ΣΕ ΝΕΑ ΚΑΡΤΕΛΑ",
+            "note": "Κατεβάστε το ή ανοίξτε το σε νέα καρτέλα",
+            "title": "Αυτό το στοιχείο δεν μπορεί να εμφανιστεί",
+            "content": "Το μέγεθος του αρχείου υπερβαίνει το επιτρεπόμενο όριο και δεν μπορεί να εμφανιστεί"
         },
         "previous": {
-            "tooltip": "[GR] Previous"
+            "tooltip": "Προηγούμενο"
         },
         "next": {
-            "tooltip": "[GR] Next"
+            "tooltip": "Επόμενο"
         },
         "zoomOut": {
-            "tooltip": "[GR] Zoom out"
+            "tooltip": "Σμίκρυνση"
         },
         "resetZoom": {
-            "tooltip": "[GR] Reset zoom"
+            "tooltip": "Επαναφορά ζουμ"
         },
         "fitWidth": {
-            "label": "[GR] Fit to width"
+            "label": "Προσαρμογή στο πλάτος"
         },
         "maximumZoomReached": {
-            "tooltip": "[GR] Maximum zoom level reached"
+            "tooltip": "Επιτεύχθηκε το μέγιστο επίπεδο ζουμ"
         },
         "minimumZoomReached": {
-            "tooltip": "[GR] Minimum zoom level reached"
+            "tooltip": "Επιτεύχθηκε το ελάχιστο επίπεδο ζουμ"
         },
         "zoomIn": {
-            "tooltip": "[GR] Zoom in"
+            "tooltip": "Μεγέθυνση"
         }
     },
     "modal": {
         "close": {
-            "tooltip": "[GR] Close"
+            "tooltip": "Κλείσιμο"
         },
         "button": {
-            "cancel": "[GR] Cancel",
-            "confirm": "[GR] Confirm"
+            "cancel": "Ακύρωση",
+            "confirm": "Επιβεβαίωση"
         },
         "decreaseYourOwnSharePermissions": {
-            "header": "[GR] Decrease your current rights",
-            "body1": "[GR] Are you sure to decrease your rights on this item? The action is permanent and you won't be able to restore the previous share's rights by yourself.",
-            "body2": "[GR] You can always contact the shared item's owner if you need the previous permission to be restored.",
+            "header": "Μείωση των τρεχόντων δικαιωμάτων σας",
+            "body1": "Είστε βέβαιοι ότι θέλετε να μειώσετε τα δικαιώματά σας σε αυτό το στοιχείο; Η ενέργεια είναι μόνιμη και δεν θα μπορείτε να επαναφέρετε μόνοι σας τα προηγούμενα δικαιώματα κοινής χρήσης.",
+            "body2": "Μπορείτε πάντα να επικοινωνήσετε με τον ιδιοκτήτη του κοινόχρηστου στοιχείου αν χρειαστεί να επαναφερθεί το προηγούμενο δικαίωμα.",
             "button": {
-                "confirmDecrease": "[GR] Yes, confirm"
+                "confirmDecrease": "Ναι, επιβεβαίωση"
             }
         },
         "deletePermanently": {
-            "body": "[GR] You will delete permanently this item/these items. You will not be able to recover this item/these items anymore. This action is irreversible.",
+            "body": "Θα διαγράψετε οριστικά αυτό το στοιχείο/αυτά τα στοιχεία. Δεν θα μπορείτε πλέον να τα ανακτήσετε. Αυτή η ενέργεια είναι μη αναστρέψιμη.",
             "button": {
-                "confirm": "[GR] Delete permanently"
+                "confirm": "Οριστική διαγραφή"
             },
-            "header": "[GR] This action is irreversible"
+            "header": "Αυτή η ενέργεια είναι μη αναστρέψιμη"
         },
         "deleteShare": {
-            "body": "[GR] Are you sure to remove all the access permission previously given to {{shareTarget}} ?",
+            "body": "Είστε βέβαιοι ότι θέλετε να αφαιρέσετε όλα τα δικαιώματα πρόσβασης που είχαν δοθεί προηγουμένως στο {{shareTarget}};",
             "yourShare": {
                 "body": {
-                    "answer": "[GR] Are you sure to remove yourself from this collaboration?",
-                    "permissionLost": "[GR] All the access permissions previously given to you will be lost."
+                    "answer": "Είστε βέβαιοι ότι θέλετε να αφαιρεθείτε από αυτή τη συνεργασία;",
+                    "permissionLost": "Όλα τα δικαιώματα πρόσβασης που σας είχαν δοθεί προηγουμένως θα χαθούν."
                 }
             },
-            "warning": "[GR] This action cannot be undone.",
+            "warning": "Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.",
             "button": {
-                "cancel": "[GR] No, cancel",
-                "confirmAll": "[GR] Yes, remove all",
-                "confirmRemove": "[GR] Yes, remove"
+                "cancel": "Όχι, ακύρωση",
+                "confirmAll": "Ναι, αφαίρεση όλων",
+                "confirmRemove": "Ναι, αφαίρεση"
             },
             "title": {
-                "yourShare": "[GR] Remove your share",
-                "single": "[GR] Remove collaborator",
-                "all": "[GR] Remove all collaborators",
-                "multiple": "[GR] Remove collaborators"
+                "yourShare": "Αφαίρεση της κοινής χρήσης σας",
+                "single": "Αφαίρεση συνεργάτη",
+                "all": "Αφαίρεση όλων των συνεργατών",
+                "multiple": "Αφαίρεση συνεργατών"
             },
             "bulk": {
                 "body": {
-                    "all": "[GR] You're about to remove all collaborators from this file. After this action, only you will have access to the file and people it was shared with will no longer be able to view or edit it.",
-                    "multiple": "[GR] You're about to remove {{count}} collaborator(s) from this file. After this action, these people will no longer be able to view or edit it."
+                    "all": "Πρόκειται να αφαιρέσετε όλους τους συνεργάτες από αυτό το αρχείο. Μετά από αυτή την ενέργεια, μόνο εσείς θα έχετε πρόσβαση στο αρχείο και τα άτομα με τα οποία είχε κοινοποιηθεί δεν θα μπορούν πλέον να το δουν ή να το επεξεργαστούν.",
+                    "multiple": "Πρόκειται να αφαιρέσετε {{count}} συνεργάτη(-ες) από αυτό το αρχείο. Μετά από αυτή την ενέργεια, αυτά τα άτομα δεν θα μπορούν πλέον να το δουν ή να το επεξεργαστούν."
                 }
             }
         },
         "moreInfo": {
-            "title": "[GR] Additional information"
+            "title": "Πρόσθετες πληροφορίες"
         },
         "nodeSelection": {
             "button": {
-                "create": "[GR] Create",
+                "create": "Δημιουργία",
                 "newFolder": {
-                    "disabled": "[GR] You don't have the correct permissions",
-                    "label": "[GR] New folder"
+                    "disabled": "Δεν έχετε τα σωστά δικαιώματα",
+                    "label": "Νέος φάκελος"
                 }
             },
             "input": {
-                "newFolder": "[GR] New folder's name"
+                "newFolder": "Όνομα νέου φακέλου"
             }
         },
         "nodesSelection": {
-            "selectedCount_one": "[GR] {{count}} selected item",
-            "selectedCount_other": "[GR] {{count}} selected items"
+            "selectedCount_one": "{{count}} επιλεγμένο στοιχείο",
+            "selectedCount_other": "{{count}} επιλεγμένα στοιχεία"
         },
         "purgeAllVersions": {
-            "body": "[GR] All versions that are not marked to be kept forever, except the current one, will be deleted. You will not be able to recover these versions.",
+            "body": "Όλες οι εκδόσεις που δεν έχουν επισημανθεί για μόνιμη διατήρηση, εκτός από την τρέχουσα, θα διαγραφούν. Δεν θα μπορείτε να ανακτήσετε αυτές τις εκδόσεις.",
             "button": {
-                "confirm": "[GR] Purge all versions"
+                "confirm": "Εκκαθάριση όλων των εκδόσεων"
             },
-            "header": "[GR] Purge all versions"
+            "header": "Εκκαθάριση όλων των εκδόσεων"
         },
         "removeLink": {
-            "body": "[GR] This link has expired, therefore it can't be used anymore to access the item. You can remove the link from the list or you can update its expiration date and other information in order to keep using it.",
+            "body": "Αυτός ο σύνδεσμος έχει λήξει, επομένως δεν μπορεί πλέον να χρησιμοποιηθεί για πρόσβαση στο στοιχείο. Μπορείτε να αφαιρέσετε τον σύνδεσμο από τη λίστα ή να ενημερώσετε την ημερομηνία λήξης και άλλες πληροφορίες του για να συνεχίσετε να τον χρησιμοποιείτε.",
             "button": {
-                "confirm": "[GR] Remove"
+                "confirm": "Αφαίρεση"
             },
-            "header": "[GR] Remove {{nodeName}} {{linkName}}"
+            "header": "Αφαίρεση {{nodeName}} {{linkName}}"
         },
         "revokeCollaborationLink": {
-            "body": "[GR] By revoking this link, you are blocking the possibility to create new shares with it. Everyone who has already used the collaboration link will keep the access to the item.",
+            "body": "Ανακαλώντας αυτόν τον σύνδεσμο, μπλοκάρετε τη δυνατότητα δημιουργίας νέων κοινών χρήσεων με αυτόν. Όσοι έχουν ήδη χρησιμοποιήσει τον σύνδεσμο συνεργασίας θα διατηρήσουν την πρόσβαση στο στοιχείο.",
             "button": {
-                "confirm": "[GR] Revoke"
+                "confirm": "Ανάκληση"
             },
-            "header": "[GR] Revoke {{nodeName}} collaboration link"
+            "header": "Ανάκληση συνδέσμου συνεργασίας {{nodeName}}"
         },
         "revokeLink": {
-            "body": "[GR] By revoking this link, you are blocking access to {{nodeName}} for anyone who tries to use the link to access the item.",
+            "body": "Ανακαλώντας αυτόν τον σύνδεσμο, μπλοκάρετε την πρόσβαση στο {{nodeName}} για όποιον προσπαθήσει να χρησιμοποιήσει τον σύνδεσμο για να αποκτήσει πρόσβαση στο στοιχείο.",
             "button": {
-                "confirm": "[GR] Revoke"
+                "confirm": "Ανάκληση"
             },
-            "header": "[GR] Revoke {{nodeName}} {{linkName}}"
+            "header": "Ανάκληση {{nodeName}} {{linkName}}"
         },
         "roots": {
-            "filesHome": "[GR] Home",
-            "rootsList": "[GR] Files",
-            "sharedWitMe": "[GR] Shared with me",
+            "filesHome": "Αρχική",
+            "rootsList": "Αρχεία",
+            "sharedWitMe": "Κοινή χρήση με εμένα",
             "trash": {
-                "myElements": "[GR] My items",
-                "sharedWitMe": "[GR] Shared items",
-                "trash": "[GR] Trash"
+                "myElements": "Τα στοιχεία μου",
+                "sharedWitMe": "Κοινόχρηστα στοιχεία",
+                "trash": "Κάδος απορριμμάτων"
             }
         },
         "unsaved_changes": {
             "body": {
-                "line1": "[GR] Are you sure you want to leave this page without saving?",
-                "line2": "[GR] All your unsaved changes will be lost."
+                "line1": "Είστε βέβαιοι ότι θέλετε να φύγετε από αυτή τη σελίδα χωρίς αποθήκευση;",
+                "line2": "Όλες οι μη αποθηκευμένες αλλαγές σας θα χαθούν."
             },
             "button": {
-                "leave_anyway": "[GR] Leave anyway",
-                "save_and_leave": "[GR] Save and leave"
+                "leave_anyway": "Έξοδος ούτως ή άλλως",
+                "save_and_leave": "Αποθήκευση και έξοδος"
             },
             "title": {
-                "cannot_saved_changes": "[GR] Some changes cannot be saved",
-                "unsaved_changes": "[GR] You have unsaved changes"
+                "cannot_saved_changes": "Ορισμένες αλλαγές δεν μπορούν να αποθηκευτούν",
+                "unsaved_changes": "Έχετε μη αποθηκευμένες αλλαγές"
             }
         },
         "cancel": {
-            "label": "[GR] Cancel"
+            "label": "Ακύρωση"
         },
         "transferOwnership": {
-            "title_one": "[GR] Transfer Ownership of {{node.name}}",
-            "title_other": "[GR] Transfer Ownership of {{count}} items"
+            "title_one": "Μεταφορά Ιδιοκτησίας {{node.name}}",
+            "title_other": "Μεταφορά Ιδιοκτησίας {{count}} στοιχείων"
         }
     },
     "breadcrumb": {
         "expander": {
-            "hide": "[GR] Hide folder's path",
-            "show": "[GR] Show folder's path"
+            "hide": "Απόκρυψη διαδρομής φακέλου",
+            "show": "Εμφάνιση διαδρομής φακέλου"
         }
     },
     "carbonio-public-folder-ui": {
-        "emptyFolder": "[GR] There are no items in this folder.",
+        "emptyFolder": "Δεν υπάρχουν στοιχεία σε αυτόν τον φάκελο.",
         "invalidLink": {
             "description": {
-                "line1": "[GR] This link has been removed or is not valid.",
-                "line2": "[GR] For more information, try to contact the person who shared it with you."
+                "line1": "Αυτός ο σύνδεσμος έχει αφαιρεθεί ή δεν είναι έγκυρος.",
+                "line2": "Για περισσότερες πληροφορίες, επικοινωνήστε με το άτομο που το μοιράστηκε μαζί σας."
             },
-            "title": "[GR] Public access link not available."
+            "title": "Ο σύνδεσμος δημόσιας πρόσβασης δεν είναι διαθέσιμος."
         },
         "listHeader": {
-            "extension": "[GR] Extension",
-            "lastModified": "[GR] Last modified",
-            "name": "[GR] Name",
-            "size": "[GR] Size"
+            "extension": "Επέκταση",
+            "lastModified": "Τελευταία τροποποίηση",
+            "name": "Όνομα",
+            "size": "Μέγεθος"
         },
         "accessCode": {
             "modal": {
-                "title": "[GR] The link is secured by an access code",
-                "description": "[GR] Please, insert the access code to proceed",
+                "title": "Ο σύνδεσμος προστατεύεται με κωδικό πρόσβασης",
+                "description": "Εισαγάγετε τον κωδικό πρόσβασης για να συνεχίσετε",
                 "button": {
-                    "confirm": "[GR] Done"
+                    "confirm": "Τέλος"
                 },
-                "wrongAccessCode": "[GR] Wrong access code, try again"
+                "wrongAccessCode": "Λανθασμένος κωδικός πρόσβασης, δοκιμάστε ξανά"
             }
         },
         "fileDownload": {
             "modal": {
-                "confirmLabel1": "[GR] Download",
-                "confirmLabel2": "[GR] Download again",
-                "description": "[GR] Access code entered correctly. Now you can download the file."
+                "confirmLabel1": "Λήψη",
+                "confirmLabel2": "Λήψη ξανά",
+                "description": "Ο κωδικός πρόσβασης εισήχθη σωστά. Τώρα μπορείτε να κατεβάσετε το αρχείο."
             }
         }
     },
     "collaborationLinks": {
         "button": {
-            "generateLink": "[GR] Generate Link",
-            "revoke": "[GR] Revoke",
-            "choosePermission": "[GR] Choose permissions to generate link"
+            "generateLink": "Δημιουργία Συνδέσμου",
+            "revoke": "Ανάκληση",
+            "choosePermission": "Επιλέξτε δικαιώματα για τη δημιουργία συνδέσμου"
         },
-        "description": "[GR] Internal users will receive the permissions by opening the link. You can always modify granted permissions.",
+        "description": "Οι εσωτερικοί χρήστες θα λάβουν τα δικαιώματα ανοίγοντας τον σύνδεσμο. Μπορείτε πάντα να τροποποιήσετε τα δικαιώματα που έχουν παραχωρηθεί.",
         "link": {
             "urlChip": {
                 "tooltip": {
-                    "copy": "[GR] Copy Collaboration link"
+                    "copy": "Αντιγραφή Συνδέσμου Συνεργασίας"
                 }
             }
         },
         "row": {
-            "placeholder": "[GR] Create a link in order to share the item",
+            "placeholder": "Δημιουργήστε έναν σύνδεσμο για να μοιραστείτε το στοιχείο",
             "title": {
-                "ReadAndShare": "[GR] Read and Share",
-                "writeAndShare": "[GR] Write and Share"
+                "ReadAndShare": "Ανάγνωση και Κοινή Χρήση",
+                "writeAndShare": "Εγγραφή και Κοινή Χρήση"
             }
         },
-        "title": "[GR] Collaboration links",
+        "title": "Σύνδεσμοι συνεργασίας",
         "permission": {
-            "readOnly": "[GR] View",
-            "readAndWrite": "[GR] Edit",
+            "readOnly": "Προβολή",
+            "readAndWrite": "Επεξεργασία",
             "optionDisabled": {
-                "tooltip": "[GR] This type of link has already been created"
+                "tooltip": "Αυτός ο τύπος συνδέσμου έχει ήδη δημιουργηθεί"
             },
-            "readWriteAndShare": "[GR] Edit and manage sharing",
-            "readAndShare": "[GR] View and manage sharing",
+            "readWriteAndShare": "Επεξεργασία και διαχείριση κοινής χρήσης",
+            "readAndShare": "Προβολή και διαχείριση κοινής χρήσης",
             "cannotWrite": {
-                "tooltip": "[GR] You are not allowed to create this collaboration link because you don't have edit permission"
+                "tooltip": "Δεν επιτρέπεται να δημιουργήσετε αυτόν τον σύνδεσμο συνεργασίας επειδή δεν έχετε δικαίωμα επεξεργασίας"
             }
         },
         "maximumLinks": {
-            "tooltip": "[GR] You've reached the maximum number of links. Revoke one to create a new one."
+            "tooltip": "Έχετε φτάσει τον μέγιστο αριθμό συνδέσμων. Ανακαλέστε έναν για να δημιουργήσετε νέο."
         }
     },
     "create": {
         "options": {
             "new": {
-                "document": "[GR] New document",
-                "folder": "[GR] New folder",
-                "libreDocument": "[GR] OpenDocument {{ext}}",
-                "msDocument": "[GR] Microsoft {{ext}}",
-                "msDocument_docx": "[GR] Microsoft Word {{ext}}",
-                "msDocument_pptx": "[GR] Microsoft PowerPoint {{ext}}",
-                "msDocument_xlsx": "[GR] Microsoft Excel {{ext}}",
-                "presentation": "[GR] New presentation",
-                "spreadsheet": "[GR] New spreadsheet",
-                "upload": "[GR] Upload"
+                "document": "Νέο έγγραφο",
+                "folder": "Νέος φάκελος",
+                "libreDocument": "OpenDocument {{ext}}",
+                "msDocument": "Microsoft {{ext}}",
+                "msDocument_docx": "Microsoft Word {{ext}}",
+                "msDocument_pptx": "Microsoft PowerPoint {{ext}}",
+                "msDocument_xlsx": "Microsoft Excel {{ext}}",
+                "presentation": "Νέα παρουσίαση",
+                "spreadsheet": "Νέο υπολογιστικό φύλλο",
+                "upload": "Μεταφόρτωση"
             }
         }
     },
     "displayer": {
         "details": {
-            "collaboratorsTooltip": "[GR] See the list of collaborators",
-            "content": "[GR] Content",
-            "copyShortcut": "[GR] copy item's shortcut",
-            "createdBy": "[GR] Created by",
-            "description": "[GR] Description",
-            "lastEdit": "[GR] Last edit",
-            "owner": "[GR] Owner",
-            "position": "[GR] Position",
-            "sendMailTo": "[GR] Send e-mail to: {{email}}",
-            "showPath": "[GR] Show path",
-            "size": "[GR] Size",
+            "collaboratorsTooltip": "Δείτε τη λίστα συνεργατών",
+            "content": "Περιεχόμενο",
+            "copyShortcut": "αντιγραφή συντόμευσης στοιχείου",
+            "createdBy": "Δημιουργήθηκε από",
+            "description": "Περιγραφή",
+            "lastEdit": "Τελευταία επεξεργασία",
+            "owner": "Ιδιοκτήτης",
+            "position": "Θέση",
+            "sendMailTo": "Αποστολή e-mail στο: {{email}}",
+            "showPath": "Εμφάνιση διαδρομής",
+            "size": "Μέγεθος",
             "editDescription": {
-                "characterLimit": "[GR] Maximum length allowed is {{max}} characters",
-                "cancel": "[GR] Cancel",
-                "save": "[GR] Save"
+                "characterLimit": "Το μέγιστο επιτρεπόμενο μήκος είναι {{max}} χαρακτήρες",
+                "cancel": "Ακύρωση",
+                "save": "Αποθήκευση"
             }
         },
         "filter": {
             "flagged_empty": [
                 {
-                    "message": "[GR] You'll find it here whenever you'll need it.",
-                    "title": "[GR] Click the flag to mark an item."
+                    "message": "Θα το βρείτε εδώ όποτε το χρειαστείτε.",
+                    "title": "Κάντε κλικ στη σημαία για να επισημάνετε ένα στοιχείο."
                 },
                 {
-                    "message": "[GR] They'll be listed here.",
-                    "title": "[GR] Flag your most important items by clicking the flag."
+                    "message": "Θα εμφανίζονται εδώ.",
+                    "title": "Επισημάνετε τα πιο σημαντικά στοιχεία σας κάνοντας κλικ στη σημαία."
                 }
             ],
             "flagged_full": [
                 {
-                    "message": "[GR] You'll find it here whenever you'll need it.",
-                    "title": "[GR] Click the flag to mark an item."
+                    "message": "Θα το βρείτε εδώ όποτε το χρειαστείτε.",
+                    "title": "Κάντε κλικ στη σημαία για να επισημάνετε ένα στοιχείο."
                 },
                 {
-                    "message": "[GR] They'll be listed here.",
-                    "title": "[GR] Flag your most important items by clicking the flag."
+                    "message": "Θα εμφανίζονται εδώ.",
+                    "title": "Επισημάνετε τα πιο σημαντικά στοιχεία σας κάνοντας κλικ στη σημαία."
                 }
             ],
             "recents_empty": [
                 {
-                    "message": "[GR] You will see the most recents here.",
-                    "title": "[GR] Open, read, edit your items."
+                    "message": "Θα δείτε εδώ τα πιο πρόσφατα.",
+                    "title": "Ανοίξτε, διαβάστε, επεξεργαστείτε τα στοιχεία σας."
                 }
             ],
             "recents_full": [
                 {
-                    "message": "[GR] Click an item to select it.",
-                    "title": "[GR] View details of the latest updated items."
+                    "message": "Κάντε κλικ σε ένα στοιχείο για να το επιλέξετε.",
+                    "title": "Δείτε λεπτομέρειες των πιο πρόσφατα ενημερωμένων στοιχείων."
                 },
                 {
-                    "message": "[GR] Select an item to proceed.",
-                    "title": "[GR] Review and edit the latest updated items."
+                    "message": "Επιλέξτε ένα στοιχείο για να συνεχίσετε.",
+                    "title": "Ελέγξτε και επεξεργαστείτε τα πιο πρόσφατα ενημερωμένα στοιχεία."
                 },
                 {
-                    "message": "[GR] Click an item to select it.",
-                    "title": "[GR] Quickly review the latest updated items."
+                    "message": "Κάντε κλικ σε ένα στοιχείο για να το επιλέξετε.",
+                    "title": "Ελέγξτε γρήγορα τα πιο πρόσφατα ενημερωμένα στοιχεία."
                 },
                 {
-                    "message": "[GR] Click an item to select it.",
-                    "title": "[GR] Keep up to date on the latest updated items."
+                    "message": "Κάντε κλικ σε ένα στοιχείο για να το επιλέξετε.",
+                    "title": "Μείνετε ενημερωμένοι για τα πιο πρόσφατα ενημερωμένα στοιχεία."
                 }
             ],
             "sharedByMe_empty": [
                 {
-                    "message": "[GR] Select an item to proceed.",
-                    "title": "[GR] Review and edit the items you've shared with your contacts."
+                    "message": "Επιλέξτε ένα στοιχείο για να συνεχίσετε.",
+                    "title": "Ελέγξτε και επεξεργαστείτε τα στοιχεία που έχετε μοιραστεί με τις επαφές σας."
                 },
                 {
-                    "message": "[GR] Click an item to select it.",
-                    "title": "[GR] View details of folders you've shared."
+                    "message": "Κάντε κλικ σε ένα στοιχείο για να το επιλέξετε.",
+                    "title": "Δείτε λεπτομέρειες φακέλων που έχετε μοιραστεί."
                 },
                 {
-                    "message": "[GR] Click an item to select it.",
-                    "title": "[GR] Find here all the items shared with your contacts."
+                    "message": "Κάντε κλικ σε ένα στοιχείο για να το επιλέξετε.",
+                    "title": "Βρείτε εδώ όλα τα στοιχεία που έχουν κοινοποιηθεί με τις επαφές σας."
                 }
             ],
             "sharedByMe_full": [
                 {
-                    "message": "[GR] Select an item to proceed.",
-                    "title": "[GR] Review and edit the items you've shared with your contacts."
+                    "message": "Επιλέξτε ένα στοιχείο για να συνεχίσετε.",
+                    "title": "Ελέγξτε και επεξεργαστείτε τα στοιχεία που έχετε μοιραστεί με τις επαφές σας."
                 },
                 {
-                    "message": "[GR] Click an item to select it.",
-                    "title": "[GR] View details of folders you've shared."
+                    "message": "Κάντε κλικ σε ένα στοιχείο για να το επιλέξετε.",
+                    "title": "Δείτε λεπτομέρειες φακέλων που έχετε μοιραστεί."
                 }
             ],
             "sharedWithMe_empty": [
                 {
-                    "message": "[GR] Click the \"NEW\" button to create a new item and share it with your contacts.",
-                    "title": "[GR] There are no items shared with you yet."
+                    "message": "Κάντε κλικ στο κουμπί «ΝΕΟ» για να δημιουργήσετε ένα νέο στοιχείο και να το μοιραστείτε με τις επαφές σας.",
+                    "title": "Δεν υπάρχουν ακόμα στοιχεία που έχουν κοινοποιηθεί σε εσάς."
                 },
                 {
-                    "message": "[GR] Let other users know that you're ready to collaborate with them.",
-                    "title": "[GR] Click the \"NEW\" button and create a new e-mail."
+                    "message": "Ενημερώστε άλλους χρήστες ότι είστε έτοιμοι να συνεργαστείτε μαζί τους.",
+                    "title": "Κάντε κλικ στο κουμπί «ΝΕΟ» και δημιουργήστε ένα νέο e-mail."
                 }
             ],
             "sharedWithMe_full": [
                 {
-                    "message": "[GR] Click an item to select it.",
-                    "title": "[GR] Start editing and sharing your items."
+                    "message": "Κάντε κλικ σε ένα στοιχείο για να το επιλέξετε.",
+                    "title": "Ξεκινήστε την επεξεργασία και κοινή χρήση των στοιχείων σας."
                 },
                 {
-                    "message": "[GR] Click an item to select it.",
-                    "title": "[GR] View your folders' details and share them with your contacts."
+                    "message": "Κάντε κλικ σε ένα στοιχείο για να το επιλέξετε.",
+                    "title": "Δείτε τις λεπτομέρειες των φακέλων σας και μοιραστείτε τους με τις επαφές σας."
                 },
                 {
-                    "title": "[GR] Select an item and start working on it with other users."
+                    "title": "Επιλέξτε ένα στοιχείο και ξεκινήστε να εργάζεστε πάνω του με άλλους χρήστες."
                 }
             ],
             "trash_empty": [
                 {
-                    "message": "[GR] Click on the trash icon to delete an item.",
-                    "title": "[GR] Move to trash everything you don't need."
+                    "message": "Κάντε κλικ στο εικονίδιο του κάδου απορριμμάτων για να διαγράψετε ένα στοιχείο.",
+                    "title": "Μετακινήστε στον κάδο απορριμμάτων ό,τι δεν χρειάζεστε."
                 },
                 {
-                    "message": "[GR] Click the trash icon to delete an item.",
-                    "title": "[GR] The trash is empty."
+                    "message": "Κάντε κλικ στο εικονίδιο του κάδου απορριμμάτων για να διαγράψετε ένα στοιχείο.",
+                    "title": "Ο κάδος απορριμμάτων είναι άδειος."
                 },
                 {
-                    "title": "[GR] Keep your workspace clean: delete all items you don't need anymore."
+                    "title": "Διατηρήστε τον χώρο εργασίας σας καθαρό: διαγράψτε όλα τα στοιχεία που δεν χρειάζεστε πια."
                 }
             ],
             "trash_full": [
                 {
-                    "title": "[GR] Select and restore your items that are now in the trash."
+                    "title": "Επιλέξτε και επαναφέρετε τα στοιχεία σας που βρίσκονται τώρα στον κάδο απορριμμάτων."
                 },
                 {
-                    "message": "[GR] Select an item to restore it or delete it permanently.",
-                    "title": "[GR] Nothing is lost!"
+                    "message": "Επιλέξτε ένα στοιχείο για να το επαναφέρετε ή να το διαγράψετε οριστικά.",
+                    "title": "Τίποτα δεν χάνεται!"
                 },
                 {
-                    "message": "[GR] Or, when possible, select it and restore it in its original folder.",
-                    "title": "[GR] Select an item to delete it permanently."
+                    "message": "Ή, όταν είναι δυνατόν, επιλέξτε το και επαναφέρετέ το στον αρχικό του φάκελο.",
+                    "title": "Επιλέξτε ένα στοιχείο για να το διαγράψετε οριστικά."
                 }
             ]
         },
         "folder_empty": [
             {
-                "title": "[GR] Click the \"NEW\" button to create a new item and share it with your contacts."
+                "title": "Κάντε κλικ στο κουμπί «ΝΕΟ» για να δημιουργήσετε ένα νέο στοιχείο και να το μοιραστείτε με τις επαφές σας."
             },
             {
-                "message": "[GR] Create an item by clicking the \"NEW\" button.",
-                "title": "[GR] Start editing and sharing your works."
+                "message": "Δημιουργήστε ένα στοιχείο κάνοντας κλικ στο κουμπί «ΝΕΟ».",
+                "title": "Ξεκινήστε την επεξεργασία και κοινή χρήση των εργασιών σας."
             },
             {
-                "message": "[GR] You'll be able to edit, flag and share it.",
-                "title": "[GR] Click the \"NEW\" button to create a new item."
+                "message": "Θα μπορείτε να το επεξεργαστείτε, να το επισημάνετε και να το μοιραστείτε.",
+                "title": "Κάντε κλικ στο κουμπί «ΝΕΟ» για να δημιουργήσετε ένα νέο στοιχείο."
             }
         ],
         "folder_full": [
             {
-                "message": "[GR] Click an item to select it.",
-                "title": "[GR] Start editing and sharing your items."
+                "message": "Κάντε κλικ σε ένα στοιχείο για να το επιλέξετε.",
+                "title": "Ξεκινήστε την επεξεργασία και κοινή χρήση των στοιχείων σας."
             },
             {
-                "message": "[GR] Click an item to select it.",
-                "title": "[GR] View your folders' details and share them with your contacts."
+                "message": "Κάντε κλικ σε ένα στοιχείο για να το επιλέξετε.",
+                "title": "Δείτε τις λεπτομέρειες των φακέλων σας και μοιραστείτε τους με τις επαφές σας."
             },
             {
-                "title": "[GR] Select a folder to edit or rename it."
+                "title": "Επιλέξτε έναν φάκελο για να τον επεξεργαστείτε ή να τον μετονομάσετε."
             },
             {
-                "message": "[GR] Select the item and then go to the \"Shares\" tab.",
-                "title": "[GR] Provide your contacts with editing rights to let them edit an item."
+                "message": "Επιλέξτε το στοιχείο και μεταβείτε στην καρτέλα «Κοινή Χρήση».",
+                "title": "Παρέχετε στις επαφές σας δικαιώματα επεξεργασίας ώστε να μπορούν να επεξεργαστούν ένα στοιχείο."
             },
             {
-                "title": "[GR] Select an item to share or move it to another folder."
+                "title": "Επιλέξτε ένα στοιχείο για να το μοιραστείτε ή να το μετακινήσετε σε άλλον φάκελο."
             }
         ],
         "generic": {
-            "message": "[GR] Click an item to select it.",
-            "title": "[GR] View files and folders, share them with your contacts."
+            "message": "Κάντε κλικ σε ένα στοιχείο για να το επιλέξετε.",
+            "title": "Δείτε αρχεία και φακέλους, μοιραστείτε τα με τις επαφές σας."
         },
         "list": {
-            "you": "[GR] You"
+            "you": "Εσείς"
         },
         "search": {
-            "title": "[GR] Type some keywords to start a search."
+            "title": "Πληκτρολογήστε κάποιες λέξεις-κλειδιά για να ξεκινήσετε μια αναζήτηση."
         },
         "search_empty": [
             {
-                "message": "[GR] Or select “Advanced filters” to refine your search.",
-                "title": "[GR] Start another search."
+                "message": "Ή επιλέξτε «Σύνθετα φίλτρα» για να βελτιώσετε την αναζήτησή σας.",
+                "title": "Ξεκινήστε άλλη αναζήτηση."
             },
             {
-                "message": "[GR] Don’t give up, keep searching!",
-                "title": "[GR] No results."
+                "message": "Μην τα παρατάτε, συνεχίστε την αναζήτηση!",
+                "title": "Δεν υπάρχουν αποτελέσματα."
             },
             {
-                "message": "[GR] Try to start another search.",
-                "title": "[GR] We’re sorry but there are no results for your search."
+                "message": "Δοκιμάστε να ξεκινήσετε άλλη αναζήτηση.",
+                "title": "Λυπούμαστε, αλλά δεν υπάρχουν αποτελέσματα για την αναζήτησή σας."
             },
             {
-                "message": "[GR] Check the spelling and the filters' options or try with another keyword.",
-                "title": "[GR] There are no results for your search."
+                "message": "Ελέγξτε την ορθογραφία και τις επιλογές των φίλτρων ή δοκιμάστε με άλλη λέξη-κλειδί.",
+                "title": "Δεν υπάρχουν αποτελέσματα για την αναζήτησή σας."
             }
         ],
         "search_full": [
             {
-                "title": "[GR] Select one or more results to perform actions or display details."
+                "title": "Επιλέξτε ένα ή περισσότερα αποτελέσματα για να εκτελέσετε ενέργειες ή να εμφανίσετε λεπτομέρειες."
             }
         ],
         "share": {
             "addShare": {
-                "button": "[GR] Share",
+                "button": "Κοινή χρήση",
                 "checkbox": {
-                    "label": "[GR] Add a custom message to mail notification"
+                    "label": "Προσθήκη προσαρμοσμένου μηνύματος στην ειδοποίηση e-mail"
                 },
                 "input": {
-                    "label": "[GR] Add a custom message to this notification",
-                    "placeholder": "[GR] Add new people or groups"
+                    "label": "Προσθήκη προσαρμοσμένου μηνύματος σε αυτή την ειδοποίηση",
+                    "placeholder": "Προσθήκη νέων ατόμων ή ομάδων"
                 },
-                "note": "[GR] Note:",
-                "noteDescription": "[GR] The standard message displays your name, the name of the shared item, permissions granted to the recipients and sign in information."
+                "note": "Σημείωση:",
+                "noteDescription": "Το τυπικό μήνυμα εμφανίζει το όνομά σας, το όνομα του κοινόχρηστου στοιχείου, τα δικαιώματα που παραχωρούνται στους παραλήπτες και τις πληροφορίες σύνδεσης."
             },
             "chip": {
-                "owner": "[GR] Owner",
+                "owner": "Ιδιοκτήτης",
                 "popover": {
                     "role": {
-                        "editor": "[GR] Editor",
-                        "editorDescription": "[GR] It will be able to view and edit the item",
-                        "viewer": "[GR] Viewer",
-                        "viewerDescription": "[GR] It will only be able to view or download the item"
+                        "editor": "Συντάκτης",
+                        "editorDescription": "Θα μπορεί να βλέπει και να επεξεργάζεται το στοιχείο",
+                        "viewer": "Θεατής",
+                        "viewerDescription": "Θα μπορεί μόνο να βλέπει ή να κατεβάζει το στοιχείο"
                     },
-                    "save": "[GR] Save",
-                    "sharingAllowed": "[GR] Sharing allowed",
-                    "sharingAllowedDescription": "[GR] It will be able to manage shares of the item"
+                    "save": "Αποθήκευση",
+                    "sharingAllowed": "Επιτρέπεται η κοινή χρήση",
+                    "sharingAllowedDescription": "Θα μπορεί να διαχειρίζεται τις κοινές χρήσεις του στοιχείου"
                 },
                 "tooltip": {
                     "edit": {
-                        "collaborator": "[GR] Edit collaboration",
-                        "you": "[GR] Edit your collaboration",
-                        "bulk": "[GR] Edit collaboration for all"
+                        "collaborator": "Επεξεργασία συνεργασίας",
+                        "you": "Επεξεργασία της συνεργασίας σας",
+                        "bulk": "Επεξεργασία συνεργασίας για όλους"
                     },
                     "remove": {
-                        "collaborator": "[GR] Remove collaboration",
-                        "yourself": "[GR] Remove your collaboration",
-                        "bulk": "[GR] Remove collaboration for all"
+                        "collaborator": "Αφαίρεση συνεργασίας",
+                        "yourself": "Αφαίρεση της συνεργασίας σας",
+                        "bulk": "Αφαίρεση συνεργασίας για όλους"
                     }
                 },
-                "you": "[GR] You"
+                "you": "Εσείς"
             },
-            "noSharePermissionHeader": "[GR] You are not allowed to share this item.",
+            "noSharePermissionHeader": "Δεν επιτρέπεται να μοιραστείτε αυτό το στοιχείο.",
             "editor": {
-                "tooltip": "[GR] You don't have the necessary permissions to assign editor rights"
+                "tooltip": "Δεν έχετε τα απαραίτητα δικαιώματα για να εκχωρήσετε δικαιώματα συντάκτη"
             },
             "tooltip": {
-                "no_edit_permission": "[GR] You don’t have the necessary permissions to edit collaboration",
-                "no_remove_permission": "[GR] You don’t have the necessary permissions to remove collaboration"
+                "no_edit_permission": "Δεν έχετε τα απαραίτητα δικαιώματα για να επεξεργαστείτε τη συνεργασία",
+                "no_remove_permission": "Δεν έχετε τα απαραίτητα δικαιώματα για να αφαιρέσετε τη συνεργασία"
             },
-            "allCollaborators": "[GR] All Collaborators",
-            "selected": "[GR] {{count}} selected"
+            "allCollaborators": "Όλοι οι Συνεργάτες",
+            "selected": "{{count}} επιλεγμένα"
         },
         "tabs": {
-            "activities": "[GR] Activities",
-            "details": "[GR] Details",
-            "sharing": "[GR] Sharing",
-            "versioning": "[GR] Versioning"
+            "activities": "Δραστηριότητες",
+            "details": "Λεπτομέρειες",
+            "sharing": "Κοινή χρήση",
+            "versioning": "Διαχείριση εκδόσεων"
         },
         "uploads": {
-            "message": "[GR] Here you can find all the items that are currently uploading, you can manage them from here.",
-            "title": "[GR] Upload suggestions"
+            "message": "Εδώ μπορείτε να βρείτε όλα τα στοιχεία που μεταφορτώνονται αυτή τη στιγμή και να τα διαχειριστείτε.",
+            "title": "Προτάσεις μεταφόρτωσης"
         },
         "version": {
             "actions": {
-                "cloneAsCurrent": "[GR] Clone as current",
-                "deleteVersion": "[GR] Delete version",
-                "downloadVersion": "[GR] Download version",
-                "keepVersion": "[GR] Keep this version forever",
-                "openDocumentVersion": "[GR] Open document version",
-                "removeKeepVersion": "[GR] Remove keep forever",
+                "cloneAsCurrent": "Κλωνοποίηση ως τρέχουσα",
+                "deleteVersion": "Διαγραφή έκδοσης",
+                "downloadVersion": "Λήψη έκδοσης",
+                "keepVersion": "Διατήρηση αυτής της έκδοσης για πάντα",
+                "openDocumentVersion": "Άνοιγμα έκδοσης εγγράφου",
+                "removeKeepVersion": "Αφαίρεση διατήρησης για πάντα",
                 "tooltip": {
-                    "disabledByDeleteCurrent": "[GR] Current version cannot be deleted",
-                    "disabledByDocs": "[GR] This version cannot be opened by the online editor",
-                    "disabledByMaxKeepVersion": "[GR] You have reached the maximum number of versions to keep forever",
-                    "disabledByMaxVersion": "[GR] You have reached the maximum number of versions",
-                    "disabledByPermission": "[GR] You don't have the correct permissions",
-                    "disabledByVersionKeepForever": "[GR] Versions marked to be kept forever cannot be deleted"
+                    "disabledByDeleteCurrent": "Η τρέχουσα έκδοση δεν μπορεί να διαγραφεί",
+                    "disabledByDocs": "Αυτή η έκδοση δεν μπορεί να ανοιχτεί από τον online επεξεργαστή",
+                    "disabledByMaxKeepVersion": "Έχετε φτάσει τον μέγιστο αριθμό εκδόσεων για μόνιμη διατήρηση",
+                    "disabledByMaxVersion": "Έχετε φτάσει τον μέγιστο αριθμό εκδόσεων",
+                    "disabledByPermission": "Δεν έχετε τα σωστά δικαιώματα",
+                    "disabledByVersionKeepForever": "Οι εκδόσεις που έχουν επισημανθεί για μόνιμη διατήρηση δεν μπορούν να διαγραφούν"
                 }
             },
             "button": {
-                "purgeAllVersions": "[GR] Purge all versions",
-                "upload": "[GR] Upload version"
+                "purgeAllVersions": "Εκκαθάριση όλων των εκδόσεων",
+                "upload": "Μεταφόρτωση έκδοσης"
             },
-            "mainHint": "[GR] Files saves the last {{maxVersions}} versions of your items. You can manually delete any item version or restore one as the current version. Select one or more versions that you want to keep forever.",
+            "mainHint": "Το Files αποθηκεύει τις τελευταίες {{maxVersions}} εκδόσεις των στοιχείων σας. Μπορείτε να διαγράψετε χειροκίνητα οποιαδήποτε έκδοση στοιχείου ή να επαναφέρετε μία ως τρέχουσα έκδοση. Επιλέξτε μία ή περισσότερες εκδόσεις που θέλετε να διατηρήσετε για πάντα.",
             "row": {
                 "clonedIcon": {
-                    "tooltip1": "[GR] Cloned from version {{versionNumber}} ({{cloneDate}})",
-                    "tooltip2": "[GR] Cloned from version {{versionNumber}} (version deleted)"
+                    "tooltip1": "Κλωνοποιήθηκε από την έκδοση {{versionNumber}} ({{cloneDate}})",
+                    "tooltip2": "Κλωνοποιήθηκε από την έκδοση {{versionNumber}} (η έκδοση διαγράφηκε)"
                 },
-                "versionNumber": "[GR] Version {{versionNumber}}"
+                "versionNumber": "Έκδοση {{versionNumber}}"
             },
             "rowHeaders": {
-                "currentVersion": "[GR] Current version",
-                "lastWeek": "[GR] Last 7 days",
-                "olderVersions": "[GR] Older versions"
+                "currentVersion": "Τρέχουσα έκδοση",
+                "lastWeek": "Τελευταίες 7 ημέρες",
+                "olderVersions": "Παλαιότερες εκδόσεις"
             }
         },
         "upload": {
             "error": {
-                "aborted": "[GR] The upload was interrupted or blocked. Please try again or check your connection.",
-                "fileSizeExceeded": "[GR] The file could not be uploaded because it exceeds the allowed limit.",
-                "maxVersionReached": "[GR] The file could not be uploaded because the maximum number of versions has been reached."
+                "aborted": "Η μεταφόρτωση διακόπηκε ή μπλοκαρίστηκε. Δοκιμάστε ξανά ή ελέγξτε τη σύνδεσή σας.",
+                "fileSizeExceeded": "Το αρχείο δεν ήταν δυνατό να μεταφορτωθεί επειδή υπερβαίνει το επιτρεπόμενο όριο.",
+                "maxVersionReached": "Το αρχείο δεν ήταν δυνατό να μεταφορτωθεί επειδή έχει επιτευχθεί ο μέγιστος αριθμός εκδόσεων."
             }
         },
         "uploadFailure": {
-            "title": "[GR] Upload suggestions",
-            "message": "[GR] Here you can find all the items that are currently uploading. If a file failed to upload, click on it to see more details."
+            "title": "Προτάσεις μεταφόρτωσης",
+            "message": "Εδώ μπορείτε να βρείτε όλα τα στοιχεία που μεταφορτώνονται αυτή τη στιγμή. Αν η μεταφόρτωση ενός αρχείου απέτυχε, κάντε κλικ σε αυτό για περισσότερες λεπτομέρειες."
         }
     },
     "docs": {
@@ -637,16 +637,16 @@
                 "input": {
                     "label": {
                         "name": {
-                            "document": "[GR] Document name",
-                            "presentation": "[GR] Presentation name",
-                            "spreadsheet": "[GR] Spreadsheet name"
+                            "document": "Όνομα εγγράφου",
+                            "presentation": "Όνομα παρουσίασης",
+                            "spreadsheet": "Όνομα υπολογιστικού φύλλου"
                         }
                     }
                 },
                 "title": {
-                    "document": "[GR] Create new document",
-                    "presentation": "[GR] Create new presentation",
-                    "spreadsheet": "[GR] Create new spreadsheet"
+                    "document": "Δημιουργία νέου εγγράφου",
+                    "presentation": "Δημιουργία νέας παρουσίασης",
+                    "spreadsheet": "Δημιουργία νέου υπολογιστικού φύλλου"
                 }
             }
         }
@@ -654,556 +654,556 @@
     "dropzone": {
         "move": {
             "message": {
-                "disabled": "[GR] You cannot drop your items in this area.",
-                "enabled": "[GR] Drop here your items \n to quickly move them to this folder."
+                "disabled": "Δεν μπορείτε να αποθέσετε τα στοιχεία σας σε αυτή την περιοχή.",
+                "enabled": "Αποθέστε εδώ τα στοιχεία σας \n για γρήγορη μετακίνησή τους σε αυτόν τον φάκελο."
             },
             "title": {
-                "disabled": "[GR] Drag&Drop mode.",
-                "enabled": "[GR] Drag&Drop mode."
+                "disabled": "Λειτουργία Μεταφοράς & Απόθεσης.",
+                "enabled": "Λειτουργία Μεταφοράς & Απόθεσης."
             }
         }
     },
     "empty": {
         "filter": {
-            "flagged": "[GR] There are no flagged items.",
-            "hint": "[GR] It looks like there's nothing here.",
-            "recents": "[GR] It looks like there are no recent items yet.",
-            "sharedByMe": "[GR] You haven't shared any item with your collaborators yet.",
-            "sharedWithMe": "[GR] There are no items shared with you yet.",
-            "trash": "[GR] The trash is empty."
+            "flagged": "Δεν υπάρχουν επισημασμένα στοιχεία.",
+            "hint": "Φαίνεται ότι δεν υπάρχει τίποτα εδώ.",
+            "recents": "Φαίνεται ότι δεν υπάρχουν ακόμα πρόσφατα στοιχεία.",
+            "sharedByMe": "Δεν έχετε μοιραστεί ακόμα κανένα στοιχείο με τους συνεργάτες σας.",
+            "sharedWithMe": "Δεν υπάρχουν ακόμα στοιχεία που έχουν κοινοποιηθεί σε εσάς.",
+            "trash": "Ο κάδος απορριμμάτων είναι άδειος."
         },
         "folder": {
-            "displayerContent": "[GR] This folder has no content.",
-            "hint": "[GR] It seems that this folder is empty.",
-            "state": "[GR] Drag a file or create a new one clicking \"NEW\"."
+            "displayerContent": "Αυτός ο φάκελος δεν έχει περιεχόμενο.",
+            "hint": "Φαίνεται ότι αυτός ο φάκελος είναι άδειος.",
+            "state": "Σύρετε ένα αρχείο ή δημιουργήστε ένα νέο κάνοντας κλικ στο «ΝΕΟ»."
         },
         "search": {
-            "hint": "[GR] Your search didn't match any files or folders.",
+            "hint": "Η αναζήτησή σας δεν ταίριαξε με κανένα αρχείο ή φάκελο.",
             "noResults": [
-                "[GR] No results. Keep searching!",
-                "[GR] None of your items matches your search."
+                "Δεν υπάρχουν αποτελέσματα. Συνεχίστε την αναζήτηση!",
+                "Κανένα από τα στοιχεία σας δεν ταιριάζει με την αναζήτησή σας."
             ],
-            "notRun": "[GR] No search was carried out yet."
+            "notRun": "Δεν έχει πραγματοποιηθεί ακόμα καμία αναζήτηση."
         }
     },
     "errorCode": {
-        "code": "[GR] Something went wrong",
-        "code_ACCOUNT_NOT_FOUND": "[GR] It seems that this email is not associated to a user",
-        "code_FILE_VERSION_NOT_FOUND": "[GR] We're sorry, but this version of the item cannot be found",
-        "code_Generic": "[GR] Something went wrong",
-        "code_LINK_NOT_FOUND": "[GR] Action failed. This link no longer exists",
-        "code_MISSING_FIELD": "[GR] An internal error occurred, not all information of this item has been recovered",
-        "code_NODE_COPY_ERROR": "[GR] Sorry, copy of the item failed. Try again",
-        "code_NODE_DUPLICATED": "[GR] There is an item with the same name in this folder",
-        "code_NODE_NOT_FOUND": "[GR] It seems that this item doesn't exist, or you do not have permission to access it",
-        "code_NODE_WRITE_ERROR": "[GR] It seems that this item cannot be edited or that you do not have permission to edit it",
-        "code_SHARE_CREATION_ERROR": "[GR] We are sorry, but it is not possible to share the item with this user",
-        "code_SHARE_NOT_FOUND": "[GR] We're sorry, but this share cannot be found",
-        "code_VERSIONS_LIMIT_REACHED": "[GR] The operation cannot be completed. You have reached the maximum limit.",
-        "code_OVER_QUOTA_REACHED": "[GR] You have reached your storage limit. Delete some items to free up storage space and try again",
-        "operation_copyNodes": "[GR] Copy action failed.",
-        "operation_cloneVersion": "[GR] Clone action failed."
+        "code": "Κάτι πήγε στραβά",
+        "code_ACCOUNT_NOT_FOUND": "Φαίνεται ότι αυτό το e-mail δεν σχετίζεται με κάποιον χρήστη",
+        "code_FILE_VERSION_NOT_FOUND": "Λυπούμαστε, αλλά αυτή η έκδοση του στοιχείου δεν βρέθηκε",
+        "code_Generic": "Κάτι πήγε στραβά",
+        "code_LINK_NOT_FOUND": "Η ενέργεια απέτυχε. Αυτός ο σύνδεσμος δεν υπάρχει πλέον",
+        "code_MISSING_FIELD": "Παρουσιάστηκε εσωτερικό σφάλμα, δεν ανακτήθηκαν όλες οι πληροφορίες αυτού του στοιχείου",
+        "code_NODE_COPY_ERROR": "Λυπούμαστε, η αντιγραφή του στοιχείου απέτυχε. Δοκιμάστε ξανά",
+        "code_NODE_DUPLICATED": "Υπάρχει ένα στοιχείο με το ίδιο όνομα σε αυτόν τον φάκελο",
+        "code_NODE_NOT_FOUND": "Φαίνεται ότι αυτό το στοιχείο δεν υπάρχει, ή ότι δεν έχετε δικαίωμα πρόσβασης σε αυτό",
+        "code_NODE_WRITE_ERROR": "Φαίνεται ότι αυτό το στοιχείο δεν μπορεί να επεξεργαστεί ή ότι δεν έχετε δικαίωμα επεξεργασίας του",
+        "code_SHARE_CREATION_ERROR": "Λυπούμαστε, αλλά δεν είναι δυνατή η κοινή χρήση του στοιχείου με αυτόν τον χρήστη",
+        "code_SHARE_NOT_FOUND": "Λυπούμαστε, αλλά αυτή η κοινή χρήση δεν βρέθηκε",
+        "code_VERSIONS_LIMIT_REACHED": "Η λειτουργία δεν μπορεί να ολοκληρωθεί. Έχετε φτάσει το μέγιστο όριο.",
+        "code_OVER_QUOTA_REACHED": "Έχετε φτάσει το όριο αποθηκευτικού χώρου σας. Διαγράψτε κάποια στοιχεία για να ελευθερώσετε χώρο και δοκιμάστε ξανά",
+        "operation_copyNodes": "Η ενέργεια αντιγραφής απέτυχε.",
+        "operation_cloneVersion": "Η ενέργεια κλωνοποίησης απέτυχε."
     },
     "folder": {
         "create": {
             "modal": {
                 "button": {
-                    "confirm": "[GR] Create"
+                    "confirm": "Δημιουργία"
                 },
                 "input": {
                     "label": {
-                        "name": "[GR] Folder name"
+                        "name": "Όνομα φακέλου"
                     }
                 },
-                "title": "[GR] Create new folder"
+                "title": "Δημιουργία νέου φακέλου"
             }
         }
     },
     "label": {
-        "app_name": "[GR] Files"
+        "app_name": "Αρχεία"
     },
     "node": {
         "alias": {
-            "name_LOCAL_ROOT": "[GR] Home",
-            "name_SHARED_WITH_ME_ROOT": "[GR] Shared with me",
-            "name_TRASH_ROOT": "[GR] Trash"
+            "name_LOCAL_ROOT": "Αρχική",
+            "name_SHARED_WITH_ME_ROOT": "Κοινή χρήση με εμένα",
+            "name_TRASH_ROOT": "Κάδος απορριμμάτων"
         },
         "copy": {
             "modal": {
                 "button": {
-                    "confirm": "[GR] Copy",
+                    "confirm": "Αντιγραφή",
                     "tooltip": {
-                        "confirm": "[GR] You can't perform this action here"
+                        "confirm": "Δεν μπορείτε να εκτελέσετε αυτή την ενέργεια εδώ"
                     }
                 },
-                "title_one": "[GR] Copy {{node.name}}",
-                "title_other": "[GR] Copy items"
+                "title_one": "Αντιγραφή {{node.name}}",
+                "title_other": "Αντιγραφή στοιχείων"
             }
         },
         "move": {
             "error": {
                 "not": {
-                    "allowed": "[GR] You cannot move multiple items from a filter or a search"
+                    "allowed": "Δεν μπορείτε να μετακινήσετε πολλά στοιχεία από ένα φίλτρο ή μια αναζήτηση"
                 }
             },
             "modal": {
                 "button": {
-                    "confirm": "[GR] Move",
+                    "confirm": "Μετακίνηση",
                     "tooltip": {
-                        "confirm": "[GR] You can't perform this action here"
+                        "confirm": "Δεν μπορείτε να εκτελέσετε αυτή την ενέργεια εδώ"
                     }
                 },
                 "input": {
-                    "filter": "[GR] Filter folders"
+                    "filter": "Φιλτράρισμα φακέλων"
                 },
-                "subtitle": "[GR] Select a destination folder:",
-                "title_one": "[GR] Move {{node.name}}",
-                "title_other": "[GR] Move items"
+                "subtitle": "Επιλέξτε έναν φάκελο προορισμού:",
+                "title_one": "Μετακίνηση {{node.name}}",
+                "title_other": "Μετακίνηση στοιχείων"
             }
         },
         "rename": {
             "modal": {
                 "button": {
-                    "confirm": "[GR] Rename"
+                    "confirm": "Μετονομασία"
                 },
                 "input": {
                     "label": {
-                        "name": "[GR] Item name"
+                        "name": "Όνομα στοιχείου"
                     }
                 },
-                "title": "[GR] Rename item"
+                "title": "Μετονομασία στοιχείου"
             }
         },
         "type": {
-            "folder": "[GR] Folder"
+            "folder": "Φάκελος"
         },
         "preview": {
-            "failed": "[GR] Failed to load image"
+            "failed": "Αποτυχία φόρτωσης εικόνας"
         }
     },
     "publicLink": {
         "addLink": {
-            "addLink": "[GR] Add Link",
-            "description": "[GR] Internal and external users that have access to the link can download the item.",
-            "generateLink": "[GR] Generate Link",
-            "limitReached": "[GR] The maximum amount of public links has been reached",
-            "undo": "[GR] Undo"
+            "addLink": "Προσθήκη Συνδέσμου",
+            "description": "Οι εσωτερικοί και εξωτερικοί χρήστες που έχουν πρόσβαση στον σύνδεσμο μπορούν να κατεβάσουν το στοιχείο.",
+            "generateLink": "Δημιουργία Συνδέσμου",
+            "limitReached": "Έχει επιτευχθεί ο μέγιστος αριθμός δημόσιων συνδέσμων",
+            "undo": "Αναίρεση"
         },
         "datePickerInput": {
-            "description": "[GR] The link expires at the end of the chosen day"
+            "description": "Ο σύνδεσμος λήγει στο τέλος της επιλεγμένης ημέρας"
         },
         "dateTimePicker": {
-            "label": "[GR] Expiration date"
+            "label": "Ημερομηνία λήξης"
         },
         "fileLink": {
             "addLink": {
-                "description": "[GR] Internal and external users that have access to the link can download the item."
+                "description": "Οι εσωτερικοί και εξωτερικοί χρήστες που έχουν πρόσβαση στον σύνδεσμο μπορούν να κατεβάσουν το στοιχείο."
             },
-            "title_one": "[GR] Public download link",
-            "title_other": "[GR] Public download links"
+            "title_one": "Σύνδεσμος δημόσιας λήψης",
+            "title_other": "Σύνδεσμοι δημόσιας λήψης"
         },
         "folderLink": {
             "addLink": {
-                "description": "[GR] Anyone with this link can view and download the content of this folder."
+                "description": "Οποιοσδήποτε έχει αυτόν τον σύνδεσμο μπορεί να δει και να κατεβάσει το περιεχόμενο αυτού του φακέλου."
             },
-            "title_one": "[GR] Public access link",
-            "title_other": "[GR] Public access links"
+            "title_one": "Σύνδεσμος δημόσιας πρόσβασης",
+            "title_other": "Σύνδεσμοι δημόσιας πρόσβασης"
         },
         "input": {
             "description": {
                 "error": {
-                    "maxLengthAllowed": "[GR] Maximum length allowed is 300 characters"
+                    "maxLengthAllowed": "Το μέγιστο επιτρεπόμενο μήκος είναι 300 χαρακτήρες"
                 }
             },
-            "label": "[GR] Link's description"
+            "label": "Περιγραφή συνδέσμου"
         },
         "link": {
-            "edit": "[GR] Edit",
-            "editLink": "[GR] Edit Link",
-            "expireOn": "[GR] Expires on:",
-            "expiredOn": "[GR] This link has expired on:",
-            "noExpirationDate": "[GR] Has no expiration date",
-            "remove": "[GR] Remove",
-            "revoke": "[GR] Revoke",
-            "undo": "[GR] Undo",
+            "edit": "Επεξεργασία",
+            "editLink": "Επεξεργασία Συνδέσμου",
+            "expireOn": "Λήγει στις:",
+            "expiredOn": "Αυτός ο σύνδεσμος έληξε στις:",
+            "noExpirationDate": "Δεν έχει ημερομηνία λήξης",
+            "remove": "Αφαίρεση",
+            "revoke": "Ανάκληση",
+            "undo": "Αναίρεση",
             "urlChip": {
                 "tooltip": {
-                    "copy": "[GR] Copy {{linkName}}",
-                    "expired": "[GR] This link has expired"
+                    "copy": "Αντιγραφή {{linkName}}",
+                    "expired": "Αυτός ο σύνδεσμος έχει λήξει"
                 }
             }
         },
         "accessCode": {
             "chip": {
-                "tooltip": "[GR] Copy access code",
-                "label": "[GR] Access code"
+                "tooltip": "Αντιγραφή κωδικού πρόσβασης",
+                "label": "Κωδικός πρόσβασης"
             },
             "switch": {
-                "label": "[GR] Enable access code"
+                "label": "Ενεργοποίηση κωδικού πρόσβασης"
             },
             "input": {
-                "label": "[GR] Access code"
+                "label": "Κωδικός πρόσβασης"
             },
             "buttons": {
                 "copy": {
-                    "tooltip": "[GR] Copy access code"
+                    "tooltip": "Αντιγραφή κωδικού πρόσβασης"
                 },
                 "regenerate": {
-                    "tooltip": "[GR] Generate new access code"
+                    "tooltip": "Δημιουργία νέου κωδικού πρόσβασης"
                 }
             }
         }
     },
     "quota": {
-        "limitedSpace": "[GR] {{used}} of {{limit}} used",
+        "limitedSpace": "{{used}} από {{limit}} χρησιμοποιημένα",
         "overQuota": {
             "tooltip": {
-                "label": "[GR] You have reached the maximum quota available."
+                "label": "Έχετε φτάσει το μέγιστο διαθέσιμο όριο."
             }
         },
         "refresh": {
             "tooltip": {
-                "label": "[GR] Refresh"
+                "label": "Ανανέωση"
             }
         },
-        "unlimitedSpace": "[GR] {{used}} of unlimited space"
+        "unlimitedSpace": "{{used}} από απεριόριστο χώρο"
     },
     "search": {
         "advancedSearch": {
             "button": {
-                "filters_one": "[GR] {{count}} advanced filter",
-                "filters_other": "[GR] {{count}} advanced filters"
+                "filters_one": "{{count}} σύνθετο φίλτρο",
+                "filters_other": "{{count}} σύνθετα φίλτρα"
             },
             "modal": {
                 "button": {
-                    "confirm": "[GR] Search",
-                    "reset": "[GR] Reset filters"
+                    "confirm": "Αναζήτηση",
+                    "reset": "Επαναφορά φίλτρων"
                 },
                 "flagged": {
-                    "description": "[GR] Filter the results by items that you've flagged",
-                    "label": "[GR] Flagged"
+                    "description": "Φιλτράρισμα των αποτελεσμάτων ανά στοιχεία που έχετε επισημάνει",
+                    "label": "Επισημασμένα"
                 },
                 "folder": {
-                    "label": "[GR] Select a folder",
+                    "label": "Επιλέξτε έναν φάκελο",
                     "modal": {
-                        "cancel": "[GR] Go back",
-                        "cascade": "[GR] search also in contained folders",
-                        "confirm": "[GR] Choose folder",
-                        "subtitle": "[GR] Result will be searched only inside the selected folder",
-                        "title": "[GR] Select a folder"
+                        "cancel": "Επιστροφή",
+                        "cascade": "αναζήτηση και στους περιεχόμενους φακέλους",
+                        "confirm": "Επιλογή φακέλου",
+                        "subtitle": "Η αναζήτηση αποτελεσμάτων θα γίνει μόνο εντός του επιλεγμένου φακέλου",
+                        "title": "Επιλέξτε έναν φάκελο"
                     }
                 },
                 "itemType": {
                     "dropdownOption": {
-                        "audio": "[GR] Audio",
-                        "document": "[GR] Document",
-                        "folder": "[GR] Folder",
-                        "image": "[GR] Image",
-                        "presentation": "[GR] Presentation",
-                        "spreadsheet": "[GR] Spreadsheet",
-                        "video": "[GR] Video"
+                        "audio": "Ήχος",
+                        "document": "Έγγραφο",
+                        "folder": "Φάκελος",
+                        "image": "Εικόνα",
+                        "presentation": "Παρουσίαση",
+                        "spreadsheet": "Υπολογιστικό φύλλο",
+                        "video": "Βίντεο"
                     },
-                    "label": "[GR] Item type"
+                    "label": "Τύπος στοιχείου"
                 },
                 "keywords": {
-                    "label": "[GR] Keywords"
+                    "label": "Λέξεις-κλειδιά"
                 },
                 "owner": {
-                    "label": "[GR] Owner"
+                    "label": "Ιδιοκτήτης"
                 },
                 "shared": {
-                    "description": "[GR] Filter the results by items that contain at least one collaborator besides you",
-                    "label": "[GR] Shared"
+                    "description": "Φιλτράρισμα των αποτελεσμάτων ανά στοιχεία που περιέχουν τουλάχιστον έναν συνεργάτη εκτός από εσάς",
+                    "label": "Κοινόχρηστο"
                 },
-                "title": "[GR] Advanced filters"
+                "title": "Σύνθετα φίλτρα"
             }
         },
         "clear": {
             "tooltip": {
-                "clear": "[GR] Clear search input",
-                "empty": "[GR] Search input is already clear"
+                "clear": "Εκκαθάριση πεδίου αναζήτησης",
+                "empty": "Το πεδίο αναζήτησης είναι ήδη κενό"
             }
         },
         "header": {
-            "close": "[GR] Quit the search",
-            "result": "[GR] Results that contain all the keywords:",
-            "search": "[GR] Search",
-            "start": "[GR] Start a search"
+            "close": "Έξοδος από την αναζήτηση",
+            "result": "Αποτελέσματα που περιέχουν όλες τις λέξεις-κλειδιά:",
+            "search": "Αναζήτηση",
+            "start": "Ξεκινήστε μια αναζήτηση"
         },
-        "resultsFor": "[GR] Results for:",
+        "resultsFor": "Αποτελέσματα για:",
         "search": {
             "tooltip": {
-                "edit": "[GR] Edit your search to start a new one",
-                "empty": "[GR] Type some keywords to start a search",
-                "search": "[GR] Search"
+                "edit": "Επεξεργαστείτε την αναζήτησή σας για να ξεκινήσετε μια νέα",
+                "empty": "Πληκτρολογήστε κάποιες λέξεις-κλειδιά για να ξεκινήσετε μια αναζήτηση",
+                "search": "Αναζήτηση"
             }
         },
         "searchBar": {
             "label": {
-                "active": "[GR] Separate your keywords by a comma, semicolon or pressing TAB",
-                "default": "[GR] Type your search"
+                "active": "Διαχωρίστε τις λέξεις-κλειδιά σας με κόμμα, ερωτηματικό ή πατώντας TAB",
+                "default": "Πληκτρολογήστε την αναζήτησή σας"
             }
         }
     },
     "secondaryBar": {
-        "filesHome": "[GR] Home",
-        "filters": "[GR] Filters",
+        "filesHome": "Αρχική",
+        "filters": "Φίλτρα",
         "filtersList": {
-            "flagged": "[GR] Flagged",
-            "myElements": "[GR] My items",
-            "recents": "[GR] Recents",
-            "sharedByMe": "[GR] Shared by me",
-            "sharedElements": "[GR] Shared items",
-            "sharedWithMe": "[GR] Shared with me",
-            "trash": "[GR] Trash"
+            "flagged": "Επισημασμένα",
+            "myElements": "Τα στοιχεία μου",
+            "recents": "Πρόσφατα",
+            "sharedByMe": "Κοινή χρήση από εμένα",
+            "sharedElements": "Κοινόχρηστα στοιχεία",
+            "sharedWithMe": "Κοινή χρήση με εμένα",
+            "trash": "Κάδος απορριμμάτων"
         },
-        "uploads": "[GR] Uploads"
+        "uploads": "Μεταφορτώσεις"
     },
     "selectionMode": {
         "header": {
-            "exit": "[GR] Exit selection mode",
-            "selectAll": "[GR] Select all",
-            "unselectAll": "[GR] Deselect all"
+            "exit": "Έξοδος από τη λειτουργία επιλογής",
+            "selectAll": "Επιλογή όλων",
+            "unselectAll": "Αποεπιλογή όλων"
         },
         "node": {
-            "tooltip": "[GR] Activate selection mode"
+            "tooltip": "Ενεργοποίηση λειτουργίας επιλογής"
         }
     },
     "snackbar": {
         "clipboard": {
-            "email": "[GR] Email address copied",
-            "itemShortcutCopied": "[GR] Item shortcut copied",
-            "accessCodeCopied": "[GR] Access code copied"
+            "email": "Η διεύθυνση e-mail αντιγράφηκε",
+            "itemShortcutCopied": "Η συντόμευση στοιχείου αντιγράφηκε",
+            "accessCodeCopied": "Ο κωδικός πρόσβασης αντιγράφηκε"
         },
         "collaborationLink": {
             "actionLabel": {
-                "copyLink": "[GR] Copy link"
+                "copyLink": "Αντιγραφή συνδέσμου"
             },
-            "copyCollaborationLink": "[GR] Collaboration link copied",
+            "copyCollaborationLink": "Ο σύνδεσμος συνεργασίας αντιγράφηκε",
             "newCollaborationLinkGenerated": {
-                "label": "[GR] New Collaboration link generated"
+                "label": "Δημιουργήθηκε νέος σύνδεσμος συνεργασίας"
             }
         },
         "copyNodes": {
-            "action": "[GR] Go to folder",
-            "error": "[GR] Something went wrong, try again",
-            "success": "[GR] Item copied"
+            "action": "Μετάβαση στον φάκελο",
+            "error": "Κάτι πήγε στραβά, δοκιμάστε ξανά",
+            "success": "Το στοιχείο αντιγράφηκε"
         },
         "decreaseYourOwnShare": {
-            "success": "[GR] Rights updated successfully"
+            "success": "Τα δικαιώματα ενημερώθηκαν με επιτυχία"
         },
         "deletePermanently": {
-            "error": "[GR] Error",
-            "success": "[GR] Success"
+            "error": "Σφάλμα",
+            "success": "Επιτυχία"
         },
         "deleteShare": {
-            "error": "[GR] Error",
-            "success": "[GR] Success"
+            "error": "Σφάλμα",
+            "success": "Επιτυχία"
         },
         "download": {
-            "start": "[GR] Your download will start soon",
-            "error": "[GR] Download size exceeds the {{limit}} limit. Please reduce items to download",
-            "sizeExceedsError": "[GR] Download size exceeds the maximum limit. Please reduce items to download"
+            "start": "Η λήψη σας θα ξεκινήσει σύντομα",
+            "error": "Το μέγεθος λήψης υπερβαίνει το όριο {{limit}}. Μειώστε τα στοιχεία προς λήψη",
+            "sizeExceedsError": "Το μέγεθος λήψης υπερβαίνει το μέγιστο όριο. Μειώστε τα στοιχεία προς λήψη"
         },
         "markForDeletion": {
-            "error": "[GR] Something went wrong, try again",
-            "showTrash": "[GR] Open Trash folder",
-            "success": "[GR] Item moved to trash"
+            "error": "Κάτι πήγε στραβά, δοκιμάστε ξανά",
+            "showTrash": "Άνοιγμα φακέλου Κάδου Απορριμμάτων",
+            "success": "Το στοιχείο μετακινήθηκε στον κάδο απορριμμάτων"
         },
         "moveNodes": {
-            "action": "[GR] Go to folder",
-            "error": "[GR] Something went wrong, try again",
-            "success": "[GR] Item moved"
+            "action": "Μετάβαση στον φάκελο",
+            "error": "Κάτι πήγε στραβά, δοκιμάστε ξανά",
+            "success": "Το στοιχείο μετακινήθηκε"
         },
         "publicLink": {
             "actionLabel": {
-                "copyLink": "[GR] Copy Link"
+                "copyLink": "Αντιγραφή Συνδέσμου"
             },
-            "copyLink": "[GR] {{linkName}} copied",
+            "copyLink": "{{linkName}} αντιγράφηκε",
             "linkUpdated": {
-                "label": "[GR] {{linkName}} updated"
+                "label": "{{linkName}} ενημερώθηκε"
             },
             "newPublicLinkGenerated": {
-                "label": "[GR] New {{linkName}} generated"
+                "label": "Δημιουργήθηκε νέο {{linkName}}"
             }
         },
         "restore": {
-            "error": "[GR] Something went wrong, try again",
-            "showInFolder": "[GR] Show in folder",
-            "success": "[GR] Success"
+            "error": "Κάτι πήγε στραβά, δοκιμάστε ξανά",
+            "showInFolder": "Εμφάνιση στον φάκελο",
+            "success": "Επιτυχία"
         },
         "unflag": {
-            "success": "[GR] Item unflagged successfully"
+            "success": "Η επισήμανση του στοιχείου αφαιρέθηκε με επιτυχία"
         },
         "upload": {
-            "foldersNotAllowed": "[GR] Folders cannot be uploaded",
-            "goToFolder": "[GR] Go to folder",
-            "moreInfo": "[GR] More info",
-            "nodesNotAllowed": "[GR] Some items have not been uploaded",
-            "success": "[GR] Upload occurred in {{destination}}"
+            "foldersNotAllowed": "Δεν είναι δυνατή η μεταφόρτωση φακέλων",
+            "goToFolder": "Μετάβαση στον φάκελο",
+            "moreInfo": "Περισσότερες πληροφορίες",
+            "nodesNotAllowed": "Ορισμένα στοιχεία δεν έχουν μεταφορτωθεί",
+            "success": "Η μεταφόρτωση έγινε στο {{destination}}"
         },
         "version": {
-            "clone": "[GR] Version cloned as the current one",
-            "keepForeverAdded": "[GR] Version marked as to be kept forever",
-            "keepForeverRemoved": "[GR] \"Keep forever\" removed"
+            "clone": "Η έκδοση κλωνοποιήθηκε ως η τρέχουσα",
+            "keepForeverAdded": "Η έκδοση επισημάνθηκε για μόνιμη διατήρηση",
+            "keepForeverRemoved": "Η επιλογή \"Διατήρηση για πάντα\" αφαιρέθηκε"
         },
         "createDocument": {
             "error": {
                 "overQuota": {
-                    "spreadsheet": "[GR] New spreadsheet creation failed. You have reached your storage limit. Delete some items to free up storage space and try again",
-                    "document": "[GR] New document creation failed. You have reached your storage limit. Delete some items to free up storage space and try again",
-                    "presentation": "[GR] New presentation creation failed. You have reached your storage limit. Delete some items to free up storage space and try again",
-                    "actionLabel": "[GR] OK"
+                    "spreadsheet": "Η δημιουργία νέου υπολογιστικού φύλλου απέτυχε. Έχετε φτάσει το όριο αποθηκευτικού χώρου σας. Διαγράψτε κάποια στοιχεία για να ελευθερώσετε χώρο και δοκιμάστε ξανά",
+                    "document": "Η δημιουργία νέου εγγράφου απέτυχε. Έχετε φτάσει το όριο αποθηκευτικού χώρου σας. Διαγράψτε κάποια στοιχεία για να ελευθερώσετε χώρο και δοκιμάστε ξανά",
+                    "presentation": "Η δημιουργία νέας παρουσίασης απέτυχε. Έχετε φτάσει το όριο αποθηκευτικού χώρου σας. Διαγράψτε κάποια στοιχεία για να ελευθερώσετε χώρο και δοκιμάστε ξανά",
+                    "actionLabel": "ΟΚ"
                 }
             }
         },
         "error": {
             "overQuota": {
-                "actionLabel": "[GR] OK"
+                "actionLabel": "ΟΚ"
             }
         },
         "accessCode": {
-            "regenerate": "[GR] New access code generated"
+            "regenerate": "Δημιουργήθηκε νέος κωδικός πρόσβασης"
         },
         "openWithDocs": {
             "error": {
-                "pleaseDownload": "[GR] To view the item, please download it on your device",
-                "exceedSizeLimit": "[GR] The item exceeds the size limit allowed and cannot be opened."
+                "pleaseDownload": "Για να δείτε το στοιχείο, κατεβάστε το στη συσκευή σας",
+                "exceedSizeLimit": "Το στοιχείο υπερβαίνει το επιτρεπόμενο όριο μεγέθους και δεν μπορεί να ανοιχτεί."
             }
         },
         "transferOwnership": {
             "error": {
-                "overQuota": "[GR] Ownership transfer failed.",
-                "overQuota2": "[GR] The new owner doesn’t have enough storage available."
+                "overQuota": "Η μεταφορά ιδιοκτησίας απέτυχε.",
+                "overQuota2": "Ο νέος ιδιοκτήτης δεν διαθέτει αρκετό διαθέσιμο αποθηκευτικό χώρο."
             },
-            "success2": "[GR] The items are now in your \"Shared with me\" folder.",
-            "success1": "[GR] Ownership transferred successfully.",
-            "actionLabel": "[GR] OK"
+            "success2": "Τα στοιχεία βρίσκονται τώρα στον φάκελο «Κοινή χρήση με εμένα».",
+            "success1": "Η ιδιοκτησία μεταφέρθηκε με επιτυχία.",
+            "actionLabel": "ΟΚ"
         },
         "sendViaMail": {
             "error": {
                 "fileSizeExceeded": {
-                    "actionLabel": "[GR] Ok"
+                    "actionLabel": "Οκ"
                 }
             }
         }
     },
     "sortingDropdown": {
-        "ascendingOrder": "[GR] Ascending order",
-        "descendingOrder": "[GR] Descending order",
+        "ascendingOrder": "Αύξουσα σειρά",
+        "descendingOrder": "Φθίνουσα σειρά",
         "icon": {
             "tooltip": {
-                "OrderLastUpdateAscending": "[GR] Ascending order by last update",
-                "OrderLastUpdateDescending": "[GR] Descending order by last update",
-                "OrderNameAscending": "[GR] Ascending order by name",
-                "OrderNameDescending": "[GR] Descending order by name",
-                "OrderSizeAscending": "[GR] Ascending order by size",
-                "OrderSizeDescending": "[GR] Descending order by size"
+                "OrderLastUpdateAscending": "Αύξουσα σειρά κατά τελευταία ενημέρωση",
+                "OrderLastUpdateDescending": "Φθίνουσα σειρά κατά τελευταία ενημέρωση",
+                "OrderNameAscending": "Αύξουσα σειρά κατά όνομα",
+                "OrderNameDescending": "Φθίνουσα σειρά κατά όνομα",
+                "OrderSizeAscending": "Αύξουσα σειρά κατά μέγεθος",
+                "OrderSizeDescending": "Φθίνουσα σειρά κατά μέγεθος"
             }
         },
-        "lastUpdate": "[GR] Last update",
-        "name": "[GR] Name",
-        "size": "[GR] Size"
+        "lastUpdate": "Τελευταία ενημέρωση",
+        "name": "Όνομα",
+        "size": "Μέγεθος"
     },
     "uploadItem": {
-        "queued": "[GR] Queued"
+        "queued": "Σε αναμονή"
     },
     "uploads": {
         "banner": {
             "overQuota": {
-                "description": "[GR] The uploading of some items failed because you have reached your storage limit. Delete some items to free up storage space and try again.",
-                "title": "[GR] Quota exceeded"
+                "description": "Η μεταφόρτωση ορισμένων στοιχείων απέτυχε επειδή έχετε φτάσει το όριο αποθηκευτικού χώρου σας. Διαγράψτε κάποια στοιχεία για να ελευθερώσετε χώρο και δοκιμάστε ξανά.",
+                "title": "Υπέρβαση ορίου αποθηκευτικού χώρου"
             }
         },
         "clean": {
-            "completed": "[GR] Clean completed uploads"
+            "completed": "Εκκαθάριση ολοκληρωμένων μεταφορτώσεων"
         },
         "destination": {
-            "home": "[GR] Upload started in Files' Home"
+            "home": "Η μεταφόρτωση ξεκίνησε στην Αρχική του Files"
         },
         "dropzone": {
             "message": {
-                "disabled": "[GR] You cannot drop an attachment in this area",
+                "disabled": "Δεν μπορείτε να αποθέσετε συνημμένο σε αυτή την περιοχή",
                 "folderView": {
-                    "disabled": "[GR] You cannot drop an attachment in this area",
-                    "enabled": "[GR] Drop here your attachments \n to quick-add them to this folder"
+                    "disabled": "Δεν μπορείτε να αποθέσετε συνημμένο σε αυτή την περιοχή",
+                    "enabled": "Αποθέστε εδώ τα συνημμένα σας \n για γρήγορη προσθήκη σε αυτόν τον φάκελο"
                 },
                 "otherView": {
-                    "enabled": "[GR] Drop here your attachments\nto quick-add them to your Home"
+                    "enabled": "Αποθέστε εδώ τα συνημμένα σας\nγια γρήγορη προσθήκη στην Αρχική σας"
                 }
             },
             "title": {
-                "disabled": "[GR] Drag&Drop mode.",
-                "enabled": "[GR] Drag&Drop mode."
+                "disabled": "Λειτουργία Μεταφοράς & Απόθεσης.",
+                "enabled": "Λειτουργία Μεταφοράς & Απόθεσης."
             }
         },
         "error": {
             "moreInfo": {
-                "foldersNotAllowed": "[GR] Folders cannot be uploaded. Instead, if you are trying to upload a file, the system may not have recognized it. Try again using the \"UPLOAD\" button."
+                "foldersNotAllowed": "Δεν είναι δυνατή η μεταφόρτωση φακέλων. Αν προσπαθείτε να μεταφορτώσετε ένα αρχείο, το σύστημα ενδέχεται να μην το αναγνώρισε. Δοκιμάστε ξανά χρησιμοποιώντας το κουμπί «ΜΕΤΑΦΟΡΤΩΣΗ»."
             }
         }
     },
     "size": {
-        "unitMeasure_B": "[GR] B",
-        "unitMeasure_KB": "[GR] KB",
-        "unitMeasure_MB": "[GR] MB",
-        "unitMeasure_TB": "[GR] TB",
-        "unitMeasure_GB": "[GR] GB",
-        "unitMeasure_ZB": "[GR] ZB",
-        "unitMeasure_PB": "[GR] PB",
-        "unitMeasure_EB": "[GR] EB",
-        "unitMeasure_YB": "[GR] YB"
+        "unitMeasure_B": "B",
+        "unitMeasure_KB": "KB",
+        "unitMeasure_MB": "MB",
+        "unitMeasure_TB": "TB",
+        "unitMeasure_GB": "GB",
+        "unitMeasure_ZB": "ZB",
+        "unitMeasure_PB": "PB",
+        "unitMeasure_EB": "EB",
+        "unitMeasure_YB": "YB"
     },
     "header": {
         "iconTooltip": {
-            "ListLayout": "[GR] List layout",
-            "GridLayout": "[GR] Grid layout"
+            "ListLayout": "Διάταξη λίστας",
+            "GridLayout": "Διάταξη πλέγματος"
         }
     },
     "notifications": {
         "empty": {
-            "title": "[GR] No notifications",
-            "message": "[GR] You don’t have any notifications at the moment"
+            "title": "Καμία ειδοποίηση",
+            "message": "Δεν έχετε καμία ειδοποίηση αυτή τη στιγμή"
         },
         "addedNode": {
-            "message": "[GR] <bold>{{email}}</bold> added <bold>{{node}}</bold> in <bold>{{folder}}</bold>"
+            "message": "<bold>{{email}}</bold> πρόσθεσε το <bold>{{node}}</bold> στο <bold>{{folder}}</bold>"
         },
         "newShare": {
-            "message": "[GR] <bold>{{email}}</bold> shared <bold>{{node}}</bold> with you"
+            "message": "<bold>{{email}}</bold> μοιράστηκε το <bold>{{node}}</bold> μαζί σας"
         },
         "removedNode": {
-            "message": "[GR] <bold>{{email}}</bold> removed <bold>{{node}}</bold> from <bold>{{folder}}</bold>"
+            "message": "<bold>{{email}}</bold> αφαίρεσε το <bold>{{node}}</bold> από το <bold>{{folder}}</bold>"
         },
-        "title": "[GR] Notifications",
-        "refresh": "[GR] Check for updates",
+        "title": "Ειδοποιήσεις",
+        "refresh": "Έλεγχος για ενημερώσεις",
         "transferredOwnership": {
-            "message": "[GR] <bold>{{email}}</bold> transferred ownership of items to you. You’ll find them in folder <bold>{{folder}}</bold>"
+            "message": "<bold>{{email}}</bold> σας μετέφερε την ιδιοκτησία στοιχείων. Θα τα βρείτε στον φάκελο <bold>{{folder}}</bold>"
         }
     },
     "transferOwnership": {
         "modal": {
-            "available": "[GR] The new owner has enough storage available.",
-            "description": "[GR] Select a new owner for the selected items.",
-            "note1": "[GR] You’ll remain as a <bold>collaborator with editing and sharing rights.</bold>",
-            "note4": "[GR] Please note:",
-            "note": "[GR] After the transfer:",
-            "note5": "[GR] If the new owner exceeds their storage quota, the transfer will fail.",
-            "note2": "[GR] All sharing settings will be kept.",
-            "note3": "[GR] The new owner <bold>will be notified.</bold>",
-            "note6": "[GR] This action is permanent and cannot be undone.",
-            "unavailable": "[GR] The new owner doesn't have enough storage available.",
-            "placeholder": "[GR] Select a new owner",
-            "loadingTooltip": "[GR] Checking the new owner’s storage quota...",
-            "unavailableTooltip": "[GR] The new owner doesn’t have enough storage available.",
+            "available": "Ο νέος ιδιοκτήτης διαθέτει αρκετό διαθέσιμο αποθηκευτικό χώρο.",
+            "description": "Επιλέξτε νέο ιδιοκτήτη για τα επιλεγμένα στοιχεία.",
+            "note1": "Θα παραμείνετε <bold>συνεργάτης με δικαιώματα επεξεργασίας και κοινής χρήσης.</bold>",
+            "note4": "Παρακαλούμε σημειώστε:",
+            "note": "Μετά τη μεταφορά:",
+            "note5": "Αν ο νέος ιδιοκτήτης υπερβεί το όριο αποθηκευτικού χώρου του, η μεταφορά θα αποτύχει.",
+            "note2": "Όλες οι ρυθμίσεις κοινής χρήσης θα διατηρηθούν.",
+            "note3": "Ο νέος ιδιοκτήτης <bold>θα ειδοποιηθεί.</bold>",
+            "note6": "Αυτή η ενέργεια είναι μόνιμη και δεν μπορεί να αναιρεθεί.",
+            "unavailable": "Ο νέος ιδιοκτήτης δεν διαθέτει αρκετό διαθέσιμο αποθηκευτικό χώρο.",
+            "placeholder": "Επιλέξτε νέο ιδιοκτήτη",
+            "loadingTooltip": "Έλεγχος του διαθέσιμου χώρου αποθήκευσης του νέου ιδιοκτήτη...",
+            "unavailableTooltip": "Ο νέος ιδιοκτήτης δεν διαθέτει αρκετό διαθέσιμο αποθηκευτικό χώρο.",
             "button": {
-                "confirm": "[GR] Transfer"
+                "confirm": "Μεταφορά"
             },
-            "loading": "[GR] Checking the new owner’s storage quota..."
+            "loading": "Έλεγχος του διαθέσιμου χώρου αποθήκευσης του νέου ιδιοκτήτη..."
         }
     },
     "notification": {
         "succeededRecording": {
-            "message": "[GR] <bold>{{node}}</bold> saved in <bold>{{folder}}</bold>"
+            "message": "<bold>{{node}}</bold> αποθηκεύτηκε στο <bold>{{folder}}</bold>"
         }
     }
 }
