@@ -3,7 +3,8 @@
         "actions": {
             "tooltip": {
                 "download": "გადმოწერა",
-                "edit": "ჩასწორება"
+                "edit": "ჩასწორება",
+                "manageShares": "გაზიარებების მართვა"
             }
         },
         "close": {
@@ -20,6 +21,21 @@
         },
         "next": {
             "tooltip": "შემდეგი"
+        },
+        "button": {
+            "refresh": "მინიატურის განახლება"
+        },
+        "fileSizeExceeded": {
+            "download": "ფაილის გადმოწერა"
+        },
+        "zoomOut": {
+            "tooltip": "დაპატარავება"
+        },
+        "resetZoom": {
+            "tooltip": "მასშტაბის ჩამოყრა"
+        },
+        "zoomIn": {
+            "tooltip": "გადიდება"
         }
     },
     "modal": {
@@ -32,7 +48,10 @@
         },
         "nodeSelection": {
             "button": {
-                "create": "შექმნა"
+                "create": "შექმნა",
+                "newFolder": {
+                    "label": "ახალი საქაღალდე"
+                }
             }
         },
         "removeLink": {
@@ -54,11 +73,41 @@
             "filesHome": "საწყისი",
             "rootsList": "ფაილები",
             "trash": {
-                "trash": "ნაგვის ყუთი"
+                "trash": "ნაგვის ყუთი",
+                "myElements": "ჩემი ელემენტები",
+                "sharedWitMe": "გაზიარებული ელემენტები"
             }
         },
         "cancel": {
             "label": "გაუქმება"
+        },
+        "decreaseYourOwnSharePermissions": {
+            "button": {
+                "confirmDecrease": "დიახ, ვადასტურებ"
+            }
+        },
+        "deletePermanently": {
+            "button": {
+                "confirm": "სამუდამოდ წაშლა"
+            }
+        },
+        "deleteShare": {
+            "button": {
+                "cancel": "არა, გაუქმება",
+                "confirmRemove": "დიახ, წაშალე"
+            },
+            "title": {
+                "single": "თანამშრომლის წაშლა",
+                "multiple": "თანამშრომლების წაშლა"
+            }
+        },
+        "moreInfo": {
+            "title": "დამატებითი ინფორმაცია"
+        },
+        "unsaved_changes": {
+            "button": {
+                "leave_anyway": "მაინც გასვლა"
+            }
         }
     },
     "size": {
@@ -82,13 +131,33 @@
         "rename": "სახელის გადარქმევა",
         "restore": "აღდგენა",
         "unflag": "ალმის მოხსნა",
-        "downloadNode": "გადმოწერა"
+        "downloadNode": "გადმოწერა",
+        "deletePermanently": "სამუდამოდ წაშლა",
+        "manageShares": "გაზიარებების მართვა",
+        "openWithDocs": "დოკუმენტის გახსნა",
+        "removeUpload": "ატვირთულის წაშლა",
+        "retryUpload": "ატვირთვის თავიდან ცდა",
+        "transferOwnership": "მფლობელობის გადაცემა",
+        "download": {
+            "multiple": {
+                "modal": {
+                    "button": {
+                        "label": "ყველა გადმოწერა"
+                    }
+                },
+                "button": {
+                    "tooltip": "ყველა გადმოწერა"
+                }
+            }
+        },
+        "viewContents": "შემცველობის ნახვა"
     },
     "carbonio-public-folder-ui": {
         "listHeader": {
             "extension": "გაფართოება",
             "name": "სახელი",
-            "size": "ზომა"
+            "size": "ზომა",
+            "lastModified": "ბოლო ცვლილება"
         },
         "accessCode": {
             "modal": {
@@ -99,23 +168,32 @@
         },
         "fileDownload": {
             "modal": {
-                "confirmLabel1": "გადმოწერა"
+                "confirmLabel1": "გადმოწერა",
+                "confirmLabel2": "ხელახლა გადმოწერა"
             }
         }
     },
     "collaborationLinks": {
         "button": {
-            "revoke": "გაბათილება"
+            "revoke": "გაბათილება",
+            "generateLink": "ბმულის გენერაცია"
         },
         "permission": {
             "readOnly": "ნახვა",
             "readAndWrite": "ჩასწორება"
-        }
+        },
+        "title": "თანამშრომლობის ბმულები"
     },
     "create": {
         "options": {
             "new": {
-                "upload": "ატვირთვა"
+                "upload": "ატვირთვა",
+                "document": "ახალი დოკუმენტი",
+                "folder": "ახალი საქაღალდე",
+                "libreDocument": "OpenDocument {{ext}}",
+                "msDocument": "Microsoft {{ext}}",
+                "presentation": "ახალი პრეზენტაცია",
+                "spreadsheet": "ახალი ელცხრილი"
             }
         }
     },
@@ -129,7 +207,10 @@
             "editDescription": {
                 "cancel": "გაუქმება",
                 "save": "შენახვა"
-            }
+            },
+            "createdBy": "ავტორი",
+            "lastEdit": "ბოლო ჩასწორება",
+            "showPath": "ბილიკის ჩვენება"
         },
         "list": {
             "you": "თქვენ"
@@ -146,16 +227,55 @@
                         "editor": "რედაქტორი",
                         "viewer": "დამთვალიერებელი"
                     },
-                    "save": "შენახვა"
+                    "save": "შენახვა",
+                    "sharingAllowed": "გაზიარება დაშვებულია"
                 },
-                "you": "თქვენ"
-            }
+                "you": "თქვენ",
+                "tooltip": {
+                    "edit": {
+                        "collaborator": "თანამშრომლობის ჩასწორება"
+                    },
+                    "remove": {
+                        "collaborator": "თანამშრომლობი წაშლა"
+                    }
+                }
+            },
+            "allCollaborators": "ყველა თანამშრომელი",
+            "selected": "მონიშნულია {{count}}"
         },
         "tabs": {
             "activities": "აქტივობები",
             "details": "დეტალები",
             "sharing": "გაზიარება",
             "versioning": "ვერსიების მართვა"
+        },
+        "search_empty": [
+            {},
+            {
+                "title": "შედეგების გარეშე."
+            }
+        ],
+        "uploads": {
+            "title": "შეთავაზებების ატვირთვა"
+        },
+        "version": {
+            "actions": {
+                "deleteVersion": "ვერსიის წაშლა",
+                "downloadVersion": "ვერსიის გადმოწერა"
+            },
+            "button": {
+                "upload": "ვერსიის ატვირთვა"
+            },
+            "row": {
+                "versionNumber": "ვერსია {{versionNumber}}"
+            },
+            "rowHeaders": {
+                "currentVersion": "მიმდინარე ვერსია",
+                "olderVersions": "ძველი ვერსიები"
+            }
+        },
+        "uploadFailure": {
+            "title": "შეთავაზებების ატვირთვა"
         }
     },
     "folder": {
@@ -163,6 +283,11 @@
             "modal": {
                 "button": {
                     "confirm": "შექმნა"
+                },
+                "input": {
+                    "label": {
+                        "name": "საქაღალდის სახელი"
+                    }
                 }
             }
         }
@@ -186,6 +311,9 @@
             "modal": {
                 "button": {
                     "confirm": "გადატანა"
+                },
+                "input": {
+                    "filter": "საქაღალდეების გაფილტვრა"
                 }
             }
         },
@@ -193,7 +321,13 @@
             "modal": {
                 "button": {
                     "confirm": "სახელის გადარქმევა"
-                }
+                },
+                "input": {
+                    "label": {
+                        "name": "ელემენტის სახელი"
+                    }
+                },
+                "title": "ელემენტის სახელის გადარქმევა"
             }
         },
         "type": {
@@ -202,13 +336,36 @@
     },
     "publicLink": {
         "addLink": {
-            "undo": "ბრძანების გაუქმება"
+            "undo": "ბრძანების გაუქმება",
+            "addLink": "ბმულის დამატება",
+            "generateLink": "ბმულის გენერაცია"
         },
         "link": {
             "edit": "ჩასწორება",
             "remove": "წაშლა",
             "revoke": "გაბათილება",
-            "undo": "ბრძანების გაუქმება"
+            "undo": "ბრძანების გაუქმება",
+            "editLink": "ბმულის ჩასწორება",
+            "expireOn": "ვადა:",
+            "urlChip": {
+                "tooltip": {
+                    "copy": "{{linkName}}-ის კოპირება"
+                }
+            }
+        },
+        "dateTimePicker": {
+            "label": "ვადის გასვლის თარიღი"
+        },
+        "input": {
+            "label": "ბმულის აღწერა"
+        },
+        "accessCode": {
+            "chip": {
+                "label": "წვდომის კოდი"
+            },
+            "input": {
+                "label": "წვდომის კოდი"
+            }
         }
     },
     "quota": {
@@ -222,7 +379,8 @@
         "advancedSearch": {
             "modal": {
                 "button": {
-                    "confirm": "ძებნა"
+                    "confirm": "ძებნა",
+                    "reset": "ფილტრების ჩამოყრა"
                 },
                 "flagged": {
                     "label": "ალამდასმული"
@@ -236,7 +394,8 @@
                         "presentation": "პრეზენტაცია",
                         "spreadsheet": "ელცხრილი",
                         "video": "ვიდეო"
-                    }
+                    },
+                    "label": "ელემენტის ტიპი"
                 },
                 "keywords": {
                     "label": "საკვანძო სიტყვები"
@@ -246,7 +405,14 @@
                 },
                 "shared": {
                     "label": "გაზიარებული"
-                }
+                },
+                "folder": {
+                    "modal": {
+                        "cancel": "უკან",
+                        "confirm": "აირჩიეთ საქაღალდე"
+                    }
+                },
+                "title": "გაფართოებული ფილტრები"
             }
         },
         "header": {
@@ -256,7 +422,8 @@
             "tooltip": {
                 "search": "ძებნა"
             }
-        }
+        },
+        "resultsFor": "შედეგები მოთხოვნისთვის:"
     },
     "secondaryBar": {
         "filesHome": "საწყისი",
@@ -264,7 +431,9 @@
         "filtersList": {
             "flagged": "ალამდასმული",
             "recents": "უახლესები",
-            "trash": "ნაგვის ყუთი"
+            "trash": "ნაგვის ყუთი",
+            "myElements": "ჩემი ელემენტები",
+            "sharedElements": "გაზიარებული ელემენტები"
         },
         "uploads": "ატვირთვები"
     },
@@ -301,23 +470,101 @@
                     "actionLabel": "Ok"
                 }
             }
+        },
+        "collaborationLink": {
+            "actionLabel": {
+                "copyLink": "ბმულის კოპირება"
+            }
+        },
+        "copyNodes": {
+            "success": "ელემენტი დაკოპირდა"
+        },
+        "moveNodes": {
+            "success": "ელემენტი გადატანილია"
+        },
+        "publicLink": {
+            "actionLabel": {
+                "copyLink": "ბმულის კოპირება"
+            },
+            "copyLink": "{{linkName}} დაკოპირდა",
+            "linkUpdated": {
+                "label": "{{linkName}} განახლდა"
+            }
+        },
+        "upload": {
+            "moreInfo": "მეტი ინფორმაცია"
         }
     },
     "sortingDropdown": {
         "name": "სახელი",
-        "size": "ზომა"
+        "size": "ზომა",
+        "ascendingOrder": "აღმავალი",
+        "descendingOrder": "დაღმავალი",
+        "lastUpdate": "ბოლო განახლება"
     },
     "uploadItem": {
         "queued": "რიგშია"
     },
     "notifications": {
-        "title": "გაფრთხილებები"
+        "title": "გაფრთხილებები",
+        "empty": {
+            "title": "გაფრთხილებების გარეშე"
+        }
     },
     "transferOwnership": {
         "modal": {
             "button": {
                 "confirm": "გადაცემა"
+            },
+            "note4": "გაითვალისწინეთ:"
+        }
+    },
+    "docs": {
+        "create": {
+            "modal": {
+                "input": {
+                    "label": {
+                        "name": {
+                            "document": "დოკუმენტის სახელი",
+                            "presentation": "პრეზენტაციის სახელი",
+                            "spreadsheet": "ელცხრილის სახელი"
+                        }
+                    }
+                }
             }
+        }
+    },
+    "dropzone": {
+        "move": {
+            "title": {
+                "disabled": "გადათრევა/დაგდების რეჟიმი.",
+                "enabled": "გადათრევა/დაგდების რეჟიმი."
+            }
+        }
+    },
+    "selectionMode": {
+        "header": {
+            "selectAll": "ყველას მონიშვნა",
+            "unselectAll": "ყველა მონიშვნა მოხსნა"
+        }
+    },
+    "uploads": {
+        "banner": {
+            "overQuota": {
+                "title": "კვოტა გადაჭარბებულია"
+            }
+        },
+        "dropzone": {
+            "title": {
+                "disabled": "გადათრევა/დაგდების რეჟიმი.",
+                "enabled": "გადათრევა/დაგდების რეჟიმი."
+            }
+        }
+    },
+    "header": {
+        "iconTooltip": {
+            "ListLayout": "სიის განლაგება",
+            "GridLayout": "გრიდის განლაგება"
         }
     }
 }
