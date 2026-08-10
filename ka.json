@@ -36,6 +36,12 @@
         },
         "zoomIn": {
             "tooltip": "გადიდება"
+        },
+        "document": {
+            "loadingLabel": "დოკუმენტის მინიატურის ჩატვირთვა…"
+        },
+        "fitWidth": {
+            "label": "სიგანეში ჩატევა"
         }
     },
     "modal": {
@@ -52,12 +58,16 @@
                 "newFolder": {
                     "label": "ახალი საქაღალდე"
                 }
+            },
+            "input": {
+                "newFolder": "ახალი საქაღალდის სახელი"
             }
         },
         "removeLink": {
             "button": {
                 "confirm": "წაშლა"
-            }
+            },
+            "header": "{{nodeName}} {{linkName}}-ის წაშლა"
         },
         "revokeCollaborationLink": {
             "button": {
@@ -67,7 +77,8 @@
         "revokeLink": {
             "button": {
                 "confirm": "გაბათილება"
-            }
+            },
+            "header": "{{nodeName}} {{linkName}}-ის გაბათილება"
         },
         "roots": {
             "filesHome": "საწყისი",
@@ -76,7 +87,8 @@
                 "trash": "ნაგვის ყუთი",
                 "myElements": "ჩემი ელემენტები",
                 "sharedWitMe": "გაზიარებული ელემენტები"
-            }
+            },
+            "sharedWitMe": "გამიზიარეს"
         },
         "cancel": {
             "label": "გაუქმება"
@@ -94,11 +106,14 @@
         "deleteShare": {
             "button": {
                 "cancel": "არა, გაუქმება",
-                "confirmRemove": "დიახ, წაშალე"
+                "confirmRemove": "დიახ, წაშალე",
+                "confirmAll": "დიახ, წაშალე ყველა"
             },
             "title": {
                 "single": "თანამშრომლის წაშლა",
-                "multiple": "თანამშრომლების წაშლა"
+                "multiple": "თანამშრომლების წაშლა",
+                "yourShare": "თქვენი გაზიარების წაშლა",
+                "all": "ყველა თანამშრომლის წაშლა"
             }
         },
         "moreInfo": {
@@ -106,8 +121,15 @@
         },
         "unsaved_changes": {
             "button": {
-                "leave_anyway": "მაინც გასვლა"
+                "leave_anyway": "მაინც გასვლა",
+                "save_and_leave": "შენახვა და გასვლა"
             }
+        },
+        "purgeAllVersions": {
+            "button": {
+                "confirm": "ყველა ვერსიის გასუფთავება"
+            },
+            "header": "ყველა ვერსიის გასუფთავება"
         }
     },
     "size": {
@@ -150,7 +172,9 @@
                 }
             }
         },
-        "viewContents": "შემცველობის ნახვა"
+        "viewContents": "შემცველობის ნახვა",
+        "markForDeletion": "წასაშლელად მონიშვნა",
+        "sendViaMail": "ელფოსტით გაგზავნა"
     },
     "carbonio-public-folder-ui": {
         "listHeader": {
@@ -182,7 +206,20 @@
             "readOnly": "ნახვა",
             "readAndWrite": "ჩასწორება"
         },
-        "title": "თანამშრომლობის ბმულები"
+        "title": "თანამშრომლობის ბმულები",
+        "link": {
+            "urlChip": {
+                "tooltip": {
+                    "copy": "თანამშრომლობის ბმულის კოპირება"
+                }
+            }
+        },
+        "row": {
+            "title": {
+                "ReadAndShare": "წაკითხვა და გაზიარება",
+                "writeAndShare": "ჩაწერა და გაზიარება"
+            }
+        }
     },
     "create": {
         "options": {
@@ -193,7 +230,10 @@
                 "libreDocument": "OpenDocument {{ext}}",
                 "msDocument": "Microsoft {{ext}}",
                 "presentation": "ახალი პრეზენტაცია",
-                "spreadsheet": "ახალი ელცხრილი"
+                "spreadsheet": "ახალი ელცხრილი",
+                "msDocument_docx": "Microsoft Word {{ext}}",
+                "msDocument_pptx": "Microsoft PowerPoint {{ext}}",
+                "msDocument_xlsx": "Microsoft Excel {{ext}}"
             }
         }
     },
@@ -210,7 +250,8 @@
             },
             "createdBy": "ავტორი",
             "lastEdit": "ბოლო ჩასწორება",
-            "showPath": "ბილიკის ჩვენება"
+            "showPath": "ბილიკის ჩვენება",
+            "copyShortcut": "ელემენტის მალსახმობის კოპირება"
         },
         "list": {
             "you": "თქვენ"
@@ -233,10 +274,12 @@
                 "you": "თქვენ",
                 "tooltip": {
                     "edit": {
-                        "collaborator": "თანამშრომლობის ჩასწორება"
+                        "collaborator": "თანამშრომლობის ჩასწორება",
+                        "you": "თქვენი თანამშრომლობის ჩასწორება"
                     },
                     "remove": {
-                        "collaborator": "თანამშრომლობი წაშლა"
+                        "collaborator": "თანამშრომლობი წაშლა",
+                        "yourself": "თქვენი თანამშრომლობის წაშლა"
                     }
                 }
             },
@@ -250,7 +293,9 @@
             "versioning": "ვერსიების მართვა"
         },
         "search_empty": [
-            {},
+            {
+                "title": "კიდევ ერთი ძებნის დაწყება."
+            },
             {
                 "title": "შედეგების გარეშე."
             }
@@ -261,21 +306,34 @@
         "version": {
             "actions": {
                 "deleteVersion": "ვერსიის წაშლა",
-                "downloadVersion": "ვერსიის გადმოწერა"
+                "downloadVersion": "ვერსიის გადმოწერა",
+                "cloneAsCurrent": "დაკლონვა მიმდინარედ",
+                "openDocumentVersion": "დოკუმენტის ვერსიის გახსნა",
+                "removeKeepVersion": "შეუქცევადად წაშლა"
             },
             "button": {
-                "upload": "ვერსიის ატვირთვა"
+                "upload": "ვერსიის ატვირთვა",
+                "purgeAllVersions": "ყველა ვერსიის გასუფთავება"
             },
             "row": {
                 "versionNumber": "ვერსია {{versionNumber}}"
             },
             "rowHeaders": {
                 "currentVersion": "მიმდინარე ვერსია",
-                "olderVersions": "ძველი ვერსიები"
+                "olderVersions": "ძველი ვერსიები",
+                "lastWeek": "ბოლო 7 დღე"
             }
         },
         "uploadFailure": {
             "title": "შეთავაზებების ატვირთვა"
+        },
+        "filter": {
+            "trash_full": [
+                {},
+                {
+                    "title": "არაფერი დაკარგულა!"
+                }
+            ]
         }
     },
     "folder": {
@@ -288,7 +346,8 @@
                     "label": {
                         "name": "საქაღალდის სახელი"
                     }
-                }
+                },
+                "title": "ახალი საქაღალდის შექმნა"
             }
         }
     },
@@ -298,7 +357,8 @@
     "node": {
         "alias": {
             "name_LOCAL_ROOT": "საწყისი",
-            "name_TRASH_ROOT": "ნაგვის ყუთი"
+            "name_TRASH_ROOT": "ნაგვის ყუთი",
+            "name_SHARED_WITH_ME_ROOT": "გამიზიარეს"
         },
         "copy": {
             "modal": {
@@ -361,10 +421,19 @@
         },
         "accessCode": {
             "chip": {
-                "label": "წვდომის კოდი"
+                "label": "წვდომის კოდი",
+                "tooltip": "წვდომის კოდის კოპირება"
             },
             "input": {
                 "label": "წვდომის კოდი"
+            },
+            "switch": {
+                "label": "წვდომის კოდის ჩართვა"
+            },
+            "buttons": {
+                "copy": {
+                    "tooltip": "წვდომის კოდის კოპირება"
+                }
             }
         }
     },
@@ -409,21 +478,35 @@
                 "folder": {
                     "modal": {
                         "cancel": "უკან",
-                        "confirm": "აირჩიეთ საქაღალდე"
-                    }
+                        "confirm": "აირჩიეთ საქაღალდე",
+                        "title": "საქაღალდის არჩევა"
+                    },
+                    "label": "საქაღალდის არჩევა"
                 },
                 "title": "გაფართოებული ფილტრები"
             }
         },
         "header": {
-            "search": "ძებნა"
+            "search": "ძებნა",
+            "close": "ძებნიდან გასვლა",
+            "start": "ძებნის დაწყება"
         },
         "search": {
             "tooltip": {
                 "search": "ძებნა"
             }
         },
-        "resultsFor": "შედეგები მოთხოვნისთვის:"
+        "resultsFor": "შედეგები მოთხოვნისთვის:",
+        "clear": {
+            "tooltip": {
+                "clear": "საძიებო სტრიქონის გასუფთავება"
+            }
+        },
+        "searchBar": {
+            "label": {
+                "default": "აკრიფეთ საძიებო ტექსტი"
+            }
+        }
     },
     "secondaryBar": {
         "filesHome": "საწყისი",
@@ -433,7 +516,9 @@
             "recents": "უახლესები",
             "trash": "ნაგვის ყუთი",
             "myElements": "ჩემი ელემენტები",
-            "sharedElements": "გაზიარებული ელემენტები"
+            "sharedElements": "გაზიარებული ელემენტები",
+            "sharedByMe": "გაზიარებული ჩემს მიერ",
+            "sharedWithMe": "გამიზიარეს"
         },
         "uploads": "ატვირთვები"
     },
@@ -447,7 +532,8 @@
             "success": "წარმატებულია"
         },
         "restore": {
-            "success": "წარმატებულია"
+            "success": "წარმატებულია",
+            "showInFolder": "საქაღალდეში ჩვენება"
         },
         "createDocument": {
             "error": {
@@ -462,7 +548,11 @@
             }
         },
         "transferOwnership": {
-            "actionLabel": "OK"
+            "actionLabel": "OK",
+            "error": {
+                "overQuota": "მფლობელობის გადაცემა ჩავარდა."
+            },
+            "success1": "მფლობელობის გადაცემა წარმატებულია."
         },
         "sendViaMail": {
             "error": {
@@ -474,13 +564,16 @@
         "collaborationLink": {
             "actionLabel": {
                 "copyLink": "ბმულის კოპირება"
-            }
+            },
+            "copyCollaborationLink": "თანამშრომლობის ბმული დაკოპირდა"
         },
         "copyNodes": {
-            "success": "ელემენტი დაკოპირდა"
+            "success": "ელემენტი დაკოპირდა",
+            "action": "საქაღალდეზე გადასვლა"
         },
         "moveNodes": {
-            "success": "ელემენტი გადატანილია"
+            "success": "ელემენტი გადატანილია",
+            "action": "საქაღალდეზე გადასვლა"
         },
         "publicLink": {
             "actionLabel": {
@@ -489,10 +582,31 @@
             "copyLink": "{{linkName}} დაკოპირდა",
             "linkUpdated": {
                 "label": "{{linkName}} განახლდა"
+            },
+            "newPublicLinkGenerated": {
+                "label": "ახალი ბმული {{linkName}} შეიქმნა"
             }
         },
         "upload": {
-            "moreInfo": "მეტი ინფორმაცია"
+            "moreInfo": "მეტი ინფორმაცია",
+            "goToFolder": "საქაღალდეზე გადასვლა"
+        },
+        "clipboard": {
+            "email": "ელფოსტის მისამართი დაკოპირდა",
+            "itemShortcutCopied": "ელემენტის მალსახმობი დაკოპირდა",
+            "accessCodeCopied": "წვდომის კოდი დაკოპირდა"
+        },
+        "decreaseYourOwnShare": {
+            "success": "უფლებები წარმატებით განახლდა"
+        },
+        "markForDeletion": {
+            "showTrash": "ნაგვის ყუთის საქაღალდის გახსნა"
+        },
+        "unflag": {
+            "success": "ელემენტის ალამი წარმატებით მოიხსნა"
+        },
+        "version": {
+            "keepForeverRemoved": "\"სამუდამოდ შენარჩუნება\" მოცილებულია"
         }
     },
     "sortingDropdown": {
@@ -509,14 +623,16 @@
         "title": "გაფრთხილებები",
         "empty": {
             "title": "გაფრთხილებების გარეშე"
-        }
+        },
+        "refresh": "განახლებების შემოწმება"
     },
     "transferOwnership": {
         "modal": {
             "button": {
                 "confirm": "გადაცემა"
             },
-            "note4": "გაითვალისწინეთ:"
+            "note4": "გაითვალისწინეთ:",
+            "note": "გადაცემის შემდეგ:"
         }
     },
     "docs": {
@@ -530,6 +646,11 @@
                             "spreadsheet": "ელცხრილის სახელი"
                         }
                     }
+                },
+                "title": {
+                    "document": "ახალი დოკუმენტის შექმნა",
+                    "presentation": "ახალი პრეზენტაციის შექმნა",
+                    "spreadsheet": "ახალი ელცხრილის შექმნა"
                 }
             }
         }
@@ -545,7 +666,11 @@
     "selectionMode": {
         "header": {
             "selectAll": "ყველას მონიშვნა",
-            "unselectAll": "ყველა მონიშვნა მოხსნა"
+            "unselectAll": "ყველა მონიშვნა მოხსნა",
+            "exit": "მონიშვნის რეჟიმიდან გასვლა"
+        },
+        "node": {
+            "tooltip": "მონიშვნის რეჟიმის გააქტიურება"
         }
     },
     "uploads": {
@@ -559,6 +684,9 @@
                 "disabled": "გადათრევა/დაგდების რეჟიმი.",
                 "enabled": "გადათრევა/დაგდების რეჟიმი."
             }
+        },
+        "clean": {
+            "completed": "დასრულებული ატვირთვების გასუფთავება"
         }
     },
     "header": {
@@ -566,5 +694,17 @@
             "ListLayout": "სიის განლაგება",
             "GridLayout": "გრიდის განლაგება"
         }
+    },
+    "breadcrumb": {
+        "expander": {
+            "hide": "საქაღალდის ბილიკის დამალვა",
+            "show": "საქაღალდის ბილიკის ჩვენება"
+        }
+    },
+    "errorCode": {
+        "code": "რაღაც არასწორად წავიდა",
+        "code_Generic": "რაღაც არასწორად წავიდა",
+        "operation_copyNodes": "კოპირების ქმედება ჩავარდა.",
+        "operation_cloneVersion": "კლონირების ქმედება ჩავარდა."
     }
 }
