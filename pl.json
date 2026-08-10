@@ -318,6 +318,13 @@
                 "overQuota2": "Nowy właściciel nie ma wystarczająco przestrzeni."
             },
             "actionLabel": "OK"
+        },
+        "sendViaMail": {
+            "error": {
+                "fileSizeExceeded": {
+                    "actionLabel": "Ok"
+                }
+            }
         }
     },
     "actions": {
