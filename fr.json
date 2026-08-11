@@ -369,6 +369,13 @@
             },
             "success1": "Transfert de propriété réussi.",
             "success2": "Les éléments se trouvent maintenant dans votre dossier « Partagés avec moi »."
+        },
+        "sendViaMail": {
+            "error": {
+                "fileSizeExceeded": {
+                    "actionLabel": "OK"
+                }
+            }
         }
     },
     "actions": {
