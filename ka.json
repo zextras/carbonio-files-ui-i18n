@@ -797,7 +797,8 @@
                     "label": "მფლობელი"
                 },
                 "shared": {
-                    "label": "გაზიარებული"
+                    "label": "გაზიარებული",
+                    "description": "გაფილტრეთ შედეგები ელემენტებით, რომლებიც შეიცავენ თქვენს გარდა, სულ ცოტა, ერთ თანამსრომელს"
                 },
                 "folder": {
                     "modal": {
@@ -1008,6 +1009,9 @@
         },
         "removedNode": {
             "message": "<bold>{{email}}</bold>-მა წაშალა <bold>{{node}}</bold> <bold>{{folder}}</bold>-დან"
+        },
+        "transferredOwnership": {
+            "message": "<bold>{{email}}</bold>-მა ელემენტების მფლობელობა თქვენზე გადმოიტანა. მათ იპოვით საქაღალდეში <bold>{{folder}}</bold>"
         }
     },
     "transferOwnership": {
