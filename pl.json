@@ -322,7 +322,8 @@
         "sendViaMail": {
             "error": {
                 "fileSizeExceeded": {
-                    "actionLabel": "Ok"
+                    "actionLabel": "Ok",
+                    "label": "Ten plik jest zbyt duży, aby dało się go załączyć. Utwórz nową wiadomość e-mail i użyj opcji \"Dodaj z Plików\", aby udostępnić ten plik w formie inteligentnego linku."
                 }
             }
         }
