@@ -1085,7 +1085,8 @@
                 "fileSizeExceeded": {
                     "label": "This file is too large to attach. Open a new e-mail and use Add from Files to share it as a Smart Link instead.",
                     "actionLabel": "Ok"
-                }
+                },
+                "fileSizeExceededNotShareable": "This file is too large to attach and you don't have permission to share it as a Smart Link."
             }
         }
     },
