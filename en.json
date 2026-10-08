@@ -836,7 +836,11 @@
         "accessCode": {
             "chip": {
                 "tooltip": "Copy access code",
-                "label": "Access code"
+                "label": "Access code",
+                "actionShow": {
+                    "hide": "Hide access code",
+                    "show": "Show access code"
+                }
             },
             "switch": {
                 "label": "Enable access code"
@@ -1068,7 +1072,8 @@
         "openWithDocs": {
             "error": {
                 "pleaseDownload": "To view the item, please download it on your device",
-                "exceedSizeLimit": "The item exceeds the size limit allowed and cannot be opened."
+                "exceedSizeLimit": "The item exceeds the size limit allowed and cannot be opened.",
+                "actionLabel": "Ok"
             }
         },
         "transferOwnership": {
