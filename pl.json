@@ -307,7 +307,8 @@
         "openWithDocs": {
             "error": {
                 "pleaseDownload": "Aby wyświetlić element, pobierz go na Twoje urządzenie",
-                "exceedSizeLimit": "Element przekracza dozwolony limit rozmiaru i nie może zostać otwarty."
+                "exceedSizeLimit": "Element przekracza dozwolony limit rozmiaru i nie może zostać otwarty.",
+                "actionLabel": "Ok"
             }
         },
         "transferOwnership": {
@@ -732,7 +733,11 @@
         "accessCode": {
             "chip": {
                 "label": "Kod dostępu",
-                "tooltip": "Skopiuj kod dostępu"
+                "tooltip": "Skopiuj kod dostępu",
+                "actionShow": {
+                    "hide": "Ukryj kod dostępu",
+                    "show": "Pokaż kod dostępu"
+                }
             },
             "input": {
                 "label": "Kod dostępu"
